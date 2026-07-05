@@ -35,6 +35,10 @@ jobs:
         run: |
           python qld_power_outage_pipeline.py --output-dir data --debug
 
+      - name: Write provider health history
+        run: |
+          python write_provider_health.py
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions"
@@ -50,3 +54,7 @@ jobs:
             git commit -m "Update outage data"
             git push
           fi
+
+      - name: Fail if provider feed failed
+        run: |
+          python fail_if_provider_failed.py
