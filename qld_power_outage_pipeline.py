@@ -77,6 +77,8 @@ ENERGEX_URLS = [
     "ex-map-current-planned/filestore-proxy?SQ_SESSION_MODE=read_only_async",
 ]
 
+ENERGEX_OUTAGE_MAP_URL = "https://www.energex.com.au/outages/outage-finder/outage-finder-map/"
+
 ERGON_LAYER_URL = (
     "https://services.arcgis.com/33eHbTVqo7gtiCE8/"
     "arcgis/rest/services/VwErgonOutages/FeatureServer/0"
@@ -291,7 +293,13 @@ def json_dumps_compact(obj: Any) -> str:
 # HTTP / ArcGIS
 # --------------------------------------------------------------------------------------
 
-def browser_like_headers(url: str, user_agent: str, accept: str = "application/json,*/*") -> Dict[str, str]:
+def browser_like_headers(
+    url: str,
+    user_agent: str,
+    accept: str = "application/json,*/*",
+    referer: Optional[str] = None,
+    include_origin: bool = False,
+) -> Dict[str, str]:
     """
     Some outage endpoints reject script-looking requests but allow ordinary browser-style
     requests. Keep this helper conservative and transparent: no auth bypassing, just
@@ -307,35 +315,150 @@ def browser_like_headers(url: str, user_agent: str, accept: str = "application/j
         "Pragma": "no-cache",
         "Connection": "keep-alive",
     }
-    if origin:
+    if referer:
+        headers["Referer"] = referer
+    elif origin:
         headers["Referer"] = origin + "/"
+    if include_origin and origin:
         headers["Origin"] = origin
     return headers
+
+
+def is_energex_url(url: str) -> bool:
+    try:
+        host = urlparse(url).netloc.lower()
+        return host.endswith("energex.com.au")
+    except Exception:
+        return False
+
+
+def energex_headers(user_agent: str) -> Dict[str, str]:
+    """Headers that mimic the browser request made from the Energex outage map."""
+    return {
+        "User-Agent": user_agent,
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "en-AU,en;q=0.9",
+        "Referer": ENERGEX_OUTAGE_MAP_URL,
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-origin",
+    }
+
+
+def http_get_json_curl_impersonate(url: str, timeout: int, user_agent: str) -> Any:
+    """
+    Energex can reject GitHub-hosted Python/requests traffic with 403 even when the
+    same public endpoint works in a browser/local run. As a last resort, use
+    curl_cffi's browser TLS impersonation. If curl_cffi is not installed, raise a
+    clear error so the manifest explains the missing dependency.
+    """
+    try:
+        from curl_cffi import requests as curl_requests  # type: ignore
+    except Exception as e:  # pragma: no cover - depends on optional dependency
+        raise RuntimeError(
+            "curl_cffi is not installed; install requirements.txt so Energex "
+            "GitHub Actions fallback can run"
+        ) from e
+
+    browser_ua = (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    )
+    ua = user_agent if user_agent and "Mozilla/" in user_agent else browser_ua
+    headers = energex_headers(ua)
+
+    # Prime the same-origin session with the map page so any public site cookies are set.
+    session = curl_requests.Session()
+    try:
+        session.get(
+            ENERGEX_OUTAGE_MAP_URL,
+            headers={
+                "User-Agent": ua,
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "en-AU,en;q=0.9",
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
+            },
+            timeout=timeout,
+            impersonate="chrome",
+        )
+    except Exception:
+        # Priming is helpful but not mandatory; continue to the JSON request.
+        pass
+
+    r = session.get(url, headers=headers, timeout=timeout, impersonate="chrome")
+    if r.status_code in (401, 403, 429, 503):
+        raise requests.HTTPError(f"{r.status_code} response for {url} using curl_cffi fallback", response=r)
+    r.raise_for_status()
+    return r.json()
 
 
 def http_get_json(url: str, timeout: int, user_agent: str) -> Any:
     """
     Fetch JSON with retries. For sites such as Energex that may return 403 to
-    non-browser-looking clients, try both the configured UA and a browser UA.
+    GitHub-hosted Python requests, try increasingly browser-like request variants,
+    then an optional curl_cffi Chrome/TLS impersonation fallback.
     """
     browser_ua = (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/124.0.0.0 Safari/537.36"
     )
-    header_variants = [
-        browser_like_headers(url, user_agent, accept="application/json,text/plain,*/*"),
-        browser_like_headers(url, browser_ua, accept="application/json,text/plain,*/*"),
-    ]
+
+    if is_energex_url(url):
+        header_variants = [
+            energex_headers(browser_ua),
+            browser_like_headers(
+                url,
+                browser_ua,
+                accept="application/json, text/plain, */*",
+                referer=ENERGEX_OUTAGE_MAP_URL,
+                include_origin=False,
+            ),
+            browser_like_headers(
+                url,
+                user_agent,
+                accept="application/json, text/plain, */*",
+                referer=ENERGEX_OUTAGE_MAP_URL,
+                include_origin=False,
+            ),
+        ]
+        prime_url = ENERGEX_OUTAGE_MAP_URL
+    else:
+        header_variants = [
+            browser_like_headers(url, user_agent, accept="application/json,text/plain,*/*", include_origin=False),
+            browser_like_headers(url, browser_ua, accept="application/json,text/plain,*/*", include_origin=False),
+        ]
+        prime_url = None
 
     last_err: Optional[Exception] = None
     with requests.Session() as s:
+        # For Energex, first visit the public outage map page to pick up any public cookies.
+        if prime_url:
+            try:
+                s.get(
+                    prime_url,
+                    timeout=timeout,
+                    headers=browser_like_headers(
+                        prime_url,
+                        browser_ua,
+                        accept="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                        referer="https://www.energex.com.au/",
+                        include_origin=False,
+                    ),
+                )
+            except Exception:
+                pass
+
         for attempt in range(1, HTTP_RETRIES + 1):
             for headers in header_variants:
                 try:
                     r = s.get(url, timeout=timeout, headers=headers)
-                    # If the first header variant is blocked, immediately try the
-                    # browser fallback before sleeping/retrying.
+                    # If one header variant is blocked, immediately try the next
+                    # variant before sleeping/retrying.
                     if r.status_code in (401, 403, 429, 503):
                         last_err = requests.HTTPError(f"{r.status_code} response for {url}", response=r)
                         continue
@@ -346,10 +469,15 @@ def http_get_json(url: str, timeout: int, user_agent: str) -> Any:
             if attempt < HTTP_RETRIES:
                 time.sleep(RETRY_SLEEP_SECONDS * attempt)
 
+    if is_energex_url(url):
+        try:
+            return http_get_json_curl_impersonate(url, timeout=timeout, user_agent=user_agent)
+        except Exception as e:
+            last_err = e
+
     if last_err:
         raise last_err
     raise RuntimeError(f"Failed to fetch JSON: {url}")  # pragma: no cover
-
 
 def http_get_text(url: str, timeout: int, user_agent: str) -> str:
     last_err: Optional[Exception] = None
