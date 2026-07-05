@@ -29,6 +29,7 @@ Design notes
 - "lga_cumulative_48h.csv" estimates customer-hours over the rolling window.
 - LGA assignment uses the outage centroid and Queensland Government's ArcGIS
   Local Government area boundary layer. This avoids needing GeoPandas/Shapely.
+- Energex is fetched from its public ArcGIS FeatureServer first, with the older website GeoJSON feeds kept only as fallback.
 - Essential Energy is fetched from its KML current-outages feed, then filtered
   to records whose centroid resolves to a Queensland LGA.
 - If an outage has no affected customer count, aggregation treats it as 0 but
@@ -78,6 +79,14 @@ ENERGEX_URLS = [
 ]
 
 ENERGEX_OUTAGE_MAP_URL = "https://www.energex.com.au/outages/outage-finder/outage-finder-map/"
+
+# Public ArcGIS FeatureServer backing the Energex outage map.
+# Prefer this over the energex.com.au filestore-proxy feeds because GitHub-hosted
+# Actions runners can receive 403 responses from the website API.
+ENERGEX_ARCGIS_LAYER_URL = (
+    "https://services.arcgis.com/bfVzktoY0OhzQCDj/"
+    "ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+)
 
 ERGON_LAYER_URL = (
     "https://services.arcgis.com/33eHbTVqo7gtiCE8/"
@@ -1401,7 +1410,106 @@ def parse_essential_kml(kml_text: str, source_url: str, timezone_name: str) -> L
 # Provider fetchers
 # --------------------------------------------------------------------------------------
 
+def fetch_energex_arcgis(timeout: int, debug: bool, user_agent: str) -> List[OutageRecord]:
+    """Fetch Energex outages from the public ArcGIS FeatureServer layer."""
+    oids, oid_field = arcgis_get_object_ids(
+        ENERGEX_ARCGIS_LAYER_URL,
+        where="1=1",
+        timeout=timeout,
+        user_agent=user_agent,
+    )
+    rows = arcgis_fetch_features_by_object_ids(
+        ENERGEX_ARCGIS_LAYER_URL,
+        oids,
+        where="1=1",
+        timeout=timeout,
+        chunk_size=250,
+        user_agent=user_agent,
+    )
+
+    records: List[OutageRecord] = []
+    sample_attrs: Optional[Dict[str, Any]] = None
+
+    for r in rows:
+        attrs = r.get("attributes") or {}
+        if not isinstance(attrs, dict):
+            continue
+        if sample_attrs is None and attrs:
+            sample_attrs = attrs
+
+        geom = esri_geometry_to_geojson(r.get("geometry"))
+        if geom is None:
+            continue
+
+        centroid_lon, centroid_lat = geometry_centroid(geom)
+        outage_type = infer_outage_type(attrs)
+        outage_id = (
+            as_str(first_present(attrs, [
+                "EVENT_ID", "INCIDENT_ID", "incidentId", "IncidentId", "incident_id",
+                "OUTAGE_ID", "outageId", "id", "ID",
+            ]))
+            or as_str(first_present(attrs, [oid_field, "OBJECTID"]))
+        )
+        start_utc = parse_epoch_any_to_utc_iso(first_present(attrs, [
+            "START", "START_TIME", "startTime", "startDateTime", "STARTDATE", "outageStart"
+        ]))
+        etr_utc = parse_epoch_any_to_utc_iso(first_present(attrs, [
+            "EST_FIX_TIME", "ETR", "etr", "END_TIME", "FINISH", "finish", "endTime",
+            "endDateTime", "estimatedRestoration"
+        ]))
+        suburb = as_str(first_present(attrs, ["SUBURB", "SUBURBS", "suburb", "suburbs"]))
+
+        outage_key = make_outage_key(
+            "au.qld.energex",
+            outage_id,
+            outage_type,
+            centroid_lon,
+            centroid_lat,
+            start_utc,
+            suburb,
+            attrs,
+        )
+
+        records.append(
+            OutageRecord(
+                provider_code="au.qld.energex",
+                provider_name="Energex",
+                outage_key=outage_key,
+                outage_id=outage_id,
+                outage_type=outage_type,
+                status=as_str(first_present(attrs, ["STATUS", "status"])),
+                reason=as_str(first_present(attrs, ["CAUSE", "cause", "REASON", "reason"])),
+                affected_customers=extract_customers_affected(attrs),
+                suburb=suburb,
+                street_name=as_str(first_present(attrs, ["STREET", "STREETS", "street", "streets", "streetName"])),
+                start_utc=start_utc,
+                etr_utc=etr_utc,
+                centroid_lon=centroid_lon,
+                centroid_lat=centroid_lat,
+                source_url=ENERGEX_ARCGIS_LAYER_URL,
+                geometry=geom,
+                raw=attrs,
+            )
+        )
+
+    if debug:
+        print(f"[DEBUG] Energex ArcGIS objectIds={len(oids)} rows={len(rows)} output_records={len(records)}", file=sys.stderr)
+        if sample_attrs:
+            print(f"[DEBUG] Energex ArcGIS sample keys={sorted(sample_attrs.keys())[:100]}", file=sys.stderr)
+
+    return dedupe_current_records(records)
+
+
 def fetch_energex(timeout: int, debug: bool, user_agent: str) -> List[OutageRecord]:
+    try:
+        return fetch_energex_arcgis(timeout=timeout, debug=debug, user_agent=user_agent)
+    except Exception as e:
+        if debug:
+            print(
+                f"[WARN] Energex ArcGIS fetch failed; falling back to website GeoJSON feeds: {type(e).__name__}: {e}",
+                file=sys.stderr,
+            )
+
     records: List[OutageRecord] = []
 
     for url in ENERGEX_URLS:
@@ -2190,7 +2298,8 @@ def run_pipeline(args: argparse.Namespace) -> int:
             "lga_lookup_cache_json": str(lga_cache_path),
         },
         "sources": {
-            "energex_urls": ENERGEX_URLS,
+            "energex_arcgis_layer_url": ENERGEX_ARCGIS_LAYER_URL,
+            "energex_website_fallback_urls": ENERGEX_URLS,
             "ergon_layer_url": ERGON_LAYER_URL,
             "essential_energy_kml_url": args.essential_url,
             "qld_lga_layer_url": QLD_LGA_LAYER_URL,
