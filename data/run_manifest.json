@@ -1,20 +1,22 @@
 {
-  "generated_utc": "2026-07-05T13:25:21Z",
-  "generated_aest": "2026-07-05T23:25:21+10:00",
+  "generated_utc": "2026-07-05T13:46:00Z",
+  "generated_aest": "2026-07-05T23:46:00+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 1,
+  "current_outage_records": 0,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 274,
-  "current_records_after_outage_type_filter": 4,
-  "current_records_dropped_planned_or_unknown": 270,
-  "provider_fetch_errors": {},
-  "provider_fetch_error_count": 0,
-  "current_energex_records": 1,
+  "current_records_before_outage_type_filter": 265,
+  "current_records_after_outage_type_filter": 2,
+  "current_records_dropped_planned_or_unknown": 263,
+  "provider_fetch_errors": {
+    "Energex": "HTTPError: 403 response for https://www.energex.com.au/api/outages-map/filestore-404/ex-map-current-unplanned/filestore-proxy?SQ_SESSION_MODE=read_only_async"
+  },
+  "provider_fetch_error_count": 1,
+  "current_energex_records": 0,
   "current_ergon_records": 0,
-  "current_essential_records_fetched": 3,
+  "current_essential_records_fetched": 2,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 3,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 2,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
   "snapshot_rows_48h": 1,
@@ -22,12 +24,12 @@
   "lga_totals_latest_rows": 2,
   "lga_cumulative_rows": 2,
   "outputs": {
-    "current_outages_geojson": "data\\current_outages.geojson",
-    "outage_snapshots_48h_csv": "data\\outage_snapshots_48h.csv",
-    "lga_totals_48h_csv": "data\\lga_totals_48h.csv",
-    "lga_totals_latest_csv": "data\\lga_totals_latest.csv",
-    "lga_cumulative_48h_csv": "data\\lga_cumulative_48h.csv",
-    "lga_lookup_cache_json": "data\\lga_lookup_cache.json"
+    "current_outages_geojson": "data/current_outages.geojson",
+    "outage_snapshots_48h_csv": "data/outage_snapshots_48h.csv",
+    "lga_totals_48h_csv": "data/lga_totals_48h.csv",
+    "lga_totals_latest_csv": "data/lga_totals_latest.csv",
+    "lga_cumulative_48h_csv": "data/lga_cumulative_48h.csv",
+    "lga_lookup_cache_json": "data/lga_lookup_cache.json"
   },
   "sources": {
     "energex_urls": [
