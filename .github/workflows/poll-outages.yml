@@ -1,6 +1,8 @@
 name: Poll QLD power outages
 
 on:
+  schedule:
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
