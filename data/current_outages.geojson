@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-06T21:45:27Z",
-        "snapshot_aest": "2026-07-07T07:45:27+10:00",
+        "snapshot_utc": "2026-07-06T22:01:04Z",
+        "snapshot_aest": "2026-07-07T08:01:04+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-968653-g",
@@ -83,6 +83,158 @@
         "lga_name": "Unmatched",
         "lga_code": null,
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.981928449989,
+              -27.5711302835269
+            ],
+            [
+              152.981369830043,
+              -27.5704917874086
+            ],
+            [
+              152.982697274047,
+              -27.568044637982
+            ],
+            [
+              152.983595192766,
+              -27.568020428924
+            ],
+            [
+              152.984396596313,
+              -27.5692949058561
+            ],
+            [
+              152.984434423571,
+              -27.569370629628
+            ],
+            [
+              152.984636555796,
+              -27.5699019091806
+            ],
+            [
+              152.984390309369,
+              -27.5704474362175
+            ],
+            [
+              152.983629727669,
+              -27.5707994477912
+            ],
+            [
+              152.983498842811,
+              -27.5708408986643
+            ],
+            [
+              152.981928449989,
+              -27.5711302835269
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-06T22:01:04Z",
+        "snapshot_aest": "2026-07-07T08:01:04+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-968740-g",
+        "outage_id": "INCD-968740-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Under Investigation",
+        "affected_customers": 16,
+        "affected_customers_known": true,
+        "suburb": "OXLEY",
+        "street_name": "BOUNDARY RD, FACTORY RD",
+        "start_utc": "2026-07-06T21:53:46Z",
+        "etr_utc": "2026-07-07T01:00:00Z",
+        "centroid_lon": 152.98304205387112,
+        "centroid_lat": -27.569683600543613,
+        "lga_name": "Brisbane City",
+        "lga_code": "1000",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.010701564045,
+              -26.6833260273827
+            ],
+            [
+              152.010373998861,
+              -26.6827657997247
+            ],
+            [
+              152.010993817877,
+              -26.6824650954907
+            ],
+            [
+              152.013443674393,
+              -26.6831084959815
+            ],
+            [
+              152.013469583932,
+              -26.6831159923263
+            ],
+            [
+              152.013697901893,
+              -26.6831882569275
+            ],
+            [
+              152.013705877109,
+              -26.6831908495169
+            ],
+            [
+              152.014705825842,
+              -26.683524534399
+            ],
+            [
+              152.015005084093,
+              -26.6840929443392
+            ],
+            [
+              152.01437971488,
+              -26.684375381698
+            ],
+            [
+              152.010701564045,
+              -26.6833260273827
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-06T22:01:04Z",
+        "snapshot_aest": "2026-07-07T08:01:04+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902156",
+        "outage_id": "902156",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 5,
+        "affected_customers_known": true,
+        "suburb": null,
+        "street_name": null,
+        "start_utc": null,
+        "etr_utc": null,
+        "centroid_lon": 152.0126986898741,
+        "centroid_lat": -26.683411033189387,
+        "lga_name": "South Burnett Regional",
+        "lga_code": "6630",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
