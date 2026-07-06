@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-06T19:15:30Z",
-        "snapshot_aest": "2026-07-07T05:15:30+10:00",
+        "snapshot_utc": "2026-07-06T19:34:00Z",
+        "snapshot_aest": "2026-07-07T05:34:00+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-968653-g",
@@ -83,6 +83,98 @@
         "lga_name": "Unmatched",
         "lga_code": null,
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              139.90881037702,
+              -22.9110350716246
+            ],
+            [
+              139.908709665858,
+              -22.9106091358352
+            ],
+            [
+              139.908919710827,
+              -22.9099611079213
+            ],
+            [
+              139.909227508426,
+              -22.9096653718132
+            ],
+            [
+              139.9107442607,
+              -22.9091869318945
+            ],
+            [
+              139.910861088675,
+              -22.9091644610603
+            ],
+            [
+              139.91317471099,
+              -22.9089899413483
+            ],
+            [
+              139.913698329217,
+              -22.9094286053965
+            ],
+            [
+              139.91371430144,
+              -22.9102013575168
+            ],
+            [
+              139.913496876125,
+              -22.9105844317131
+            ],
+            [
+              139.91125370968,
+              -22.911956303524
+            ],
+            [
+              139.911060240862,
+              -22.9120253665201
+            ],
+            [
+              139.910170844414,
+              -22.9121516782532
+            ],
+            [
+              139.909734221528,
+              -22.9120050182038
+            ],
+            [
+              139.90881037702,
+              -22.9110350716246
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-06T19:34:00Z",
+        "snapshot_aest": "2026-07-07T05:34:00+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902131",
+        "outage_id": "902131",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 26,
+        "affected_customers_known": true,
+        "suburb": null,
+        "street_name": null,
+        "start_utc": null,
+        "etr_utc": null,
+        "centroid_lon": 139.91116843685336,
+        "centroid_lat": -22.91044437705115,
+        "lga_name": "Boulia Shire",
+        "lga_code": "900",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
