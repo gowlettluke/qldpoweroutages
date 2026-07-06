@@ -47,8 +47,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-06T01:30:55Z",
-        "snapshot_aest": "2026-07-06T11:30:55+10:00",
+        "snapshot_utc": "2026-07-06T01:45:30Z",
+        "snapshot_aest": "2026-07-06T11:45:30+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|901895",
@@ -195,8 +195,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-06T01:30:55Z",
-        "snapshot_aest": "2026-07-06T11:30:55+10:00",
+        "snapshot_utc": "2026-07-06T01:45:30Z",
+        "snapshot_aest": "2026-07-06T11:45:30+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|901900",
@@ -214,6 +214,122 @@
         "centroid_lat": -16.92397562225805,
         "lga_name": "Cairns Regional",
         "lga_code": "2080",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.137956654883,
+              -25.6796664246935
+            ],
+            [
+              146.137890969484,
+              -25.6792485155454
+            ],
+            [
+              146.385514198773,
+              -25.0512151461921
+            ],
+            [
+              146.385595786119,
+              -25.0510828493802
+            ],
+            [
+              146.423943625937,
+              -25.0079236694962
+            ],
+            [
+              146.424070493757,
+              -25.0078223960376
+            ],
+            [
+              146.426252425873,
+              -25.0066077803927
+            ],
+            [
+              146.426314199263,
+              -25.0065786083714
+            ],
+            [
+              146.643796163114,
+              -24.920725883722
+            ],
+            [
+              146.644051639193,
+              -24.9206917002617
+            ],
+            [
+              146.700735914696,
+              -24.926813499372
+            ],
+            [
+              146.700766742826,
+              -24.9268177237546
+            ],
+            [
+              147.282551145493,
+              -25.0224946494388
+            ],
+            [
+              147.282797604255,
+              -25.0226051092928
+            ],
+            [
+              147.530847831443,
+              -25.2275594619327
+            ],
+            [
+              147.530925790221,
+              -25.228146993809
+            ],
+            [
+              146.799834926717,
+              -26.2020030364885
+            ],
+            [
+              146.799206699943,
+              -26.202155732805
+            ],
+            [
+              146.430165240964,
+              -26.0429329007424
+            ],
+            [
+              146.429977582939,
+              -26.042791851125
+            ],
+            [
+              146.137956654883,
+              -25.6796664246935
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-06T01:45:30Z",
+        "snapshot_aest": "2026-07-06T11:45:30+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|901902",
+        "outage_id": "901902",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 398,
+        "affected_customers_known": true,
+        "suburb": null,
+        "street_name": null,
+        "start_utc": null,
+        "etr_utc": null,
+        "centroid_lon": 146.77773803535274,
+        "centroid_lat": -25.489460280047158,
+        "lga_name": "Unmatched",
+        "lga_code": null,
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
