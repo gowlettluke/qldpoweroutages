@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-06T06:15:30Z",
-        "snapshot_aest": "2026-07-06T16:15:30+10:00",
+        "snapshot_utc": "2026-07-06T06:31:00Z",
+        "snapshot_aest": "2026-07-06T16:31:00+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-968624-g",
@@ -203,8 +203,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-06T06:15:30Z",
-        "snapshot_aest": "2026-07-06T16:15:30+10:00",
+        "snapshot_utc": "2026-07-06T06:31:00Z",
+        "snapshot_aest": "2026-07-06T16:31:00+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-968557-g",
@@ -217,7 +217,7 @@
         "suburb": "SURFERS PARADISE",
         "street_name": "BURRA ST, DALPURA ST, KALYAN ST, PARNENO ST, STANHILL DR",
         "start_utc": "2026-07-06T02:22:25Z",
-        "etr_utc": "2026-07-06T07:00:00Z",
+        "etr_utc": "2026-07-06T09:00:00Z",
         "centroid_lon": 153.42028895542552,
         "centroid_lat": -27.994971327092003,
         "lga_name": "Gold Coast City",
@@ -287,14 +287,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-06T06:15:30Z",
-        "snapshot_aest": "2026-07-06T16:15:30+10:00",
+        "snapshot_utc": "2026-07-06T06:31:00Z",
+        "snapshot_aest": "2026-07-06T16:31:00+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-968561-g",
         "outage_id": "INCD-968561-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Trees on powerlines",
         "affected_customers": 18,
         "affected_customers_known": true,
@@ -307,6 +307,106 @@
         "lga_name": "Gold Coast City",
         "lga_code": "3430",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.682591260584,
+              -17.1103138908252
+            ],
+            [
+              145.682934090636,
+              -17.1096295212776
+            ],
+            [
+              145.705470491223,
+              -17.1069366724752
+            ],
+            [
+              145.705847169529,
+              -17.1070530467171
+            ],
+            [
+              145.745474923983,
+              -17.1422174674774
+            ],
+            [
+              145.745531986432,
+              -17.1428209740006
+            ],
+            [
+              145.745002835865,
+              -17.1434982131
+            ],
+            [
+              145.744891759105,
+              -17.143600201275
+            ],
+            [
+              145.726888127947,
+              -17.1553961693953
+            ],
+            [
+              145.726517701549,
+              -17.1554630358791
+            ],
+            [
+              145.712618098998,
+              -17.1523767038203
+            ],
+            [
+              145.712346351722,
+              -17.152205582342
+            ],
+            [
+              145.698736377464,
+              -17.1345582696314
+            ],
+            [
+              145.698727473052,
+              -17.134546321015
+            ],
+            [
+              145.692622384236,
+              -17.1260655814453
+            ],
+            [
+              145.69260802134,
+              -17.1260443840604
+            ],
+            [
+              145.682591260584,
+              -17.1103138908252
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-06T06:31:00Z",
+        "snapshot_aest": "2026-07-06T16:31:00+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|901908",
+        "outage_id": "901908",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 138,
+        "affected_customers_known": true,
+        "suburb": null,
+        "street_name": null,
+        "start_utc": null,
+        "etr_utc": null,
+        "centroid_lon": 145.7137421841648,
+        "centroid_lat": -17.131250431526965,
+        "lga_name": "Cairns Regional",
+        "lga_code": "2080",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
