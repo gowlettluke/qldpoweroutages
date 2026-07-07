@@ -1797,6 +1797,9 @@ def point_in_geojson_geometry(lon: float, lat: float, geom: Optional[Dict[str, A
     return False
 
 
+INVALID_LGA_NAMES = {"LOCAL GOVERNMENT", "LOCAL GOVERNMENT AREA"}
+
+
 def first_lga_property(props: Dict[str, Any], keys: Iterable[str]) -> Optional[str]:
     lower_map = {str(k).lower(): v for k, v in props.items()}
     for key in keys:
@@ -1810,8 +1813,41 @@ def first_lga_property(props: Dict[str, Any], keys: Iterable[str]) -> Optional[s
     return None
 
 
+def is_valid_lga_name(value: Optional[str]) -> bool:
+    return bool(value and value.strip().upper() not in INVALID_LGA_NAMES)
+
+
+def kml_description_properties(pm: ET.Element, ns: Dict[str, str]) -> Dict[str, Any]:
+    description = find_kml_text(pm, "kml:description", ns) or ""
+    if not description:
+        return {}
+
+    rows = re.findall(r"<tr[^>]*>\s*<td[^>]*>(.*?)</td>\s*<td[^>]*>(.*?)</td>\s*</tr>", description, flags=re.I | re.S)
+    props: Dict[str, Any] = {}
+    for key, value in rows:
+        clean_key = html.unescape(re.sub(r"<[^>]+>", "", key)).strip()
+        clean_value = html.unescape(re.sub(r"<[^>]+>", "", value)).strip()
+        if clean_key and clean_value:
+            props[clean_key] = clean_value
+    return props
+
+
+def first_valid_lga_property(props: Dict[str, Any], keys: Iterable[str]) -> Optional[str]:
+    lower_map = {str(k).lower(): v for k, v in props.items()}
+    for key in keys:
+        candidates = []
+        if key in props:
+            candidates.append(props.get(key))
+        candidates.append(lower_map.get(key.lower()))
+        for candidate in candidates:
+            value = as_str(candidate)
+            if is_valid_lga_name(value):
+                return value
+    return None
+
+
 def local_lga_from_properties(props: Dict[str, Any], fallback_name: Optional[str] = None) -> Tuple[Optional[str], Optional[str]]:
-    lga_name = first_lga_property(props, [
+    lga_name = first_valid_lga_property(props, [
         "lga",
         "lga_name",
         "LGA_NAME",
@@ -1823,7 +1859,10 @@ def local_lga_from_properties(props: Dict[str, Any], fallback_name: Optional[str
         "ADMIN_TYPENAME",
         "name",
         "NAME",
-    ]) or as_str(fallback_name)
+    ])
+    fallback = as_str(fallback_name)
+    if not lga_name and is_valid_lga_name(fallback):
+        lga_name = fallback
     lga_code = first_lga_property(props, [
         "lga_code",
         "LGA_CODE",
@@ -1903,6 +1942,11 @@ def load_local_lga_boundaries_kml(path: Path) -> List[LocalLgaBoundary]:
     for pm in root.findall(".//kml:Placemark", ns):
         name = find_kml_text(pm, "kml:name", ns)
         props = kml_extended_properties(pm)
+        # ArcGIS-exported KMZ files often store attributes only in the HTML
+        # description table, while every Placemark <name> is the generic
+        # layer label ("LOCAL GOVERNMENT"). Parse that table so we keep the
+        # actual LGA name, e.g. "Noosa Shire", instead of the layer heading.
+        props.update(kml_description_properties(pm, ns))
         polygons: List[Dict[str, Any]] = []
         for poly in pm.findall(".//kml:Polygon", ns):
             ring = poly.find(".//kml:outerBoundaryIs/kml:LinearRing/kml:coordinates", ns)
@@ -1969,7 +2013,7 @@ def load_lga_cache(cache_path: Path) -> Dict[str, Dict[str, Optional[str]]]:
                     # coordinate. Keep only positive matches so current outages
                     # with a stale negative cache entry are retried on the next
                     # run.
-                    if lga_name:
+                    if is_valid_lga_name(lga_name):
                         out[k] = {
                             "lga_name": lga_name,
                             "lga_code": as_str(v.get("lga_code")),
@@ -2056,7 +2100,7 @@ def lookup_lga_for_point(
 
     if local_boundaries:
         lga_name, lga_code = lookup_lga_in_local_boundaries(lon, lat, local_boundaries)
-        if lga_name:
+        if is_valid_lga_name(lga_name):
             cache[key] = {"lga_name": lga_name, "lga_code": lga_code}
             return lga_name, lga_code
 
@@ -2086,8 +2130,9 @@ def lookup_lga_for_point(
                     or as_str(attrs.get("admintypename"))
                 )
                 lga_code = as_str(attrs.get("lga_code"))
-                cache[key] = {"lga_name": lga_name, "lga_code": lga_code}
-                return lga_name, lga_code
+                if is_valid_lga_name(lga_name):
+                    cache[key] = {"lga_name": lga_name, "lga_code": lga_code}
+                    return lga_name, lga_code
     except Exception:
         # LGA lookup failure should not fail the whole outage pipeline, but it
         # must also not be cached as a permanent miss. Retry on the next run.
