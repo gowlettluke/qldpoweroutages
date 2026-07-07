@@ -5,512 +5,248 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Queensland Unplanned Power Outages — Situation Board</title>
   <style>
+
     :root {
+      color-scheme: light;
+      --bg: #f5f5f5;
+      --panel: #ffffff;
+      --panel2: #fafafa;
+      --panel3: #f1f1f1;
+      --line: #d7d7d7;
+      --line-strong: #b9b9b9;
+      --soft: #ececec;
+      --text: #1f1f1f;
+      --muted: #666666;
+      --muted-2: #8a8a8a;
+      --accent: #d92c32;
+      --accent-dark: #b42318;
+      --accentSoft: #fdecea;
+      --accentSoft2: #f8d9dd;
+      --accentBorder: #e5a7ad;
+      --blue: #1664d6;
+      --blueSoft: #eaf2ff;
+      --green: #15803d;
+      --greenSoft: #e8f6ee;
+      --amber: #d97706;
+      --amberSoft: #fff7e6;
+      --danger: #b42318;
+      --shadow: 0 1px 2px rgba(0,0,0,.08);
+      --radius: 0px;
+      --radius-sm: 0px;
+      --header-h: 126px;
+    }
+
+    body.night-mode {
       color-scheme: dark;
-      --bg: #06101e;
-      --bg-2: #0a1627;
-      --panel: rgba(16, 28, 48, 0.92);
-      --panel-solid: #101c30;
-      --panel-2: #14243d;
-      --panel-3: #1a2d4b;
-      --line: rgba(132, 157, 191, 0.24);
-      --line-strong: rgba(151, 180, 220, 0.38);
-      --text: #f4f8ff;
-      --muted: #9db0c9;
-      --muted-2: #72849e;
-      --blue: #66d4ff;
-      --green: #8ee6a8;
-      --amber: #ffd166;
-      --orange: #ffab6c;
-      --red: #ff6b6b;
-      --purple: #c8a7ff;
-      --shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
-      --radius: 22px;
-      --radius-sm: 14px;
-      --header-h: 122px;
+      --bg: #12161d;
+      --panel: #1b2028;
+      --panel2: #171b22;
+      --panel3: #242b35;
+      --line: #303743;
+      --line-strong: #4a5566;
+      --soft: #242b35;
+      --text: #d7dce3;
+      --muted: #9aa4b1;
+      --muted-2: #7f8a99;
+      --accent: #ff6b72;
+      --accent-dark: #ff8b83;
+      --accentSoft: #3f2529;
+      --accentSoft2: #2f2226;
+      --accentBorder: #6a3b42;
+      --blue: #6ea8ff;
+      --blueSoft: #1f3552;
+      --green: #4ade80;
+      --greenSoft: #173422;
+      --amber: #fbbf24;
+      --amberSoft: #332711;
+      --danger: #ff8b83;
+      --shadow: 0 1px 2px rgba(0,0,0,.35);
     }
 
     * { box-sizing: border-box; }
-
     html, body { min-height: 100%; }
-
     body {
       margin: 0;
       min-height: 100vh;
-      background:
-        radial-gradient(circle at 18% 4%, rgba(102, 212, 255, 0.16), transparent 32rem),
-        radial-gradient(circle at 88% 2%, rgba(142, 230, 168, 0.10), transparent 30rem),
-        linear-gradient(180deg, #06101e 0%, #081325 44%, #050b16 100%);
+      background: var(--bg);
       color: var(--text);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
       overflow-x: hidden;
     }
 
     a { color: var(--blue); }
     button, select, input { font: inherit; }
-    code { color: #cae8ff; }
-
-    .shell {
-      width: min(1900px, calc(100vw - 28px));
-      margin: 0 auto;
-      padding: 14px 0 18px;
-    }
+    code { color: var(--accent-dark); }
+    .shell { width: min(1900px, calc(100vw - 28px)); margin: 0 auto; padding: 12px 0 16px; }
 
     .topbar {
-      min-height: 72px;
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) auto;
-      align-items: start;
-      gap: 20px;
-      padding: 4px 2px 12px;
-    }
-
-    .title-block h1 {
-      margin: 0;
-      font-size: clamp(1.8rem, 2.35vw, 3.15rem);
-      line-height: 1;
-      letter-spacing: -0.055em;
-      font-weight: 850;
-    }
-
-    .title-block p {
-      margin: 8px 0 0;
-      color: var(--muted);
-      font-size: clamp(0.9rem, 0.95vw, 1.12rem);
-      max-width: 980px;
-    }
-
-    .status-strip {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 8px;
-      max-width: 980px;
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      min-height: 34px;
-      padding: 7px 11px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(14, 27, 47, 0.82);
-      color: var(--muted);
-      font-size: 0.86rem;
-      white-space: nowrap;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
-    }
-
-    .pill strong { color: var(--text); font-weight: 780; }
-    .pill.ok { color: #d5f7df; border-color: rgba(142, 230, 168, 0.42); background: rgba(45, 130, 83, 0.14); }
-    .pill.warn { color: #ffe9b6; border-color: rgba(255, 209, 102, 0.52); background: rgba(255, 209, 102, 0.11); }
-    .pill.danger { color: #ffd1d1; border-color: rgba(255, 107, 107, 0.58); background: rgba(255, 107, 107, 0.12); }
-    .pill.info { color: #d7efff; border-color: rgba(102, 212, 255, 0.44); background: rgba(102, 212, 255, 0.10); }
-
-    .nav-row {
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
-      gap: 12px;
-      align-items: center;
-      padding: 8px;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 10px;
+      padding: 12px 14px;
+      background: var(--panel);
       border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(9, 20, 36, 0.82);
+      border-left: 7px solid var(--accent);
       box-shadow: var(--shadow);
-      margin-bottom: 14px;
-      backdrop-filter: blur(18px);
     }
+    .title-block h1 { margin: 0; font-size: clamp(1.75rem, 2.45vw, 3.1rem); line-height: .98; letter-spacing: -.04em; font-weight: 800; color: var(--text); }
+    .title-block p { margin: 7px 0 0; color: var(--muted); font-size: clamp(.86rem, .92vw, 1.05rem); max-width: 1050px; }
 
-    .tabs {
-      display: flex;
-      gap: 7px;
-      flex-wrap: wrap;
-      min-width: 0;
-    }
+    .status-strip { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:6px; max-width: 980px; }
+    .pill { display:inline-flex; align-items:center; gap:6px; min-height:28px; padding:5px 8px; border:1px solid var(--line); border-radius:3px; background:var(--panel2); color:var(--muted); font-size:.82rem; white-space:nowrap; }
+    .pill strong { color:var(--text); font-weight:700; }
+    .pill.ok { color:var(--green); border-color:rgba(21,128,61,.32); background:var(--greenSoft); }
+    .pill.warn { color:var(--amber); border-color:rgba(217,119,6,.38); background:var(--amberSoft); }
+    .pill.danger { color:var(--danger); border-color:var(--accentBorder); background:var(--accentSoft); }
+    .pill.info { color:var(--blue); border-color:#cfe0ff; background:var(--blueSoft); }
+    body.night-mode .pill.info { border-color:#334967; }
 
-    .tab-btn, .control-btn {
-      border: 1px solid transparent;
-      background: transparent;
-      color: var(--muted);
-      border-radius: 999px;
-      padding: 10px 14px;
-      cursor: pointer;
-      min-height: 42px;
-      transition: border-color 0.16s ease, color 0.16s ease, background 0.16s ease;
-    }
+    .nav-row { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:8px; align-items:center; padding:7px; margin-bottom:12px; background:var(--panel); border:1px solid var(--line); box-shadow:var(--shadow); }
+    .tabs { display:flex; gap:5px; flex-wrap:wrap; min-width:0; }
+    .tab-btn, .control-btn { min-height:30px; border:1px solid var(--line); border-radius:3px; background:var(--panel); color:var(--muted); padding:0 10px; cursor:pointer; white-space:nowrap; }
+    .tab-btn:hover, .control-btn:hover { background:var(--panel2); color:var(--text); }
+    .tab-btn.active, .control-btn.active, #themeToggleBtn.active { background:var(--accentSoft2); border-color:var(--accentBorder); color:var(--accent-dark); font-weight:700; }
+    .rotation-controls { display:flex; align-items:center; gap:6px; color:var(--muted); white-space:nowrap; font-size:.84rem; }
 
-    .tab-btn:hover, .control-btn:hover { color: var(--text); background: rgba(255,255,255,0.04); }
-    .tab-btn.active {
-      color: var(--text);
-      border-color: rgba(102, 212, 255, 0.52);
-      background: linear-gradient(180deg, rgba(102, 212, 255, 0.18), rgba(102, 212, 255, 0.08));
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
-    }
+    .view { display:none; min-height:calc(100vh - var(--header-h)); }
+    .view.active { display:block; }
+    .grid { display:grid; gap:10px; }
+    .metric-grid { grid-template-columns:repeat(5,minmax(0,1fr)); margin-bottom:10px; }
+    .metric-grid.four { grid-template-columns:repeat(4,minmax(0,1fr)); }
+    .metric-grid.six { grid-template-columns:repeat(6,minmax(0,1fr)); }
 
-    .rotation-controls {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--muted);
-      white-space: nowrap;
-      font-size: 0.88rem;
-    }
+    .metric { position:relative; min-height:122px; padding:13px 14px 12px; background:var(--panel); border:1px solid var(--line); border-top:4px solid var(--accent); box-shadow:var(--shadow); overflow:hidden; }
+    .metric .label { color:var(--muted); font-weight:700; font-size:.76rem; text-transform:uppercase; letter-spacing:.055em; }
+    .metric .value { margin-top:10px; font-size:clamp(1.8rem, 2.55vw, 3rem); line-height:.95; letter-spacing:-.045em; font-weight:800; color:var(--text); }
+    .metric .value.place { font-size:clamp(1.25rem, 1.45vw, 1.8rem); line-height:1.05; letter-spacing:-.025em; }
+    .metric .detail { margin-top:9px; color:var(--muted); line-height:1.3; font-size:.88rem; }
 
-    .control-btn {
-      border-color: var(--line);
-      background: rgba(20, 36, 61, 0.72);
-      padding-inline: 12px;
-    }
+    .panel { background:var(--panel); border:1px solid var(--line); box-shadow:var(--shadow); overflow:hidden; }
+    .panel-header { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; padding:10px 12px; border-bottom:1px solid var(--line); background:var(--panel2); }
+    .panel-title h2, .panel-header h2 { margin:0; font-size:1.04rem; line-height:1.12; font-weight:800; color:var(--text); }
+    .panel-title p, .panel-header p { margin:4px 0 0; color:var(--muted); font-size:.82rem; line-height:1.25; }
+    .panel-body { padding:12px; }
 
-    .control-btn.active {
-      color: var(--text);
-      border-color: rgba(142, 230, 168, 0.48);
-      background: rgba(142, 230, 168, 0.12);
-    }
+    .overview-layout { grid-template-columns:minmax(0,1.52fr) minmax(360px,.48fr); margin-bottom:10px; }
+    .side-stack { display:grid; gap:10px; }
+    .bottom-row { grid-template-columns:1fr 1fr 1fr; }
+    .lga-layout { grid-template-columns:minmax(0,1.15fr) minmax(430px,.85fr); margin-bottom:10px; }
+    .provider-layout { grid-template-columns:1fr 1fr; }
+    .outage-layout { grid-template-columns:minmax(0,1.55fr) minmax(360px,.45fr); }
+    .trend-layout { grid-template-columns:1fr 1fr; }
 
-    .view {
-      display: none;
-      min-height: calc(100vh - var(--header-h));
-      animation: viewIn 220ms ease-out;
-    }
+    .legend { display:flex; gap:10px; flex-wrap:wrap; align-items:center; color:var(--muted); font-size:.82rem; }
+    .legend span { display:inline-flex; align-items:center; gap:5px; }
+    .swatch { width:20px; height:3px; display:inline-block; background:var(--accent); }
+    .swatch.customers { background:var(--accent); }
+    .swatch.incidents { background:var(--blue); }
+    .swatch.peak { background:var(--green); }
 
-    .view.active { display: block; }
+    .chart-wrap { width:100%; min-height:330px; }
+    .chart-wrap.large { min-height:420px; }
+    svg.chart { width:100%; height:330px; display:block; }
+    svg.chart.large { height:420px; }
+    .axis, .grid-line { stroke: color-mix(in srgb, var(--muted) 28%, transparent); stroke-width:1; }
+    .axis-label { fill:var(--muted); font-size:12px; }
+    .axis-label.strong { fill:var(--text); font-weight:700; }
+    .series-customers { fill:none; stroke:var(--accent); stroke-width:3; stroke-linejoin:round; stroke-linecap:round; }
+    .series-incidents { fill:none; stroke:var(--blue); stroke-width:2.5; stroke-linejoin:round; stroke-linecap:round; opacity:.9; }
+    .point-customers { fill:var(--accent); stroke:var(--panel); stroke-width:2; }
+    .point-incidents { fill:var(--blue); stroke:var(--panel); stroke-width:2; }
+    .peak-marker { fill:var(--green); stroke:var(--panel); stroke-width:2; }
 
-    @keyframes viewIn {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    .rank-row { display:grid; grid-template-columns:28px minmax(0,1fr) auto; gap:10px; align-items:center; padding:8px 0; border-bottom:1px solid var(--soft); }
+    .rank-row:last-child { border-bottom:0; }
+    .rank { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; border-radius:3px; background:var(--accentSoft); color:var(--accent-dark); font-weight:800; font-size:.78rem; }
+    .rank-title strong { display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .rank-title small, .rank-value small { display:block; color:var(--muted); font-size:.74rem; margin-top:2px; }
+    .rank-value { text-align:right; font-weight:800; min-width:74px; color:var(--text); }
+    .bar-track, .provider-track, .reason-bar, .status-bar { height:7px; background:var(--soft); border:1px solid var(--line); margin-top:5px; overflow:hidden; }
+    .bar-fill, .provider-fill, .reason-fill, .status-fill { height:100%; background:linear-gradient(90deg,var(--accent),var(--accent-dark)); }
+    body.night-mode .bar-fill, body.night-mode .provider-fill, body.night-mode .reason-fill, body.night-mode .status-fill { background:linear-gradient(90deg,var(--accent),#ff9aa0); }
 
-    .grid { display: grid; gap: 14px; }
-    .metric-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); margin-bottom: 14px; }
-    .metric-grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .metric-grid.six { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    .insight-card { border:1px solid var(--line); border-left:5px solid var(--accent); background:var(--panel2); padding:10px; margin-bottom:10px; }
+    .insight-card strong { display:block; font-size:.95rem; }
+    .insight-card p { margin:7px 0 0; color:var(--muted); line-height:1.4; }
+    .kpi-line { display:flex; justify-content:space-between; gap:10px; align-items:center; padding:8px 0; border-bottom:1px solid var(--soft); }
+    .kpi-line:last-child { border-bottom:0; }
+    .kpi-line span { color:var(--muted); }
+    .kpi-line strong { text-align:right; }
 
-    .metric {
-      position: relative;
-      min-height: 142px;
-      padding: 17px 18px 16px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background:
-        linear-gradient(180deg, rgba(26, 45, 75, 0.94), rgba(13, 24, 42, 0.94));
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
+    .provider-bars { display:grid; gap:8px; }
+    .provider-row, .reason-row, .status-row { display:grid; grid-template-columns:minmax(160px,.45fr) minmax(140px,1fr) minmax(90px,.25fr); gap:10px; align-items:center; padding:8px; border:1px solid var(--line); background:var(--panel2); }
+    .provider-row small, .reason-row .muted, .status-row .muted { display:block; color:var(--muted); margin-top:3px; }
+    .provider-value { text-align:right; white-space:nowrap; }
 
-    .metric::after {
-      content: "";
-      position: absolute;
-      inset: auto 16px 0 16px;
-      height: 3px;
-      border-radius: 99px 99px 0 0;
-      background: linear-gradient(90deg, rgba(102, 212, 255, 0.8), rgba(142, 230, 168, 0.75));
-      opacity: 0.7;
-    }
+    .band-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+    .band { background:var(--panel2); border:1px solid var(--line); border-top:3px solid var(--accent); padding:10px; }
+    .band-label { color:var(--muted); font-weight:700; text-transform:uppercase; font-size:.72rem; letter-spacing:.055em; }
+    .band-value { margin-top:6px; font-size:2.1rem; line-height:1; font-weight:800; }
+    .band-desc { margin-top:6px; color:var(--muted); font-size:.8rem; }
 
-    .metric.warn::after { background: linear-gradient(90deg, var(--amber), var(--orange)); }
-    .metric.danger::after { background: linear-gradient(90deg, var(--orange), var(--red)); }
-    .metric.neutral::after { background: rgba(157,176,201,0.45); }
+    .lga-distribution { display:grid; gap:12px; }
+    .distribution-header { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:12px; align-items:center; border:1px solid var(--line); border-left:5px solid var(--accent); padding:10px; background:var(--panel2); }
+    .distribution-header strong { font-size:1rem; }
+    .distribution-header small { display:block; margin-top:3px; color:var(--muted); }
+    .distribution-total { text-align:right; font-weight:800; font-size:1.2rem; white-space:nowrap; }
+    .lga-card-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+    .lga-focus-card { min-height:110px; padding:10px; border:1px solid var(--line); background:var(--panel); border-top:3px solid var(--accent); }
+    .lga-focus-card .focus-rank { color:var(--accent-dark); font-weight:800; font-size:.78rem; text-transform:uppercase; }
+    .lga-focus-card strong { display:block; margin-top:5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:.95rem; }
+    .lga-focus-card .focus-value { margin-top:8px; font-size:1.65rem; font-weight:800; line-height:1; }
+    .lga-focus-card .focus-meta { color:var(--muted); margin-top:5px; font-size:.78rem; line-height:1.25; }
+    .period-comparison { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+    .mini-list { border:1px solid var(--line); background:var(--panel2); padding:10px; }
+    .mini-list h3 { margin:0 0 8px; font-size:.92rem; }
+    .mini-list-row { display:grid; grid-template-columns:1fr auto; gap:8px; padding:6px 0; border-bottom:1px solid var(--soft); }
+    .mini-list-row:last-child { border-bottom:0; }
+    .mini-list-row span { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mini-list-row strong { text-align:right; }
 
-    .metric .label {
-      color: var(--muted);
-      font-size: clamp(0.72rem, 0.76vw, 0.88rem);
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.085em;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+    .table-wrap { overflow:auto; max-height:580px; }
+    table { width:100%; border-collapse:collapse; font-size:.9rem; }
+    th, td { padding:9px 9px; border-bottom:1px solid var(--soft); text-align:left; vertical-align:top; }
+    th { position:sticky; top:0; z-index:1; background:var(--panel3); color:var(--text); font-size:.72rem; text-transform:uppercase; letter-spacing:.055em; white-space:nowrap; }
+    tbody tr:hover { background:var(--panel2); }
+    td.num, th.num, .num { text-align:right; font-variant-numeric:tabular-nums; }
+    .muted { color:var(--muted); }
+    .nowrap { white-space:nowrap; }
+    .ellipsis { max-width:260px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .empty { color:var(--muted); padding:18px; text-align:center; }
 
-    .metric .value {
-      margin-top: 14px;
-      font-size: clamp(2.05rem, 3.05vw, 4rem);
-      line-height: 0.92;
-      font-weight: 880;
-      letter-spacing: -0.065em;
-      font-variant-numeric: tabular-nums;
-    }
+    .sparkline { width:240px; height:48px; display:block; }
+    .spark-area { fill:var(--accentSoft); opacity:.8; }
+    .spark-path { fill:none; stroke:var(--accent); stroke-width:2.5; }
 
-    .metric .value.place {
-      font-size: clamp(1.35rem, 2vw, 2.55rem);
-      letter-spacing: -0.04em;
-      line-height: 1.02;
-    }
-
-    .metric .detail {
-      margin-top: 12px;
-      color: var(--muted);
-      font-size: clamp(0.82rem, 0.86vw, 0.98rem);
-      line-height: 1.35;
-    }
-
-    .panel {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: linear-gradient(180deg, rgba(16, 28, 48, 0.94), rgba(10, 20, 36, 0.94));
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      min-width: 0;
-    }
-
-    .panel-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 14px;
-      padding: 15px 17px 12px;
-      border-bottom: 1px solid var(--line);
-      background: rgba(6, 16, 30, 0.36);
-    }
-
-    .panel-title h2 {
-      margin: 0;
-      font-size: clamp(1.02rem, 1.05vw, 1.32rem);
-      letter-spacing: -0.025em;
-      line-height: 1.15;
-    }
-
-    .panel-title p, .note {
-      margin: 5px 0 0;
-      color: var(--muted);
-      font-size: 0.84rem;
-      line-height: 1.35;
-    }
-
-    .panel-body { padding: 15px 17px 17px; }
-
-    .overview-layout {
-      grid-template-columns: minmax(0, 1.55fr) minmax(360px, 0.75fr);
-      align-items: stretch;
-      margin-bottom: 14px;
-    }
-
-    .side-stack { display: grid; gap: 14px; grid-template-rows: 1fr auto; }
-    .bottom-row { grid-template-columns: 0.92fr 1.08fr 1fr; }
-    .lga-layout { grid-template-columns: minmax(0, 1.15fr) minmax(480px, 0.85fr); }
-    .provider-layout { grid-template-columns: minmax(0, 1.05fr) minmax(420px, 0.95fr); }
-    .outage-layout { grid-template-columns: minmax(0, 1.35fr) minmax(390px, 0.65fr); }
-    .trend-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-
-    .chart-wrap { width: 100%; min-height: 330px; }
-    .chart-wrap.large { min-height: 440px; }
-    svg.chart { width: 100%; height: 330px; display: block; }
-    svg.chart.large { height: 440px; }
-    .axis, .grid-line { stroke: rgba(157, 176, 201, 0.20); stroke-width: 1; }
-    .axis-label { fill: var(--muted); font-size: 12px; font-weight: 650; }
-    .axis-label.strong { fill: #d8e8fb; }
-    .series-customers { fill: none; stroke: var(--blue); stroke-width: 3.5; stroke-linejoin: round; stroke-linecap: round; filter: drop-shadow(0 0 8px rgba(102,212,255,0.16)); }
-    .series-incidents { fill: none; stroke: var(--green); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; opacity: 0.88; }
-    .point-customers { fill: var(--blue); stroke: #06101e; stroke-width: 2; }
-    .point-incidents { fill: var(--green); stroke: #06101e; stroke-width: 2; }
-    .peak-marker { fill: var(--amber); stroke: #06101e; stroke-width: 2; }
-
-    .legend {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 0.88rem;
-    }
-
-    .legend span { display: inline-flex; align-items: center; gap: 7px; }
-    .swatch { width: 28px; height: 4px; border-radius: 99px; display: inline-block; }
-    .swatch.customers { background: var(--blue); }
-    .swatch.incidents { background: var(--green); }
-    .swatch.peak { background: var(--amber); }
-
-    .list { display: grid; gap: 8px; }
-
-    .rank-row {
-      display: grid;
-      grid-template-columns: 34px minmax(0, 1fr) auto;
-      gap: 10px;
-      align-items: center;
-      padding: 9px 0;
-      border-bottom: 1px solid rgba(132, 157, 191, 0.15);
-    }
-
-    .rank-row:last-child { border-bottom: 0; }
-
-    .rank {
-      width: 28px;
-      height: 28px;
-      display: inline-grid;
-      place-items: center;
-      border-radius: 999px;
-      background: rgba(102, 212, 255, 0.12);
-      color: #cfefff;
-      font-weight: 850;
-      font-size: 0.82rem;
-    }
-
-    .rank-title { min-width: 0; }
-    .rank-title strong { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .rank-title small { display: block; color: var(--muted); margin-top: 2px; }
-    .rank-value { text-align: right; font-variant-numeric: tabular-nums; font-weight: 850; }
-    .rank-value small { display: block; color: var(--muted); font-weight: 650; margin-top: 2px; }
-
-    .bar-track {
-      width: 100%;
-      height: 9px;
-      border-radius: 999px;
-      background: rgba(157, 176, 201, 0.14);
-      overflow: hidden;
-      margin-top: 8px;
-    }
-
-    .bar-fill {
-      height: 100%;
-      min-width: 2px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--blue), var(--green));
-    }
-
-    .insight-card {
-      padding: 14px;
-      border: 1px solid rgba(132, 157, 191, 0.20);
-      border-radius: var(--radius-sm);
-      background: rgba(6, 16, 30, 0.34);
-    }
-
-    .insight-card strong { font-size: 1rem; }
-    .insight-card p { margin: 6px 0 0; color: var(--muted); line-height: 1.42; }
-
-    .kpi-line {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 9px 0;
-      border-bottom: 1px solid rgba(132, 157, 191, 0.14);
-      color: var(--muted);
-    }
-    .kpi-line:last-child { border-bottom: 0; }
-    .kpi-line strong { color: var(--text); font-variant-numeric: tabular-nums; }
-
-    .table-wrap { overflow: hidden; }
-    table { width: 100%; border-collapse: collapse; font-size: clamp(0.84rem, 0.88vw, 0.98rem); }
-    th, td { padding: 10px 11px; border-bottom: 1px solid rgba(132, 157, 191, 0.16); text-align: left; vertical-align: middle; }
-    th {
-      color: #cfe1f7;
-      font-size: 0.74rem;
-      text-transform: uppercase;
-      letter-spacing: 0.065em;
-      font-weight: 850;
-      background: rgba(26, 45, 75, 0.52);
-      white-space: nowrap;
-    }
-    tbody tr:last-child td { border-bottom: 0; }
-    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
-    tbody tr:hover { background: rgba(102, 212, 255, 0.045); }
-
-    .muted { color: var(--muted); }
-    .muted-2 { color: var(--muted-2); }
-    .nowrap { white-space: nowrap; }
-    .ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 320px; }
-    .empty { color: var(--muted); padding: 28px; text-align: center; }
-
-    .provider-bars { display: grid; gap: 12px; }
-    .provider-row {
-      display: grid;
-      grid-template-columns: minmax(120px, 0.35fr) minmax(0, 1fr) minmax(140px, auto);
-      gap: 14px;
-      align-items: center;
-    }
-    .provider-row strong { display: block; }
-    .provider-row small { color: var(--muted); }
-    .provider-track { height: 16px; border-radius: 999px; background: rgba(157,176,201,0.13); overflow: hidden; box-shadow: inset 0 1px 2px rgba(0,0,0,0.24); }
-    .provider-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--blue), var(--green)); }
-    .provider-value { text-align: right; font-variant-numeric: tabular-nums; }
-
-    .band-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-    .band {
-      padding: 16px;
-      border: 1px solid rgba(132,157,191,0.2);
-      border-radius: var(--radius-sm);
-      background: rgba(6,16,30,0.35);
-    }
-    .band .band-label { color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.74rem; font-weight: 850; }
-    .band .band-value { margin-top: 8px; font-size: clamp(1.8rem, 2.3vw, 3rem); font-weight: 880; letter-spacing: -0.05em; }
-    .band .band-desc { margin-top: 4px; color: var(--muted); }
-
-    .map-panel { min-height: 520px; }
-    .qld-map { width: 100%; height: 520px; display: block; }
-    .map-grid { stroke: rgba(157,176,201,0.12); stroke-width: 1; }
-    .map-label { fill: var(--muted); font-size: 12px; font-weight: 700; }
-    .bubble { fill: rgba(102,212,255,0.40); stroke: rgba(230,248,255,0.86); stroke-width: 1.5; }
-    .bubble-major { fill: rgba(255,209,102,0.52); }
-    .bubble-moderate { fill: rgba(142,230,168,0.43); }
-    .bubble-minor { fill: rgba(102,212,255,0.32); }
-    .bubble-label { fill: #f4f8ff; font-size: 12px; font-weight: 780; paint-order: stroke; stroke: rgba(6,16,30,0.95); stroke-width: 4px; stroke-linejoin: round; }
-
-    .reason-row, .status-row {
-      display: grid;
-      grid-template-columns: minmax(110px, 0.35fr) minmax(0, 1fr) auto;
-      gap: 12px;
-      align-items: center;
-      padding: 9px 0;
-      border-bottom: 1px solid rgba(132,157,191,0.14);
-    }
-    .reason-row:last-child, .status-row:last-child { border-bottom: 0; }
-    .reason-bar, .status-bar { height: 10px; border-radius: 99px; background: rgba(157,176,201,0.14); overflow: hidden; }
-    .reason-fill, .status-fill { height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--purple), var(--blue)); }
-
-    .sparkline { width: 100%; height: 48px; display: block; }
-    .spark-path { fill: none; stroke: var(--blue); stroke-width: 2.25; stroke-linecap: round; stroke-linejoin: round; }
-    .spark-area { fill: rgba(102,212,255,0.08); }
-
-    .notice, .error-box {
-      border-radius: var(--radius-sm);
-      padding: 14px 16px;
-      line-height: 1.45;
-    }
-    .notice { border: 1px solid rgba(255, 209, 102, 0.38); background: rgba(255, 209, 102, 0.10); color: #ffe4a3; }
-    .error-box { margin: 18px 0; border: 1px solid rgba(255, 107, 107, 0.65); background: rgba(255, 107, 107, 0.10); color: #ffd0d0; white-space: pre-wrap; }
-
-    .footer {
-      margin-top: 14px;
-      color: var(--muted-2);
-      font-size: 0.78rem;
-      display: flex;
-      justify-content: space-between;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
+    .error-box { margin:10px 0; padding:12px; border:1px solid var(--accentBorder); border-left:5px solid var(--accent); background:var(--accentSoft); color:var(--accent-dark); white-space:pre-wrap; }
+    .footer { display:flex; justify-content:space-between; gap:12px; margin-top:10px; color:var(--muted); font-size:.78rem; padding:8px 2px; }
 
     @media (min-width: 1500px) {
-      .shell { width: min(1940px, calc(100vw - 36px)); }
-      .panel-body { padding: 17px 19px 19px; }
-      .metric { min-height: 152px; }
+      body { font-size:14px; }
+      .table-wrap { max-height: 640px; }
     }
-
-    @media (max-width: 1280px) {
-      .topbar { grid-template-columns: 1fr; }
-      .status-strip { justify-content: flex-start; }
-      .nav-row { grid-template-columns: 1fr; border-radius: 24px; }
-      .rotation-controls { justify-content: space-between; }
-      .metric-grid, .metric-grid.four, .metric-grid.six { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .overview-layout, .lga-layout, .provider-layout, .outage-layout, .trend-layout, .bottom-row { grid-template-columns: 1fr; }
-      .view { min-height: auto; }
+    @media (max-width: 1200px) {
+      .topbar, .nav-row { grid-template-columns:1fr; }
+      .status-strip, .rotation-controls { justify-content:flex-start; }
+      .metric-grid, .metric-grid.four, .metric-grid.six { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .overview-layout, .lga-layout, .provider-layout, .outage-layout, .trend-layout, .bottom-row, .period-comparison { grid-template-columns:1fr; }
+      .lga-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
     }
-
     @media (max-width: 720px) {
-      .shell { width: min(100% - 16px, 1900px); padding-top: 8px; }
-      .metric-grid, .metric-grid.four, .metric-grid.six, .band-grid { grid-template-columns: 1fr; }
-      .tabs { display: grid; grid-template-columns: 1fr 1fr; }
-      .tab-btn { padding-inline: 8px; }
-      .panel-header { flex-direction: column; }
-      .provider-row, .reason-row, .status-row { grid-template-columns: 1fr; }
-      .qld-map { height: 420px; }
-      .map-panel { min-height: 420px; }
-      table { font-size: 0.82rem; }
-      th, td { padding: 8px; }
+      .shell { width:min(100% - 14px, 1900px); padding-top:8px; }
+      .metric-grid, .metric-grid.four, .metric-grid.six, .band-grid, .lga-card-grid { grid-template-columns:1fr; }
+      .tabs { display:grid; grid-template-columns:1fr 1fr; }
+      .tab-btn { padding-inline:8px; }
+      .panel-header, .distribution-header { grid-template-columns:1fr; flex-direction:column; }
+      .provider-row, .reason-row, .status-row { grid-template-columns:1fr; }
+      table { font-size:.82rem; }
+      th, td { padding:8px; }
+      .footer { flex-direction:column; }
     }
+
   </style>
 </head>
 <body>
@@ -518,7 +254,7 @@
     <header class="topbar">
       <div class="title-block">
         <h1>QLD Unplanned Power Outages</h1>
-        <p>Statewide situational view of current outage impact, affected local government areas, provider contribution, and trend context.</p>
+        <p>Statewide situational view of current outage impact, affected local government areas, provider contribution, since-0900 AEST context, and rolling 24-hour context.</p>
       </div>
       <div class="status-strip" id="statusStrip">
         <span class="pill">Loading data…</span>
@@ -534,6 +270,7 @@
         <button type="button" class="tab-btn" data-view="trends" role="tab" aria-selected="false">Trends</button>
       </div>
       <div class="rotation-controls">
+        <button type="button" class="control-btn" id="themeToggleBtn" aria-pressed="false">Night</button>
         <button type="button" class="control-btn active" id="autoRotateBtn">Auto rotate</button>
         <span id="rotationStatus">Next view --:--</span>
       </div>
@@ -601,8 +338,8 @@
         <article class="panel map-panel">
           <div class="panel-header">
             <div class="panel-title">
-              <h2>Geographic impact view</h2>
-              <p>Bubble position uses current outage centroids; size represents current affected customers by LGA.</p>
+              <h2>LGA impact distribution</h2>
+              <p>Ranked affected LGAs by current customers, with peak values for the 0900 AEST period and the rolling 24-hour window.</p>
             </div>
           </div>
           <div class="panel-body" id="lgaMap"></div>
@@ -619,7 +356,7 @@
       </section>
       <section class="panel" style="margin-top:14px;">
         <div class="panel-header">
-          <div class="panel-title"><h2>LGA impact table</h2><p>Current impact by local government area. Peak values show the highest customer impact observed today.</p></div>
+          <div class="panel-title"><h2>LGA impact table</h2><p>Current impact by local government area. Peak values show the highest customer impact observed since 0900 AEST and over the rolling 24-hour window.</p></div>
         </div>
         <div class="table-wrap">
           <table>
@@ -630,7 +367,7 @@
                 <th class="num">Current customers</th>
                 <th class="num">Active incidents</th>
                 <th class="num">Share of QLD</th>
-                <th class="num">Peak today</th>
+                <th class="num">Peak since 0900</th>
                 <th class="num">24h peak</th>
               </tr>
             </thead>
@@ -719,7 +456,7 @@
       <section class="grid trend-layout">
         <article class="panel">
           <div class="panel-header">
-            <div class="panel-title"><h2>Today since 0900 AEST</h2><p id="todayTrendNote">Current operational period.</p></div>
+            <div class="panel-title"><h2>Since 0900 AEST</h2><p id="todayTrendNote">Current operational period.</p></div>
           </div>
           <div class="panel-body"><div class="chart-wrap large" id="todayTrendChart"></div></div>
         </article>
@@ -1212,7 +949,7 @@
         metricCard("Active incidents", fmtInt.format(d.currentSummary.incidents), `${fmtInt.format(d.currentSummary.lgaCount)} affected LGA${plural(d.currentSummary.lgaCount)}`),
         metricCard("Affected LGAs", fmtInt.format(d.currentSummary.lgaCount), `${fmtPct.format(d.lgaMatchRate)} LGA match rate`),
         metricCard("Worst affected LGA", worst ? escapeHtml(worst.name) : "—", worst ? `${fmtInt.format(worst.currentCustomers)} customers · ${fmtPct.format(worst.share)} of QLD impact` : "No current LGA impact", "place"),
-        metricCard("Peak today", fmtInt.format(peakToday.customers), peakToday.snapshotUtcMs ? `${formatAest(peakToday.snapshotUtcMs, false)} · current is ${fmtPct.format(belowPeak)} below peak` : "No peak data")
+        metricCard("Peak since 0900", fmtInt.format(peakToday.customers), peakToday.snapshotUtcMs ? `${formatAest(peakToday.snapshotUtcMs, false)} · current is ${fmtPct.format(belowPeak)} below peak` : "No peak data")
       ].join("");
 
       $("overviewChartNote").textContent = `${formatAest(d.since0900StartMs, false)} to ${formatAest(d.latestMs, false)}. Peak ${fmtInt.format(peakToday.customers)} customers at ${peakToday.snapshotUtcMs ? formatAest(peakToday.snapshotUtcMs, false) : "—"}.`;
@@ -1236,7 +973,7 @@
           <strong>${fmtPct.format(top5Share)} of current affected customers are in the top 5 LGAs.</strong>
           <p>${worst ? `${escapeHtml(worst.name)} is currently the highest impact LGA with ${fmtInt.format(worst.currentCustomers)} customers affected.` : "There are no currently affected LGAs in the latest snapshot."}</p>
         </div>
-        <div class="kpi-line"><span>Current vs today peak</span><strong>${fmtPct.format(belowPeak)} below peak</strong></div>
+        <div class="kpi-line"><span>Current vs 0900 peak</span><strong>${fmtPct.format(belowPeak)} below peak</strong></div>
         <div class="kpi-line"><span>Highest provider contribution</span><strong>${provider ? `${escapeHtml(provider.name)} · ${fmtPct.format(provider.share)}` : "—"}</strong></div>
         <div class="kpi-line"><span>24h peak customers</span><strong>${fmtInt.format(d.peak24.customers)}</strong></div>
       `;
@@ -1335,9 +1072,9 @@
       const belowPeak = todayPeak.customers ? Math.max(0, (todayPeak.customers - d.currentSummary.latestCustomerSum) / todayPeak.customers) : 0;
       $("trendMetrics").innerHTML = [
         metricCard("Current customers", fmtInt.format(d.currentSummary.latestCustomerSum), `${fmtInt.format(d.currentSummary.incidents)} active incident${plural(d.currentSummary.incidents)}`),
-        metricCard("Peak today", fmtInt.format(todayPeak.customers), todayPeak.snapshotUtcMs ? `Recorded at ${formatAest(todayPeak.snapshotUtcMs, false)}` : "No peak data"),
+        metricCard("Peak since 0900", fmtInt.format(todayPeak.customers), todayPeak.snapshotUtcMs ? `Recorded at ${formatAest(todayPeak.snapshotUtcMs, false)}` : "No peak data"),
         metricCard("Rolling 24h peak", fmtInt.format(peak24.customers), peak24.snapshotUtcMs ? `Recorded at ${formatAest(peak24.snapshotUtcMs, true)}` : "No peak data"),
-        metricCard("Current vs peak today", fmtPct.format(belowPeak), "Current affected customers below today’s peak")
+        metricCard("Current vs 0900 peak", fmtPct.format(belowPeak), "Current affected customers below the since-0900 peak")
       ].join("");
       $("todayTrendNote").textContent = `${formatAest(d.since0900StartMs, true)} to ${formatAest(d.latestMs, true)}.`;
       $("rollingTrendNote").textContent = `${formatAest(d.rolling24StartMs, true)} to ${formatAest(d.latestMs, true)}.`;
@@ -1420,7 +1157,7 @@
         return `<div class="status-row">
           <div><strong>${escapeHtml(provider.name)}</strong><div class="muted">${fmtInt.format(provider.currentCustomers)} current customers · ${fmtPct.format(provider.share)} share</div></div>
           <div>${renderSparkline(series, "customers")}</div>
-          <div class="num"><strong>${fmtInt.format(getPeakPoint(series, "customers").customers)}</strong><div class="muted">peak today</div></div>
+          <div class="num"><strong>${fmtInt.format(getPeakPoint(series, "customers").customers)}</strong><div class="muted">peak since 0900</div></div>
         </div>`;
       }).join("") || `<div class="empty">No provider trend data available.</div>`;
     }
@@ -1452,33 +1189,37 @@
     }
 
     function renderLgaMap(points) {
-      if (!points.length) return `<div class="empty">No mapped current incidents. Centroid coordinates may be unavailable in the latest snapshot.</div>`;
-      const w = 920, h = 520;
-      const left = 54, right = 28, top = 26, bottom = 42;
-      const plotW = w - left - right;
-      const plotH = h - top - bottom;
-      const lonMin = 138.0, lonMax = 154.2, latTop = -9.0, latBottom = -29.6;
-      const maxCustomers = Math.max(1, ...points.map((p) => p.customers));
-      const x = (lon) => left + clamp((lon - lonMin) / (lonMax - lonMin), 0, 1) * plotW;
-      const y = (lat) => top + clamp((latTop - lat) / (latTop - latBottom), 0, 1) * plotH;
-      const latLines = [-10, -15, -20, -25, -29];
-      const lonLines = [140, 145, 150, 154];
-      const topLabels = points.slice(0, 8);
-      return `<svg class="qld-map" viewBox="0 0 ${w} ${h}" role="img" aria-label="Queensland outage impact bubble map">
-        <rect x="${left}" y="${top}" width="${plotW}" height="${plotH}" rx="18" fill="rgba(6,16,30,0.28)" stroke="rgba(157,176,201,0.20)"></rect>
-        ${latLines.map((lat) => `<line class="map-grid" x1="${left}" x2="${w - right}" y1="${y(lat)}" y2="${y(lat)}"></line><text class="map-label" x="${left - 10}" y="${y(lat) + 4}" text-anchor="end">${Math.abs(lat)}°S</text>`).join("")}
-        ${lonLines.map((lon) => `<line class="map-grid" x1="${x(lon)}" x2="${x(lon)}" y1="${top}" y2="${h - bottom}"></line><text class="map-label" x="${x(lon)}" y="${h - 16}" text-anchor="middle">${lon}°E</text>`).join("")}
-        <text class="map-label" x="${left}" y="${top - 8}">Relative Queensland position — current LGA impact</text>
-        ${points.slice().reverse().map((p) => {
-          const radius = 6 + Math.sqrt(p.customers / maxCustomers) * 28;
-          const bandClass = p.customers >= 1000 ? "bubble-major" : p.customers >= 100 ? "bubble-moderate" : "bubble-minor";
-          return `<circle class="bubble ${bandClass}" cx="${x(p.lon)}" cy="${y(p.lat)}" r="${radius}"><title>${escapeHtml(p.name)} — ${fmtInt.format(p.customers)} customers</title></circle>`;
-        }).join("")}
-        ${topLabels.map((p, idx) => {
-          const offset = idx % 2 === 0 ? -10 : 18;
-          return `<text class="bubble-label" x="${x(p.lon) + 10}" y="${y(p.lat) + offset}">${escapeHtml(p.name)} · ${fmtInt.format(p.customers)}</text>`;
-        }).join("")}
-      </svg>`;
+      const d = state.data;
+      const rows = d.topLgas.slice(0, 9);
+      if (!rows.length) return `<div class="empty">No affected LGAs in the latest snapshot.</div>`;
+      const maxCurrent = Math.max(1, ...rows.map((r) => r.currentCustomers));
+      const topSince = [...d.lgaRows].filter((r) => r.sinceCustomers > 0).sort((a, b) => b.sinceCustomers - a.sinceCustomers || a.name.localeCompare(b.name)).slice(0, 6);
+      const topRolling = [...d.lgaRows].filter((r) => r.rollingCustomers > 0).sort((a, b) => b.rollingCustomers - a.rollingCustomers || a.name.localeCompare(b.name)).slice(0, 6);
+      return `<div class="lga-distribution">
+        <div class="distribution-header">
+          <div><strong>Current LGA impact, ranked by affected customers</strong><small>This replaces the centroid bubble plot so the wall display is readable without relying on an approximate map.</small></div>
+          <div class="distribution-total">${fmtInt.format(d.currentSummary.latestCustomerSum)}<small style="display:block;color:var(--muted);font-size:.78rem;font-weight:400;">current customers</small></div>
+        </div>
+        <div class="lga-card-grid">
+          ${rows.slice(0, 6).map((r, idx) => `<div class="lga-focus-card">
+            <div class="focus-rank">Rank ${idx + 1}</div>
+            <strong>${escapeHtml(r.name)}</strong>
+            <div class="focus-value">${fmtInt.format(r.currentCustomers)}</div>
+            <div class="focus-meta">${fmtInt.format(r.currentIncidents)} incident${plural(r.currentIncidents)} · ${fmtPct1.format(r.share)} of QLD current impact</div>
+            <div class="bar-track"><div class="bar-fill" style="width:${Math.max(2, (r.currentCustomers / maxCurrent) * 100)}%"></div></div>
+          </div>`).join("")}
+        </div>
+        <div class="period-comparison">
+          <div class="mini-list">
+            <h3>Highest peak since 0900 AEST</h3>
+            ${topSince.map((r) => `<div class="mini-list-row"><span>${escapeHtml(r.name)}</span><strong>${fmtInt.format(r.sinceCustomers)}</strong></div>`).join("") || `<div class="empty">No since-0900 LGA data.</div>`}
+          </div>
+          <div class="mini-list">
+            <h3>Highest rolling 24h peak</h3>
+            ${topRolling.map((r) => `<div class="mini-list-row"><span>${escapeHtml(r.name)}</span><strong>${fmtInt.format(r.rollingCustomers)}</strong></div>`).join("") || `<div class="empty">No rolling 24h LGA data.</div>`}
+          </div>
+        </div>
+      </div>`;
     }
 
     function renderSvgChart(series, options = {}) {
@@ -1562,7 +1303,29 @@
       const firstIdx = VIEW_ORDER.indexOf(view);
       if (firstIdx >= 0) state.rotationIndex = firstIdx;
       document.querySelectorAll(".view").forEach((el) => el.classList.toggle("active", el.id === `view-${view}`));
-      document.querySelectorAll(".tab-btn").forEach((btn) => {
+  
+    function applyTheme(mode) {
+      const isNight = mode === "night";
+      document.body.classList.toggle("night-mode", isNight);
+      document.documentElement.style.colorScheme = isNight ? "dark" : "light";
+      const btn = $("themeToggleBtn");
+      if (btn) {
+        btn.textContent = isNight ? "Day" : "Night";
+        btn.classList.toggle("active", isNight);
+        btn.setAttribute("aria-pressed", isNight ? "true" : "false");
+      }
+      try { localStorage.setItem("qldOutageDashboardTheme", isNight ? "night" : "day"); } catch (err) {}
+    }
+
+    function initTheme() {
+      let stored = null;
+      try { stored = localStorage.getItem("qldOutageDashboardTheme"); } catch (err) {}
+      applyTheme(stored === "night" ? "night" : "day");
+      const btn = $("themeToggleBtn");
+      if (btn) btn.addEventListener("click", () => applyTheme(document.body.classList.contains("night-mode") ? "day" : "night"));
+    }
+
+    document.querySelectorAll(".tab-btn").forEach((btn) => {
         const active = btn.dataset.view === view;
         btn.classList.toggle("active", active);
         btn.setAttribute("aria-selected", active ? "true" : "false");
@@ -1737,6 +1500,28 @@
         .replaceAll("'", "&#039;");
     }
 
+
+    function applyTheme(mode) {
+      const isNight = mode === "night";
+      document.body.classList.toggle("night-mode", isNight);
+      document.documentElement.style.colorScheme = isNight ? "dark" : "light";
+      const btn = $("themeToggleBtn");
+      if (btn) {
+        btn.textContent = isNight ? "Day" : "Night";
+        btn.classList.toggle("active", isNight);
+        btn.setAttribute("aria-pressed", isNight ? "true" : "false");
+      }
+      try { localStorage.setItem("qldOutageDashboardTheme", isNight ? "night" : "day"); } catch (err) {}
+    }
+
+    function initTheme() {
+      let stored = null;
+      try { stored = localStorage.getItem("qldOutageDashboardTheme"); } catch (err) {}
+      applyTheme(stored === "night" ? "night" : "day");
+      const btn = $("themeToggleBtn");
+      if (btn) btn.addEventListener("click", () => applyTheme(document.body.classList.contains("night-mode") ? "day" : "night"));
+    }
+
     document.querySelectorAll(".tab-btn").forEach((btn) => {
       btn.addEventListener("click", () => setActiveView(btn.dataset.view));
     });
@@ -1748,6 +1533,7 @@
       resetRotationTimer();
     });
 
+    initTheme();
     loadData().catch(showError);
   </script>
 </body>
