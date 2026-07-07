@@ -50,6 +50,7 @@ import os
 import re
 import sys
 import time
+import zipfile
 from dataclasses import asdict, dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -906,6 +907,14 @@ class OutageRecord:
         return self.affected_customers is not None
 
 
+@dataclass
+class LocalLgaBoundary:
+    lga_name: str
+    lga_code: Optional[str]
+    geometry: Dict[str, Any]
+    bbox: Tuple[float, float, float, float]
+
+
 def make_outage_key(
     provider_code: str,
     outage_id: Optional[str],
@@ -1719,6 +1728,231 @@ def is_unplanned_snapshot_row(row: Dict[str, str]) -> bool:
 # LGA assignment
 # --------------------------------------------------------------------------------------
 
+DEFAULT_LOCAL_LGA_BOUNDARY_FILES = [
+    Path("data/qld_lga_boundaries.geojson"),
+    Path("data/qld_lga_boundaries.json"),
+    Path("data/qld_lga_boundaries.kml"),
+    Path("data/qld_lga_boundaries.kmz"),
+]
+
+
+def geometry_bbox(geom: Optional[Dict[str, Any]]) -> Optional[Tuple[float, float, float, float]]:
+    if not isinstance(geom, dict):
+        return None
+    if geom.get("type") == "GeometryCollection":
+        pts: List[Tuple[float, float]] = []
+        geoms = geom.get("geometries") or []
+        if isinstance(geoms, list):
+            for sub_geom in geoms:
+                if isinstance(sub_geom, dict):
+                    pts.extend(iter_coords(sub_geom.get("coordinates")))
+    else:
+        pts = list(iter_coords(geom.get("coordinates")))
+    if not pts:
+        return None
+    lons = [p[0] for p in pts]
+    lats = [p[1] for p in pts]
+    return min(lons), min(lats), max(lons), max(lats)
+
+
+def bbox_contains_point(bbox: Tuple[float, float, float, float], lon: float, lat: float) -> bool:
+    min_lon, min_lat, max_lon, max_lat = bbox
+    return min_lon <= lon <= max_lon and min_lat <= lat <= max_lat
+
+
+def point_in_geojson_geometry(lon: float, lat: float, geom: Optional[Dict[str, Any]]) -> bool:
+    if not isinstance(geom, dict):
+        return False
+
+    gtype = geom.get("type")
+    coords = geom.get("coordinates")
+
+    if gtype == "Polygon" and isinstance(coords, list) and coords:
+        outer = coords[0]
+        if not isinstance(outer, list) or not point_in_polygon(lon, lat, outer):
+            return False
+        for hole in coords[1:]:
+            if isinstance(hole, list) and point_in_polygon(lon, lat, hole):
+                return False
+        return True
+
+    if gtype == "MultiPolygon" and isinstance(coords, list):
+        return any(
+            point_in_geojson_geometry(lon, lat, {"type": "Polygon", "coordinates": poly})
+            for poly in coords
+        )
+
+    if gtype == "GeometryCollection":
+        geoms = geom.get("geometries") or []
+        if isinstance(geoms, list):
+            return any(point_in_geojson_geometry(lon, lat, g if isinstance(g, dict) else None) for g in geoms)
+        return False
+
+    if gtype == "Point" and isinstance(coords, list) and len(coords) >= 2:
+        try:
+            return abs(float(coords[0]) - lon) < 1e-10 and abs(float(coords[1]) - lat) < 1e-10
+        except Exception:
+            return False
+
+    return False
+
+
+def first_lga_property(props: Dict[str, Any], keys: Iterable[str]) -> Optional[str]:
+    lower_map = {str(k).lower(): v for k, v in props.items()}
+    for key in keys:
+        if key in props:
+            value = as_str(props.get(key))
+            if value:
+                return value
+        value = as_str(lower_map.get(key.lower()))
+        if value:
+            return value
+    return None
+
+
+def local_lga_from_properties(props: Dict[str, Any], fallback_name: Optional[str] = None) -> Tuple[Optional[str], Optional[str]]:
+    lga_name = first_lga_property(props, [
+        "lga",
+        "lga_name",
+        "LGA_NAME",
+        "adminareaname",
+        "ADMINAREANAME",
+        "abbrev_name",
+        "ABBREV_NAME",
+        "admintypename",
+        "ADMIN_TYPENAME",
+        "name",
+        "NAME",
+    ]) or as_str(fallback_name)
+    lga_code = first_lga_property(props, [
+        "lga_code",
+        "LGA_CODE",
+        "lgacode",
+        "LGA_CODE_2023",
+        "code",
+        "CODE",
+    ])
+    return lga_name, lga_code
+
+
+def load_local_lga_boundaries(path: Path) -> List[LocalLgaBoundary]:
+    suffix = path.suffix.lower()
+    if suffix in {".geojson", ".json"}:
+        return load_local_lga_boundaries_geojson(path)
+    if suffix in {".kml", ".kmz"}:
+        return load_local_lga_boundaries_kml(path)
+    raise ValueError(f"Unsupported LGA boundary file type: {path}")
+
+
+def load_local_lga_boundaries_geojson(path: Path) -> List[LocalLgaBoundary]:
+    obj = json.loads(path.read_text(encoding="utf-8"))
+    features = obj.get("features") if isinstance(obj, dict) else None
+    if not isinstance(features, list):
+        raise ValueError(f"GeoJSON LGA boundary file has no feature list: {path}")
+
+    boundaries: List[LocalLgaBoundary] = []
+    for feature in features:
+        if not isinstance(feature, dict):
+            continue
+        props = feature.get("properties") or {}
+        geom = feature.get("geometry")
+        if not isinstance(props, dict) or not isinstance(geom, dict):
+            continue
+        lga_name, lga_code = local_lga_from_properties(props)
+        bbox = geometry_bbox(geom)
+        if lga_name and bbox:
+            boundaries.append(LocalLgaBoundary(lga_name=lga_name, lga_code=lga_code, geometry=geom, bbox=bbox))
+
+    return boundaries
+
+
+def kml_extended_properties(pm: ET.Element) -> Dict[str, Any]:
+    props: Dict[str, Any] = {}
+    for data in pm.findall(".//{*}Data"):
+        name = data.attrib.get("name")
+        value_el = data.find("./{*}value")
+        if name and value_el is not None and value_el.text:
+            props[name] = value_el.text.strip()
+    for simple_data in pm.findall(".//{*}SimpleData"):
+        name = simple_data.attrib.get("name")
+        if name and simple_data.text:
+            props[name] = simple_data.text.strip()
+    return props
+
+
+def read_kml_or_kmz_text(path: Path) -> str:
+    if path.suffix.lower() != ".kmz":
+        return path.read_text(encoding="utf-8")
+
+    with zipfile.ZipFile(path) as zf:
+        names = [n for n in zf.namelist() if n.lower().endswith(".kml")]
+        if not names:
+            raise ValueError(f"KMZ has no KML file: {path}")
+        preferred = "doc.kml" if "doc.kml" in names else names[0]
+        return zf.read(preferred).decode("utf-8")
+
+
+def load_local_lga_boundaries_kml(path: Path) -> List[LocalLgaBoundary]:
+    root = ET.fromstring(read_kml_or_kmz_text(path))
+    ns_uri = "http://www.opengis.net/kml/2.2"
+    if root.tag.startswith("{") and "}" in root.tag:
+        ns_uri = root.tag.split("}")[0].strip("{")
+    ns = {"kml": ns_uri}
+
+    boundaries: List[LocalLgaBoundary] = []
+    for pm in root.findall(".//kml:Placemark", ns):
+        name = find_kml_text(pm, "kml:name", ns)
+        props = kml_extended_properties(pm)
+        polygons: List[Dict[str, Any]] = []
+        for poly in pm.findall(".//kml:Polygon", ns):
+            ring = poly.find(".//kml:outerBoundaryIs/kml:LinearRing/kml:coordinates", ns)
+            if ring is not None and ring.text:
+                coords = parse_kml_coordinates(ring.text)
+                if coords:
+                    if coords[0] != coords[-1]:
+                        coords.append(coords[0])
+                    polygons.append({"type": "Polygon", "coordinates": [coords]})
+        if len(polygons) == 1:
+            geom: Optional[Dict[str, Any]] = polygons[0]
+        elif len(polygons) > 1:
+            geom = {"type": "GeometryCollection", "geometries": polygons}
+        else:
+            geom = kml_placemark_geometry(pm, ns)
+        lga_name, lga_code = local_lga_from_properties(props, fallback_name=name)
+        bbox = geometry_bbox(geom)
+        if lga_name and isinstance(geom, dict) and bbox:
+            boundaries.append(LocalLgaBoundary(lga_name=lga_name, lga_code=lga_code, geometry=geom, bbox=bbox))
+
+    return boundaries
+
+
+def default_local_lga_boundary_file() -> Optional[Path]:
+    for path in DEFAULT_LOCAL_LGA_BOUNDARY_FILES:
+        if path.exists():
+            return path
+    return None
+
+
+def lookup_lga_in_local_boundaries(
+    lon: Optional[float],
+    lat: Optional[float],
+    boundaries: Sequence[LocalLgaBoundary],
+) -> Tuple[Optional[str], Optional[str]]:
+    if lon is None or lat is None:
+        return None, None
+    try:
+        x = float(lon)
+        y = float(lat)
+    except Exception:
+        return None, None
+
+    for boundary in boundaries:
+        if bbox_contains_point(boundary.bbox, x, y) and point_in_geojson_geometry(x, y, boundary.geometry):
+            return boundary.lga_name, boundary.lga_code
+
+    return None, None
+
+
 def load_lga_cache(cache_path: Path) -> Dict[str, Dict[str, Optional[str]]]:
     if not cache_path.exists():
         return {}
@@ -1728,10 +1962,18 @@ def load_lga_cache(cache_path: Path) -> Dict[str, Dict[str, Optional[str]]]:
             out: Dict[str, Dict[str, Optional[str]]] = {}
             for k, v in obj.items():
                 if isinstance(v, dict):
-                    out[k] = {
-                        "lga_name": as_str(v.get("lga_name")),
-                        "lga_code": as_str(v.get("lga_code")),
-                    }
+                    lga_name = as_str(v.get("lga_name"))
+                    # Historical cache files stored failed lookups as
+                    # {"lga_name": null, "lga_code": null}. That made transient
+                    # ArcGIS/network failures permanent for the same rounded
+                    # coordinate. Keep only positive matches so current outages
+                    # with a stale negative cache entry are retried on the next
+                    # run.
+                    if lga_name:
+                        out[k] = {
+                            "lga_name": lga_name,
+                            "lga_code": as_str(v.get("lga_code")),
+                        }
             return out
     except Exception:
         pass
@@ -1749,6 +1991,50 @@ def lga_cache_key(lon: Optional[float], lat: Optional[float], precision: int = 5
     return f"{round(float(lon), precision)},{round(float(lat), precision)}"
 
 
+def lga_candidate_points(record: OutageRecord, max_geometry_points: int = 8) -> List[Tuple[float, float]]:
+    """
+    Points to try for LGA assignment.
+
+    The centroid is still preferred, but some outage polygons can be irregular,
+    multi-part, coastal, or cross an LGA boundary. If a centroid lookup misses,
+    sample representative geometry coordinates before giving up.
+    """
+    candidates: List[Tuple[float, float]] = []
+    seen: set[str] = set()
+
+    def add(lon: Optional[float], lat: Optional[float]) -> None:
+        if lon is None or lat is None:
+            return
+        try:
+            point = (float(lon), float(lat))
+        except Exception:
+            return
+        key = f"{round(point[0], 6)},{round(point[1], 6)}"
+        if key not in seen:
+            seen.add(key)
+            candidates.append(point)
+
+    add(record.centroid_lon, record.centroid_lat)
+
+    geom_points = list(iter_coords((record.geometry or {}).get("coordinates")))
+    if geom_points:
+        # Try the first point, last point, and evenly-spaced samples. This keeps
+        # ArcGIS calls bounded while covering large/odd polygons better than a
+        # centroid-only lookup.
+        sample_indexes = {0, len(geom_points) - 1}
+        if max_geometry_points > 2:
+            step_count = max_geometry_points - 1
+            for i in range(1, step_count):
+                sample_indexes.add(round((len(geom_points) - 1) * i / step_count))
+
+        for idx in sorted(sample_indexes):
+            if 0 <= idx < len(geom_points):
+                lon, lat = geom_points[idx]
+                add(lon, lat)
+
+    return candidates
+
+
 def lookup_lga_for_point(
     lon: Optional[float],
     lat: Optional[float],
@@ -1756,6 +2042,7 @@ def lookup_lga_for_point(
     timeout: int,
     user_agent: str,
     cache_precision: int,
+    local_boundaries: Optional[Sequence[LocalLgaBoundary]] = None,
 ) -> Tuple[Optional[str], Optional[str]]:
     key = lga_cache_key(lon, lat, precision=cache_precision)
     if key is None or lon is None or lat is None:
@@ -1763,7 +2050,15 @@ def lookup_lga_for_point(
 
     cached = cache.get(key)
     if cached is not None:
-        return cached.get("lga_name"), cached.get("lga_code")
+        lga_name = cached.get("lga_name")
+        if lga_name:
+            return lga_name, cached.get("lga_code")
+
+    if local_boundaries:
+        lga_name, lga_code = lookup_lga_in_local_boundaries(lon, lat, local_boundaries)
+        if lga_name:
+            cache[key] = {"lga_name": lga_name, "lga_code": lga_code}
+            return lga_name, lga_code
 
     params = {
         "f": "json",
@@ -1794,10 +2089,10 @@ def lookup_lga_for_point(
                 cache[key] = {"lga_name": lga_name, "lga_code": lga_code}
                 return lga_name, lga_code
     except Exception:
-        # Cache misses should not fail the whole outage pipeline.
+        # LGA lookup failure should not fail the whole outage pipeline, but it
+        # must also not be cached as a permanent miss. Retry on the next run.
         pass
 
-    cache[key] = {"lga_name": None, "lga_code": None}
     return None, None
 
 
@@ -1808,21 +2103,41 @@ def assign_lgas(
     user_agent: str,
     cache_precision: int,
     debug: bool,
+    lga_boundary_file: Optional[Path] = None,
 ) -> None:
     cache = load_lga_cache(cache_path)
     before = len(cache)
     matched = 0
     unmatched = 0
+    matched_by_geometry_fallback = 0
+    local_boundaries: List[LocalLgaBoundary] = []
+
+    if lga_boundary_file is not None:
+        local_boundaries = load_local_lga_boundaries(lga_boundary_file)
+        if debug:
+            print(
+                f"[DEBUG] Loaded local LGA boundaries file={lga_boundary_file} "
+                f"features={len(local_boundaries)}",
+                file=sys.stderr,
+            )
 
     for r in records:
-        lga_name, lga_code = lookup_lga_for_point(
-            r.centroid_lon,
-            r.centroid_lat,
-            cache=cache,
-            timeout=timeout,
-            user_agent=user_agent,
-            cache_precision=cache_precision,
-        )
+        lga_name = None
+        lga_code = None
+        for idx, (lon, lat) in enumerate(lga_candidate_points(r)):
+            lga_name, lga_code = lookup_lga_for_point(
+                lon,
+                lat,
+                cache=cache,
+                timeout=timeout,
+                user_agent=user_agent,
+                cache_precision=cache_precision,
+                local_boundaries=local_boundaries,
+            )
+            if lga_name:
+                if idx > 0:
+                    matched_by_geometry_fallback += 1
+                break
         r.lga_name = lga_name or "Unmatched"
         r.lga_code = lga_code
         if lga_name:
@@ -1835,6 +2150,7 @@ def assign_lgas(
     if debug:
         print(
             f"[DEBUG] LGA assignment matched={matched} unmatched={unmatched} "
+            f"matched_by_geometry_fallback={matched_by_geometry_fallback} "
             f"cache_before={before} cache_after={len(cache)}",
             file=sys.stderr,
         )
@@ -2116,6 +2432,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
     current_geojson_path = output_dir / "current_outages.geojson"
     manifest_path = output_dir / "run_manifest.json"
     lga_cache_path = output_dir / "lga_lookup_cache.json"
+    lga_boundary_file = Path(args.lga_boundary_file) if args.lga_boundary_file else default_local_lga_boundary_file()
 
     snapshot_dt = utc_now()
     if args.snapshot_utc:
@@ -2219,6 +2536,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
         user_agent=user_agent,
         cache_precision=args.lga_cache_precision,
         debug=args.debug,
+        lga_boundary_file=lga_boundary_file,
     )
 
     essential_before_qld_filter = len([r for r in all_current if r.provider_code == ESSENTIAL_PROVIDER_CODE])
@@ -2303,6 +2621,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
             "ergon_layer_url": ERGON_LAYER_URL,
             "essential_energy_kml_url": args.essential_url,
             "qld_lga_layer_url": QLD_LGA_LAYER_URL,
+            "local_lga_boundary_file": str(lga_boundary_file) if lga_boundary_file else "",
         },
     }
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -2338,6 +2657,15 @@ def build_arg_parser() -> argparse.ArgumentParser:
         help="Do not pre-filter Essential Energy records through the built-in Queensland fallback polygon before LGA lookup.",
     )
     ap.add_argument("--lga-cache-precision", type=int, default=5, help="Decimal places for lon/lat LGA lookup cache key. Default: 5")
+    ap.add_argument(
+        "--lga-boundary-file",
+        default="",
+        help=(
+            "Optional local Queensland LGA boundary file (.geojson/.json/.kml/.kmz) to use before the "
+            "online ArcGIS LGA service. If omitted, the pipeline auto-detects "
+            "data/qld_lga_boundaries.geojson, .json, .kml, or .kmz when present."
+        ),
+    )
     ap.add_argument("--snapshot-utc", default="", help="Optional fixed snapshot UTC timestamp, mainly for testing.")
     ap.add_argument("--skip-energex", action="store_true", help="Skip Energex feed.")
     ap.add_argument("--skip-ergon", action="store_true", help="Skip Ergon feed.")
