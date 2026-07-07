@@ -1,6 +1,5 @@
 import csv
 import json
-import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -26,7 +25,10 @@ FIELDS = [
 def parse_utc(value):
     if not value:
         return None
-    return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(timezone.utc)
+    except ValueError:
+        return None
 
 def main():
     if not MANIFEST_PATH.exists():
@@ -38,6 +40,8 @@ def main():
 
     generated_utc = manifest.get("generated_utc", "")
     generated_aest = manifest.get("generated_aest", "")
+    generated_dt = parse_utc(generated_utc)
+    cutoff_base = generated_dt or datetime.now(timezone.utc)
 
     existing = []
     if HEALTH_PATH.exists():
@@ -45,8 +49,10 @@ def main():
             existing = list(csv.DictReader(f))
 
     new_rows = []
+    current_keys = set()
     for provider_name, count_field in PROVIDERS:
         error_message = errors.get(provider_name, "")
+        current_keys.add((generated_utc, provider_name))
         new_rows.append({
             "generated_utc": generated_utc,
             "generated_aest": generated_aest,
@@ -56,13 +62,17 @@ def main():
             "error_message": error_message,
         })
 
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=48)
+    cutoff = cutoff_base - timedelta(hours=48)
 
     kept = []
+    seen = set()
     for row in existing:
         row_time = parse_utc(row.get("generated_utc"))
-        if row_time is not None and row_time >= cutoff:
-            kept.append(row)
+        key = (row.get("generated_utc", ""), row.get("provider_name", ""))
+        if row_time is None or row_time < cutoff or key in current_keys or key in seen:
+            continue
+        seen.add(key)
+        kept.append({field: row.get(field, "") for field in FIELDS})
 
     all_rows = kept + new_rows
 
