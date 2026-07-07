@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-07-07T05:45:30Z",
-  "generated_aest": "2026-07-07T15:45:30+10:00",
+  "generated_utc": "2026-07-07T06:01:03Z",
+  "generated_aest": "2026-07-07T16:01:03+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 5,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 342,
+  "current_records_before_outage_type_filter": 339,
   "current_records_after_outage_type_filter": 15,
-  "current_records_dropped_planned_or_unknown": 327,
+  "current_records_dropped_planned_or_unknown": 324,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "current_energex_records": 4,
@@ -17,10 +17,10 @@
   "current_essential_records_dropped_by_qld_polygon_prefilter": 10,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 446,
-  "lga_totals_rows_48h": 782,
-  "lga_totals_latest_rows": 12,
-  "lga_cumulative_rows": 44,
+  "snapshot_rows_48h": 494,
+  "lga_totals_rows_48h": 836,
+  "lga_totals_latest_rows": 8,
+  "lga_cumulative_rows": 47,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
     "outage_snapshots_48h_csv": "data/outage_snapshots_48h.csv",
@@ -37,6 +37,7 @@
     ],
     "ergon_layer_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
     "essential_energy_kml_url": "https://www.essentialenergy.com.au/Assets/kmz/current.kml?dFdLgoAP",
-    "qld_lga_layer_url": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Boundaries/AdminBoundariesFramework/FeatureServer/11"
+    "qld_lga_layer_url": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Boundaries/AdminBoundariesFramework/FeatureServer/11",
+    "local_lga_boundary_file": "data/qld_lga_boundaries.kmz"
   }
 }
