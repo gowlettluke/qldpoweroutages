@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-07T12:45:32Z",
-        "snapshot_aest": "2026-07-07T22:45:32+10:00",
+        "snapshot_utc": "2026-07-07T13:01:05Z",
+        "snapshot_aest": "2026-07-07T23:01:05+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-968653-g",
@@ -75,6 +75,90 @@
         "lga_name": "LOCAL GOVERNMENT",
         "lga_code": null,
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              140.87855955542,
+              -17.7796041426083
+            ],
+            [
+              140.878485359188,
+              -17.7790826154678
+            ],
+            [
+              141.315663595152,
+              -16.9883217407231
+            ],
+            [
+              141.316062217819,
+              -16.9880822715734
+            ],
+            [
+              141.954196929879,
+              -16.9676534011517
+            ],
+            [
+              141.954671880144,
+              -16.9681931314541
+            ],
+            [
+              141.878358535672,
+              -17.3285926823845
+            ],
+            [
+              141.87834497981,
+              -17.3286420245381
+            ],
+            [
+              141.625743138037,
+              -18.0693643790314
+            ],
+            [
+              141.625286023878,
+              -18.0696740175108
+            ],
+            [
+              141.157484856954,
+              -18.0596146245667
+            ],
+            [
+              141.157155767528,
+              -18.0594754224229
+            ],
+            [
+              140.87855955542,
+              -17.7796041426083
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-07T13:01:05Z",
+        "snapshot_aest": "2026-07-07T23:01:05+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902203",
+        "outage_id": "902203",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "affected_customers": 41,
+        "affected_customers_known": true,
+        "suburb": null,
+        "street_name": null,
+        "start_utc": null,
+        "etr_utc": null,
+        "centroid_lon": 141.43943516549814,
+        "centroid_lat": -17.518464280940506,
+        "lga_name": "LOCAL GOVERNMENT",
+        "lga_code": null,
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
