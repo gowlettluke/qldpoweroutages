@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-07T07:45:35Z",
-        "snapshot_aest": "2026-07-07T17:45:35+10:00",
+        "snapshot_utc": "2026-07-07T08:01:05Z",
+        "snapshot_aest": "2026-07-07T18:01:05+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-968653-g",
@@ -155,8 +155,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-07T07:45:35Z",
-        "snapshot_aest": "2026-07-07T17:45:35+10:00",
+        "snapshot_utc": "2026-07-07T08:01:05Z",
+        "snapshot_aest": "2026-07-07T18:01:05+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-968849-g",
@@ -271,8 +271,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-07T07:45:35Z",
-        "snapshot_aest": "2026-07-07T17:45:35+10:00",
+        "snapshot_utc": "2026-07-07T08:01:05Z",
+        "snapshot_aest": "2026-07-07T18:01:05+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902196",
@@ -289,6 +289,166 @@
         "centroid_lon": 145.32050609281217,
         "centroid_lat": -15.95012681536353,
         "lga_name": "Wujal Wujal Aboriginal Shire",
+        "lga_code": null,
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.613913427546,
+              -26.9434186875646
+            ],
+            [
+              151.61324646883,
+              -26.9435216314449
+            ],
+            [
+              151.613070291319,
+              -26.9429359961343
+            ],
+            [
+              151.630930059621,
+              -26.9118522422651
+            ],
+            [
+              151.631554259954,
+              -26.9116372359179
+            ],
+            [
+              151.631863510817,
+              -26.9121687451498
+            ],
+            [
+              151.627472281001,
+              -26.9277373597226
+            ],
+            [
+              151.627381756396,
+              -26.9279034616039
+            ],
+            [
+              151.613913427546,
+              -26.9434186875646
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-07T08:01:05Z",
+        "snapshot_aest": "2026-07-07T18:01:05+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902201",
+        "outage_id": "902201",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": null,
+        "street_name": null,
+        "start_utc": null,
+        "etr_utc": null,
+        "centroid_lon": 151.62375708384312,
+        "centroid_lat": -26.92774036018542,
+        "lga_name": "LOCAL GOVERNMENT",
+        "lga_code": null,
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.211974413394,
+              -21.3360349700356
+            ],
+            [
+              149.211993982641,
+              -21.3355292697395
+            ],
+            [
+              149.214694868181,
+              -21.3320668423778
+            ],
+            [
+              149.214832585621,
+              -21.3319480329459
+            ],
+            [
+              149.220754380931,
+              -21.3285562282434
+            ],
+            [
+              149.220815126004,
+              -21.3285267653869
+            ],
+            [
+              149.224290367577,
+              -21.3271244928346
+            ],
+            [
+              149.224731486923,
+              -21.3271534989239
+            ],
+            [
+              149.252236254365,
+              -21.3428360356211
+            ],
+            [
+              149.25243700602,
+              -21.3430632643115
+            ],
+            [
+              149.259212049431,
+              -21.3599950708809
+            ],
+            [
+              149.259059480992,
+              -21.3605078321979
+            ],
+            [
+              149.238893914704,
+              -21.3754242804802
+            ],
+            [
+              149.23818655994,
+              -21.3753093269707
+            ],
+            [
+              149.211974413394,
+              -21.3360349700356
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-07T08:01:05Z",
+        "snapshot_aest": "2026-07-07T18:01:05+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902202",
+        "outage_id": "902202",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 78,
+        "affected_customers_known": true,
+        "suburb": null,
+        "street_name": null,
+        "start_utc": null,
+        "etr_utc": null,
+        "centroid_lon": 149.23629840470545,
+        "centroid_lat": -21.349822673202027,
+        "lga_name": "LOCAL GOVERNMENT",
         "lga_code": null,
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
