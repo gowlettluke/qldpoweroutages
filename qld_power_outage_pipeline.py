@@ -1652,12 +1652,17 @@ def fetch_ergon(timeout: int, chunk_size: int, where: str, debug: bool, user_age
             or as_str(first_present(attrs, [oid_field, "OBJECTID"]))
         )
         start_utc = parse_epoch_any_to_utc_iso(first_present(attrs, [
-            "START_TIME", "startTime", "startDateTime", "STARTDATE", "outageStart"
+            "START_TIME", "startTime", "startDateTime", "STARTDATE", "outageStart",
+            "START", "start",
         ]))
         etr_utc = parse_epoch_any_to_utc_iso(first_present(attrs, [
-            "ETR", "etr", "END_TIME", "endTime", "endDateTime", "estimatedRestoration"
+            "ETR", "etr", "END_TIME", "endTime", "endDateTime", "estimatedRestoration",
+            "EST_FIX_TIME", "estFixTime", "ESTIMATED_FIX_TIME", "estimatedFixTime",
+            "FINISH", "finish",
         ]))
-        suburb = as_str(first_present(attrs, ["SUBURB", "suburb"]))
+        suburb = as_str(first_present(attrs, [
+            "SUBURB", "SUBURBS", "suburb", "suburbs", "LOCALITY", "locality",
+        ]))
 
         outage_key = make_outage_key(
             "au.qld.ergon",
@@ -1681,7 +1686,9 @@ def fetch_ergon(timeout: int, chunk_size: int, where: str, debug: bool, user_age
                 reason=as_str(first_present(attrs, ["CAUSE", "cause", "REASON", "reason"])),
                 affected_customers=extract_customers_affected(attrs),
                 suburb=suburb,
-                street_name=as_str(first_present(attrs, ["streetName", "STREET", "street"])),
+                street_name=as_str(first_present(attrs, [
+                    "streetName", "STREET", "STREETS", "street", "streets",
+                ])),
                 start_utc=start_utc,
                 etr_utc=etr_utc,
                 centroid_lon=centroid_lon,
