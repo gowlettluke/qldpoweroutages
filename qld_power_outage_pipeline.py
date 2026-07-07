@@ -1342,6 +1342,24 @@ def extract_essential_fields(name: Optional[str], desc: Optional[str], timezone_
     return fields
 
 
+def infer_essential_outage_type_from_style(style_url: Optional[str]) -> Optional[str]:
+    """Infer Essential Energy outage type from the KML style identifier.
+
+    Essential Energy's KML marks outage type in each Placemark's styleUrl,
+    e.g. ``#sw_1442837_normal_unplanned`` or ``#sw_1442837_normal_planned``.
+    Check unplanned first because the word "unplanned" contains "planned".
+    """
+    style = as_str(style_url)
+    if not style:
+        return None
+    style_l = style.lower()
+    if "unplanned" in style_l:
+        return "unplanned"
+    if "planned" in style_l:
+        return "planned"
+    return None
+
+
 def parse_essential_kml(kml_text: str, source_url: str, timezone_name: str) -> List[OutageRecord]:
     root = ET.fromstring(kml_text)
     ns_uri = "http://www.opengis.net/kml/2.2"
@@ -1354,10 +1372,11 @@ def parse_essential_kml(kml_text: str, source_url: str, timezone_name: str) -> L
     for idx, pm in enumerate(root.findall(".//kml:Placemark", ns), start=1):
         name = find_kml_text(pm, "kml:name", ns)
         desc = find_kml_text(pm, "kml:description", ns)
+        style_url = find_kml_text(pm, "kml:styleUrl", ns)
         geom = kml_placemark_geometry(pm, ns)
         centroid_lon, centroid_lat = geometry_centroid(geom)
         fields = extract_essential_fields(name, desc, timezone_name=timezone_name)
-        outage_type = infer_outage_type(fields, source_hint=f"{name or ''}\n{fields.get('description_text') or ''}") or "unplanned"
+        outage_type = infer_essential_outage_type_from_style(style_url) or "unknown"
 
         # Essential's KML has not consistently exposed a durable outage ID. Use a stable hash from
         # title/suburb/rounded centroid instead of the full description, because restoration/status text may change.
@@ -1381,6 +1400,7 @@ def parse_essential_kml(kml_text: str, source_url: str, timezone_name: str) -> L
 
         raw = {
             "raw_name": name,
+            "raw_style_url": style_url,
             "raw_description_text": fields.get("description_text"),
             "raw_description_html_decoded": fields.get("description_html_decoded"),
             "essential_in_qld_fallback_polygon": point_in_qld_fallback_polygon(centroid_lon, centroid_lat),
@@ -2035,7 +2055,7 @@ def lga_cache_key(lon: Optional[float], lat: Optional[float], precision: int = 5
     return f"{round(float(lon), precision)},{round(float(lat), precision)}"
 
 
-def lga_candidate_points(record: OutageRecord, max_geometry_points: int = 8) -> List[Tuple[float, float]]:
+def lga_candidate_points(record: OutageRecord, max_geometry_points: int = 24) -> List[Tuple[float, float]]:
     """
     Points to try for LGA assignment.
 
