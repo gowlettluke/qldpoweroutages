@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-07T13:15:28Z",
-        "snapshot_aest": "2026-07-07T23:15:28+10:00",
+        "snapshot_utc": "2026-07-07T13:30:59Z",
+        "snapshot_aest": "2026-07-07T23:30:59+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-968653-g",
@@ -139,14 +139,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-07T13:15:28Z",
-        "snapshot_aest": "2026-07-07T23:15:28+10:00",
+        "snapshot_utc": "2026-07-07T13:30:59Z",
+        "snapshot_aest": "2026-07-07T23:30:59+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902203",
         "outage_id": "902203",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews on route",
         "reason": "The loss of supply is due to the operating of protective equipment.",
         "affected_customers": 41,
         "affected_customers_known": true,
@@ -156,6 +156,122 @@
         "etr_utc": null,
         "centroid_lon": 141.43943516549814,
         "centroid_lat": -17.518464280940506,
+        "lga_name": "LOCAL GOVERNMENT",
+        "lga_code": null,
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.797756895218,
+              -17.6132133858488
+            ],
+            [
+              145.797744720031,
+              -17.6126948956493
+            ],
+            [
+              145.827984288904,
+              -17.5692507937774
+            ],
+            [
+              145.828170972903,
+              -17.5690948752573
+            ],
+            [
+              145.836548827634,
+              -17.5652072267379
+            ],
+            [
+              145.837020968353,
+              -17.5652416974369
+            ],
+            [
+              145.869992371003,
+              -17.5869916069017
+            ],
+            [
+              145.870184087634,
+              -17.5872606446484
+            ],
+            [
+              145.87359569482,
+              -17.601193689122
+            ],
+            [
+              145.873404705145,
+              -17.6016688441157
+            ],
+            [
+              145.868693829164,
+              -17.6047880215019
+            ],
+            [
+              145.868667894865,
+              -17.6048040168054
+            ],
+            [
+              145.833573196233,
+              -17.6249181566512
+            ],
+            [
+              145.833399756428,
+              -17.6249773625531
+            ],
+            [
+              145.81823836352,
+              -17.6271056505831
+            ],
+            [
+              145.818064191037,
+              -17.6270988483571
+            ],
+            [
+              145.812871510719,
+              -17.6259500720041
+            ],
+            [
+              145.812796527809,
+              -17.6259270076591
+            ],
+            [
+              145.805290612098,
+              -17.6229340717324
+            ],
+            [
+              145.805091842813,
+              -17.622784440339
+            ],
+            [
+              145.797756895218,
+              -17.6132133858488
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-07T13:30:59Z",
+        "snapshot_aest": "2026-07-07T23:30:59+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902204",
+        "outage_id": "902204",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 61,
+        "affected_customers_known": true,
+        "suburb": null,
+        "street_name": null,
+        "start_utc": null,
+        "etr_utc": null,
+        "centroid_lon": 145.83539466745583,
+        "centroid_lat": -17.598725544899274,
         "lga_name": "LOCAL GOVERNMENT",
         "lga_code": null,
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
