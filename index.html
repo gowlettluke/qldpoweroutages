@@ -3,71 +3,90 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Queensland Unplanned Power Outages</title>
+  <title>Queensland Unplanned Power Outages — Situation Board</title>
   <style>
     :root {
       color-scheme: dark;
-      --bg: #08111f;
-      --panel: #111c2e;
-      --panel-2: #16243a;
-      --panel-3: #1c2e49;
-      --text: #eef5ff;
-      --muted: #9fb1c8;
-      --border: #2a3c58;
-      --accent: #65d4ff;
-      --accent-2: #8ee6a8;
-      --warn: #ffd166;
-      --danger: #ff6b6b;
-      --shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+      --bg: #06101e;
+      --bg-2: #0a1627;
+      --panel: rgba(16, 28, 48, 0.92);
+      --panel-solid: #101c30;
+      --panel-2: #14243d;
+      --panel-3: #1a2d4b;
+      --line: rgba(132, 157, 191, 0.24);
+      --line-strong: rgba(151, 180, 220, 0.38);
+      --text: #f4f8ff;
+      --muted: #9db0c9;
+      --muted-2: #72849e;
+      --blue: #66d4ff;
+      --green: #8ee6a8;
+      --amber: #ffd166;
+      --orange: #ffab6c;
+      --red: #ff6b6b;
+      --purple: #c8a7ff;
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
+      --radius: 22px;
+      --radius-sm: 14px;
+      --header-h: 122px;
     }
 
     * { box-sizing: border-box; }
+
+    html, body { min-height: 100%; }
 
     body {
       margin: 0;
       min-height: 100vh;
       background:
-        radial-gradient(circle at top left, rgba(101, 212, 255, 0.14), transparent 34rem),
-        radial-gradient(circle at 80% 10%, rgba(142, 230, 168, 0.10), transparent 26rem),
-        var(--bg);
+        radial-gradient(circle at 18% 4%, rgba(102, 212, 255, 0.16), transparent 32rem),
+        radial-gradient(circle at 88% 2%, rgba(142, 230, 168, 0.10), transparent 30rem),
+        linear-gradient(180deg, #06101e 0%, #081325 44%, #050b16 100%);
       color: var(--text);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      overflow-x: hidden;
     }
 
-    a { color: var(--accent); }
+    a { color: var(--blue); }
+    button, select, input { font: inherit; }
+    code { color: #cae8ff; }
 
-    .page {
-      width: min(1760px, calc(100vw - 32px));
+    .shell {
+      width: min(1900px, calc(100vw - 28px));
       margin: 0 auto;
-      padding: 22px 0 36px;
+      padding: 14px 0 18px;
     }
 
-    header {
+    .topbar {
+      min-height: 72px;
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 16px;
+      grid-template-columns: minmax(0, 1.1fr) auto;
       align-items: start;
-      margin-bottom: 18px;
+      gap: 20px;
+      padding: 4px 2px 12px;
     }
 
-    h1 {
+    .title-block h1 {
       margin: 0;
-      font-size: clamp(1.65rem, 2.3vw, 2.65rem);
-      letter-spacing: -0.04em;
+      font-size: clamp(1.8rem, 2.35vw, 3.15rem);
+      line-height: 1;
+      letter-spacing: -0.055em;
+      font-weight: 850;
     }
 
-    .subtitle {
-      margin: 6px 0 0;
+    .title-block p {
+      margin: 8px 0 0;
       color: var(--muted);
-      font-size: 0.98rem;
+      font-size: clamp(0.9rem, 0.95vw, 1.12rem);
+      max-width: 980px;
     }
 
     .status-strip {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
+      align-items: center;
       gap: 8px;
-      max-width: 760px;
+      max-width: 980px;
     }
 
     .pill {
@@ -76,251 +95,531 @@
       gap: 8px;
       min-height: 34px;
       padding: 7px 11px;
-      border: 1px solid var(--border);
+      border: 1px solid var(--line);
       border-radius: 999px;
-      background: rgba(17, 28, 46, 0.82);
+      background: rgba(14, 27, 47, 0.82);
       color: var(--muted);
       font-size: 0.86rem;
       white-space: nowrap;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
     }
 
-    .pill strong { color: var(--text); font-weight: 700; }
-    .pill.ok { border-color: rgba(142, 230, 168, 0.42); color: #cff6da; }
-    .pill.warn { border-color: rgba(255, 209, 102, 0.50); color: #ffe4a3; }
-    .pill.danger { border-color: rgba(255, 107, 107, 0.58); color: #ffc6c6; }
+    .pill strong { color: var(--text); font-weight: 780; }
+    .pill.ok { color: #d5f7df; border-color: rgba(142, 230, 168, 0.42); background: rgba(45, 130, 83, 0.14); }
+    .pill.warn { color: #ffe9b6; border-color: rgba(255, 209, 102, 0.52); background: rgba(255, 209, 102, 0.11); }
+    .pill.danger { color: #ffd1d1; border-color: rgba(255, 107, 107, 0.58); background: rgba(255, 107, 107, 0.12); }
+    .pill.info { color: #d7efff; border-color: rgba(102, 212, 255, 0.44); background: rgba(102, 212, 255, 0.10); }
+
+    .nav-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(9, 20, 36, 0.82);
+      box-shadow: var(--shadow);
+      margin-bottom: 14px;
+      backdrop-filter: blur(18px);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+      min-width: 0;
+    }
+
+    .tab-btn, .control-btn {
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 10px 14px;
+      cursor: pointer;
+      min-height: 42px;
+      transition: border-color 0.16s ease, color 0.16s ease, background 0.16s ease;
+    }
+
+    .tab-btn:hover, .control-btn:hover { color: var(--text); background: rgba(255,255,255,0.04); }
+    .tab-btn.active {
+      color: var(--text);
+      border-color: rgba(102, 212, 255, 0.52);
+      background: linear-gradient(180deg, rgba(102, 212, 255, 0.18), rgba(102, 212, 255, 0.08));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+
+    .rotation-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      white-space: nowrap;
+      font-size: 0.88rem;
+    }
+
+    .control-btn {
+      border-color: var(--line);
+      background: rgba(20, 36, 61, 0.72);
+      padding-inline: 12px;
+    }
+
+    .control-btn.active {
+      color: var(--text);
+      border-color: rgba(142, 230, 168, 0.48);
+      background: rgba(142, 230, 168, 0.12);
+    }
+
+    .view {
+      display: none;
+      min-height: calc(100vh - var(--header-h));
+      animation: viewIn 220ms ease-out;
+    }
+
+    .view.active { display: block; }
+
+    @keyframes viewIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
     .grid { display: grid; gap: 14px; }
-    .summary-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-bottom: 14px; }
-    .two-col { grid-template-columns: minmax(0, 1.35fr) minmax(420px, 0.65fr); }
-    .three-col { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .metric-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); margin-bottom: 14px; }
+    .metric-grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .metric-grid.six { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 
-    .card, .panel {
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      background: linear-gradient(180deg, rgba(22, 36, 58, 0.94), rgba(17, 28, 46, 0.94));
+    .metric {
+      position: relative;
+      min-height: 142px;
+      padding: 17px 18px 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(180deg, rgba(26, 45, 75, 0.94), rgba(13, 24, 42, 0.94));
       box-shadow: var(--shadow);
       overflow: hidden;
     }
 
-    .card {
-      padding: 16px;
-      min-height: 136px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    .metric::after {
+      content: "";
+      position: absolute;
+      inset: auto 16px 0 16px;
+      height: 3px;
+      border-radius: 99px 99px 0 0;
+      background: linear-gradient(90deg, rgba(102, 212, 255, 0.8), rgba(142, 230, 168, 0.75));
+      opacity: 0.7;
     }
 
-    .card .label {
+    .metric.warn::after { background: linear-gradient(90deg, var(--amber), var(--orange)); }
+    .metric.danger::after { background: linear-gradient(90deg, var(--orange), var(--red)); }
+    .metric.neutral::after { background: rgba(157,176,201,0.45); }
+
+    .metric .label {
       color: var(--muted);
-      font-size: 0.82rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .card .value {
-      margin-top: 12px;
-      font-size: clamp(2rem, 3.1vw, 3.2rem);
-      line-height: 0.95;
+      font-size: clamp(0.72rem, 0.76vw, 0.88rem);
       font-weight: 800;
-      letter-spacing: -0.06em;
+      text-transform: uppercase;
+      letter-spacing: 0.085em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    .card .detail {
-      margin-top: 10px;
+    .metric .value {
+      margin-top: 14px;
+      font-size: clamp(2.05rem, 3.05vw, 4rem);
+      line-height: 0.92;
+      font-weight: 880;
+      letter-spacing: -0.065em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .metric .value.place {
+      font-size: clamp(1.35rem, 2vw, 2.55rem);
+      letter-spacing: -0.04em;
+      line-height: 1.02;
+    }
+
+    .metric .detail {
+      margin-top: 12px;
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: clamp(0.82rem, 0.86vw, 0.98rem);
       line-height: 1.35;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(16, 28, 48, 0.94), rgba(10, 20, 36, 0.94));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      min-width: 0;
     }
 
     .panel-header {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
-      gap: 12px;
-      padding: 15px 16px 12px;
-      border-bottom: 1px solid var(--border);
-      background: rgba(8, 17, 31, 0.35);
+      gap: 14px;
+      padding: 15px 17px 12px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(6, 16, 30, 0.36);
     }
 
-    .panel-header h2 {
+    .panel-title h2 {
       margin: 0;
-      font-size: 1.06rem;
-      letter-spacing: -0.015em;
+      font-size: clamp(1.02rem, 1.05vw, 1.32rem);
+      letter-spacing: -0.025em;
+      line-height: 1.15;
     }
 
-    .panel-header .note { color: var(--muted); font-size: 0.84rem; text-align: right; }
-    .panel-body { padding: 14px 16px 16px; }
-
-    .tabs, .toolbar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-
-    button, select, input {
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      background: var(--panel-2);
-      color: var(--text);
-      font: inherit;
-    }
-
-    button {
-      padding: 8px 10px;
-      cursor: pointer;
+    .panel-title p, .note {
+      margin: 5px 0 0;
       color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.35;
     }
 
-    button.active {
-      border-color: rgba(101, 212, 255, 0.62);
-      background: rgba(101, 212, 255, 0.13);
-      color: var(--text);
+    .panel-body { padding: 15px 17px 17px; }
+
+    .overview-layout {
+      grid-template-columns: minmax(0, 1.55fr) minmax(360px, 0.75fr);
+      align-items: stretch;
+      margin-bottom: 14px;
     }
 
-    select, input { padding: 8px 10px; }
-    input { min-width: 260px; }
+    .side-stack { display: grid; gap: 14px; grid-template-rows: 1fr auto; }
+    .bottom-row { grid-template-columns: 0.92fr 1.08fr 1fr; }
+    .lga-layout { grid-template-columns: minmax(0, 1.15fr) minmax(480px, 0.85fr); }
+    .provider-layout { grid-template-columns: minmax(0, 1.05fr) minmax(420px, 0.95fr); }
+    .outage-layout { grid-template-columns: minmax(0, 1.35fr) minmax(390px, 0.65fr); }
+    .trend-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 
     .chart-wrap { width: 100%; min-height: 330px; }
+    .chart-wrap.large { min-height: 440px; }
     svg.chart { width: 100%; height: 330px; display: block; }
-    .axis, .grid-line { stroke: rgba(159, 177, 200, 0.22); stroke-width: 1; }
-    .axis-label { fill: var(--muted); font-size: 12px; }
-    .series-customers { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
-    .series-incidents { fill: none; stroke: var(--accent-2); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
-    .point-customers { fill: var(--accent); }
-    .point-incidents { fill: var(--accent-2); }
+    svg.chart.large { height: 440px; }
+    .axis, .grid-line { stroke: rgba(157, 176, 201, 0.20); stroke-width: 1; }
+    .axis-label { fill: var(--muted); font-size: 12px; font-weight: 650; }
+    .axis-label.strong { fill: #d8e8fb; }
+    .series-customers { fill: none; stroke: var(--blue); stroke-width: 3.5; stroke-linejoin: round; stroke-linecap: round; filter: drop-shadow(0 0 8px rgba(102,212,255,0.16)); }
+    .series-incidents { fill: none; stroke: var(--green); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; opacity: 0.88; }
+    .point-customers { fill: var(--blue); stroke: #06101e; stroke-width: 2; }
+    .point-incidents { fill: var(--green); stroke: #06101e; stroke-width: 2; }
+    .peak-marker { fill: var(--amber); stroke: #06101e; stroke-width: 2; }
 
-    .legend { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 10px; color: var(--muted); font-size: 0.88rem; }
-    .legend span { display: inline-flex; align-items: center; gap: 7px; }
-    .swatch { width: 24px; height: 3px; border-radius: 99px; display: inline-block; }
-    .swatch.customers { background: var(--accent); }
-    .swatch.incidents { background: var(--accent-2); }
-
-    .table-wrap { overflow: auto; max-height: 620px; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
-    th, td { padding: 10px 10px; border-bottom: 1px solid rgba(42, 60, 88, 0.78); text-align: left; vertical-align: top; }
-    th { position: sticky; top: 0; z-index: 1; background: var(--panel-3); color: #cfe1f7; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.055em; white-space: nowrap; }
-    tbody tr:hover { background: rgba(101, 212, 255, 0.06); }
-    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
-    .muted { color: var(--muted); }
-    .nowrap { white-space: nowrap; }
-    .empty { color: var(--muted); padding: 22px; text-align: center; }
-
-    .bar-cell { min-width: 160px; }
-    .bar-track { height: 8px; border-radius: 99px; background: rgba(159, 177, 200, 0.16); overflow: hidden; margin-top: 5px; }
-    .bar-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); border-radius: 99px; }
-
-    .health-list { display: grid; gap: 10px; }
-    .health-item {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 8px;
-      padding: 11px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: rgba(8, 17, 31, 0.26);
+    .legend {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.88rem;
     }
-    .health-item strong { display: block; }
-    .health-item small { color: var(--muted); }
 
-    .notice {
-      padding: 12px 14px;
-      border-radius: 14px;
-      border: 1px solid rgba(255, 209, 102, 0.38);
-      background: rgba(255, 209, 102, 0.10);
-      color: #ffe4a3;
+    .legend span { display: inline-flex; align-items: center; gap: 7px; }
+    .swatch { width: 28px; height: 4px; border-radius: 99px; display: inline-block; }
+    .swatch.customers { background: var(--blue); }
+    .swatch.incidents { background: var(--green); }
+    .swatch.peak { background: var(--amber); }
+
+    .list { display: grid; gap: 8px; }
+
+    .rank-row {
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(132, 157, 191, 0.15);
+    }
+
+    .rank-row:last-child { border-bottom: 0; }
+
+    .rank {
+      width: 28px;
+      height: 28px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 999px;
+      background: rgba(102, 212, 255, 0.12);
+      color: #cfefff;
+      font-weight: 850;
+      font-size: 0.82rem;
+    }
+
+    .rank-title { min-width: 0; }
+    .rank-title strong { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .rank-title small { display: block; color: var(--muted); margin-top: 2px; }
+    .rank-value { text-align: right; font-variant-numeric: tabular-nums; font-weight: 850; }
+    .rank-value small { display: block; color: var(--muted); font-weight: 650; margin-top: 2px; }
+
+    .bar-track {
+      width: 100%;
+      height: 9px;
+      border-radius: 999px;
+      background: rgba(157, 176, 201, 0.14);
+      overflow: hidden;
+      margin-top: 8px;
+    }
+
+    .bar-fill {
+      height: 100%;
+      min-width: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--blue), var(--green));
+    }
+
+    .insight-card {
+      padding: 14px;
+      border: 1px solid rgba(132, 157, 191, 0.20);
+      border-radius: var(--radius-sm);
+      background: rgba(6, 16, 30, 0.34);
+    }
+
+    .insight-card strong { font-size: 1rem; }
+    .insight-card p { margin: 6px 0 0; color: var(--muted); line-height: 1.42; }
+
+    .kpi-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(132, 157, 191, 0.14);
+      color: var(--muted);
+    }
+    .kpi-line:last-child { border-bottom: 0; }
+    .kpi-line strong { color: var(--text); font-variant-numeric: tabular-nums; }
+
+    .table-wrap { overflow: hidden; }
+    table { width: 100%; border-collapse: collapse; font-size: clamp(0.84rem, 0.88vw, 0.98rem); }
+    th, td { padding: 10px 11px; border-bottom: 1px solid rgba(132, 157, 191, 0.16); text-align: left; vertical-align: middle; }
+    th {
+      color: #cfe1f7;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.065em;
+      font-weight: 850;
+      background: rgba(26, 45, 75, 0.52);
+      white-space: nowrap;
+    }
+    tbody tr:last-child td { border-bottom: 0; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tbody tr:hover { background: rgba(102, 212, 255, 0.045); }
+
+    .muted { color: var(--muted); }
+    .muted-2 { color: var(--muted-2); }
+    .nowrap { white-space: nowrap; }
+    .ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 320px; }
+    .empty { color: var(--muted); padding: 28px; text-align: center; }
+
+    .provider-bars { display: grid; gap: 12px; }
+    .provider-row {
+      display: grid;
+      grid-template-columns: minmax(120px, 0.35fr) minmax(0, 1fr) minmax(140px, auto);
+      gap: 14px;
+      align-items: center;
+    }
+    .provider-row strong { display: block; }
+    .provider-row small { color: var(--muted); }
+    .provider-track { height: 16px; border-radius: 999px; background: rgba(157,176,201,0.13); overflow: hidden; box-shadow: inset 0 1px 2px rgba(0,0,0,0.24); }
+    .provider-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--blue), var(--green)); }
+    .provider-value { text-align: right; font-variant-numeric: tabular-nums; }
+
+    .band-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .band {
+      padding: 16px;
+      border: 1px solid rgba(132,157,191,0.2);
+      border-radius: var(--radius-sm);
+      background: rgba(6,16,30,0.35);
+    }
+    .band .band-label { color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.74rem; font-weight: 850; }
+    .band .band-value { margin-top: 8px; font-size: clamp(1.8rem, 2.3vw, 3rem); font-weight: 880; letter-spacing: -0.05em; }
+    .band .band-desc { margin-top: 4px; color: var(--muted); }
+
+    .map-panel { min-height: 520px; }
+    .qld-map { width: 100%; height: 520px; display: block; }
+    .map-grid { stroke: rgba(157,176,201,0.12); stroke-width: 1; }
+    .map-label { fill: var(--muted); font-size: 12px; font-weight: 700; }
+    .bubble { fill: rgba(102,212,255,0.40); stroke: rgba(230,248,255,0.86); stroke-width: 1.5; }
+    .bubble-major { fill: rgba(255,209,102,0.52); }
+    .bubble-moderate { fill: rgba(142,230,168,0.43); }
+    .bubble-minor { fill: rgba(102,212,255,0.32); }
+    .bubble-label { fill: #f4f8ff; font-size: 12px; font-weight: 780; paint-order: stroke; stroke: rgba(6,16,30,0.95); stroke-width: 4px; stroke-linejoin: round; }
+
+    .reason-row, .status-row {
+      display: grid;
+      grid-template-columns: minmax(110px, 0.35fr) minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(132,157,191,0.14);
+    }
+    .reason-row:last-child, .status-row:last-child { border-bottom: 0; }
+    .reason-bar, .status-bar { height: 10px; border-radius: 99px; background: rgba(157,176,201,0.14); overflow: hidden; }
+    .reason-fill, .status-fill { height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--purple), var(--blue)); }
+
+    .sparkline { width: 100%; height: 48px; display: block; }
+    .spark-path { fill: none; stroke: var(--blue); stroke-width: 2.25; stroke-linecap: round; stroke-linejoin: round; }
+    .spark-area { fill: rgba(102,212,255,0.08); }
+
+    .notice, .error-box {
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
       line-height: 1.45;
     }
+    .notice { border: 1px solid rgba(255, 209, 102, 0.38); background: rgba(255, 209, 102, 0.10); color: #ffe4a3; }
+    .error-box { margin: 18px 0; border: 1px solid rgba(255, 107, 107, 0.65); background: rgba(255, 107, 107, 0.10); color: #ffd0d0; white-space: pre-wrap; }
 
-    .error-box {
-      margin: 18px 0;
-      padding: 16px;
-      border: 1px solid rgba(255, 107, 107, 0.65);
-      border-radius: 16px;
-      background: rgba(255, 107, 107, 0.10);
-      color: #ffd0d0;
-      white-space: pre-wrap;
+    .footer {
+      margin-top: 14px;
+      color: var(--muted-2);
+      font-size: 0.78rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
     }
 
-    footer { margin-top: 18px; color: var(--muted); font-size: 0.82rem; }
+    @media (min-width: 1500px) {
+      .shell { width: min(1940px, calc(100vw - 36px)); }
+      .panel-body { padding: 17px 19px 19px; }
+      .metric { min-height: 152px; }
+    }
 
-    @media (max-width: 1180px) {
-      header { grid-template-columns: 1fr; }
+    @media (max-width: 1280px) {
+      .topbar { grid-template-columns: 1fr; }
       .status-strip { justify-content: flex-start; }
-      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .two-col, .three-col { grid-template-columns: 1fr; }
+      .nav-row { grid-template-columns: 1fr; border-radius: 24px; }
+      .rotation-controls { justify-content: space-between; }
+      .metric-grid, .metric-grid.four, .metric-grid.six { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .overview-layout, .lga-layout, .provider-layout, .outage-layout, .trend-layout, .bottom-row { grid-template-columns: 1fr; }
+      .view { min-height: auto; }
     }
 
-    @media (max-width: 680px) {
-      .page { width: min(100% - 20px, 1760px); padding-top: 14px; }
-      .summary-grid { grid-template-columns: 1fr; }
-      .panel-header { align-items: flex-start; flex-direction: column; }
-      input { min-width: 0; width: 100%; }
-      .toolbar { width: 100%; }
+    @media (max-width: 720px) {
+      .shell { width: min(100% - 16px, 1900px); padding-top: 8px; }
+      .metric-grid, .metric-grid.four, .metric-grid.six, .band-grid { grid-template-columns: 1fr; }
+      .tabs { display: grid; grid-template-columns: 1fr 1fr; }
+      .tab-btn { padding-inline: 8px; }
+      .panel-header { flex-direction: column; }
+      .provider-row, .reason-row, .status-row { grid-template-columns: 1fr; }
+      .qld-map { height: 420px; }
+      .map-panel { min-height: 420px; }
+      table { font-size: 0.82rem; }
+      th, td { padding: 8px; }
     }
   </style>
 </head>
 <body>
-  <main class="page">
-    <header>
-      <div>
-        <h1>Queensland Unplanned Power Outages</h1>
-        <p class="subtitle">Operational view of current, since-0900 AEST, and rolling 24-hour outage impacts by incident and LGA.</p>
+  <main class="shell">
+    <header class="topbar">
+      <div class="title-block">
+        <h1>QLD Unplanned Power Outages</h1>
+        <p>Statewide situational view of current outage impact, affected local government areas, provider contribution, and trend context.</p>
       </div>
       <div class="status-strip" id="statusStrip">
         <span class="pill">Loading data…</span>
       </div>
     </header>
 
+    <nav class="nav-row" aria-label="Dashboard views">
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab-btn active" data-view="overview" role="tab" aria-selected="true">Overview</button>
+        <button type="button" class="tab-btn" data-view="lga" role="tab" aria-selected="false">LGA Impact</button>
+        <button type="button" class="tab-btn" data-view="provider" role="tab" aria-selected="false">Provider Situation</button>
+        <button type="button" class="tab-btn" data-view="outages" role="tab" aria-selected="false">Largest Outages</button>
+        <button type="button" class="tab-btn" data-view="trends" role="tab" aria-selected="false">Trends</button>
+      </div>
+      <div class="rotation-controls">
+        <button type="button" class="control-btn active" id="autoRotateBtn">Auto rotate</button>
+        <span id="rotationStatus">Next view --:--</span>
+      </div>
+    </nav>
+
     <section id="errorMount"></section>
 
-    <section class="grid summary-grid" id="summaryCards" aria-live="polite"></section>
+    <section class="view active" id="view-overview" role="tabpanel" aria-labelledby="Overview">
+      <section class="grid metric-grid" id="overviewMetrics" aria-live="polite"></section>
+      <section class="grid overview-layout">
+        <article class="panel">
+          <div class="panel-header">
+            <div class="panel-title">
+              <h2>Statewide trend since 0900 AEST</h2>
+              <p id="overviewChartNote">Current operational period.</p>
+            </div>
+            <div class="legend">
+              <span><i class="swatch customers"></i>Customers</span>
+              <span><i class="swatch incidents"></i>Incidents</span>
+              <span><i class="swatch peak"></i>Peak</span>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="chart-wrap large" id="overviewTrendChart"></div>
+          </div>
+        </article>
 
-    <section class="grid two-col" style="margin-bottom: 14px;">
-      <article class="panel">
-        <div class="panel-header">
-          <div>
-            <h2>Outage trend</h2>
-            <div class="note" id="chartNote">Rolling 24 hours, sampled at each backend poll.</div>
-          </div>
-          <div class="tabs" role="group" aria-label="Chart period">
-            <button type="button" class="active" data-chart-window="24h">Rolling 24h</button>
-            <button type="button" data-chart-window="since0900">Since 0900</button>
-          </div>
-        </div>
-        <div class="panel-body">
-          <div class="chart-wrap" id="trendChart"></div>
-          <div class="legend">
-            <span><i class="swatch customers"></i>Affected customers active at snapshot</span>
-            <span><i class="swatch incidents"></i>Active incidents at snapshot</span>
-          </div>
-        </div>
-      </article>
-
-      <aside class="panel">
-        <div class="panel-header">
-          <h2>Provider health</h2>
-          <div class="note">Last 48h status history</div>
-        </div>
-        <div class="panel-body">
-          <div id="healthPanel" class="health-list"></div>
-        </div>
-      </aside>
+        <aside class="side-stack">
+          <article class="panel">
+            <div class="panel-header">
+              <div class="panel-title">
+                <h2>Top affected LGAs</h2>
+                <p>Current affected customers by local government area.</p>
+              </div>
+            </div>
+            <div class="panel-body" id="overviewTopLgas"></div>
+          </article>
+          <article class="panel">
+            <div class="panel-header">
+              <div class="panel-title"><h2>Situation summary</h2></div>
+            </div>
+            <div class="panel-body" id="overviewInsights"></div>
+          </article>
+        </aside>
+      </section>
+      <section class="grid bottom-row">
+        <article class="panel">
+          <div class="panel-header"><div class="panel-title"><h2>Provider contribution</h2><p>Share of current affected customers.</p></div></div>
+          <div class="panel-body" id="overviewProviderBars"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-header"><div class="panel-title"><h2>LGA impact spread</h2><p>Number of affected LGAs by current impact band.</p></div></div>
+          <div class="panel-body" id="overviewBands"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-header"><div class="panel-title"><h2>Data confidence</h2><p>Latest source status and geographic matching.</p></div></div>
+          <div class="panel-body" id="overviewConfidence"></div>
+        </article>
+      </section>
     </section>
 
-    <section class="grid two-col" style="margin-bottom: 14px;">
-      <article class="panel">
+    <section class="view" id="view-lga" role="tabpanel" aria-labelledby="LGA Impact">
+      <section class="grid metric-grid" id="lgaMetrics"></section>
+      <section class="grid lga-layout">
+        <article class="panel map-panel">
+          <div class="panel-header">
+            <div class="panel-title">
+              <h2>Geographic impact view</h2>
+              <p>Bubble position uses current outage centroids; size represents current affected customers by LGA.</p>
+            </div>
+          </div>
+          <div class="panel-body" id="lgaMap"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div class="panel-title">
+              <h2>LGA concentration</h2>
+              <p>Top LGAs and statewide share of current affected customers.</p>
+            </div>
+          </div>
+          <div class="panel-body" id="lgaConcentration"></div>
+        </article>
+      </section>
+      <section class="panel" style="margin-top:14px;">
         <div class="panel-header">
-          <div>
-            <h2>LGA leaderboard</h2>
-            <div class="note">Window totals deduplicate repeated snapshots and use peak customers per incident.</div>
-          </div>
-          <div class="toolbar">
-            <select id="lgaSort" aria-label="Sort LGA leaderboard">
-              <option value="currentCustomers">Current customers</option>
-              <option value="currentIncidents">Current incidents</option>
-              <option value="sinceCustomers">Since 0900 peak customers</option>
-              <option value="sinceIncidents">Since 0900 incidents</option>
-              <option value="rollingCustomers">24h peak customers</option>
-              <option value="rollingIncidents">24h incidents</option>
-            </select>
-          </div>
+          <div class="panel-title"><h2>LGA impact table</h2><p>Current impact by local government area. Peak values show the highest customer impact observed today.</p></div>
         </div>
         <div class="table-wrap">
           <table>
@@ -328,88 +627,114 @@
               <tr>
                 <th>Rank</th>
                 <th>LGA</th>
-                <th class="num">Current<br>customers</th>
-                <th class="num">Current<br>incidents</th>
-                <th class="num">Since 0900<br>peak customers</th>
-                <th class="num">Since 0900<br>incidents</th>
-                <th class="num">24h peak<br>customers</th>
-                <th class="num">24h<br>incidents</th>
-                <th>Scale</th>
+                <th class="num">Current customers</th>
+                <th class="num">Active incidents</th>
+                <th class="num">Share of QLD</th>
+                <th class="num">Peak today</th>
+                <th class="num">24h peak</th>
               </tr>
             </thead>
             <tbody id="lgaTable"></tbody>
           </table>
         </div>
-      </article>
+      </section>
+    </section>
 
-      <article class="panel">
+    <section class="view" id="view-provider" role="tabpanel" aria-labelledby="Provider Situation">
+      <section class="grid metric-grid" id="providerMetrics"></section>
+      <section class="grid provider-layout">
+        <article class="panel">
+          <div class="panel-header">
+            <div class="panel-title"><h2>Provider contribution</h2><p>Current customers and incidents by provider.</p></div>
+          </div>
+          <div class="panel-body" id="providerBars"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div class="panel-title"><h2>Provider data status</h2><p>Latest health record loaded from the provider health history.</p></div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Provider</th>
+                  <th>Status</th>
+                  <th class="num">Records</th>
+                  <th>Latest health timestamp</th>
+                </tr>
+              </thead>
+              <tbody id="providerHealthTable"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+      <section class="panel" style="margin-top:14px;">
         <div class="panel-header">
-          <h2>Provider breakdown</h2>
-          <div class="note">Current and windowed incident peaks</div>
+          <div class="panel-title"><h2>Provider trend snapshots</h2><p>Current operational period, grouped by provider.</p></div>
         </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Provider</th>
-                <th class="num">Current<br>customers</th>
-                <th class="num">Current<br>incidents</th>
-                <th class="num">Since 0900<br>customers</th>
-                <th class="num">24h<br>customers</th>
-              </tr>
-            </thead>
-            <tbody id="providerTable"></tbody>
-          </table>
-        </div>
-      </article>
+        <div class="panel-body" id="providerSparklines"></div>
+      </section>
     </section>
 
-    <section class="panel" style="margin-bottom: 14px;">
-      <div class="panel-header">
-        <div>
-          <h2>Current incidents</h2>
-          <div class="note">Latest snapshot only. Search filters provider, LGA, suburb, incident, street, and reason.</div>
-        </div>
-        <div class="toolbar">
-          <input id="incidentSearch" type="search" placeholder="Search incidents…" autocomplete="off">
-        </div>
-      </div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Provider</th>
-              <th>LGA</th>
-              <th>Suburb / streets</th>
-              <th>Incident</th>
-              <th class="num">Customers</th>
-              <th>Started</th>
-              <th>ETR</th>
-              <th>Reason</th>
-            </tr>
-          </thead>
-          <tbody id="incidentTable"></tbody>
-        </table>
-      </div>
+    <section class="view" id="view-outages" role="tabpanel" aria-labelledby="Largest Outages">
+      <section class="grid metric-grid four" id="outageMetrics"></section>
+      <section class="grid outage-layout">
+        <article class="panel">
+          <div class="panel-header">
+            <div class="panel-title"><h2>Largest current outage areas</h2><p>Top local impacts by current affected customers. Street details are suppressed for TV-wall readability.</p></div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>LGA</th>
+                  <th>Locality</th>
+                  <th>Provider</th>
+                  <th class="num">Customers</th>
+                  <th>Started</th>
+                  <th>ETR</th>
+                  <th>Reason</th>
+                </tr>
+              </thead>
+              <tbody id="largestOutagesTable"></tbody>
+            </table>
+          </div>
+        </article>
+        <aside class="grid">
+          <article class="panel">
+            <div class="panel-header"><div class="panel-title"><h2>Outage reasons</h2><p>Current incidents grouped by supplied reason.</p></div></div>
+            <div class="panel-body" id="reasonBreakdown"></div>
+          </article>
+          <article class="panel">
+            <div class="panel-header"><div class="panel-title"><h2>Restoration estimate visibility</h2><p>Current incidents grouped by ETR status.</p></div></div>
+            <div class="panel-body" id="etrBreakdown"></div>
+          </article>
+        </aside>
+      </section>
     </section>
 
-    <section class="grid three-col">
-      <article class="panel">
-        <div class="panel-header"><h2>Data quality</h2></div>
-        <div class="panel-body" id="qualityPanel"></div>
-      </article>
-      <article class="panel">
-        <div class="panel-header"><h2>Operational period</h2></div>
-        <div class="panel-body" id="periodPanel"></div>
-      </article>
-      <article class="panel">
-        <div class="panel-header"><h2>Data sources</h2></div>
-        <div class="panel-body" id="sourcePanel"></div>
-      </article>
+    <section class="view" id="view-trends" role="tabpanel" aria-labelledby="Trends">
+      <section class="grid metric-grid four" id="trendMetrics"></section>
+      <section class="grid trend-layout">
+        <article class="panel">
+          <div class="panel-header">
+            <div class="panel-title"><h2>Today since 0900 AEST</h2><p id="todayTrendNote">Current operational period.</p></div>
+          </div>
+          <div class="panel-body"><div class="chart-wrap large" id="todayTrendChart"></div></div>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div class="panel-title"><h2>Rolling 24 hours</h2><p id="rollingTrendNote">Broader recent context.</p></div>
+          </div>
+          <div class="panel-body"><div class="chart-wrap large" id="rollingTrendChart"></div></div>
+        </article>
+      </section>
     </section>
 
-    <footer>
-      This page is static and self-contained. It reads the latest generated files from the repository <code>data/</code> folder and refreshes every 15 minutes.
+    <footer class="footer">
+      <span>Static self-contained display. Data refreshes from the repository <code>data/</code> folder every 15 minutes.</span>
+      <span id="footerMeta"></span>
     </footer>
   </main>
 
@@ -421,58 +746,53 @@
       snapshots: "data/outage_snapshots_48h.csv",
       health: "data/provider_health_48h.csv"
     };
+
     const REFRESH_MS = 15 * 60 * 1000;
     const BRISBANE_OFFSET_MS = 10 * 60 * 60 * 1000;
+    const VIEW_ORDER = ["overview", "lga", "overview", "provider", "overview", "outages", "trends"];
+    const VIEW_DURATIONS_MS = {
+      overview: 45 * 1000,
+      lga: 45 * 1000,
+      provider: 35 * 1000,
+      outages: 35 * 1000,
+      trends: 45 * 1000
+    };
 
     const state = {
-      chartWindow: "24h",
-      lgaSort: "currentCustomers",
-      incidentSearch: "",
       data: null,
+      activeView: "overview",
+      autoRotate: true,
       refreshTimer: null,
       countdownTimer: null,
-      nextRefreshAt: null
+      rotateTimer: null,
+      nextRefreshAt: null,
+      nextViewAt: null,
+      rotationIndex: 0
     };
 
     const $ = (id) => document.getElementById(id);
     const fmtInt = new Intl.NumberFormat("en-AU", { maximumFractionDigits: 0 });
+    const fmtPct = new Intl.NumberFormat("en-AU", { maximumFractionDigits: 0, style: "percent" });
+    const fmtPct1 = new Intl.NumberFormat("en-AU", { maximumFractionDigits: 1, style: "percent" });
 
     function parseCsv(text) {
       const rows = [];
       let row = [];
       let field = "";
       let inQuotes = false;
-
       for (let i = 0; i < text.length; i++) {
         const ch = text[i];
         const next = text[i + 1];
         if (inQuotes) {
-          if (ch === '"' && next === '"') {
-            field += '"';
-            i++;
-          } else if (ch === '"') {
-            inQuotes = false;
-          } else {
-            field += ch;
-          }
-        } else if (ch === '"') {
-          inQuotes = true;
-        } else if (ch === ",") {
-          row.push(field);
-          field = "";
-        } else if (ch === "\n") {
-          row.push(field);
-          rows.push(row);
-          row = [];
-          field = "";
-        } else if (ch !== "\r") {
-          field += ch;
-        }
+          if (ch === '"' && next === '"') { field += '"'; i++; }
+          else if (ch === '"') inQuotes = false;
+          else field += ch;
+        } else if (ch === '"') inQuotes = true;
+        else if (ch === ",") { row.push(field); field = ""; }
+        else if (ch === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+        else if (ch !== "\r") field += ch;
       }
-      if (field.length || row.length) {
-        row.push(field);
-        rows.push(row);
-      }
+      if (field.length || row.length) { row.push(field); rows.push(row); }
       if (!rows.length) return [];
       const headers = rows.shift().map((h) => h.trim());
       return rows.filter((r) => r.some((v) => v !== "")).map((r) => {
@@ -497,20 +817,12 @@
       ]);
       const manifest = JSON.parse(manifestText);
       const snapshots = parseCsv(snapshotsText).map(normaliseSnapshotRow).filter((r) => r.snapshotUtcMs);
-      const health = parseCsv(healthText).map((r) => ({
-        generatedUtc: r.generated_utc,
-        generatedAest: r.generated_aest,
-        providerName: r.provider_name || "Unknown",
-        status: r.status || "UNKNOWN",
-        recordCount: toNumber(r.record_count),
-        errorMessage: r.error_message || ""
-      }));
+      const health = parseCsv(healthText).map(normaliseHealthRow).filter((r) => r.providerName);
       if (!snapshots.length) throw new Error("No snapshot rows were loaded.");
-
-      const prepared = prepareDashboardData(manifest, snapshots, health);
-      state.data = prepared;
+      state.data = prepareDashboardData(manifest, snapshots, health);
       renderAll();
       scheduleRefresh();
+      resetRotationTimer();
     }
 
     function normaliseSnapshotRow(r) {
@@ -520,7 +832,7 @@
         snapshotAest: r.snapshot_aest || "",
         snapshotUtcMs,
         providerCode: r.provider_code || "unknown",
-        providerName: r.provider_name || "Unknown",
+        providerName: r.provider_name || r.provider_code || "Unknown",
         outageKey: r.outage_key || `${r.provider_code || "unknown"}|${r.outage_id || Math.random()}`,
         outageId: r.outage_id || "",
         outageType: r.outage_type || "unknown",
@@ -532,49 +844,113 @@
         streetName: r.street_name || "",
         startUtc: r.start_utc || "",
         etrUtc: r.etr_utc || "",
-        centroidLon: r.centroid_lon || "",
-        centroidLat: r.centroid_lat || "",
+        centroidLon: toNullableNumber(r.centroid_lon),
+        centroidLat: toNullableNumber(r.centroid_lat),
         lgaName: r.lga_name || "Unmatched",
         lgaCode: r.lga_code || "",
         sourceUrl: r.source_url || ""
       };
     }
 
+    function normaliseHealthRow(r) {
+      return {
+        generatedUtc: r.generated_utc || "",
+        generatedAest: r.generated_aest || "",
+        generatedUtcMs: parseUtcMs(r.generated_utc),
+        providerName: r.provider_name || "Unknown",
+        status: (r.status || "UNKNOWN").toUpperCase(),
+        recordCount: toNumber(r.record_count),
+        errorMessage: r.error_message || ""
+      };
+    }
+
     function prepareDashboardData(manifest, snapshots, health) {
       const latestMs = Math.max(...snapshots.map((r) => r.snapshotUtcMs));
+      const snapshotTimes = [...new Set(snapshots.map((r) => r.snapshotUtcMs))].sort((a, b) => a - b);
+      const previousMs = snapshotTimes.slice().reverse().find((ms) => ms < latestMs) || null;
       const latestRows = snapshots.filter((r) => r.snapshotUtcMs === latestMs);
-      const latestAestMs = utcMsToAestWallMs(latestMs);
+      const previousRows = previousMs ? snapshots.filter((r) => r.snapshotUtcMs === previousMs) : [];
       const since0900StartMs = getSince0900StartUtcMs(latestMs);
       const rolling24StartMs = latestMs - 24 * 60 * 60 * 1000;
+      const sinceRows = snapshots.filter((r) => r.snapshotUtcMs >= since0900StartMs && r.snapshotUtcMs <= latestMs);
+      const rollingRows = snapshots.filter((r) => r.snapshotUtcMs >= rolling24StartMs && r.snapshotUtcMs <= latestMs);
 
       const currentIncidents = collapseLatestIncidents(latestRows);
-      const sinceIncidents = collapseWindowIncidents(snapshots.filter((r) => r.snapshotUtcMs >= since0900StartMs && r.snapshotUtcMs <= latestMs));
-      const rollingIncidents = collapseWindowIncidents(snapshots.filter((r) => r.snapshotUtcMs >= rolling24StartMs && r.snapshotUtcMs <= latestMs));
-      const trend24 = buildTrendSeries(snapshots.filter((r) => r.snapshotUtcMs >= rolling24StartMs && r.snapshotUtcMs <= latestMs));
-      const trendSince = buildTrendSeries(snapshots.filter((r) => r.snapshotUtcMs >= since0900StartMs && r.snapshotUtcMs <= latestMs));
+      const previousIncidents = collapseLatestIncidents(previousRows);
+      const sinceIncidents = collapseWindowIncidents(sinceRows);
+      const rollingIncidents = collapseWindowIncidents(rollingRows);
+      const trendSince = buildTrendSeries(sinceRows);
+      const trend24 = buildTrendSeries(rollingRows);
 
-      const currentSummary = summariseIncidentList(currentIncidents);
-      const sinceSummary = summariseIncidentList(sinceIncidents);
-      const rollingSummary = summariseIncidentList(rollingIncidents);
+      const currentSummary = summariseIncidentList(currentIncidents, "latestCustomers");
+      const sinceSummary = summariseIncidentList(sinceIncidents, "peakCustomers");
+      const rollingSummary = summariseIncidentList(rollingIncidents, "peakCustomers");
+
+      const lgaRows = buildDimensionRows("lgaName", currentIncidents, sinceIncidents, rollingIncidents, currentSummary.latestCustomerSum);
+      const providerRows = buildDimensionRows("providerName", currentIncidents, sinceIncidents, rollingIncidents, currentSummary.latestCustomerSum);
+      const topLgas = [...lgaRows].filter((r) => r.currentCustomers > 0).sort(sortByCurrentImpact);
+      const topProviders = [...providerRows].filter((r) => r.currentCustomers > 0 || r.currentIncidents > 0).sort(sortByCurrentImpact);
+      const top5LgaCustomerSum = topLgas.slice(0, 5).reduce((sum, r) => sum + r.currentCustomers, 0);
+      const top10OutageCustomerSum = currentIncidents.slice(0, 10).reduce((sum, i) => sum + i.latestCustomers, 0);
+
+      const peakToday = getPeakPoint(trendSince, "customers");
+      const peak24 = getPeakPoint(trend24, "customers");
+      const currentPoint = trendSince.length ? trendSince[trendSince.length - 1] : { customers: 0, incidents: 0, snapshotUtcMs: latestMs };
+      const providerHealthLatest = getLatestProviderHealth(health);
+      const providerTrendSeries = buildProviderTrendSeries(sinceRows);
+      const lgaBands = buildLgaBands(topLgas);
+      const reasonRows = buildReasonRows(currentIncidents);
+      const etrRows = buildEtrRows(currentIncidents, latestMs);
+      const lgaMapPoints = buildLgaMapPoints(currentIncidents);
+      const unknownCustomerIncidents = currentIncidents.filter((i) => !i.latestRow.affectedCustomersKnown).length;
+      const matchableIncidents = currentIncidents.length;
+      const matchedIncidents = currentIncidents.filter((i) => i.lgaName && i.lgaName !== "Unmatched").length;
+      const lgaMatchRate = matchableIncidents ? matchedIncidents / matchableIncidents : 1;
+      const missingCoords = currentIncidents.filter((i) => !isFiniteNumber(i.latestRow.centroidLon) || !isFiniteNumber(i.latestRow.centroidLat)).length;
+      const oldestCurrent = currentIncidents.reduce((oldest, incident) => {
+        const startedMs = parseUtcMs(incident.latestRow.startUtc) || incident.firstSeenMs;
+        if (!startedMs) return oldest;
+        if (!oldest || startedMs < oldest.startedMs) return { incident, startedMs };
+        return oldest;
+      }, null);
 
       return {
         manifest,
         snapshots,
         health,
         latestMs,
-        latestAestMs,
+        previousMs,
         since0900StartMs,
         rolling24StartMs,
+        latestRows,
         currentIncidents,
+        previousIncidents,
         sinceIncidents,
         rollingIncidents,
-        trend24,
         trendSince,
+        trend24,
         currentSummary,
         sinceSummary,
         rollingSummary,
-        lgaRows: buildDimensionRows("lgaName", currentIncidents, sinceIncidents, rollingIncidents),
-        providerRows: buildDimensionRows("providerName", currentIncidents, sinceIncidents, rollingIncidents)
+        lgaRows,
+        providerRows,
+        topLgas,
+        topProviders,
+        top5LgaCustomerSum,
+        top10OutageCustomerSum,
+        peakToday,
+        peak24,
+        currentPoint,
+        providerHealthLatest,
+        providerTrendSeries,
+        lgaBands,
+        reasonRows,
+        etrRows,
+        lgaMapPoints,
+        unknownCustomerIncidents,
+        lgaMatchRate,
+        missingCoords,
+        oldestCurrent
       };
     }
 
@@ -593,7 +969,8 @@
             peakCustomers: row.affectedCustomers,
             firstSeenMs: row.snapshotUtcMs,
             lastSeenMs: row.snapshotUtcMs,
-            latestRow: row
+            latestRow: row,
+            peakRow: row
           });
         }
       });
@@ -621,8 +998,10 @@
           map.set(row.outageKey, incident);
           return;
         }
-        incident.peakCustomers = Math.max(incident.peakCustomers, row.affectedCustomers);
-        if (row.affectedCustomers >= incident.peakCustomers) incident.peakRow = row;
+        if (row.affectedCustomers >= incident.peakCustomers) {
+          incident.peakCustomers = row.affectedCustomers;
+          incident.peakRow = row;
+        }
         incident.firstSeenMs = Math.min(incident.firstSeenMs, row.snapshotUtcMs);
         if (row.snapshotUtcMs >= incident.lastSeenMs) {
           incident.lastSeenMs = row.snapshotUtcMs;
@@ -637,35 +1016,40 @@
       return [...map.values()].sort((a, b) => b.peakCustomers - a.peakCustomers || a.lgaName.localeCompare(b.lgaName));
     }
 
-    function summariseIncidentList(incidents) {
-      const customers = incidents.reduce((sum, i) => sum + i.peakCustomers, 0);
-      const currentCustomers = incidents.reduce((sum, i) => sum + i.latestCustomers, 0);
-      const lgas = new Set(incidents.map((i) => i.lgaName || "Unmatched"));
+    function summariseIncidentList(incidents, customerField) {
+      const customers = incidents.reduce((sum, i) => sum + (i[customerField] || 0), 0);
+      const latestCustomers = incidents.reduce((sum, i) => sum + i.latestCustomers, 0);
+      const lgas = new Set(incidents.filter((i) => i.lgaName && i.lgaName !== "Unmatched").map((i) => i.lgaName));
       const unmatched = incidents.filter((i) => !i.lgaName || i.lgaName === "Unmatched");
       return {
         incidents: incidents.length,
-        peakCustomerSum: customers,
-        latestCustomerSum: currentCustomers,
+        customerSum: customers,
+        latestCustomerSum: latestCustomers,
         lgaCount: lgas.size,
         unmatchedIncidents: unmatched.length,
-        unmatchedCustomers: unmatched.reduce((sum, i) => sum + i.peakCustomers, 0)
+        unmatchedCustomers: unmatched.reduce((sum, i) => sum + (i[customerField] || i.latestCustomers || 0), 0)
       };
     }
 
-    function buildDimensionRows(field, current, since, rolling) {
+    function buildDimensionRows(field, current, since, rolling, currentTotal) {
       const names = new Set([...current, ...since, ...rolling].map((i) => i[field] || "Unmatched"));
       return [...names].map((name) => {
         const currentItems = current.filter((i) => (i[field] || "Unmatched") === name);
         const sinceItems = since.filter((i) => (i[field] || "Unmatched") === name);
         const rollingItems = rolling.filter((i) => (i[field] || "Unmatched") === name);
+        const currentCustomers = currentItems.reduce((sum, i) => sum + i.latestCustomers, 0);
+        const currentIncidents = currentItems.length;
+        const sinceCustomers = sinceItems.reduce((sum, i) => sum + i.peakCustomers, 0);
+        const rollingCustomers = rollingItems.reduce((sum, i) => sum + i.peakCustomers, 0);
         return {
           name,
-          currentCustomers: currentItems.reduce((sum, i) => sum + i.latestCustomers, 0),
-          currentIncidents: currentItems.length,
-          sinceCustomers: sinceItems.reduce((sum, i) => sum + i.peakCustomers, 0),
+          currentCustomers,
+          currentIncidents,
+          sinceCustomers,
           sinceIncidents: sinceItems.length,
-          rollingCustomers: rollingItems.reduce((sum, i) => sum + i.peakCustomers, 0),
+          rollingCustomers,
           rollingIncidents: rollingItems.length,
+          share: currentTotal ? currentCustomers / currentTotal : 0,
           unmatched: name === "Unmatched"
         };
       });
@@ -687,18 +1071,119 @@
       });
     }
 
+    function buildProviderTrendSeries(rows) {
+      const providers = new Map();
+      rows.forEach((row) => {
+        if (!providers.has(row.providerName)) providers.set(row.providerName, []);
+      });
+      const bySnapshot = new Map();
+      rows.forEach((row) => {
+        if (!bySnapshot.has(row.snapshotUtcMs)) bySnapshot.set(row.snapshotUtcMs, []);
+        bySnapshot.get(row.snapshotUtcMs).push(row);
+      });
+      const snapshots = [...bySnapshot.entries()].sort((a, b) => a[0] - b[0]);
+      providers.forEach((_, providerName) => {
+        const series = snapshots.map(([snapshotUtcMs, snapshotRows]) => {
+          const providerRows = snapshotRows.filter((r) => r.providerName === providerName);
+          const incidents = collapseLatestIncidents(providerRows);
+          return {
+            snapshotUtcMs,
+            customers: incidents.reduce((sum, i) => sum + i.latestCustomers, 0),
+            incidents: incidents.length
+          };
+        });
+        providers.set(providerName, series);
+      });
+      return providers;
+    }
+
+    function getLatestProviderHealth(health) {
+      const map = new Map();
+      health.forEach((item) => {
+        const existing = map.get(item.providerName);
+        if (!existing || item.generatedUtcMs >= existing.generatedUtcMs) map.set(item.providerName, item);
+      });
+      return map;
+    }
+
+    function buildLgaBands(topLgas) {
+      return {
+        major: topLgas.filter((r) => r.currentCustomers >= 1000).length,
+        moderate: topLgas.filter((r) => r.currentCustomers >= 100 && r.currentCustomers < 1000).length,
+        minor: topLgas.filter((r) => r.currentCustomers > 0 && r.currentCustomers < 100).length
+      };
+    }
+
+    function buildReasonRows(currentIncidents) {
+      const map = new Map();
+      currentIncidents.forEach((incident) => {
+        const reason = cleanReason(incident.latestRow.reason);
+        const current = map.get(reason) || { reason, incidents: 0, customers: 0 };
+        current.incidents += 1;
+        current.customers += incident.latestCustomers;
+        map.set(reason, current);
+      });
+      return [...map.values()].sort((a, b) => b.customers - a.customers || b.incidents - a.incidents || a.reason.localeCompare(b.reason));
+    }
+
+    function buildEtrRows(currentIncidents, latestMs) {
+      const buckets = [
+        { key: "knownFuture", label: "ETR supplied", incidents: 0, customers: 0 },
+        { key: "overdue", label: "ETR passed", incidents: 0, customers: 0 },
+        { key: "missing", label: "No ETR supplied", incidents: 0, customers: 0 }
+      ];
+      const byKey = new Map(buckets.map((b) => [b.key, b]));
+      currentIncidents.forEach((incident) => {
+        const etrMs = parseUtcMs(incident.latestRow.etrUtc);
+        let key = "knownFuture";
+        if (!etrMs) key = "missing";
+        else if (etrMs < latestMs) key = "overdue";
+        const bucket = byKey.get(key);
+        bucket.incidents += 1;
+        bucket.customers += incident.latestCustomers;
+      });
+      return buckets.sort((a, b) => b.incidents - a.incidents);
+    }
+
+    function buildLgaMapPoints(currentIncidents) {
+      const map = new Map();
+      currentIncidents.forEach((incident) => {
+        const r = incident.latestRow;
+        if (!isFiniteNumber(r.centroidLon) || !isFiniteNumber(r.centroidLat)) return;
+        const key = incident.lgaName || "Unmatched";
+        const item = map.get(key) || { name: key, customers: 0, incidents: 0, weightedLon: 0, weightedLat: 0, weight: 0 };
+        const weight = Math.max(incident.latestCustomers, 1);
+        item.customers += incident.latestCustomers;
+        item.incidents += 1;
+        item.weightedLon += r.centroidLon * weight;
+        item.weightedLat += r.centroidLat * weight;
+        item.weight += weight;
+        map.set(key, item);
+      });
+      return [...map.values()].map((item) => ({
+        name: item.name,
+        customers: item.customers,
+        incidents: item.incidents,
+        lon: item.weightedLon / Math.max(1, item.weight),
+        lat: item.weightedLat / Math.max(1, item.weight)
+      })).filter((p) => p.customers > 0).sort((a, b) => b.customers - a.customers);
+    }
+
+    function getPeakPoint(series, field) {
+      if (!series.length) return { snapshotUtcMs: 0, customers: 0, incidents: 0 };
+      return series.reduce((best, point) => point[field] > best[field] ? point : best, series[0]);
+    }
+
     function renderAll() {
       clearError();
       renderStatusStrip();
-      renderSummaryCards();
-      renderTrendChart();
-      renderHealthPanel();
-      renderLgaTable();
-      renderProviderTable();
-      renderIncidentTable();
-      renderQualityPanel();
-      renderPeriodPanel();
-      renderSourcePanel();
+      renderOverview();
+      renderLgaView();
+      renderProviderView();
+      renderOutagesView();
+      renderTrendsView();
+      renderFooter();
+      updateCountdowns();
     }
 
     function renderStatusStrip() {
@@ -708,49 +1193,298 @@
       const providerErrors = Number(d.manifest.provider_fetch_error_count || 0);
       const freshnessClass = stale ? "danger" : ageMs > 22 * 60 * 1000 ? "warn" : "ok";
       const healthClass = providerErrors ? "danger" : "ok";
+      const healthText = providerErrors ? `${providerErrors} provider issue${providerErrors === 1 ? "" : "s"}` : "All providers OK";
       $("statusStrip").innerHTML = `
-        <span class="pill ${freshnessClass}">Last updated <strong>${escapeHtml(formatAest(d.latestMs, true))}</strong></span>
-        <span class="pill ${healthClass}">Provider errors <strong>${providerErrors}</strong></span>
-        <span class="pill">Next refresh <strong id="countdown">--:--</strong></span>
-        <span class="pill">Mode <strong>${escapeHtml(d.manifest.outage_type_filter || "unplanned_only")}</strong></span>
+        <span class="pill ${freshnessClass}">Updated <strong>${escapeHtml(formatAest(d.latestMs, true))}</strong></span>
+        <span class="pill ${freshnessClass}">Data age <strong>${escapeHtml(formatDuration(ageMs, true))}</strong></span>
+        <span class="pill ${healthClass}"><strong>${escapeHtml(healthText)}</strong></span>
+        <span class="pill info">Refresh <strong id="refreshCountdown">--:--</strong></span>
       `;
-      updateCountdown();
     }
 
-    function renderSummaryCards() {
+    function renderOverview() {
       const d = state.data;
-      const cards = [
-        ["Current affected customers", d.currentSummary.latestCustomerSum, `${d.currentSummary.incidents} active incidents across ${d.currentSummary.lgaCount} LGA bucket${d.currentSummary.lgaCount === 1 ? "" : "s"}`],
-        ["Current active incidents", d.currentSummary.incidents, `${d.currentSummary.unmatchedIncidents} unmatched incident${d.currentSummary.unmatchedIncidents === 1 ? "" : "s"}`],
-        ["Since 0900 peak customers", d.sinceSummary.peakCustomerSum, `${d.sinceSummary.incidents} unique incident${d.sinceSummary.incidents === 1 ? "" : "s"} since ${formatAest(d.since0900StartMs, false)}`],
-        ["Rolling 24h peak customers", d.rollingSummary.peakCustomerSum, `${d.rollingSummary.incidents} unique incident${d.rollingSummary.incidents === 1 ? "" : "s"} in the last 24 hours`]
-      ];
-      $("summaryCards").innerHTML = cards.map(([label, value, detail]) => `
-        <article class="card">
-          <div>
-            <div class="label">${escapeHtml(label)}</div>
-            <div class="value">${fmtInt.format(value)}</div>
+      const worst = d.topLgas[0];
+      const peakToday = d.peakToday;
+      const belowPeak = peakToday.customers ? Math.max(0, (peakToday.customers - d.currentSummary.latestCustomerSum) / peakToday.customers) : 0;
+      $("overviewMetrics").innerHTML = [
+        metricCard("Current affected customers", fmtInt.format(d.currentSummary.latestCustomerSum), `${fmtInt.format(d.currentSummary.incidents)} active incident${plural(d.currentSummary.incidents)} statewide`),
+        metricCard("Active incidents", fmtInt.format(d.currentSummary.incidents), `${fmtInt.format(d.currentSummary.lgaCount)} affected LGA${plural(d.currentSummary.lgaCount)}`),
+        metricCard("Affected LGAs", fmtInt.format(d.currentSummary.lgaCount), `${fmtPct.format(d.lgaMatchRate)} LGA match rate`),
+        metricCard("Worst affected LGA", worst ? escapeHtml(worst.name) : "—", worst ? `${fmtInt.format(worst.currentCustomers)} customers · ${fmtPct.format(worst.share)} of QLD impact` : "No current LGA impact", "place"),
+        metricCard("Peak today", fmtInt.format(peakToday.customers), peakToday.snapshotUtcMs ? `${formatAest(peakToday.snapshotUtcMs, false)} · current is ${fmtPct.format(belowPeak)} below peak` : "No peak data")
+      ].join("");
+
+      $("overviewChartNote").textContent = `${formatAest(d.since0900StartMs, false)} to ${formatAest(d.latestMs, false)}. Peak ${fmtInt.format(peakToday.customers)} customers at ${peakToday.snapshotUtcMs ? formatAest(peakToday.snapshotUtcMs, false) : "—"}.`;
+      $("overviewTrendChart").innerHTML = renderSvgChart(d.trendSince, { large: true, showPeak: true });
+      $("overviewTopLgas").innerHTML = renderTopLgaList(d.topLgas.slice(0, 8));
+      $("overviewProviderBars").innerHTML = renderProviderBars(d.topProviders, d.currentSummary.latestCustomerSum, 4);
+      $("overviewBands").innerHTML = renderBandGrid(d.lgaBands);
+      $("overviewConfidence").innerHTML = renderConfidencePanel();
+      $("overviewInsights").innerHTML = renderOverviewInsights();
+    }
+
+    function renderOverviewInsights() {
+      const d = state.data;
+      const top5Share = d.currentSummary.latestCustomerSum ? d.top5LgaCustomerSum / d.currentSummary.latestCustomerSum : 0;
+      const worst = d.topLgas[0];
+      const provider = d.topProviders[0];
+      const peakToday = d.peakToday;
+      const belowPeak = peakToday.customers ? Math.max(0, (peakToday.customers - d.currentSummary.latestCustomerSum) / peakToday.customers) : 0;
+      return `
+        <div class="insight-card">
+          <strong>${fmtPct.format(top5Share)} of current affected customers are in the top 5 LGAs.</strong>
+          <p>${worst ? `${escapeHtml(worst.name)} is currently the highest impact LGA with ${fmtInt.format(worst.currentCustomers)} customers affected.` : "There are no currently affected LGAs in the latest snapshot."}</p>
+        </div>
+        <div class="kpi-line"><span>Current vs today peak</span><strong>${fmtPct.format(belowPeak)} below peak</strong></div>
+        <div class="kpi-line"><span>Highest provider contribution</span><strong>${provider ? `${escapeHtml(provider.name)} · ${fmtPct.format(provider.share)}` : "—"}</strong></div>
+        <div class="kpi-line"><span>24h peak customers</span><strong>${fmtInt.format(d.peak24.customers)}</strong></div>
+      `;
+    }
+
+    function renderLgaView() {
+      const d = state.data;
+      const top5Share = d.currentSummary.latestCustomerSum ? d.top5LgaCustomerSum / d.currentSummary.latestCustomerSum : 0;
+      const majorCount = d.lgaBands.major;
+      $("lgaMetrics").innerHTML = [
+        metricCard("Affected LGAs", fmtInt.format(d.currentSummary.lgaCount), "Current LGAs with at least one active outage"),
+        metricCard("Major impact LGAs", fmtInt.format(majorCount), "1,000+ current affected customers"),
+        metricCard("Moderate impact LGAs", fmtInt.format(d.lgaBands.moderate), "100–999 current affected customers"),
+        metricCard("Minor impact LGAs", fmtInt.format(d.lgaBands.minor), "1–99 current affected customers"),
+        metricCard("Top 5 LGA share", fmtPct.format(top5Share), `${fmtInt.format(d.top5LgaCustomerSum)} of ${fmtInt.format(d.currentSummary.latestCustomerSum)} customers`)
+      ].join("");
+      $("lgaMap").innerHTML = renderLgaMap(d.lgaMapPoints);
+      $("lgaConcentration").innerHTML = renderLgaConcentration();
+      renderLgaTable();
+    }
+
+    function renderLgaConcentration() {
+      const d = state.data;
+      return `
+        <div class="insight-card">
+          <strong>${fmtPct.format(d.currentSummary.latestCustomerSum ? d.top5LgaCustomerSum / d.currentSummary.latestCustomerSum : 0)} of current affected customers are concentrated in the top 5 LGAs.</strong>
+          <p>This gives a quick read on whether the outage situation is geographically concentrated or widely distributed.</p>
+        </div>
+        <div style="margin-top:12px;">${renderTopLgaList(d.topLgas.slice(0, 10))}</div>
+      `;
+    }
+
+    function renderLgaTable() {
+      const d = state.data;
+      const rows = [...d.topLgas].slice(0, 20);
+      $("lgaTable").innerHTML = rows.map((r, idx) => `
+        <tr>
+          <td class="nowrap">${idx + 1}</td>
+          <td><strong>${escapeHtml(r.name)}</strong>${r.unmatched ? `<div class="muted">Unmatched to LGA boundary</div>` : ""}</td>
+          <td class="num">${fmtInt.format(r.currentCustomers)}</td>
+          <td class="num">${fmtInt.format(r.currentIncidents)}</td>
+          <td class="num">${fmtPct1.format(r.share)}</td>
+          <td class="num">${fmtInt.format(r.sinceCustomers)}</td>
+          <td class="num">${fmtInt.format(r.rollingCustomers)}</td>
+        </tr>
+      `).join("") || `<tr><td colspan="7" class="empty">No current LGA impacts in the latest snapshot.</td></tr>`;
+    }
+
+    function renderProviderView() {
+      const d = state.data;
+      const providers = d.topProviders;
+      const providerCards = providers.slice(0, 5).map((p) => metricCard(p.name, fmtInt.format(p.currentCustomers), `${fmtPct.format(p.share)} of QLD impact · ${fmtInt.format(p.currentIncidents)} incident${plural(p.currentIncidents)}`, "place")).join("");
+      $("providerMetrics").innerHTML = providerCards || metricCard("Providers", "—", "No provider impact in latest snapshot");
+      $("providerBars").innerHTML = renderProviderBars(providers, d.currentSummary.latestCustomerSum, 10);
+      $("providerHealthTable").innerHTML = renderProviderHealthRows(providers);
+      $("providerSparklines").innerHTML = renderProviderSparklines(providers);
+    }
+
+    function renderOutagesView() {
+      const d = state.data;
+      const largest = d.currentIncidents[0];
+      const noEtr = d.etrRows.find((r) => r.key === "missing") || { incidents: 0 };
+      const oldest = d.oldestCurrent;
+      $("outageMetrics").innerHTML = [
+        metricCard("Largest current outage", largest ? fmtInt.format(largest.latestCustomers) : "0", largest ? `${escapeHtml(largest.lgaName)} · ${escapeHtml(largest.latestRow.suburb || "Locality unavailable")}` : "No current outages"),
+        metricCard("Top 10 customers", fmtInt.format(d.top10OutageCustomerSum), "Affected customers in the 10 largest current outage areas"),
+        metricCard("No ETR supplied", fmtInt.format(noEtr.incidents), "Current incidents without a restoration estimate"),
+        metricCard("Oldest current start", oldest ? formatAest(oldest.startedMs, false) : "—", oldest ? `${escapeHtml(oldest.incident.lgaName)} · active ${formatDuration(d.latestMs - oldest.startedMs, true)}` : "No active start times")
+      ].join("");
+      renderLargestOutagesTable();
+      $("reasonBreakdown").innerHTML = renderReasonBreakdown();
+      $("etrBreakdown").innerHTML = renderEtrBreakdown();
+    }
+
+    function renderLargestOutagesTable() {
+      const rows = state.data.currentIncidents.slice(0, 15);
+      $("largestOutagesTable").innerHTML = rows.map((i, idx) => {
+        const r = i.latestRow;
+        return `<tr>
+          <td class="nowrap">${idx + 1}</td>
+          <td><strong>${escapeHtml(r.lgaName || "Unmatched")}</strong></td>
+          <td class="ellipsis">${escapeHtml(r.suburb || "—")}</td>
+          <td>${escapeHtml(r.providerName)}</td>
+          <td class="num"><strong>${fmtInt.format(r.affectedCustomers)}</strong></td>
+          <td class="nowrap">${escapeHtml(formatUtcAsAest(r.startUtc, false) || "—")}</td>
+          <td class="nowrap">${escapeHtml(formatUtcAsAest(r.etrUtc, false) || "—")}</td>
+          <td class="ellipsis">${escapeHtml(cleanReason(r.reason))}</td>
+        </tr>`;
+      }).join("") || `<tr><td colspan="8" class="empty">No current outages in the latest snapshot.</td></tr>`;
+    }
+
+    function renderTrendsView() {
+      const d = state.data;
+      const todayPeak = d.peakToday;
+      const peak24 = d.peak24;
+      const belowPeak = todayPeak.customers ? Math.max(0, (todayPeak.customers - d.currentSummary.latestCustomerSum) / todayPeak.customers) : 0;
+      $("trendMetrics").innerHTML = [
+        metricCard("Current customers", fmtInt.format(d.currentSummary.latestCustomerSum), `${fmtInt.format(d.currentSummary.incidents)} active incident${plural(d.currentSummary.incidents)}`),
+        metricCard("Peak today", fmtInt.format(todayPeak.customers), todayPeak.snapshotUtcMs ? `Recorded at ${formatAest(todayPeak.snapshotUtcMs, false)}` : "No peak data"),
+        metricCard("Rolling 24h peak", fmtInt.format(peak24.customers), peak24.snapshotUtcMs ? `Recorded at ${formatAest(peak24.snapshotUtcMs, true)}` : "No peak data"),
+        metricCard("Current vs peak today", fmtPct.format(belowPeak), "Current affected customers below today’s peak")
+      ].join("");
+      $("todayTrendNote").textContent = `${formatAest(d.since0900StartMs, true)} to ${formatAest(d.latestMs, true)}.`;
+      $("rollingTrendNote").textContent = `${formatAest(d.rolling24StartMs, true)} to ${formatAest(d.latestMs, true)}.`;
+      $("todayTrendChart").innerHTML = renderSvgChart(d.trendSince, { large: true, showPeak: true });
+      $("rollingTrendChart").innerHTML = renderSvgChart(d.trend24, { large: true, showPeak: true });
+    }
+
+    function renderTopLgaList(rows) {
+      const max = Math.max(1, ...rows.map((r) => r.currentCustomers));
+      return rows.map((r, idx) => `
+        <div class="rank-row">
+          <span class="rank">${idx + 1}</span>
+          <div class="rank-title">
+            <strong>${escapeHtml(r.name)}</strong>
+            <small>${fmtInt.format(r.currentIncidents)} incident${plural(r.currentIncidents)} · ${fmtPct1.format(r.share)} of QLD impact</small>
+            <div class="bar-track"><div class="bar-fill" style="width:${Math.max(2, (r.currentCustomers / max) * 100)}%"></div></div>
           </div>
-          <div class="detail">${escapeHtml(detail)}</div>
-        </article>
-      `).join("");
+          <div class="rank-value">${fmtInt.format(r.currentCustomers)}<small>customers</small></div>
+        </div>
+      `).join("") || `<div class="empty">No affected LGAs in the latest snapshot.</div>`;
     }
 
-    function renderTrendChart() {
+    function renderProviderBars(rows, total, limit) {
+      const shown = rows.slice(0, limit);
+      const max = Math.max(1, ...shown.map((r) => r.currentCustomers));
+      return `<div class="provider-bars">${shown.map((r) => `
+        <div class="provider-row">
+          <div><strong>${escapeHtml(r.name)}</strong><small>${fmtInt.format(r.currentIncidents)} incident${plural(r.currentIncidents)}</small></div>
+          <div class="provider-track"><div class="provider-fill" style="width:${Math.max(2, (r.currentCustomers / max) * 100)}%"></div></div>
+          <div class="provider-value"><strong>${fmtInt.format(r.currentCustomers)}</strong><small> ${fmtPct.format(total ? r.currentCustomers / total : 0)}</small></div>
+        </div>
+      `).join("") || `<div class="empty">No provider impact in latest snapshot.</div>`}</div>`;
+    }
+
+    function renderBandGrid(bands) {
+      return `<div class="band-grid">
+        <div class="band"><div class="band-label">Major</div><div class="band-value">${fmtInt.format(bands.major)}</div><div class="band-desc">1,000+ customers</div></div>
+        <div class="band"><div class="band-label">Moderate</div><div class="band-value">${fmtInt.format(bands.moderate)}</div><div class="band-desc">100–999 customers</div></div>
+        <div class="band"><div class="band-label">Minor</div><div class="band-value">${fmtInt.format(bands.minor)}</div><div class="band-desc">1–99 customers</div></div>
+      </div>`;
+    }
+
+    function renderConfidencePanel() {
       const d = state.data;
-      const series = state.chartWindow === "since0900" ? d.trendSince : d.trend24;
-      $("chartNote").textContent = state.chartWindow === "since0900"
-        ? `Since 0900 operational period (${formatAest(d.since0900StartMs, false)} to ${formatAest(d.latestMs, false)}).`
-        : `Rolling 24 hours (${formatAest(d.rolling24StartMs, false)} to ${formatAest(d.latestMs, false)}).`;
-      $("trendChart").innerHTML = renderSvgChart(series);
-      document.querySelectorAll("[data-chart-window]").forEach((btn) => {
-        btn.classList.toggle("active", btn.dataset.chartWindow === state.chartWindow);
-      });
+      const providerErrors = Number(d.manifest.provider_fetch_error_count || 0);
+      const providerClass = providerErrors ? "danger" : "ok";
+      const providerText = providerErrors ? `${providerErrors} provider issue${providerErrors === 1 ? "" : "s"}` : "All providers OK";
+      return `
+        <div class="kpi-line"><span>Provider status</span><strong><span class="pill ${providerClass}" style="min-height:26px;padding:4px 8px;">${escapeHtml(providerText)}</span></strong></div>
+        <div class="kpi-line"><span>LGA match rate</span><strong>${fmtPct1.format(d.lgaMatchRate)}</strong></div>
+        <div class="kpi-line"><span>Unmatched current incidents</span><strong>${fmtInt.format(d.currentSummary.unmatchedIncidents)}</strong></div>
+        <div class="kpi-line"><span>Unknown customer-count incidents</span><strong>${fmtInt.format(d.unknownCustomerIncidents)}</strong></div>
+        <div class="kpi-line"><span>Missing map coordinates</span><strong>${fmtInt.format(d.missingCoords)}</strong></div>
+      `;
     }
 
-    function renderSvgChart(series) {
+    function renderProviderHealthRows(providers) {
+      const d = state.data;
+      const names = new Set([...providers.map((p) => p.name), ...d.providerHealthLatest.keys()]);
+      const rows = [...names].sort((a, b) => a.localeCompare(b));
+      if (!rows.length) return `<tr><td colspan="4" class="empty">Provider health history could not be loaded.</td></tr>`;
+      return rows.map((name) => {
+        const item = d.providerHealthLatest.get(name);
+        const status = item ? item.status : "NO HEALTH ROW";
+        const cls = status === "OK" ? "ok" : "danger";
+        return `<tr>
+          <td><strong>${escapeHtml(name)}</strong>${item && item.errorMessage ? `<div class="muted ellipsis">${escapeHtml(item.errorMessage)}</div>` : ""}</td>
+          <td><span class="pill ${cls}" style="min-height:28px;padding:4px 9px;"><strong>${escapeHtml(status)}</strong></span></td>
+          <td class="num">${item ? fmtInt.format(item.recordCount) : "—"}</td>
+          <td>${item ? escapeHtml(item.generatedAest || formatAest(item.generatedUtcMs, true) || item.generatedUtc) : "—"}</td>
+        </tr>`;
+      }).join("");
+    }
+
+    function renderProviderSparklines(providers) {
+      const d = state.data;
+      const rows = providers.slice(0, 8);
+      return rows.map((provider) => {
+        const series = d.providerTrendSeries.get(provider.name) || [];
+        return `<div class="status-row">
+          <div><strong>${escapeHtml(provider.name)}</strong><div class="muted">${fmtInt.format(provider.currentCustomers)} current customers · ${fmtPct.format(provider.share)} share</div></div>
+          <div>${renderSparkline(series, "customers")}</div>
+          <div class="num"><strong>${fmtInt.format(getPeakPoint(series, "customers").customers)}</strong><div class="muted">peak today</div></div>
+        </div>`;
+      }).join("") || `<div class="empty">No provider trend data available.</div>`;
+    }
+
+    function renderReasonBreakdown() {
+      const d = state.data;
+      const rows = d.reasonRows.slice(0, 8);
+      const max = Math.max(1, ...rows.map((r) => r.customers));
+      return rows.map((r) => `
+        <div class="reason-row">
+          <div><strong>${escapeHtml(r.reason)}</strong><div class="muted">${fmtInt.format(r.incidents)} incident${plural(r.incidents)}</div></div>
+          <div class="reason-bar"><div class="reason-fill" style="width:${Math.max(2, (r.customers / max) * 100)}%"></div></div>
+          <div class="num"><strong>${fmtInt.format(r.customers)}</strong></div>
+        </div>
+      `).join("") || `<div class="empty">No reason data available.</div>`;
+    }
+
+    function renderEtrBreakdown() {
+      const d = state.data;
+      const rows = d.etrRows;
+      const max = Math.max(1, ...rows.map((r) => r.incidents));
+      return rows.map((r) => `
+        <div class="status-row">
+          <div><strong>${escapeHtml(r.label)}</strong><div class="muted">${fmtInt.format(r.customers)} customers</div></div>
+          <div class="status-bar"><div class="status-fill" style="width:${Math.max(2, (r.incidents / max) * 100)}%"></div></div>
+          <div class="num"><strong>${fmtInt.format(r.incidents)}</strong></div>
+        </div>
+      `).join("") || `<div class="empty">No ETR data available.</div>`;
+    }
+
+    function renderLgaMap(points) {
+      if (!points.length) return `<div class="empty">No mapped current incidents. Centroid coordinates may be unavailable in the latest snapshot.</div>`;
+      const w = 920, h = 520;
+      const left = 54, right = 28, top = 26, bottom = 42;
+      const plotW = w - left - right;
+      const plotH = h - top - bottom;
+      const lonMin = 138.0, lonMax = 154.2, latTop = -9.0, latBottom = -29.6;
+      const maxCustomers = Math.max(1, ...points.map((p) => p.customers));
+      const x = (lon) => left + clamp((lon - lonMin) / (lonMax - lonMin), 0, 1) * plotW;
+      const y = (lat) => top + clamp((latTop - lat) / (latTop - latBottom), 0, 1) * plotH;
+      const latLines = [-10, -15, -20, -25, -29];
+      const lonLines = [140, 145, 150, 154];
+      const topLabels = points.slice(0, 8);
+      return `<svg class="qld-map" viewBox="0 0 ${w} ${h}" role="img" aria-label="Queensland outage impact bubble map">
+        <rect x="${left}" y="${top}" width="${plotW}" height="${plotH}" rx="18" fill="rgba(6,16,30,0.28)" stroke="rgba(157,176,201,0.20)"></rect>
+        ${latLines.map((lat) => `<line class="map-grid" x1="${left}" x2="${w - right}" y1="${y(lat)}" y2="${y(lat)}"></line><text class="map-label" x="${left - 10}" y="${y(lat) + 4}" text-anchor="end">${Math.abs(lat)}°S</text>`).join("")}
+        ${lonLines.map((lon) => `<line class="map-grid" x1="${x(lon)}" x2="${x(lon)}" y1="${top}" y2="${h - bottom}"></line><text class="map-label" x="${x(lon)}" y="${h - 16}" text-anchor="middle">${lon}°E</text>`).join("")}
+        <text class="map-label" x="${left}" y="${top - 8}">Relative Queensland position — current LGA impact</text>
+        ${points.slice().reverse().map((p) => {
+          const radius = 6 + Math.sqrt(p.customers / maxCustomers) * 28;
+          const bandClass = p.customers >= 1000 ? "bubble-major" : p.customers >= 100 ? "bubble-moderate" : "bubble-minor";
+          return `<circle class="bubble ${bandClass}" cx="${x(p.lon)}" cy="${y(p.lat)}" r="${radius}"><title>${escapeHtml(p.name)} — ${fmtInt.format(p.customers)} customers</title></circle>`;
+        }).join("")}
+        ${topLabels.map((p, idx) => {
+          const offset = idx % 2 === 0 ? -10 : 18;
+          return `<text class="bubble-label" x="${x(p.lon) + 10}" y="${y(p.lat) + offset}">${escapeHtml(p.name)} · ${fmtInt.format(p.customers)}</text>`;
+        }).join("")}
+      </svg>`;
+    }
+
+    function renderSvgChart(series, options = {}) {
       if (!series.length) return `<div class="empty">No chart data available.</div>`;
-      const w = 980, h = 330, left = 58, right = 48, top = 24, bottom = 42;
+      const large = Boolean(options.large);
+      const w = 980, h = large ? 440 : 330, left = 62, right = 54, top = 30, bottom = 48;
       const plotW = w - left - right;
       const plotH = h - top - bottom;
       const minX = Math.min(...series.map((p) => p.snapshotUtcMs));
@@ -764,34 +1498,33 @@
       const incidentPath = steppedPath(series, x, yIncidents, "incidents");
       const xLabels = buildAxisTicks(minX, maxX, 5);
       const yTicks = [0, 0.25, 0.5, 0.75, 1];
-
-      return `
-        <svg class="chart" viewBox="0 0 ${w} ${h}" role="img" aria-label="Outage trend chart">
-          ${yTicks.map((t) => {
-            const yy = top + plotH - t * plotH;
-            return `<line class="grid-line" x1="${left}" x2="${w - right}" y1="${yy}" y2="${yy}"></line>
-              <text class="axis-label" x="${left - 10}" y="${yy + 4}" text-anchor="end">${fmtInt.format(maxCustomers * t)}</text>`;
-          }).join("")}
-          <line class="axis" x1="${left}" x2="${w - right}" y1="${top + plotH}" y2="${top + plotH}"></line>
-          <line class="axis" x1="${left}" x2="${left}" y1="${top}" y2="${top + plotH}"></line>
-          ${xLabels.map((ms) => `<text class="axis-label" x="${x(ms)}" y="${h - 14}" text-anchor="middle">${escapeHtml(formatAestTime(ms))}</text>`).join("")}
-          <path class="series-customers" d="${customerPath}"></path>
-          <path class="series-incidents" d="${incidentPath}"></path>
-          ${series.slice(-1).map((p) => `
-            <circle class="point-customers" cx="${x(p.snapshotUtcMs)}" cy="${yCustomers(p.customers)}" r="4"></circle>
-            <circle class="point-incidents" cx="${x(p.snapshotUtcMs)}" cy="${yIncidents(p.incidents)}" r="4"></circle>
-          `).join("")}
-          <text class="axis-label" x="${w - right}" y="${top + 5}" text-anchor="end">Customers scale: ${fmtInt.format(maxCustomers)}</text>
-          <text class="axis-label" x="${w - right}" y="${top + 22}" text-anchor="end">Incidents scale: ${fmtInt.format(maxIncidents)}</text>
-        </svg>
-      `;
+      const last = series[series.length - 1];
+      const peak = getPeakPoint(series, "customers");
+      return `<svg class="chart ${large ? "large" : ""}" viewBox="0 0 ${w} ${h}" role="img" aria-label="Outage trend chart">
+        ${yTicks.map((t) => {
+          const yy = top + plotH - t * plotH;
+          return `<line class="grid-line" x1="${left}" x2="${w - right}" y1="${yy}" y2="${yy}"></line>
+            <text class="axis-label" x="${left - 10}" y="${yy + 4}" text-anchor="end">${fmtInt.format(maxCustomers * t)}</text>`;
+        }).join("")}
+        <line class="axis" x1="${left}" x2="${w - right}" y1="${top + plotH}" y2="${top + plotH}"></line>
+        <line class="axis" x1="${left}" x2="${left}" y1="${top}" y2="${top + plotH}"></line>
+        ${xLabels.map((ms) => `<text class="axis-label" x="${x(ms)}" y="${h - 16}" text-anchor="middle">${escapeHtml(formatAestTime(ms))}</text>`).join("")}
+        <path class="series-customers" d="${customerPath}"></path>
+        <path class="series-incidents" d="${incidentPath}"></path>
+        <circle class="peak-marker" cx="${x(peak.snapshotUtcMs)}" cy="${yCustomers(peak.customers)}" r="5.5"><title>Peak: ${fmtInt.format(peak.customers)} customers at ${formatAest(peak.snapshotUtcMs, true)}</title></circle>
+        <circle class="point-customers" cx="${x(last.snapshotUtcMs)}" cy="${yCustomers(last.customers)}" r="5"><title>Current: ${fmtInt.format(last.customers)} customers</title></circle>
+        <circle class="point-incidents" cx="${x(last.snapshotUtcMs)}" cy="${yIncidents(last.incidents)}" r="4.5"><title>Current: ${fmtInt.format(last.incidents)} incidents</title></circle>
+        <text class="axis-label strong" x="${w - right}" y="${top + 4}" text-anchor="end">Customers scale ${fmtInt.format(maxCustomers)}</text>
+        <text class="axis-label" x="${w - right}" y="${top + 22}" text-anchor="end">Incidents scale ${fmtInt.format(maxIncidents)}</text>
+        <text class="axis-label strong" x="${x(last.snapshotUtcMs) - 8}" y="${yCustomers(last.customers) - 12}" text-anchor="end">Current ${fmtInt.format(last.customers)}</text>
+        <text class="axis-label strong" x="${x(peak.snapshotUtcMs) + 8}" y="${Math.max(top + 14, yCustomers(peak.customers) - 10)}" text-anchor="start">Peak ${fmtInt.format(peak.customers)}</text>
+      </svg>`;
     }
 
     function steppedPath(series, xFn, yFn, field) {
       if (!series.length) return "";
       let d = `M ${xFn(series[0].snapshotUtcMs)} ${yFn(series[0][field])}`;
       for (let i = 1; i < series.length; i++) {
-        const prev = series[i - 1];
         const curr = series[i];
         const cx = xFn(curr.snapshotUtcMs);
         d += ` H ${cx} V ${yFn(curr[field])}`;
@@ -799,128 +1532,95 @@
       return d;
     }
 
-    function renderHealthPanel() {
-      const d = state.data;
-      const latestByProvider = new Map();
-      d.health.forEach((item) => latestByProvider.set(item.providerName, item));
-      if (!latestByProvider.size) {
-        $("healthPanel").innerHTML = `<div class="notice">Provider health history could not be loaded. Check <code>${DATA_PATHS.health}</code>.</div>`;
-        return;
-      }
-      $("healthPanel").innerHTML = [...latestByProvider.values()].map((item) => {
-        const cls = item.status === "OK" ? "ok" : "danger";
-        return `<div class="health-item">
-          <div><strong>${escapeHtml(item.providerName)}</strong><small>${escapeHtml(item.generatedAest || item.generatedUtc || "No timestamp")}</small>${item.errorMessage ? `<small><br>${escapeHtml(item.errorMessage)}</small>` : ""}</div>
-          <span class="pill ${cls}"><strong>${escapeHtml(item.status)}</strong> · ${fmtInt.format(item.recordCount)} records</span>
-        </div>`;
-      }).join("");
+    function renderSparkline(series, field) {
+      if (!series.length) return `<svg class="sparkline" viewBox="0 0 240 48"></svg>`;
+      const w = 240, h = 48, pad = 4;
+      const minX = Math.min(...series.map((p) => p.snapshotUtcMs));
+      const maxX = Math.max(...series.map((p) => p.snapshotUtcMs));
+      const maxY = Math.max(1, ...series.map((p) => p[field]));
+      const x = (ms) => pad + ((ms - minX) / Math.max(1, maxX - minX)) * (w - pad * 2);
+      const y = (v) => h - pad - (v / maxY) * (h - pad * 2);
+      const points = series.map((p) => `${x(p.snapshotUtcMs)},${y(p[field])}`).join(" ");
+      const area = `${points} ${w - pad},${h - pad} ${pad},${h - pad}`;
+      return `<svg class="sparkline" viewBox="0 0 ${w} ${h}" aria-hidden="true">
+        <polygon class="spark-area" points="${area}"></polygon>
+        <polyline class="spark-path" points="${points}"></polyline>
+      </svg>`;
     }
 
-    function renderLgaTable() {
-      const d = state.data;
-      const rows = [...d.lgaRows]
-        .sort((a, b) => (b[state.lgaSort] - a[state.lgaSort]) || b.currentCustomers - a.currentCustomers || a.name.localeCompare(b.name));
-      const maxBar = Math.max(1, ...rows.map((r) => r[state.lgaSort]));
-      $("lgaTable").innerHTML = rows.map((r, idx) => `
-        <tr>
-          <td class="nowrap">${idx + 1}</td>
-          <td><strong>${escapeHtml(r.name)}</strong>${r.unmatched ? `<div class="muted">Requires backend LGA repair</div>` : ""}</td>
-          <td class="num">${fmtInt.format(r.currentCustomers)}</td>
-          <td class="num">${fmtInt.format(r.currentIncidents)}</td>
-          <td class="num">${fmtInt.format(r.sinceCustomers)}</td>
-          <td class="num">${fmtInt.format(r.sinceIncidents)}</td>
-          <td class="num">${fmtInt.format(r.rollingCustomers)}</td>
-          <td class="num">${fmtInt.format(r.rollingIncidents)}</td>
-          <td class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:${Math.max(2, (r[state.lgaSort] / maxBar) * 100)}%"></div></div></td>
-        </tr>
-      `).join("") || `<tr><td colspan="9" class="empty">No LGA rows available.</td></tr>`;
+    function metricCard(label, value, detail, valueClass = "") {
+      return `<article class="metric">
+        <div class="label">${escapeHtml(label)}</div>
+        <div class="value ${valueClass}">${value}</div>
+        <div class="detail">${detail}</div>
+      </article>`;
     }
 
-    function renderProviderTable() {
-      const d = state.data;
-      const rows = [...d.providerRows].sort((a, b) => b.currentCustomers - a.currentCustomers || a.name.localeCompare(b.name));
-      $("providerTable").innerHTML = rows.map((r) => `
-        <tr>
-          <td><strong>${escapeHtml(r.name)}</strong></td>
-          <td class="num">${fmtInt.format(r.currentCustomers)}</td>
-          <td class="num">${fmtInt.format(r.currentIncidents)}</td>
-          <td class="num">${fmtInt.format(r.sinceCustomers)}</td>
-          <td class="num">${fmtInt.format(r.rollingCustomers)}</td>
-        </tr>
-      `).join("") || `<tr><td colspan="5" class="empty">No provider rows available.</td></tr>`;
-    }
-
-    function renderIncidentTable() {
-      const q = state.incidentSearch.trim().toLowerCase();
-      const rows = state.data.currentIncidents.filter((i) => {
-        if (!q) return true;
-        const r = i.latestRow;
-        return [r.providerName, r.lgaName, r.suburb, r.streetName, r.outageId, r.outageKey, r.reason, r.status]
-          .join(" ").toLowerCase().includes(q);
+    function setActiveView(view, fromAuto = false) {
+      if (!VIEW_ORDER.includes(view) && !["overview", "lga", "provider", "outages", "trends"].includes(view)) return;
+      state.activeView = view;
+      const firstIdx = VIEW_ORDER.indexOf(view);
+      if (firstIdx >= 0) state.rotationIndex = firstIdx;
+      document.querySelectorAll(".view").forEach((el) => el.classList.toggle("active", el.id === `view-${view}`));
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        const active = btn.dataset.view === view;
+        btn.classList.toggle("active", active);
+        btn.setAttribute("aria-selected", active ? "true" : "false");
       });
-      $("incidentTable").innerHTML = rows.map((i) => {
-        const r = i.latestRow;
-        return `<tr>
-          <td>${escapeHtml(r.providerName)}</td>
-          <td>${escapeHtml(r.lgaName || "Unmatched")}</td>
-          <td><strong>${escapeHtml(r.suburb || "—")}</strong><div class="muted">${escapeHtml(truncate(r.streetName, 130) || "No street details")}</div></td>
-          <td><span class="nowrap">${escapeHtml(r.outageId || r.outageKey)}</span><div class="muted">${escapeHtml(r.status || "No status")}</div></td>
-          <td class="num">${fmtInt.format(r.affectedCustomers)}</td>
-          <td class="nowrap">${escapeHtml(formatUtcAsAest(r.startUtc) || "—")}</td>
-          <td class="nowrap">${escapeHtml(formatUtcAsAest(r.etrUtc) || "—")}</td>
-          <td>${escapeHtml(r.reason || "—")}</td>
-        </tr>`;
-      }).join("") || `<tr><td colspan="8" class="empty">No current incidents match the filter.</td></tr>`;
-    }
-
-    function renderQualityPanel() {
-      const d = state.data;
-      const unmatched = d.currentSummary.unmatchedIncidents;
-      const cls = unmatched ? "notice" : "muted";
-      $("qualityPanel").innerHTML = `
-        <div class="${cls}">
-          <strong>${fmtInt.format(unmatched)} current unmatched incident${unmatched === 1 ? "" : "s"}</strong><br>
-          ${fmtInt.format(d.currentSummary.unmatchedCustomers)} affected customer${d.currentSummary.unmatchedCustomers === 1 ? "" : "s"} currently sit in the Unmatched bucket.
-          ${unmatched ? " These should be repaired in the backend LGA assignment work." : " No current unmatched LGA records."}
-        </div>
-      `;
-    }
-
-    function renderPeriodPanel() {
-      const d = state.data;
-      $("periodPanel").innerHTML = `
-        <p><strong>Current snapshot:</strong><br>${escapeHtml(formatAest(d.latestMs, true))}</p>
-        <p><strong>Since 0900 window:</strong><br>${escapeHtml(formatAest(d.since0900StartMs, true))} to ${escapeHtml(formatAest(d.latestMs, true))}</p>
-        <p><strong>Rolling 24h window:</strong><br>${escapeHtml(formatAest(d.rolling24StartMs, true))} to ${escapeHtml(formatAest(d.latestMs, true))}</p>
-        <p class="muted">Window totals count each incident once and use the peak affected-customer count seen for that incident in the selected window.</p>
-      `;
-    }
-
-    function renderSourcePanel() {
-      const sources = state.data.manifest.sources || {};
-      const entries = Object.entries(sources);
-      $("sourcePanel").innerHTML = entries.length ? entries.map(([key, value]) => {
-        const shown = Array.isArray(value) ? value.join("\n") : String(value);
-        return `<p><strong>${escapeHtml(key.replaceAll("_", " "))}</strong><br><span class="muted">${escapeHtml(truncate(shown, 170))}</span></p>`;
-      }).join("") : `<p class="muted">No source metadata in manifest.</p>`;
+      if (!fromAuto) resetRotationTimer();
     }
 
     function scheduleRefresh() {
       state.nextRefreshAt = Date.now() + REFRESH_MS;
       clearTimeout(state.refreshTimer);
-      clearInterval(state.countdownTimer);
-      state.refreshTimer = setTimeout(loadData, REFRESH_MS);
-      state.countdownTimer = setInterval(updateCountdown, 1000);
-      updateCountdown();
+      state.refreshTimer = setTimeout(() => loadData().catch(showError), REFRESH_MS);
+      ensureCountdownTimer();
     }
 
-    function updateCountdown() {
-      const el = $("countdown");
-      if (!el || !state.nextRefreshAt) return;
-      const remaining = Math.max(0, state.nextRefreshAt - Date.now());
-      const minutes = Math.floor(remaining / 60000);
-      const seconds = Math.floor((remaining % 60000) / 1000);
-      el.textContent = `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+    function ensureCountdownTimer() {
+      if (state.countdownTimer) return;
+      state.countdownTimer = setInterval(updateCountdowns, 1000);
+    }
+
+    function resetRotationTimer() {
+      clearTimeout(state.rotateTimer);
+      if (!state.autoRotate) {
+        state.nextViewAt = null;
+        updateCountdowns();
+        return;
+      }
+      const duration = VIEW_DURATIONS_MS[state.activeView] || 45 * 1000;
+      state.nextViewAt = Date.now() + duration;
+      state.rotateTimer = setTimeout(advanceView, duration);
+      ensureCountdownTimer();
+      updateCountdowns();
+    }
+
+    function advanceView() {
+      if (!state.autoRotate) return;
+      state.rotationIndex = (state.rotationIndex + 1) % VIEW_ORDER.length;
+      setActiveView(VIEW_ORDER[state.rotationIndex], true);
+      resetRotationTimer();
+    }
+
+    function updateCountdowns() {
+      const refreshEl = $("refreshCountdown");
+      if (refreshEl && state.nextRefreshAt) refreshEl.textContent = formatCountdown(Math.max(0, state.nextRefreshAt - Date.now()));
+      const rotateEl = $("rotationStatus");
+      if (rotateEl) {
+        if (!state.autoRotate || !state.nextViewAt) {
+          rotateEl.textContent = "Auto rotation paused";
+        } else {
+          const nextIndex = (state.rotationIndex + 1) % VIEW_ORDER.length;
+          const nextView = labelForView(VIEW_ORDER[nextIndex]);
+          rotateEl.textContent = `Next: ${nextView} in ${formatCountdown(Math.max(0, state.nextViewAt - Date.now()))}`;
+        }
+      }
+    }
+
+    function renderFooter() {
+      const d = state.data;
+      $("footerMeta").textContent = `Mode: ${d.manifest.outage_type_filter || "unplanned_only"} · ${fmtInt.format(d.snapshots.length)} snapshot rows loaded`;
     }
 
     function showLoading() {
@@ -931,8 +1631,16 @@
       $("errorMount").innerHTML = `<div class="error-box"><strong>Dashboard data load failed.</strong>\n${escapeHtml(error.stack || error.message || String(error))}</div>`;
     }
 
-    function clearError() {
-      $("errorMount").innerHTML = "";
+    function clearError() { $("errorMount").innerHTML = ""; }
+
+    function sortByCurrentImpact(a, b) {
+      return b.currentCustomers - a.currentCustomers || b.currentIncidents - a.currentIncidents || a.name.localeCompare(b.name);
+    }
+
+    function cleanReason(reason) {
+      const text = String(reason || "").trim();
+      if (!text || text === "-" || text.toLowerCase() === "null") return "Unknown / not supplied";
+      return text.replace(/\s+/g, " ");
     }
 
     function toNumber(value) {
@@ -940,15 +1648,23 @@
       return Number.isFinite(n) ? n : 0;
     }
 
+    function toNullableNumber(value) {
+      const n = Number(String(value ?? "").replace(/,/g, ""));
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function isFiniteNumber(value) { return typeof value === "number" && Number.isFinite(value); }
+
     function parseUtcMs(value) {
       if (!value) return 0;
-      const ms = Date.parse(String(value).replace(/Z$/, "Z"));
+      let text = String(value).trim();
+      if (!text) return 0;
+      if (!/[zZ]$/.test(text) && !/[+-]\d{2}:?\d{2}$/.test(text)) text += "Z";
+      const ms = Date.parse(text);
       return Number.isFinite(ms) ? ms : 0;
     }
 
-    function utcMsToAestWallMs(utcMs) {
-      return utcMs + BRISBANE_OFFSET_MS;
-    }
+    function utcMsToAestWallMs(utcMs) { return utcMs + BRISBANE_OFFSET_MS; }
 
     function getSince0900StartUtcMs(latestUtcMs) {
       const aest = new Date(utcMsToAestWallMs(latestUtcMs));
@@ -959,19 +1675,37 @@
     }
 
     function formatAest(utcMs, includeDate) {
+      if (!utcMs) return "—";
       const d = new Date(utcMsToAestWallMs(utcMs));
       const date = `${String(d.getUTCDate()).padStart(2, "0")}/${String(d.getUTCMonth() + 1).padStart(2, "0")}/${d.getUTCFullYear()}`;
       const time = `${String(d.getUTCHours()).padStart(2, "0")}:${String(d.getUTCMinutes()).padStart(2, "0")}`;
       return includeDate ? `${date} ${time} AEST` : `${time} AEST`;
     }
 
-    function formatAestTime(utcMs) {
-      return formatAest(utcMs, false).replace(" AEST", "");
+    function formatAestTime(utcMs) { return formatAest(utcMs, false).replace(" AEST", ""); }
+
+    function formatUtcAsAest(value, includeDate = true) {
+      const ms = parseUtcMs(value);
+      return ms ? formatAest(ms, includeDate) : "";
     }
 
-    function formatUtcAsAest(value) {
-      const ms = parseUtcMs(value);
-      return ms ? formatAest(ms, true) : "";
+    function formatCountdown(ms) {
+      const minutes = Math.floor(ms / 60000);
+      const seconds = Math.floor((ms % 60000) / 1000);
+      return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+    }
+
+    function formatDuration(ms, compact = false) {
+      if (!Number.isFinite(ms) || ms < 0) return "—";
+      const minutes = Math.floor(ms / 60000);
+      if (minutes < 1) return compact ? "<1 min" : "less than 1 minute";
+      if (minutes < 60) return compact ? `${minutes} min` : `${minutes} minute${plural(minutes)}`;
+      const hours = Math.floor(minutes / 60);
+      const rem = minutes % 60;
+      if (hours < 24) return compact ? `${hours}h ${rem}m` : `${hours} hour${plural(hours)} ${rem} minute${plural(rem)}`;
+      const days = Math.floor(hours / 24);
+      const remHours = hours % 24;
+      return compact ? `${days}d ${remHours}h` : `${days} day${plural(days)} ${remHours} hour${plural(remHours)}`;
     }
 
     function buildAxisTicks(min, max, count) {
@@ -981,9 +1715,17 @@
       return ticks;
     }
 
-    function truncate(value, max) {
-      const text = String(value || "");
-      return text.length > max ? `${text.slice(0, max - 1)}…` : text;
+    function clamp(value, min, max) { return Math.max(min, Math.min(max, value)); }
+    function plural(n) { return Number(n) === 1 ? "" : "s"; }
+
+    function labelForView(view) {
+      return {
+        overview: "Overview",
+        lga: "LGA Impact",
+        provider: "Provider Situation",
+        outages: "Largest Outages",
+        trends: "Trends"
+      }[view] || view;
     }
 
     function escapeHtml(value) {
@@ -995,19 +1737,15 @@
         .replaceAll("'", "&#039;");
     }
 
-    document.querySelectorAll("[data-chart-window]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        state.chartWindow = btn.dataset.chartWindow;
-        renderTrendChart();
-      });
+    document.querySelectorAll(".tab-btn").forEach((btn) => {
+      btn.addEventListener("click", () => setActiveView(btn.dataset.view));
     });
-    $("lgaSort").addEventListener("change", (event) => {
-      state.lgaSort = event.target.value;
-      renderLgaTable();
-    });
-    $("incidentSearch").addEventListener("input", (event) => {
-      state.incidentSearch = event.target.value;
-      renderIncidentTable();
+
+    $("autoRotateBtn").addEventListener("click", () => {
+      state.autoRotate = !state.autoRotate;
+      $("autoRotateBtn").classList.toggle("active", state.autoRotate);
+      $("autoRotateBtn").textContent = state.autoRotate ? "Auto rotate" : "Paused";
+      resetRotationTimer();
     });
 
     loadData().catch(showError);
