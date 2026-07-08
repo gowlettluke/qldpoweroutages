@@ -484,6 +484,32 @@
           </article>
         </aside>
       </section>
+      <section class="panel" style="margin-top:14px;">
+        <div class="panel-header">
+          <div class="panel-title"><h2>48-hour outage log</h2><p>Searchable-by-browser log of every unique outage record seen in the rolling 48-hour snapshot history, including current and recently cleared records.</p></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Last seen</th>
+                <th>First seen</th>
+                <th>Provider</th>
+                <th>LGA</th>
+                <th>Locality</th>
+                <th class="num">Latest customers</th>
+                <th class="num">Peak customers</th>
+                <th>Provider start</th>
+                <th>Restoration estimate</th>
+                <th>Status</th>
+                <th>Reason</th>
+                <th>Outage ID</th>
+              </tr>
+            </thead>
+            <tbody id="outageLog48hTable"></tbody>
+          </table>
+        </div>
+      </section>
     </section>
 
     <section class="view" id="view-trends" role="tabpanel" aria-labelledby="Trends">
@@ -652,6 +678,8 @@
       const previousIncidents = collapseLatestIncidents(previousRows);
       const sinceIncidents = collapseWindowIncidents(sinceRows);
       const rollingIncidents = collapseWindowIncidents(rollingRows);
+      const outageLog48h = collapseWindowIncidents(snapshots)
+        .sort((a, b) => b.lastSeenMs - a.lastSeenMs || b.peakCustomers - a.peakCustomers);
       const trendSince = buildTrendSeries(sinceRows);
       const trend24 = buildTrendSeries(rollingRows);
 
@@ -702,6 +730,7 @@
         previousIncidents,
         sinceIncidents,
         rollingIncidents,
+        outageLog48h,
         trendSince,
         trend24,
         currentSummary,
@@ -1122,6 +1151,7 @@
         metricCard("Oldest listed start time", oldest ? formatAest(oldest.startedMs, false) : "—", oldest ? `${escapeHtml(oldest.incident.lgaName)} · listed for ${formatDuration(d.latestMs - oldest.startedMs, true)}` : "No current start times supplied")
       ].join("");
       renderLargestOutagesTable();
+      renderOutageLog48hTable();
       $("reasonBreakdown").innerHTML = renderReasonBreakdown();
       $("etrBreakdown").innerHTML = renderEtrBreakdown();
     }
@@ -1141,6 +1171,28 @@
           <td class="ellipsis">${escapeHtml(cleanReason(r.reason))}</td>
         </tr>`;
       }).join("") || `<tr><td colspan="8" class="empty">No current outage records in the latest update.</td></tr>`;
+    }
+
+    function renderOutageLog48hTable() {
+      const rows = state.data.outageLog48h;
+      $("outageLog48hTable").innerHTML = rows.map((incident) => {
+        const r = incident.latestRow;
+        const peak = incident.peakRow;
+        return `<tr>
+          <td class="nowrap">${escapeHtml(formatAest(incident.lastSeenMs, true))}</td>
+          <td class="nowrap">${escapeHtml(formatAest(incident.firstSeenMs, true))}</td>
+          <td>${escapeHtml(r.providerName)}</td>
+          <td><strong>${escapeHtml(r.lgaName || "Unmatched")}</strong></td>
+          <td class="ellipsis">${escapeHtml(r.suburb || "—")}</td>
+          <td class="num"><strong>${fmtInt.format(r.affectedCustomers)}</strong></td>
+          <td class="num">${fmtInt.format(incident.peakCustomers)}${peak && peak.snapshotUtcMs !== r.snapshotUtcMs ? `<div class="muted">${escapeHtml(formatAest(peak.snapshotUtcMs, false))}</div>` : ""}</td>
+          <td class="nowrap">${escapeHtml(formatUtcAsAest(r.startUtc, false) || "—")}</td>
+          <td class="nowrap">${escapeHtml(formatUtcAsAest(r.etrUtc, false) || "—")}</td>
+          <td class="ellipsis">${escapeHtml(r.status || "—")}</td>
+          <td class="ellipsis">${escapeHtml(cleanReason(r.reason) || "—")}</td>
+          <td class="ellipsis">${escapeHtml(r.outageId || r.outageKey || "—")}</td>
+        </tr>`;
+      }).join("") || `<tr><td colspan="12" class="empty">No outage records were captured in the rolling 48-hour snapshot history.</td></tr>`;
     }
 
     function renderTrendsView() {
