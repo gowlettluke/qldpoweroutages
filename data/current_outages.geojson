@@ -67,8 +67,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-08T02:30:56Z",
-        "snapshot_aest": "2026-07-08T12:30:56+10:00",
+        "snapshot_utc": "2026-07-08T02:45:29Z",
+        "snapshot_aest": "2026-07-08T12:45:29+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969009-g",
@@ -127,8 +127,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-08T02:30:56Z",
-        "snapshot_aest": "2026-07-08T12:30:56+10:00",
+        "snapshot_utc": "2026-07-08T02:45:29Z",
+        "snapshot_aest": "2026-07-08T12:45:29+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902203",
@@ -199,8 +199,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-08T02:30:56Z",
-        "snapshot_aest": "2026-07-08T12:30:56+10:00",
+        "snapshot_utc": "2026-07-08T02:45:29Z",
+        "snapshot_aest": "2026-07-08T12:45:29+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902263",
@@ -212,12 +212,104 @@
         "affected_customers_known": true,
         "suburb": "BLACKWATER",
         "street_name": "ARDURAD RD, OFF ARDURAD RD, TURPENTINE ST",
-        "start_utc": "2026-07-08T02:10:00Z",
+        "start_utc": "2026-07-08T02:20:00Z",
         "etr_utc": "2026-07-08T03:30:00Z",
         "centroid_lon": 148.8758203450433,
         "centroid_lat": -23.596366655421086,
         "lga_name": "Central Highlands Regional",
         "lga_code": "2270",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.967842862051,
+              -24.5713012727485
+            ],
+            [
+              149.967990978336,
+              -24.5708838852473
+            ],
+            [
+              149.969940924755,
+              -24.5692258578306
+            ],
+            [
+              149.97018256526,
+              -24.5691134336624
+            ],
+            [
+              149.970472885012,
+              -24.5690617661155
+            ],
+            [
+              149.97105618416,
+              -24.569562938504
+            ],
+            [
+              149.970874691155,
+              -24.5708341219345
+            ],
+            [
+              149.97070474271,
+              -24.5711196503112
+            ],
+            [
+              149.970059001475,
+              -24.571620777822
+            ],
+            [
+              149.970057315166,
+              -24.571622080549
+            ],
+            [
+              149.969005063737,
+              -24.5724312867848
+            ],
+            [
+              149.968945211426,
+              -24.5724707227843
+            ],
+            [
+              149.968790533281,
+              -24.5725573503669
+            ],
+            [
+              149.968048957431,
+              -24.5722597148232
+            ],
+            [
+              149.967842862051,
+              -24.5713012727485
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-08T02:45:29Z",
+        "snapshot_aest": "2026-07-08T12:45:29+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902264",
+        "outage_id": "902264",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 34,
+        "affected_customers_known": true,
+        "suburb": "MOURA",
+        "street_name": "DAWSON HWY, SHEAN ST",
+        "start_utc": "2026-07-08T02:21:15Z",
+        "etr_utc": null,
+        "centroid_lon": 149.96948337077532,
+        "centroid_lat": -24.57082925967695,
+        "lga_name": "Banana Shire",
+        "lga_code": "370",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
