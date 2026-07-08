@@ -2671,6 +2671,8 @@ def run_pipeline(args: argparse.Namespace) -> int:
         "current_energex_records": len([r for r in all_current if r.provider_code == "au.qld.energex"]),
         "current_ergon_records": len([r for r in all_current if r.provider_code == "au.qld.ergon"]),
         "current_essential_records_fetched": len(essential),
+        "current_energex_records_fetched": len(energex),
+        "current_ergon_records_fetched": len(ergon),
         "current_essential_records_after_qld_polygon_prefilter": essential_after_polygon_filter,
         "current_essential_records_dropped_by_qld_polygon_prefilter": essential_dropped_by_qld_polygon,
         "current_essential_records_included_qld": len([r for r in all_current if r.provider_code == ESSENTIAL_PROVIDER_CODE]),
