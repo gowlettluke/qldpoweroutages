@@ -189,6 +189,12 @@
     .provider-row, .reason-row, .status-row { display:grid; grid-template-columns:minmax(160px,.45fr) minmax(140px,1fr) minmax(90px,.25fr); gap:10px; align-items:center; padding:8px; border:1px solid var(--line); background:var(--panel2); }
     .provider-row small, .reason-row .muted, .status-row .muted { display:block; color:var(--muted); margin-top:3px; }
     .provider-value { text-align:right; white-space:nowrap; }
+    .health-log { display:grid; gap:10px; }
+    .health-chart { width:100%; min-height:190px; }
+    .health-dot-ok { fill:var(--green); }
+    .health-dot-fail { fill:var(--danger); }
+    .health-dot-unknown { fill:var(--muted-2); }
+    .health-line { stroke:var(--line-strong); stroke-width:1; }
 
     .band-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
     .band { background:var(--panel2); border:1px solid var(--line); border-top:3px solid var(--accent); padding:10px; }
@@ -415,6 +421,27 @@
       </section>
       <section class="panel" style="margin-top:14px;">
         <div class="panel-header">
+          <div class="panel-title"><h2>24-hour feed health log</h2><p>Each dot is a provider fetch check. Green means the feed was read successfully, even when zero unplanned outages were returned.</p></div>
+        </div>
+        <div class="panel-body health-log">
+          <div id="providerHealthChart" class="health-chart"></div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Provider</th>
+                  <th>Last 24h feed checks</th>
+                  <th>Outage records seen in last 24h</th>
+                  <th>Most recent outage activity</th>
+                </tr>
+              </thead>
+              <tbody id="providerHealthLogTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="panel" style="margin-top:14px;">
+        <div class="panel-header">
           <div class="panel-title"><h2>Provider since-0900 trend</h2><p>Small customer trend for each provider since 0900 AEST.</p></div>
         </div>
         <div class="panel-body" id="providerSparklines"></div>
@@ -457,6 +484,32 @@
           </article>
         </aside>
       </section>
+      <section class="panel" style="margin-top:14px;">
+        <div class="panel-header">
+          <div class="panel-title"><h2>48-hour outage log</h2><p>Searchable-by-browser log of every unique outage record seen in the rolling 48-hour snapshot history, including current and recently cleared records.</p></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Last seen</th>
+                <th>First seen</th>
+                <th>Provider</th>
+                <th>LGA</th>
+                <th>Locality</th>
+                <th class="num">Latest customers</th>
+                <th class="num">Peak customers</th>
+                <th>Provider start</th>
+                <th>Restoration estimate</th>
+                <th>Status</th>
+                <th>Reason</th>
+                <th>Outage ID</th>
+              </tr>
+            </thead>
+            <tbody id="outageLog48hTable"></tbody>
+          </table>
+        </div>
+      </section>
     </section>
 
     <section class="view" id="view-trends" role="tabpanel" aria-labelledby="Trends">
@@ -495,6 +548,7 @@
     const REFRESH_MS = 15 * 60 * 1000;
     const BRISBANE_OFFSET_MS = 10 * 60 * 60 * 1000;
     const VIEW_ORDER = ["overview", "lga", "overview", "provider", "overview", "outages", "trends"];
+    const PROVIDER_NAMES = ["Energex", "Ergon Energy", "Essential Energy"];
     const VIEW_DURATIONS_MS = {
       overview: 45 * 1000,
       lga: 45 * 1000,
@@ -624,6 +678,8 @@
       const previousIncidents = collapseLatestIncidents(previousRows);
       const sinceIncidents = collapseWindowIncidents(sinceRows);
       const rollingIncidents = collapseWindowIncidents(rollingRows);
+      const outageLog48h = collapseWindowIncidents(snapshots)
+        .sort((a, b) => b.lastSeenMs - a.lastSeenMs || b.peakCustomers - a.peakCustomers);
       const trendSince = buildTrendSeries(sinceRows);
       const trend24 = buildTrendSeries(rollingRows);
 
@@ -642,6 +698,8 @@
       const peak24 = getPeakPoint(trend24, "customers");
       const currentPoint = trendSince.length ? trendSince[trendSince.length - 1] : { customers: 0, incidents: 0, snapshotUtcMs: latestMs };
       const providerHealthLatest = getLatestProviderHealth(health);
+      const providerHealth24 = buildProviderHealth24(health, latestMs);
+      const providerOutageWindows24 = buildProviderOutageWindows(rollingRows);
       const providerTrendSeries = buildProviderTrendSeries(sinceRows);
       const lgaBands = buildLgaBands(topLgas);
       const reasonRows = buildReasonRows(currentIncidents);
@@ -672,6 +730,7 @@
         previousIncidents,
         sinceIncidents,
         rollingIncidents,
+        outageLog48h,
         trendSince,
         trend24,
         currentSummary,
@@ -687,6 +746,8 @@
         peak24,
         currentPoint,
         providerHealthLatest,
+        providerHealth24,
+        providerOutageWindows24,
         providerTrendSeries,
         lgaBands,
         reasonRows,
@@ -847,6 +908,38 @@
       health.forEach((item) => {
         const existing = map.get(item.providerName);
         if (!existing || item.generatedUtcMs >= existing.generatedUtcMs) map.set(item.providerName, item);
+      });
+      return map;
+    }
+
+    function buildProviderHealth24(health, latestMs) {
+      const startMs = latestMs - 24 * 60 * 60 * 1000;
+      const map = new Map(PROVIDER_NAMES.map((name) => [name, []]));
+      health.forEach((item) => {
+        if (!item.generatedUtcMs || item.generatedUtcMs < startMs || item.generatedUtcMs > latestMs) return;
+        if (!map.has(item.providerName)) map.set(item.providerName, []);
+        map.get(item.providerName).push(item);
+      });
+      map.forEach((rows) => rows.sort((a, b) => a.generatedUtcMs - b.generatedUtcMs));
+      return map;
+    }
+
+    function buildProviderOutageWindows(rows) {
+      const map = new Map(PROVIDER_NAMES.map((name) => [name, {
+        providerName: name, records: 0, snapshots: new Set(), firstMs: null, lastMs: null, peakCustomers: 0
+      }]));
+      rows.forEach((row) => {
+        if (!map.has(row.providerName)) {
+          map.set(row.providerName, {
+            providerName: row.providerName, records: 0, snapshots: new Set(), firstMs: null, lastMs: null, peakCustomers: 0
+          });
+        }
+        const item = map.get(row.providerName);
+        item.records += 1;
+        item.snapshots.add(row.snapshotUtcMs);
+        item.firstMs = item.firstMs === null ? row.snapshotUtcMs : Math.min(item.firstMs, row.snapshotUtcMs);
+        item.lastMs = item.lastMs === null ? row.snapshotUtcMs : Math.max(item.lastMs, row.snapshotUtcMs);
+        item.peakCustomers = Math.max(item.peakCustomers, row.affectedCustomers);
       });
       return map;
     }
@@ -1041,6 +1134,8 @@
       $("providerMetrics").innerHTML = providerCards || metricCard("Providers", "—", "No provider has current outage records in the latest update");
       $("providerBars").innerHTML = renderProviderBars(providers, d.currentSummary.latestCustomerSum, 10);
       $("providerHealthTable").innerHTML = renderProviderHealthRows(providers);
+      $("providerHealthChart").innerHTML = renderProviderHealthChart();
+      $("providerHealthLogTable").innerHTML = renderProviderHealthLogRows(providers);
       $("providerSparklines").innerHTML = renderProviderSparklines(providers);
     }
 
@@ -1056,6 +1151,7 @@
         metricCard("Oldest listed start time", oldest ? formatAest(oldest.startedMs, false) : "—", oldest ? `${escapeHtml(oldest.incident.lgaName)} · listed for ${formatDuration(d.latestMs - oldest.startedMs, true)}` : "No current start times supplied")
       ].join("");
       renderLargestOutagesTable();
+      renderOutageLog48hTable();
       $("reasonBreakdown").innerHTML = renderReasonBreakdown();
       $("etrBreakdown").innerHTML = renderEtrBreakdown();
     }
@@ -1075,6 +1171,28 @@
           <td class="ellipsis">${escapeHtml(cleanReason(r.reason))}</td>
         </tr>`;
       }).join("") || `<tr><td colspan="8" class="empty">No current outage records in the latest update.</td></tr>`;
+    }
+
+    function renderOutageLog48hTable() {
+      const rows = state.data.outageLog48h;
+      $("outageLog48hTable").innerHTML = rows.map((incident) => {
+        const r = incident.latestRow;
+        const peak = incident.peakRow;
+        return `<tr>
+          <td class="nowrap">${escapeHtml(formatAest(incident.lastSeenMs, true))}</td>
+          <td class="nowrap">${escapeHtml(formatAest(incident.firstSeenMs, true))}</td>
+          <td>${escapeHtml(r.providerName)}</td>
+          <td><strong>${escapeHtml(r.lgaName || "Unmatched")}</strong></td>
+          <td class="ellipsis">${escapeHtml(r.suburb || "—")}</td>
+          <td class="num"><strong>${fmtInt.format(r.affectedCustomers)}</strong></td>
+          <td class="num">${fmtInt.format(incident.peakCustomers)}${peak && peak.snapshotUtcMs !== r.snapshotUtcMs ? `<div class="muted">${escapeHtml(formatAest(peak.snapshotUtcMs, false))}</div>` : ""}</td>
+          <td class="nowrap">${escapeHtml(formatUtcAsAest(r.startUtc, false) || "—")}</td>
+          <td class="nowrap">${escapeHtml(formatUtcAsAest(r.etrUtc, false) || "—")}</td>
+          <td class="ellipsis">${escapeHtml(r.status || "—")}</td>
+          <td class="ellipsis">${escapeHtml(cleanReason(r.reason) || "—")}</td>
+          <td class="ellipsis">${escapeHtml(r.outageId || r.outageKey || "—")}</td>
+        </tr>`;
+      }).join("") || `<tr><td colspan="12" class="empty">No outage records were captured in the rolling 48-hour snapshot history.</td></tr>`;
     }
 
     function renderTrendsView() {
@@ -1145,7 +1263,7 @@
 
     function renderProviderHealthRows(providers) {
       const d = state.data;
-      const names = new Set([...providers.map((p) => p.name), ...d.providerHealthLatest.keys()]);
+      const names = new Set([...PROVIDER_NAMES, ...providers.map((p) => p.name), ...d.providerHealthLatest.keys()]);
       const rows = [...names].sort((a, b) => a.localeCompare(b));
       if (!rows.length) return `<tr><td colspan="4" class="empty">Provider health history could not be loaded.</td></tr>`;
       return rows.map((name) => {
@@ -1159,6 +1277,54 @@
           <td>${item ? escapeHtml(item.generatedAest || formatAest(item.generatedUtcMs, true) || item.generatedUtc) : "—"}</td>
         </tr>`;
       }).join("");
+    }
+
+    function renderProviderHealthChart() {
+      const d = state.data;
+      const names = [...new Set([...PROVIDER_NAMES, ...d.providerHealth24.keys()])];
+      const startMs = d.latestMs - 24 * 60 * 60 * 1000;
+      const width = 1000;
+      const rowH = 42;
+      const left = 145;
+      const right = 24;
+      const top = 18;
+      const height = top + names.length * rowH + 36;
+      const plotW = width - left - right;
+      const xFor = (ms) => left + ((ms - startMs) / (24 * 60 * 60 * 1000)) * plotW;
+      const ticks = [0, 6, 12, 18, 24].map((h) => startMs + h * 60 * 60 * 1000);
+      return `<svg class="chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="Provider feed health checks over the last 24 hours">
+        ${ticks.map((ms) => `<line class="grid-line" x1="${xFor(ms)}" y1="8" x2="${xFor(ms)}" y2="${height - 24}"></line><text class="axis-label" x="${xFor(ms)}" y="${height - 6}" text-anchor="middle">${escapeHtml(formatAest(ms, false))}</text>`).join("")}
+        ${names.map((name, idx) => {
+          const y = top + idx * rowH + 14;
+          const rows = d.providerHealth24.get(name) || [];
+          return `<text class="axis-label strong" x="8" y="${y + 4}">${escapeHtml(name)}</text>
+            <line class="health-line" x1="${left}" y1="${y}" x2="${width - right}" y2="${y}"></line>
+            ${rows.map((row) => `<circle class="${row.status === "OK" ? "health-dot-ok" : "health-dot-fail"}" cx="${xFor(row.generatedUtcMs)}" cy="${y}" r="6"><title>${escapeHtml(name)} ${escapeHtml(row.status)} at ${escapeHtml(formatAest(row.generatedUtcMs, true))} · records read ${fmtInt.format(row.recordCount)}</title></circle>`).join("") || `<circle class="health-dot-unknown" cx="${left + plotW / 2}" cy="${y}" r="4"><title>${escapeHtml(name)}: no health rows loaded in the last 24 hours</title></circle>`}`;
+        }).join("")}
+      </svg>`;
+    }
+
+    function renderProviderHealthLogRows(providers) {
+      const d = state.data;
+      const names = [...new Set([...PROVIDER_NAMES, ...providers.map((p) => p.name), ...d.providerHealth24.keys(), ...d.providerOutageWindows24.keys()])].sort((a, b) => a.localeCompare(b));
+      return names.map((name) => {
+        const healthRows = d.providerHealth24.get(name) || [];
+        const okCount = healthRows.filter((r) => r.status === "OK").length;
+        const failCount = healthRows.filter((r) => r.status !== "OK").length;
+        const outage = d.providerOutageWindows24.get(name) || { records: 0, snapshots: new Set(), firstMs: null, lastMs: null, peakCustomers: 0 };
+        const activity = outage.records
+          ? `${escapeHtml(formatAest(outage.firstMs, false))}–${escapeHtml(formatAest(outage.lastMs, false))}; peak ${fmtInt.format(outage.peakCustomers)} customers`
+          : "No unplanned outage records captured in the rolling 24h window.";
+        const healthText = healthRows.length
+          ? `${fmtInt.format(okCount)} OK${failCount ? ` · ${fmtInt.format(failCount)} failed` : ""}`
+          : "No health checks loaded";
+        return `<tr>
+          <td><strong>${escapeHtml(name)}</strong></td>
+          <td>${escapeHtml(healthText)}</td>
+          <td>${outage.records ? `${fmtInt.format(outage.records)} rows across ${fmtInt.format(outage.snapshots.size)} snapshot${plural(outage.snapshots.size)}` : "None"}</td>
+          <td>${activity}</td>
+        </tr>`;
+      }).join("") || `<tr><td colspan="4" class="empty">Provider health and outage history could not be loaded.</td></tr>`;
     }
 
     function renderProviderSparklines(providers) {
