@@ -127,8 +127,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-08T21:31:06Z",
-        "snapshot_aest": "2026-07-09T07:31:06+10:00",
+        "snapshot_utc": "2026-07-08T21:45:33Z",
+        "snapshot_aest": "2026-07-09T07:45:33+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969119-g",
@@ -146,6 +146,74 @@
         "centroid_lat": -27.852221077604085,
         "lga_name": "Gold Coast City",
         "lga_code": "3430",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.878443021695,
+              -26.486426162261
+            ],
+            [
+              152.878885881521,
+              -26.4858969339677
+            ],
+            [
+              152.879773037914,
+              -26.4858155529661
+            ],
+            [
+              152.880313088173,
+              -26.4861644413519
+            ],
+            [
+              152.881210732319,
+              -26.4897113087625
+            ],
+            [
+              152.880486672364,
+              -26.4902104909175
+            ],
+            [
+              152.879280989733,
+              -26.489635698449
+            ],
+            [
+              152.879022119774,
+              -26.4893168627713
+            ],
+            [
+              152.878443021695,
+              -26.486426162261
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-08T21:45:33Z",
+        "snapshot_aest": "2026-07-09T07:45:33+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-969117-g",
+        "outage_id": "INCD-969117-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Under Investigation",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "BELLI PARK",
+        "street_name": "FLEETWOOD RD",
+        "start_utc": "2026-07-08T20:31:29Z",
+        "etr_utc": "2026-07-08T22:00:00Z",
+        "centroid_lon": 152.87978849360786,
+        "centroid_lat": -26.48797174081792,
+        "lga_name": "Sunshine Coast Regional",
+        "lga_code": "6720",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     }
