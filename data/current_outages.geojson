@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-08T00:23:24Z",
-        "snapshot_aest": "2026-07-08T10:23:24+10:00",
+        "snapshot_utc": "2026-07-08T00:30:58Z",
+        "snapshot_aest": "2026-07-08T10:30:58+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-968653-g",
@@ -131,8 +131,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-08T00:23:24Z",
-        "snapshot_aest": "2026-07-08T10:23:24+10:00",
+        "snapshot_utc": "2026-07-08T00:30:58Z",
+        "snapshot_aest": "2026-07-08T10:30:58+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902203",
@@ -150,6 +150,90 @@
         "centroid_lat": -17.310754545541265,
         "lga_name": "Carpentaria Shire",
         "lga_code": "2250",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.461522372718,
+              -23.2646400078569
+            ],
+            [
+              150.461527960722,
+              -23.2645491030391
+            ],
+            [
+              150.463431058565,
+              -23.2535027539263
+            ],
+            [
+              150.464163190264,
+              -23.2531864242738
+            ],
+            [
+              150.466140136866,
+              -23.2542767660339
+            ],
+            [
+              150.46634808031,
+              -23.2545083985083
+            ],
+            [
+              150.468868140863,
+              -23.2608424095692
+            ],
+            [
+              150.46880144624,
+              -23.2612674136668
+            ],
+            [
+              150.463139410015,
+              -23.2682894085277
+            ],
+            [
+              150.462278194794,
+              -23.2681423547777
+            ],
+            [
+              150.461596216011,
+              -23.2659073390839
+            ],
+            [
+              150.461578386115,
+              -23.2658049924976
+            ],
+            [
+              150.461522372718,
+              -23.2646400078569
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-08T00:30:58Z",
+        "snapshot_aest": "2026-07-08T10:30:58+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902257",
+        "outage_id": "902257",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 44,
+        "affected_customers_known": true,
+        "suburb": "GLENDALE",
+        "street_name": "FONS DR, GLENDALE RD, MELDRUM RD",
+        "start_utc": "2026-07-08T00:03:40Z",
+        "etr_utc": null,
+        "centroid_lon": 150.46474682408603,
+        "centroid_lat": -23.260661556011744,
+        "lga_name": "Livingstone Shire",
+        "lga_code": "4530",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
