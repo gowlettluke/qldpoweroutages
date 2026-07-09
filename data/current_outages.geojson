@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-09T08:31:07Z",
-        "snapshot_aest": "2026-07-09T18:31:07+10:00",
+        "snapshot_utc": "2026-07-09T08:50:32Z",
+        "snapshot_aest": "2026-07-09T18:50:32+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969312-g",
@@ -123,6 +123,106 @@
         "lga_name": "Sunshine Coast Regional",
         "lga_code": "6720",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.623955196251,
+              -25.6346244905574
+            ],
+            [
+              151.623836934015,
+              -25.6342936012234
+            ],
+            [
+              151.624250202367,
+              -25.6298004859826
+            ],
+            [
+              151.624700119193,
+              -25.6293894487121
+            ],
+            [
+              151.625500411845,
+              -25.6293233001688
+            ],
+            [
+              151.62574306095,
+              -25.6293585811004
+            ],
+            [
+              151.632312582668,
+              -25.6319397260841
+            ],
+            [
+              151.632418434998,
+              -25.6319963319841
+            ],
+            [
+              151.638126549754,
+              -25.6359871102701
+            ],
+            [
+              151.638169287854,
+              -25.6366667180028
+            ],
+            [
+              151.635558219811,
+              -25.6389655625424
+            ],
+            [
+              151.6351879266,
+              -25.6390923079521
+            ],
+            [
+              151.631395419121,
+              -25.6389246619795
+            ],
+            [
+              151.631178936326,
+              -25.6388688131418
+            ],
+            [
+              151.625149708433,
+              -25.6358415959681
+            ],
+            [
+              151.625013636517,
+              -25.63574115233
+            ],
+            [
+              151.623955196251,
+              -25.6346244905574
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-09T08:50:32Z",
+        "snapshot_aest": "2026-07-09T18:50:32+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902363",
+        "outage_id": "902363",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage caused by external influences, such as birds or animals.",
+        "affected_customers": 23,
+        "affected_customers_known": true,
+        "suburb": "GAYNDAH",
+        "street_name": "OLD NANANGO RD, TABLELAND RD",
+        "start_utc": "2026-07-09T08:30:39Z",
+        "etr_utc": null,
+        "centroid_lon": 151.630293528381,
+        "centroid_lat": -25.63462431373526,
+        "lga_name": "North Burnett Regional",
+        "lga_code": "5760",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
