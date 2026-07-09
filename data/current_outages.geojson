@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-09T21:45:35Z",
-        "snapshot_aest": "2026-07-10T07:45:35+10:00",
+        "snapshot_utc": "2026-07-09T22:00:57Z",
+        "snapshot_aest": "2026-07-10T08:00:57+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969344-g",
@@ -123,8 +123,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-09T21:45:35Z",
-        "snapshot_aest": "2026-07-10T07:45:35+10:00",
+        "snapshot_utc": "2026-07-09T22:00:57Z",
+        "snapshot_aest": "2026-07-10T08:00:57+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902365",
@@ -142,6 +142,74 @@
         "centroid_lat": -24.79038028986665,
         "lga_name": "Banana Shire",
         "lga_code": "370",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.835426090639,
+              -22.94559043254
+            ],
+            [
+              147.835570146365,
+              -22.9450148743955
+            ],
+            [
+              147.836205888876,
+              -22.9450638193521
+            ],
+            [
+              147.866834292272,
+              -22.9740236435539
+            ],
+            [
+              147.866851386897,
+              -22.9746387197083
+            ],
+            [
+              147.866190067036,
+              -22.9746987884783
+            ],
+            [
+              147.84253717245,
+              -22.9579906539953
+            ],
+            [
+              147.84240160363,
+              -22.9578422505799
+            ],
+            [
+              147.835426090639,
+              -22.94559043254
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-09T22:00:57Z",
+        "snapshot_aest": "2026-07-10T08:00:57+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902368",
+        "outage_id": "902368",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 5,
+        "affected_customers_known": true,
+        "suburb": "CAPELLA",
+        "street_name": "BEACONS HILL RD, RETRO SIDING RD",
+        "start_utc": "2026-07-09T20:43:38Z",
+        "etr_utc": null,
+        "centroid_lon": 147.84901397627877,
+        "centroid_lat": -22.959556518325833,
+        "lga_name": "Central Highlands Regional",
+        "lga_code": "2270",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
