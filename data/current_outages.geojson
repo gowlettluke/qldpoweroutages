@@ -59,8 +59,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-09T04:45:30Z",
-        "snapshot_aest": "2026-07-09T14:45:30+10:00",
+        "snapshot_utc": "2026-07-09T05:01:14Z",
+        "snapshot_aest": "2026-07-09T15:01:14+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969153-g",
@@ -151,8 +151,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-09T04:45:30Z",
-        "snapshot_aest": "2026-07-09T14:45:30+10:00",
+        "snapshot_utc": "2026-07-09T05:01:14Z",
+        "snapshot_aest": "2026-07-09T15:01:14+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969196-g",
@@ -231,8 +231,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-09T04:45:30Z",
-        "snapshot_aest": "2026-07-09T14:45:30+10:00",
+        "snapshot_utc": "2026-07-09T05:01:14Z",
+        "snapshot_aest": "2026-07-09T15:01:14+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902358",
@@ -250,6 +250,66 @@
         "centroid_lat": -27.183734402492167,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.982807802511,
+              -26.4608479301371
+            ],
+            [
+              151.982468468412,
+              -26.4614063898556
+            ],
+            [
+              151.981848007684,
+              -26.4611009624302
+            ],
+            [
+              151.981639452942,
+              -26.4604600671249
+            ],
+            [
+              151.981978789417,
+              -26.4599016091683
+            ],
+            [
+              151.982599243369,
+              -26.4602070369159
+            ],
+            [
+              151.982807802511,
+              -26.4608479301371
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-09T05:01:14Z",
+        "snapshot_aest": "2026-07-09T15:01:14+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902359",
+        "outage_id": "902359",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "NANANGO",
+        "street_name": "WATTLE CAMP RD",
+        "start_utc": "2026-07-09T03:42:51Z",
+        "etr_utc": null,
+        "centroid_lon": 151.98221997099952,
+        "centroid_lat": -26.46065336347509,
+        "lga_name": "South Burnett Regional",
+        "lga_code": "6630",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
