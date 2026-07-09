@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-09T12:20:33Z",
-        "snapshot_aest": "2026-07-09T22:20:33+10:00",
+        "snapshot_utc": "2026-07-09T13:03:29Z",
+        "snapshot_aest": "2026-07-09T23:03:29+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969312-g",
@@ -91,6 +91,82 @@
         "lga_name": "Sunshine Coast Regional",
         "lga_code": "6720",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.905597670011,
+              -24.7950765966109
+            ],
+            [
+              149.905635891223,
+              -24.7946488608292
+            ],
+            [
+              149.974678676108,
+              -24.6977642003943
+            ],
+            [
+              149.975556951906,
+              -24.6978569730782
+            ],
+            [
+              150.007407995456,
+              -24.7783850719675
+            ],
+            [
+              150.007422469983,
+              -24.778428303506
+            ],
+            [
+              150.013951787232,
+              -24.8021113878261
+            ],
+            [
+              150.013565549524,
+              -24.8026644860913
+            ],
+            [
+              149.917732225012,
+              -24.8193862453539
+            ],
+            [
+              149.917187197146,
+              -24.8191248099899
+            ],
+            [
+              149.905597670011,
+              -24.7950765966109
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-09T13:03:29Z",
+        "snapshot_aest": "2026-07-09T23:03:29+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902365",
+        "outage_id": "902365",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 31,
+        "affected_customers_known": true,
+        "suburb": "KIANGA, MOURA, THEODORE",
+        "street_name": "BECKERS RD, BEHRENDORFFS RD, BURNSIDE-MCLELLANS RD, KIANGA RIVER RD, NIPAN RIVER RD, THEODORE BARALABA RD, THEODORE MOURA RD",
+        "start_utc": "2026-07-09T12:21:00Z",
+        "etr_utc": null,
+        "centroid_lon": 149.96194176579777,
+        "centroid_lat": -24.7722536712,
+        "lga_name": "Banana Shire",
+        "lga_code": "370",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
