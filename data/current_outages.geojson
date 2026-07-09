@@ -59,8 +59,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-09T05:15:27Z",
-        "snapshot_aest": "2026-07-09T15:15:27+10:00",
+        "snapshot_utc": "2026-07-09T05:31:05Z",
+        "snapshot_aest": "2026-07-09T15:31:05+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969153-g",
@@ -151,8 +151,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-09T05:15:27Z",
-        "snapshot_aest": "2026-07-09T15:15:27+10:00",
+        "snapshot_utc": "2026-07-09T05:31:05Z",
+        "snapshot_aest": "2026-07-09T15:31:05+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969196-g",
@@ -165,7 +165,7 @@
         "suburb": "MOOLOOLAH VALLEY",
         "street_name": "BRENDA CT, CONNECTION RD, NICOLLE CT",
         "start_utc": "2026-07-09T00:44:28Z",
-        "etr_utc": "2026-07-09T06:00:00Z",
+        "etr_utc": "2026-07-09T06:30:00Z",
         "centroid_lon": 152.99014383587138,
         "centroid_lat": -26.767665601458976,
         "lga_name": "Sunshine Coast Regional",
@@ -211,8 +211,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-09T05:15:27Z",
-        "snapshot_aest": "2026-07-09T15:15:27+10:00",
+        "snapshot_utc": "2026-07-09T05:31:05Z",
+        "snapshot_aest": "2026-07-09T15:31:05+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969266-g",
@@ -291,8 +291,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-09T05:15:27Z",
-        "snapshot_aest": "2026-07-09T15:15:27+10:00",
+        "snapshot_utc": "2026-07-09T05:31:05Z",
+        "snapshot_aest": "2026-07-09T15:31:05+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902358",
@@ -351,8 +351,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-09T05:15:27Z",
-        "snapshot_aest": "2026-07-09T15:15:27+10:00",
+        "snapshot_utc": "2026-07-09T05:31:05Z",
+        "snapshot_aest": "2026-07-09T15:31:05+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902359",
@@ -370,6 +370,66 @@
         "centroid_lat": -26.46065336347509,
         "lga_name": "South Burnett Regional",
         "lga_code": "6630",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.760015410872,
+              -23.1499320937207
+            ],
+            [
+              150.75989302427,
+              -23.1505595492658
+            ],
+            [
+              150.759214484437,
+              -23.1504463748019
+            ],
+            [
+              150.758488624551,
+              -23.1494797277638
+            ],
+            [
+              150.758611017672,
+              -23.1488522725163
+            ],
+            [
+              150.759289549134,
+              -23.1489654507264
+            ],
+            [
+              150.760015410872,
+              -23.1499320937207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-09T05:31:05Z",
+        "snapshot_aest": "2026-07-09T15:31:05+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902360",
+        "outage_id": "902360",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to a vehicle accident.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "TARANGANBA",
+        "street_name": "TARANGANBA RD",
+        "start_utc": "2026-07-09T05:09:00Z",
+        "etr_utc": null,
+        "centroid_lon": 150.7592483669705,
+        "centroid_lat": -23.149705352089857,
+        "lga_name": "Livingstone Shire",
+        "lga_code": "4530",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
