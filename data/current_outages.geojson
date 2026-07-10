@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-10T21:45:35Z",
-        "snapshot_aest": "2026-07-11T07:45:35+10:00",
+        "snapshot_utc": "2026-07-10T22:01:06Z",
+        "snapshot_aest": "2026-07-11T08:01:06+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969537-g",
@@ -99,6 +99,74 @@
         "lga_name": "Logan City",
         "lga_code": "4590",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.379089879146,
+              -19.7091606349616
+            ],
+            [
+              147.379601499724,
+              -19.7086894291941
+            ],
+            [
+              147.380705785708,
+              -19.7087663692088
+            ],
+            [
+              147.381088146279,
+              -19.7094359169713
+            ],
+            [
+              147.38038182523,
+              -19.7106436065701
+            ],
+            [
+              147.379568244939,
+              -19.7106764040011
+            ],
+            [
+              147.379207625656,
+              -19.7101673269628
+            ],
+            [
+              147.3791272227,
+              -19.7099361870487
+            ],
+            [
+              147.379089879146,
+              -19.7091606349616
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-10T22:01:06Z",
+        "snapshot_aest": "2026-07-11T08:01:06+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902460",
+        "outage_id": "902460",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 5,
+        "affected_customers_known": true,
+        "suburb": "HOME HILL",
+        "street_name": "BAPTY RD, MENKENS RD, TUFFIN RD",
+        "start_utc": "2026-07-10T21:53:17Z",
+        "etr_utc": null,
+        "centroid_lon": 147.38000833301342,
+        "centroid_lat": -19.70963511699962,
+        "lga_name": "Burdekin Shire",
+        "lga_code": "1900",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
