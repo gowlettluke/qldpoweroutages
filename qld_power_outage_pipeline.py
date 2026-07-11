@@ -2305,6 +2305,40 @@ def trim_to_window(rows: List[Dict[str, str]], now_dt: datetime, hours: int) -> 
     return out
 
 
+def backfill_latest_outage_details(rows: List[Dict[str, str]]) -> List[Dict[str, str]]:
+    """Carry the latest provider-supplied description onto each outage log row.
+
+    Provider feeds often start with placeholder status/reason text such as
+    "Awaiting" or "Under Investigation" and fill in a clearer cause later. The
+    dashboard collapses the rolling snapshot CSV into one log entry per outage,
+    so keep the most recent non-empty status and reason on all retained rows for
+    the same outage key. This makes cleared outage log entries show the last
+    known provider details rather than stale first-seen text.
+    """
+    latest_by_key: Dict[str, Dict[str, Tuple[datetime, str]]] = {}
+    for row in rows:
+        outage_key = row.get("outage_key", "")
+        snapshot_dt = parse_utc_iso(row.get("snapshot_utc"))
+        if not outage_key or snapshot_dt is None:
+            continue
+        details = latest_by_key.setdefault(outage_key, {})
+        for field in ("status", "reason"):
+            value = (row.get(field) or "").strip()
+            if not value:
+                continue
+            existing = details.get(field)
+            if existing is None or snapshot_dt >= existing[0]:
+                details[field] = (snapshot_dt, value)
+
+    out: List[Dict[str, str]] = []
+    for row in rows:
+        updated = dict(row)
+        for field, detail in latest_by_key.get(row.get("outage_key", ""), {}).items():
+            updated[field] = detail[1]
+        out.append(updated)
+    return out
+
+
 def int_from_row(row: Dict[str, str], col: str, default: int = 0) -> int:
     value = as_int(row.get(col))
     return default if value is None else value
@@ -2635,6 +2669,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
     combined_rows = existing_rows + new_snapshot_rows
     combined_rows = trim_to_window(combined_rows, now_dt=snapshot_dt, hours=args.window_hours)
     combined_rows = dedupe_snapshot_rows(combined_rows)
+    combined_rows = backfill_latest_outage_details(combined_rows)
 
     lga_totals_rows = build_lga_totals(combined_rows)
     lga_totals_latest_rows = latest_rows_by_snapshot(lga_totals_rows)
