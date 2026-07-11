@@ -55,15 +55,15 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-11T22:45:34Z",
-        "snapshot_aest": "2026-07-12T08:45:34+10:00",
+        "snapshot_utc": "2026-07-11T23:01:01Z",
+        "snapshot_aest": "2026-07-12T09:01:01+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969656-g",
         "outage_id": "INCD-969656-g",
         "outage_type": "unplanned",
         "status": "In Progress",
-        "reason": "Under Investigation",
+        "reason": "Emergency Repairs",
         "affected_customers": 34,
         "affected_customers_known": true,
         "suburb": "LOTA",
@@ -74,6 +74,114 @@
         "centroid_lat": -27.469230440529447,
         "lga_name": "Brisbane City",
         "lga_code": "1000",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.960136413215,
+              -26.6611043655276
+            ],
+            [
+              152.960015102988,
+              -26.6603381129402
+            ],
+            [
+              152.961496991506,
+              -26.6592563361983
+            ],
+            [
+              152.961548749245,
+              -26.6592232050094
+            ],
+            [
+              152.964822102565,
+              -26.657396621377
+            ],
+            [
+              152.965401144729,
+              -26.657427663753
+            ],
+            [
+              152.965561720542,
+              -26.6579284998456
+            ],
+            [
+              152.965491121619,
+              -26.6581107896913
+            ],
+            [
+              152.965424601811,
+              -26.6582824128482
+            ],
+            [
+              152.965357810129,
+              -26.6584541927532
+            ],
+            [
+              152.965291008165,
+              -26.6586256570072
+            ],
+            [
+              152.965250447585,
+              -26.6587044842236
+            ],
+            [
+              152.96407595143,
+              -26.6605080675706
+            ],
+            [
+              152.963984977468,
+              -26.6606102260638
+            ],
+            [
+              152.96267218687,
+              -26.6617102990552
+            ],
+            [
+              152.962253318528,
+              -26.6618263811694
+            ],
+            [
+              152.961978207702,
+              -26.6617884716979
+            ],
+            [
+              152.961858858645,
+              -26.66175810816
+            ],
+            [
+              152.960136413215,
+              -26.6611043655276
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-11T23:01:01Z",
+        "snapshot_aest": "2026-07-12T09:01:01+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-969660-g",
+        "outage_id": "INCD-969660-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Under Investigation",
+        "affected_customers": 20,
+        "affected_customers_known": true,
+        "suburb": "WEST WOOMBYE, WOOMBYE",
+        "street_name": "BACK WOOMBYE RD, BARTS ST, BLACKALL ST, CARY ST, OLD PALMWOODS RD",
+        "start_utc": "2026-07-11T22:27:02Z",
+        "etr_utc": "2026-07-12T00:00:00Z",
+        "centroid_lon": 152.96286123854165,
+        "centroid_lat": -26.659769849446178,
+        "lga_name": "Sunshine Coast Regional",
+        "lga_code": "6720",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     },
@@ -203,8 +311,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-11T22:45:34Z",
-        "snapshot_aest": "2026-07-12T08:45:34+10:00",
+        "snapshot_utc": "2026-07-11T23:01:01Z",
+        "snapshot_aest": "2026-07-12T09:01:01+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902536",
