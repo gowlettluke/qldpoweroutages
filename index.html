@@ -487,7 +487,7 @@
       </section>
       <section class="panel" style="margin-top:14px;">
         <div class="panel-header">
-          <div class="panel-title"><h2>48-hour outage log</h2><p>Searchable-by-browser log of every unique outage record seen in the rolling 48-hour snapshot history, including current and recently cleared records.</p></div>
+          <div class="panel-title"><h2>48-hour outage log</h2><p>Searchable-by-browser log of every unique outage record seen in the rolling 48-hour snapshot history, including current and recently cleared records. Cleared records show the last known provider status and reason.</p></div>
         </div>
         <div class="table-wrap">
           <table>
@@ -1189,11 +1189,27 @@
           <td class="num">${fmtInt.format(incident.peakCustomers)}${peak && peak.snapshotUtcMs !== r.snapshotUtcMs ? `<div class="muted">${escapeHtml(formatAest(peak.snapshotUtcMs, false))}</div>` : ""}</td>
           <td class="nowrap">${escapeHtml(formatUtcAsAest(r.startUtc, false) || "—")}</td>
           <td class="nowrap">${escapeHtml(formatUtcAsAest(r.etrUtc, false) || "—")}</td>
-          <td class="ellipsis">${escapeHtml(r.status || "—")}</td>
-          <td class="ellipsis">${escapeHtml(cleanReason(r.reason) || "—")}</td>
+          <td class="ellipsis">${renderOutageLogStatus(incident)}</td>
+          <td class="ellipsis">${renderOutageLogReason(incident)}</td>
           <td class="ellipsis">${escapeHtml(r.outageId || r.outageKey || "—")}</td>
         </tr>`;
       }).join("") || `<tr><td colspan="12" class="empty">No outage records were captured in the rolling 48-hour snapshot history.</td></tr>`;
+    }
+
+    function isCurrentIncident(incident) {
+      return incident && incident.lastSeenMs === state.data.latestMs;
+    }
+
+    function renderOutageLogStatus(incident) {
+      const status = incident.latestRow.status || "—";
+      if (isCurrentIncident(incident)) return escapeHtml(status);
+      return `Cleared<div class="muted">Last known: ${escapeHtml(status)}</div>`;
+    }
+
+    function renderOutageLogReason(incident) {
+      const reason = cleanReason(incident.latestRow.reason) || "—";
+      if (isCurrentIncident(incident)) return escapeHtml(reason);
+      return `<span class="muted">Last known:</span> ${escapeHtml(reason)}`;
     }
 
     function renderTrendsView() {
