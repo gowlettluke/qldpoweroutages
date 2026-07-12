@@ -83,21 +83,21 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-12T09:01:04Z",
-        "snapshot_aest": "2026-07-12T19:01:04+10:00",
+        "snapshot_utc": "2026-07-12T09:15:32Z",
+        "snapshot_aest": "2026-07-12T19:15:32+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969714-g",
         "outage_id": "INCD-969714-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 175,
         "affected_customers_known": true,
         "suburb": "COOLUM BEACH",
         "street_name": "BARRA CRES, COOLUM ESP, COOLUM TCE, DAVID LOW WAY, SCRUB RD",
         "start_utc": "2026-07-12T08:16:06Z",
-        "etr_utc": "2026-07-12T10:00:00Z",
+        "etr_utc": "2026-07-12T10:30:00Z",
         "centroid_lon": 153.0922659051432,
         "centroid_lat": -26.53524012432702,
         "lga_name": "Sunshine Coast Regional",
@@ -151,8 +151,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-12T09:01:04Z",
-        "snapshot_aest": "2026-07-12T19:01:04+10:00",
+        "snapshot_utc": "2026-07-12T09:15:32Z",
+        "snapshot_aest": "2026-07-12T19:15:32+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969720-g",
@@ -170,6 +170,90 @@
         "centroid_lat": -27.579693825095703,
         "lga_name": "Brisbane City",
         "lga_code": "1000",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.85863106028,
+              -26.6340865713573
+            ],
+            [
+              152.858642547959,
+              -26.6332555816704
+            ],
+            [
+              152.860401502915,
+              -26.6326072330857
+            ],
+            [
+              152.86064814156,
+              -26.6325762815728
+            ],
+            [
+              152.863179591439,
+              -26.632831550078
+            ],
+            [
+              152.863598778745,
+              -26.6331338059152
+            ],
+            [
+              152.863869272151,
+              -26.6338430150809
+            ],
+            [
+              152.863646133773,
+              -26.6343799038083
+            ],
+            [
+              152.862600540528,
+              -26.6349249858972
+            ],
+            [
+              152.862315807306,
+              -26.6349849736611
+            ],
+            [
+              152.860748611161,
+              -26.6348931536632
+            ],
+            [
+              152.860579195752,
+              -26.6348559634442
+            ],
+            [
+              152.85863106028,
+              -26.6340865713573
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-12T09:15:32Z",
+        "snapshot_aest": "2026-07-12T19:15:32+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-969725-g",
+        "outage_id": "INCD-969725-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Under Investigation",
+        "affected_customers": 8,
+        "affected_customers_known": true,
+        "suburb": "MAPLETON",
+        "street_name": "OBI OBI RD, SOMMER RD",
+        "start_utc": "2026-07-12T08:55:12Z",
+        "etr_utc": "2026-07-12T10:30:00Z",
+        "centroid_lon": 152.86131506167717,
+        "centroid_lat": -26.633761659174475,
+        "lga_name": "Sunshine Coast Regional",
+        "lga_code": "6720",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     }
