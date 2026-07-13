@@ -240,6 +240,76 @@
     .error-box { margin:10px 0; padding:12px; border:1px solid var(--accentBorder); border-left:5px solid var(--accent); background:var(--accentSoft); color:var(--accent-dark); white-space:pre-wrap; }
     .footer { display:flex; justify-content:space-between; gap:12px; margin-top:10px; color:var(--muted); font-size:.78rem; padding:8px 2px; }
 
+
+
+    .scope-banner {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin:0 0 10px;
+      padding:9px 11px;
+      border:1px solid var(--line);
+      border-left:7px solid var(--accent);
+      background:var(--panel);
+      box-shadow:var(--shadow);
+    }
+    .scope-banner.history { border-left-color:var(--blue); background:var(--blueSoft); }
+    .scope-banner.health { border-left-color:var(--green); background:var(--greenSoft); }
+    .scope-copy { min-width:0; }
+    .scope-copy strong { display:block; font-size:.96rem; letter-spacing:.02em; }
+    .scope-copy span { display:block; margin-top:3px; color:var(--muted); font-size:.8rem; line-height:1.3; }
+    .scope-badge {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:25px;
+      padding:4px 8px;
+      border:1px solid var(--accentBorder);
+      border-radius:3px;
+      background:var(--accentSoft);
+      color:var(--accent-dark);
+      font-size:.71rem;
+      line-height:1;
+      font-weight:800;
+      letter-spacing:.075em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .scope-badge.history { border-color:#b8cef0; background:var(--blueSoft); color:var(--blue); }
+    .scope-badge.health { border-color:rgba(21,128,61,.35); background:var(--greenSoft); color:var(--green); }
+    body.night-mode .scope-badge.history { border-color:#42618d; }
+    .panel-scope { display:flex; gap:5px; flex-wrap:wrap; justify-content:flex-end; }
+    .current-context-layout { grid-template-columns:.9fr 1.1fr; margin-bottom:10px; align-items:stretch; }
+    .history-summary-grid { grid-template-columns:repeat(3,minmax(0,1fr)); margin-bottom:10px; }
+    .history-panel { margin-bottom:10px; }
+    .history-summary-grid .metric, .scope-banner.history + .metric-grid .metric { border-top-color:var(--blue); }
+    .scope-banner.health + .metric-grid .metric { border-top-color:var(--green); }
+    .group-head { text-align:center; font-size:.7rem; letter-spacing:.075em; text-transform:uppercase; }
+    .group-head.live-group { color:var(--accent-dark); background:var(--accentSoft); border-left:2px solid var(--accent); }
+    .group-head.history-group { color:var(--blue); background:var(--blueSoft); border-left:2px solid var(--blue); }
+    th.live-col, td.live-col { background:color-mix(in srgb, var(--accentSoft) 42%, transparent); }
+    th.history-col, td.history-col { background:color-mix(in srgb, var(--blueSoft) 55%, transparent); }
+    th.live-start, td.live-start { border-left:2px solid var(--accent); }
+    th.history-start, td.history-start { border-left:2px solid var(--blue); }
+    .status-chip {
+      display:inline-flex;
+      align-items:center;
+      min-height:22px;
+      padding:3px 7px;
+      border:1px solid var(--line);
+      border-radius:3px;
+      font-size:.7rem;
+      font-weight:800;
+      letter-spacing:.055em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .status-chip.active { color:var(--accent-dark); border-color:var(--accentBorder); background:var(--accentSoft); }
+    .status-chip.cleared { color:var(--muted); background:var(--panel3); }
+    tr.history-cleared td { color:var(--muted); background:color-mix(in srgb, var(--panel3) 70%, transparent); }
+    .rotation-controls #rotationStatus { min-width:150px; }
+
     @media (min-width: 1500px) {
       body { font-size:14px; }
       .table-wrap { max-height: 640px; }
@@ -248,7 +318,7 @@
       .topbar, .nav-row { grid-template-columns:1fr; }
       .status-strip, .rotation-controls { justify-content:flex-start; }
       .metric-grid, .metric-grid.four, .metric-grid.six { grid-template-columns:repeat(2,minmax(0,1fr)); }
-      .overview-layout, .overview-brief-layout, .overview-context-layout, .lga-layout, .provider-layout, .outage-layout, .trend-layout, .bottom-row, .period-comparison { grid-template-columns:1fr; }
+      .overview-layout, .overview-brief-layout, .overview-context-layout, .current-context-layout, .history-summary-grid, .lga-layout, .provider-layout, .outage-layout, .trend-layout, .bottom-row, .period-comparison { grid-template-columns:1fr; }
       .lga-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
     }
     @media (max-width: 720px) {
@@ -270,7 +340,7 @@
     <header class="topbar">
       <div class="title-block">
         <h1>QLD Unplanned Power Outages</h1>
-        <p>Current Queensland unplanned power outage update. Shows customers affected now, LGAs affected, provider share, and context since 0900 AEST and over the rolling 24 hours.</p>
+        <p>Latest Queensland unplanned power outage snapshot. Current impact is separated from recorded history and provider-feed health.</p>
       </div>
       <div class="status-strip" id="statusStrip">
         <span class="pill">Loading data…</span>
@@ -280,194 +350,102 @@
     <nav class="nav-row" aria-label="Dashboard views">
       <div class="tabs" role="tablist">
         <button type="button" class="tab-btn active" data-view="overview" role="tab" aria-selected="true">Overview</button>
+        <button type="button" class="tab-btn" data-view="outages" role="tab" aria-selected="false">Current Outages</button>
         <button type="button" class="tab-btn" data-view="lga" role="tab" aria-selected="false">LGA Breakdown</button>
-        <button type="button" class="tab-btn" data-view="provider" role="tab" aria-selected="false">Provider View</button>
-        <button type="button" class="tab-btn" data-view="outages" role="tab" aria-selected="false">Largest Outages</button>
-        <button type="button" class="tab-btn" data-view="trends" role="tab" aria-selected="false">Trends</button>
+        <button type="button" class="tab-btn" data-view="provider" role="tab" aria-selected="false">Provider Breakdown</button>
+        <button type="button" class="tab-btn" data-view="history" role="tab" aria-selected="false">History &amp; Trends</button>
+        <button type="button" class="tab-btn" data-view="health" role="tab" aria-selected="false">Data Health</button>
       </div>
       <div class="rotation-controls">
         <button type="button" class="control-btn" id="themeToggleBtn" aria-pressed="false">Night</button>
-        <button type="button" class="control-btn active" id="autoRotateBtn">Auto rotate</button>
-        <span id="rotationStatus">Next view --:--</span>
+        <button type="button" class="control-btn" id="autoRotateBtn" aria-pressed="false">Start auto rotation</button>
+        <span id="rotationStatus">Auto rotation off</span>
       </div>
     </nav>
 
     <section id="errorMount"></section>
 
     <section class="view active" id="view-overview" role="tabpanel" aria-labelledby="Overview">
+      <div class="scope-banner live">
+        <div class="scope-copy"><strong>Current statewide situation</strong><span id="overviewLiveTime">Latest available outage snapshot.</span></div>
+        <span class="scope-badge">Live now</span>
+      </div>
       <section class="grid metric-grid" id="overviewMetrics" aria-live="polite"></section>
 
       <section class="grid overview-brief-layout">
         <article class="panel">
           <div class="panel-header">
-            <div class="panel-title"><h2>What this means</h2><p>Plain-English read of the latest update.</p></div>
+            <div class="panel-title"><h2>What this means now</h2><p>Plain-English read of the latest outage snapshot.</p></div>
+            <span class="scope-badge">Live now</span>
           </div>
           <div class="panel-body" id="overviewInsights"></div>
         </article>
 
         <article class="panel">
           <div class="panel-header">
-            <div class="panel-title"><h2>Top affected LGAs</h2><p>Customers affected now by local government area.</p></div>
+            <div class="panel-title"><h2>Top affected LGAs</h2><p>Customers currently affected by local government area.</p></div>
+            <span class="scope-badge">Live now</span>
           </div>
           <div class="panel-body" id="overviewTopLgas"></div>
         </article>
 
         <article class="panel">
-          <div class="panel-header"><div class="panel-title"><h2>By electricity provider</h2><p>Share of customers affected now.</p></div></div>
+          <div class="panel-header"><div class="panel-title"><h2>By electricity provider</h2><p>Share of customers currently affected.</p></div><span class="scope-badge">Live now</span></div>
           <div class="panel-body" id="overviewProviderBars"></div>
         </article>
       </section>
 
-      <section class="grid overview-context-layout">
+      <section class="grid current-context-layout">
         <article class="panel">
-          <div class="panel-header"><div class="panel-title"><h2>LGA severity groups</h2><p>LGAs grouped by customers affected now.</p></div></div>
+          <div class="panel-header"><div class="panel-title"><h2>Current LGA severity groups</h2><p>LGAs grouped by customers affected in the latest snapshot.</p></div><span class="scope-badge">Live now</span></div>
           <div class="panel-body" id="overviewBands"></div>
         </article>
-
         <article class="panel">
-          <div class="panel-header">
-            <div class="panel-title">
-              <h2>Customers affected since 0900 AEST</h2>
-              <p id="overviewChartNote">Customer count only. Use the Trends tab for longer context.</p>
-            </div>
-            <div class="legend">
-              <span><i class="swatch customers"></i>Customers affected</span>
-              <span><i class="swatch peak"></i>Highest point</span>
-            </div>
-          </div>
-          <div class="panel-body">
-            <div class="chart-wrap compact" id="overviewTrendChart"></div>
-          </div>
-        </article>
-
-        <article class="panel">
-          <div class="panel-header"><div class="panel-title"><h2>Data status</h2><p>Source status and matching quality for the latest update.</p></div></div>
+          <div class="panel-header"><div class="panel-title"><h2>Current data coverage</h2><p>Matching and source coverage for the latest outage snapshot.</p></div><span class="scope-badge">Live now</span></div>
           <div class="panel-body" id="overviewConfidence"></div>
         </article>
       </section>
+
+      <div class="scope-banner history">
+        <div class="scope-copy"><strong>Recorded context</strong><span>Historical high points and changes are shown separately from the current outage snapshot.</span></div>
+        <span class="scope-badge history">Recorded history</span>
+      </div>
+      <section class="grid history-summary-grid" id="overviewHistoryMetrics"></section>
+      <article class="panel history-panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <h2>Recorded customer count since 0900 AEST</h2>
+            <p id="overviewChartNote">Historical customer count from 0900 AEST to the latest snapshot.</p>
+          </div>
+          <div class="panel-scope"><span class="scope-badge history">Recorded history</span></div>
+        </div>
+        <div class="panel-body">
+          <div class="legend">
+            <span><i class="swatch customers"></i>Customers affected</span>
+            <span><i class="swatch peak"></i>Highest recorded point</span>
+          </div>
+          <div class="chart-wrap compact" id="overviewTrendChart"></div>
+        </div>
+      </article>
     </section>
 
-    <section class="view" id="view-lga" role="tabpanel" aria-labelledby="LGA Breakdown">
-      <section class="grid metric-grid" id="lgaMetrics"></section>
-      <section class="grid lga-layout">
-        <article class="panel map-panel">
-          <div class="panel-header">
-            <div class="panel-title">
-              <h2>Ranked LGA view</h2>
-              <p>Current LGA ranking, plus high points since 0900 AEST and over the rolling 24 hours.</p>
-            </div>
-          </div>
-          <div class="panel-body" id="lgaMap"></div>
-        </article>
-        <article class="panel">
-          <div class="panel-header">
-            <div class="panel-title">
-              <h2>LGA concentration</h2>
-              <p>Top LGAs and their share of customers affected now.</p>
-            </div>
-          </div>
-          <div class="panel-body" id="lgaConcentration"></div>
-        </article>
-      </section>
-      <section class="panel" style="margin-top:14px;">
-        <div class="panel-header">
-          <div class="panel-title"><h2>LGA breakdown table</h2><p>Current customers, current incidents, share of the statewide total, and high points since 0900 AEST and over the rolling 24 hours.</p></div>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Rank</th>
-                <th>LGA</th>
-                <th class="num">Customers now</th>
-                <th class="num">Incidents now</th>
-                <th class="num">Share of state total</th>
-                <th class="num">High since 0900</th>
-                <th class="num">High in 24h</th>
-              </tr>
-            </thead>
-            <tbody id="lgaTable"></tbody>
-          </table>
-        </div>
-      </section>
-    </section>
-
-    <section class="view" id="view-provider" role="tabpanel" aria-labelledby="Provider View">
-      <section class="grid metric-grid" id="providerMetrics"></section>
-      <section class="grid provider-layout">
-        <article class="panel">
-          <div class="panel-header">
-            <div class="panel-title"><h2>Provider share</h2><p>Customers affected now by electricity distribution provider.</p></div>
-          </div>
-          <div class="panel-body" id="providerBars"></div>
-        </article>
-        <article class="panel">
-          <div class="panel-header">
-            <div class="panel-title"><h2>Latest data check</h2><p>Shows whether each provider feed was successfully read in the latest run.</p></div>
-          </div>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Provider</th>
-                  <th>Data status</th>
-                  <th class="num">Records read</th>
-                  <th>Last checked</th>
-                </tr>
-              </thead>
-              <tbody id="providerHealthTable"></tbody>
-            </table>
-          </div>
-        </article>
-      </section>
-      <section class="panel" style="margin-top:14px;">
-        <div class="panel-header">
-          <div class="panel-title"><h2>24-hour feed health log</h2><p>Each dot is a provider fetch check. Green means the feed was read successfully, even when zero unplanned outages were returned.</p></div>
-        </div>
-        <div class="panel-body health-log">
-          <div id="providerHealthChart" class="health-chart"></div>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Provider</th>
-                  <th>Last 24h feed checks</th>
-                  <th>Outage records seen in last 24h</th>
-                  <th>Most recent outage activity</th>
-                </tr>
-              </thead>
-              <tbody id="providerHealthLogTable"></tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-      <section class="panel" style="margin-top:14px;">
-        <div class="panel-header">
-          <div class="panel-title"><h2>Provider since-0900 trend</h2><p>Small customer trend for each provider since 0900 AEST.</p></div>
-        </div>
-        <div class="panel-body" id="providerSparklines"></div>
-      </section>
-    </section>
-
-    <section class="view" id="view-outages" role="tabpanel" aria-labelledby="Largest Outages">
+    <section class="view" id="view-outages" role="tabpanel" aria-labelledby="Current Outages">
+      <div class="scope-banner live">
+        <div class="scope-copy"><strong>Active outage records</strong><span id="outagesLiveTime">Only outages present in the latest snapshot are shown on this view.</span></div>
+        <span class="scope-badge">Live now</span>
+      </div>
       <section class="grid metric-grid four" id="outageMetrics"></section>
       <section class="grid outage-layout">
         <article class="panel">
           <div class="panel-header">
-            <div class="panel-title"><h2>Largest outage records</h2><p>Largest individual current outage records by customers affected now. Long street lists are left out to keep the TV display readable.</p></div>
+            <div class="panel-title"><h2>Largest active outages</h2><p>Largest individual active outages by customers currently affected.</p></div>
+            <span class="scope-badge">Live now</span>
           </div>
           <div class="table-wrap">
             <table>
               <thead>
                 <tr>
-                  <th>Rank</th>
-                  <th>LGA</th>
-                  <th>Locality</th>
-                  <th>Provider</th>
-                  <th class="num">Customers</th>
-                  <th>Started</th>
-                  <th>Restoration estimate</th>
-                  <th>Reason</th>
+                  <th>Rank</th><th>LGA</th><th>Locality</th><th>Provider</th><th class="num">Customers now</th><th>Started</th><th>Restoration estimate</th><th>Reason</th>
                 </tr>
               </thead>
               <tbody id="largestOutagesTable"></tbody>
@@ -476,36 +454,91 @@
         </article>
         <aside class="grid">
           <article class="panel">
-            <div class="panel-header"><div class="panel-title"><h2>Reported causes</h2><p>Current outage records grouped by the provider-supplied reason.</p></div></div>
+            <div class="panel-header"><div class="panel-title"><h2>Reported causes</h2><p>Active outages grouped by the provider-supplied reason.</p></div><span class="scope-badge">Live now</span></div>
             <div class="panel-body" id="reasonBreakdown"></div>
           </article>
           <article class="panel">
-            <div class="panel-header"><div class="panel-title"><h2>Restoration estimate status</h2><p>Whether current outage records include an estimated restoration time.</p></div></div>
+            <div class="panel-header"><div class="panel-title"><h2>Restoration estimate status</h2><p>Whether active outages include an estimated restoration time.</p></div><span class="scope-badge">Live now</span></div>
             <div class="panel-body" id="etrBreakdown"></div>
           </article>
         </aside>
       </section>
+    </section>
+
+    <section class="view" id="view-lga" role="tabpanel" aria-labelledby="LGA Breakdown">
+      <div class="scope-banner live">
+        <div class="scope-copy"><strong>Current impact by local government area</strong><span id="lgaLiveTime">Rankings are based on the latest outage snapshot. Historical columns are separately labelled.</span></div>
+        <span class="scope-badge">Live now</span>
+      </div>
+      <section class="grid metric-grid" id="lgaMetrics"></section>
+      <section class="grid lga-layout">
+        <article class="panel map-panel">
+          <div class="panel-header"><div class="panel-title"><h2>Current ranked LGA view</h2><p>LGAs ranked by customers currently affected.</p></div><span class="scope-badge">Live now</span></div>
+          <div class="panel-body" id="lgaMap"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-header"><div class="panel-title"><h2>Current LGA concentration</h2><p>Top LGAs and their share of customers currently affected.</p></div><span class="scope-badge">Live now</span></div>
+          <div class="panel-body" id="lgaConcentration"></div>
+        </article>
+      </section>
       <section class="panel" style="margin-top:14px;">
         <div class="panel-header">
-          <div class="panel-title"><h2>48-hour outage log</h2><p>Searchable-by-browser log of every unique outage record seen in the rolling 48-hour snapshot history, including current and recently cleared records. Cleared records show the last known provider status and reason.</p></div>
+          <div class="panel-title"><h2>LGA breakdown</h2><p>Current impact and recorded high points are grouped separately below.</p></div>
+          <div class="panel-scope"><span class="scope-badge">Live now</span><span class="scope-badge history">Recorded highs</span></div>
         </div>
         <div class="table-wrap">
           <table>
             <thead>
-              <tr>
-                <th>Last seen</th>
-                <th>First seen</th>
-                <th>Provider</th>
-                <th>LGA</th>
-                <th>Locality</th>
-                <th class="num">Latest customers</th>
-                <th class="num">Peak customers</th>
-                <th>Provider start</th>
-                <th>Restoration estimate</th>
-                <th>Status</th>
-                <th>Reason</th>
-                <th>Outage ID</th>
-              </tr>
+              <tr><th rowspan="2">Rank</th><th rowspan="2">LGA</th><th colspan="3" class="group-head live-group">Live now</th><th colspan="2" class="group-head history-group">Recorded highs</th></tr>
+              <tr><th class="num live-col live-start">Customers now</th><th class="num live-col">Active outages</th><th class="num live-col">Share of state total</th><th class="num history-col history-start">Since 0900</th><th class="num history-col">Rolling 24h</th></tr>
+            </thead>
+            <tbody id="lgaTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <section class="view" id="view-provider" role="tabpanel" aria-labelledby="Provider Breakdown">
+      <div class="scope-banner live">
+        <div class="scope-copy"><strong>Current impact by electricity provider</strong><span id="providerLiveTime">This view contains only active outage impact from the latest snapshot.</span></div>
+        <span class="scope-badge">Live now</span>
+      </div>
+      <section class="grid metric-grid" id="providerMetrics"></section>
+      <section class="panel">
+        <div class="panel-header"><div class="panel-title"><h2>Current provider share</h2><p>Customers currently affected and active outages by electricity distribution provider.</p></div><span class="scope-badge">Live now</span></div>
+        <div class="panel-body" id="providerBars"></div>
+      </section>
+    </section>
+
+    <section class="view" id="view-history" role="tabpanel" aria-labelledby="History and Trends">
+      <div class="scope-banner history">
+        <div class="scope-copy"><strong>Recorded outage history</strong><span>These values describe previously recorded snapshots and may include outages that have since cleared.</span></div>
+        <span class="scope-badge history">Recorded history</span>
+      </div>
+      <section class="grid metric-grid four" id="trendMetrics"></section>
+      <section class="grid trend-layout">
+        <article class="panel">
+          <div class="panel-header"><div class="panel-title"><h2>Recorded since 0900 AEST</h2><p id="todayTrendNote">Recorded customer trend from 0900 AEST to the latest snapshot.</p></div><span class="scope-badge history">Recorded history</span></div>
+          <div class="panel-body"><div class="chart-wrap large" id="todayTrendChart"></div></div>
+        </article>
+        <article class="panel">
+          <div class="panel-header"><div class="panel-title"><h2>Recorded rolling 24 hours</h2><p id="rollingTrendNote">Recorded customer trend over the latest rolling 24 hours.</p></div><span class="scope-badge history">Recorded history</span></div>
+          <div class="panel-body"><div class="chart-wrap large" id="rollingTrendChart"></div></div>
+        </article>
+      </section>
+      <section class="panel" style="margin-top:14px;">
+        <div class="panel-header"><div class="panel-title"><h2>Provider trends since 0900 AEST</h2><p>Recorded customer trend for each provider.</p></div><span class="scope-badge history">Recorded history</span></div>
+        <div class="panel-body" id="providerSparklines"></div>
+      </section>
+      <section class="panel" style="margin-top:14px;">
+        <div class="panel-header">
+          <div class="panel-title"><h2>Recorded outage history — rolling 48 hours</h2><p>Every unique outage seen in the rolling snapshot history. Active and cleared records are explicitly identified.</p></div>
+          <span class="scope-badge history">Recorded history</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Last seen</th><th>First seen</th><th>Provider</th><th>LGA</th><th>Locality</th><th class="num">Customers at last sighting</th><th class="num">Highest recorded customers</th><th>Provider start</th><th>Restoration estimate</th><th>Status</th><th>Reason</th><th>Outage ID</th></tr>
             </thead>
             <tbody id="outageLog48hTable"></tbody>
           </table>
@@ -513,21 +546,26 @@
       </section>
     </section>
 
-    <section class="view" id="view-trends" role="tabpanel" aria-labelledby="Trends">
-      <section class="grid metric-grid four" id="trendMetrics"></section>
-      <section class="grid trend-layout">
-        <article class="panel">
-          <div class="panel-header">
-            <div class="panel-title"><h2>Since 0900 AEST period</h2><p id="todayTrendNote">Customer trend from 0900 AEST to the latest update.</p></div>
+    <section class="view" id="view-health" role="tabpanel" aria-labelledby="Data Health">
+      <div class="scope-banner health">
+        <div class="scope-copy"><strong>Provider feed and data health</strong><span>This view describes whether source feeds were successfully read; it does not represent outage impact.</span></div>
+        <span class="scope-badge health">Data health</span>
+      </div>
+      <section class="grid metric-grid four" id="healthMetrics"></section>
+      <section class="panel">
+        <div class="panel-header"><div class="panel-title"><h2>Latest provider feed check</h2><p>Whether each provider feed was successfully read in the latest run.</p></div><span class="scope-badge health">Data health</span></div>
+        <div class="table-wrap">
+          <table><thead><tr><th>Provider</th><th>Feed status</th><th class="num">Records read</th><th>Last checked</th></tr></thead><tbody id="providerHealthTable"></tbody></table>
+        </div>
+      </section>
+      <section class="panel" style="margin-top:14px;">
+        <div class="panel-header"><div class="panel-title"><h2>24-hour provider feed-health log</h2><p>Each dot is a provider fetch check. Green means the feed was read successfully, including runs that returned zero outages.</p></div><span class="scope-badge health">Data health</span></div>
+        <div class="panel-body health-log">
+          <div id="providerHealthChart" class="health-chart"></div>
+          <div class="table-wrap">
+            <table><thead><tr><th>Provider</th><th>Last 24h feed checks</th><th>Outage records seen in last 24h</th><th>Most recent outage activity</th></tr></thead><tbody id="providerHealthLogTable"></tbody></table>
           </div>
-          <div class="panel-body"><div class="chart-wrap large" id="todayTrendChart"></div></div>
-        </article>
-        <article class="panel">
-          <div class="panel-header">
-            <div class="panel-title"><h2>Rolling 24-hour period</h2><p id="rollingTrendNote">Customer trend over the latest rolling 24 hours.</p></div>
-          </div>
-          <div class="panel-body"><div class="chart-wrap large" id="rollingTrendChart"></div></div>
-        </article>
+        </div>
       </section>
     </section>
 
@@ -548,20 +586,21 @@
 
     const REFRESH_MS = 15 * 60 * 1000;
     const BRISBANE_OFFSET_MS = 10 * 60 * 60 * 1000;
-    const VIEW_ORDER = ["overview", "lga", "overview", "provider", "overview", "outages", "trends"];
+    const VIEW_ORDER = ["overview", "outages", "lga", "provider", "history", "health"];
     const PROVIDER_NAMES = ["Energex", "Ergon Energy", "Essential Energy"];
     const VIEW_DURATIONS_MS = {
       overview: 45 * 1000,
       lga: 45 * 1000,
       provider: 35 * 1000,
       outages: 35 * 1000,
-      trends: 45 * 1000
+      history: 45 * 1000,
+      health: 35 * 1000
     };
 
     const state = {
       data: null,
       activeView: "overview",
-      autoRotate: true,
+      autoRotate: false,
       refreshTimer: null,
       countdownTimer: null,
       rotateTimer: null,
@@ -1020,7 +1059,8 @@
       renderLgaView();
       renderProviderView();
       renderOutagesView();
-      renderTrendsView();
+      renderHistoryView();
+      renderHealthView();
       renderFooter();
       updateCountdowns();
     }
@@ -1044,17 +1084,23 @@
     function renderOverview() {
       const d = state.data;
       const worst = d.topLgas[0];
+      const largest = d.currentIncidents[0];
       const periodHigh = d.peakToday;
       const belowHigh = periodHigh.customers ? Math.max(0, (periodHigh.customers - d.currentSummary.latestCustomerSum) / periodHigh.customers) : 0;
+      $("overviewLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}.`;
       $("overviewMetrics").innerHTML = [
-        metricCard("Customers affected now", fmtInt.format(d.currentSummary.latestCustomerSum), `${fmtInt.format(d.currentSummary.incidents)} current outage record${plural(d.currentSummary.incidents)} statewide`),
-        metricCard("Current outage records", fmtInt.format(d.currentSummary.incidents), `${fmtInt.format(d.currentSummary.lgaCount)} LGA${plural(d.currentSummary.lgaCount)} with at least one outage`),
-        metricCard("LGAs with outages", fmtInt.format(d.currentSummary.lgaCount), `${fmtPct.format(d.lgaMatchRate)} of outage records matched to an LGA`),
-        metricCard("Most affected LGA", worst ? escapeHtml(worst.name) : "—", worst ? `${fmtInt.format(worst.currentCustomers)} customers · ${fmtPct.format(worst.share)} of the state total` : "No current LGA outage records", "place"),
-        metricCard("Highest since 0900", fmtInt.format(periodHigh.customers), periodHigh.snapshotUtcMs ? `${formatAest(periodHigh.snapshotUtcMs, false)} · now ${fmtPct.format(belowHigh)} lower` : "No since-0900 data")
+        metricCard("Customers affected now", fmtInt.format(d.currentSummary.latestCustomerSum), `${fmtInt.format(d.currentSummary.incidents)} active outage${plural(d.currentSummary.incidents)} statewide`),
+        metricCard("Active outages", fmtInt.format(d.currentSummary.incidents), `${fmtInt.format(d.currentSummary.lgaCount)} LGA${plural(d.currentSummary.lgaCount)} currently affected`),
+        metricCard("LGAs currently affected", fmtInt.format(d.currentSummary.lgaCount), `${fmtPct.format(d.lgaMatchRate)} of active outages matched to an LGA`),
+        metricCard("Most affected LGA", worst ? escapeHtml(worst.name) : "—", worst ? `${fmtInt.format(worst.currentCustomers)} customers currently affected · ${fmtPct.format(worst.share)} of the state total` : "No active LGA outages", "place"),
+        metricCard("Largest active outage", largest ? fmtInt.format(largest.latestCustomers) : "0", largest ? `${escapeHtml(largest.lgaName)} · ${escapeHtml(largest.latestRow.suburb || "locality not supplied")}` : "No active outages")
       ].join("");
-
-      $("overviewChartNote").textContent = `${formatAest(d.since0900StartMs, false)} to ${formatAest(d.latestMs, false)}. Highest point ${fmtInt.format(periodHigh.customers)} customers at ${periodHigh.snapshotUtcMs ? formatAest(periodHigh.snapshotUtcMs, false) : "—"}.`;
+      $("overviewHistoryMetrics").innerHTML = [
+        metricCard("Highest recorded since 0900", fmtInt.format(periodHigh.customers), periodHigh.snapshotUtcMs ? `Recorded at ${formatAest(periodHigh.snapshotUtcMs, false)}` : "No since-0900 history"),
+        metricCard("Current count below since-0900 high", periodHigh.customers ? fmtPct.format(belowHigh) : "—", "Comparison between the latest snapshot and the recorded high"),
+        metricCard("Highest recorded in rolling 24h", fmtInt.format(d.peak24.customers), d.peak24.snapshotUtcMs ? `Recorded at ${formatAest(d.peak24.snapshotUtcMs, true)}` : "No rolling 24-hour history")
+      ].join("");
+      $("overviewChartNote").textContent = `${formatAest(d.since0900StartMs, false)} to ${formatAest(d.latestMs, false)}. Highest recorded point: ${fmtInt.format(periodHigh.customers)} customers at ${periodHigh.snapshotUtcMs ? formatAest(periodHigh.snapshotUtcMs, false) : "—"}.`;
       $("overviewTrendChart").innerHTML = renderSvgChart(d.trendSince, { compact: true, showPeak: true, includeIncidents: false });
       $("overviewTopLgas").innerHTML = renderTopLgaList(d.topLgas.slice(0, 6));
       $("overviewProviderBars").innerHTML = renderProviderBars(d.topProviders, d.currentSummary.latestCustomerSum, 4);
@@ -1068,19 +1114,16 @@
       const top5Share = d.currentSummary.latestCustomerSum ? d.top5LgaCustomerSum / d.currentSummary.latestCustomerSum : 0;
       const worst = d.topLgas[0];
       const provider = d.topProviders[0];
-      const periodHigh = d.peakToday;
-      const belowHigh = periodHigh.customers ? Math.max(0, (periodHigh.customers - d.currentSummary.latestCustomerSum) / periodHigh.customers) : 0;
-      const top5Text = `${fmtPct.format(top5Share)} of customers affected now are in the top 5 LGAs.`;
+      const top5Text = `${fmtPct.format(top5Share)} of customers currently affected are in the top 5 LGAs.`;
       const worstText = worst
         ? `${escapeHtml(worst.name)} has the highest current LGA figure, with ${fmtInt.format(worst.currentCustomers)} customers affected.`
-        : "No LGA has current affected customers in the latest update.";
+        : "No LGA has active outages in the latest snapshot.";
       return `
         <div class="summary-list">
           <div class="summary-lead"><strong>${top5Text}</strong><br>${worstText}</div>
-          <div class="kpi-line"><span>Since-0900 high point</span><strong>${fmtInt.format(periodHigh.customers)}${periodHigh.snapshotUtcMs ? ` at ${formatAest(periodHigh.snapshotUtcMs, false)}` : ""}</strong></div>
-          <div class="kpi-line"><span>Now compared with since-0900 high</span><strong>${periodHigh.customers ? `${fmtPct.format(belowHigh)} lower` : "—"}</strong></div>
-          <div class="kpi-line"><span>Largest provider share</span><strong>${provider ? `${escapeHtml(provider.name)} · ${fmtPct.format(provider.share)}` : "—"}</strong></div>
-          <div class="kpi-line"><span>Rolling 24h high point</span><strong>${fmtInt.format(d.peak24.customers)}</strong></div>
+          <div class="kpi-line"><span>Active outages statewide</span><strong>${fmtInt.format(d.currentSummary.incidents)}</strong></div>
+          <div class="kpi-line"><span>Largest provider share now</span><strong>${provider ? `${escapeHtml(provider.name)} · ${fmtPct.format(provider.share)}` : "—"}</strong></div>
+          <div class="kpi-line"><span>Active outages without a known customer count</span><strong>${fmtInt.format(d.unknownCustomerIncidents)}</strong></div>
         </div>
       `;
     }
@@ -1088,12 +1131,13 @@
     function renderLgaView() {
       const d = state.data;
       const top5Share = d.currentSummary.latestCustomerSum ? d.top5LgaCustomerSum / d.currentSummary.latestCustomerSum : 0;
+      $("lgaLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}. Historical high columns are separately grouped.`;
       $("lgaMetrics").innerHTML = [
-        metricCard("LGAs with outages", fmtInt.format(d.currentSummary.lgaCount), "LGAs with at least one current outage record"),
+        metricCard("LGAs currently affected", fmtInt.format(d.currentSummary.lgaCount), "LGAs with at least one active outage"),
         metricCard("1,000+ customers", fmtInt.format(d.lgaBands.major), "LGAs in the major band"),
         metricCard("100–999 customers", fmtInt.format(d.lgaBands.moderate), "LGAs in the moderate band"),
         metricCard("1–99 customers", fmtInt.format(d.lgaBands.minor), "LGAs in the minor band"),
-        metricCard("Top 5 LGA share", fmtPct.format(top5Share), `${fmtInt.format(d.top5LgaCustomerSum)} of ${fmtInt.format(d.currentSummary.latestCustomerSum)} customers affected now`)
+        metricCard("Top 5 LGA share", fmtPct.format(top5Share), `${fmtInt.format(d.top5LgaCustomerSum)} of ${fmtInt.format(d.currentSummary.latestCustomerSum)} customers currently affected`)
       ].join("");
       $("lgaMap").innerHTML = renderLgaMap(d.lgaMapPoints);
       $("lgaConcentration").innerHTML = renderLgaConcentration();
@@ -1105,7 +1149,7 @@
       const share = d.currentSummary.latestCustomerSum ? d.top5LgaCustomerSum / d.currentSummary.latestCustomerSum : 0;
       return `
         <div class="insight-card">
-          <strong>Top 5 LGAs account for ${fmtPct.format(share)} of customers affected now.</strong>
+          <strong>Top 5 LGAs account for ${fmtPct.format(share)} of customers currently affected.</strong>
           <p>A higher percentage means the statewide total is being driven by a small number of LGAs. A lower percentage means outages are spread more evenly.</p>
         </div>
         <div style="margin-top:12px;">${renderTopLgaList(d.topLgas.slice(0, 10))}</div>
@@ -1119,25 +1163,22 @@
         <tr>
           <td class="nowrap">${idx + 1}</td>
           <td><strong>${escapeHtml(r.name)}</strong>${r.unmatched ? `<div class="muted">Unmatched to LGA boundary</div>` : ""}</td>
-          <td class="num">${fmtInt.format(r.currentCustomers)}</td>
-          <td class="num">${fmtInt.format(r.currentIncidents)}</td>
-          <td class="num">${fmtPct1.format(r.share)}</td>
-          <td class="num">${fmtInt.format(r.sinceCustomers)}</td>
-          <td class="num">${fmtInt.format(r.rollingCustomers)}</td>
+          <td class="num live-col live-start">${fmtInt.format(r.currentCustomers)}</td>
+          <td class="num live-col">${fmtInt.format(r.currentIncidents)}</td>
+          <td class="num live-col">${fmtPct1.format(r.share)}</td>
+          <td class="num history-col history-start">${fmtInt.format(r.sinceCustomers)}</td>
+          <td class="num history-col">${fmtInt.format(r.rollingCustomers)}</td>
         </tr>
-      `).join("") || `<tr><td colspan="7" class="empty">No LGAs with current outage records in the latest update.</td></tr>`;
+      `).join("") || `<tr><td colspan="7" class="empty">No LGAs with active outages in the latest snapshot.</td></tr>`;
     }
 
     function renderProviderView() {
       const d = state.data;
       const providers = d.topProviders;
-      const providerCards = providers.slice(0, 5).map((p) => metricCard(p.name, fmtInt.format(p.currentCustomers), `${fmtPct.format(p.share)} of customers affected now · ${fmtInt.format(p.currentIncidents)} current outage record${plural(p.currentIncidents)}`, "place")).join("");
-      $("providerMetrics").innerHTML = providerCards || metricCard("Providers", "—", "No provider has current outage records in the latest update");
+      $("providerLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}.`;
+      const providerCards = providers.slice(0, 5).map((p) => metricCard(p.name, fmtInt.format(p.currentCustomers), `${fmtPct.format(p.share)} of customers currently affected · ${fmtInt.format(p.currentIncidents)} active outage${plural(p.currentIncidents)}`, "place")).join("");
+      $("providerMetrics").innerHTML = providerCards || metricCard("Providers", "—", "No provider has active outages in the latest snapshot");
       $("providerBars").innerHTML = renderProviderBars(providers, d.currentSummary.latestCustomerSum, 10);
-      $("providerHealthTable").innerHTML = renderProviderHealthRows(providers);
-      $("providerHealthChart").innerHTML = renderProviderHealthChart();
-      $("providerHealthLogTable").innerHTML = renderProviderHealthLogRows(providers);
-      $("providerSparklines").innerHTML = renderProviderSparklines(providers);
     }
 
     function renderOutagesView() {
@@ -1146,13 +1187,13 @@
       const noEtr = d.etrRows.find((r) => r.key === "missing") || { incidents: 0 };
       const oldest = d.oldestCurrent;
       $("outageMetrics").innerHTML = [
-        metricCard("Largest outage record", largest ? fmtInt.format(largest.latestCustomers) : "0", largest ? `${escapeHtml(largest.lgaName)} · ${escapeHtml(largest.latestRow.suburb || "locality not supplied")}` : "No current outage records"),
-        metricCard("Top 10 total", fmtInt.format(d.top10OutageCustomerSum), "Customers in the 10 largest current outage records"),
-        metricCard("No restoration estimate", fmtInt.format(noEtr.incidents), "Current outage records without an ETR"),
-        metricCard("Oldest listed start time", oldest ? formatAest(oldest.startedMs, false) : "—", oldest ? `${escapeHtml(oldest.incident.lgaName)} · listed for ${formatDuration(d.latestMs - oldest.startedMs, true)}` : "No current start times supplied")
+        metricCard("Largest active outage", largest ? fmtInt.format(largest.latestCustomers) : "0", largest ? `${escapeHtml(largest.lgaName)} · ${escapeHtml(largest.latestRow.suburb || "locality not supplied")}` : "No active outages"),
+        metricCard("Top 10 total", fmtInt.format(d.top10OutageCustomerSum), "Customers in the 10 largest active outages"),
+        metricCard("No restoration estimate", fmtInt.format(noEtr.incidents), "Active outages without an ETR"),
+        metricCard("Oldest listed start time", oldest ? formatAest(oldest.startedMs, false) : "—", oldest ? `${escapeHtml(oldest.incident.lgaName)} · listed for ${formatDuration(d.latestMs - oldest.startedMs, true)}` : "No active outage start times supplied")
       ].join("");
+      $("outagesLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}.`;
       renderLargestOutagesTable();
-      renderOutageLog48hTable();
       $("reasonBreakdown").innerHTML = renderReasonBreakdown();
       $("etrBreakdown").innerHTML = renderEtrBreakdown();
     }
@@ -1171,7 +1212,7 @@
           <td class="nowrap">${escapeHtml(formatUtcAsAest(r.etrUtc, false) || "—")}</td>
           <td class="ellipsis">${escapeHtml(cleanReason(r.reason))}</td>
         </tr>`;
-      }).join("") || `<tr><td colspan="8" class="empty">No current outage records in the latest update.</td></tr>`;
+      }).join("") || `<tr><td colspan="8" class="empty">No active outages in the latest snapshot.</td></tr>`;
     }
 
     function renderOutageLog48hTable() {
@@ -1179,7 +1220,7 @@
       $("outageLog48hTable").innerHTML = rows.map((incident) => {
         const r = incident.latestRow;
         const peak = incident.peakRow;
-        return `<tr>
+        return `<tr class="${isCurrentIncident(incident) ? "" : "history-cleared"}">
           <td class="nowrap">${escapeHtml(formatAest(incident.lastSeenMs, true))}</td>
           <td class="nowrap">${escapeHtml(formatAest(incident.firstSeenMs, true))}</td>
           <td>${escapeHtml(r.providerName)}</td>
@@ -1202,8 +1243,8 @@
 
     function renderOutageLogStatus(incident) {
       const status = incident.latestRow.status || "—";
-      if (isCurrentIncident(incident)) return escapeHtml(status);
-      return `Cleared<div class="muted">Last known: ${escapeHtml(status)}</div>`;
+      if (isCurrentIncident(incident)) return `<span class="status-chip active">Active</span><div class="muted">Provider status: ${escapeHtml(status)}</div>`;
+      return `<span class="status-chip cleared">Cleared</span><div class="muted">Last provider status: ${escapeHtml(status)}</div>`;
     }
 
     function renderOutageLogReason(incident) {
@@ -1212,21 +1253,23 @@
       return `<span class="muted">Last known:</span> ${escapeHtml(reason)}`;
     }
 
-    function renderTrendsView() {
+    function renderHistoryView() {
       const d = state.data;
       const periodHigh = d.peakToday;
       const peak24 = d.peak24;
       const belowHigh = periodHigh.customers ? Math.max(0, (periodHigh.customers - d.currentSummary.latestCustomerSum) / periodHigh.customers) : 0;
       $("trendMetrics").innerHTML = [
-        metricCard("Customers affected now", fmtInt.format(d.currentSummary.latestCustomerSum), `${fmtInt.format(d.currentSummary.incidents)} current outage record${plural(d.currentSummary.incidents)}`),
-        metricCard("Highest since 0900", fmtInt.format(periodHigh.customers), periodHigh.snapshotUtcMs ? `Recorded at ${formatAest(periodHigh.snapshotUtcMs, false)}` : "No since-0900 high point"),
-        metricCard("Rolling 24h high", fmtInt.format(peak24.customers), peak24.snapshotUtcMs ? `Recorded at ${formatAest(peak24.snapshotUtcMs, true)}` : "No rolling 24h high point"),
-        metricCard("Now vs since-0900 high", fmtPct.format(belowHigh), "How far the current customer count is below the since-0900 high")
+        metricCard("Latest snapshot reference", fmtInt.format(d.currentSummary.latestCustomerSum), `${fmtInt.format(d.currentSummary.incidents)} active outage${plural(d.currentSummary.incidents)} at the latest snapshot`),
+        metricCard("Highest recorded since 0900", fmtInt.format(periodHigh.customers), periodHigh.snapshotUtcMs ? `Recorded at ${formatAest(periodHigh.snapshotUtcMs, false)}` : "No since-0900 high point"),
+        metricCard("Highest recorded in rolling 24h", fmtInt.format(peak24.customers), peak24.snapshotUtcMs ? `Recorded at ${formatAest(peak24.snapshotUtcMs, true)}` : "No rolling 24h high point"),
+        metricCard("Latest snapshot below recorded high", fmtPct.format(belowHigh), "How far the current customer count is below the since-0900 high")
       ].join("");
       $("todayTrendNote").textContent = `${formatAest(d.since0900StartMs, true)} to ${formatAest(d.latestMs, true)}. Customer count only.`;
       $("rollingTrendNote").textContent = `${formatAest(d.rolling24StartMs, true)} to ${formatAest(d.latestMs, true)}. Customer count only.`;
       $("todayTrendChart").innerHTML = renderSvgChart(d.trendSince, { large: true, showPeak: true, includeIncidents: false });
       $("rollingTrendChart").innerHTML = renderSvgChart(d.trend24, { large: true, showPeak: true, includeIncidents: false });
+      renderOutageLog48hTable();
+      $("providerSparklines").innerHTML = renderProviderSparklines(d.topProviders);
     }
 
     function renderTopLgaList(rows) {
@@ -1236,12 +1279,12 @@
           <span class="rank">${idx + 1}</span>
           <div class="rank-title">
             <strong>${escapeHtml(r.name)}</strong>
-            <small>${fmtInt.format(r.currentIncidents)} outage record${plural(r.currentIncidents)} · ${fmtPct1.format(r.share)} of state total</small>
+            <small>${fmtInt.format(r.currentIncidents)} active outage${plural(r.currentIncidents)} · ${fmtPct1.format(r.share)} of state total</small>
             <div class="bar-track"><div class="bar-fill" style="width:${Math.max(2, (r.currentCustomers / max) * 100)}%"></div></div>
           </div>
           <div class="rank-value">${fmtInt.format(r.currentCustomers)}<small>customers</small></div>
         </div>
-      `).join("") || `<div class="empty">No LGAs with current outage records in the latest update.</div>`;
+      `).join("") || `<div class="empty">No LGAs with active outages in the latest snapshot.</div>`;
     }
 
     function renderProviderBars(rows, total, limit) {
@@ -1249,11 +1292,11 @@
       const max = Math.max(1, ...shown.map((r) => r.currentCustomers));
       return `<div class="provider-bars">${shown.map((r) => `
         <div class="provider-row">
-          <div><strong>${escapeHtml(r.name)}</strong><small>${fmtInt.format(r.currentIncidents)} outage record${plural(r.currentIncidents)}</small></div>
+          <div><strong>${escapeHtml(r.name)}</strong><small>${fmtInt.format(r.currentIncidents)} active outage${plural(r.currentIncidents)}</small></div>
           <div class="provider-track"><div class="provider-fill" style="width:${Math.max(2, (r.currentCustomers / max) * 100)}%"></div></div>
           <div class="provider-value"><strong>${fmtInt.format(r.currentCustomers)}</strong><small> ${fmtPct.format(total ? r.currentCustomers / total : 0)}</small></div>
         </div>
-      `).join("") || `<div class="empty">No provider has current outage records in the latest update.</div>`}</div>`;
+      `).join("") || `<div class="empty">No provider has active outages in the latest snapshot.</div>`}</div>`;
     }
 
     function renderBandGrid(bands) {
@@ -1266,16 +1309,33 @@
 
     function renderConfidencePanel() {
       const d = state.data;
-      const providerErrors = Number(d.manifest.provider_fetch_error_count || 0);
-      const providerClass = providerErrors ? "danger" : "ok";
-      const providerText = providerErrors ? `${providerErrors} provider issue${providerErrors === 1 ? "" : "s"}` : "All providers OK";
       return `
-        <div class="kpi-line"><span>Provider feeds</span><strong><span class="pill ${providerClass}" style="min-height:26px;padding:4px 8px;">${escapeHtml(providerText)}</span></strong></div>
-        <div class="kpi-line"><span>Outages matched to an LGA</span><strong>${fmtPct1.format(d.lgaMatchRate)}</strong></div>
-        <div class="kpi-line"><span>Current records without LGA</span><strong>${fmtInt.format(d.currentSummary.unmatchedIncidents)}</strong></div>
-        <div class="kpi-line"><span>Records with unknown customer count</span><strong>${fmtInt.format(d.unknownCustomerIncidents)}</strong></div>
-        <div class="kpi-line"><span>Records without map coordinates</span><strong>${fmtInt.format(d.missingCoords)}</strong></div>
+        <div class="kpi-line"><span>Active outages in latest snapshot</span><strong>${fmtInt.format(d.currentSummary.incidents)}</strong></div>
+        <div class="kpi-line"><span>Active outages matched to an LGA</span><strong>${fmtPct1.format(d.lgaMatchRate)}</strong></div>
+        <div class="kpi-line"><span>Active outages without an LGA</span><strong>${fmtInt.format(d.currentSummary.unmatchedIncidents)}</strong></div>
+        <div class="kpi-line"><span>Active outages with unknown customer count</span><strong>${fmtInt.format(d.unknownCustomerIncidents)}</strong></div>
+        <div class="kpi-line"><span>Active outages without map coordinates</span><strong>${fmtInt.format(d.missingCoords)}</strong></div>
       `;
+    }
+
+
+    function renderHealthView() {
+      const d = state.data;
+      const providers = d.topProviders;
+      const names = [...new Set([...PROVIDER_NAMES, ...d.providerHealthLatest.keys()])];
+      const latestChecks = names.map((name) => d.providerHealthLatest.get(name)).filter(Boolean);
+      const okChecks = latestChecks.filter((item) => item.status === "OK").length;
+      const failedChecks = latestChecks.filter((item) => item.status !== "OK").length;
+      const latestCheckMs = latestChecks.reduce((max, item) => Math.max(max, item.generatedUtcMs || 0), 0);
+      $("healthMetrics").innerHTML = [
+        metricCard("Provider feeds checked", fmtInt.format(latestChecks.length), `${fmtInt.format(names.length)} expected provider feed${plural(names.length)}`),
+        metricCard("Successful latest checks", fmtInt.format(okChecks), "Provider feeds read successfully in their latest recorded check"),
+        metricCard("Latest feed issues", fmtInt.format(failedChecks), failedChecks ? "Review the provider table below" : "No provider feed failures in the latest recorded checks"),
+        metricCard("Most recent feed check", latestCheckMs ? formatAest(latestCheckMs, false) : "—", latestCheckMs ? formatAest(latestCheckMs, true) : "No provider health history loaded")
+      ].join("");
+      $("providerHealthTable").innerHTML = renderProviderHealthRows(providers);
+      $("providerHealthChart").innerHTML = renderProviderHealthChart();
+      $("providerHealthLogTable").innerHTML = renderProviderHealthLogRows(providers);
     }
 
     function renderProviderHealthRows(providers) {
@@ -1350,7 +1410,7 @@
       return rows.map((provider) => {
         const series = d.providerTrendSeries.get(provider.name) || [];
         return `<div class="status-row">
-          <div><strong>${escapeHtml(provider.name)}</strong><div class="muted">${fmtInt.format(provider.currentCustomers)} customers affected now · ${fmtPct.format(provider.share)} share</div></div>
+          <div><strong>${escapeHtml(provider.name)}</strong><div class="muted">${fmtInt.format(provider.currentCustomers)} customers in latest snapshot · ${fmtPct.format(provider.share)} share</div></div>
           <div>${renderSparkline(series, "customers")}</div>
           <div class="num"><strong>${fmtInt.format(getPeakPoint(series, "customers").customers)}</strong><div class="muted">high since 0900</div></div>
         </div>`;
@@ -1363,7 +1423,7 @@
       const max = Math.max(1, ...rows.map((r) => r.customers));
       return rows.map((r) => `
         <div class="reason-row">
-          <div><strong>${escapeHtml(r.reason)}</strong><div class="muted">${fmtInt.format(r.incidents)} outage record${plural(r.incidents)}</div></div>
+          <div><strong>${escapeHtml(r.reason)}</strong><div class="muted">${fmtInt.format(r.incidents)} active outage${plural(r.incidents)}</div></div>
           <div class="reason-bar"><div class="reason-fill" style="width:${Math.max(2, (r.customers / max) * 100)}%"></div></div>
           <div class="num"><strong>${fmtInt.format(r.customers)}</strong></div>
         </div>
@@ -1386,21 +1446,21 @@
     function renderLgaMap(points) {
       const d = state.data;
       const rows = d.topLgas.slice(0, 9);
-      if (!rows.length) return `<div class="empty">No LGAs with current outage records in the latest update.</div>`;
+      if (!rows.length) return `<div class="empty">No LGAs with active outages in the latest snapshot.</div>`;
       const maxCurrent = Math.max(1, ...rows.map((r) => r.currentCustomers));
       const topSince = [...d.lgaRows].filter((r) => r.sinceCustomers > 0).sort((a, b) => b.sinceCustomers - a.sinceCustomers || a.name.localeCompare(b.name)).slice(0, 6);
       const topRolling = [...d.lgaRows].filter((r) => r.rollingCustomers > 0).sort((a, b) => b.rollingCustomers - a.rollingCustomers || a.name.localeCompare(b.name)).slice(0, 6);
       return `<div class="lga-distribution">
         <div class="distribution-header">
           <div><strong>Current affected customers by LGA</strong><small>Each card is one LGA. The bar shows that LGA compared with the largest current LGA.</small></div>
-          <div class="distribution-total">${fmtInt.format(d.currentSummary.latestCustomerSum)}<small style="display:block;color:var(--muted);font-size:.78rem;font-weight:400;">customers affected now</small></div>
+          <div class="distribution-total">${fmtInt.format(d.currentSummary.latestCustomerSum)}<small style="display:block;color:var(--muted);font-size:.78rem;font-weight:400;">customers currently affected</small></div>
         </div>
         <div class="lga-card-grid">
           ${rows.slice(0, 6).map((r, idx) => `<div class="lga-focus-card">
             <div class="focus-rank">Rank ${idx + 1}</div>
             <strong>${escapeHtml(r.name)}</strong>
             <div class="focus-value">${fmtInt.format(r.currentCustomers)}</div>
-            <div class="focus-meta">${fmtInt.format(r.currentIncidents)} outage record${plural(r.currentIncidents)} · ${fmtPct1.format(r.share)} of state total</div>
+            <div class="focus-meta">${fmtInt.format(r.currentIncidents)} active outage${plural(r.currentIncidents)} · ${fmtPct1.format(r.share)} of state total</div>
             <div class="bar-track"><div class="bar-fill" style="width:${Math.max(2, (r.currentCustomers / maxCurrent) * 100)}%"></div></div>
           </div>`).join("")}
         </div>
@@ -1451,7 +1511,7 @@
         <line class="axis" x1="${left}" x2="${left}" y1="${top}" y2="${top + plotH}"></line>
         ${xLabels.map((ms) => `<text class="axis-label" x="${x(ms)}" y="${h - 14}" text-anchor="middle">${escapeHtml(formatAestTime(ms))}</text>`).join("")}
         <path class="series-customers" d="${customerPath}"></path>
-        ${includeIncidents ? `<path class="series-incidents" d="${incidentPath}"></path><circle class="point-incidents" cx="${x(last.snapshotUtcMs)}" cy="${yIncidents(last.incidents)}" r="4"><title>Current outage records: ${fmtInt.format(last.incidents)}</title></circle>` : ""}
+        ${includeIncidents ? `<path class="series-incidents" d="${incidentPath}"></path><circle class="point-incidents" cx="${x(last.snapshotUtcMs)}" cy="${yIncidents(last.incidents)}" r="4"><title>Active outages: ${fmtInt.format(last.incidents)}</title></circle>` : ""}
         <circle class="peak-marker" cx="${x(peak.snapshotUtcMs)}" cy="${yCustomers(peak.customers)}" r="5"><title>Highest point: ${fmtInt.format(peak.customers)} customers at ${formatAest(peak.snapshotUtcMs, true)}</title></circle>
         <circle class="point-customers" cx="${x(last.snapshotUtcMs)}" cy="${yCustomers(last.customers)}" r="5"><title>Current: ${fmtInt.format(last.customers)} customers</title></circle>
         <text class="axis-label strong" x="${w - right}" y="${top + 4}" text-anchor="end">Customers affected</text>
@@ -1496,34 +1556,12 @@
     }
 
     function setActiveView(view, fromAuto = false) {
-      if (!VIEW_ORDER.includes(view) && !["overview", "lga", "provider", "outages", "trends"].includes(view)) return;
+      if (!["overview", "outages", "lga", "provider", "history", "health"].includes(view)) return;
       state.activeView = view;
       const firstIdx = VIEW_ORDER.indexOf(view);
       if (firstIdx >= 0) state.rotationIndex = firstIdx;
       document.querySelectorAll(".view").forEach((el) => el.classList.toggle("active", el.id === `view-${view}`));
-  
-    function applyTheme(mode) {
-      const isNight = mode === "night";
-      document.body.classList.toggle("night-mode", isNight);
-      document.documentElement.style.colorScheme = isNight ? "dark" : "light";
-      const btn = $("themeToggleBtn");
-      if (btn) {
-        btn.textContent = isNight ? "Day" : "Night";
-        btn.classList.toggle("active", isNight);
-        btn.setAttribute("aria-pressed", isNight ? "true" : "false");
-      }
-      try { localStorage.setItem("qldOutageDashboardTheme", isNight ? "night" : "day"); } catch (err) {}
-    }
-
-    function initTheme() {
-      let stored = null;
-      try { stored = localStorage.getItem("qldOutageDashboardTheme"); } catch (err) {}
-      applyTheme(stored === "night" ? "night" : "day");
-      const btn = $("themeToggleBtn");
-      if (btn) btn.addEventListener("click", () => applyTheme(document.body.classList.contains("night-mode") ? "day" : "night"));
-    }
-
-    document.querySelectorAll(".tab-btn").forEach((btn) => {
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
         const active = btn.dataset.view === view;
         btn.classList.toggle("active", active);
         btn.setAttribute("aria-selected", active ? "true" : "false");
@@ -1570,7 +1608,7 @@
       const rotateEl = $("rotationStatus");
       if (rotateEl) {
         if (!state.autoRotate || !state.nextViewAt) {
-          rotateEl.textContent = "Auto rotation paused";
+          rotateEl.textContent = "Auto rotation off";
         } else {
           const nextIndex = (state.rotationIndex + 1) % VIEW_ORDER.length;
           const nextView = labelForView(VIEW_ORDER[nextIndex]);
@@ -1682,10 +1720,11 @@
     function labelForView(view) {
       return {
         overview: "Overview",
+        outages: "Current Outages",
         lga: "LGA Breakdown",
-        provider: "Provider View",
-        outages: "Largest Outages",
-        trends: "Trends"
+        provider: "Provider Breakdown",
+        history: "History & Trends",
+        health: "Data Health"
       }[view] || view;
     }
 
@@ -1727,7 +1766,8 @@
     $("autoRotateBtn").addEventListener("click", () => {
       state.autoRotate = !state.autoRotate;
       $("autoRotateBtn").classList.toggle("active", state.autoRotate);
-      $("autoRotateBtn").textContent = state.autoRotate ? "Auto rotate" : "Paused";
+      $("autoRotateBtn").textContent = state.autoRotate ? "Stop auto rotation" : "Start auto rotation";
+      $("autoRotateBtn").setAttribute("aria-pressed", state.autoRotate ? "true" : "false");
       resetRotationTimer();
     });
 
