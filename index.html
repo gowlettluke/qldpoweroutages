@@ -2576,14 +2576,14 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
       if (!series.length) return wallSceneShell(scene, subtitle, `<div class="wall-empty">No recorded trend data is available for this period.</div>`);
       const peak = getPeakPoint(series, "customers");
       const current = series[series.length - 1];
-      const first = series[0];
-      const change = current.customers - first.customers;
+      const reductionFromPeak = Math.max(0, peak.customers - current.customers);
+      const percentBelowPeak = peak.customers ? reductionFromPeak / peak.customers : 0;
       const body = `<article class="wall-chart-panel">
         <div class="wall-chart-summary">
           <div class="wall-chart-summary-group">
             <div class="wall-chart-stat"><span>Latest recorded</span><strong>${fmtInt.format(current.customers)}</strong><small>${escapeHtml(formatAest(current.snapshotUtcMs, false))}</small></div>
             <div class="wall-chart-stat"><span>Highest recorded</span><strong>${fmtInt.format(peak.customers)}</strong><small>${escapeHtml(formatAest(peak.snapshotUtcMs, false))}</small></div>
-            <div class="wall-chart-stat"><span>Change across period</span><strong>${change > 0 ? "+" : ""}${fmtInt.format(change)}</strong><small>customers</small></div>
+            <div class="wall-chart-stat"><span>Down from period peak</span><strong>${fmtInt.format(reductionFromPeak)}</strong><small>${reductionFromPeak ? `${fmtPct1.format(percentBelowPeak)} below peak` : "currently at period peak"}</small></div>
           </div>
           <div class="wall-chart-stat" style="text-align:right"><span>Active outages now</span><strong>${fmtInt.format(current.incidents)}</strong><small>latest snapshot</small></div>
         </div>
