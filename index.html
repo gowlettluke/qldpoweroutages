@@ -333,6 +333,356 @@
       .footer { flex-direction:column; }
     }
 
+
+    /* Operations-centre wall presentation */
+    body.wall-active { overflow:hidden; }
+    .control-btn.wall-launch { border-color:var(--accentBorder); color:var(--accent-dark); font-weight:800; }
+    .control-btn:disabled { opacity:.45; cursor:not-allowed; }
+
+    .wall-display {
+      --wall-bg:#eeeeee;
+      --wall-panel:#ffffff;
+      --wall-text:#171717;
+      --wall-muted:#5f6368;
+      --wall-line:#c8c8c8;
+      --wall-dark:#16191d;
+      --wall-red:#d92c32;
+      --wall-red-dark:#a91f25;
+      --wall-blue:#215d9c;
+      --wall-green:#19733b;
+      position:fixed;
+      inset:0;
+      z-index:10000;
+      display:none;
+      grid-template-rows:8.5vh minmax(0,1fr) 5.5vh;
+      background:var(--wall-bg);
+      color:var(--wall-text);
+      font-family:Arial, Helvetica, sans-serif;
+      overflow:hidden;
+      cursor:none;
+    }
+    .wall-display.active { display:grid; }
+    .wall-display.controls-visible { cursor:default; }
+    .wall-masthead {
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      align-items:center;
+      gap:2vw;
+      padding:0 2.2vw;
+      background:var(--wall-panel);
+      border-bottom:.55vh solid var(--wall-red);
+      box-shadow:0 2px 9px rgba(0,0,0,.14);
+      z-index:4;
+    }
+    .wall-brand { display:flex; align-items:center; min-width:0; gap:1.1vw; }
+    .wall-brand-mark {
+      width:1.05vw;
+      min-width:12px;
+      height:5.2vh;
+      background:var(--wall-red);
+      box-shadow:.42vw 0 0 var(--wall-dark);
+    }
+    .wall-brand-copy { min-width:0; }
+    .wall-brand-copy strong {
+      display:block;
+      font-size:clamp(25px,2.05vw,50px);
+      line-height:1;
+      letter-spacing:-.035em;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .wall-brand-copy span {
+      display:block;
+      margin-top:.55vh;
+      color:var(--wall-muted);
+      font-size:clamp(13px,.92vw,23px);
+      font-weight:700;
+      letter-spacing:.055em;
+      text-transform:uppercase;
+    }
+    .wall-meta { display:flex; align-items:center; justify-content:flex-end; gap:1.35vw; }
+    .wall-meta-block { text-align:right; }
+    .wall-meta-block span { display:block; color:var(--wall-muted); font-size:clamp(11px,.72vw,18px); text-transform:uppercase; letter-spacing:.08em; font-weight:800; }
+    .wall-meta-block strong { display:block; margin-top:.25vh; font-size:clamp(17px,1.16vw,29px); white-space:nowrap; }
+    .wall-health-alert {
+      display:none;
+      align-items:center;
+      gap:.65vw;
+      min-height:4.6vh;
+      padding:.5vh .8vw;
+      border:2px solid #bd7b00;
+      background:#fff3d6;
+      color:#754900;
+      font-size:clamp(12px,.82vw,20px);
+      font-weight:800;
+      cursor:pointer;
+    }
+    .wall-health-alert.visible { display:inline-flex; }
+    .wall-health-alert svg { width:1.45vw; min-width:19px; height:1.45vw; min-height:19px; }
+
+    .wall-stage-wrap { position:relative; min-height:0; overflow:hidden; }
+    .wall-stage {
+      position:absolute;
+      inset:0;
+      padding:2.5vh 2.5vw 2vh;
+      background:
+        linear-gradient(90deg, rgba(217,44,50,.038) 1px, transparent 1px),
+        linear-gradient(rgba(217,44,50,.038) 1px, transparent 1px),
+        var(--wall-bg);
+      background-size:4.5vw 4.5vw;
+      opacity:1;
+      transform:translateX(0);
+      transition:opacity .34s ease, transform .34s ease;
+    }
+    .wall-stage.scene-exit { opacity:0; transform:translateX(-1.4vw); }
+    .wall-stage.scene-enter { opacity:0; transform:translateX(1.4vw); }
+    .wall-scene { height:100%; min-height:0; display:grid; grid-template-rows:auto minmax(0,1fr); gap:2.1vh; }
+    .wall-scene-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:2vw; }
+    .wall-scope-block { min-width:0; }
+    .wall-scope {
+      display:inline-flex;
+      align-items:center;
+      min-height:3.4vh;
+      padding:.35vh .65vw;
+      border-left:.38vw solid var(--wall-red);
+      background:#f5dfe1;
+      color:var(--wall-red-dark);
+      font-size:clamp(12px,.78vw,20px);
+      line-height:1;
+      font-weight:900;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+    .wall-scope.history { border-left-color:var(--wall-blue); background:#e3edf8; color:var(--wall-blue); }
+    .wall-scene-heading h1 {
+      margin:.85vh 0 0;
+      font-size:clamp(34px,3.15vw,76px);
+      line-height:.96;
+      letter-spacing:-.045em;
+      font-weight:850;
+    }
+    .wall-scene-heading p {
+      max-width:42vw;
+      margin:0 0 .3vh;
+      color:var(--wall-muted);
+      text-align:right;
+      font-size:clamp(15px,1.08vw,27px);
+      line-height:1.25;
+      font-weight:700;
+    }
+    .wall-scene-body { min-height:0; }
+
+    .wall-hero-grid { height:100%; display:grid; grid-template-columns:1.28fr .72fr; gap:2vw; }
+    .wall-hero-primary {
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      padding:3vh 3vw;
+      background:var(--wall-panel);
+      border:1px solid var(--wall-line);
+      border-left:.7vw solid var(--wall-red);
+      box-shadow:0 8px 22px rgba(0,0,0,.12);
+      overflow:hidden;
+    }
+    .wall-hero-primary::after {
+      content:"";
+      position:absolute;
+      width:24vw;
+      height:24vw;
+      right:-11vw;
+      bottom:-13vw;
+      border:2.4vw solid rgba(217,44,50,.055);
+      border-radius:50%;
+    }
+    .wall-kicker { color:var(--wall-muted); font-size:clamp(16px,1.22vw,30px); font-weight:900; letter-spacing:.1em; text-transform:uppercase; }
+    .wall-hero-number {
+      position:relative;
+      z-index:1;
+      margin-top:2.2vh;
+      font-size:clamp(108px,12vw,280px);
+      line-height:.76;
+      letter-spacing:-.075em;
+      font-weight:900;
+      font-variant-numeric:tabular-nums;
+    }
+    .wall-hero-unit { margin-top:2.7vh; font-size:clamp(27px,2.35vw,58px); line-height:1; font-weight:850; }
+    .wall-hero-caption { margin-top:1.4vh; color:var(--wall-muted); font-size:clamp(16px,1.18vw,29px); font-weight:700; }
+    .wall-stat-stack { display:grid; grid-template-rows:repeat(3,1fr); gap:1.5vh; }
+    .wall-stat {
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      align-items:center;
+      gap:1vw;
+      padding:1.7vh 1.5vw;
+      background:var(--wall-panel);
+      border:1px solid var(--wall-line);
+      border-top:.42vh solid var(--wall-red);
+      box-shadow:0 5px 14px rgba(0,0,0,.09);
+    }
+    .wall-stat-label { color:var(--wall-muted); font-size:clamp(15px,1.02vw,25px); font-weight:850; text-transform:uppercase; letter-spacing:.06em; }
+    .wall-stat-detail { margin-top:.75vh; font-size:clamp(16px,1.12vw,28px); font-weight:700; line-height:1.2; }
+    .wall-stat-value { font-size:clamp(48px,4.8vw,116px); line-height:.8; font-weight:900; letter-spacing:-.06em; font-variant-numeric:tabular-nums; }
+
+    .wall-map-grid { height:100%; display:grid; grid-template-columns:minmax(0,1.18fr) minmax(410px,.82fr); gap:2vw; }
+    .wall-map-panel, .wall-list-panel, .wall-chart-panel, .wall-focus-panel {
+      min-height:0;
+      background:var(--wall-panel);
+      border:1px solid var(--wall-line);
+      box-shadow:0 7px 19px rgba(0,0,0,.11);
+    }
+    .wall-map-panel { position:relative; padding:1.2vh 1vw; overflow:hidden; }
+    .wall-map-svg { width:100%; height:100%; display:block; }
+    .wall-state-shape { fill:#f7f7f7; stroke:#8d9399; stroke-width:3; vector-effect:non-scaling-stroke; }
+    .wall-state-grid { stroke:#d9dcdf; stroke-width:1; stroke-dasharray:6 8; vector-effect:non-scaling-stroke; }
+    .wall-state-name { fill:#c9cdd1; font-size:68px; font-weight:900; letter-spacing:.12em; }
+    .wall-map-marker { fill:rgba(217,44,50,.84); stroke:#fff; stroke-width:4; transform-box:fill-box; transform-origin:center; animation:wallMarkerIn .75s both cubic-bezier(.16,.76,.35,1); }
+    .wall-map-ring { fill:none; stroke:rgba(217,44,50,.36); stroke-width:3; transform-box:fill-box; transform-origin:center; animation:wallRing 2.7s infinite ease-out; }
+    .wall-map-label { fill:var(--wall-text); font-size:19px; font-weight:900; paint-order:stroke; stroke:#fff; stroke-width:5; stroke-linejoin:round; }
+    .wall-map-value { fill:var(--wall-red-dark); font-size:17px; font-weight:900; paint-order:stroke; stroke:#fff; stroke-width:4; }
+    @keyframes wallMarkerIn { from { opacity:0; transform:scale(.1); } to { opacity:1; transform:scale(1); } }
+    @keyframes wallRing { 0% { opacity:.75; transform:scale(.7); } 75%,100% { opacity:0; transform:scale(1.7); } }
+
+    .wall-list-panel { display:flex; flex-direction:column; padding:1.6vh 1.35vw; }
+    .wall-panel-title { display:flex; align-items:flex-end; justify-content:space-between; gap:1vw; padding-bottom:1.25vh; border-bottom:2px solid var(--wall-dark); }
+    .wall-panel-title strong { font-size:clamp(21px,1.65vw,40px); line-height:1; }
+    .wall-panel-title span { color:var(--wall-muted); font-size:clamp(12px,.82vw,20px); font-weight:800; text-transform:uppercase; letter-spacing:.06em; }
+    .wall-ranking { display:grid; align-content:stretch; min-height:0; height:100%; }
+    .wall-rank-row {
+      display:grid;
+      grid-template-columns:3.2vw minmax(0,1fr) auto;
+      align-items:center;
+      gap:1vw;
+      min-height:0;
+      border-bottom:1px solid #d8d8d8;
+      animation:wallRowIn .52s both ease-out;
+    }
+    .wall-rank-row:last-child { border-bottom:0; }
+    .wall-rank-num { font-size:clamp(23px,1.75vw,42px); color:var(--wall-red-dark); font-weight:900; }
+    .wall-rank-main strong { display:block; font-size:clamp(20px,1.52vw,37px); line-height:1.05; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .wall-rank-main span { display:block; margin-top:.55vh; color:var(--wall-muted); font-size:clamp(13px,.9vw,22px); font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .wall-rank-value { text-align:right; font-size:clamp(31px,2.75vw,67px); line-height:.85; font-weight:900; letter-spacing:-.045em; font-variant-numeric:tabular-nums; }
+    @keyframes wallRowIn { from { opacity:0; transform:translateX(1.5vw); } to { opacity:1; transform:translateX(0); } }
+
+    .wall-bars { height:100%; display:grid; align-content:center; gap:2.8vh; padding:2.8vh 3vw; background:var(--wall-panel); border:1px solid var(--wall-line); box-shadow:0 7px 19px rgba(0,0,0,.11); }
+    .wall-bar-row { display:grid; grid-template-columns:17vw minmax(0,1fr) 11vw; gap:1.2vw; align-items:center; }
+    .wall-bar-label strong { display:block; font-size:clamp(24px,2vw,48px); line-height:1; }
+    .wall-bar-label span { display:block; margin-top:.7vh; color:var(--wall-muted); font-size:clamp(14px,1vw,24px); font-weight:700; }
+    .wall-bar-track { height:4.2vh; min-height:28px; border:2px solid #bababa; background:#e7e7e7; overflow:hidden; }
+    .wall-bar-fill { height:100%; width:0; background:linear-gradient(90deg,var(--wall-red),var(--wall-red-dark)); transition:width 1.1s cubic-bezier(.2,.75,.25,1); }
+    .wall-bar-row:nth-child(2) .wall-bar-fill { background:linear-gradient(90deg,#30343a,#111418); }
+    .wall-bar-row:nth-child(3) .wall-bar-fill { background:linear-gradient(90deg,#777d84,#4f555b); }
+    .wall-bar-value { text-align:right; }
+    .wall-bar-value strong { display:block; font-size:clamp(36px,3.3vw,80px); line-height:.8; font-weight:900; letter-spacing:-.055em; }
+    .wall-bar-value span { display:block; margin-top:.7vh; color:var(--wall-muted); font-size:clamp(13px,.92vw,22px); font-weight:800; }
+
+    .wall-focus-panel { height:100%; display:grid; grid-template-columns:.78fr 1.22fr; min-height:0; }
+    .wall-focus-number { display:flex; flex-direction:column; justify-content:center; padding:3vh 3vw; border-right:1px solid var(--wall-line); border-left:.7vw solid var(--wall-red); }
+    .wall-focus-number strong { font-size:clamp(105px,10.5vw,250px); line-height:.76; letter-spacing:-.075em; font-weight:900; }
+    .wall-focus-number span { margin-top:2.7vh; font-size:clamp(24px,2vw,48px); line-height:1.05; font-weight:850; }
+    .wall-focus-number small { margin-top:1.4vh; color:var(--wall-muted); font-size:clamp(15px,1.05vw,26px); line-height:1.3; font-weight:700; }
+    .wall-focus-breakdown { display:grid; align-content:center; gap:2.1vh; padding:3vh 3vw; }
+    .wall-focus-row { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:1.5vw; align-items:end; padding-bottom:1.2vh; border-bottom:2px solid #dedede; }
+    .wall-focus-row:last-child { border-bottom:0; }
+    .wall-focus-row strong { font-size:clamp(21px,1.6vw,39px); }
+    .wall-focus-row span { display:block; margin-top:.6vh; color:var(--wall-muted); font-size:clamp(14px,.95vw,23px); font-weight:700; }
+    .wall-focus-row b { font-size:clamp(40px,3.8vw,92px); line-height:.82; letter-spacing:-.05em; }
+
+    .wall-chart-panel { height:100%; display:grid; grid-template-rows:auto minmax(0,1fr); padding:1.8vh 1.5vw 1.1vh; }
+    .wall-chart-summary { display:flex; align-items:flex-end; justify-content:space-between; gap:2vw; padding:0 .4vw 1vh; }
+    .wall-chart-summary-group { display:flex; gap:2.6vw; align-items:flex-end; }
+    .wall-chart-stat span { display:block; color:var(--wall-muted); font-size:clamp(12px,.82vw,20px); font-weight:850; text-transform:uppercase; letter-spacing:.07em; }
+    .wall-chart-stat strong { display:block; margin-top:.4vh; font-size:clamp(34px,3vw,72px); line-height:.86; font-weight:900; letter-spacing:-.05em; }
+    .wall-chart-stat small { display:block; margin-top:.6vh; color:var(--wall-muted); font-size:clamp(12px,.8vw,19px); font-weight:700; }
+    .wall-chart-svg { width:100%; height:100%; min-height:0; display:block; overflow:visible; }
+    .wall-chart-grid { stroke:#d4d6d8; stroke-width:1; vector-effect:non-scaling-stroke; }
+    .wall-chart-axis { stroke:#8c9196; stroke-width:2; vector-effect:non-scaling-stroke; }
+    .wall-chart-label { fill:#5d6268; font-size:22px; font-weight:700; }
+    .wall-chart-area { fill:rgba(217,44,50,.10); }
+    .wall-chart-line { fill:none; stroke:var(--wall-red); stroke-width:8; stroke-linejoin:round; stroke-linecap:square; path-length:1; stroke-dasharray:1; stroke-dashoffset:1; animation:wallDrawLine 1.65s .18s forwards ease-out; }
+    .wall-chart-peak { fill:var(--wall-green); stroke:#fff; stroke-width:5; transform-box:fill-box; transform-origin:center; animation:wallMarkerIn .65s 1.35s both ease-out; }
+    .wall-chart-now { fill:var(--wall-red); stroke:#fff; stroke-width:5; transform-box:fill-box; transform-origin:center; animation:wallMarkerIn .65s 1.5s both ease-out; }
+    @keyframes wallDrawLine { to { stroke-dashoffset:0; } }
+
+    .wall-footer {
+      position:relative;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+      align-items:center;
+      gap:1vw;
+      padding:0 2.2vw;
+      background:var(--wall-dark);
+      color:#fff;
+      z-index:5;
+    }
+    .wall-footer-left, .wall-footer-right { font-size:clamp(12px,.82vw,20px); font-weight:800; letter-spacing:.04em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .wall-footer-right { text-align:right; color:#d5d8dc; }
+    .wall-scene-dots { display:flex; align-items:center; justify-content:center; gap:.45vw; }
+    .wall-scene-dot { width:.48vw; min-width:7px; height:.48vw; min-height:7px; border:1px solid #a9aeb4; background:transparent; }
+    .wall-scene-dot.active { width:1.75vw; background:var(--wall-red); border-color:var(--wall-red); }
+    .wall-progress { position:absolute; left:0; bottom:0; height:.48vh; min-height:4px; width:0; background:var(--wall-red); }
+
+    .wall-controls {
+      position:absolute;
+      left:50%;
+      bottom:7.4vh;
+      z-index:20;
+      display:flex;
+      align-items:center;
+      gap:.45vw;
+      padding:.65vh .5vw;
+      background:rgba(22,25,29,.96);
+      border:1px solid #555a61;
+      box-shadow:0 9px 28px rgba(0,0,0,.32);
+      transform:translate(-50%,18px);
+      opacity:0;
+      pointer-events:none;
+      transition:opacity .2s ease, transform .2s ease;
+    }
+    .wall-display.controls-visible .wall-controls { opacity:1; transform:translate(-50%,0); pointer-events:auto; }
+    .wall-control-btn {
+      min-width:4.6vw;
+      min-height:4.2vh;
+      padding:.55vh .85vw;
+      border:1px solid #656b72;
+      background:#252a30;
+      color:#fff;
+      font-size:clamp(12px,.78vw,19px);
+      font-weight:800;
+      cursor:pointer;
+    }
+    .wall-control-btn:hover, .wall-control-btn:focus-visible { background:#363c43; outline:2px solid #fff; outline-offset:1px; }
+    .wall-control-btn.primary { border-color:#e46b70; background:var(--wall-red-dark); }
+    .wall-key-help { padding:0 .55vw; color:#c9cdd1; font-size:clamp(10px,.68vw,16px); white-space:nowrap; }
+    .wall-data-warning {
+      position:absolute;
+      left:2vw;
+      top:1.4vh;
+      z-index:12;
+      display:none;
+      padding:.75vh .85vw;
+      background:#fff0f0;
+      border:2px solid var(--wall-red);
+      color:#8e1e23;
+      font-size:clamp(12px,.8vw,19px);
+      font-weight:850;
+      box-shadow:0 4px 12px rgba(0,0,0,.14);
+    }
+    .wall-data-warning.visible { display:block; }
+    .wall-empty { height:100%; display:flex; align-items:center; justify-content:center; color:var(--wall-muted); font-size:clamp(28px,2.2vw,54px); font-weight:800; text-align:center; }
+
+    @media (max-aspect-ratio: 4/3) {
+      .wall-hero-grid, .wall-map-grid { grid-template-columns:1fr; }
+      .wall-stat-stack { grid-template-columns:repeat(3,1fr); grid-template-rows:1fr; }
+      .wall-map-panel { display:none; }
+      .wall-map-grid { grid-template-columns:1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .wall-stage, .wall-map-marker, .wall-map-ring, .wall-rank-row, .wall-chart-line, .wall-chart-peak, .wall-chart-now { animation:none !important; transition:none !important; }
+      .wall-chart-line { stroke-dashoffset:0; }
+    }
+
   </style>
 </head>
 <body>
@@ -357,6 +707,7 @@
         <button type="button" class="tab-btn" data-view="health" role="tab" aria-selected="false">Data Health</button>
       </div>
       <div class="rotation-controls">
+        <button type="button" class="control-btn wall-launch" id="wallModeBtn" disabled>Wall display</button>
         <button type="button" class="control-btn" id="themeToggleBtn" aria-pressed="false">Night</button>
         <button type="button" class="control-btn" id="autoRotateBtn" aria-pressed="false">Start auto rotation</button>
         <span id="rotationStatus">Auto rotation off</span>
@@ -575,6 +926,47 @@
     </footer>
   </main>
 
+
+  <section class="wall-display" id="wallDisplay" aria-hidden="true" aria-label="Operations centre wall display">
+    <header class="wall-masthead">
+      <div class="wall-brand">
+        <span class="wall-brand-mark" aria-hidden="true"></span>
+        <div class="wall-brand-copy">
+          <strong>Queensland Unplanned Power Outages</strong>
+          <span>Operations centre situation display</span>
+        </div>
+      </div>
+      <div class="wall-meta">
+        <button type="button" class="wall-health-alert" id="wallHealthAlert" title="Dismiss provider feed warning">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 1 21h22L12 2Zm0 5.2 6.8 11.8H5.2L12 7.2ZM11 10v5h2v-5h-2Zm0 6.5v2h2v-2h-2Z"/></svg>
+          <span id="wallHealthText">Provider feed issue</span>
+        </button>
+        <div class="wall-meta-block"><span>Data current at</span><strong id="wallUpdatedTime">—</strong></div>
+        <div class="wall-meta-block"><span>Current time</span><strong id="wallClock">—</strong></div>
+      </div>
+    </header>
+
+    <div class="wall-stage-wrap" id="wallStageWrap">
+      <div class="wall-data-warning" id="wallDataWarning">Data refresh failed. Showing the last successful update.</div>
+      <div class="wall-stage" id="wallStage"></div>
+      <div class="wall-controls" id="wallControls" role="toolbar" aria-label="Wall display controls">
+        <button type="button" class="wall-control-btn" id="wallPrevBtn">Previous</button>
+        <button type="button" class="wall-control-btn primary" id="wallPauseBtn">Pause</button>
+        <button type="button" class="wall-control-btn" id="wallNextBtn">Next</button>
+        <button type="button" class="wall-control-btn" id="wallFullscreenBtn">Fullscreen</button>
+        <button type="button" class="wall-control-btn" id="wallExitBtn">Exit</button>
+        <span class="wall-key-help">Space pause · ←/→ scenes · F fullscreen · Esc exit</span>
+      </div>
+    </div>
+
+    <footer class="wall-footer">
+      <div class="wall-footer-left" id="wallFooterScope">Live now</div>
+      <div class="wall-scene-dots" id="wallSceneDots" aria-hidden="true"></div>
+      <div class="wall-footer-right"><span id="wallSceneCountdown">—</span> · Refresh <span id="wallRefreshCountdown">—</span></div>
+      <div class="wall-progress" id="wallProgress"></div>
+    </footer>
+  </section>
+
   <script>
     "use strict";
 
@@ -597,6 +989,17 @@
       health: 35 * 1000
     };
 
+    const WALL_SCENES = [
+      { id: "summary", title: "Statewide situation", scope: "Live now", scopeType: "live", duration: 16 * 1000 },
+      { id: "map", title: "Geographic impact", scope: "Live now", scopeType: "live", duration: 20 * 1000 },
+      { id: "largest", title: "Largest active outages", scope: "Live now", scopeType: "live", duration: 18 * 1000 },
+      { id: "providers", title: "Impact by electricity provider", scope: "Live now", scopeType: "live", duration: 16 * 1000 },
+      { id: "restoration", title: "Restoration estimate coverage", scope: "Live now", scopeType: "live", duration: 16 * 1000 },
+      { id: "causes", title: "Provider-reported outage causes", scope: "Live now", scopeType: "live", duration: 16 * 1000 },
+      { id: "since0900", title: "Customer impact since 0900 AEST", scope: "Since 0900 AEST", scopeType: "history", duration: 22 * 1000 },
+      { id: "rolling24", title: "Customer impact over the rolling 24 hours", scope: "Rolling 24 hours", scopeType: "history", duration: 22 * 1000 }
+    ];
+
     const state = {
       data: null,
       activeView: "overview",
@@ -606,7 +1009,24 @@
       rotateTimer: null,
       nextRefreshAt: null,
       nextViewAt: null,
-      rotationIndex: 0
+      rotationIndex: 0,
+      wall: {
+        active: false,
+        playing: false,
+        sceneIndex: 0,
+        timer: null,
+        tickTimer: null,
+        controlsTimer: null,
+        nextAt: null,
+        durationMs: 0,
+        remainingMs: 0,
+        previousAutoRotate: false,
+        wakeLock: null,
+        healthDismissed: false,
+        healthSignature: "",
+        transitionToken: 0,
+        autoLaunchChecked: false
+      }
     };
 
     const $ = (id) => document.getElementById(id);
@@ -648,7 +1068,7 @@
     }
 
     async function loadData() {
-      showLoading();
+      if (!state.data) showLoading();
       const [manifestText, snapshotsText, healthText] = await Promise.all([
         fetchText(DATA_PATHS.manifest),
         fetchText(DATA_PATHS.snapshots),
@@ -1062,6 +1482,16 @@
       renderHistoryView();
       renderHealthView();
       renderFooter();
+      const wallButton = $("wallModeBtn");
+      if (wallButton) wallButton.disabled = false;
+      if (state.wall.active) {
+        $("wallDataWarning").classList.remove("visible");
+        renderWallScene(false, false);
+      } else if (!state.wall.autoLaunchChecked) {
+        state.wall.autoLaunchChecked = true;
+        const autoWall = typeof location !== "undefined" && new URLSearchParams(location.search).get("wall") === "1";
+        if (autoWall) setTimeout(enterWallMode, 0);
+      }
       updateCountdowns();
     }
 
@@ -1615,6 +2045,7 @@
           rotateEl.textContent = `Next: ${nextView} in ${formatCountdown(Math.max(0, state.nextViewAt - Date.now()))}`;
         }
       }
+      if (state.wall.active) updateWallStatus();
     }
 
     function renderFooter() {
@@ -1627,7 +2058,13 @@
     }
 
     function showError(error) {
-      $("errorMount").innerHTML = `<div class="error-box"><strong>Dashboard data load failed.</strong>\n${escapeHtml(error.stack || error.message || String(error))}</div>`;
+      $("errorMount").innerHTML = `<div class="error-box"><strong>Dashboard data load failed.</strong>
+${escapeHtml(error.stack || error.message || String(error))}</div>`;
+      if (state.wall.active && state.data) $("wallDataWarning").classList.add("visible");
+      clearTimeout(state.refreshTimer);
+      state.nextRefreshAt = Date.now() + 60 * 1000;
+      state.refreshTimer = setTimeout(() => loadData().catch(showError), 60 * 1000);
+      ensureCountdownTimer();
     }
 
     function clearError() { $("errorMount").innerHTML = ""; }
@@ -1738,6 +2175,455 @@
     }
 
 
+    function wallScene() { return WALL_SCENES[state.wall.sceneIndex] || WALL_SCENES[0]; }
+
+    function wallSceneShell(scene, subtitle, body) {
+      const historyClass = scene.scopeType === "history" ? " history" : "";
+      return `<section class="wall-scene" data-scene="${escapeHtml(scene.id)}">
+        <header class="wall-scene-heading">
+          <div class="wall-scope-block">
+            <span class="wall-scope${historyClass}">${escapeHtml(scene.scope)}</span>
+            <h1>${escapeHtml(scene.title)}</h1>
+          </div>
+          <p>${escapeHtml(subtitle)}</p>
+        </header>
+        <div class="wall-scene-body">${body}</div>
+      </section>`;
+    }
+
+    function renderWallScene(animate = true, restartTimer = true) {
+      if (!state.wall.active || !state.data) return;
+      const scene = wallScene();
+      const stage = $("wallStage");
+      const token = ++state.wall.transitionToken;
+      const apply = () => {
+        if (token !== state.wall.transitionToken || !state.wall.active) return;
+        stage.classList.remove("scene-exit");
+        stage.classList.add("scene-enter");
+        stage.innerHTML = renderWallSceneContent(scene);
+        updateWallChrome();
+        requestAnimationFrame(() => {
+          if (token !== state.wall.transitionToken) return;
+          stage.classList.remove("scene-enter");
+          animateWallElements();
+        });
+        if (restartTimer) startWallSceneTimer(scene.duration);
+      };
+      if (animate && stage.innerHTML) {
+        stage.classList.add("scene-exit");
+        setTimeout(apply, 290);
+      } else {
+        apply();
+      }
+    }
+
+    function renderWallSceneContent(scene) {
+      switch (scene.id) {
+        case "summary": return renderWallSummaryScene(scene);
+        case "map": return renderWallMapScene(scene);
+        case "largest": return renderWallLargestScene(scene);
+        case "providers": return renderWallProviderScene(scene);
+        case "restoration": return renderWallRestorationScene(scene);
+        case "causes": return renderWallCausesScene(scene);
+        case "since0900": return renderWallTrendScene(scene, state.data.trendSince, "Recorded customer impact from 0900 AEST to the latest available snapshot.");
+        case "rolling24": return renderWallTrendScene(scene, state.data.trend24, "Recorded customer impact across the latest rolling 24-hour period.");
+        default: return wallSceneShell(scene, "", `<div class="wall-empty">No scene content available.</div>`);
+      }
+    }
+
+    function renderWallSummaryScene(scene) {
+      const d = state.data;
+      const worst = d.topLgas[0];
+      const largest = d.currentIncidents[0];
+      const provider = d.topProviders[0];
+      const body = `<div class="wall-hero-grid">
+        <article class="wall-hero-primary">
+          <div class="wall-kicker">Customers currently affected statewide</div>
+          <div class="wall-hero-number" data-count="${d.currentSummary.latestCustomerSum}">0</div>
+          <div class="wall-hero-unit">customers without power</div>
+          <div class="wall-hero-caption">Latest snapshot: ${escapeHtml(formatAest(d.latestMs, true))}</div>
+        </article>
+        <div class="wall-stat-stack">
+          <article class="wall-stat"><div><div class="wall-stat-label">Active outages</div><div class="wall-stat-detail">Individual outage records in the latest snapshot</div></div><div class="wall-stat-value" data-count="${d.currentSummary.incidents}">0</div></article>
+          <article class="wall-stat"><div><div class="wall-stat-label">LGAs affected</div><div class="wall-stat-detail">Local government areas with an active outage</div></div><div class="wall-stat-value" data-count="${d.currentSummary.lgaCount}">0</div></article>
+          <article class="wall-stat"><div><div class="wall-stat-label">Largest concentration</div><div class="wall-stat-detail">${worst ? escapeHtml(worst.name) : "No active LGA impact"}${provider ? ` · ${escapeHtml(provider.name)} has the largest provider share` : ""}</div></div><div class="wall-stat-value" data-count="${worst ? worst.currentCustomers : 0}">0</div></article>
+        </div>
+      </div>`;
+      return wallSceneShell(scene, "A single current-state snapshot. Historical values are not included on this scene.", body);
+    }
+
+    function renderWallMapScene(scene) {
+      const d = state.data;
+      const rows = d.topLgas.slice(0, 6);
+      const map = renderWallQueenslandMap(d.lgaMapPoints);
+      const ranking = rows.length ? rows.map((r, idx) => `<div class="wall-rank-row" style="animation-delay:${idx * 90}ms">
+        <div class="wall-rank-num">${idx + 1}</div>
+        <div class="wall-rank-main"><strong>${escapeHtml(r.name)}</strong><span>${fmtInt.format(r.currentIncidents)} active outage${plural(r.currentIncidents)} · ${fmtPct1.format(r.share)} of statewide impact</span></div>
+        <div class="wall-rank-value">${fmtInt.format(r.currentCustomers)}</div>
+      </div>`).join("") : `<div class="wall-empty">No current LGA outage impact.</div>`;
+      const body = `<div class="wall-map-grid">
+        <article class="wall-map-panel">${map}</article>
+        <article class="wall-list-panel"><div class="wall-panel-title"><strong>Most affected LGAs</strong><span>Customers now</span></div><div class="wall-ranking" style="grid-template-rows:repeat(${Math.max(1, rows.length)},1fr)">${ranking}</div></article>
+      </div>`;
+      return wallSceneShell(scene, "Current outage locations are plotted from provider coordinates; marker size represents customers affected.", body);
+    }
+
+    function renderWallQueenslandMap(points) {
+      const w = 900, h = 690, padX = 58, padY = 28;
+      const minLon = 137.4, maxLon = 154.2, minLat = -29.5, maxLat = -10.0;
+      const px = (lon) => padX + ((lon - minLon) / (maxLon - minLon)) * (w - padX * 2);
+      const py = (lat) => padY + ((maxLat - lat) / (maxLat - minLat)) * (h - padY * 2);
+      const outline = [
+        [138.0,-29.0],[153.55,-28.15],[153.42,-27.45],[153.12,-26.65],[152.92,-25.55],[152.78,-24.55],
+        [151.95,-23.25],[150.90,-22.20],[149.05,-21.05],[148.20,-20.15],[146.82,-19.25],[145.70,-17.55],
+        [145.05,-16.20],[144.25,-14.65],[143.55,-13.25],[142.52,-10.72],[142.10,-10.58],[141.55,-11.95],
+        [141.05,-14.85],[141.00,-16.75],[140.25,-17.32],[139.35,-17.02],[138.00,-16.48],[138.0,-29.0]
+      ];
+      const path = outline.map((p, i) => `${i ? "L" : "M"}${px(p[0]).toFixed(1)},${py(p[1]).toFixed(1)}`).join(" ") + " Z";
+      const valid = points.filter((p) => isFiniteNumber(p.lon) && isFiniteNumber(p.lat) && p.lon >= minLon && p.lon <= maxLon && p.lat >= minLat && p.lat <= maxLat).slice(0, 18);
+      const max = Math.max(1, ...valid.map((p) => p.customers));
+      const topNames = new Set(valid.slice(0, 7).map((p) => p.name));
+      const markers = valid.map((p, idx) => {
+        const x = px(p.lon), y = py(p.lat);
+        const r = 10 + Math.sqrt(p.customers / max) * 28;
+        const label = topNames.has(p.name) ? `<text class="wall-map-label" x="${x + r + 8}" y="${y - 3}">${escapeHtml(p.name)}</text><text class="wall-map-value" x="${x + r + 8}" y="${y + 20}">${fmtInt.format(p.customers)} customers</text>` : "";
+        return `<g style="animation-delay:${idx * 85}ms"><circle class="wall-map-ring" cx="${x}" cy="${y}" r="${r}" style="animation-delay:${idx * 100}ms"></circle><circle class="wall-map-marker" cx="${x}" cy="${y}" r="${r}" style="animation-delay:${idx * 85}ms"><title>${escapeHtml(p.name)}: ${fmtInt.format(p.customers)} customers</title></circle>${label}</g>`;
+      }).join("");
+      return `<svg class="wall-map-svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Queensland map showing current outage impact">
+        <defs><clipPath id="wallQldClip"><path d="${path}"></path></clipPath></defs>
+        <path class="wall-state-shape" d="${path}"></path>
+        <g clip-path="url(#wallQldClip)">
+          ${[140,142,144,146,148,150,152].map((lon) => `<line class="wall-state-grid" x1="${px(lon)}" x2="${px(lon)}" y1="${padY}" y2="${h-padY}"></line>`).join("")}
+          ${[-12,-15,-18,-21,-24,-27].map((lat) => `<line class="wall-state-grid" x1="${padX}" x2="${w-padX}" y1="${py(lat)}" y2="${py(lat)}"></line>`).join("")}
+          <text class="wall-state-name" x="${px(143.7)}" y="${py(-22.1)}" text-anchor="middle" transform="rotate(-7 ${px(143.7)} ${py(-22.1)})">QUEENSLAND</text>
+        </g>
+        ${markers}
+      </svg>`;
+    }
+
+    function renderWallLargestScene(scene) {
+      const rows = state.data.currentIncidents.slice(0, 6);
+      const ranking = rows.length ? rows.map((i, idx) => {
+        const r = i.latestRow;
+        const started = formatUtcAsAest(r.startUtc, false) || "Start time not supplied";
+        const etr = formatUtcAsAest(r.etrUtc, false) || "No restoration estimate";
+        return `<div class="wall-rank-row" style="animation-delay:${idx * 90}ms">
+          <div class="wall-rank-num">${idx + 1}</div>
+          <div class="wall-rank-main"><strong>${escapeHtml(r.suburb || r.lgaName || "Location not supplied")}</strong><span>${escapeHtml(r.lgaName || "Unmatched LGA")} · ${escapeHtml(r.providerName)} · Started ${escapeHtml(started)} · ${escapeHtml(etr)}</span></div>
+          <div class="wall-rank-value">${fmtInt.format(i.latestCustomers)}</div>
+        </div>`;
+      }).join("") : `<div class="wall-empty">No active outages in the latest snapshot.</div>`;
+      const body = `<article class="wall-list-panel" style="height:100%;"><div class="wall-panel-title"><strong>Largest individual active outages</strong><span>Customers now</span></div><div class="wall-ranking" style="grid-template-rows:repeat(${Math.max(1, rows.length)},1fr)">${ranking}</div></article>`;
+      return wallSceneShell(scene, "Only outages present in the latest snapshot are ranked on this scene.", body);
+    }
+
+    function renderWallProviderScene(scene) {
+      const d = state.data;
+      const rows = [...d.providerRows].filter((r) => r.currentCustomers > 0 || r.currentIncidents > 0).sort(sortByCurrentImpact).slice(0, 4);
+      const max = Math.max(1, ...rows.map((r) => r.currentCustomers));
+      const bars = rows.length ? rows.map((r) => `<div class="wall-bar-row">
+        <div class="wall-bar-label"><strong>${escapeHtml(r.name)}</strong><span>${fmtInt.format(r.currentIncidents)} active outage${plural(r.currentIncidents)}</span></div>
+        <div class="wall-bar-track"><div class="wall-bar-fill" data-width="${Math.max(1.5, (r.currentCustomers / max) * 100).toFixed(2)}"></div></div>
+        <div class="wall-bar-value"><strong>${fmtInt.format(r.currentCustomers)}</strong><span>${fmtPct1.format(r.share)} of state</span></div>
+      </div>`).join("") : `<div class="wall-empty">No current provider impact.</div>`;
+      return wallSceneShell(scene, "Provider share is based only on customers affected in the latest snapshot.", `<article class="wall-bars">${bars}</article>`);
+    }
+
+    function renderWallRestorationScene(scene) {
+      const d = state.data;
+      const total = Math.max(1, d.currentSummary.incidents);
+      const supplied = d.etrRows.find((r) => r.key === "knownFuture") || { incidents:0, customers:0 };
+      const overdue = d.etrRows.find((r) => r.key === "overdue") || { incidents:0, customers:0 };
+      const missing = d.etrRows.find((r) => r.key === "missing") || { incidents:0, customers:0 };
+      const coverage = supplied.incidents / total;
+      const body = `<article class="wall-focus-panel">
+        <div class="wall-focus-number"><strong data-count="${Math.round(coverage * 100)}">0</strong><span>% of active outages have a future restoration estimate</span><small>Calculated from active outage records in the latest snapshot.</small></div>
+        <div class="wall-focus-breakdown">
+          <div class="wall-focus-row"><div><strong>Future estimate supplied</strong><span>Estimated restoration time is later than the latest snapshot</span></div><b>${fmtInt.format(supplied.incidents)}</b></div>
+          <div class="wall-focus-row"><div><strong>Estimate time has passed</strong><span>The supplied estimate is earlier than the latest snapshot</span></div><b>${fmtInt.format(overdue.incidents)}</b></div>
+          <div class="wall-focus-row"><div><strong>No estimate supplied</strong><span>No valid restoration estimate was included by the provider</span></div><b>${fmtInt.format(missing.incidents)}</b></div>
+        </div>
+      </article>`;
+      return wallSceneShell(scene, "This scene describes restoration-estimate coverage for currently active outages only.", body);
+    }
+
+    function renderWallCausesScene(scene) {
+      const rows = state.data.reasonRows.slice(0, 6);
+      const max = Math.max(1, ...rows.map((r) => r.customers));
+      const bars = rows.length ? rows.map((r) => `<div class="wall-bar-row">
+        <div class="wall-bar-label"><strong>${escapeHtml(r.reason)}</strong><span>${fmtInt.format(r.incidents)} active outage${plural(r.incidents)}</span></div>
+        <div class="wall-bar-track"><div class="wall-bar-fill" data-width="${Math.max(1.5, (r.customers / max) * 100).toFixed(2)}"></div></div>
+        <div class="wall-bar-value"><strong>${fmtInt.format(r.customers)}</strong><span>customers</span></div>
+      </div>`).join("") : `<div class="wall-empty">No cause information in current outage records.</div>`;
+      return wallSceneShell(scene, "Reasons are shown exactly as grouped from the latest provider-supplied outage records.", `<article class="wall-bars">${bars}</article>`);
+    }
+
+    function renderWallTrendScene(scene, series, subtitle) {
+      if (!series.length) return wallSceneShell(scene, subtitle, `<div class="wall-empty">No recorded trend data is available for this period.</div>`);
+      const peak = getPeakPoint(series, "customers");
+      const current = series[series.length - 1];
+      const first = series[0];
+      const change = current.customers - first.customers;
+      const body = `<article class="wall-chart-panel">
+        <div class="wall-chart-summary">
+          <div class="wall-chart-summary-group">
+            <div class="wall-chart-stat"><span>Latest recorded</span><strong>${fmtInt.format(current.customers)}</strong><small>${escapeHtml(formatAest(current.snapshotUtcMs, false))}</small></div>
+            <div class="wall-chart-stat"><span>Highest recorded</span><strong>${fmtInt.format(peak.customers)}</strong><small>${escapeHtml(formatAest(peak.snapshotUtcMs, false))}</small></div>
+            <div class="wall-chart-stat"><span>Change across period</span><strong>${change > 0 ? "+" : ""}${fmtInt.format(change)}</strong><small>customers</small></div>
+          </div>
+          <div class="wall-chart-stat" style="text-align:right"><span>Active outages now</span><strong>${fmtInt.format(current.incidents)}</strong><small>latest snapshot</small></div>
+        </div>
+        ${renderWallTrendChart(series)}
+      </article>`;
+      return wallSceneShell(scene, subtitle, body);
+    }
+
+    function renderWallTrendChart(series) {
+      const w = 1600, h = 650, left = 105, right = 55, top = 35, bottom = 72;
+      const plotW = w - left - right, plotH = h - top - bottom;
+      const minX = Math.min(...series.map((p) => p.snapshotUtcMs));
+      const maxX = Math.max(...series.map((p) => p.snapshotUtcMs));
+      const maxY = Math.max(1, ...series.map((p) => p.customers));
+      const x = (ms) => left + ((ms - minX) / Math.max(1, maxX - minX)) * plotW;
+      const y = (value) => top + plotH - (value / maxY) * plotH;
+      const line = steppedPath(series, x, y, "customers");
+      const area = `${line} L${x(series[series.length-1].snapshotUtcMs)},${top+plotH} L${x(series[0].snapshotUtcMs)},${top+plotH} Z`;
+      const peak = getPeakPoint(series, "customers");
+      const latest = series[series.length-1];
+      const xTicks = buildAxisTicks(minX, maxX, 6);
+      const yTicks = [0,.25,.5,.75,1];
+      return `<svg class="wall-chart-svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Recorded customers affected over time">
+        ${yTicks.map((t) => { const yy = top + plotH - t * plotH; return `<line class="wall-chart-grid" x1="${left}" x2="${w-right}" y1="${yy}" y2="${yy}"></line><text class="wall-chart-label" x="${left-18}" y="${yy+8}" text-anchor="end">${fmtInt.format(maxY*t)}</text>`; }).join("")}
+        <line class="wall-chart-axis" x1="${left}" x2="${w-right}" y1="${top+plotH}" y2="${top+plotH}"></line>
+        <line class="wall-chart-axis" x1="${left}" x2="${left}" y1="${top}" y2="${top+plotH}"></line>
+        ${xTicks.map((ms) => `<text class="wall-chart-label" x="${x(ms)}" y="${h-22}" text-anchor="middle">${escapeHtml(formatAestTime(ms))}</text>`).join("")}
+        <path class="wall-chart-area" d="${area}"></path>
+        <path class="wall-chart-line" pathLength="1" d="${line}"></path>
+        <circle class="wall-chart-peak" cx="${x(peak.snapshotUtcMs)}" cy="${y(peak.customers)}" r="12"><title>Highest recorded point</title></circle>
+        <circle class="wall-chart-now" cx="${x(latest.snapshotUtcMs)}" cy="${y(latest.customers)}" r="12"><title>Latest recorded point</title></circle>
+      </svg>`;
+    }
+
+    function animateWallElements() {
+      document.querySelectorAll("#wallStage [data-count]").forEach((el) => animateWallNumber(el));
+      requestAnimationFrame(() => document.querySelectorAll("#wallStage .wall-bar-fill[data-width]").forEach((el) => { el.style.width = `${el.dataset.width}%`; }));
+    }
+
+    function animateWallNumber(el) {
+      const target = Number(el.dataset.count || 0);
+      if (!Number.isFinite(target)) { el.textContent = el.dataset.count || "0"; return; }
+      const duration = 900;
+      const start = performance.now();
+      const step = (now) => {
+        if (!state.wall.active || !el.isConnected) return;
+        const p = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = fmtInt.format(Math.round(target * eased));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }
+
+    function startWallSceneTimer(duration) {
+      clearTimeout(state.wall.timer);
+      state.wall.durationMs = duration;
+      state.wall.remainingMs = duration;
+      state.wall.nextAt = Date.now() + duration;
+      state.wall.playing = true;
+      state.wall.timer = setTimeout(advanceWallScene, duration);
+      updateWallPauseButton();
+      updateWallStatus();
+    }
+
+    function advanceWallScene() {
+      if (!state.wall.active) return;
+      state.wall.sceneIndex = (state.wall.sceneIndex + 1) % WALL_SCENES.length;
+      renderWallScene(true, true);
+    }
+
+    function previousWallScene() {
+      if (!state.wall.active) return;
+      state.wall.sceneIndex = (state.wall.sceneIndex - 1 + WALL_SCENES.length) % WALL_SCENES.length;
+      renderWallScene(true, true);
+    }
+
+    function toggleWallPause() {
+      if (!state.wall.active) return;
+      if (state.wall.playing) {
+        state.wall.remainingMs = Math.max(0, state.wall.nextAt - Date.now());
+        state.wall.playing = false;
+        clearTimeout(state.wall.timer);
+        state.wall.timer = null;
+      } else {
+        const remaining = Math.max(500, state.wall.remainingMs || wallScene().duration);
+        state.wall.nextAt = Date.now() + remaining;
+        state.wall.playing = true;
+        state.wall.timer = setTimeout(advanceWallScene, remaining);
+      }
+      updateWallPauseButton();
+      updateWallStatus();
+      showWallControls();
+    }
+
+    function updateWallPauseButton() {
+      const btn = $("wallPauseBtn");
+      if (btn) btn.textContent = state.wall.playing ? "Pause" : "Resume";
+    }
+
+    function updateWallChrome() {
+      const d = state.data;
+      const scene = wallScene();
+      $("wallUpdatedTime").textContent = formatAest(d.latestMs, true);
+      $("wallFooterScope").textContent = `${scene.scope} · ${scene.title}`;
+      $("wallSceneDots").innerHTML = WALL_SCENES.map((_, idx) => `<span class="wall-scene-dot${idx === state.wall.sceneIndex ? " active" : ""}"></span>`).join("");
+      updateWallHealthIndicator();
+    }
+
+    function updateWallStatus() {
+      if (!state.wall.active) return;
+      $("wallClock").textContent = formatAest(Date.now(), true);
+      const refreshRemaining = state.nextRefreshAt ? Math.max(0, state.nextRefreshAt - Date.now()) : 0;
+      $("wallRefreshCountdown").textContent = state.nextRefreshAt ? formatCountdown(refreshRemaining) : "—";
+      let remaining = state.wall.playing ? Math.max(0, state.wall.nextAt - Date.now()) : Math.max(0, state.wall.remainingMs);
+      $("wallSceneCountdown").textContent = state.wall.playing ? `Next scene ${formatCountdown(remaining)}` : `Paused ${formatCountdown(remaining)}`;
+      const elapsed = Math.max(0, state.wall.durationMs - remaining);
+      const progress = state.wall.durationMs ? clamp(elapsed / state.wall.durationMs, 0, 1) : 0;
+      $("wallProgress").style.width = `${progress * 100}%`;
+    }
+
+    function getWallHealthIssue() {
+      if (!state.data) return null;
+      const manifestCount = Number(state.data.manifest.provider_fetch_error_count || 0);
+      const failed = [];
+      state.data.providerHealthLatest.forEach((item, name) => {
+        const status = String(item.status || "UNKNOWN").toUpperCase();
+        if (!["OK", "SUCCESS", "HEALTHY", "PASS", "PASSED"].includes(status)) failed.push(name);
+      });
+      const count = Math.max(manifestCount, failed.length);
+      if (!count) return null;
+      return { count, names: failed, signature: `${count}|${failed.sort().join("|")}` };
+    }
+
+    function updateWallHealthIndicator() {
+      const issue = getWallHealthIssue();
+      const alert = $("wallHealthAlert");
+      if (!issue) {
+        state.wall.healthSignature = "";
+        state.wall.healthDismissed = false;
+        alert.classList.remove("visible");
+        return;
+      }
+      if (state.wall.healthSignature && state.wall.healthSignature !== issue.signature) state.wall.healthDismissed = false;
+      state.wall.healthSignature = issue.signature;
+      if (state.wall.healthDismissed) {
+        alert.classList.remove("visible");
+        return;
+      }
+      $("wallHealthText").textContent = issue.names.length ? `Provider feed issue: ${issue.names.join(", ")}` : `${issue.count} provider feed issue${plural(issue.count)}`;
+      alert.classList.add("visible");
+    }
+
+    async function enterWallMode() {
+      if (!state.data) {
+        showError(new Error("Wall display cannot start until outage data has loaded."));
+        return;
+      }
+      state.wall.active = true;
+      state.wall.sceneIndex = 0;
+      state.wall.previousAutoRotate = state.autoRotate;
+      if (state.autoRotate) {
+        state.autoRotate = false;
+        clearTimeout(state.rotateTimer);
+        state.nextViewAt = null;
+        $("autoRotateBtn").classList.remove("active");
+        $("autoRotateBtn").textContent = "Start auto rotation";
+        $("autoRotateBtn").setAttribute("aria-pressed", "false");
+      }
+      document.body.classList.add("wall-active");
+      $("wallDisplay").classList.add("active");
+      $("wallDisplay").setAttribute("aria-hidden", "false");
+      clearInterval(state.wall.tickTimer);
+      state.wall.tickTimer = setInterval(updateWallStatus, 250);
+      renderWallScene(false, true);
+      showWallControls();
+      await requestWallFullscreen();
+      await requestWallWakeLock();
+    }
+
+    async function exitWallMode() {
+      if (!state.wall.active) return;
+      state.wall.active = false;
+      state.wall.playing = false;
+      state.wall.transitionToken += 1;
+      clearTimeout(state.wall.timer);
+      clearTimeout(state.wall.controlsTimer);
+      clearInterval(state.wall.tickTimer);
+      state.wall.timer = null;
+      state.wall.tickTimer = null;
+      document.body.classList.remove("wall-active");
+      $("wallDisplay").classList.remove("active", "controls-visible");
+      $("wallDisplay").setAttribute("aria-hidden", "true");
+      if (state.wall.wakeLock) {
+        try { await state.wall.wakeLock.release(); } catch (err) {}
+        state.wall.wakeLock = null;
+      }
+      if (document.fullscreenElement) {
+        try { await document.exitFullscreen(); } catch (err) {}
+      }
+      if (state.wall.previousAutoRotate) {
+        state.autoRotate = true;
+        $("autoRotateBtn").classList.add("active");
+        $("autoRotateBtn").textContent = "Stop auto rotation";
+        $("autoRotateBtn").setAttribute("aria-pressed", "true");
+        resetRotationTimer();
+      }
+    }
+
+    async function requestWallFullscreen() {
+      const el = $("wallDisplay");
+      if (!el || document.fullscreenElement) return;
+      try { await el.requestFullscreen({ navigationUI: "hide" }); } catch (err) {}
+    }
+
+    async function toggleWallFullscreen() {
+      try {
+        if (document.fullscreenElement) await document.exitFullscreen();
+        else await requestWallFullscreen();
+      } catch (err) {}
+      showWallControls();
+    }
+
+    async function requestWallWakeLock() {
+      if (!state.wall.active || !navigator.wakeLock || document.visibilityState !== "visible") return;
+      try {
+        state.wall.wakeLock = await navigator.wakeLock.request("screen");
+        state.wall.wakeLock.addEventListener("release", () => { state.wall.wakeLock = null; });
+      } catch (err) {}
+    }
+
+    function showWallControls() {
+      if (!state.wall.active) return;
+      const display = $("wallDisplay");
+      display.classList.add("controls-visible");
+      clearTimeout(state.wall.controlsTimer);
+      state.wall.controlsTimer = setTimeout(() => {
+        if (state.wall.active && state.wall.playing) display.classList.remove("controls-visible");
+      }, 4200);
+    }
+
+    function handleWallKeydown(event) {
+      if (!state.wall.active) return;
+      const key = event.key;
+      if ([" ", "ArrowLeft", "ArrowRight", "Escape", "f", "F"].includes(key)) event.preventDefault();
+      if (key === " ") toggleWallPause();
+      else if (key === "ArrowLeft") previousWallScene();
+      else if (key === "ArrowRight") advanceWallScene();
+      else if (key === "Escape") exitWallMode();
+      else if (key === "f" || key === "F") toggleWallFullscreen();
+      showWallControls();
+    }
+
+
     function applyTheme(mode) {
       const isNight = mode === "night";
       document.body.classList.toggle("night-mode", isNight);
@@ -1769,6 +2655,29 @@
       $("autoRotateBtn").textContent = state.autoRotate ? "Stop auto rotation" : "Start auto rotation";
       $("autoRotateBtn").setAttribute("aria-pressed", state.autoRotate ? "true" : "false");
       resetRotationTimer();
+    });
+
+
+    $("wallModeBtn").addEventListener("click", enterWallMode);
+    $("wallPrevBtn").addEventListener("click", previousWallScene);
+    $("wallPauseBtn").addEventListener("click", toggleWallPause);
+    $("wallNextBtn").addEventListener("click", advanceWallScene);
+    $("wallFullscreenBtn").addEventListener("click", toggleWallFullscreen);
+    $("wallExitBtn").addEventListener("click", exitWallMode);
+    $("wallHealthAlert").addEventListener("click", () => {
+      state.wall.healthDismissed = true;
+      $("wallHealthAlert").classList.remove("visible");
+      showWallControls();
+    });
+    $("wallDisplay").addEventListener("mousemove", showWallControls);
+    $("wallDisplay").addEventListener("pointerdown", showWallControls);
+    document.addEventListener("keydown", handleWallKeydown);
+    document.addEventListener("visibilitychange", () => {
+      if (state.wall.active && document.visibilityState === "visible") requestWallWakeLock();
+    });
+    document.addEventListener("fullscreenchange", () => {
+      const btn = $("wallFullscreenBtn");
+      if (btn) btn.textContent = document.fullscreenElement ? "Windowed" : "Fullscreen";
     });
 
     initTheme();
