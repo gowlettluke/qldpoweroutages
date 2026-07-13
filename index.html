@@ -2442,20 +2442,32 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
       if (boundary.status !== "ready" || !boundary.bounds || !boundary.rings.length) return null;
 
       const padX = 42, padY = 26;
-      const mercY = (lat) => Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI / 180) / 2));
-      const minX = boundary.bounds.minLon;
-      const maxX = boundary.bounds.maxLon;
-      const northY = mercY(boundary.bounds.maxLat);
-      const southY = mercY(boundary.bounds.minLat);
+      const toRadians = (degrees) => degrees * Math.PI / 180;
+      const mercatorX = (lon) => toRadians(lon);
+      const mercatorY = (lat) => {
+        const clampedLat = Math.max(-85, Math.min(85, lat));
+        return Math.log(Math.tan(Math.PI / 4 + toRadians(clampedLat) / 2));
+      };
+
+      // X and Y must use the same angular units. The previous version compared
+      // longitude degrees with Mercator Y radians, which compressed Queensland
+      // vertically into a narrow strip.
+      const minX = mercatorX(boundary.bounds.minLon);
+      const maxX = mercatorX(boundary.bounds.maxLon);
+      const northY = mercatorY(boundary.bounds.maxLat);
+      const southY = mercatorY(boundary.bounds.minLat);
       const rawWidth = maxX - minX;
       const rawHeight = northY - southY;
+      if (!(rawWidth > 0) || !(rawHeight > 0)) return null;
+
       const scale = Math.min((w - padX * 2) / rawWidth, (h - padY * 2) / rawHeight);
-      const drawW = rawWidth * scale, drawH = rawHeight * scale;
+      const drawW = rawWidth * scale;
+      const drawH = rawHeight * scale;
       const offsetX = (w - drawW) / 2;
       const offsetY = (h - drawH) / 2;
       const project = (lon, lat) => [
-        offsetX + (lon - minX) * scale,
-        offsetY + (northY - mercY(lat)) * scale
+        offsetX + (mercatorX(lon) - minX) * scale,
+        offsetY + (northY - mercatorY(lat)) * scale
       ];
 
       const path = boundary.rings.map((ring) => ring.map(([lon, lat], i) => {
