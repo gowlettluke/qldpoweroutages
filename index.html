@@ -535,6 +535,11 @@
     .wall-map-panel { position:relative; padding:1.2vh 1vw; overflow:hidden; }
     .wall-map-svg { width:100%; height:100%; display:block; }
     .wall-state-shape { fill:#f7f7f7; stroke:#8d9399; stroke-width:3; vector-effect:non-scaling-stroke; stroke-linejoin:round; stroke-linecap:round; }
+    .wall-lga-land { fill:#f6f7f8; fill-rule:evenodd; stroke:#a6adb4; stroke-width:1.05; vector-effect:non-scaling-stroke; stroke-linejoin:round; }
+    .wall-lga-land-shadow { fill:none; stroke:rgba(25,30,35,.24); stroke-width:5; vector-effect:non-scaling-stroke; stroke-linejoin:round; filter:drop-shadow(0 5px 8px rgba(0,0,0,.10)); }
+    .wall-map-loading { height:100%; display:grid; place-items:center; text-align:center; color:var(--wall-muted); padding:4vh 3vw; }
+    .wall-map-loading strong { display:block; color:var(--wall-text); font-size:clamp(24px,2vw,38px); margin-bottom:1vh; }
+    .wall-map-loading span { font-size:clamp(16px,1.15vw,23px); line-height:1.45; }
     .wall-state-grid { stroke:#d9dcdf; stroke-width:1; stroke-dasharray:6 8; vector-effect:non-scaling-stroke; }
     .wall-state-name { fill:#c9cdd1; font-size:68px; font-weight:900; letter-spacing:.12em; }
     .wall-map-marker { fill:rgba(217,44,50,.84); stroke:#fff; stroke-width:4; transform-box:fill-box; transform-origin:center; animation:wallMarkerIn .75s both cubic-bezier(.16,.76,.35,1); }
@@ -973,7 +978,8 @@
     const DATA_PATHS = {
       manifest: "data/run_manifest.json",
       snapshots: "data/outage_snapshots_48h.csv",
-      health: "data/provider_health_48h.csv"
+      health: "data/provider_health_48h.csv",
+      lgaBoundaries: "data/qld_lga_boundaries.kmz"
     };
 
     const REFRESH_MS = 15 * 60 * 1000;
@@ -1002,6 +1008,14 @@
 
     const state = {
       data: null,
+      qldBoundaries: {
+        status: "idle",
+        rings: [],
+        bounds: null,
+        error: "",
+        promise: null,
+        renderCache: null
+      },
       activeView: "overview",
       autoRotate: false,
       refreshTimer: null,
@@ -1067,8 +1081,162 @@
       return response.text();
     }
 
+    async function fetchArrayBuffer(path) {
+      const response = await fetch(`${path}?v=${Date.now()}`, { cache: "no-store" });
+      if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+      return response.arrayBuffer();
+    }
+
+    async function extractKmlFromKmz(arrayBuffer) {
+      const bytes = new Uint8Array(arrayBuffer);
+      const view = new DataView(arrayBuffer);
+      const minOffset = Math.max(0, bytes.length - 65557);
+      let eocd = -1;
+      for (let i = bytes.length - 22; i >= minOffset; i--) {
+        if (view.getUint32(i, true) === 0x06054b50) { eocd = i; break; }
+      }
+      if (eocd < 0) throw new Error("KMZ end-of-central-directory record was not found.");
+
+      const entryCount = view.getUint16(eocd + 10, true);
+      let cursor = view.getUint32(eocd + 16, true);
+      const decoder = new TextDecoder("utf-8");
+      let selected = null;
+
+      for (let entry = 0; entry < entryCount; entry++) {
+        if (view.getUint32(cursor, true) !== 0x02014b50) throw new Error("Invalid KMZ central-directory entry.");
+        const method = view.getUint16(cursor + 10, true);
+        const compressedSize = view.getUint32(cursor + 20, true);
+        const filenameLength = view.getUint16(cursor + 28, true);
+        const extraLength = view.getUint16(cursor + 30, true);
+        const commentLength = view.getUint16(cursor + 32, true);
+        const localHeaderOffset = view.getUint32(cursor + 42, true);
+        const filename = decoder.decode(bytes.subarray(cursor + 46, cursor + 46 + filenameLength));
+        if (!selected && /\.kml$/i.test(filename)) {
+          selected = { method, compressedSize, localHeaderOffset, filename };
+        }
+        cursor += 46 + filenameLength + extraLength + commentLength;
+      }
+
+      if (!selected) throw new Error("The KMZ does not contain a KML document.");
+      const local = selected.localHeaderOffset;
+      if (view.getUint32(local, true) !== 0x04034b50) throw new Error("Invalid KMZ local-file header.");
+      const localFilenameLength = view.getUint16(local + 26, true);
+      const localExtraLength = view.getUint16(local + 28, true);
+      const dataStart = local + 30 + localFilenameLength + localExtraLength;
+      const compressed = bytes.slice(dataStart, dataStart + selected.compressedSize);
+
+      if (selected.method === 0) return decoder.decode(compressed);
+      if (selected.method !== 8) throw new Error(`Unsupported KMZ compression method ${selected.method}.`);
+      if (typeof DecompressionStream !== "function") throw new Error("This browser cannot decompress KMZ files.");
+
+      const decompressed = await new Response(
+        new Blob([compressed]).stream().pipeThrough(new DecompressionStream("deflate-raw"))
+      ).arrayBuffer();
+      return decoder.decode(new Uint8Array(decompressed));
+    }
+
+    function getSqDist(p1, p2) {
+      const dx = p1[0] - p2[0], dy = p1[1] - p2[1];
+      return dx * dx + dy * dy;
+    }
+
+    function getSqSegDist(p, p1, p2) {
+      let x = p1[0], y = p1[1];
+      let dx = p2[0] - x, dy = p2[1] - y;
+      if (dx !== 0 || dy !== 0) {
+        const t = ((p[0] - x) * dx + (p[1] - y) * dy) / (dx * dx + dy * dy);
+        if (t > 1) { x = p2[0]; y = p2[1]; }
+        else if (t > 0) { x += dx * t; y += dy * t; }
+      }
+      dx = p[0] - x; dy = p[1] - y;
+      return dx * dx + dy * dy;
+    }
+
+    function simplifyDPStep(points, first, last, sqTolerance, simplified) {
+      let maxSqDist = sqTolerance, index = -1;
+      for (let i = first + 1; i < last; i++) {
+        const sqDist = getSqSegDist(points[i], points[first], points[last]);
+        if (sqDist > maxSqDist) { index = i; maxSqDist = sqDist; }
+      }
+      if (index > -1) {
+        if (index - first > 1) simplifyDPStep(points, first, index, sqTolerance, simplified);
+        simplified.push(points[index]);
+        if (last - index > 1) simplifyDPStep(points, index, last, sqTolerance, simplified);
+      }
+    }
+
+    function simplifyRing(points, tolerance = 0.008) {
+      if (points.length <= 8) return points;
+      const closed = getSqDist(points[0], points[points.length - 1]) < 1e-16;
+      const work = closed ? points.slice(0, -1) : points.slice();
+      if (work.length <= 8) return points;
+      const sqTolerance = tolerance * tolerance;
+      const simplified = [work[0]];
+      simplifyDPStep(work, 0, work.length - 1, sqTolerance, simplified);
+      simplified.push(work[work.length - 1]);
+      if (closed) simplified.push(simplified[0]);
+      return simplified;
+    }
+
+    function parseQldLgaKml(kmlText) {
+      const xml = new DOMParser().parseFromString(kmlText, "application/xml");
+      if (xml.getElementsByTagName("parsererror").length) throw new Error("The LGA KML could not be parsed.");
+      const polygons = [...xml.getElementsByTagNameNS("*", "Polygon")];
+      const rings = [];
+      let minLon = Infinity, maxLon = -Infinity, minLat = Infinity, maxLat = -Infinity;
+
+      polygons.forEach((polygon) => {
+        const ringNodes = [...polygon.getElementsByTagNameNS("*", "LinearRing")];
+        ringNodes.forEach((ringNode) => {
+          const coordinateNode = ringNode.getElementsByTagNameNS("*", "coordinates")[0];
+          if (!coordinateNode) return;
+          const points = coordinateNode.textContent.trim().split(/\s+/).map((token) => {
+            const parts = token.split(",");
+            return [Number(parts[0]), Number(parts[1])];
+          }).filter((p) => Number.isFinite(p[0]) && Number.isFinite(p[1]));
+          if (points.length < 4) return;
+          const simplified = simplifyRing(points);
+          simplified.forEach(([lon, lat]) => {
+            minLon = Math.min(minLon, lon); maxLon = Math.max(maxLon, lon);
+            minLat = Math.min(minLat, lat); maxLat = Math.max(maxLat, lat);
+          });
+          rings.push(simplified);
+        });
+      });
+
+      if (!rings.length || !Number.isFinite(minLon)) throw new Error("No polygon boundaries were found in the LGA KML.");
+      return { rings, bounds: { minLon, maxLon, minLat, maxLat } };
+    }
+
+    async function loadQldLgaBoundaries() {
+      if (state.qldBoundaries.promise) return state.qldBoundaries.promise;
+      state.qldBoundaries.status = "loading";
+      state.qldBoundaries.promise = (async () => {
+        try {
+          const kmz = await fetchArrayBuffer(DATA_PATHS.lgaBoundaries);
+          const kml = await extractKmlFromKmz(kmz);
+          const parsed = parseQldLgaKml(kml);
+          state.qldBoundaries.rings = parsed.rings;
+          state.qldBoundaries.bounds = parsed.bounds;
+          state.qldBoundaries.renderCache = null;
+          state.qldBoundaries.status = "ready";
+          state.qldBoundaries.error = "";
+          if (state.wall.active && wallScene().id === "map") renderWallScene(false, false);
+          return parsed;
+        } catch (error) {
+          state.qldBoundaries.status = "error";
+          state.qldBoundaries.error = error instanceof Error ? error.message : String(error);
+          console.error("Queensland LGA boundaries could not be loaded:", error);
+          if (state.wall.active && wallScene().id === "map") renderWallScene(false, false);
+          throw error;
+        }
+      })();
+      return state.qldBoundaries.promise;
+    }
+
     async function loadData() {
       if (!state.data) showLoading();
+      loadQldLgaBoundaries().catch(() => {});
       const [manifestText, snapshotsText, healthText] = await Promise.all([
         fetchText(DATA_PATHS.manifest),
         fetchText(DATA_PATHS.snapshots),
@@ -2268,45 +2436,69 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
       return wallSceneShell(scene, "Current outage locations are plotted from provider coordinates; marker size represents customers affected.", body);
     }
 
-    function renderWallQueenslandMap(points) {
-      const w = 900, h = 690, padX = 64, padY = 34;
-      const minLon = 137.6, maxLon = 154.4, minLat = -29.6, maxLat = -9.8;
-      const px = (lon) => padX + ((lon - minLon) / (maxLon - minLon)) * (w - padX * 2);
-      const py = (lat) => padY + ((maxLat - lat) / (maxLat - minLat)) * (h - padY * 2);
-      const outline = [
-        [141.00,-29.00],[141.00,-26.00],[138.00,-26.00],[138.00,-17.35],[138.45,-17.10],[139.10,-17.20],
-        [139.75,-17.30],[140.35,-17.35],[140.85,-17.15],[141.00,-16.60],[141.02,-15.70],[141.05,-14.65],
-        [141.20,-13.55],[141.40,-12.55],[141.55,-11.70],[141.90,-10.95],[142.25,-10.62],[142.65,-10.72],
-        [143.05,-11.35],[143.45,-12.35],[143.92,-13.55],[144.48,-14.75],[145.05,-15.95],[145.70,-16.95],
-        [146.30,-17.85],[146.92,-18.70],[147.62,-19.55],[148.30,-20.18],[149.05,-20.85],[149.85,-21.28],
-        [150.72,-21.78],[151.45,-22.38],[152.12,-23.10],[152.70,-23.60],[152.95,-24.45],[153.08,-25.18],
-        [153.18,-25.92],[153.28,-26.62],[153.38,-27.18],[153.48,-27.72],[153.55,-28.15],[153.55,-28.17],
-        [153.38,-28.15],[152.55,-28.55],[151.80,-28.70],[150.90,-28.80],[149.70,-28.88],[148.55,-28.90],
-        [147.20,-28.93],[146.05,-28.95],[144.85,-28.97],[143.65,-28.99],[142.40,-29.00],[141.00,-29.00]
+    function buildWallQldBoundaryGeometry(w, h) {
+      const boundary = state.qldBoundaries;
+      if (boundary.renderCache && boundary.renderCache.w === w && boundary.renderCache.h === h) return boundary.renderCache;
+      if (boundary.status !== "ready" || !boundary.bounds || !boundary.rings.length) return null;
+
+      const padX = 42, padY = 26;
+      const mercY = (lat) => Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI / 180) / 2));
+      const minX = boundary.bounds.minLon;
+      const maxX = boundary.bounds.maxLon;
+      const northY = mercY(boundary.bounds.maxLat);
+      const southY = mercY(boundary.bounds.minLat);
+      const rawWidth = maxX - minX;
+      const rawHeight = northY - southY;
+      const scale = Math.min((w - padX * 2) / rawWidth, (h - padY * 2) / rawHeight);
+      const drawW = rawWidth * scale, drawH = rawHeight * scale;
+      const offsetX = (w - drawW) / 2;
+      const offsetY = (h - drawH) / 2;
+      const project = (lon, lat) => [
+        offsetX + (lon - minX) * scale,
+        offsetY + (northY - mercY(lat)) * scale
       ];
-      const path = outline.map((p, i) => `${i ? "L" : "M"}${px(p[0]).toFixed(1)},${py(p[1]).toFixed(1)}`).join(" ") + " Z";
-      const valid = points.filter((p) => isFiniteNumber(p.lon) && isFiniteNumber(p.lat) && p.lon >= minLon && p.lon <= maxLon && p.lat >= minLat && p.lat <= maxLat).slice(0, 18);
+
+      const path = boundary.rings.map((ring) => ring.map(([lon, lat], i) => {
+        const [x, y] = project(lon, lat);
+        return `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`;
+      }).join(" ") + " Z").join(" ");
+
+      boundary.renderCache = { w, h, path, project };
+      return boundary.renderCache;
+    }
+
+    function renderWallQueenslandMap(points) {
+      const w = 900, h = 690;
+      const boundary = state.qldBoundaries;
+      if (boundary.status === "idle") loadQldLgaBoundaries().catch(() => {});
+      if (boundary.status === "loading" || boundary.status === "idle") {
+        return `<div class="wall-map-loading"><div><strong>Loading Queensland boundaries</strong><span>Using the authoritative local government area geometry from <code>data/qld_lga_boundaries.kmz</code>.</span></div></div>`;
+      }
+      if (boundary.status === "error") {
+        return `<div class="wall-map-loading"><div><strong>Queensland map unavailable</strong><span>The authoritative LGA boundary file could not be read. ${escapeHtml(boundary.error)}</span></div></div>`;
+      }
+
+      const geometry = buildWallQldBoundaryGeometry(w, h);
+      if (!geometry) return `<div class="wall-map-loading"><div><strong>Queensland map unavailable</strong><span>No valid LGA polygon geometry was found.</span></div></div>`;
+
+      const valid = points.filter((p) => isFiniteNumber(p.lon) && isFiniteNumber(p.lat)).slice(0, 18);
       const max = Math.max(1, ...valid.map((p) => p.customers));
       const topNames = new Set(valid.slice(0, 7).map((p) => p.name));
       const markers = valid.map((p, idx) => {
-        const x = px(p.lon), y = py(p.lat);
-        const r = 10 + Math.sqrt(p.customers / max) * 28;
-        const anchorLeft = x < w * 0.72;
-        const textX = anchorLeft ? x + r + 10 : x - r - 10;
-        const textAnchor = anchorLeft ? "start" : "end";
+        const [x, y] = geometry.project(p.lon, p.lat);
+        const r = 10 + Math.sqrt(p.customers / max) * 27;
+        const placeRight = x < w * 0.70;
+        const textX = placeRight ? x + r + 10 : x - r - 10;
+        const textAnchor = placeRight ? "start" : "end";
         const label = topNames.has(p.name)
           ? `<text class="wall-map-label" x="${textX}" y="${y - 4}" text-anchor="${textAnchor}">${escapeHtml(p.name)}</text><text class="wall-map-value" x="${textX}" y="${y + 20}" text-anchor="${textAnchor}">${fmtInt.format(p.customers)} customers</text>`
           : "";
         return `<g style="animation-delay:${idx * 85}ms"><circle class="wall-map-ring" cx="${x}" cy="${y}" r="${r}" style="animation-delay:${idx * 100}ms"></circle><circle class="wall-map-marker" cx="${x}" cy="${y}" r="${r}" style="animation-delay:${idx * 85}ms"><title>${escapeHtml(p.name)}: ${fmtInt.format(p.customers)} customers</title></circle>${label}</g>`;
       }).join("");
-      return `<svg class="wall-map-svg" viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Queensland map showing current outage impact">
-        <defs><clipPath id="wallQldClip"><path d="${path}"></path></clipPath></defs>
-        <path class="wall-state-shape" d="${path}"></path>
-        <g clip-path="url(#wallQldClip)">
-          ${[138,140,142,144,146,148,150,152,154].map((lon) => `<line class="wall-state-grid" x1="${px(lon)}" x2="${px(lon)}" y1="${padY}" y2="${h-padY}"></line>`).join("")}
-          ${[-12,-15,-18,-21,-24,-27,-29].map((lat) => `<line class="wall-state-grid" x1="${padX}" x2="${w-padX}" y1="${py(lat)}" y2="${py(lat)}"></line>`).join("")}
-          <text class="wall-state-name" x="${px(145.2)}" y="${py(-22.0)}" text-anchor="middle" transform="rotate(-7 ${px(145.2)} ${py(-22.0)})">QUEENSLAND</text>
-        </g>
+
+      return `<svg class="wall-map-svg" viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Authoritative Queensland local government area map showing current outage impact">
+        <path class="wall-lga-land-shadow" d="${geometry.path}"></path>
+        <path class="wall-lga-land" d="${geometry.path}"></path>
         ${markers}
       </svg>`;
     }
