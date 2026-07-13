@@ -534,7 +534,7 @@
     }
     .wall-map-panel { position:relative; padding:1.2vh 1vw; overflow:hidden; }
     .wall-map-svg { width:100%; height:100%; display:block; }
-    .wall-state-shape { fill:#f7f7f7; stroke:#8d9399; stroke-width:3; vector-effect:non-scaling-stroke; }
+    .wall-state-shape { fill:#f7f7f7; stroke:#8d9399; stroke-width:3; vector-effect:non-scaling-stroke; stroke-linejoin:round; stroke-linecap:round; }
     .wall-state-grid { stroke:#d9dcdf; stroke-width:1; stroke-dasharray:6 8; vector-effect:non-scaling-stroke; }
     .wall-state-name { fill:#c9cdd1; font-size:68px; font-weight:900; letter-spacing:.12em; }
     .wall-map-marker { fill:rgba(217,44,50,.84); stroke:#fff; stroke-width:4; transform-box:fill-box; transform-origin:center; animation:wallMarkerIn .75s both cubic-bezier(.16,.76,.35,1); }
@@ -2269,15 +2269,20 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
     }
 
     function renderWallQueenslandMap(points) {
-      const w = 900, h = 690, padX = 58, padY = 28;
-      const minLon = 137.4, maxLon = 154.2, minLat = -29.5, maxLat = -10.0;
+      const w = 900, h = 690, padX = 64, padY = 34;
+      const minLon = 137.6, maxLon = 154.4, minLat = -29.6, maxLat = -9.8;
       const px = (lon) => padX + ((lon - minLon) / (maxLon - minLon)) * (w - padX * 2);
       const py = (lat) => padY + ((maxLat - lat) / (maxLat - minLat)) * (h - padY * 2);
       const outline = [
-        [138.0,-29.0],[153.55,-28.15],[153.42,-27.45],[153.12,-26.65],[152.92,-25.55],[152.78,-24.55],
-        [151.95,-23.25],[150.90,-22.20],[149.05,-21.05],[148.20,-20.15],[146.82,-19.25],[145.70,-17.55],
-        [145.05,-16.20],[144.25,-14.65],[143.55,-13.25],[142.52,-10.72],[142.10,-10.58],[141.55,-11.95],
-        [141.05,-14.85],[141.00,-16.75],[140.25,-17.32],[139.35,-17.02],[138.00,-16.48],[138.0,-29.0]
+        [141.00,-29.00],[141.00,-26.00],[138.00,-26.00],[138.00,-17.35],[138.45,-17.10],[139.10,-17.20],
+        [139.75,-17.30],[140.35,-17.35],[140.85,-17.15],[141.00,-16.60],[141.02,-15.70],[141.05,-14.65],
+        [141.20,-13.55],[141.40,-12.55],[141.55,-11.70],[141.90,-10.95],[142.25,-10.62],[142.65,-10.72],
+        [143.05,-11.35],[143.45,-12.35],[143.92,-13.55],[144.48,-14.75],[145.05,-15.95],[145.70,-16.95],
+        [146.30,-17.85],[146.92,-18.70],[147.62,-19.55],[148.30,-20.18],[149.05,-20.85],[149.85,-21.28],
+        [150.72,-21.78],[151.45,-22.38],[152.12,-23.10],[152.70,-23.60],[152.95,-24.45],[153.08,-25.18],
+        [153.18,-25.92],[153.28,-26.62],[153.38,-27.18],[153.48,-27.72],[153.55,-28.15],[153.55,-28.17],
+        [153.38,-28.15],[152.55,-28.55],[151.80,-28.70],[150.90,-28.80],[149.70,-28.88],[148.55,-28.90],
+        [147.20,-28.93],[146.05,-28.95],[144.85,-28.97],[143.65,-28.99],[142.40,-29.00],[141.00,-29.00]
       ];
       const path = outline.map((p, i) => `${i ? "L" : "M"}${px(p[0]).toFixed(1)},${py(p[1]).toFixed(1)}`).join(" ") + " Z";
       const valid = points.filter((p) => isFiniteNumber(p.lon) && isFiniteNumber(p.lat) && p.lon >= minLon && p.lon <= maxLon && p.lat >= minLat && p.lat <= maxLat).slice(0, 18);
@@ -2286,16 +2291,21 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
       const markers = valid.map((p, idx) => {
         const x = px(p.lon), y = py(p.lat);
         const r = 10 + Math.sqrt(p.customers / max) * 28;
-        const label = topNames.has(p.name) ? `<text class="wall-map-label" x="${x + r + 8}" y="${y - 3}">${escapeHtml(p.name)}</text><text class="wall-map-value" x="${x + r + 8}" y="${y + 20}">${fmtInt.format(p.customers)} customers</text>` : "";
+        const anchorLeft = x < w * 0.72;
+        const textX = anchorLeft ? x + r + 10 : x - r - 10;
+        const textAnchor = anchorLeft ? "start" : "end";
+        const label = topNames.has(p.name)
+          ? `<text class="wall-map-label" x="${textX}" y="${y - 4}" text-anchor="${textAnchor}">${escapeHtml(p.name)}</text><text class="wall-map-value" x="${textX}" y="${y + 20}" text-anchor="${textAnchor}">${fmtInt.format(p.customers)} customers</text>`
+          : "";
         return `<g style="animation-delay:${idx * 85}ms"><circle class="wall-map-ring" cx="${x}" cy="${y}" r="${r}" style="animation-delay:${idx * 100}ms"></circle><circle class="wall-map-marker" cx="${x}" cy="${y}" r="${r}" style="animation-delay:${idx * 85}ms"><title>${escapeHtml(p.name)}: ${fmtInt.format(p.customers)} customers</title></circle>${label}</g>`;
       }).join("");
-      return `<svg class="wall-map-svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Queensland map showing current outage impact">
+      return `<svg class="wall-map-svg" viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Queensland map showing current outage impact">
         <defs><clipPath id="wallQldClip"><path d="${path}"></path></clipPath></defs>
         <path class="wall-state-shape" d="${path}"></path>
         <g clip-path="url(#wallQldClip)">
-          ${[140,142,144,146,148,150,152].map((lon) => `<line class="wall-state-grid" x1="${px(lon)}" x2="${px(lon)}" y1="${padY}" y2="${h-padY}"></line>`).join("")}
-          ${[-12,-15,-18,-21,-24,-27].map((lat) => `<line class="wall-state-grid" x1="${padX}" x2="${w-padX}" y1="${py(lat)}" y2="${py(lat)}"></line>`).join("")}
-          <text class="wall-state-name" x="${px(143.7)}" y="${py(-22.1)}" text-anchor="middle" transform="rotate(-7 ${px(143.7)} ${py(-22.1)})">QUEENSLAND</text>
+          ${[138,140,142,144,146,148,150,152,154].map((lon) => `<line class="wall-state-grid" x1="${px(lon)}" x2="${px(lon)}" y1="${padY}" y2="${h-padY}"></line>`).join("")}
+          ${[-12,-15,-18,-21,-24,-27,-29].map((lat) => `<line class="wall-state-grid" x1="${padX}" x2="${w-padX}" y1="${py(lat)}" y2="${py(lat)}"></line>`).join("")}
+          <text class="wall-state-name" x="${px(145.2)}" y="${py(-22.0)}" text-anchor="middle" transform="rotate(-7 ${px(145.2)} ${py(-22.0)})">QUEENSLAND</text>
         </g>
         ${markers}
       </svg>`;
