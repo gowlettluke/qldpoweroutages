@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-13T01:45:38Z",
-        "snapshot_aest": "2026-07-13T11:45:38+10:00",
+        "snapshot_utc": "2026-07-13T02:01:03Z",
+        "snapshot_aest": "2026-07-13T12:01:03+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902622",
@@ -115,8 +115,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-13T01:45:38Z",
-        "snapshot_aest": "2026-07-13T11:45:38+10:00",
+        "snapshot_utc": "2026-07-13T02:01:03Z",
+        "snapshot_aest": "2026-07-13T12:01:03+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902624",
@@ -134,6 +134,102 @@
         "centroid_lat": -24.89529929771818,
         "lga_name": "Barcoo Shire",
         "lga_code": "450",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.777346178119,
+              -17.073143364936
+            ],
+            [
+              145.77761419029,
+              -17.0723827909931
+            ],
+            [
+              145.780189723915,
+              -17.0720089905298
+            ],
+            [
+              145.780294605526,
+              -17.072005171546
+            ],
+            [
+              145.781023473675,
+              -17.0720572083289
+            ],
+            [
+              145.78113334725,
+              -17.072077919659
+            ],
+            [
+              145.783666291825,
+              -17.0728662858528
+            ],
+            [
+              145.783900269771,
+              -17.0730286754237
+            ],
+            [
+              145.784960331634,
+              -17.0744164804244
+            ],
+            [
+              145.785018470374,
+              -17.074517513846
+            ],
+            [
+              145.787685409369,
+              -17.0809886688507
+            ],
+            [
+              145.787544310527,
+              -17.0815063624191
+            ],
+            [
+              145.786988467367,
+              -17.0815314632218
+            ],
+            [
+              145.783605213442,
+              -17.0793675981592
+            ],
+            [
+              145.783527270124,
+              -17.0793050855107
+            ],
+            [
+              145.777346178119,
+              -17.073143364936
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-13T02:01:03Z",
+        "snapshot_aest": "2026-07-13T12:01:03+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902625",
+        "outage_id": "902625",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 11,
+        "affected_customers_known": true,
+        "suburb": "GORDONVALE",
+        "street_name": "DEXTER RD, HIGHLEIGH RD",
+        "start_utc": "2026-07-13T01:30:00Z",
+        "etr_utc": null,
+        "centroid_lon": 145.78287428075294,
+        "centroid_lat": -17.075973402807538,
+        "lga_name": "Cairns Regional",
+        "lga_code": "2080",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
