@@ -677,6 +677,135 @@
     .wall-data-warning.visible { display:block; }
     .wall-empty { height:100%; display:flex; align-items:center; justify-content:center; color:var(--wall-muted); font-size:clamp(28px,2.2vw,54px); font-weight:800; text-align:center; }
 
+
+    /* Operations-centre presentation enhancements */
+    .wall-stage::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:linear-gradient(180deg, transparent 0%, rgba(217,44,50,.022) 48%, rgba(217,44,50,.075) 50%, rgba(217,44,50,.022) 52%, transparent 100%);
+      background-size:100% 28vh;
+      animation:wallScan 14s linear infinite;
+      z-index:0;
+    }
+    .wall-stage > * { position:relative; z-index:1; }
+    @keyframes wallScan { from { background-position:0 -28vh; } to { background-position:0 100vh; } }
+    .wall-scene::before {
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      height:.42vh;
+      width:0;
+      background:var(--wall-red);
+      animation:wallScopeSweep .9s .05s cubic-bezier(.2,.75,.25,1) forwards;
+    }
+    .wall-scene[data-scene="since0900"]::before,
+    .wall-scene[data-scene="rolling24"]::before { background:var(--wall-blue); }
+    @keyframes wallScopeSweep { to { width:100%; } }
+    .wall-scene-heading { position:relative; }
+    .wall-briefing {
+      max-width:45vw !important;
+      margin:0 0 .2vh !important;
+      padding:1.05vh 1.1vw 1.05vh 1.25vw;
+      border-left:.28vw solid var(--wall-red);
+      background:rgba(255,255,255,.76);
+      box-shadow:0 3px 12px rgba(0,0,0,.055);
+      text-align:left !important;
+      animation:wallBriefIn .62s .2s both ease-out;
+    }
+    .wall-briefing span { display:block; color:var(--wall-red-dark); font-size:clamp(10px,.66vw,16px); letter-spacing:.11em; text-transform:uppercase; font-weight:900; }
+    .wall-briefing strong { display:block; margin-top:.45vh; color:var(--wall-text); font-size:clamp(16px,1.1vw,27px); line-height:1.25; font-weight:850; }
+    .wall-scope.history + h1 ~ .wall-briefing { border-left-color:var(--wall-blue); }
+    @keyframes wallBriefIn { from { opacity:0; transform:translateY(-10px); } to { opacity:1; transform:translateY(0); } }
+
+    .wall-lga-feature {
+      fill:var(--lga-fill,#f3f4f5);
+      fill-rule:evenodd;
+      stroke:#aeb4ba;
+      stroke-width:1.05;
+      vector-effect:non-scaling-stroke;
+      stroke-linejoin:round;
+      opacity:0;
+      animation:wallLgaReveal .55s forwards ease-out;
+      transition:fill .7s ease, stroke .7s ease;
+    }
+    .wall-lga-feature.affected { stroke:#d27a7e; stroke-width:1.55; }
+    .wall-lga-feature.top-impact { stroke:#a71920; stroke-width:3.1; animation:wallLgaReveal .55s forwards ease-out, wallTopLga 2.8s 2.1s infinite ease-in-out; }
+    .wall-state-outline { fill:none; stroke:#6f767d; stroke-width:3.2; vector-effect:non-scaling-stroke; stroke-linejoin:round; opacity:0; stroke-dasharray:1; stroke-dashoffset:1; animation:wallOutlineDraw 1.25s .08s forwards ease-out; }
+    @keyframes wallOutlineDraw { to { opacity:1; stroke-dashoffset:0; } }
+    @keyframes wallLgaReveal { from { opacity:0; fill:#f8f8f8; } to { opacity:1; } }
+    @keyframes wallTopLga { 0%,100% { filter:none; } 50% { filter:drop-shadow(0 0 8px rgba(217,44,50,.34)); } }
+    .wall-map-marker, .wall-map-ring { animation-delay:1.6s !important; }
+    .wall-map-leader { stroke:#3a3f44; stroke-width:1.4; vector-effect:non-scaling-stroke; opacity:0; animation:wallLeaderIn .45s 2s forwards ease-out; }
+    @keyframes wallLeaderIn { to { opacity:.72; } }
+    .wall-map-legend {
+      position:absolute;
+      left:1.4vw;
+      bottom:1.5vh;
+      display:flex;
+      align-items:center;
+      gap:.7vw;
+      padding:.65vh .75vw;
+      background:rgba(255,255,255,.92);
+      border:1px solid #c8ccd0;
+      box-shadow:0 3px 10px rgba(0,0,0,.08);
+      color:var(--wall-muted);
+      font-size:clamp(10px,.68vw,16px);
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.05em;
+    }
+    .wall-map-legend-bar { width:8vw; min-width:100px; height:1.15vh; min-height:9px; background:linear-gradient(90deg,#f7e5e6,#ed9da1,#d92c32,#9f171d); border:1px solid #c77b7f; }
+
+    .wall-chart-area { opacity:0; animation:wallAreaIn .8s .85s forwards ease-out; }
+    @keyframes wallAreaIn { to { opacity:1; } }
+    .wall-chart-guide { stroke:#757b81; stroke-width:1.6; stroke-dasharray:8 8; vector-effect:non-scaling-stroke; opacity:0; animation:wallGuideIn .45s 1.55s forwards ease-out; }
+    .wall-chart-delta-line { stroke:var(--wall-red-dark); stroke-width:4; vector-effect:non-scaling-stroke; opacity:0; animation:wallGuideIn .5s 1.7s forwards ease-out; }
+    .wall-chart-point-label { fill:var(--wall-text); font-size:22px; font-weight:900; paint-order:stroke; stroke:#fff; stroke-width:6; stroke-linejoin:round; opacity:0; animation:wallGuideIn .45s 1.75s forwards ease-out; }
+    .wall-chart-delta-label { fill:var(--wall-red-dark); font-size:23px; font-weight:900; paint-order:stroke; stroke:#fff; stroke-width:7; stroke-linejoin:round; opacity:0; animation:wallGuideIn .45s 1.85s forwards ease-out; }
+    @keyframes wallGuideIn { to { opacity:1; } }
+
+    .wall-gauge-wrap { display:flex; align-items:center; justify-content:center; min-height:0; }
+    .wall-gauge {
+      --gauge-angle:0deg;
+      width:min(27vw,39vh);
+      aspect-ratio:1;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:conic-gradient(var(--wall-red) 0 var(--gauge-angle), #e4e6e8 var(--gauge-angle) 360deg);
+      box-shadow:0 8px 22px rgba(0,0,0,.12);
+      position:relative;
+    }
+    .wall-gauge::before { content:""; position:absolute; inset:10%; border-radius:50%; background:#fff; border:1px solid #d5d7d9; }
+    .wall-gauge-content { position:relative; z-index:1; text-align:center; }
+    .wall-gauge-content strong { display:inline-block; font-size:clamp(85px,8.4vw,205px); line-height:.78; font-weight:900; letter-spacing:-.075em; }
+    .wall-gauge-content em { font-style:normal; font-size:clamp(35px,3vw,72px); font-weight:900; }
+    .wall-gauge-content span { display:block; max-width:18vw; margin:1.5vh auto 0; font-size:clamp(17px,1.25vw,30px); line-height:1.08; font-weight:850; }
+
+    .wall-digit-reel { display:inline-block; width:.61em; height:1em; overflow:hidden; vertical-align:-.08em; }
+    .wall-digit-strip { display:block; transform:translateY(0); transition:transform 1.05s cubic-bezier(.16,.82,.28,1); }
+    .wall-digit-strip > span { display:block; height:1em; line-height:1em; text-align:center; }
+    .wall-digit-separator { display:inline-block; width:.30em; text-align:center; }
+
+    .wall-scene-dots { gap:.34vw; }
+    .wall-scene-dot { position:relative; width:3.7vw; min-width:42px; height:.62vh; min-height:5px; border:0; background:#5b6168; overflow:hidden; }
+    .wall-scene-dot i { display:block; width:0; height:100%; background:var(--wall-red); }
+    .wall-scene-dot.complete i { width:100%; background:#c1c5c9; }
+    .wall-scene-dot.active { width:3.7vw; background:#777d84; }
+    .wall-scene-dot.active i { background:var(--wall-red); }
+
+    .wall-reset-scene {
+      height:100%; display:grid; place-items:center; text-align:center; overflow:hidden;
+      background:linear-gradient(120deg,#fff 0 45%,#f4f4f4 45% 100%);
+    }
+    .wall-reset-mark { width:1.1vw; min-width:15px; height:13vh; margin:0 auto 2.3vh; background:var(--wall-red); box-shadow:.42vw 0 0 var(--wall-dark); animation:wallResetMark .7s both ease-out; }
+    .wall-reset-scene h1 { margin:0; font-size:clamp(52px,5vw,120px); letter-spacing:-.055em; line-height:.92; }
+    .wall-reset-scene p { margin:1.8vh 0 0; color:var(--wall-muted); font-size:clamp(18px,1.35vw,32px); font-weight:850; letter-spacing:.12em; text-transform:uppercase; }
+    @keyframes wallResetMark { from { opacity:0; transform:scaleY(.1); } to { opacity:1; transform:scaleY(1); } }
+
     @media (max-aspect-ratio: 4/3) {
       .wall-hero-grid, .wall-map-grid { grid-template-columns:1fr; }
       .wall-stat-stack { grid-template-columns:repeat(3,1fr); grid-template-rows:1fr; }
@@ -1000,10 +1129,11 @@
       { id: "map", title: "Geographic impact", scope: "Live now", scopeType: "live", duration: 20 * 1000 },
       { id: "largest", title: "Largest active outages", scope: "Live now", scopeType: "live", duration: 18 * 1000 },
       { id: "providers", title: "Impact by electricity provider", scope: "Live now", scopeType: "live", duration: 16 * 1000 },
-      { id: "restoration", title: "Restoration estimate coverage", scope: "Live now", scopeType: "live", duration: 16 * 1000 },
+      { id: "restoration", title: "Restoration estimate coverage", scope: "Live now", scopeType: "live", duration: 17 * 1000 },
       { id: "causes", title: "Provider-reported outage causes", scope: "Live now", scopeType: "live", duration: 16 * 1000 },
       { id: "since0900", title: "Customer impact since 0900 AEST", scope: "Since 0900 AEST", scopeType: "history", duration: 22 * 1000 },
-      { id: "rolling24", title: "Customer impact over the rolling 24 hours", scope: "Rolling 24 hours", scopeType: "history", duration: 22 * 1000 }
+      { id: "rolling24", title: "Customer impact over the rolling 24 hours", scope: "Rolling 24 hours", scopeType: "history", duration: 22 * 1000 },
+      { id: "reset", title: "Returning to current situation", scope: "Situation display", scopeType: "transition", duration: 3 * 1000 }
     ];
 
     const state = {
@@ -1011,6 +1141,7 @@
       qldBoundaries: {
         status: "idle",
         rings: [],
+        features: [],
         bounds: null,
         error: "",
         promise: null,
@@ -1178,14 +1309,27 @@
       return simplified;
     }
 
+    function lgaMatchKey(value) {
+      return String(value || "")
+        .toLowerCase()
+        .replace(/&/g, " and ")
+        .replace(/\b(city|shire|regional|aboriginal shire|island)\s+of\s+/g, "")
+        .replace(/\b(city|shire|regional|aboriginal shire|island)?\s*council\b/g, "")
+        .replace(/\blocal government area\b|\blga\b/g, "")
+        .replace(/\b(city|shire|region)\b$/g, "")
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim();
+    }
+
     function parseQldLgaKml(kmlText) {
       const xml = new DOMParser().parseFromString(kmlText, "application/xml");
       if (xml.getElementsByTagName("parsererror").length) throw new Error("The LGA KML could not be parsed.");
-      const polygons = [...xml.getElementsByTagNameNS("*", "Polygon")];
+      const placemarks = [...xml.getElementsByTagNameNS("*", "Placemark")];
       const rings = [];
+      const features = [];
       let minLon = Infinity, maxLon = -Infinity, minLat = Infinity, maxLat = -Infinity;
 
-      polygons.forEach((polygon) => {
+      const addPolygonRings = (polygon, featureRings) => {
         const ringNodes = [...polygon.getElementsByTagNameNS("*", "LinearRing")];
         ringNodes.forEach((ringNode) => {
           const coordinateNode = ringNode.getElementsByTagNameNS("*", "coordinates")[0];
@@ -1195,17 +1339,35 @@
             return [Number(parts[0]), Number(parts[1])];
           }).filter((p) => Number.isFinite(p[0]) && Number.isFinite(p[1]));
           if (points.length < 4) return;
-          const simplified = simplifyRing(points);
+          const simplified = simplifyRing(points, 0.0045);
           simplified.forEach(([lon, lat]) => {
             minLon = Math.min(minLon, lon); maxLon = Math.max(maxLon, lon);
             minLat = Math.min(minLat, lat); maxLat = Math.max(maxLat, lat);
           });
           rings.push(simplified);
+          featureRings.push(simplified);
         });
+      };
+
+      placemarks.forEach((placemark, index) => {
+        const nameNode = [...placemark.children].find((node) => node.localName === "name") || placemark.getElementsByTagNameNS("*", "name")[0];
+        const name = (nameNode?.textContent || `LGA ${index + 1}`).trim();
+        const featureRings = [];
+        [...placemark.getElementsByTagNameNS("*", "Polygon")].forEach((polygon) => addPolygonRings(polygon, featureRings));
+        if (featureRings.length) features.push({ name, key: lgaMatchKey(name), rings: featureRings });
       });
 
+      // Some KMZ exports omit Placemark wrappers. Retain a safe parser for that structure.
+      if (!features.length) {
+        [...xml.getElementsByTagNameNS("*", "Polygon")].forEach((polygon, index) => {
+          const featureRings = [];
+          addPolygonRings(polygon, featureRings);
+          if (featureRings.length) features.push({ name: `LGA ${index + 1}`, key: `lga-${index + 1}`, rings: featureRings });
+        });
+      }
+
       if (!rings.length || !Number.isFinite(minLon)) throw new Error("No polygon boundaries were found in the LGA KML.");
-      return { rings, bounds: { minLon, maxLon, minLat, maxLat } };
+      return { rings, features, bounds: { minLon, maxLon, minLat, maxLat } };
     }
 
     async function loadQldLgaBoundaries() {
@@ -1217,6 +1379,7 @@
           const kml = await extractKmlFromKmz(kmz);
           const parsed = parseQldLgaKml(kml);
           state.qldBoundaries.rings = parsed.rings;
+          state.qldBoundaries.features = parsed.features || [];
           state.qldBoundaries.bounds = parsed.bounds;
           state.qldBoundaries.renderCache = null;
           state.qldBoundaries.status = "ready";
@@ -2345,15 +2508,77 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
 
     function wallScene() { return WALL_SCENES[state.wall.sceneIndex] || WALL_SCENES[0]; }
 
+    function buildWallBriefing(sceneId) {
+      const d = state.data;
+      if (!d) return "";
+      const total = d.currentSummary.latestCustomerSum;
+      const top = d.topLgas[0];
+      const topThree = d.topLgas.slice(0, 3).reduce((sum, row) => sum + row.currentCustomers, 0);
+      const topThreeShare = total ? topThree / total : 0;
+      const provider = d.topProviders[0];
+      const largest = d.currentIncidents[0];
+      const supplied = d.etrRows.find((r) => r.key === "knownFuture") || { incidents: 0 };
+      const coverage = d.currentSummary.incidents ? supplied.incidents / d.currentSummary.incidents : 0;
+      const leadingCause = d.reasonRows[0];
+
+      if (!total && ["summary", "map", "largest", "providers", "restoration", "causes"].includes(sceneId)) {
+        return "No customers are currently reported without power in the latest provider snapshot.";
+      }
+      switch (sceneId) {
+        case "summary":
+          return top && top.share >= .70
+            ? `${top.name} accounts for ${fmtPct.format(top.share)} of customers currently affected statewide.`
+            : `${fmtInt.format(total)} customers are currently affected across ${fmtInt.format(d.currentSummary.lgaCount)} LGA${plural(d.currentSummary.lgaCount)}.`;
+        case "map":
+          if (d.currentSummary.lgaCount === 1 && top) return `All current customer impact is concentrated in ${top.name}.`;
+          if (topThreeShare >= .70) return `The three most affected LGAs account for ${fmtPct.format(topThreeShare)} of current statewide customer impact.`;
+          return `Current customer impact is distributed across ${fmtInt.format(d.currentSummary.lgaCount)} LGAs.`;
+        case "largest":
+          return largest && total
+            ? `The largest active outage accounts for ${fmtPct1.format(largest.latestCustomers / total)} of customers currently affected.`
+            : "No active outage records are available in the latest snapshot.";
+        case "providers":
+          return provider
+            ? `${provider.name} currently carries the largest provider share at ${fmtPct1.format(provider.share)} of statewide impact.`
+            : "No provider currently has reported customer impact.";
+        case "restoration":
+          return coverage >= .75
+            ? `${fmtPct.format(coverage)} of active outages currently include a future restoration estimate.`
+            : `Only ${fmtPct.format(coverage)} of active outages currently include a future restoration estimate.`;
+        case "causes":
+          return leadingCause && total
+            ? `${leadingCause.reason} is the leading provider-reported cause, affecting ${fmtPct1.format(leadingCause.customers / total)} of customers currently without power.`
+            : "Provider-reported cause information is limited in the current snapshot.";
+        case "since0900": {
+          const peak = d.peakToday;
+          const current = d.currentPoint;
+          const down = Math.max(0, peak.customers - current.customers);
+          return down
+            ? `Current customer impact is ${fmtPct1.format(down / Math.max(1, peak.customers))} below the highest point recorded since 0900 AEST.`
+            : "Current customer impact is at the highest point recorded since 0900 AEST.";
+        }
+        case "rolling24": {
+          const peak = d.peak24;
+          const current = d.trend24.length ? d.trend24[d.trend24.length - 1] : { customers: 0 };
+          const down = Math.max(0, peak.customers - current.customers);
+          return down
+            ? `Current customer impact is ${fmtPct1.format(down / Math.max(1, peak.customers))} below the rolling 24-hour peak.`
+            : "Current customer impact is at the rolling 24-hour peak.";
+        }
+        default: return "";
+      }
+    }
+
     function wallSceneShell(scene, subtitle, body) {
-      const historyClass = scene.scopeType === "history" ? " history" : "";
+      const scopeClass = scene.scopeType === "history" ? " history" : scene.scopeType === "transition" ? " transition" : "";
+      const briefing = buildWallBriefing(scene.id) || subtitle;
       return `<section class="wall-scene" data-scene="${escapeHtml(scene.id)}">
         <header class="wall-scene-heading">
           <div class="wall-scope-block">
-            <span class="wall-scope${historyClass}">${escapeHtml(scene.scope)}</span>
+            <span class="wall-scope${scopeClass}">${escapeHtml(scene.scope)}</span>
             <h1>${escapeHtml(scene.title)}</h1>
           </div>
-          <p>${escapeHtml(subtitle)}</p>
+          <p class="wall-briefing"><span>Situation insight</span><strong>${escapeHtml(briefing)}</strong></p>
         </header>
         <div class="wall-scene-body">${body}</div>
       </section>`;
@@ -2395,6 +2620,7 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
         case "causes": return renderWallCausesScene(scene);
         case "since0900": return renderWallTrendScene(scene, state.data.trendSince, "Recorded customer impact from 0900 AEST to the latest available snapshot.");
         case "rolling24": return renderWallTrendScene(scene, state.data.trend24, "Recorded customer impact across the latest rolling 24-hour period.");
+        case "reset": return renderWallResetScene(scene);
         default: return wallSceneShell(scene, "", `<div class="wall-empty">No scene content available.</div>`);
       }
     }
@@ -2448,10 +2674,6 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
         const clampedLat = Math.max(-85, Math.min(85, lat));
         return Math.log(Math.tan(Math.PI / 4 + toRadians(clampedLat) / 2));
       };
-
-      // X and Y must use the same angular units. The previous version compared
-      // longitude degrees with Mercator Y radians, which compressed Queensland
-      // vertically into a narrow strip.
       const minX = mercatorX(boundary.bounds.minLon);
       const maxX = mercatorX(boundary.bounds.maxLon);
       const northY = mercatorY(boundary.bounds.maxLat);
@@ -2469,13 +2691,14 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
         offsetX + (mercatorX(lon) - minX) * scale,
         offsetY + (northY - mercatorY(lat)) * scale
       ];
-
-      const path = boundary.rings.map((ring) => ring.map(([lon, lat], i) => {
+      const pathForRings = (rings) => rings.map((ring) => ring.map(([lon, lat], i) => {
         const [x, y] = project(lon, lat);
         return `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`;
       }).join(" ") + " Z").join(" ");
 
-      boundary.renderCache = { w, h, path, project };
+      const path = pathForRings(boundary.rings);
+      const features = (boundary.features || []).map((feature) => ({ ...feature, path: pathForRings(feature.rings) }));
+      boundary.renderCache = { w, h, path, features, project };
       return boundary.renderCache;
     }
 
@@ -2489,30 +2712,57 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
       if (boundary.status === "error") {
         return `<div class="wall-map-loading"><div><strong>Queensland map unavailable</strong><span>The authoritative LGA boundary file could not be read. ${escapeHtml(boundary.error)}</span></div></div>`;
       }
-
       const geometry = buildWallQldBoundaryGeometry(w, h);
       if (!geometry) return `<div class="wall-map-loading"><div><strong>Queensland map unavailable</strong><span>No valid LGA polygon geometry was found.</span></div></div>`;
 
-      const valid = points.filter((p) => isFiniteNumber(p.lon) && isFiniteNumber(p.lat)).slice(0, 18);
-      const max = Math.max(1, ...valid.map((p) => p.customers));
-      const topNames = new Set(valid.slice(0, 7).map((p) => p.name));
-      const markers = valid.map((p, idx) => {
-        const [x, y] = geometry.project(p.lon, p.lat);
-        const r = 10 + Math.sqrt(p.customers / max) * 27;
-        const placeRight = x < w * 0.70;
-        const textX = placeRight ? x + r + 10 : x - r - 10;
-        const textAnchor = placeRight ? "start" : "end";
-        const label = topNames.has(p.name)
-          ? `<text class="wall-map-label" x="${textX}" y="${y - 4}" text-anchor="${textAnchor}">${escapeHtml(p.name)}</text><text class="wall-map-value" x="${textX}" y="${y + 20}" text-anchor="${textAnchor}">${fmtInt.format(p.customers)} customers</text>`
-          : "";
-        return `<g style="animation-delay:${idx * 85}ms"><circle class="wall-map-ring" cx="${x}" cy="${y}" r="${r}" style="animation-delay:${idx * 100}ms"></circle><circle class="wall-map-marker" cx="${x}" cy="${y}" r="${r}" style="animation-delay:${idx * 85}ms"><title>${escapeHtml(p.name)}: ${fmtInt.format(p.customers)} customers</title></circle>${label}</g>`;
+      const impactRows = new Map(state.data.topLgas.map((row) => [lgaMatchKey(row.name), row]));
+      const maxLga = Math.max(1, ...state.data.topLgas.map((row) => row.currentCustomers));
+      const topKey = state.data.topLgas[0] ? lgaMatchKey(state.data.topLgas[0].name) : "";
+      const featurePaths = geometry.features.map((feature, idx) => {
+        const impact = impactRows.get(feature.key);
+        const strength = impact ? Math.sqrt(impact.currentCustomers / maxLga) : 0;
+        const alpha = impact ? 0.18 + strength * 0.72 : 1;
+        const fill = impact ? `rgba(217,44,50,${alpha.toFixed(3)})` : "#f3f4f5";
+        const classes = `wall-lga-feature${impact ? " affected" : ""}${feature.key === topKey ? " top-impact" : ""}`;
+        const title = impact ? `${feature.name}: ${fmtInt.format(impact.currentCustomers)} customers affected` : feature.name;
+        return `<path class="${classes}" d="${feature.path}" style="--lga-fill:${fill};animation-delay:${Math.min(1.15, .18 + idx * .018).toFixed(2)}s"><title>${escapeHtml(title)}</title></path>`;
       }).join("");
 
-      return `<svg class="wall-map-svg" viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Authoritative Queensland local government area map showing current outage impact">
+      const valid = points.filter((p) => isFiniteNumber(p.lon) && isFiniteNumber(p.lat)).slice(0, 18);
+      const max = Math.max(1, ...valid.map((p) => p.customers));
+      const topNames = new Set(valid.slice(0, 4).map((p) => p.name));
+      const markers = valid.map((p, idx) => {
+        const [x, y] = geometry.project(p.lon, p.lat);
+        const r = 9 + Math.sqrt(p.customers / max) * 24;
+        const placeRight = x < w * 0.68;
+        const textX = placeRight ? x + r + 28 : x - r - 28;
+        const lineX = placeRight ? textX - 8 : textX + 8;
+        const textAnchor = placeRight ? "start" : "end";
+        const label = topNames.has(p.name)
+          ? `<line class="wall-map-leader" x1="${x + (placeRight ? r : -r)}" y1="${y}" x2="${lineX}" y2="${y}"></line><text class="wall-map-label" x="${textX}" y="${y - 4}" text-anchor="${textAnchor}">${escapeHtml(p.name)}</text><text class="wall-map-value" x="${textX}" y="${y + 20}" text-anchor="${textAnchor}">${fmtInt.format(p.customers)} customers</text>`
+          : "";
+        return `<g><circle class="wall-map-ring" cx="${x}" cy="${y}" r="${r}"></circle><circle class="wall-map-marker" cx="${x}" cy="${y}" r="${r}"><title>${escapeHtml(p.name)}: ${fmtInt.format(p.customers)} customers</title></circle>${label}</g>`;
+      }).join("");
+
+      let camera = "";
+      if (valid.length) {
+        const [cx, cy] = geometry.project(valid[0].lon, valid[0].lat);
+        const factor = valid.length === 1 ? .70 : valid.length <= 3 ? .80 : .90;
+        if (factor < 1) {
+          const zoomW = w * factor, zoomH = h * factor;
+          const zx = clamp(cx - zoomW / 2, 0, w - zoomW);
+          const zy = clamp(cy - zoomH / 2, 0, h - zoomH);
+          camera = `<animate attributeName="viewBox" begin="8s" dur="4.2s" fill="freeze" calcMode="spline" keySplines=".2 .75 .25 1" values="0 0 ${w} ${h};${zx.toFixed(1)} ${zy.toFixed(1)} ${zoomW.toFixed(1)} ${zoomH.toFixed(1)}"></animate>`;
+        }
+      }
+
+      return `<svg class="wall-map-svg" viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Authoritative Queensland local government area impact map">
+        ${camera}
         <path class="wall-lga-land-shadow" d="${geometry.path}"></path>
-        <path class="wall-lga-land" d="${geometry.path}"></path>
+        ${featurePaths}
+        <path class="wall-state-outline" pathLength="1" d="${geometry.path}"></path>
         ${markers}
-      </svg>`;
+      </svg><div class="wall-map-legend"><span>Lower impact</span><i class="wall-map-legend-bar"></i><span>Higher impact</span></div>`;
     }
 
     function renderWallLargestScene(scene) {
@@ -2551,7 +2801,9 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
       const missing = d.etrRows.find((r) => r.key === "missing") || { incidents:0, customers:0 };
       const coverage = supplied.incidents / total;
       const body = `<article class="wall-focus-panel">
-        <div class="wall-focus-number"><strong data-count="${Math.round(coverage * 100)}">0</strong><span>% of active outages have a future restoration estimate</span><small>Calculated from active outage records in the latest snapshot.</small></div>
+        <div class="wall-gauge-wrap" style="border-left:.7vw solid var(--wall-red);border-right:1px solid var(--wall-line);">
+          <div class="wall-gauge" style="--gauge-angle:${(coverage * 360).toFixed(1)}deg"><div class="wall-gauge-content"><div><strong data-count="${Math.round(coverage * 100)}">0</strong><em>%</em></div><span>with a future restoration estimate</span></div></div>
+        </div>
         <div class="wall-focus-breakdown">
           <div class="wall-focus-row"><div><strong>Future estimate supplied</strong><span>Estimated restoration time is later than the latest snapshot</span></div><b>${fmtInt.format(supplied.incidents)}</b></div>
           <div class="wall-focus-row"><div><strong>Estimate time has passed</strong><span>The supplied estimate is earlier than the latest snapshot</span></div><b>${fmtInt.format(overdue.incidents)}</b></div>
@@ -2604,8 +2856,21 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
       const area = `${line} L${x(series[series.length-1].snapshotUtcMs)},${top+plotH} L${x(series[0].snapshotUtcMs)},${top+plotH} Z`;
       const peak = getPeakPoint(series, "customers");
       const latest = series[series.length-1];
+      const peakX = x(peak.snapshotUtcMs), peakY = y(peak.customers);
+      const nowX = x(latest.snapshotUtcMs), nowY = y(latest.customers);
+      const reduction = Math.max(0, peak.customers - latest.customers);
+      const bracketX = Math.min(w - right - 38, Math.max(peakX, nowX) + 72);
       const xTicks = buildAxisTicks(minX, maxX, 6);
       const yTicks = [0,.25,.5,.75,1];
+      const delta = reduction && Math.abs(nowY - peakY) > 22 ? `<g>
+        <line class="wall-chart-guide" x1="${peakX}" x2="${bracketX}" y1="${peakY}" y2="${peakY}"></line>
+        <line class="wall-chart-guide" x1="${nowX}" x2="${bracketX}" y1="${nowY}" y2="${nowY}"></line>
+        <line class="wall-chart-delta-line" x1="${bracketX}" x2="${bracketX}" y1="${peakY}" y2="${nowY}"></line>
+        <line class="wall-chart-delta-line" x1="${bracketX-13}" x2="${bracketX+13}" y1="${peakY}" y2="${peakY}"></line>
+        <line class="wall-chart-delta-line" x1="${bracketX-13}" x2="${bracketX+13}" y1="${nowY}" y2="${nowY}"></line>
+        <text class="wall-chart-delta-label" x="${bracketX-18}" y="${(peakY+nowY)/2-7}" text-anchor="end">DOWN ${fmtInt.format(reduction)}</text>
+        <text class="wall-chart-delta-label" x="${bracketX-18}" y="${(peakY+nowY)/2+22}" text-anchor="end">${fmtPct1.format(reduction / Math.max(1, peak.customers))} FROM PEAK</text>
+      </g>` : "";
       return `<svg class="wall-chart-svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Recorded customers affected over time">
         ${yTicks.map((t) => { const yy = top + plotH - t * plotH; return `<line class="wall-chart-grid" x1="${left}" x2="${w-right}" y1="${yy}" y2="${yy}"></line><text class="wall-chart-label" x="${left-18}" y="${yy+8}" text-anchor="end">${fmtInt.format(maxY*t)}</text>`; }).join("")}
         <line class="wall-chart-axis" x1="${left}" x2="${w-right}" y1="${top+plotH}" y2="${top+plotH}"></line>
@@ -2613,9 +2878,16 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
         ${xTicks.map((ms) => `<text class="wall-chart-label" x="${x(ms)}" y="${h-22}" text-anchor="middle">${escapeHtml(formatAestTime(ms))}</text>`).join("")}
         <path class="wall-chart-area" d="${area}"></path>
         <path class="wall-chart-line" pathLength="1" d="${line}"></path>
-        <circle class="wall-chart-peak" cx="${x(peak.snapshotUtcMs)}" cy="${y(peak.customers)}" r="12"><title>Highest recorded point</title></circle>
-        <circle class="wall-chart-now" cx="${x(latest.snapshotUtcMs)}" cy="${y(latest.customers)}" r="12"><title>Latest recorded point</title></circle>
+        ${delta}
+        <circle class="wall-chart-peak" cx="${peakX}" cy="${peakY}" r="12"><title>Highest recorded point</title></circle>
+        <text class="wall-chart-point-label" x="${peakX}" y="${Math.max(24,peakY-25)}" text-anchor="middle">PERIOD PEAK</text>
+        <circle class="wall-chart-now" cx="${nowX}" cy="${nowY}" r="12"><title>Latest recorded point</title></circle>
+        <text class="wall-chart-point-label" x="${nowX}" y="${Math.min(h-bottom-12,nowY+36)}" text-anchor="middle">NOW</text>
       </svg>`;
+    }
+
+    function renderWallResetScene(scene) {
+      return `<section class="wall-reset-scene" data-scene="reset"><div><div class="wall-reset-mark"></div><h1>Queensland Unplanned<br>Power Outages</h1><p>Returning to current situation</p></div></section>`;
     }
 
     function animateWallElements() {
@@ -2624,18 +2896,27 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
     }
 
     function animateWallNumber(el) {
-      const target = Number(el.dataset.count || 0);
+      const target = Math.max(0, Math.round(Number(el.dataset.count || 0)));
       if (!Number.isFinite(target)) { el.textContent = el.dataset.count || "0"; return; }
-      const duration = 900;
-      const start = performance.now();
-      const step = (now) => {
-        if (!state.wall.active || !el.isConnected) return;
-        const p = Math.min(1, (now - start) / duration);
-        const eased = 1 - Math.pow(1 - p, 3);
-        el.textContent = fmtInt.format(Math.round(target * eased));
-        if (p < 1) requestAnimationFrame(step);
-      };
-      requestAnimationFrame(step);
+      const formatted = fmtInt.format(target);
+      if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
+        el.textContent = formatted;
+        return;
+      }
+      const chars = [...formatted];
+      const digitCount = chars.filter((char) => /\d/.test(char)).length;
+      let digitIndex = 0;
+      el.setAttribute("aria-label", formatted);
+      el.innerHTML = chars.map((char) => {
+        if (!/\d/.test(char)) return `<span class="wall-digit-separator">${escapeHtml(char)}</span>`;
+        const value = Number(char);
+        const delay = Math.max(0, (digitCount - digitIndex - 1) * 55);
+        digitIndex += 1;
+        return `<span class="wall-digit-reel"><span class="wall-digit-strip" data-digit="${value}" style="transition-delay:${delay}ms">${[0,1,2,3,4,5,6,7,8,9].map((n) => `<span>${n}</span>`).join("")}</span></span>`;
+      }).join("");
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        el.querySelectorAll(".wall-digit-strip").forEach((strip) => { strip.style.transform = `translateY(-${strip.dataset.digit}em)`; });
+      }));
     }
 
     function startWallSceneTimer(duration) {
@@ -2689,7 +2970,7 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
       const scene = wallScene();
       $("wallUpdatedTime").textContent = formatAest(d.latestMs, true);
       $("wallFooterScope").textContent = `${scene.scope} · ${scene.title}`;
-      $("wallSceneDots").innerHTML = WALL_SCENES.map((_, idx) => `<span class="wall-scene-dot${idx === state.wall.sceneIndex ? " active" : ""}"></span>`).join("");
+      $("wallSceneDots").innerHTML = WALL_SCENES.map((item, idx) => `<span class="wall-scene-dot${idx < state.wall.sceneIndex ? " complete" : ""}${idx === state.wall.sceneIndex ? " active" : ""}" title="${escapeHtml(item.title)}"><i></i></span>`).join("");
       updateWallHealthIndicator();
     }
 
@@ -2702,7 +2983,10 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
       $("wallSceneCountdown").textContent = state.wall.playing ? `Next scene ${formatCountdown(remaining)}` : `Paused ${formatCountdown(remaining)}`;
       const elapsed = Math.max(0, state.wall.durationMs - remaining);
       const progress = state.wall.durationMs ? clamp(elapsed / state.wall.durationMs, 0, 1) : 0;
-      $("wallProgress").style.width = `${progress * 100}%`;
+      const activeSegment = $("wallSceneDots")?.querySelector(".wall-scene-dot.active i");
+      if (activeSegment) activeSegment.style.width = `${progress * 100}%`;
+      const overall = (state.wall.sceneIndex + progress) / WALL_SCENES.length;
+      $("wallProgress").style.width = `${overall * 100}%`;
     }
 
     function getWallHealthIssue() {
