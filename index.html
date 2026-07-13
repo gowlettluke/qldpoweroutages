@@ -780,10 +780,11 @@
       position:relative;
     }
     .wall-gauge::before { content:""; position:absolute; inset:10%; border-radius:50%; background:#fff; border:1px solid #d5d7d9; }
-    .wall-gauge-content { position:relative; z-index:1; text-align:center; }
-    .wall-gauge-content strong { display:inline-block; font-size:clamp(85px,8.4vw,205px); line-height:.78; font-weight:900; letter-spacing:-.075em; }
-    .wall-gauge-content em { font-style:normal; font-size:clamp(35px,3vw,72px); font-weight:900; }
-    .wall-gauge-content span { display:block; max-width:18vw; margin:1.5vh auto 0; font-size:clamp(17px,1.25vw,30px); line-height:1.08; font-weight:850; }
+    .wall-gauge-content { position:relative; z-index:1; text-align:center; width:78%; }
+    .wall-gauge-value { display:flex; align-items:flex-end; justify-content:center; gap:.08em; white-space:nowrap; line-height:1; }
+    .wall-gauge-value strong { display:block; font-size:clamp(85px,8.4vw,205px); line-height:.82; font-weight:900; letter-spacing:-.075em; font-variant-numeric:tabular-nums; }
+    .wall-gauge-value em { display:block; padding-bottom:.08em; font-style:normal; font-size:clamp(35px,3vw,72px); line-height:1; font-weight:900; }
+    .wall-gauge-content > span { display:block; max-width:18vw; margin:1.5vh auto 0; font-size:clamp(17px,1.25vw,30px); line-height:1.08; font-weight:850; }
 
     .wall-digit-reel { display:inline-block; width:.61em; height:1em; overflow:hidden; vertical-align:-.08em; }
     .wall-digit-strip { display:block; transform:translateY(0); transition:transform 1.05s cubic-bezier(.16,.82,.28,1); }
@@ -2802,7 +2803,7 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
       const coverage = supplied.incidents / total;
       const body = `<article class="wall-focus-panel">
         <div class="wall-gauge-wrap" style="border-left:.7vw solid var(--wall-red);border-right:1px solid var(--wall-line);">
-          <div class="wall-gauge" style="--gauge-angle:${(coverage * 360).toFixed(1)}deg"><div class="wall-gauge-content"><div><strong data-count="${Math.round(coverage * 100)}">0</strong><em>%</em></div><span>with a future restoration estimate</span></div></div>
+          <div class="wall-gauge" style="--gauge-angle:${(coverage * 360).toFixed(1)}deg"><div class="wall-gauge-content"><div class="wall-gauge-value"><strong data-gauge-percent="${Math.round(coverage * 100)}">0</strong><em>%</em></div><span>with a future restoration estimate</span></div></div>
         </div>
         <div class="wall-focus-breakdown">
           <div class="wall-focus-row"><div><strong>Future estimate supplied</strong><span>Estimated restoration time is later than the latest snapshot</span></div><b>${fmtInt.format(supplied.incidents)}</b></div>
@@ -2892,7 +2893,25 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
 
     function animateWallElements() {
       document.querySelectorAll("#wallStage [data-count]").forEach((el) => animateWallNumber(el));
+      document.querySelectorAll("#wallStage [data-gauge-percent]").forEach((el) => animateWallGaugePercent(el));
       requestAnimationFrame(() => document.querySelectorAll("#wallStage .wall-bar-fill[data-width]").forEach((el) => { el.style.width = `${el.dataset.width}%`; }));
+    }
+
+    function animateWallGaugePercent(el) {
+      const target = Math.max(0, Math.min(100, Math.round(Number(el.dataset.gaugePercent || 0))));
+      if (!Number.isFinite(target) || window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
+        el.textContent = Number.isFinite(target) ? String(target) : "0";
+        return;
+      }
+      const duration = 900;
+      const started = performance.now();
+      const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+      const step = (now) => {
+        const progress = Math.min(1, (now - started) / duration);
+        el.textContent = String(Math.round(target * easeOut(progress)));
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
     }
 
     function animateWallNumber(el) {
