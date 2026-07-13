@@ -51,8 +51,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-13T00:31:00Z",
-        "snapshot_aest": "2026-07-13T10:31:00+10:00",
+        "snapshot_utc": "2026-07-13T00:45:31Z",
+        "snapshot_aest": "2026-07-13T10:45:31+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969765-g",
@@ -71,6 +71,82 @@
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.034447508154,
+              -17.6363437458047
+            ],
+            [
+              146.034187078586,
+              -17.6357954365993
+            ],
+            [
+              146.034726423527,
+              -17.6354863081978
+            ],
+            [
+              146.036773595748,
+              -17.6358656611547
+            ],
+            [
+              146.036877999796,
+              -17.6358974385054
+            ],
+            [
+              146.039958217858,
+              -17.6372299796527
+            ],
+            [
+              146.040233261481,
+              -17.6376877034448
+            ],
+            [
+              146.03986756875,
+              -17.6380828160264
+            ],
+            [
+              146.039165166489,
+              -17.6382339162898
+            ],
+            [
+              146.03887251552,
+              -17.6382067488518
+            ],
+            [
+              146.034447508154,
+              -17.6363437458047
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-13T00:45:31Z",
+        "snapshot_aest": "2026-07-13T10:45:31+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902622",
+        "outage_id": "902622",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 6,
+        "affected_customers_known": true,
+        "suburb": "MORESBY",
+        "street_name": "GUNDAH SINGH RD",
+        "start_utc": "2026-07-13T00:18:33Z",
+        "etr_utc": null,
+        "centroid_lon": 146.03728171690935,
+        "centroid_lat": -17.636838462058392,
+        "lga_name": "Cassowary Coast Regional",
+        "lga_code": "2260",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
