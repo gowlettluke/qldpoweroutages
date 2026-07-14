@@ -1,4 +1,65 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.692421378238,
+              -27.4813988600402
+            ],
+            [
+              151.692544814109,
+              -27.4820259519928
+            ],
+            [
+              151.691841686156,
+              -27.4821360388498
+            ],
+            [
+              151.689598828415,
+              -27.4807331111339
+            ],
+            [
+              151.689475411508,
+              -27.4801060142072
+            ],
+            [
+              151.690178531067,
+              -27.4799959406647
+            ],
+            [
+              151.692421378238,
+              -27.4813988600402
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-14T10:30:57Z",
+        "snapshot_aest": "2026-07-14T20:30:57+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902675",
+        "outage_id": "902675",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "AUBIGNY",
+        "street_name": "TANGKAM DORRIES RD",
+        "start_utc": "2026-07-14T10:00:00Z",
+        "etr_utc": "2026-07-14T12:00:00Z",
+        "centroid_lon": 151.6910165169416,
+        "centroid_lat": -27.481067149720012,
+        "lga_name": "Toowoomba Regional",
+        "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    }
+  ]
 }
