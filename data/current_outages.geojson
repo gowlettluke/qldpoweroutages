@@ -47,8 +47,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-14T04:45:30Z",
-        "snapshot_aest": "2026-07-14T14:45:30+10:00",
+        "snapshot_utc": "2026-07-14T05:01:05Z",
+        "snapshot_aest": "2026-07-14T15:01:05+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-970036-g",
@@ -67,6 +67,90 @@
         "lga_name": "Ipswich City",
         "lga_code": "3960",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.522909962002,
+              -28.7426696197623
+            ],
+            [
+              148.522369243535,
+              -28.7422123091034
+            ],
+            [
+              148.524390722186,
+              -28.6246781235617
+            ],
+            [
+              148.524400721466,
+              -28.6245959236999
+            ],
+            [
+              148.581800019107,
+              -28.3724815687128
+            ],
+            [
+              148.582668811631,
+              -28.372258562204
+            ],
+            [
+              148.868972007292,
+              -28.6359889223411
+            ],
+            [
+              148.86891238674,
+              -28.6366610297678
+            ],
+            [
+              148.857098939245,
+              -28.644564616327
+            ],
+            [
+              148.857010698422,
+              -28.6446120821617
+            ],
+            [
+              148.637872142342,
+              -28.7368711880583
+            ],
+            [
+              148.637681324558,
+              -28.736914299604
+            ],
+            [
+              148.522909962002,
+              -28.7426696197623
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-14T05:01:05Z",
+        "snapshot_aest": "2026-07-14T15:01:05+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902670",
+        "outage_id": "902670",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 33,
+        "affected_customers_known": true,
+        "suburb": "DIRRANBANDI, ST GEORGE, THALLON",
+        "street_name": "BALLANGARRY RD, DIAMOND TANK RD, DIRRANBANDI-MUNGINDI RD, DUNKERRY RD, DUNWINNIE RD, LITTLETON RD, NOONDOO MUNGINDI RD, PINE PARK RD, PINE ST, UNKNOWN RD",
+        "start_utc": "2026-07-14T04:44:00Z",
+        "etr_utc": null,
+        "centroid_lon": 148.65472213108507,
+        "centroid_lat": -28.592765449337282,
+        "lga_name": "Balonne Shire",
+        "lga_code": "300",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
