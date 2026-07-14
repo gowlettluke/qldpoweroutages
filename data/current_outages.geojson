@@ -43,8 +43,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-14T01:15:31Z",
-        "snapshot_aest": "2026-07-14T11:15:31+10:00",
+        "snapshot_utc": "2026-07-14T01:30:57Z",
+        "snapshot_aest": "2026-07-14T11:30:57+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-969986-g",
@@ -72,58 +72,62 @@
         "coordinates": [
           [
             [
-              152.807054539307,
-              -27.6574181749351
+              152.803757701136,
+              -27.6588688160938
             ],
             [
-              152.806800571355,
-              -27.6566724990864
+              152.803176308668,
+              -27.6586685409228
             ],
             [
-              152.806922441728,
-              -27.6565553094572
+              152.803252627904,
+              -27.6581176480738
             ],
             [
-              152.80748855168,
-              -27.656445029859
+              152.805710077953,
+              -27.6559273836035
             ],
             [
-              152.808405678497,
-              -27.6567836184184
+              152.806295445361,
+              -27.6558426896443
             ],
             [
-              152.808693678519,
-              -27.6573399867856
+              152.808438259716,
+              -27.656796866446
             ],
             [
-              152.80809354321,
-              -27.6576395757121
+              152.808716615236,
+              -27.6572390439721
             ],
             [
-              152.807054539307,
-              -27.6574181749351
+              152.808357987971,
+              -27.6576327209486
+            ],
+            [
+              152.803757701136,
+              -27.6588688160938
             ]
           ]
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-14T01:15:31Z",
-        "snapshot_aest": "2026-07-14T11:15:31+10:00",
+        "snapshot_utc": "2026-07-14T01:30:57Z",
+        "snapshot_aest": "2026-07-14T11:30:57+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-970036-g",
         "outage_id": "INCD-970036-g",
         "outage_type": "unplanned",
         "status": "Awaiting",
-        "reason": "Under Investigation",
-        "affected_customers": 4,
+        "reason": "Emergency Repairs",
+        "affected_customers": 6,
         "affected_customers_known": true,
         "suburb": "SWANBANK",
         "street_name": "SWANBANK RD",
         "start_utc": "2026-07-14T01:04:00Z",
-        "etr_utc": "2026-07-14T03:30:00Z",
-        "centroid_lon": 152.8077060701535,
-        "centroid_lat": -27.657046560195383,
+        "etr_utc": "2026-07-14T04:00:00Z",
+        "centroid_lon": 152.80589177502063,
+        "centroid_lat": -27.65737453743899,
         "lga_name": "Ipswich City",
         "lga_code": "3960",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
@@ -187,8 +191,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-14T01:15:31Z",
-        "snapshot_aest": "2026-07-14T11:15:31+10:00",
+        "snapshot_utc": "2026-07-14T01:30:57Z",
+        "snapshot_aest": "2026-07-14T11:30:57+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902637",
@@ -279,8 +283,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-14T01:15:31Z",
-        "snapshot_aest": "2026-07-14T11:15:31+10:00",
+        "snapshot_utc": "2026-07-14T01:30:57Z",
+        "snapshot_aest": "2026-07-14T11:30:57+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902667",
@@ -298,6 +302,66 @@
         "centroid_lat": -23.717815042714573,
         "lga_name": "Central Highlands Regional",
         "lga_code": "2270",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.394678543911,
+              -23.2219361618275
+            ],
+            [
+              150.395211548393,
+              -23.2223412705494
+            ],
+            [
+              150.394773219335,
+              -23.222833880821
+            ],
+            [
+              150.38256829279,
+              -23.2239328564957
+            ],
+            [
+              150.382035313655,
+              -23.2235277011019
+            ],
+            [
+              150.382473696395,
+              -23.2230351207165
+            ],
+            [
+              150.394678543911,
+              -23.2219361618275
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-14T01:30:57Z",
+        "snapshot_aest": "2026-07-14T11:30:57+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902668",
+        "outage_id": "902668",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "ETNA CREEK",
+        "street_name": "ETNA CREEK RD",
+        "start_utc": "2026-07-13T22:56:22Z",
+        "etr_utc": null,
+        "centroid_lon": 150.3886231194621,
+        "centroid_lat": -23.222934459378955,
+        "lga_name": "Livingstone Shire",
+        "lga_code": "4530",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
