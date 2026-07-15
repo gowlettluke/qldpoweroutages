@@ -47,8 +47,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-15T01:45:31Z",
-        "snapshot_aest": "2026-07-15T11:45:31+10:00",
+        "snapshot_utc": "2026-07-15T02:00:56Z",
+        "snapshot_aest": "2026-07-15T12:00:56+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-970201-g",
@@ -61,7 +61,7 @@
         "suburb": "WILLAWONG",
         "street_name": "CAMDEN RD, GOODERHAM RD, GOULBURN RD, KING AVE, LEAROYD RD, SHERBROOKE RD",
         "start_utc": "2026-07-14T22:12:05Z",
-        "etr_utc": "2026-07-15T02:30:00Z",
+        "etr_utc": "2026-07-15T04:00:00Z",
         "centroid_lon": 153.0041722281264,
         "centroid_lat": -27.597817157312043,
         "lga_name": "Brisbane City",
@@ -195,8 +195,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-15T01:45:31Z",
-        "snapshot_aest": "2026-07-15T11:45:31+10:00",
+        "snapshot_utc": "2026-07-15T02:00:56Z",
+        "snapshot_aest": "2026-07-15T12:00:56+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-970272-g",
@@ -271,8 +271,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-15T01:45:31Z",
-        "snapshot_aest": "2026-07-15T11:45:31+10:00",
+        "snapshot_utc": "2026-07-15T02:00:56Z",
+        "snapshot_aest": "2026-07-15T12:00:56+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902733",
@@ -379,8 +379,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-15T01:45:31Z",
-        "snapshot_aest": "2026-07-15T11:45:31+10:00",
+        "snapshot_utc": "2026-07-15T02:00:56Z",
+        "snapshot_aest": "2026-07-15T12:00:56+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902735",
@@ -463,8 +463,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-15T01:45:31Z",
-        "snapshot_aest": "2026-07-15T11:45:31+10:00",
+        "snapshot_utc": "2026-07-15T02:00:56Z",
+        "snapshot_aest": "2026-07-15T12:00:56+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902736",
@@ -527,8 +527,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-15T01:45:31Z",
-        "snapshot_aest": "2026-07-15T11:45:31+10:00",
+        "snapshot_utc": "2026-07-15T02:00:56Z",
+        "snapshot_aest": "2026-07-15T12:00:56+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902738",
@@ -546,6 +546,70 @@
         "centroid_lat": -19.08875214675938,
         "lga_name": "Townsville City",
         "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.651095430104,
+              -25.1979592649852
+            ],
+            [
+              151.651202360087,
+              -25.1972005155723
+            ],
+            [
+              151.651755855872,
+              -25.1969704654386
+            ],
+            [
+              151.65234216173,
+              -25.1970922451878
+            ],
+            [
+              151.654152511301,
+              -25.1990741392355
+            ],
+            [
+              151.654123569134,
+              -25.1996788131238
+            ],
+            [
+              151.653459280369,
+              -25.1997111174736
+            ],
+            [
+              151.651095430104,
+              -25.1979592649852
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-15T02:00:56Z",
+        "snapshot_aest": "2026-07-15T12:00:56+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902739",
+        "outage_id": "902739",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "MOUNT PERRY",
+        "street_name": "HUTH RD, SMOKERS GULLY RD",
+        "start_utc": "2026-07-15T01:51:00Z",
+        "etr_utc": "2026-07-15T05:00:00Z",
+        "centroid_lon": 151.6526005556985,
+        "centroid_lat": -25.198313184332868,
+        "lga_name": "North Burnett Regional",
+        "lga_code": "5760",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
