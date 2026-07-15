@@ -119,8 +119,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-15T17:45:44Z",
-        "snapshot_aest": "2026-07-16T03:45:44+10:00",
+        "snapshot_utc": "2026-07-15T18:01:08Z",
+        "snapshot_aest": "2026-07-16T04:01:08+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-970411-g",
@@ -139,6 +139,114 @@
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.925271292195,
+              -17.9301892674213
+            ],
+            [
+              145.925271015582,
+              -17.9300970355508
+            ],
+            [
+              145.925289856358,
+              -17.9299161294741
+            ],
+            [
+              145.925310879995,
+              -17.9298205919159
+            ],
+            [
+              145.925571662629,
+              -17.9290567184896
+            ],
+            [
+              145.926033988349,
+              -17.9287454056528
+            ],
+            [
+              145.926544079731,
+              -17.9287595104912
+            ],
+            [
+              145.926953872443,
+              -17.9290114411408
+            ],
+            [
+              145.928927954886,
+              -17.9328458494854
+            ],
+            [
+              145.928839860015,
+              -17.9333636322536
+            ],
+            [
+              145.928480473806,
+              -17.9337108389189
+            ],
+            [
+              145.928125677311,
+              -17.9338442822879
+            ],
+            [
+              145.926097603664,
+              -17.9337641683044
+            ],
+            [
+              145.925651316188,
+              -17.9333862856885
+            ],
+            [
+              145.925617272105,
+              -17.933188874218
+            ],
+            [
+              145.925614507365,
+              -17.9331705013419
+            ],
+            [
+              145.925512699272,
+              -17.9323790571475
+            ],
+            [
+              145.925511765994,
+              -17.9323712416437
+            ],
+            [
+              145.925271292195,
+              -17.9301892674213
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-15T18:01:08Z",
+        "snapshot_aest": "2026-07-16T04:01:08+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902749",
+        "outage_id": "902749",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 68,
+        "affected_customers_known": true,
+        "suburb": "TULLY",
+        "street_name": "BLACKMAN ST, CURTIS ST, HORT ST, MURRAY ST, RICHARDSON ST",
+        "start_utc": "2026-07-15T17:30:00Z",
+        "etr_utc": "2026-07-15T21:00:00Z",
+        "centroid_lon": 145.9268490263543,
+        "centroid_lat": -17.931601406215403,
+        "lga_name": "Cassowary Coast Regional",
+        "lga_code": "2260",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
