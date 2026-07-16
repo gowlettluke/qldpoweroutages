@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-16T08:15:31Z",
-        "snapshot_aest": "2026-07-16T18:15:31+10:00",
+        "snapshot_utc": "2026-07-16T08:30:59Z",
+        "snapshot_aest": "2026-07-16T18:30:59+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-970636-g",
@@ -195,8 +195,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-16T08:15:31Z",
-        "snapshot_aest": "2026-07-16T18:15:31+10:00",
+        "snapshot_utc": "2026-07-16T08:30:59Z",
+        "snapshot_aest": "2026-07-16T18:30:59+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|902843",
@@ -214,6 +214,122 @@
         "centroid_lat": -20.00349145290927,
         "lga_name": "Whitsunday Regional",
         "lga_code": "7340",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.296865164368,
+              -27.1991981990046
+            ],
+            [
+              151.296721580477,
+              -27.1988389095117
+            ],
+            [
+              151.297255926655,
+              -27.1937796955511
+            ],
+            [
+              151.297530059766,
+              -27.1934201186367
+            ],
+            [
+              151.304132938651,
+              -27.1904336637222
+            ],
+            [
+              151.304201260131,
+              -27.190408209518
+            ],
+            [
+              151.429199569175,
+              -27.1531490691335
+            ],
+            [
+              151.429728991337,
+              -27.1532708657241
+            ],
+            [
+              151.451496393964,
+              -27.1743694473711
+            ],
+            [
+              151.451553112277,
+              -27.174435833397
+            ],
+            [
+              151.454339465786,
+              -27.1784141717208
+            ],
+            [
+              151.454416274701,
+              -27.1786532193622
+            ],
+            [
+              151.454416423094,
+              -27.1825051852804
+            ],
+            [
+              151.454416318164,
+              -27.1825143947306
+            ],
+            [
+              151.453651100391,
+              -27.2160541814257
+            ],
+            [
+              151.453264518402,
+              -27.2164830139114
+            ],
+            [
+              151.376084832921,
+              -27.2329415307378
+            ],
+            [
+              151.37589842317,
+              -27.232949466757
+            ],
+            [
+              151.327739944364,
+              -27.226931796599
+            ],
+            [
+              151.327451910262,
+              -27.2268027725221
+            ],
+            [
+              151.296865164368,
+              -27.1991981990046
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-16T08:30:59Z",
+        "snapshot_aest": "2026-07-16T18:30:59+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902846",
+        "outage_id": "902846",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 77,
+        "affected_customers_known": true,
+        "suburb": "BLAXLAND, BOWENVILLE, DALBY, IRVINGDALE",
+        "street_name": "ARMAROO RD, BLAXLAND IRVINGDALE RD, BLAXLAND RD, BLAXLAND SOUTH RD, BLAXLAND-IRVINGDALE RD, BOWENVILLE-BLAXLAND RD, DALBY NUNGIL RD, DERRICK AVE, IRVINGDALE RD, IRVINGDALE SOUTH RD, KOMMAMURRA RD, SALT WELL RD, SPRINGMEADOW RD, SUNSHINE CT, WARREGO HWY",
+        "start_utc": "2026-07-16T08:17:18Z",
+        "etr_utc": null,
+        "centroid_lon": 151.38532552108222,
+        "centroid_lat": -27.197165465643167,
+        "lga_name": "Western Downs Regional",
+        "lga_code": "7310",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
