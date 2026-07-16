@@ -83,8 +83,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-16T10:30:57Z",
-        "snapshot_aest": "2026-07-16T20:30:57+10:00",
+        "snapshot_utc": "2026-07-16T10:45:33Z",
+        "snapshot_aest": "2026-07-16T20:45:33+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-970647-g",
@@ -103,6 +103,130 @@
         "lga_name": "Gympie Regional",
         "lga_code": "3620",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.219064826729,
+              -23.8839793154401
+            ],
+            [
+              151.219027673434,
+              -23.8837985842094
+            ],
+            [
+              151.219029562446,
+              -23.8837058131335
+            ],
+            [
+              151.2191665587,
+              -23.8834016688566
+            ],
+            [
+              151.219518703817,
+              -23.8830654690353
+            ],
+            [
+              151.219522054776,
+              -23.8830623010393
+            ],
+            [
+              151.219982518737,
+              -23.8826312264157
+            ],
+            [
+              151.220402784337,
+              -23.882501089819
+            ],
+            [
+              151.221901000251,
+              -23.8827018626458
+            ],
+            [
+              151.221923129053,
+              -23.8827053055544
+            ],
+            [
+              151.22234412523,
+              -23.8827799623218
+            ],
+            [
+              151.22274087269,
+              -23.8832023360038
+            ],
+            [
+              151.22274483202,
+              -23.8832840098509
+            ],
+            [
+              151.222743380554,
+              -23.8833441058596
+            ],
+            [
+              151.22267373418,
+              -23.8840621214781
+            ],
+            [
+              151.222640809564,
+              -23.8841890076031
+            ],
+            [
+              151.222440989997,
+              -23.8846497191428
+            ],
+            [
+              151.221929406733,
+              -23.8849303967002
+            ],
+            [
+              151.220215926232,
+              -23.8847477848417
+            ],
+            [
+              151.220206719812,
+              -23.8847467223109
+            ],
+            [
+              151.219642377816,
+              -23.8846765930097
+            ],
+            [
+              151.219255215852,
+              -23.8844023579315
+            ],
+            [
+              151.219064826729,
+              -23.8839793154401
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-16T10:45:33Z",
+        "snapshot_aest": "2026-07-16T20:45:33+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|902847",
+        "outage_id": "902847",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 62,
+        "affected_customers_known": true,
+        "suburb": "CLINTON",
+        "street_name": "CIMBA ST, ODETTE RD, QUEST LANE, SCAMPI DR, SPINDRIFT RD",
+        "start_utc": "2026-07-16T10:31:00Z",
+        "etr_utc": "2026-07-16T12:00:00Z",
+        "centroid_lon": 151.2209626184643,
+        "centroid_lat": -23.883733654735714,
+        "lga_name": "Gladstone Regional",
+        "lga_code": "3360",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
