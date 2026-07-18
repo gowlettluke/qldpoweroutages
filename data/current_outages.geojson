@@ -60,52 +60,60 @@
               -27.5504528117242
             ],
             [
-              152.976726949179,
-              -27.5504128039237
+              152.976580458273,
+              -27.5504104996106
             ],
             [
-              152.977022437147,
-              -27.5504560641568
+              152.979743475657,
+              -27.5500490208556
             ],
             [
-              152.977117607397,
-              -27.5504786465658
+              152.979889829915,
+              -27.5500513019093
             ],
             [
-              152.978014165238,
-              -27.5507772152252
+              152.980019849501,
+              -27.5500703017901
             ],
             [
-              152.978291986627,
-              -27.5513981511809
+              152.980217324926,
+              -27.5501392719889
             ],
             [
-              152.978093787087,
-              -27.5517598619412
+              152.981992841126,
+              -27.5511860979583
             ],
             [
-              152.978080572622,
-              -27.5517823512745
+              152.982138664883,
+              -27.5513174057818
             ],
             [
-              152.977643535267,
-              -27.5524778122867
+              152.98218577537,
+              -27.5513823159915
             ],
             [
-              152.977377275008,
-              -27.5526806205078
+              152.982262503474,
+              -27.551567533362
             ],
             [
-              152.977044772943,
-              -27.5527901716889
+              152.982864492033,
+              -27.5555711110473
             ],
             [
-              152.977027275769,
-              -27.5527956143572
+              152.98231553819,
+              -27.5560805167677
             ],
             [
-              152.974607278675,
-              -27.5535043567771
+              152.978319691879,
+              -27.5557487252035
+            ],
+            [
+              152.97809461583,
+              -27.5556800135087
+            ],
+            [
+              152.974177107595,
+              -27.5534562472045
             ],
             [
               152.973979335811,
@@ -119,8 +127,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-18T13:45:29Z",
-        "snapshot_aest": "2026-07-18T23:45:29+10:00",
+        "snapshot_utc": "2026-07-18T14:00:44Z",
+        "snapshot_aest": "2026-07-19T00:00:44+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-971043-g",
@@ -128,17 +136,109 @@
         "outage_type": "unplanned",
         "status": "Awaiting",
         "reason": "Under Investigation",
-        "affected_customers": 140,
+        "affected_customers": 233,
         "affected_customers_known": true,
         "suburb": "OXLEY",
-        "street_name": "COOK ST, ELLEN ST, WILLIAM TCE",
+        "street_name": "COOK ST, ELLEN ST, EPWORTH ST, GLADSTONE ST, GREGWAL CT, HEATHROW ST, OXLEY RD, PRESTWICK ST, THORNBURGH ST, WILLIAM TCE",
         "start_utc": "2026-07-18T12:26:19Z",
         "etr_utc": "2026-07-18T15:00:00Z",
-        "centroid_lon": 152.97602309586762,
-        "centroid_lat": -27.551935182394878,
+        "centroid_lon": 152.9787512697197,
+        "centroid_lat": -27.553010616383393,
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.717381207367,
+              -23.2271551464447
+            ],
+            [
+              150.717022218945,
+              -23.226617638278
+            ],
+            [
+              150.720938433908,
+              -23.2106647877685
+            ],
+            [
+              150.721467988154,
+              -23.2103164481093
+            ],
+            [
+              150.726535732498,
+              -23.2108367983902
+            ],
+            [
+              150.726823065233,
+              -23.2109626811314
+            ],
+            [
+              150.738774484857,
+              -23.2217725534847
+            ],
+            [
+              150.738914400108,
+              -23.2220201758334
+            ],
+            [
+              150.739682622537,
+              -23.2262508517435
+            ],
+            [
+              150.739584417918,
+              -23.2266048240317
+            ],
+            [
+              150.736079813551,
+              -23.2307074843709
+            ],
+            [
+              150.735595042101,
+              -23.2308690281223
+            ],
+            [
+              150.721296271154,
+              -23.2280467660393
+            ],
+            [
+              150.721281441984,
+              -23.2280436140666
+            ],
+            [
+              150.717381207367,
+              -23.2271551464447
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-18T14:00:44Z",
+        "snapshot_aest": "2026-07-19T00:00:44+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903034",
+        "outage_id": "903034",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 12,
+        "affected_customers_known": true,
+        "suburb": "TANBY",
+        "street_name": "TANBY P O RD, TANBY RD",
+        "start_utc": "2026-07-18T13:18:00Z",
+        "etr_utc": null,
+        "centroid_lon": 150.72783839970268,
+        "centroid_lat": -23.221575539512195,
+        "lga_name": "Livingstone Shire",
+        "lga_code": "4530",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
