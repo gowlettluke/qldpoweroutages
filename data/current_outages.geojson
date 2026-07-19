@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-19T22:30:39Z",
-        "snapshot_aest": "2026-07-20T08:30:39+10:00",
+        "snapshot_utc": "2026-07-19T22:45:30Z",
+        "snapshot_aest": "2026-07-20T08:45:30+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-971325-g",
@@ -139,8 +139,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-19T22:30:39Z",
-        "snapshot_aest": "2026-07-20T08:30:39+10:00",
+        "snapshot_utc": "2026-07-19T22:45:30Z",
+        "snapshot_aest": "2026-07-20T08:45:30+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903099",
@@ -153,7 +153,7 @@
         "suburb": "DUNDOWRAN",
         "street_name": "LOWER MOUNTAIN RD, PIALBA BURRUM HEADS RD",
         "start_utc": "2026-07-19T20:50:16Z",
-        "etr_utc": null,
+        "etr_utc": "2026-07-20T00:30:00Z",
         "centroid_lon": 152.76610534577154,
         "centroid_lat": -25.295123469887038,
         "lga_name": "Fraser Coast Regional",
@@ -335,8 +335,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-19T22:30:39Z",
-        "snapshot_aest": "2026-07-20T08:30:39+10:00",
+        "snapshot_utc": "2026-07-19T22:45:30Z",
+        "snapshot_aest": "2026-07-20T08:45:30+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903103",
@@ -354,6 +354,138 @@
         "centroid_lat": -27.604966589614254,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.736198797645,
+              -16.8968510641424
+            ],
+            [
+              145.735943024556,
+              -16.896340545223
+            ],
+            [
+              145.736076575562,
+              -16.8957876417819
+            ],
+            [
+              145.736137133083,
+              -16.8956483367729
+            ],
+            [
+              145.73706883,
+              -16.8942310204641
+            ],
+            [
+              145.737293038649,
+              -16.8940523807681
+            ],
+            [
+              145.739626997855,
+              -16.8931649767202
+            ],
+            [
+              145.7396557618,
+              -16.8931550691332
+            ],
+            [
+              145.740122216795,
+              -16.8930107046031
+            ],
+            [
+              145.740444756567,
+              -16.893023131539
+            ],
+            [
+              145.741948812538,
+              -16.8936200890147
+            ],
+            [
+              145.742006004275,
+              -16.8936473028577
+            ],
+            [
+              145.742576066076,
+              -16.8939666942866
+            ],
+            [
+              145.742670017575,
+              -16.8940359464771
+            ],
+            [
+              145.743016000539,
+              -16.8943653393054
+            ],
+            [
+              145.743151718349,
+              -16.8947426374113
+            ],
+            [
+              145.743019649589,
+              -16.8957609314153
+            ],
+            [
+              145.743011772376,
+              -16.8958043320531
+            ],
+            [
+              145.742553484668,
+              -16.8977611791051
+            ],
+            [
+              145.742116962608,
+              -16.8981132009924
+            ],
+            [
+              145.739619241586,
+              -16.8982227227312
+            ],
+            [
+              145.739498868725,
+              -16.8982130208382
+            ],
+            [
+              145.73896202211,
+              -16.8981014777674
+            ],
+            [
+              145.738859646909,
+              -16.898067937407
+            ],
+            [
+              145.736198797645,
+              -16.8968510641424
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-19T22:45:30Z",
+        "snapshot_aest": "2026-07-20T08:45:30+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903113",
+        "outage_id": "903113",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 131,
+        "affected_customers_known": true,
+        "suburb": "EDGE HILL",
+        "street_name": "ALISON CL, BELLEVUE CRES, CONNORS ST, HUTCHINSON ST, JUNCTION ST, MAPLE CRES, PRICE CL, TEMORA CL, WALSH ST, WOODLANDS AVE",
+        "start_utc": "2026-07-19T22:19:49Z",
+        "etr_utc": null,
+        "centroid_lon": 145.73981118746465,
+        "centroid_lat": -16.895737363596545,
+        "lga_name": "Cairns Regional",
+        "lga_code": "2080",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
