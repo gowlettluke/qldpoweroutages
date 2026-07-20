@@ -95,8 +95,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-20T05:15:31Z",
-        "snapshot_aest": "2026-07-20T15:15:31+10:00",
+        "snapshot_utc": "2026-07-20T05:30:38Z",
+        "snapshot_aest": "2026-07-20T15:30:38+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-971453-g",
@@ -219,21 +219,21 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-20T05:15:31Z",
-        "snapshot_aest": "2026-07-20T15:15:31+10:00",
+        "snapshot_utc": "2026-07-20T05:30:38Z",
+        "snapshot_aest": "2026-07-20T15:30:38+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-971492-g",
         "outage_id": "INCD-971492-g",
         "outage_type": "unplanned",
         "status": "In Progress",
-        "reason": "Under Investigation",
+        "reason": "Emergency Repairs",
         "affected_customers": 66,
         "affected_customers_known": true,
         "suburb": "DECEPTION BAY",
         "street_name": "BITTERN CT, PARAKEET CT, WAGTAIL DR, WREN CT",
         "start_utc": "2026-07-20T03:33:30Z",
-        "etr_utc": "2026-07-20T05:30:00Z",
+        "etr_utc": "2026-07-20T07:00:00Z",
         "centroid_lon": 153.00891784377518,
         "centroid_lat": -27.18378648940825,
         "lga_name": "Moreton Bay City",
@@ -307,8 +307,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-20T05:15:31Z",
-        "snapshot_aest": "2026-07-20T15:15:31+10:00",
+        "snapshot_utc": "2026-07-20T05:30:38Z",
+        "snapshot_aest": "2026-07-20T15:30:38+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903133",
@@ -447,8 +447,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-20T05:15:31Z",
-        "snapshot_aest": "2026-07-20T15:15:31+10:00",
+        "snapshot_utc": "2026-07-20T05:30:38Z",
+        "snapshot_aest": "2026-07-20T15:30:38+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903134",
@@ -466,6 +466,70 @@
         "centroid_lat": -24.84431393053233,
         "lga_name": "Bundaberg Regional",
         "lga_code": "1820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.74671644018,
+              -23.1875929796229
+            ],
+            [
+              150.746603665845,
+              -23.1867761021913
+            ],
+            [
+              150.757448555638,
+              -23.1806778167552
+            ],
+            [
+              150.75809715243,
+              -23.180798812791
+            ],
+            [
+              150.758018245773,
+              -23.1814061628506
+            ],
+            [
+              150.74946511528,
+              -23.1881425867941
+            ],
+            [
+              150.749008221851,
+              -23.1882310816384
+            ],
+            [
+              150.74671644018,
+              -23.1875929796229
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-20T05:30:38Z",
+        "snapshot_aest": "2026-07-20T15:30:38+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903135",
+        "outage_id": "903135",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "LAMMERMOOR, TANBY",
+        "street_name": "CLAYTON RD, TANBY RD",
+        "start_utc": "2026-07-20T03:20:25Z",
+        "etr_utc": "2026-07-20T06:30:00Z",
+        "centroid_lon": 150.7518728631523,
+        "centroid_lat": -23.184905576985738,
+        "lga_name": "Livingstone Shire",
+        "lga_code": "4530",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
