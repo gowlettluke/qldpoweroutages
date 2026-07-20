@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-20T08:15:30Z",
-        "snapshot_aest": "2026-07-20T18:15:30+10:00",
+        "snapshot_utc": "2026-07-20T08:30:35Z",
+        "snapshot_aest": "2026-07-20T18:30:35+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-971453-g",
@@ -77,12 +77,144 @@
         "suburb": "LITTLE MOUNTAIN",
         "street_name": "CASUARINA DR, KANGAROO DR, KOALA CT",
         "start_utc": "2026-07-20T01:35:44Z",
-        "etr_utc": "2026-07-20T09:00:00Z",
+        "etr_utc": "2026-07-20T12:00:00Z",
         "centroid_lon": 153.07919732550738,
         "centroid_lat": -26.79481917714867,
         "lga_name": "Sunshine Coast Regional",
         "lga_code": "6720",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.384356295806,
+              -24.8878186029842
+            ],
+            [
+              152.384404825193,
+              -24.8875771568166
+            ],
+            [
+              152.38545897281,
+              -24.8856247110123
+            ],
+            [
+              152.38569522358,
+              -24.8854147913722
+            ],
+            [
+              152.386581948011,
+              -24.8850424866101
+            ],
+            [
+              152.386628103759,
+              -24.8850256237456
+            ],
+            [
+              152.386844362803,
+              -24.884957937666
+            ],
+            [
+              152.387068182292,
+              -24.8849373574131
+            ],
+            [
+              152.387280993193,
+              -24.884962658387
+            ],
+            [
+              152.387488806647,
+              -24.885033217547
+            ],
+            [
+              152.388632008587,
+              -24.8857209874464
+            ],
+            [
+              152.388801577552,
+              -24.8858953049348
+            ],
+            [
+              152.389198998956,
+              -24.886620077309
+            ],
+            [
+              152.389218978023,
+              -24.8866616263354
+            ],
+            [
+              152.389322293984,
+              -24.8869098079447
+            ],
+            [
+              152.38933210083,
+              -24.8872033326982
+            ],
+            [
+              152.389219091103,
+              -24.8875342546775
+            ],
+            [
+              152.388965188102,
+              -24.8878044703363
+            ],
+            [
+              152.388554805025,
+              -24.8879878746675
+            ],
+            [
+              152.388548965181,
+              -24.8879904412728
+            ],
+            [
+              152.387016126521,
+              -24.8886528260793
+            ],
+            [
+              152.387002701262,
+              -24.8886584047501
+            ],
+            [
+              152.385170543644,
+              -24.8893897377193
+            ],
+            [
+              152.38448178723,
+              -24.8890202289583
+            ],
+            [
+              152.384356295806,
+              -24.8878186029842
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-20T08:30:35Z",
+        "snapshot_aest": "2026-07-20T18:30:35+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903136",
+        "outage_id": "903136",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 78,
+        "affected_customers_known": true,
+        "suburb": "AVENELL HEIGHTS",
+        "street_name": "ALLAWAH ST, BELLS RD, CHISWICK ST, EAST PKT, ELLIOTT HEADS RD, ILUKA PL, NORTH POCKET, PECTON PL, SOUTH PKT, WEST PKT",
+        "start_utc": "2026-07-20T08:06:39Z",
+        "etr_utc": null,
+        "centroid_lon": 152.3867103401476,
+        "centroid_lat": -24.887115432007466,
+        "lga_name": "Bundaberg Regional",
+        "lga_code": "1820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
