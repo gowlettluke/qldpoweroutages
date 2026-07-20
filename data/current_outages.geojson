@@ -8,110 +8,6 @@
         "coordinates": [
           [
             [
-              153.091730942048,
-              -27.2297176214284
-            ],
-            [
-              153.091318085671,
-              -27.2291986100858
-            ],
-            [
-              153.091668064067,
-              -27.2273180512281
-            ],
-            [
-              153.092176518882,
-              -27.2269408100724
-            ],
-            [
-              153.093720303596,
-              -27.2269690293424
-            ],
-            [
-              153.093795231354,
-              -27.2269754140426
-            ],
-            [
-              153.094972916565,
-              -27.2271557237
-            ],
-            [
-              153.095392335114,
-              -27.2276165514523
-            ],
-            [
-              153.095371576989,
-              -27.2281433711236
-            ],
-            [
-              153.095227248856,
-              -27.2284437343348
-            ],
-            [
-              153.09394990968,
-              -27.2296067278448
-            ],
-            [
-              153.093763441721,
-              -27.2297142839954
-            ],
-            [
-              153.093489360483,
-              -27.2298041343854
-            ],
-            [
-              153.093454261857,
-              -27.2298143558813
-            ],
-            [
-              153.093156120309,
-              -27.2298905257483
-            ],
-            [
-              153.092932516496,
-              -27.229901488435
-            ],
-            [
-              153.092732305802,
-              -27.2298709881186
-            ],
-            [
-              153.091730942048,
-              -27.2297176214284
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "snapshot_utc": "2026-07-20T03:30:39Z",
-        "snapshot_aest": "2026-07-20T13:30:39+10:00",
-        "provider_code": "au.qld.energex",
-        "provider_name": "Energex",
-        "outage_key": "au.qld.energex|unplanned|INCD-971419-g",
-        "outage_id": "INCD-971419-g",
-        "outage_type": "unplanned",
-        "status": "Awaiting",
-        "reason": "Powerlines down",
-        "affected_customers": 58,
-        "affected_customers_known": true,
-        "suburb": "KIPPA-RING",
-        "street_name": "ANZAC AVE, DORALL ST, GEORGE ST, LINDEL ST",
-        "start_utc": "2026-07-20T00:27:55Z",
-        "etr_utc": "2026-07-20T05:00:00Z",
-        "centroid_lon": 153.09323810593645,
-        "centroid_lat": -27.228329205517575,
-        "lga_name": "Moreton Bay City",
-        "lga_code": "5010",
-        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
               153.076860747749,
               -26.8027789806206
             ],
@@ -199,8 +95,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-20T03:30:39Z",
-        "snapshot_aest": "2026-07-20T13:30:39+10:00",
+        "snapshot_utc": "2026-07-20T03:45:28Z",
+        "snapshot_aest": "2026-07-20T13:45:28+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-971453-g",
@@ -307,8 +203,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-20T03:30:39Z",
-        "snapshot_aest": "2026-07-20T13:30:39+10:00",
+        "snapshot_utc": "2026-07-20T03:45:28Z",
+        "snapshot_aest": "2026-07-20T13:45:28+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903125",
@@ -326,6 +222,74 @@
         "centroid_lat": -17.609888047822988,
         "lga_name": "Tablelands Regional",
         "lga_code": "6820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.604953344775,
+              -20.3791335227352
+            ],
+            [
+              148.60496278832,
+              -20.3787322868443
+            ],
+            [
+              148.606075810746,
+              -20.3767288799639
+            ],
+            [
+              148.606661697394,
+              -20.3765133012716
+            ],
+            [
+              148.608143972148,
+              -20.3770142875554
+            ],
+            [
+              148.608430823152,
+              -20.377598097422
+            ],
+            [
+              148.606944948716,
+              -20.3813330601965
+            ],
+            [
+              148.606062752564,
+              -20.3813660635364
+            ],
+            [
+              148.604953344775,
+              -20.3791335227352
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-20T03:45:28Z",
+        "snapshot_aest": "2026-07-20T13:45:28+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903131",
+        "outage_id": "903131",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 7,
+        "affected_customers_known": true,
+        "suburb": "MOUNT JULIAN",
+        "street_name": "SMETHURST RD",
+        "start_utc": "2026-07-20T02:28:35Z",
+        "etr_utc": "2026-07-20T05:00:00Z",
+        "centroid_lon": 148.606628772541,
+        "centroid_lat": -20.378783909165886,
+        "lga_name": "Whitsunday Regional",
+        "lga_code": "7340",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
