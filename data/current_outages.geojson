@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T07:45:26Z",
-        "snapshot_aest": "2026-07-22T17:45:26+10:00",
+        "snapshot_utc": "2026-07-22T08:00:43Z",
+        "snapshot_aest": "2026-07-22T18:00:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903242",
@@ -179,8 +179,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T07:45:26Z",
-        "snapshot_aest": "2026-07-22T17:45:26+10:00",
+        "snapshot_utc": "2026-07-22T08:00:43Z",
+        "snapshot_aest": "2026-07-22T18:00:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903244",
@@ -267,8 +267,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T07:45:26Z",
-        "snapshot_aest": "2026-07-22T17:45:26+10:00",
+        "snapshot_utc": "2026-07-22T08:00:43Z",
+        "snapshot_aest": "2026-07-22T18:00:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903248",
@@ -367,14 +367,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T07:45:26Z",
-        "snapshot_aest": "2026-07-22T17:45:26+10:00",
+        "snapshot_utc": "2026-07-22T08:00:43Z",
+        "snapshot_aest": "2026-07-22T18:00:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903249",
         "outage_id": "903249",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 38,
         "affected_customers_known": true,
@@ -386,6 +386,74 @@
         "centroid_lat": -19.340216996444255,
         "lga_name": "Townsville City",
         "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.92055326382,
+              -26.7122411821114
+            ],
+            [
+              151.920846340334,
+              -26.7117576327191
+            ],
+            [
+              151.922749807161,
+              -26.7110058841842
+            ],
+            [
+              151.923441768984,
+              -26.7113241858544
+            ],
+            [
+              151.923747731119,
+              -26.7126147952615
+            ],
+            [
+              151.92314695756,
+              -26.7131475498818
+            ],
+            [
+              151.920954268081,
+              -26.7127021530315
+            ],
+            [
+              151.920570011227,
+              -26.7123346451707
+            ],
+            [
+              151.92055326382,
+              -26.7122411821114
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-22T08:00:43Z",
+        "snapshot_aest": "2026-07-22T18:00:43+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903250",
+        "outage_id": "903250",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 5,
+        "affected_customers_known": true,
+        "suburb": "NANANGO",
+        "street_name": "ALLEN RD, MAJORS RD",
+        "start_utc": "2026-07-22T06:34:11Z",
+        "etr_utc": null,
+        "centroid_lon": 151.92231353430708,
+        "centroid_lat": -26.712127518059283,
+        "lga_name": "South Burnett Regional",
+        "lga_code": "6630",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
