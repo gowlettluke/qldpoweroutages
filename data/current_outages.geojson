@@ -67,8 +67,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T09:45:34Z",
-        "snapshot_aest": "2026-07-22T19:45:34+10:00",
+        "snapshot_utc": "2026-07-22T10:00:50Z",
+        "snapshot_aest": "2026-07-22T20:00:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903248",
@@ -247,8 +247,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T09:45:34Z",
-        "snapshot_aest": "2026-07-22T19:45:34+10:00",
+        "snapshot_utc": "2026-07-22T10:00:50Z",
+        "snapshot_aest": "2026-07-22T20:00:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903249",
@@ -315,8 +315,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T09:45:34Z",
-        "snapshot_aest": "2026-07-22T19:45:34+10:00",
+        "snapshot_utc": "2026-07-22T10:00:50Z",
+        "snapshot_aest": "2026-07-22T20:00:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903250",
@@ -391,8 +391,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T09:45:34Z",
-        "snapshot_aest": "2026-07-22T19:45:34+10:00",
+        "snapshot_utc": "2026-07-22T10:00:50Z",
+        "snapshot_aest": "2026-07-22T20:00:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903254",
@@ -405,7 +405,7 @@
         "suburb": "MAREEBA",
         "street_name": "LA SPINA RD, ROIKO RD",
         "start_utc": "2026-07-22T09:36:00Z",
-        "etr_utc": null,
+        "etr_utc": "2026-07-22T12:00:00Z",
         "centroid_lon": 145.3983842398849,
         "centroid_lat": -17.00772655640647,
         "lga_name": "Mareeba Shire",
@@ -455,8 +455,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T09:45:34Z",
-        "snapshot_aest": "2026-07-22T19:45:34+10:00",
+        "snapshot_utc": "2026-07-22T10:00:50Z",
+        "snapshot_aest": "2026-07-22T20:00:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903255",
@@ -469,11 +469,95 @@
         "suburb": "COOKTOWN",
         "street_name": "ENDEAVOUR VALLEY RD, UNKNOWN ST",
         "start_utc": "2026-07-22T07:29:08Z",
-        "etr_utc": null,
+        "etr_utc": "2026-07-22T12:00:00Z",
         "centroid_lon": 145.19489221411555,
         "centroid_lat": -15.479361730460257,
         "lga_name": "Cook Shire",
         "lga_code": "2500",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.468175799961,
+              -17.2822981404092
+            ],
+            [
+              145.468251150131,
+              -17.2815244555427
+            ],
+            [
+              145.471854951733,
+              -17.2798844327299
+            ],
+            [
+              145.472398916799,
+              -17.2799832762592
+            ],
+            [
+              145.472590734923,
+              -17.2801792947647
+            ],
+            [
+              145.472717694948,
+              -17.2804643543657
+            ],
+            [
+              145.472724513634,
+              -17.2805853796962
+            ],
+            [
+              145.472687094755,
+              -17.2807879618956
+            ],
+            [
+              145.471493811363,
+              -17.2834596579263
+            ],
+            [
+              145.470873737328,
+              -17.2836956854308
+            ],
+            [
+              145.469179088215,
+              -17.2829861508367
+            ],
+            [
+              145.46909031103,
+              -17.2829373202958
+            ],
+            [
+              145.468175799961,
+              -17.2822981404092
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-22T10:00:50Z",
+        "snapshot_aest": "2026-07-22T20:00:50+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903256",
+        "outage_id": "903256",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 20,
+        "affected_customers_known": true,
+        "suburb": "ATHERTON",
+        "street_name": "ATHERTON HERBERTON RD, HERBERTON RD, NEWTON CL, PAGE RD",
+        "start_utc": "2026-07-22T09:33:38Z",
+        "etr_utc": null,
+        "centroid_lon": 145.4706084204232,
+        "centroid_lat": -17.281790661327864,
+        "lga_name": "Tablelands Regional",
+        "lga_code": "6820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
