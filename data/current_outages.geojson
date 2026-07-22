@@ -51,8 +51,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T12:30:33Z",
-        "snapshot_aest": "2026-07-22T22:30:33+10:00",
+        "snapshot_utc": "2026-07-22T12:45:30Z",
+        "snapshot_aest": "2026-07-22T22:45:30+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972088-g",
@@ -119,8 +119,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T12:30:33Z",
-        "snapshot_aest": "2026-07-22T22:30:33+10:00",
+        "snapshot_utc": "2026-07-22T12:45:30Z",
+        "snapshot_aest": "2026-07-22T22:45:30+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903250",
@@ -138,6 +138,138 @@
         "centroid_lat": -26.712127518059283,
         "lga_name": "South Burnett Regional",
         "lga_code": "6630",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.742312027932,
+              -19.3085946575089
+            ],
+            [
+              146.742278863568,
+              -19.3082967781992
+            ],
+            [
+              146.742702871356,
+              -19.3065968163808
+            ],
+            [
+              146.742983338871,
+              -19.3062836788094
+            ],
+            [
+              146.744481353862,
+              -19.3056925546037
+            ],
+            [
+              146.744592631065,
+              -19.3056630610906
+            ],
+            [
+              146.745065708265,
+              -19.3055949213439
+            ],
+            [
+              146.745326964057,
+              -19.3056273253886
+            ],
+            [
+              146.745643370914,
+              -19.3057580213969
+            ],
+            [
+              146.745893036114,
+              -19.3059990607705
+            ],
+            [
+              146.745933224802,
+              -19.3060909358373
+            ],
+            [
+              146.745967692885,
+              -19.3063049034741
+            ],
+            [
+              146.745675820415,
+              -19.3093722311272
+            ],
+            [
+              146.745559077252,
+              -19.3096301180328
+            ],
+            [
+              146.745378469302,
+              -19.3098249365081
+            ],
+            [
+              146.745014600824,
+              -19.309978212821
+            ],
+            [
+              146.744793462532,
+              -19.3099753009697
+            ],
+            [
+              146.744648870062,
+              -19.3099519383504
+            ],
+            [
+              146.744469765519,
+              -19.3098949694995
+            ],
+            [
+              146.744462038872,
+              -19.309892441578
+            ],
+            [
+              146.743991738093,
+              -19.3097342711674
+            ],
+            [
+              146.743902322453,
+              -19.3096938179935
+            ],
+            [
+              146.742556644201,
+              -19.3089123753483
+            ],
+            [
+              146.742375016461,
+              -19.3087206542454
+            ],
+            [
+              146.742312027932,
+              -19.3085946575089
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-22T12:45:30Z",
+        "snapshot_aest": "2026-07-22T22:45:30+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903259",
+        "outage_id": "903259",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to public safety concerns.",
+        "affected_customers": 94,
+        "affected_customers_known": true,
+        "suburb": "KIRWAN",
+        "street_name": "BANKSIA ST, CEDAR CT, KAURI CT, PINE ST, SILKWOOD ST, TAMARIND ST, TINGLEWOOD ST",
+        "start_utc": "2026-07-22T12:20:00Z",
+        "etr_utc": "2026-07-22T13:30:00Z",
+        "centroid_lon": 146.74428574242958,
+        "centroid_lat": -19.307753272745295,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
