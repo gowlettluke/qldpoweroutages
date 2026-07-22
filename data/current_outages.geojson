@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T09:15:28Z",
-        "snapshot_aest": "2026-07-22T19:15:28+10:00",
+        "snapshot_utc": "2026-07-22T09:30:32Z",
+        "snapshot_aest": "2026-07-22T19:30:32+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903242",
@@ -167,8 +167,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T09:15:28Z",
-        "snapshot_aest": "2026-07-22T19:15:28+10:00",
+        "snapshot_utc": "2026-07-22T09:30:32Z",
+        "snapshot_aest": "2026-07-22T19:30:32+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903248",
@@ -181,7 +181,7 @@
         "suburb": "CHILLAGOE",
         "street_name": "AERODROME RD, ATHERTON ST, BLUFF ST, BURKE DEVELOPMENTAL RD, CATHEDRAL ST, CHILLAGOE BOLWARRA RD, EASTERN ST, FREW ST, GEORGETOWN RD, HILL ST, HOSPITAL AVE, KING ST, KNOWE ST, MARKET ST, PONT ST, QUEEN ST, RAILWAY RES, RESERVOIR ST, SMELTER RD, TOWER ST, UNKNOWN ST, WEIR RD, ZILLMANTON RD",
         "start_utc": "2026-07-22T05:41:03Z",
-        "etr_utc": null,
+        "etr_utc": "2026-07-22T12:30:00Z",
         "centroid_lon": 144.51558918516386,
         "centroid_lat": -17.152624007193793,
         "lga_name": "Mareeba Shire",
@@ -347,8 +347,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T09:15:28Z",
-        "snapshot_aest": "2026-07-22T19:15:28+10:00",
+        "snapshot_utc": "2026-07-22T09:30:32Z",
+        "snapshot_aest": "2026-07-22T19:30:32+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903249",
@@ -415,8 +415,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T09:15:28Z",
-        "snapshot_aest": "2026-07-22T19:15:28+10:00",
+        "snapshot_utc": "2026-07-22T09:30:32Z",
+        "snapshot_aest": "2026-07-22T19:30:32+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903250",
@@ -491,8 +491,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T09:15:28Z",
-        "snapshot_aest": "2026-07-22T19:15:28+10:00",
+        "snapshot_utc": "2026-07-22T09:30:32Z",
+        "snapshot_aest": "2026-07-22T19:30:32+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903254",
@@ -510,6 +510,70 @@
         "centroid_lat": -17.00772655640647,
         "lga_name": "Mareeba Shire",
         "lga_code": "4880",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.194135978475,
+              -15.4778099141405
+            ],
+            [
+              145.194597062777,
+              -15.4773130281832
+            ],
+            [
+              145.195068302175,
+              -15.4773105638969
+            ],
+            [
+              145.195536549561,
+              -15.477775102157
+            ],
+            [
+              145.195433175875,
+              -15.4813367963844
+            ],
+            [
+              145.194984145461,
+              -15.4817756248192
+            ],
+            [
+              145.194503829263,
+              -15.4813691430376
+            ],
+            [
+              145.194135978475,
+              -15.4778099141405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-22T09:30:32Z",
+        "snapshot_aest": "2026-07-22T19:30:32+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903255",
+        "outage_id": "903255",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "COOKTOWN",
+        "street_name": "ENDEAVOUR VALLEY RD, UNKNOWN ST",
+        "start_utc": "2026-07-22T07:29:08Z",
+        "etr_utc": null,
+        "centroid_lon": 145.19489221411555,
+        "centroid_lat": -15.479361730460257,
+        "lga_name": "Cook Shire",
+        "lga_code": "2500",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
