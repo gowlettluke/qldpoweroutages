@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T07:30:34Z",
-        "snapshot_aest": "2026-07-22T17:30:34+10:00",
+        "snapshot_utc": "2026-07-22T07:45:26Z",
+        "snapshot_aest": "2026-07-22T17:45:26+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903242",
@@ -179,21 +179,21 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T07:30:34Z",
-        "snapshot_aest": "2026-07-22T17:30:34+10:00",
+        "snapshot_utc": "2026-07-22T07:45:26Z",
+        "snapshot_aest": "2026-07-22T17:45:26+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903244",
         "outage_id": "903244",
         "outage_type": "unplanned",
         "status": "Outage reported",
-        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
         "affected_customers": 50,
         "affected_customers_known": true,
         "suburb": "CLERMONT, WOLFANG",
         "street_name": "BARRYLAR RD, CAPELLA RD, FLEURS RD, MOUNT DONALD RD, NEW CORRY RD, PEAK DOWNS HWY, WOLFANG ACCESS RD",
         "start_utc": "2026-07-22T01:17:51Z",
-        "etr_utc": null,
+        "etr_utc": "2026-07-22T09:00:00Z",
         "centroid_lon": 147.76930723811395,
         "centroid_lat": -22.667932533721906,
         "lga_name": "Isaac Regional",
@@ -267,8 +267,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-22T07:30:34Z",
-        "snapshot_aest": "2026-07-22T17:30:34+10:00",
+        "snapshot_utc": "2026-07-22T07:45:26Z",
+        "snapshot_aest": "2026-07-22T17:45:26+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903248",
@@ -286,6 +286,106 @@
         "centroid_lat": -17.152624007193793,
         "lga_name": "Mareeba Shire",
         "lga_code": "4880",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.721822701182,
+              -19.3406773143236
+            ],
+            [
+              146.721755345207,
+              -19.3399843981195
+            ],
+            [
+              146.722128684625,
+              -19.3396310140423
+            ],
+            [
+              146.722232737992,
+              -19.3395564540387
+            ],
+            [
+              146.72315171506,
+              -19.3390693697482
+            ],
+            [
+              146.723522633516,
+              -19.339031679712
+            ],
+            [
+              146.725887454637,
+              -19.3397161556452
+            ],
+            [
+              146.726208711309,
+              -19.340264315013
+            ],
+            [
+              146.726062631345,
+              -19.3407866394915
+            ],
+            [
+              146.725675672691,
+              -19.3411171951594
+            ],
+            [
+              146.724864348216,
+              -19.3412369359886
+            ],
+            [
+              146.724789552683,
+              -19.3412422977623
+            ],
+            [
+              146.724593998862,
+              -19.3412416499043
+            ],
+            [
+              146.724524702031,
+              -19.3412366043679
+            ],
+            [
+              146.722271529657,
+              -19.340914178232
+            ],
+            [
+              146.722073722935,
+              -19.3408403138748
+            ],
+            [
+              146.721822701182,
+              -19.3406773143236
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-22T07:45:26Z",
+        "snapshot_aest": "2026-07-22T17:45:26+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903249",
+        "outage_id": "903249",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 38,
+        "affected_customers_known": true,
+        "suburb": "CONDON, RASMUSSEN",
+        "street_name": "GOLLOGLY LANE, MALLEE ST",
+        "start_utc": "2026-07-22T07:21:07Z",
+        "etr_utc": null,
+        "centroid_lon": 146.7239654811592,
+        "centroid_lat": -19.340216996444255,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
