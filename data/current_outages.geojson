@@ -111,8 +111,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-23T05:45:23Z",
-        "snapshot_aest": "2026-07-23T15:45:23+10:00",
+        "snapshot_utc": "2026-07-23T06:00:37Z",
+        "snapshot_aest": "2026-07-23T16:00:37+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972207-g",
@@ -125,7 +125,7 @@
         "suburb": "CURRIMUNDI",
         "street_name": "FLINDERS ST, GOTHIC PDE, HOLT ST, HUME PDE, ROBE ST, WATSON ST",
         "start_utc": "2026-07-23T03:52:37Z",
-        "etr_utc": "2026-07-23T06:30:00Z",
+        "etr_utc": "2026-07-23T08:30:00Z",
         "centroid_lon": 153.13522607670873,
         "centroid_lat": -26.768588269895595,
         "lga_name": "Sunshine Coast Regional",
@@ -195,8 +195,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-23T05:45:23Z",
-        "snapshot_aest": "2026-07-23T15:45:23+10:00",
+        "snapshot_utc": "2026-07-23T06:00:37Z",
+        "snapshot_aest": "2026-07-23T16:00:37+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972241-g",
@@ -255,8 +255,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-23T05:45:23Z",
-        "snapshot_aest": "2026-07-23T15:45:23+10:00",
+        "snapshot_utc": "2026-07-23T06:00:37Z",
+        "snapshot_aest": "2026-07-23T16:00:37+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903373",
@@ -347,8 +347,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-23T05:45:23Z",
-        "snapshot_aest": "2026-07-23T15:45:23+10:00",
+        "snapshot_utc": "2026-07-23T06:00:37Z",
+        "snapshot_aest": "2026-07-23T16:00:37+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903379",
@@ -366,6 +366,90 @@
         "centroid_lat": -15.294272675761452,
         "lga_name": "Cook Shire",
         "lga_code": "2500",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.894773933021,
+              -25.015304595424
+            ],
+            [
+              149.894899238934,
+              -25.014765431321
+            ],
+            [
+              149.895503371103,
+              -25.0147391358967
+            ],
+            [
+              149.907197873374,
+              -25.0221773744013
+            ],
+            [
+              149.907368689432,
+              -25.0223677377136
+            ],
+            [
+              149.925864715504,
+              -25.0611991672649
+            ],
+            [
+              149.925905630818,
+              -25.0613740441102
+            ],
+            [
+              149.926024124363,
+              -25.0716991125444
+            ],
+            [
+              149.926008735982,
+              -25.0718154936884
+            ],
+            [
+              149.925868661584,
+              -25.0723147970795
+            ],
+            [
+              149.925437927704,
+              -25.0726519741475
+            ],
+            [
+              149.924942616551,
+              -25.0723988297176
+            ],
+            [
+              149.894773933021,
+              -25.015304595424
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-23T06:00:37Z",
+        "snapshot_aest": "2026-07-23T16:00:37+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903380",
+        "outage_id": "903380",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 6,
+        "affected_customers_known": true,
+        "suburb": "THEODORE",
+        "street_name": "GLENBAR RD",
+        "start_utc": "2026-07-23T05:47:32Z",
+        "etr_utc": null,
+        "centroid_lon": 149.91238015271162,
+        "centroid_lat": -25.041673322247657,
+        "lga_name": "Banana Shire",
+        "lga_code": "370",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
