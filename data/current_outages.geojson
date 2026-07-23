@@ -87,8 +87,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-23T02:00:37Z",
-        "snapshot_aest": "2026-07-23T12:00:37+10:00",
+        "snapshot_utc": "2026-07-23T02:15:27Z",
+        "snapshot_aest": "2026-07-23T12:15:27+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903365",
@@ -227,8 +227,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-23T02:00:37Z",
-        "snapshot_aest": "2026-07-23T12:00:37+10:00",
+        "snapshot_utc": "2026-07-23T02:15:27Z",
+        "snapshot_aest": "2026-07-23T12:15:27+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903369",
@@ -246,6 +246,74 @@
         "centroid_lat": -10.595386006632216,
         "lga_name": "Torres Shire",
         "lga_code": "6950",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.742601017078,
+              -23.7154048300751
+            ],
+            [
+              149.742845908767,
+              -23.7148152804247
+            ],
+            [
+              149.743491327724,
+              -23.7150280437057
+            ],
+            [
+              149.76385579862,
+              -23.7536000749641
+            ],
+            [
+              149.763679477487,
+              -23.754177189485
+            ],
+            [
+              149.763036136876,
+              -23.7540836794087
+            ],
+            [
+              149.758409226197,
+              -23.7488972852728
+            ],
+            [
+              149.758338405143,
+              -23.7487905990914
+            ],
+            [
+              149.742601017078,
+              -23.7154048300751
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-23T02:15:27Z",
+        "snapshot_aest": "2026-07-23T12:15:27+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903372",
+        "outage_id": "903372",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "DUARINGA, EDUNGALBA",
+        "street_name": "AROONA RD, BOOLBURRA RD, OFF CAPRICORN HWY",
+        "start_utc": "2026-07-22T23:39:38Z",
+        "etr_utc": null,
+        "centroid_lon": 149.75389344287132,
+        "centroid_lat": -23.73679214703187,
+        "lga_name": "Central Highlands Regional",
+        "lga_code": "2270",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
