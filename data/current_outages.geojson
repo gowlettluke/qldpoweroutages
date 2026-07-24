@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-24T21:00:44Z",
-        "snapshot_aest": "2026-07-25T07:00:44+10:00",
+        "snapshot_utc": "2026-07-24T21:15:25Z",
+        "snapshot_aest": "2026-07-25T07:15:25+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972511-g",
@@ -123,8 +123,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-24T21:00:44Z",
-        "snapshot_aest": "2026-07-25T07:00:44+10:00",
+        "snapshot_utc": "2026-07-24T21:15:25Z",
+        "snapshot_aest": "2026-07-25T07:15:25+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903501",
@@ -142,6 +142,106 @@
         "centroid_lat": -23.89257745124271,
         "lga_name": "Banana Shire",
         "lga_code": "370",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.74515008832,
+              -23.5499831590569
+            ],
+            [
+              147.745629811646,
+              -23.5494870456208
+            ],
+            [
+              147.748320531732,
+              -23.549447767533
+            ],
+            [
+              147.748322474372,
+              -23.5494477427105
+            ],
+            [
+              147.749365762859,
+              -23.5494363160153
+            ],
+            [
+              147.749839901104,
+              -23.5500203591369
+            ],
+            [
+              147.749681626367,
+              -23.5504959311939
+            ],
+            [
+              147.749412907757,
+              -23.5507758831873
+            ],
+            [
+              147.747622418332,
+              -23.5515123486328
+            ],
+            [
+              147.747444295467,
+              -23.5515511010249
+            ],
+            [
+              147.747065197483,
+              -23.5515664347033
+            ],
+            [
+              147.747037956841,
+              -23.5515668374022
+            ],
+            [
+              147.745924259987,
+              -23.5515547412788
+            ],
+            [
+              147.745486335381,
+              -23.5512945651082
+            ],
+            [
+              147.745274164475,
+              -23.5508765469161
+            ],
+            [
+              147.745230383834,
+              -23.550729708641
+            ],
+            [
+              147.74515008832,
+              -23.5499831590569
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-24T21:15:25Z",
+        "snapshot_aest": "2026-07-25T07:15:25+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903512",
+        "outage_id": "903512",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 23,
+        "affected_customers_known": true,
+        "suburb": "ANAKIE, ANAKIE SIDING, THE GEMFIELDS",
+        "street_name": "CAMERON ST, EVANS ST, HEGARTY ST, O'SULLIVAN ST",
+        "start_utc": "2026-07-24T20:37:46Z",
+        "etr_utc": null,
+        "centroid_lon": 147.74734056576895,
+        "centroid_lat": -23.550412115251984,
+        "lga_name": "Central Highlands Regional",
+        "lga_code": "2270",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
