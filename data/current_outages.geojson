@@ -91,8 +91,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-24T07:30:38Z",
-        "snapshot_aest": "2026-07-24T17:30:38+10:00",
+        "snapshot_utc": "2026-07-24T07:45:24Z",
+        "snapshot_aest": "2026-07-24T17:45:24+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972476-g",
@@ -151,8 +151,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-24T07:30:38Z",
-        "snapshot_aest": "2026-07-24T17:30:38+10:00",
+        "snapshot_utc": "2026-07-24T07:45:24Z",
+        "snapshot_aest": "2026-07-24T17:45:24+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903501",
@@ -165,7 +165,7 @@
         "suburb": "DULULU",
         "street_name": "PLAYFIELDS RD",
         "start_utc": "2026-07-23T21:37:57Z",
-        "etr_utc": "2026-07-24T08:00:00Z",
+        "etr_utc": "2026-07-24T09:00:00Z",
         "centroid_lon": 150.5537683289801,
         "centroid_lat": -23.89257745124271,
         "lga_name": "Banana Shire",
@@ -231,8 +231,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-24T07:30:38Z",
-        "snapshot_aest": "2026-07-24T17:30:38+10:00",
+        "snapshot_utc": "2026-07-24T07:45:24Z",
+        "snapshot_aest": "2026-07-24T17:45:24+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903502",
@@ -250,6 +250,66 @@
         "centroid_lat": -21.20908717967056,
         "lga_name": "Mackay Regional",
         "lga_code": "4770",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              140.769812214595,
+              -20.1209462217893
+            ],
+            [
+              140.770408209561,
+              -20.1212413927356
+            ],
+            [
+              140.770095708669,
+              -20.1218043381175
+            ],
+            [
+              140.682725034839,
+              -20.147527909761
+            ],
+            [
+              140.682129209212,
+              -20.1472324568468
+            ],
+            [
+              140.682442060094,
+              -20.1466697674882
+            ],
+            [
+              140.769812214595,
+              -20.1209462217893
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-24T07:45:24Z",
+        "snapshot_aest": "2026-07-24T17:45:24+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903504",
+        "outage_id": "903504",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is there are supply problems resulting in low voltage conditions. It is advisable to disconnect sensitive electrical appliances.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "CLONCURRY",
+        "street_name": "BENDIGO PARK STATION, THREE WAYS RD",
+        "start_utc": "2026-07-24T05:30:05Z",
+        "etr_utc": null,
+        "centroid_lon": 140.72626968298138,
+        "centroid_lat": -20.134236758396526,
+        "lga_name": "Cloncurry Shire",
+        "lga_code": "2450",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
