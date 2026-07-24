@@ -91,8 +91,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-24T09:15:32Z",
-        "snapshot_aest": "2026-07-24T19:15:32+10:00",
+        "snapshot_utc": "2026-07-24T09:30:37Z",
+        "snapshot_aest": "2026-07-24T19:30:37+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972476-g",
@@ -151,8 +151,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-24T09:15:32Z",
-        "snapshot_aest": "2026-07-24T19:15:32+10:00",
+        "snapshot_utc": "2026-07-24T09:30:37Z",
+        "snapshot_aest": "2026-07-24T19:30:37+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903501",
@@ -170,6 +170,86 @@
         "centroid_lat": -23.89257745124271,
         "lga_name": "Banana Shire",
         "lga_code": "370",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.567318911414,
+              -20.6330853714784
+            ],
+            [
+              148.567687881204,
+              -20.6325722082275
+            ],
+            [
+              148.573892364957,
+              -20.6312672098041
+            ],
+            [
+              148.574454574564,
+              -20.6315722373272
+            ],
+            [
+              148.58317633136,
+              -20.6576201284139
+            ],
+            [
+              148.583012917079,
+              -20.6581126846252
+            ],
+            [
+              148.582465423521,
+              -20.6581395327896
+            ],
+            [
+              148.571889766664,
+              -20.6519538277572
+            ],
+            [
+              148.571686451301,
+              -20.6517090928234
+            ],
+            [
+              148.569375417869,
+              -20.6449768611666
+            ],
+            [
+              148.569358377865,
+              -20.6449103791331
+            ],
+            [
+              148.567318911414,
+              -20.6330853714784
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-24T09:30:37Z",
+        "snapshot_aest": "2026-07-24T19:30:37+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903505",
+        "outage_id": "903505",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "affected_customers": 12,
+        "affected_customers_known": true,
+        "suburb": "BLOOMSBURY",
+        "street_name": "CAMPBELLS RD, CAPING RD, STAFFORDS RD",
+        "start_utc": "2026-07-24T06:49:24Z",
+        "etr_utc": null,
+        "centroid_lon": 148.57443687953614,
+        "centroid_lat": -20.644159977696876,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
