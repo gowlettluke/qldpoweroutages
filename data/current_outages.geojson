@@ -67,8 +67,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-25T19:15:29Z",
-        "snapshot_aest": "2026-07-26T05:15:29+10:00",
+        "snapshot_utc": "2026-07-25T19:30:28Z",
+        "snapshot_aest": "2026-07-26T05:30:28+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972661-g",
@@ -199,8 +199,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-25T19:15:29Z",
-        "snapshot_aest": "2026-07-26T05:15:29+10:00",
+        "snapshot_utc": "2026-07-25T19:30:28Z",
+        "snapshot_aest": "2026-07-26T05:30:28+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903597",
@@ -315,8 +315,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-25T19:15:29Z",
-        "snapshot_aest": "2026-07-26T05:15:29+10:00",
+        "snapshot_utc": "2026-07-25T19:30:28Z",
+        "snapshot_aest": "2026-07-26T05:30:28+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903598",
@@ -334,6 +334,110 @@
         "centroid_lat": -27.962587958669598,
         "lga_name": "Balonne Shire",
         "lga_code": "300",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.328220309471,
+              -24.8713189007338
+            ],
+            [
+              152.328247006783,
+              -24.8710702935952
+            ],
+            [
+              152.328368943597,
+              -24.8707909173127
+            ],
+            [
+              152.328461021152,
+              -24.8706559050988
+            ],
+            [
+              152.328755648905,
+              -24.8703580824727
+            ],
+            [
+              152.328864449978,
+              -24.8702756989482
+            ],
+            [
+              152.330032015945,
+              -24.8696242108939
+            ],
+            [
+              152.330110897649,
+              -24.8695885937672
+            ],
+            [
+              152.337296357507,
+              -24.8670440273168
+            ],
+            [
+              152.337891409349,
+              -24.8672226194483
+            ],
+            [
+              152.33781440056,
+              -24.8677897828658
+            ],
+            [
+              152.331793568841,
+              -24.8730043492593
+            ],
+            [
+              152.331641613958,
+              -24.8730941476429
+            ],
+            [
+              152.329581618843,
+              -24.8738671106267
+            ],
+            [
+              152.328924110639,
+              -24.8735877035491
+            ],
+            [
+              152.328354269045,
+              -24.8719576900619
+            ],
+            [
+              152.328339242592,
+              -24.8719031338901
+            ],
+            [
+              152.328220309471,
+              -24.8713189007338
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-25T19:30:28Z",
+        "snapshot_aest": "2026-07-26T05:30:28+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903599",
+        "outage_id": "903599",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 48,
+        "affected_customers_known": true,
+        "suburb": "BUNDABERG, BUNDABERG WEST",
+        "street_name": "BOURBONG ST, HOPE ST, KENNEDY ST, WOONGARRA ST",
+        "start_utc": "2026-07-25T19:03:46Z",
+        "etr_utc": null,
+        "centroid_lon": 152.33232698148217,
+        "centroid_lat": -24.870472848329822,
+        "lga_name": "Bundaberg Regional",
+        "lga_code": "1820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
