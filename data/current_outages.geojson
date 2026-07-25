@@ -95,21 +95,21 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-25T11:45:23Z",
-        "snapshot_aest": "2026-07-25T21:45:23+10:00",
+        "snapshot_utc": "2026-07-25T12:00:46Z",
+        "snapshot_aest": "2026-07-25T22:00:46+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972636-g",
         "outage_id": "INCD-972636-g",
         "outage_type": "unplanned",
         "status": "Awaiting",
-        "reason": "Under Investigation",
+        "reason": "Emergency Repairs",
         "affected_customers": 192,
         "affected_customers_known": true,
         "suburb": "ST LUCIA",
         "street_name": "COLDRIDGE ST, MUNRO ST, SIR FRED SCHONELL DR, WARREN ST",
         "start_utc": "2026-07-25T09:41:09Z",
-        "etr_utc": "2026-07-25T12:00:00Z",
+        "etr_utc": "2026-07-25T13:30:00Z",
         "centroid_lon": 153.00480989174153,
         "centroid_lat": -27.494768242317043,
         "lga_name": "Brisbane City",
@@ -203,15 +203,15 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-25T11:45:23Z",
-        "snapshot_aest": "2026-07-25T21:45:23+10:00",
+        "snapshot_utc": "2026-07-25T12:00:46Z",
+        "snapshot_aest": "2026-07-25T22:00:46+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972642-g",
         "outage_id": "INCD-972642-g",
         "outage_type": "unplanned",
         "status": "Awaiting",
-        "reason": "Emergency Repairs",
+        "reason": "Emergency repairs in-progress",
         "affected_customers": 28,
         "affected_customers_known": true,
         "suburb": "WORONGARY",
@@ -267,8 +267,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-25T11:45:23Z",
-        "snapshot_aest": "2026-07-25T21:45:23+10:00",
+        "snapshot_utc": "2026-07-25T12:00:46Z",
+        "snapshot_aest": "2026-07-25T22:00:46+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903595",
@@ -286,66 +286,6 @@
         "centroid_lat": -27.434151791637714,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
-        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              149.176514814919,
-              -21.2295219853504
-            ],
-            [
-              149.176310908272,
-              -21.2301311878643
-            ],
-            [
-              149.175661156723,
-              -21.2299400046436
-            ],
-            [
-              149.175456160869,
-              -21.2295719890225
-            ],
-            [
-              149.175660070587,
-              -21.2289627872696
-            ],
-            [
-              149.176309817727,
-              -21.229153970883
-            ],
-            [
-              149.176514814919,
-              -21.2295219853504
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "snapshot_utc": "2026-07-25T11:45:23Z",
-        "snapshot_aest": "2026-07-25T21:45:23+10:00",
-        "provider_code": "au.qld.ergon",
-        "provider_name": "Ergon Energy",
-        "outage_key": "au.qld.ergon|unplanned|903596",
-        "outage_id": "903596",
-        "outage_type": "unplanned",
-        "status": "Crews working on-site",
-        "reason": "The loss of supply is due to damage requiring emergency repairs.",
-        "affected_customers": 2,
-        "affected_customers_known": true,
-        "suburb": "CHELONA",
-        "street_name": "HOLMES RD",
-        "start_utc": "2026-07-25T08:33:09Z",
-        "etr_utc": "2026-07-25T12:30:00Z",
-        "centroid_lon": 149.17598515860027,
-        "centroid_lat": -21.22954694101771,
-        "lga_name": "Mackay Regional",
-        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
