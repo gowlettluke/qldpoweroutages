@@ -39,8 +39,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-26T03:30:29Z",
-        "snapshot_aest": "2026-07-26T13:30:29+10:00",
+        "snapshot_utc": "2026-07-26T03:45:27Z",
+        "snapshot_aest": "2026-07-26T13:45:27+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972673-g",
@@ -123,8 +123,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-26T03:30:29Z",
-        "snapshot_aest": "2026-07-26T13:30:29+10:00",
+        "snapshot_utc": "2026-07-26T03:45:27Z",
+        "snapshot_aest": "2026-07-26T13:45:27+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972686-g",
@@ -215,14 +215,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-26T03:30:29Z",
-        "snapshot_aest": "2026-07-26T13:30:29+10:00",
+        "snapshot_utc": "2026-07-26T03:45:27Z",
+        "snapshot_aest": "2026-07-26T13:45:27+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972691-g",
         "outage_id": "INCD-972691-g",
         "outage_type": "unplanned",
-        "status": "In Progress",
+        "status": "Awaiting",
         "reason": "Emergency repairs in-progress",
         "affected_customers": 25,
         "affected_customers_known": true,
@@ -395,8 +395,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-26T03:30:29Z",
-        "snapshot_aest": "2026-07-26T13:30:29+10:00",
+        "snapshot_utc": "2026-07-26T03:45:27Z",
+        "snapshot_aest": "2026-07-26T13:45:27+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972706-g",
@@ -499,8 +499,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-26T03:30:29Z",
-        "snapshot_aest": "2026-07-26T13:30:29+10:00",
+        "snapshot_utc": "2026-07-26T03:45:27Z",
+        "snapshot_aest": "2026-07-26T13:45:27+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903599",
@@ -583,8 +583,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-26T03:30:29Z",
-        "snapshot_aest": "2026-07-26T13:30:29+10:00",
+        "snapshot_utc": "2026-07-26T03:45:27Z",
+        "snapshot_aest": "2026-07-26T13:45:27+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903654",
@@ -602,6 +602,66 @@
         "centroid_lat": -24.886992122577436,
         "lga_name": "Bundaberg Regional",
         "lga_code": "1820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.617763609883,
+              -20.5363863237898
+            ],
+            [
+              148.61801596566,
+              -20.5369791672683
+            ],
+            [
+              148.617386606308,
+              -20.5372168813767
+            ],
+            [
+              148.609279319661,
+              -20.5339512179208
+            ],
+            [
+              148.609027002461,
+              -20.5333583589431
+            ],
+            [
+              148.609656361673,
+              -20.5331206752883
+            ],
+            [
+              148.617763609883,
+              -20.5363863237898
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-26T03:45:27Z",
+        "snapshot_aest": "2026-07-26T13:45:27+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903658",
+        "outage_id": "903658",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "ANDROMACHE",
+        "street_name": "GUNYARRA RD",
+        "start_utc": "2026-07-26T03:12:38Z",
+        "etr_utc": null,
+        "centroid_lon": 148.6135221118144,
+        "centroid_lat": -20.535168863158777,
+        "lga_name": "Whitsunday Regional",
+        "lga_code": "7340",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
