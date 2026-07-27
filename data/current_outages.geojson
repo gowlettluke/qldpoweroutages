@@ -87,8 +87,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-27T19:45:28Z",
-        "snapshot_aest": "2026-07-28T05:45:28+10:00",
+        "snapshot_utc": "2026-07-27T20:00:45Z",
+        "snapshot_aest": "2026-07-28T06:00:45+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-972941-g",
@@ -151,8 +151,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-27T19:45:28Z",
-        "snapshot_aest": "2026-07-28T05:45:28+10:00",
+        "snapshot_utc": "2026-07-27T20:00:45Z",
+        "snapshot_aest": "2026-07-28T06:00:45+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903698",
@@ -170,6 +170,114 @@
         "centroid_lat": -25.547822859575195,
         "lga_name": "North Burnett Regional",
         "lga_code": "5760",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.508989532273,
+              -20.6967222285784
+            ],
+            [
+              148.508446314304,
+              -20.6961122924546
+            ],
+            [
+              148.518938195297,
+              -20.6714194595231
+            ],
+            [
+              148.518994254439,
+              -20.6713233476742
+            ],
+            [
+              148.523300521457,
+              -20.6656904056271
+            ],
+            [
+              148.52335020421,
+              -20.6656353117982
+            ],
+            [
+              148.610090155423,
+              -20.5836802810505
+            ],
+            [
+              148.610619439449,
+              -20.5835840686425
+            ],
+            [
+              148.623266866755,
+              -20.5887043371399
+            ],
+            [
+              148.623504046723,
+              -20.5889128422079
+            ],
+            [
+              148.626927881252,
+              -20.5951866608971
+            ],
+            [
+              148.626956253074,
+              -20.5952501331844
+            ],
+            [
+              148.632983021098,
+              -20.6122540078125
+            ],
+            [
+              148.632925431139,
+              -20.6126498959828
+            ],
+            [
+              148.590490680678,
+              -20.6717355459345
+            ],
+            [
+              148.590260012841,
+              -20.6719060120269
+            ],
+            [
+              148.532042974518,
+              -20.6922130154865
+            ],
+            [
+              148.53197384492,
+              -20.6922317061537
+            ],
+            [
+              148.508989532273,
+              -20.6967222285784
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-27T20:00:45Z",
+        "snapshot_aest": "2026-07-28T06:00:45+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903701",
+        "outage_id": "903701",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "affected_customers": 74,
+        "affected_customers_known": true,
+        "suburb": "BLOOMSBURY",
+        "street_name": "BOLLONS RD, BRUCE HWY, CAMPBELLS RD, CAPING RD, DOUGHERTYS RD, KUNAPIPI RD, LLEWELLYN RD, O'DONNELLS RD, STAFFORDS RD, THOMSETTS RD",
+        "start_utc": "2026-07-27T19:38:23Z",
+        "etr_utc": null,
+        "centroid_lon": 148.5767955308051,
+        "centroid_lat": -20.64349658213545,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
