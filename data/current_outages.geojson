@@ -31,8 +31,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-27T06:00:45Z",
-        "snapshot_aest": "2026-07-27T16:00:45+10:00",
+        "snapshot_utc": "2026-07-27T06:15:31Z",
+        "snapshot_aest": "2026-07-27T16:15:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903665",
@@ -50,6 +50,102 @@
         "centroid_lat": -27.89717457719458,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.913970541606,
+              -20.9459639311534
+            ],
+            [
+              148.913690390252,
+              -20.9455078230961
+            ],
+            [
+              148.914060713796,
+              -20.9451125109784
+            ],
+            [
+              148.925059873437,
+              -20.9427295884226
+            ],
+            [
+              148.925160602146,
+              -20.9427180878759
+            ],
+            [
+              148.948762613598,
+              -20.9423794897316
+            ],
+            [
+              148.948974230376,
+              -20.9424222280142
+            ],
+            [
+              148.959205208661,
+              -20.9469332202555
+            ],
+            [
+              148.959471577998,
+              -20.9472499341577
+            ],
+            [
+              148.961335454625,
+              -20.955657065999
+            ],
+            [
+              148.961242954938,
+              -20.9560279690985
+            ],
+            [
+              148.958902771383,
+              -20.9588280073865
+            ],
+            [
+              148.95849363275,
+              -20.958999779522
+            ],
+            [
+              148.942419917516,
+              -20.9580226012186
+            ],
+            [
+              148.942252880514,
+              -20.9579834179928
+            ],
+            [
+              148.913970541606,
+              -20.9459639311534
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-27T06:15:31Z",
+        "snapshot_aest": "2026-07-27T16:15:31+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903694",
+        "outage_id": "903694",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 36,
+        "affected_customers_known": true,
+        "suburb": "MOUNT JUKES, SEAFORTH",
+        "street_name": "GORMLEYS RD, YAKAPARI SEAFORTH RD, YAKAPARI-SEAFORTH RD",
+        "start_utc": "2026-07-27T06:30:00Z",
+        "etr_utc": null,
+        "centroid_lon": 148.94162121628347,
+        "centroid_lat": -20.94973340683606,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
