@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-28T16:15:34Z",
-        "snapshot_aest": "2026-07-29T02:15:34+10:00",
+        "snapshot_utc": "2026-07-28T16:30:43Z",
+        "snapshot_aest": "2026-07-29T02:30:43+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973186-g",
@@ -151,8 +151,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-28T16:15:34Z",
-        "snapshot_aest": "2026-07-29T02:15:34+10:00",
+        "snapshot_utc": "2026-07-28T16:30:43Z",
+        "snapshot_aest": "2026-07-29T02:30:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903758",
@@ -170,6 +170,98 @@
         "centroid_lat": -27.56107730047284,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.743106061788,
+              -28.7789368508111
+            ],
+            [
+              151.743293686025,
+              -28.7783511686653
+            ],
+            [
+              151.754202095368,
+              -28.7724131569241
+            ],
+            [
+              151.754459003611,
+              -28.7723460717369
+            ],
+            [
+              151.770214044691,
+              -28.7720290398625
+            ],
+            [
+              151.770466418923,
+              -28.772082003425
+            ],
+            [
+              151.830092786724,
+              -28.8001196165196
+            ],
+            [
+              151.830267747118,
+              -28.8002547018871
+            ],
+            [
+              151.834503726194,
+              -28.8054652053637
+            ],
+            [
+              151.834592701841,
+              -28.805655346085
+            ],
+            [
+              151.836709285913,
+              -28.8171732854006
+            ],
+            [
+              151.836624122535,
+              -28.817502478947
+            ],
+            [
+              151.79569972912,
+              -28.8692068104587
+            ],
+            [
+              151.794823884438,
+              -28.8691523703188
+            ],
+            [
+              151.743106061788,
+              -28.7789368508111
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-28T16:30:43Z",
+        "snapshot_aest": "2026-07-29T02:30:43+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903759",
+        "outage_id": "903759",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 87,
+        "affected_customers_known": true,
+        "suburb": "BALLANDEAN",
+        "street_name": "BENTS RD, COSTANZO LANE, CURTIN RD, ERICS LANE, FAIRBANK LANE, GIBBS LANE, HAYNES RD, LYNAMS RD, MCMENIMAN RD, MURPHYS CROSSING RD, PINE GROVE RD, PUGLISI LANE, RICCA RD, SUNDOWN RD, ZAMBELLI RD",
+        "start_utc": "2026-07-28T16:15:16Z",
+        "etr_utc": null,
+        "centroid_lon": 151.79182466485082,
+        "centroid_lat": -28.813069579652158,
+        "lga_name": "Southern Downs Regional",
+        "lga_code": "6660",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
