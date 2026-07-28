@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-28T22:00:37Z",
-        "snapshot_aest": "2026-07-29T08:00:37+10:00",
+        "snapshot_utc": "2026-07-28T22:15:27Z",
+        "snapshot_aest": "2026-07-29T08:15:27+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973186-g",
@@ -155,8 +155,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-28T22:00:37Z",
-        "snapshot_aest": "2026-07-29T08:00:37+10:00",
+        "snapshot_utc": "2026-07-28T22:15:27Z",
+        "snapshot_aest": "2026-07-29T08:15:27+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903759",
@@ -174,6 +174,122 @@
         "centroid_lat": -28.791923412039186,
         "lga_name": "Southern Downs Regional",
         "lga_code": "6660",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.886450425229,
+              -21.1841373593136
+            ],
+            [
+              148.886455171336,
+              -21.1836701862153
+            ],
+            [
+              148.897038154901,
+              -21.1675960277409
+            ],
+            [
+              148.897264744276,
+              -21.1674156217767
+            ],
+            [
+              148.942195875804,
+              -21.1500844001593
+            ],
+            [
+              148.942823705944,
+              -21.1503292227301
+            ],
+            [
+              148.969419514474,
+              -21.2105443599323
+            ],
+            [
+              148.969428607151,
+              -21.2105665741186
+            ],
+            [
+              148.973290703079,
+              -21.2207993492244
+            ],
+            [
+              148.97331113732,
+              -21.2208724302189
+            ],
+            [
+              148.979951429123,
+              -21.2565656956453
+            ],
+            [
+              148.979560964235,
+              -21.2570878993653
+            ],
+            [
+              148.95982796893,
+              -21.2603645940967
+            ],
+            [
+              148.959528116538,
+              -21.2603236325608
+            ],
+            [
+              148.938982958691,
+              -21.250667350996
+            ],
+            [
+              148.938854237324,
+              -21.2505791688069
+            ],
+            [
+              148.913006048724,
+              -21.225755320386
+            ],
+            [
+              148.912952825605,
+              -21.2256943525657
+            ],
+            [
+              148.910829429804,
+              -21.2227752252412
+            ],
+            [
+              148.910812839038,
+              -21.2227507652542
+            ],
+            [
+              148.886450425229,
+              -21.1841373593136
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-28T22:15:27Z",
+        "snapshot_aest": "2026-07-29T08:15:27+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903769",
+        "outage_id": "903769",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 328,
+        "affected_customers_known": true,
+        "suburb": "ALLANDALE, BRIGHTLY, ETON, KINCHANT DAM, MARIAN, MIRANI, NORTH ETON",
+        "street_name": "ALLANDALE RD, BRAND RD, CLAIRES RD, FORDYCES RD, HANNANS RD, JONES RD, KELLYS RD, KINCHANT DAM RD, LEICHHARDT RD, MARGE CAMERONS RD, MARIAN ETON RD, MARKEYS RD, MULLERS RD, MUSCATS RD, N LAMBS RD, NORTH ETON RD, PLATHS RD, SAVANNAH DR, SORBELLOS RD, THOMAS DEGUARA DR",
+        "start_utc": "2026-07-28T21:53:24Z",
+        "etr_utc": null,
+        "centroid_lon": 148.93605758533428,
+        "centroid_lat": -21.205327085463484,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
