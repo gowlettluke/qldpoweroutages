@@ -99,8 +99,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-28T05:45:29Z",
-        "snapshot_aest": "2026-07-28T15:45:29+10:00",
+        "snapshot_utc": "2026-07-28T06:00:47Z",
+        "snapshot_aest": "2026-07-28T16:00:47+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973140-g",
@@ -113,7 +113,7 @@
         "suburb": "THORNLANDS",
         "street_name": "SANDUNE PL, SEAHORSE CT, SEASPRAY ST, WATERVILLE DR",
         "start_utc": "2026-07-28T05:00:45Z",
-        "etr_utc": "2026-07-28T06:00:00Z",
+        "etr_utc": "2026-07-28T06:30:00Z",
         "centroid_lon": 153.2793269146049,
         "centroid_lat": -27.55644685165599,
         "lga_name": "Redland City",
@@ -203,8 +203,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-28T05:45:29Z",
-        "snapshot_aest": "2026-07-28T15:45:29+10:00",
+        "snapshot_utc": "2026-07-28T06:00:47Z",
+        "snapshot_aest": "2026-07-28T16:00:47+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903750",
@@ -222,6 +222,98 @@
         "centroid_lat": -20.50643723073488,
         "lga_name": "Whitsunday Regional",
         "lga_code": "7340",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.903778029384,
+              -28.5939796248099
+            ],
+            [
+              151.903947454626,
+              -28.5934414257427
+            ],
+            [
+              151.906216330124,
+              -28.5919804173825
+            ],
+            [
+              151.906493923094,
+              -28.5918943932098
+            ],
+            [
+              151.939867863083,
+              -28.5905635465617
+            ],
+            [
+              151.940302664077,
+              -28.5907476471032
+            ],
+            [
+              151.948289107212,
+              -28.6003956281135
+            ],
+            [
+              151.948377813288,
+              -28.6005747256185
+            ],
+            [
+              151.949645972405,
+              -28.6062956549561
+            ],
+            [
+              151.94936884773,
+              -28.6067866249678
+            ],
+            [
+              151.941509161603,
+              -28.6101652829475
+            ],
+            [
+              151.941236945496,
+              -28.6102086508878
+            ],
+            [
+              151.910565622382,
+              -28.6075976033265
+            ],
+            [
+              151.910144655971,
+              -28.6073243036751
+            ],
+            [
+              151.903778029384,
+              -28.5939796248099
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-28T06:00:47Z",
+        "snapshot_aest": "2026-07-28T16:00:47+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903754",
+        "outage_id": "903754",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 46,
+        "affected_customers_known": true,
+        "suburb": "APPLETHORPE",
+        "street_name": "ALLEN LANE, BERTRAM LANE, CHURCH RD, ELLWOOD RD, FORESTO LANE, KELLY RD, ROGERS RD",
+        "start_utc": "2026-07-28T04:30:00Z",
+        "etr_utc": "2026-07-28T06:00:00Z",
+        "centroid_lon": 151.92727853634472,
+        "centroid_lat": -28.600134700986168,
+        "lga_name": "Southern Downs Regional",
+        "lga_code": "6660",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
