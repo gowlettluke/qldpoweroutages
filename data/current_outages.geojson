@@ -159,8 +159,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-29T22:45:32Z",
-        "snapshot_aest": "2026-07-30T08:45:32+10:00",
+        "snapshot_utc": "2026-07-29T23:00:50Z",
+        "snapshot_aest": "2026-07-30T09:00:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903897",
@@ -178,6 +178,90 @@
         "centroid_lat": -25.253747754171247,
         "lga_name": "Fraser Coast Regional",
         "lga_code": "3220",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.585254086679,
+              -20.3097271209146
+            ],
+            [
+              148.584600541945,
+              -20.3092508072565
+            ],
+            [
+              148.584939021255,
+              -20.3067526606978
+            ],
+            [
+              148.5849666825,
+              -20.3066487401995
+            ],
+            [
+              148.586776329579,
+              -20.3021797568102
+            ],
+            [
+              148.587113589095,
+              -20.3019013505142
+            ],
+            [
+              148.595179494973,
+              -20.3001052539822
+            ],
+            [
+              148.595192558914,
+              -20.3001025258586
+            ],
+            [
+              148.599524640795,
+              -20.2992575400083
+            ],
+            [
+              148.600077908187,
+              -20.2995633069974
+            ],
+            [
+              148.601296844752,
+              -20.3031892989528
+            ],
+            [
+              148.601019174341,
+              -20.3037448723058
+            ],
+            [
+              148.585254086679,
+              -20.3097271209146
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-29T23:00:50Z",
+        "snapshot_aest": "2026-07-30T09:00:50+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903940",
+        "outage_id": "903940",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 10,
+        "affected_customers_known": true,
+        "suburb": "GREGORY RIVER, STRATHDICKIE",
+        "street_name": "GREGORY CANNON VALLEY RD, GREGORY-CANNON VALLEY RD, IVANOFF RD, SIMPSON RD",
+        "start_utc": "2026-07-29T22:46:00Z",
+        "etr_utc": null,
+        "centroid_lon": 148.5925253252176,
+        "centroid_lat": -20.303984580539353,
+        "lga_name": "Whitsunday Regional",
+        "lga_code": "7340",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
