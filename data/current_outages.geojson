@@ -111,8 +111,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-29T04:30:30Z",
-        "snapshot_aest": "2026-07-29T14:30:30+10:00",
+        "snapshot_utc": "2026-07-29T04:45:28Z",
+        "snapshot_aest": "2026-07-29T14:45:28+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973271-g",
@@ -195,8 +195,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-29T04:30:30Z",
-        "snapshot_aest": "2026-07-29T14:30:30+10:00",
+        "snapshot_utc": "2026-07-29T04:45:28Z",
+        "snapshot_aest": "2026-07-29T14:45:28+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973272-g",
@@ -327,8 +327,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-29T04:30:30Z",
-        "snapshot_aest": "2026-07-29T14:30:30+10:00",
+        "snapshot_utc": "2026-07-29T04:45:28Z",
+        "snapshot_aest": "2026-07-29T14:45:28+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903836",
@@ -346,6 +346,98 @@
         "centroid_lat": -23.343212128258973,
         "lga_name": "Rockhampton Regional",
         "lga_code": "6370",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.159436033764,
+              -21.0729395242158
+            ],
+            [
+              149.159838541909,
+              -21.0724505554435
+            ],
+            [
+              149.160211352191,
+              -21.0723943255878
+            ],
+            [
+              149.160342346396,
+              -21.0723915324908
+            ],
+            [
+              149.161079574757,
+              -21.0724706923216
+            ],
+            [
+              149.161484738106,
+              -21.0727867116589
+            ],
+            [
+              149.161945056404,
+              -21.0741934949424
+            ],
+            [
+              149.161965446631,
+              -21.0742998880419
+            ],
+            [
+              149.162003852034,
+              -21.0749209413561
+            ],
+            [
+              149.161904849894,
+              -21.0752224516349
+            ],
+            [
+              149.161091137155,
+              -21.0762149227513
+            ],
+            [
+              149.16051676951,
+              -21.0763530800866
+            ],
+            [
+              149.1600120606,
+              -21.0761454134472
+            ],
+            [
+              149.159726363101,
+              -21.0757750972368
+            ],
+            [
+              149.159436033764,
+              -21.0729395242158
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-29T04:45:28Z",
+        "snapshot_aest": "2026-07-29T14:45:28+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903851",
+        "outage_id": "903851",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 47,
+        "affected_customers_known": true,
+        "suburb": "BEACONSFIELD",
+        "street_name": "ALMORA DR, NORWOOD PDE",
+        "start_utc": "2026-07-29T04:23:06Z",
+        "etr_utc": null,
+        "centroid_lon": 149.16066779606362,
+        "centroid_lat": -21.074300205338524,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
