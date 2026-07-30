@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T07:00:41Z",
-        "snapshot_aest": "2026-07-30T17:00:41+10:00",
+        "snapshot_utc": "2026-07-30T07:15:30Z",
+        "snapshot_aest": "2026-07-30T17:15:30+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973476-g",
@@ -175,8 +175,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T07:00:41Z",
-        "snapshot_aest": "2026-07-30T17:00:41+10:00",
+        "snapshot_utc": "2026-07-30T07:15:30Z",
+        "snapshot_aest": "2026-07-30T17:15:30+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973552-g",
@@ -195,6 +195,82 @@
         "lga_name": "Gold Coast City",
         "lga_code": "3430",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.885808266064,
+              -24.5925364271529
+            ],
+            [
+              149.885613754972,
+              -24.5917820273078
+            ],
+            [
+              149.894167970689,
+              -24.5842148028984
+            ],
+            [
+              149.89469053839,
+              -24.5841188418506
+            ],
+            [
+              149.901940624372,
+              -24.5867091602257
+            ],
+            [
+              149.90210572345,
+              -24.5868065492431
+            ],
+            [
+              149.91343100608,
+              -24.5969153660745
+            ],
+            [
+              149.913246573374,
+              -24.5976648276276
+            ],
+            [
+              149.908770868363,
+              -24.5990694976265
+            ],
+            [
+              149.908462259232,
+              -24.5990730303654
+            ],
+            [
+              149.885808266064,
+              -24.5925364271529
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-30T07:15:30Z",
+        "snapshot_aest": "2026-07-30T17:15:30+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903974",
+        "outage_id": "903974",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 9,
+        "affected_customers_known": true,
+        "suburb": "MOURA, WARNOAH",
+        "street_name": "BEARS LAGOON RD, DAWSON HWY, GOLF CLUB RD, MOURA WEIR WESTERN ACCESS, OFF DAWSON HWY",
+        "start_utc": "2026-07-30T06:51:35Z",
+        "etr_utc": null,
+        "centroid_lon": 149.89935490150845,
+        "centroid_lat": -24.59195594607515,
+        "lga_name": "Banana Shire",
+        "lga_code": "370",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
