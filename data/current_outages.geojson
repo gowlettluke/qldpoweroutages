@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T23:30:36Z",
-        "snapshot_aest": "2026-07-31T09:30:36+10:00",
+        "snapshot_utc": "2026-07-30T23:45:28Z",
+        "snapshot_aest": "2026-07-31T09:45:28+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973610-g",
@@ -195,8 +195,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T23:30:36Z",
-        "snapshot_aest": "2026-07-31T09:30:36+10:00",
+        "snapshot_utc": "2026-07-30T23:45:28Z",
+        "snapshot_aest": "2026-07-31T09:45:28+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904157",
@@ -295,8 +295,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T23:30:36Z",
-        "snapshot_aest": "2026-07-31T09:30:36+10:00",
+        "snapshot_utc": "2026-07-30T23:45:28Z",
+        "snapshot_aest": "2026-07-31T09:45:28+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904175",
@@ -395,8 +395,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T23:30:36Z",
-        "snapshot_aest": "2026-07-31T09:30:36+10:00",
+        "snapshot_utc": "2026-07-30T23:45:28Z",
+        "snapshot_aest": "2026-07-31T09:45:28+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904211",
@@ -459,8 +459,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T23:30:36Z",
-        "snapshot_aest": "2026-07-31T09:30:36+10:00",
+        "snapshot_utc": "2026-07-30T23:45:28Z",
+        "snapshot_aest": "2026-07-31T09:45:28+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904252",
@@ -478,6 +478,58 @@
         "centroid_lat": -22.80085612584811,
         "lga_name": "Isaac Regional",
         "lga_code": "3980",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.049268399977,
+              -25.0615336988734
+            ],
+            [
+              150.048784534077,
+              -25.0619947816645
+            ],
+            [
+              150.048278330306,
+              -25.0615540451201
+            ],
+            [
+              150.048762196745,
+              -25.0610929639434
+            ],
+            [
+              150.049268399977,
+              -25.0615336988734
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-30T23:45:28Z",
+        "snapshot_aest": "2026-07-31T09:45:28+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904281",
+        "outage_id": "904281",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "THEODORE",
+        "street_name": "LEICHHARDT HWY",
+        "start_utc": "2026-07-30T23:29:09Z",
+        "etr_utc": "2026-07-31T03:00:00Z",
+        "centroid_lon": 150.04878709436582,
+        "centroid_lat": -25.061546166344964,
+        "lga_name": "Banana Shire",
+        "lga_code": "370",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
