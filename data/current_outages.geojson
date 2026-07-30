@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T21:15:27Z",
-        "snapshot_aest": "2026-07-31T07:15:27+10:00",
+        "snapshot_utc": "2026-07-30T21:30:38Z",
+        "snapshot_aest": "2026-07-31T07:30:38+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904157",
@@ -155,8 +155,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T21:15:27Z",
-        "snapshot_aest": "2026-07-31T07:15:27+10:00",
+        "snapshot_utc": "2026-07-30T21:30:38Z",
+        "snapshot_aest": "2026-07-31T07:30:38+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904173",
@@ -174,6 +174,82 @@
         "centroid_lat": -19.294888232514786,
         "lga_name": "Townsville City",
         "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.855381602469,
+              -17.9776022870899
+            ],
+            [
+              145.855214793349,
+              -17.9770291145417
+            ],
+            [
+              145.855786212799,
+              -17.9767946400989
+            ],
+            [
+              145.866543333635,
+              -17.9801328060324
+            ],
+            [
+              145.866754826408,
+              -17.9802670403182
+            ],
+            [
+              145.868569747835,
+              -17.9822750982151
+            ],
+            [
+              145.868593145205,
+              -17.9828382145272
+            ],
+            [
+              145.868024606814,
+              -17.9829851777075
+            ],
+            [
+              145.856034296212,
+              -17.9780040829972
+            ],
+            [
+              145.855963376916,
+              -17.977967442173
+            ],
+            [
+              145.855381602469,
+              -17.9776022870899
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-30T21:30:38Z",
+        "snapshot_aest": "2026-07-31T07:30:38+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904174",
+        "outage_id": "904174",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "RIVERSDALE",
+        "street_name": "BLAIR RD, DAVIDSON RD",
+        "start_utc": "2026-07-30T20:52:41Z",
+        "etr_utc": null,
+        "centroid_lon": 145.86249388198897,
+        "centroid_lat": -17.979823260381714,
+        "lga_name": "Cassowary Coast Regional",
+        "lga_code": "2260",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
