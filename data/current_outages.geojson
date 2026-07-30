@@ -8,24 +8,40 @@
         "coordinates": [
           [
             [
-              153.331207002479,
-              -27.8692352563761
+              153.304665622034,
+              -27.8589816775645
             ],
             [
-              153.330807500555,
-              -27.8686035558739
+              153.30464722715,
+              -27.8581615837977
             ],
             [
-              153.332996285542,
-              -27.8642453129011
+              153.320516374108,
+              -27.8513345177323
             ],
             [
-              153.333691762811,
-              -27.8640276021834
+              153.320808452866,
+              -27.8512938208065
             ],
             [
-              153.335659357823,
-              -27.8649239484516
+              153.322032567655,
+              -27.8514469900503
+            ],
+            [
+              153.32203545192,
+              -27.8514473584387
+            ],
+            [
+              153.332046756324,
+              -27.8527517244909
+            ],
+            [
+              153.332465427808,
+              -27.8530875509298
+            ],
+            [
+              153.335920037428,
+              -27.865214835968
             ],
             [
               153.335807645713,
@@ -50,13 +66,21 @@
             [
               153.331207002479,
               -27.8692352563761
+            ],
+            [
+              153.331068548436,
+              -27.8692013626372
+            ],
+            [
+              153.304665622034,
+              -27.8589816775645
             ]
           ]
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T02:30:33Z",
-        "snapshot_aest": "2026-07-30T12:30:33+10:00",
+        "snapshot_utc": "2026-07-30T02:45:26Z",
+        "snapshot_aest": "2026-07-30T12:45:26+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973438-g",
@@ -64,14 +88,14 @@
         "outage_type": "unplanned",
         "status": "In Progress",
         "reason": "Under Investigation",
-        "affected_customers": 21,
+        "affected_customers": 34,
         "affected_customers_known": true,
-        "suburb": "COOMERA",
-        "street_name": "BEATTIE RD, MCPHAIL RD, WATERWAY DR",
+        "suburb": "COOMERA, UPPER COOMERA",
+        "street_name": "BEATTIE RD, BILLINGHURST CRES, FOXWELL RD, GEORGE ALEXANDER WAY, MCPHAIL RD, PROSPER AVE, WATERWAY DR",
         "start_utc": "2026-07-29T23:00:14Z",
         "etr_utc": "2026-07-30T05:00:00Z",
-        "centroid_lon": 153.33323192996338,
-        "centroid_lat": -27.86653989036623,
+        "centroid_lon": 153.3231160421324,
+        "centroid_lat": -27.859495640353284,
         "lga_name": "Gold Coast City",
         "lga_code": "3430",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
@@ -179,21 +203,21 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T02:30:33Z",
-        "snapshot_aest": "2026-07-30T12:30:33+10:00",
+        "snapshot_utc": "2026-07-30T02:45:26Z",
+        "snapshot_aest": "2026-07-30T12:45:26+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973476-g",
         "outage_id": "INCD-973476-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 156,
         "affected_customers_known": true,
         "suburb": "SUNNYBANK HILLS",
         "street_name": "ALISON PL, DENNISTOUN ST, FARNE ST, GRANDCHESTER ST, ILLINOIS ST, LIZ PL, PINELANDS RD, SUSANNAH CT",
         "start_utc": "2026-07-30T01:38:57Z",
-        "etr_utc": "2026-07-30T03:30:00Z",
+        "etr_utc": "2026-07-30T04:00:00Z",
         "centroid_lon": 153.05995369620555,
         "centroid_lat": -27.592022599211028,
         "lga_name": "Brisbane City",
@@ -263,8 +287,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T02:30:33Z",
-        "snapshot_aest": "2026-07-30T12:30:33+10:00",
+        "snapshot_utc": "2026-07-30T02:45:26Z",
+        "snapshot_aest": "2026-07-30T12:45:26+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903940",
@@ -403,8 +427,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T02:30:33Z",
-        "snapshot_aest": "2026-07-30T12:30:33+10:00",
+        "snapshot_utc": "2026-07-30T02:45:26Z",
+        "snapshot_aest": "2026-07-30T12:45:26+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903962",
@@ -422,114 +446,6 @@
         "centroid_lat": -23.14039731491702,
         "lga_name": "Livingstone Shire",
         "lga_code": "4530",
-        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              151.927096934266,
-              -26.5383845756315
-            ],
-            [
-              151.927139876336,
-              -26.5381471188194
-            ],
-            [
-              151.970715659386,
-              -26.4530262512568
-            ],
-            [
-              151.970953740478,
-              -26.4528086262473
-            ],
-            [
-              151.972474035265,
-              -26.4521527610019
-            ],
-            [
-              151.972547295548,
-              -26.4521273104378
-            ],
-            [
-              151.984852827127,
-              -26.4488246229661
-            ],
-            [
-              151.985283819033,
-              -26.4488880801723
-            ],
-            [
-              152.054837965756,
-              -26.4929912684624
-            ],
-            [
-              152.055049260214,
-              -26.4933865307968
-            ],
-            [
-              152.054617957661,
-              -26.4997783851566
-            ],
-            [
-              152.054506414803,
-              -26.5000354374389
-            ],
-            [
-              151.978746937506,
-              -26.5836009164564
-            ],
-            [
-              151.978340867767,
-              -26.5837661885132
-            ],
-            [
-              151.935252171306,
-              -26.5823516081041
-            ],
-            [
-              151.934949443432,
-              -26.5822471390809
-            ],
-            [
-              151.932352763035,
-              -26.5802953632354
-            ],
-            [
-              151.932176230564,
-              -26.5799991628092
-            ],
-            [
-              151.927096934266,
-              -26.5383845756315
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "snapshot_utc": "2026-07-30T02:30:33Z",
-        "snapshot_aest": "2026-07-30T12:30:33+10:00",
-        "provider_code": "au.qld.ergon",
-        "provider_name": "Ergon Energy",
-        "outage_key": "au.qld.ergon|unplanned|903963",
-        "outage_id": "903963",
-        "outage_type": "unplanned",
-        "status": "Outage reported",
-        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-        "affected_customers": 421,
-        "affected_customers_known": true,
-        "suburb": "BOOIE, COOLABUNIA, HODGLEIGH, KINGAROY, NANANGO, SANDY RIDGES, WATTLE CAMP",
-        "street_name": "BARKERS CREEK RD, BOARDMANS RD, BOOIE RD, BROADWATER ACCESS RD, BROCKLEHURST RD, BURKES RD, BURNETT HWY, FARR CT, FRANKLIN RD, GLENMORE LANE, GRANITE CRES, HILLSDALE RD, HILLSDALE SCHOOL RD, KINGAROY BARKERS CREEK RD, MAGUIRE RD, MALAR CRES, MCAULIFFES RD, MCGUIRE RD, MCILLHATTON RD, MCNICHOLL RD, RADUNZS RD, ROBERTS RD, ROBIN AND LEE RD, ROBIN-LEES RD, SANDY RIDGES RD, WATTLE CAMP RD, WITTMAN RD",
-        "start_utc": "2026-07-30T00:54:07Z",
-        "etr_utc": null,
-        "centroid_lon": 151.98350548599103,
-        "centroid_lat": -26.518654199361073,
-        "lga_name": "South Burnett Regional",
-        "lga_code": "6630",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     },
@@ -595,8 +511,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T02:30:33Z",
-        "snapshot_aest": "2026-07-30T12:30:33+10:00",
+        "snapshot_utc": "2026-07-30T02:45:26Z",
+        "snapshot_aest": "2026-07-30T12:45:26+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903968",
