@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T20:45:32Z",
-        "snapshot_aest": "2026-07-31T06:45:32+10:00",
+        "snapshot_utc": "2026-07-30T21:00:45Z",
+        "snapshot_aest": "2026-07-31T07:00:45+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904157",
@@ -90,6 +90,90 @@
         "centroid_lat": -24.684661831699593,
         "lga_name": "Bundaberg Regional",
         "lga_code": "1820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.765202450419,
+              -19.2958057955031
+            ],
+            [
+              146.765121205724,
+              -19.2949773222688
+            ],
+            [
+              146.767214382086,
+              -19.2939074963729
+            ],
+            [
+              146.767356633941,
+              -19.2938604919938
+            ],
+            [
+              146.769006964771,
+              -19.2935818418862
+            ],
+            [
+              146.769321457713,
+              -19.2936317553168
+            ],
+            [
+              146.769996801446,
+              -19.2939881089347
+            ],
+            [
+              146.770098415455,
+              -19.2940600651535
+            ],
+            [
+              146.770227055555,
+              -19.2941795470459
+            ],
+            [
+              146.770089190106,
+              -19.2949147917988
+            ],
+            [
+              146.767004886823,
+              -19.2962295657199
+            ],
+            [
+              146.76666565691,
+              -19.2962479248201
+            ],
+            [
+              146.765202450419,
+              -19.2958057955031
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-30T21:00:45Z",
+        "snapshot_aest": "2026-07-31T07:00:45+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904173",
+        "outage_id": "904173",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 58,
+        "affected_customers_known": true,
+        "suburb": "AITKENVALE",
+        "street_name": "ANNE ST, BARNARD ST, CASEY ST, WOTTON ST",
+        "start_utc": "2026-07-30T20:40:26Z",
+        "etr_utc": null,
+        "centroid_lon": 146.76765633595764,
+        "centroid_lat": -19.294888232514786,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
