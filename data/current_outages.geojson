@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T03:00:48Z",
-        "snapshot_aest": "2026-07-30T13:00:48+10:00",
+        "snapshot_utc": "2026-07-30T03:15:27Z",
+        "snapshot_aest": "2026-07-30T13:15:27+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973438-g",
@@ -179,8 +179,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T03:00:48Z",
-        "snapshot_aest": "2026-07-30T13:00:48+10:00",
+        "snapshot_utc": "2026-07-30T03:15:27Z",
+        "snapshot_aest": "2026-07-30T13:15:27+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973476-g",
@@ -263,8 +263,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T03:00:48Z",
-        "snapshot_aest": "2026-07-30T13:00:48+10:00",
+        "snapshot_utc": "2026-07-30T03:15:27Z",
+        "snapshot_aest": "2026-07-30T13:15:27+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903940",
@@ -403,8 +403,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T03:00:48Z",
-        "snapshot_aest": "2026-07-30T13:00:48+10:00",
+        "snapshot_utc": "2026-07-30T03:15:27Z",
+        "snapshot_aest": "2026-07-30T13:15:27+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903962",
@@ -487,8 +487,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-30T03:00:48Z",
-        "snapshot_aest": "2026-07-30T13:00:48+10:00",
+        "snapshot_utc": "2026-07-30T03:15:27Z",
+        "snapshot_aest": "2026-07-30T13:15:27+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|903968",
@@ -506,6 +506,90 @@
         "centroid_lat": -24.254135254674825,
         "lga_name": "Banana Shire",
         "lga_code": "370",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              143.284523718967,
+              -23.1442939172776
+            ],
+            [
+              143.284853305456,
+              -23.1435954262552
+            ],
+            [
+              143.53354020546,
+              -23.1080424731618
+            ],
+            [
+              143.533782790435,
+              -23.1080646367455
+            ],
+            [
+              144.060194473613,
+              -23.2853634216664
+            ],
+            [
+              144.060516322546,
+              -23.2857768067783
+            ],
+            [
+              144.061096235169,
+              -23.308205313828
+            ],
+            [
+              144.060813131931,
+              -23.3086254831809
+            ],
+            [
+              143.825357888469,
+              -23.4090441268059
+            ],
+            [
+              143.825092059402,
+              -23.4090819860015
+            ],
+            [
+              143.44628762545,
+              -23.364451336415
+            ],
+            [
+              143.445945969197,
+              -23.3642573551035
+            ],
+            [
+              143.284523718967,
+              -23.1442939172776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-30T03:15:27Z",
+        "snapshot_aest": "2026-07-30T13:15:27+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|903971",
+        "outage_id": "903971",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 28,
+        "affected_customers_known": true,
+        "suburb": "LONGREACH",
+        "street_name": "LANDSBOROUGH HWY, OLD WINTON RD, SILSOE RD",
+        "start_utc": "2026-07-30T02:45:02Z",
+        "etr_utc": null,
+        "centroid_lon": 143.64904574728678,
+        "centroid_lat": -23.26478335202874,
+        "lga_name": "Longreach Regional",
+        "lga_code": "4710",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
