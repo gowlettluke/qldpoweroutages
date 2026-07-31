@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-31T09:45:34Z",
-        "snapshot_aest": "2026-07-31T19:45:34+10:00",
+        "snapshot_utc": "2026-07-31T10:00:39Z",
+        "snapshot_aest": "2026-07-31T20:00:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973618-g",
@@ -69,7 +69,7 @@
         "suburb": "STANMORE",
         "street_name": "ARDWICK CT",
         "start_utc": "2026-07-30T22:36:04Z",
-        "etr_utc": "2026-07-31T10:30:00Z",
+        "etr_utc": "2026-07-31T11:30:00Z",
         "centroid_lon": 152.80462676787988,
         "centroid_lat": -26.921383187372978,
         "lga_name": "Moreton Bay City",
@@ -139,8 +139,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-31T09:45:34Z",
-        "snapshot_aest": "2026-07-31T19:45:34+10:00",
+        "snapshot_utc": "2026-07-31T10:00:39Z",
+        "snapshot_aest": "2026-07-31T20:00:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973698-g",
@@ -223,8 +223,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-31T09:45:34Z",
-        "snapshot_aest": "2026-07-31T19:45:34+10:00",
+        "snapshot_utc": "2026-07-31T10:00:39Z",
+        "snapshot_aest": "2026-07-31T20:00:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904291",
@@ -355,8 +355,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-31T09:45:34Z",
-        "snapshot_aest": "2026-07-31T19:45:34+10:00",
+        "snapshot_utc": "2026-07-31T10:00:39Z",
+        "snapshot_aest": "2026-07-31T20:00:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904292",
@@ -374,6 +374,90 @@
         "centroid_lat": -28.28491437792323,
         "lga_name": "Southern Downs Regional",
         "lga_code": "6660",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.409956384341,
+              -19.5613117592642
+            ],
+            [
+              147.409689148012,
+              -19.560643975346
+            ],
+            [
+              147.409884826505,
+              -19.5603406035229
+            ],
+            [
+              147.409892651155,
+              -19.5603288807069
+            ],
+            [
+              147.410758110057,
+              -19.5590752597088
+            ],
+            [
+              147.411491305754,
+              -19.5590006354879
+            ],
+            [
+              147.411860795093,
+              -19.5593453298329
+            ],
+            [
+              147.411939047426,
+              -19.55944111907
+            ],
+            [
+              147.412886587803,
+              -19.5609937526212
+            ],
+            [
+              147.412422400288,
+              -19.5616692062673
+            ],
+            [
+              147.410552402585,
+              -19.5614762283305
+            ],
+            [
+              147.410464555308,
+              -19.5614591177738
+            ],
+            [
+              147.409956384341,
+              -19.5613117592642
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-31T10:00:39Z",
+        "snapshot_aest": "2026-07-31T20:00:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904293",
+        "outage_id": "904293",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 29,
+        "affected_customers_known": true,
+        "suburb": "AYR",
+        "street_name": "BEACH RD, PAINE ST",
+        "start_utc": "2026-07-31T09:27:45Z",
+        "etr_utc": null,
+        "centroid_lon": 147.41126821865186,
+        "centroid_lat": -19.560481878604016,
+        "lga_name": "Burdekin Shire",
+        "lga_code": "1900",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
