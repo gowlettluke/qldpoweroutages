@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-31T21:30:34Z",
-        "snapshot_aest": "2026-08-01T07:30:34+10:00",
+        "snapshot_utc": "2026-07-31T21:45:36Z",
+        "snapshot_aest": "2026-08-01T07:45:36+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973791-g",
@@ -147,8 +147,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-31T21:30:34Z",
-        "snapshot_aest": "2026-08-01T07:30:34+10:00",
+        "snapshot_utc": "2026-07-31T21:45:36Z",
+        "snapshot_aest": "2026-08-01T07:45:36+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904296",
@@ -199,8 +199,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-31T21:30:34Z",
-        "snapshot_aest": "2026-08-01T07:30:34+10:00",
+        "snapshot_utc": "2026-07-31T21:45:36Z",
+        "snapshot_aest": "2026-08-01T07:45:36+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904297",
@@ -218,6 +218,78 @@
         "centroid_lat": -22.884209284696816,
         "lga_name": "Livingstone Shire",
         "lga_code": "4530",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.249175687271,
+              -21.5415006580014
+            ],
+            [
+              149.249603542822,
+              -21.5408982749681
+            ],
+            [
+              149.250899206606,
+              -21.5408312113948
+            ],
+            [
+              149.251396612821,
+              -21.5411827978937
+            ],
+            [
+              149.253581889119,
+              -21.5502614143679
+            ],
+            [
+              149.253576660133,
+              -21.5504794350323
+            ],
+            [
+              149.253556649194,
+              -21.5505480440897
+            ],
+            [
+              149.253109475214,
+              -21.5508803278325
+            ],
+            [
+              149.25263657071,
+              -21.5505808393154
+            ],
+            [
+              149.249175687271,
+              -21.5415006580014
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-31T21:45:36Z",
+        "snapshot_aest": "2026-08-01T07:45:36+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904299",
+        "outage_id": "904299",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 5,
+        "affected_customers_known": true,
+        "suburb": "KOUMALA",
+        "street_name": "EAST INNESTON RD, NORTH INNESTON RD",
+        "start_utc": "2026-07-31T20:25:05Z",
+        "etr_utc": null,
+        "centroid_lon": 149.25147758078572,
+        "centroid_lat": -21.545182690189677,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
