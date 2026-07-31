@@ -47,8 +47,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-07-31T20:15:34Z",
-        "snapshot_aest": "2026-08-01T06:15:34+10:00",
+        "snapshot_utc": "2026-07-31T20:30:38Z",
+        "snapshot_aest": "2026-08-01T06:30:38+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904296",
@@ -66,6 +66,58 @@
         "centroid_lat": -19.683644821453495,
         "lga_name": "Burdekin Shire",
         "lga_code": "1900",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.188867034663,
+              -22.884200875056
+            ],
+            [
+              150.188390858705,
+              -22.884661621411
+            ],
+            [
+              150.187893595148,
+              -22.8842204135457
+            ],
+            [
+              150.188369771639,
+              -22.8837596686465
+            ],
+            [
+              150.188867034663,
+              -22.884200875056
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-07-31T20:30:38Z",
+        "snapshot_aest": "2026-08-01T06:30:38+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904297",
+        "outage_id": "904297",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "KUNWARARA",
+        "street_name": "OFF BRUCE HWY",
+        "start_utc": "2026-07-31T20:20:32Z",
+        "etr_utc": null,
+        "centroid_lon": 150.18837138911294,
+        "centroid_lat": -22.884209284696816,
+        "lga_name": "Livingstone Shire",
+        "lga_code": "4530",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
