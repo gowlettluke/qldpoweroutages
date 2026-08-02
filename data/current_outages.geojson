@@ -31,8 +31,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-02T23:15:28Z",
-        "snapshot_aest": "2026-08-03T09:15:28+10:00",
+        "snapshot_utc": "2026-08-02T23:30:38Z",
+        "snapshot_aest": "2026-08-03T09:30:38+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-973995-g",
@@ -147,8 +147,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-02T23:15:28Z",
-        "snapshot_aest": "2026-08-03T09:15:28+10:00",
+        "snapshot_utc": "2026-08-02T23:30:38Z",
+        "snapshot_aest": "2026-08-03T09:30:38+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904456",
@@ -166,6 +166,142 @@
         "centroid_lat": -25.572785688744634,
         "lga_name": "Banana Shire",
         "lga_code": "370",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.277614249082,
+              -19.572452216504
+            ],
+            [
+              147.27701017303,
+              -19.5726472930907
+            ],
+            [
+              147.276742697361,
+              -19.572098091508
+            ],
+            [
+              147.277834146707,
+              -19.5687637259181
+            ],
+            [
+              147.277860434108,
+              -19.5687006103919
+            ],
+            [
+              147.281001001028,
+              -19.5625559993593
+            ],
+            [
+              147.281587681398,
+              -19.5623265939582
+            ],
+            [
+              147.281894845227,
+              -19.562853018709
+            ],
+            [
+              147.280969854933,
+              -19.5667160073452
+            ],
+            [
+              147.280921233169,
+              -19.5668362091613
+            ],
+            [
+              147.277614249082,
+              -19.572452216504
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-02T23:30:38Z",
+        "snapshot_aest": "2026-08-03T09:30:38+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904473",
+        "outage_id": "904473",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "BRANDON",
+        "street_name": "BRUCE HWY",
+        "start_utc": "2026-08-02T22:50:00Z",
+        "etr_utc": null,
+        "centroid_lon": 147.27942260928134,
+        "centroid_lat": -19.56749732021466,
+        "lga_name": "Burdekin Shire",
+        "lga_code": "1900",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.506522186857,
+              -23.5020558399393
+            ],
+            [
+              150.507184498886,
+              -23.5018725917081
+            ],
+            [
+              150.507383199472,
+              -23.5024834041539
+            ],
+            [
+              150.504268191362,
+              -23.5078184986957
+            ],
+            [
+              150.503605844878,
+              -23.5080017384156
+            ],
+            [
+              150.503407149201,
+              -23.5073909203931
+            ],
+            [
+              150.506522186857,
+              -23.5020558399393
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-02T23:30:38Z",
+        "snapshot_aest": "2026-08-03T09:30:38+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904475",
+        "outage_id": "904475",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "BOULDERCOMBE",
+        "street_name": "BURNETT HWY",
+        "start_utc": "2026-08-02T20:47:16Z",
+        "etr_utc": null,
+        "centroid_lon": 150.50539470456326,
+        "centroid_lat": -23.504937111883798,
+        "lga_name": "Rockhampton Regional",
+        "lga_code": "6370",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
