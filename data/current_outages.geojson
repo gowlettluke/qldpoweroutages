@@ -28,36 +28,60 @@
               -21.0427416262345
             ],
             [
-              148.924066934939,
-              -21.0428000754845
+              148.924112326832,
+              -21.0428302729198
             ],
             [
-              148.946849889559,
-              -21.0561660530616
+              148.925839327207,
+              -21.0441262772551
             ],
             [
-              148.946881419512,
-              -21.0561862215531
+              148.926014124614,
+              -21.0445493391652
             ],
             [
-              148.971686431982,
-              -21.0734399426284
+              148.925383133158,
+              -21.0483053335715
             ],
             [
-              148.97161543984,
-              -21.074206508118
+              148.925380108435,
+              -21.0483214373949
             ],
             [
-              148.936054287249,
-              -21.0909147041811
+              148.924316820164,
+              -21.0534386498305
             ],
             [
-              148.935641739135,
-              -21.0909227821741
+              148.924305581375,
+              -21.0534814820725
             ],
             [
-              148.898937696508,
-              -21.0754388351956
+              148.92174081178,
+              -21.0615382770861
+            ],
+            [
+              148.921738886559,
+              -21.0615441772905
+            ],
+            [
+              148.91958047449,
+              -21.0680008929073
+            ],
+            [
+              148.919418853607,
+              -21.0682206412523
+            ],
+            [
+              148.913953382869,
+              -21.0722549438202
+            ],
+            [
+              148.913763598543,
+              -21.072340110116
+            ],
+            [
+              148.899242557018,
+              -21.0754671203186
             ],
             [
               148.898782024495,
@@ -71,25 +95,93 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-04T12:30:34Z",
-        "snapshot_aest": "2026-08-04T22:30:34+10:00",
+        "snapshot_utc": "2026-08-04T12:45:39Z",
+        "snapshot_aest": "2026-08-04T22:45:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904835",
         "outage_id": "904835",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to fallen power lines.",
-        "affected_customers": 110,
+        "affected_customers": 56,
         "affected_customers_known": true,
         "suburb": "HAMPDEN, KUTTABUL",
-        "street_name": "BEALLAH RD, BRUCE HWY, BURTONS ACCESS RD, CAMERONS CROSSING RD, DEWAARDS ACCESS RD, EDMONDS RD, HOPFS RD, HUDSONS RD, KEMPS RD, LANES RD, MARIAN HAMPDEN RD, SORENSENS RD, WALLINS RD",
+        "street_name": "BEALLAH RD, BRUCE HWY, BURTONS ACCESS RD, CAMERONS CROSSING RD, HOPFS RD, HUDSONS RD, SORENSENS RD",
         "start_utc": "2026-08-04T09:02:32Z",
         "etr_utc": null,
-        "centroid_lon": 148.92788694745906,
-        "centroid_lat": -21.06697380034859,
+        "centroid_lon": 148.9092277624692,
+        "centroid_lat": -21.059208469146594,
         "lga_name": "Mackay Regional",
         "lga_code": "4770",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.710820927683,
+              -25.4875455927181
+            ],
+            [
+              152.710439325598,
+              -25.4870496778471
+            ],
+            [
+              152.710946845642,
+              -25.4866576325682
+            ],
+            [
+              152.711173425344,
+              -25.4866643288053
+            ],
+            [
+              152.711296090338,
+              -25.4866820947876
+            ],
+            [
+              152.711979422695,
+              -25.4868630790324
+            ],
+            [
+              152.712320229771,
+              -25.4874076238511
+            ],
+            [
+              152.711730846567,
+              -25.4877332734818
+            ],
+            [
+              152.710820927683,
+              -25.4875455927181
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-04T12:45:39Z",
+        "snapshot_aest": "2026-08-04T22:45:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904837",
+        "outage_id": "904837",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to fallen power lines.",
+        "affected_customers": 5,
+        "affected_customers_known": true,
+        "suburb": "MARYBOROUGH, ST HELENS",
+        "street_name": "SALTWATER CREEK RD",
+        "start_utc": "2026-08-04T10:49:47Z",
+        "etr_utc": null,
+        "centroid_lon": 152.71137154532673,
+        "centroid_lat": -25.48718812488556,
+        "lga_name": "Fraser Coast Regional",
+        "lga_code": "3220",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
