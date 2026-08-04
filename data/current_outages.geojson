@@ -95,8 +95,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-04T13:45:36Z",
-        "snapshot_aest": "2026-08-04T23:45:36+10:00",
+        "snapshot_utc": "2026-08-04T14:00:44Z",
+        "snapshot_aest": "2026-08-05T00:00:44+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904835",
@@ -163,14 +163,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-04T13:45:36Z",
-        "snapshot_aest": "2026-08-04T23:45:36+10:00",
+        "snapshot_utc": "2026-08-04T14:00:44Z",
+        "snapshot_aest": "2026-08-05T00:00:44+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904837",
         "outage_id": "904837",
         "outage_type": "unplanned",
-        "status": "Crews working on-site",
+        "status": "Work delayed - crews unable to continue",
         "reason": "The loss of supply is due to fallen power lines.",
         "affected_customers": 5,
         "affected_customers_known": true,
@@ -182,6 +182,138 @@
         "centroid_lat": -25.48718812488556,
         "lga_name": "Fraser Coast Regional",
         "lga_code": "3220",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              139.501471181875,
+              -20.7118327271786
+            ],
+            [
+              139.501464713597,
+              -20.7115722765495
+            ],
+            [
+              139.501472047338,
+              -20.7115474782009
+            ],
+            [
+              139.501603946263,
+              -20.7113416916959
+            ],
+            [
+              139.507290485663,
+              -20.7062880797397
+            ],
+            [
+              139.507423953187,
+              -20.706204392488
+            ],
+            [
+              139.508153908235,
+              -20.7058987142691
+            ],
+            [
+              139.508387523175,
+              -20.705861543161
+            ],
+            [
+              139.514150857007,
+              -20.7063164109659
+            ],
+            [
+              139.514493357459,
+              -20.7064955584927
+            ],
+            [
+              139.514700204964,
+              -20.7067571046913
+            ],
+            [
+              139.514793353639,
+              -20.707055141052
+            ],
+            [
+              139.514407278536,
+              -20.7124109311544
+            ],
+            [
+              139.514347158472,
+              -20.712600434993
+            ],
+            [
+              139.513636094052,
+              -20.7137897120644
+            ],
+            [
+              139.513606171405,
+              -20.7138335790311
+            ],
+            [
+              139.513320859395,
+              -20.7142027321924
+            ],
+            [
+              139.513309148109,
+              -20.7142172548086
+            ],
+            [
+              139.512033033945,
+              -20.7157346077773
+            ],
+            [
+              139.511520413574,
+              -20.7158853074886
+            ],
+            [
+              139.502662253495,
+              -20.713346205749
+            ],
+            [
+              139.502462141752,
+              -20.7132324263067
+            ],
+            [
+              139.501789223013,
+              -20.7125916229856
+            ],
+            [
+              139.501675571731,
+              -20.7124167198163
+            ],
+            [
+              139.501471181875,
+              -20.7118327271786
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-04T14:00:44Z",
+        "snapshot_aest": "2026-08-05T00:00:44+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904838",
+        "outage_id": "904838",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "affected_customers": 616,
+        "affected_customers_known": true,
+        "suburb": "MOUNT ISA, PIONEER, SUNSET",
+        "street_name": "ABEL SMITH PDE, BETA ST, COOK CRES, DARLING CRES, DELTA AVE, EVANS ST, FISHER DR, FLINDERS WAY, FORNAX ST, GEMINI ST, GREGORY CRES, HERCULES RD, HINKLER CRES, INDIGO CRES, INDUS ST, JACOBSEN CRES, JUPITER AVE, KYRIE AVE, LEO ST, MENSA ST, NATHAN ST, ORION ST, READ CRES",
+        "start_utc": "2026-08-04T13:30:27Z",
+        "etr_utc": null,
+        "centroid_lon": 139.50906080556018,
+        "centroid_lat": -20.710714021740724,
+        "lga_name": "Mount Isa City",
+        "lga_code": "5300",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
