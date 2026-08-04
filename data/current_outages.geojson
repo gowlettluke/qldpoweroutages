@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-04T00:15:31Z",
-        "snapshot_aest": "2026-08-04T10:15:31+10:00",
+        "snapshot_utc": "2026-08-04T00:30:31Z",
+        "snapshot_aest": "2026-08-04T10:30:31+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-974202-g",
@@ -159,8 +159,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-04T00:15:31Z",
-        "snapshot_aest": "2026-08-04T10:15:31+10:00",
+        "snapshot_utc": "2026-08-04T00:30:31Z",
+        "snapshot_aest": "2026-08-04T10:30:31+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-974200-g",
@@ -227,8 +227,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-04T00:15:31Z",
-        "snapshot_aest": "2026-08-04T10:15:31+10:00",
+        "snapshot_utc": "2026-08-04T00:30:31Z",
+        "snapshot_aest": "2026-08-04T10:30:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904493",
@@ -287,8 +287,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-04T00:15:31Z",
-        "snapshot_aest": "2026-08-04T10:15:31+10:00",
+        "snapshot_utc": "2026-08-04T00:30:31Z",
+        "snapshot_aest": "2026-08-04T10:30:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904497",
@@ -395,8 +395,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-04T00:15:31Z",
-        "snapshot_aest": "2026-08-04T10:15:31+10:00",
+        "snapshot_utc": "2026-08-04T00:30:31Z",
+        "snapshot_aest": "2026-08-04T10:30:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904498",
@@ -447,8 +447,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-04T00:15:31Z",
-        "snapshot_aest": "2026-08-04T10:15:31+10:00",
+        "snapshot_utc": "2026-08-04T00:30:31Z",
+        "snapshot_aest": "2026-08-04T10:30:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904538",
@@ -460,12 +460,72 @@
         "affected_customers_known": true,
         "suburb": "MOUNT CHALMERS",
         "street_name": "KAYES RD",
-        "start_utc": "2026-08-03T23:53:33Z",
+        "start_utc": "2026-08-04T00:06:00Z",
         "etr_utc": "2026-08-04T02:30:00Z",
         "centroid_lon": 150.64643309552437,
         "centroid_lat": -23.29030771515997,
         "lga_name": "Livingstone Shire",
         "lga_code": "4530",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.201461574779,
+              -20.0205232318048
+            ],
+            [
+              148.201050910596,
+              -20.0210306691015
+            ],
+            [
+              148.200514030856,
+              -20.0206425248544
+            ],
+            [
+              148.200485720643,
+              -20.0204416398149
+            ],
+            [
+              148.200896385295,
+              -20.0199342037819
+            ],
+            [
+              148.201433263402,
+              -20.0203223469749
+            ],
+            [
+              148.201461574779,
+              -20.0205232318048
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-04T00:30:31Z",
+        "snapshot_aest": "2026-08-04T10:30:31+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904540",
+        "outage_id": "904540",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "BOWEN",
+        "street_name": "BOOTOOLOO RD",
+        "start_utc": "2026-08-04T00:21:00Z",
+        "etr_utc": null,
+        "centroid_lon": 148.20096682600396,
+        "centroid_lat": -20.020481514559062,
+        "lga_name": "Whitsunday Regional",
+        "lga_code": "7340",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
