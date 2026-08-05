@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-05T06:45:28Z",
-        "snapshot_aest": "2026-08-05T16:45:28+10:00",
+        "snapshot_utc": "2026-08-05T07:00:39Z",
+        "snapshot_aest": "2026-08-05T17:00:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-974627-g",
@@ -167,8 +167,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-05T06:45:28Z",
-        "snapshot_aest": "2026-08-05T16:45:28+10:00",
+        "snapshot_utc": "2026-08-05T07:00:39Z",
+        "snapshot_aest": "2026-08-05T17:00:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|904901",
@@ -186,6 +186,106 @@
         "centroid_lat": -16.56815021205059,
         "lga_name": "Douglas Shire",
         "lga_code": "2810",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.949128596451,
+              -27.7633505607971
+            ],
+            [
+              144.948996517767,
+              -27.7628724711832
+            ],
+            [
+              145.127588999093,
+              -27.3060039151848
+            ],
+            [
+              145.127790846114,
+              -27.3057737108524
+            ],
+            [
+              145.341379130474,
+              -27.1814468657109
+            ],
+            [
+              145.342116355317,
+              -27.1816422635593
+            ],
+            [
+              145.383945661288,
+              -27.2661556944911
+            ],
+            [
+              145.383988728333,
+              -27.2663274107719
+            ],
+            [
+              145.401392221917,
+              -27.9076385587149
+            ],
+            [
+              145.40138975676,
+              -27.907695143799
+            ],
+            [
+              145.385469946498,
+              -28.0463695508097
+            ],
+            [
+              145.385363008418,
+              -28.0466035313266
+            ],
+            [
+              145.378303526661,
+              -28.0545279296989
+            ],
+            [
+              145.378041985058,
+              -28.0546825554953
+            ],
+            [
+              145.318504913232,
+              -28.0694972168915
+            ],
+            [
+              145.318020971596,
+              -28.0693929433162
+            ],
+            [
+              144.949128596451,
+              -27.7633505607971
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-05T07:00:39Z",
+        "snapshot_aest": "2026-08-05T17:00:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904905",
+        "outage_id": "904905",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 14,
+        "affected_customers_known": true,
+        "suburb": "CUNNAMULLA, EULO, WYANDRA",
+        "street_name": "ALDVILLE RD, BULLOO DEVELOPMENTAL RD, DEVELOPMENTAL RD, MOUNT ALFRED RD, YERREL RD",
+        "start_utc": "2026-08-05T06:37:35Z",
+        "etr_utc": null,
+        "centroid_lon": 145.22569664331968,
+        "centroid_lat": -27.635763514865435,
+        "lga_name": "Paroo Shire",
+        "lga_code": "5800",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
