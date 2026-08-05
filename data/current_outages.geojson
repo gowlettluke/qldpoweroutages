@@ -43,8 +43,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-05T21:00:45Z",
-        "snapshot_aest": "2026-08-06T07:00:45+10:00",
+        "snapshot_utc": "2026-08-05T21:15:29Z",
+        "snapshot_aest": "2026-08-06T07:15:29+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-974666-g",
@@ -63,6 +63,130 @@
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.561576649307,
+              -27.1371211458963
+            ],
+            [
+              151.561441553059,
+              -27.1367891636631
+            ],
+            [
+              151.561746769823,
+              -27.1317357203286
+            ],
+            [
+              151.561766648442,
+              -27.1316324724018
+            ],
+            [
+              151.586777437925,
+              -27.0558265331849
+            ],
+            [
+              151.586780398194,
+              -27.0558178773753
+            ],
+            [
+              151.589626583055,
+              -27.0477845241972
+            ],
+            [
+              151.590088083431,
+              -27.0474706814196
+            ],
+            [
+              151.598745699477,
+              -27.0471952246442
+            ],
+            [
+              151.599243728991,
+              -27.0475113977157
+            ],
+            [
+              151.61503771379,
+              -27.0929239462463
+            ],
+            [
+              151.615057454304,
+              -27.0930086120702
+            ],
+            [
+              151.622847094042,
+              -27.1563434763819
+            ],
+            [
+              151.622430884454,
+              -27.1568366796455
+            ],
+            [
+              151.610416733983,
+              -27.1586576586914
+            ],
+            [
+              151.610271937065,
+              -27.1586606945485
+            ],
+            [
+              151.590483254095,
+              -27.1565080843679
+            ],
+            [
+              151.590317307128,
+              -27.1564631083193
+            ],
+            [
+              151.584291660865,
+              -27.1537432633309
+            ],
+            [
+              151.584273238296,
+              -27.1537345141416
+            ],
+            [
+              151.573220763422,
+              -27.148219191758
+            ],
+            [
+              151.573098530992,
+              -27.1481336882411
+            ],
+            [
+              151.561576649307,
+              -27.1371211458963
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-05T21:15:29Z",
+        "snapshot_aest": "2026-08-06T07:15:29+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|904910",
+        "outage_id": "904910",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 55,
+        "affected_customers_known": true,
+        "suburb": "MACLAGAN, MALLING, QUINALOW",
+        "street_name": "CAULEYS RD, DALBY COOYAR RD, HARTWIGS RD, HILL ST, LEES RD, MACLAGAN-MALLING RD, MALLING BOUNDARY RD, MALLING RD, MYALL ST, PECHEY MACLAGAN RD, QUINALOW EDGEFIELD RD, WHITES RD, WONGA PLAINS NORTH RD",
+        "start_utc": "2026-08-05T20:55:31Z",
+        "etr_utc": null,
+        "centroid_lon": 151.5940931949784,
+        "centroid_lat": -27.112206251709114,
+        "lga_name": "Toowoomba Regional",
+        "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
