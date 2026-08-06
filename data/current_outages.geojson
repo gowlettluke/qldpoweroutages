@@ -75,8 +75,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-06T11:15:26Z",
-        "snapshot_aest": "2026-08-06T21:15:26+10:00",
+        "snapshot_utc": "2026-08-06T11:30:39Z",
+        "snapshot_aest": "2026-08-06T21:30:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-974820-g",
@@ -167,8 +167,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-06T11:15:26Z",
-        "snapshot_aest": "2026-08-06T21:15:26+10:00",
+        "snapshot_utc": "2026-08-06T11:30:39Z",
+        "snapshot_aest": "2026-08-06T21:30:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905234",
@@ -186,6 +186,58 @@
         "centroid_lat": -18.683637013617563,
         "lga_name": "Charters Towers Regional",
         "lga_code": "2310",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.236283161275,
+              -23.1345035381362
+            ],
+            [
+              148.235799035737,
+              -23.134958925173
+            ],
+            [
+              148.235306633451,
+              -23.1345111924949
+            ],
+            [
+              148.235790759197,
+              -23.134055806943
+            ],
+            [
+              148.236283161275,
+              -23.1345035381362
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-06T11:30:39Z",
+        "snapshot_aest": "2026-08-06T21:30:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|905238",
+        "outage_id": "905238",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "CAPELLA",
+        "street_name": "GLENCOE RD",
+        "start_utc": "2026-08-06T08:46:59Z",
+        "etr_utc": null,
+        "centroid_lon": 148.23579686144947,
+        "centroid_lat": -23.134507671950335,
+        "lga_name": "Central Highlands Regional",
+        "lga_code": "2270",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
