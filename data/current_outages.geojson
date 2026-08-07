@@ -75,8 +75,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-07T02:45:29Z",
-        "snapshot_aest": "2026-08-07T12:45:29+10:00",
+        "snapshot_utc": "2026-08-07T03:00:44Z",
+        "snapshot_aest": "2026-08-07T13:00:44+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-974855-g",
@@ -159,8 +159,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-07T02:45:29Z",
-        "snapshot_aest": "2026-08-07T12:45:29+10:00",
+        "snapshot_utc": "2026-08-07T03:00:44Z",
+        "snapshot_aest": "2026-08-07T13:00:44+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905345",
@@ -178,6 +178,58 @@
         "centroid_lat": -24.92022681866498,
         "lga_name": "Bundaberg Regional",
         "lga_code": "1820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.061712051154,
+              -24.9517380308758
+            ],
+            [
+              150.061228620527,
+              -24.9521991148144
+            ],
+            [
+              150.06072287274,
+              -24.9517583766357
+            ],
+            [
+              150.061206303906,
+              -24.9512972943033
+            ],
+            [
+              150.061712051154,
+              -24.9517380308758
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-07T03:00:44Z",
+        "snapshot_aest": "2026-08-07T13:00:44+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|905346",
+        "outage_id": "905346",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "THEODORE",
+        "street_name": "LEICHHARDT HWY, OFF LEICHHARDT HWY",
+        "start_utc": "2026-08-07T02:38:00Z",
+        "etr_utc": null,
+        "centroid_lon": 150.06119681338782,
+        "centroid_lat": -24.95174477045691,
+        "lga_name": "Banana Shire",
+        "lga_code": "370",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
