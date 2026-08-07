@@ -111,8 +111,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-07T10:15:30Z",
-        "snapshot_aest": "2026-08-07T20:15:30+10:00",
+        "snapshot_utc": "2026-08-07T10:30:34Z",
+        "snapshot_aest": "2026-08-07T20:30:34+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905354",
@@ -130,6 +130,98 @@
         "centroid_lat": -15.476573636841714,
         "lga_name": "Kowanyama Aboriginal Shire",
         "lga_code": "4420",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              143.104661758594,
+              -21.9995395180081
+            ],
+            [
+              143.104805525842,
+              -21.9992063319385
+            ],
+            [
+              143.259347393359,
+              -21.8568113374202
+            ],
+            [
+              143.259755093064,
+              -21.856685584227
+            ],
+            [
+              143.368986572103,
+              -21.8711700446334
+            ],
+            [
+              143.369321621047,
+              -21.8713675845297
+            ],
+            [
+              143.379444839786,
+              -21.8856376194855
+            ],
+            [
+              143.379455135933,
+              -21.8861204038807
+            ],
+            [
+              143.338944733149,
+              -21.9484379613342
+            ],
+            [
+              143.338876917224,
+              -21.9485194672072
+            ],
+            [
+              143.175476015426,
+              -22.1039682507753
+            ],
+            [
+              143.174900444435,
+              -22.104049000973
+            ],
+            [
+              143.106944573022,
+              -22.0697633172751
+            ],
+            [
+              143.106691428822,
+              -22.069379099911
+            ],
+            [
+              143.104661758594,
+              -21.9995395180081
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-07T10:30:34Z",
+        "snapshot_aest": "2026-08-07T20:30:34+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|905355",
+        "outage_id": "905355",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 15,
+        "affected_customers_known": true,
+        "suburb": "CORFIELD, WINTON",
+        "street_name": "CORFIELD SDNG, ESCOMBE STATION, HEXHAM STATION, INVERDOONE STATION, KNAPDALE STATION, LANA DOWNS STATION, LANIFER STATION, LUCKHAM STATION, OLIO SDNG, WEEBA STATION",
+        "start_utc": "2026-08-07T10:10:00Z",
+        "etr_utc": "2026-08-07T12:30:00Z",
+        "centroid_lon": 143.229330173852,
+        "centroid_lat": -21.971035431568364,
+        "lga_name": "Winton Shire",
+        "lga_code": "7400",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
