@@ -1,4 +1,73 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.134333470389,
+              -24.902256749029
+            ],
+            [
+              150.133681670604,
+              -24.9023157358587
+            ],
+            [
+              150.133537500463,
+              -24.9017329890306
+            ],
+            [
+              150.143744899866,
+              -24.8847683321973
+            ],
+            [
+              150.143922446694,
+              -24.8845994096621
+            ],
+            [
+              150.159985076383,
+              -24.8757351235663
+            ],
+            [
+              150.160624303947,
+              -24.8758361670349
+            ],
+            [
+              150.160603450517,
+              -24.8764276884969
+            ],
+            [
+              150.134333470389,
+              -24.902256749029
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-08T06:30:35Z",
+        "snapshot_aest": "2026-08-08T16:30:35+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|905446",
+        "outage_id": "905446",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "THEODORE",
+        "street_name": "CASTLE CREEK RD",
+        "start_utc": "2026-08-08T07:50:22Z",
+        "etr_utc": null,
+        "centroid_lon": 150.14614004253133,
+        "centroid_lat": -24.887834382608865,
+        "lga_name": "Banana Shire",
+        "lga_code": "370",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    }
+  ]
 }
