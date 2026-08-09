@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-09T04:00:41Z",
-        "snapshot_aest": "2026-08-09T14:00:41+10:00",
+        "snapshot_utc": "2026-08-09T04:15:32Z",
+        "snapshot_aest": "2026-08-09T14:15:32+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905520",
@@ -143,14 +143,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-09T04:00:41Z",
-        "snapshot_aest": "2026-08-09T14:00:41+10:00",
+        "snapshot_utc": "2026-08-09T04:15:32Z",
+        "snapshot_aest": "2026-08-09T14:15:32+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905792",
         "outage_id": "905792",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs.",
         "affected_customers": 18,
         "affected_customers_known": true,
@@ -162,6 +162,70 @@
         "centroid_lat": -17.61367449044936,
         "lga_name": "Tablelands Regional",
         "lga_code": "6820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.855234504968,
+              -23.5784039353837
+            ],
+            [
+              149.85512905397,
+              -23.577895618877
+            ],
+            [
+              149.855611199312,
+              -23.5776303942501
+            ],
+            [
+              149.935839569205,
+              -23.5829980208793
+            ],
+            [
+              149.936278480497,
+              -23.583559791026
+            ],
+            [
+              149.921504601242,
+              -23.6367712180956
+            ],
+            [
+              149.920689124906,
+              -23.6369830946706
+            ],
+            [
+              149.855234504968,
+              -23.5784039353837
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-09T04:15:32Z",
+        "snapshot_aest": "2026-08-09T14:15:32+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|905793",
+        "outage_id": "905793",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 8,
+        "affected_customers_known": true,
+        "suburb": "GOGANGO",
+        "street_name": "RIVERSLEA RD, YARRA RD",
+        "start_utc": "2026-08-09T04:00:00Z",
+        "etr_utc": "2026-08-09T06:00:00Z",
+        "centroid_lon": 149.90400047219563,
+        "centroid_lat": -23.599367900099487,
+        "lga_name": "Rockhampton Regional",
+        "lga_code": "6370",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
