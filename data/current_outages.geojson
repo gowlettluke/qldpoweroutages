@@ -95,14 +95,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-09T11:15:26Z",
-        "snapshot_aest": "2026-08-09T21:15:26+10:00",
+        "snapshot_utc": "2026-08-09T11:30:41Z",
+        "snapshot_aest": "2026-08-09T21:30:41+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-975212-g",
         "outage_id": "INCD-975212-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 98,
         "affected_customers_known": true,
@@ -163,8 +163,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-09T11:15:26Z",
-        "snapshot_aest": "2026-08-09T21:15:26+10:00",
+        "snapshot_utc": "2026-08-09T11:30:41Z",
+        "snapshot_aest": "2026-08-09T21:30:41+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905794",
@@ -239,8 +239,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-09T11:15:26Z",
-        "snapshot_aest": "2026-08-09T21:15:26+10:00",
+        "snapshot_utc": "2026-08-09T11:30:41Z",
+        "snapshot_aest": "2026-08-09T21:30:41+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905795",
@@ -258,6 +258,90 @@
         "centroid_lat": -12.039164859108409,
         "lga_name": "Cook Shire",
         "lga_code": "2500",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.402126251589,
+              -25.5828859305967
+            ],
+            [
+              152.40201403606,
+              -25.5822312116785
+            ],
+            [
+              152.423234486115,
+              -25.5581093746857
+            ],
+            [
+              152.423533432215,
+              -25.557947325686
+            ],
+            [
+              152.442120305668,
+              -25.5548799939981
+            ],
+            [
+              152.442595975438,
+              -25.5550411345583
+            ],
+            [
+              152.493574417196,
+              -25.612661093304
+            ],
+            [
+              152.493681740976,
+              -25.6129821466165
+            ],
+            [
+              152.492868348576,
+              -25.6213562394592
+            ],
+            [
+              152.492290100879,
+              -25.6217601084426
+            ],
+            [
+              152.457451957562,
+              -25.6163297549371
+            ],
+            [
+              152.457260714952,
+              -25.6162606225218
+            ],
+            [
+              152.402126251589,
+              -25.5828859305967
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-09T11:30:41Z",
+        "snapshot_aest": "2026-08-09T21:30:41+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|905796",
+        "outage_id": "905796",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 22,
+        "affected_customers_known": true,
+        "suburb": "ARAMARA, GUNGALOON, THINOOMBA, YERRA",
+        "street_name": "GEYSING RD, GUMDALE RD, HARRIS RD, MARYBOROUGH BIGGENDEN RD, POWELL RD, ROSS RD, SPIDEN RD, THINOOMBA RD",
+        "start_utc": "2026-08-09T11:10:05Z",
+        "etr_utc": null,
+        "centroid_lon": 152.44747476875227,
+        "centroid_lat": -25.588926988310455,
+        "lga_name": "Fraser Coast Regional",
+        "lga_code": "3220",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
