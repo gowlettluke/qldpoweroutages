@@ -67,8 +67,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-10T16:15:35Z",
-        "snapshot_aest": "2026-08-11T02:15:35+10:00",
+        "snapshot_utc": "2026-08-10T16:30:39Z",
+        "snapshot_aest": "2026-08-11T02:30:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-975497-g",
@@ -81,7 +81,7 @@
         "suburb": "BEAUDESERT, BIDDADDABA, TABRAGALBA",
         "street_name": "ARMSTRONG RD, CAWLEY LANE, SPENGLER RD, TABRAGALBA HOUSE RD",
         "start_utc": "2026-08-10T12:22:02Z",
-        "etr_utc": "2026-08-10T17:00:00Z",
+        "etr_utc": "2026-08-10T19:00:00Z",
         "centroid_lon": 153.08489711617182,
         "centroid_lat": -28.009713616779553,
         "lga_name": "Scenic Rim Regional",
@@ -207,8 +207,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-10T16:15:35Z",
-        "snapshot_aest": "2026-08-11T02:15:35+10:00",
+        "snapshot_utc": "2026-08-10T16:30:39Z",
+        "snapshot_aest": "2026-08-11T02:30:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-975502-g",
@@ -226,6 +226,70 @@
         "centroid_lat": -27.22582507376976,
         "lga_name": "Moreton Bay City",
         "lga_code": "5010",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.276684070679,
+              -27.5528698169736
+            ],
+            [
+              152.277235083008,
+              -27.5522546436027
+            ],
+            [
+              152.27741896219,
+              -27.5522814535909
+            ],
+            [
+              152.277843626751,
+              -27.5527280240611
+            ],
+            [
+              152.277842579196,
+              -27.5531027542542
+            ],
+            [
+              152.277432549924,
+              -27.5535447425084
+            ],
+            [
+              152.276866899849,
+              -27.5532713578188
+            ],
+            [
+              152.276684070679,
+              -27.5528698169736
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-10T16:30:39Z",
+        "snapshot_aest": "2026-08-11T02:30:39+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-975506-g",
+        "outage_id": "INCD-975506-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Under Investigation",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "GATTON",
+        "street_name": "OLD COLLEGE RD",
+        "start_utc": "2026-08-10T16:23:15Z",
+        "etr_utc": "2026-08-10T18:00:00Z",
+        "centroid_lon": 152.27730735497178,
+        "centroid_lat": -27.552905765171175,
+        "lga_name": "Lockyer Valley Regional",
+        "lga_code": "4580",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     }
