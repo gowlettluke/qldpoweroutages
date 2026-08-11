@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-11T04:30:41Z",
-        "snapshot_aest": "2026-08-11T14:30:41+10:00",
+        "snapshot_utc": "2026-08-11T04:45:33Z",
+        "snapshot_aest": "2026-08-11T14:45:33+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-975615-g",
@@ -171,8 +171,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-11T04:30:41Z",
-        "snapshot_aest": "2026-08-11T14:30:41+10:00",
+        "snapshot_utc": "2026-08-11T04:45:33Z",
+        "snapshot_aest": "2026-08-11T14:45:33+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905867",
@@ -287,8 +287,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-11T04:30:41Z",
-        "snapshot_aest": "2026-08-11T14:30:41+10:00",
+        "snapshot_utc": "2026-08-11T04:45:33Z",
+        "snapshot_aest": "2026-08-11T14:45:33+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905897",
@@ -306,6 +306,98 @@
         "centroid_lat": -27.595784016263124,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.253998189093,
+              -23.4404645437673
+            ],
+            [
+              144.253632813454,
+              -23.4397098899839
+            ],
+            [
+              144.25694622914,
+              -23.4363456280577
+            ],
+            [
+              144.25752224468,
+              -23.4362434198938
+            ],
+            [
+              144.258188354774,
+              -23.4365427545102
+            ],
+            [
+              144.258299235659,
+              -23.4366112691865
+            ],
+            [
+              144.260078233125,
+              -23.4380712696576
+            ],
+            [
+              144.260231569561,
+              -23.4383146157823
+            ],
+            [
+              144.260284261329,
+              -23.4385433714362
+            ],
+            [
+              144.260293587914,
+              -23.4386707692384
+            ],
+            [
+              144.260221402534,
+              -23.439562824676
+            ],
+            [
+              144.259912375901,
+              -23.4399492563156
+            ],
+            [
+              144.258656624867,
+              -23.4404039185199
+            ],
+            [
+              144.258481484191,
+              -23.4404350870721
+            ],
+            [
+              144.253998189093,
+              -23.4404645437673
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-11T04:45:33Z",
+        "snapshot_aest": "2026-08-11T14:45:33+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|905898",
+        "outage_id": "905898",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 90,
+        "affected_customers_known": true,
+        "suburb": "LONGREACH",
+        "street_name": "CASSOWARY ST, CRANE ST, KOOKABURRA CT, PLOVER ST, RAILWAY RES, SUNBIRD ST",
+        "start_utc": "2026-08-11T03:54:55Z",
+        "etr_utc": null,
+        "centroid_lon": 144.25724153564872,
+        "centroid_lat": -23.438765180788366,
+        "lga_name": "Longreach Regional",
+        "lga_code": "4710",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
