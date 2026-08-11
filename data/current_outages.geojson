@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-11T23:15:37Z",
-        "snapshot_aest": "2026-08-12T09:15:37+10:00",
+        "snapshot_utc": "2026-08-11T23:30:47Z",
+        "snapshot_aest": "2026-08-12T09:30:47+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905905",
@@ -135,8 +135,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-11T23:15:37Z",
-        "snapshot_aest": "2026-08-12T09:15:37+10:00",
+        "snapshot_utc": "2026-08-11T23:30:47Z",
+        "snapshot_aest": "2026-08-12T09:30:47+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905915",
@@ -235,14 +235,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-11T23:15:37Z",
-        "snapshot_aest": "2026-08-12T09:15:37+10:00",
+        "snapshot_utc": "2026-08-11T23:30:47Z",
+        "snapshot_aest": "2026-08-12T09:30:47+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905918",
         "outage_id": "905918",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs.",
         "affected_customers": 33,
         "affected_customers_known": true,
@@ -254,6 +254,114 @@
         "centroid_lat": -25.16955696500562,
         "lga_name": "Bundaberg Regional",
         "lga_code": "1820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.377875790394,
+              -21.6968331316528
+            ],
+            [
+              149.377837911008,
+              -21.6963479857152
+            ],
+            [
+              149.416847652183,
+              -21.6289697885069
+            ],
+            [
+              149.417474465117,
+              -21.6287747017382
+            ],
+            [
+              149.4333221576,
+              -21.6356080847047
+            ],
+            [
+              149.433561837706,
+              -21.6358360662999
+            ],
+            [
+              149.437088089138,
+              -21.6433216899827
+            ],
+            [
+              149.437094159436,
+              -21.643335162677
+            ],
+            [
+              149.454109464167,
+              -21.6828643479675
+            ],
+            [
+              149.454144070174,
+              -21.6830165418509
+            ],
+            [
+              149.454177636321,
+              -21.6838830041959
+            ],
+            [
+              149.454096925994,
+              -21.6841496022267
+            ],
+            [
+              149.427452985411,
+              -21.7215181999306
+            ],
+            [
+              149.427261367664,
+              -21.7216742165873
+            ],
+            [
+              149.407533812685,
+              -21.7305900806191
+            ],
+            [
+              149.407079511967,
+              -21.7305733287887
+            ],
+            [
+              149.403233804938,
+              -21.7284710822791
+            ],
+            [
+              149.403090859366,
+              -21.728351779835
+            ],
+            [
+              149.377875790394,
+              -21.6968331316528
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-11T23:30:47Z",
+        "snapshot_aest": "2026-08-12T09:30:47+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|905964",
+        "outage_id": "905964",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "affected_customers": 234,
+        "affected_customers_known": true,
+        "suburb": "GREENHILL, ILBILBIE",
+        "street_name": "CAPE PALMERSTON RD, CORAL CT, GALLOWAY DR, GARNHAM CT, GREENHILL RD, HOWLANDS RD, MARION SETTLEMENT RD, NOTCH POINT RD, OCEAN DR, PACIFIC AVE, REEF CT, SEAVIEW DR",
+        "start_utc": "2026-08-11T23:07:59Z",
+        "etr_utc": null,
+        "centroid_lon": 149.41727279227408,
+        "centroid_lat": -21.6824024663234,
+        "lga_name": "Isaac Regional",
+        "lga_code": "3980",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
