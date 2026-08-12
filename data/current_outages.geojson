@@ -95,8 +95,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-12T21:45:31Z",
-        "snapshot_aest": "2026-08-13T07:45:31+10:00",
+        "snapshot_utc": "2026-08-12T22:00:40Z",
+        "snapshot_aest": "2026-08-13T08:00:40+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-975870-g",
@@ -159,8 +159,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-12T21:45:31Z",
-        "snapshot_aest": "2026-08-13T07:45:31+10:00",
+        "snapshot_utc": "2026-08-12T22:00:40Z",
+        "snapshot_aest": "2026-08-13T08:00:40+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905982",
@@ -219,8 +219,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-12T21:45:31Z",
-        "snapshot_aest": "2026-08-13T07:45:31+10:00",
+        "snapshot_utc": "2026-08-12T22:00:40Z",
+        "snapshot_aest": "2026-08-13T08:00:40+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|905991",
@@ -238,6 +238,74 @@
         "centroid_lat": -21.261864000052377,
         "lga_name": "Mackay Regional",
         "lga_code": "4770",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.640813791102,
+              -22.8255212592534
+            ],
+            [
+              147.640606360414,
+              -22.8248131334959
+            ],
+            [
+              147.641189288367,
+              -22.8241489316263
+            ],
+            [
+              147.641868982474,
+              -22.8240793333432
+            ],
+            [
+              147.643133313127,
+              -22.8250036928628
+            ],
+            [
+              147.643310742899,
+              -22.8254402347779
+            ],
+            [
+              147.643240094276,
+              -22.825795363936
+            ],
+            [
+              147.642590405372,
+              -22.8261365486214
+            ],
+            [
+              147.640813791102,
+              -22.8255212592534
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-12T22:00:40Z",
+        "snapshot_aest": "2026-08-13T08:00:40+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|905995",
+        "outage_id": "905995",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 9,
+        "affected_customers_known": true,
+        "suburb": "CLERMONT",
+        "street_name": "DAINTREE ST, KARMOO ST",
+        "start_utc": "2026-08-12T21:39:00Z",
+        "etr_utc": null,
+        "centroid_lon": 147.64195047009284,
+        "centroid_lat": -22.82511751939996,
+        "lga_name": "Isaac Regional",
+        "lga_code": "3980",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
