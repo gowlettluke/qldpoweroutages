@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-13T11:30:34Z",
-        "snapshot_aest": "2026-08-13T21:30:34+10:00",
+        "snapshot_utc": "2026-08-13T11:45:30Z",
+        "snapshot_aest": "2026-08-13T21:45:30+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976026-g",
@@ -147,8 +147,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-13T11:30:34Z",
-        "snapshot_aest": "2026-08-13T21:30:34+10:00",
+        "snapshot_utc": "2026-08-13T11:45:30Z",
+        "snapshot_aest": "2026-08-13T21:45:30+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906100",
@@ -166,6 +166,94 @@
         "centroid_lat": -19.27177307602914,
         "lga_name": "Townsville City",
         "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.836315400371,
+              -20.5915298616218
+            ],
+            [
+              147.835781269623,
+              -20.5913375662654
+            ],
+            [
+              147.835822014107,
+              -20.5908004689287
+            ],
+            [
+              147.845259438537,
+              -20.5804558106652
+            ],
+            [
+              147.845402232077,
+              -20.5803492685128
+            ],
+            [
+              147.847193010617,
+              -20.5794734532753
+            ],
+            [
+              147.847893087941,
+              -20.5798491544631
+            ],
+            [
+              147.848238044602,
+              -20.5856596163668
+            ],
+            [
+              147.848162801207,
+              -20.5859288312725
+            ],
+            [
+              147.846454373988,
+              -20.5884356210659
+            ],
+            [
+              147.846225410788,
+              -20.5886123295223
+            ],
+            [
+              147.843359104304,
+              -20.5896682533636
+            ],
+            [
+              147.843313823667,
+              -20.5896825309441
+            ],
+            [
+              147.836315400371,
+              -20.5915298616218
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-13T11:45:30Z",
+        "snapshot_aest": "2026-08-13T21:45:30+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906103",
+        "outage_id": "906103",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 8,
+        "affected_customers_known": true,
+        "suburb": "COLLINSVILLE",
+        "street_name": "CORDUROY CREEK RD, PELICAN CREEK RD, RICKS LANE",
+        "start_utc": "2026-08-13T11:03:58Z",
+        "etr_utc": null,
+        "centroid_lon": 147.84342168661178,
+        "centroid_lat": -20.58607341861623,
+        "lga_name": "Whitsunday Regional",
+        "lga_code": "7340",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
