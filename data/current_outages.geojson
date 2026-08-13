@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-13T11:45:30Z",
-        "snapshot_aest": "2026-08-13T21:45:30+10:00",
+        "snapshot_utc": "2026-08-13T12:00:40Z",
+        "snapshot_aest": "2026-08-13T22:00:40+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976026-g",
@@ -147,8 +147,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-13T11:45:30Z",
-        "snapshot_aest": "2026-08-13T21:45:30+10:00",
+        "snapshot_utc": "2026-08-13T12:00:40Z",
+        "snapshot_aest": "2026-08-13T22:00:40+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906100",
@@ -235,8 +235,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-13T11:45:30Z",
-        "snapshot_aest": "2026-08-13T21:45:30+10:00",
+        "snapshot_utc": "2026-08-13T12:00:40Z",
+        "snapshot_aest": "2026-08-13T22:00:40+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906103",
@@ -254,6 +254,66 @@
         "centroid_lat": -20.58607341861623,
         "lga_name": "Whitsunday Regional",
         "lga_code": "7340",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.218399089376,
+              -21.111349220651
+            ],
+            [
+              149.21891659006,
+              -21.1117637843488
+            ],
+            [
+              149.218474789425,
+              -21.1122493825402
+            ],
+            [
+              149.21051741371,
+              -21.1128384145542
+            ],
+            [
+              149.209999929788,
+              -21.1124238235027
+            ],
+            [
+              149.210441760702,
+              -21.1119382449612
+            ],
+            [
+              149.218399089376,
+              -21.111349220651
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-13T12:00:40Z",
+        "snapshot_aest": "2026-08-13T22:00:40+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906104",
+        "outage_id": "906104",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "MACKAY, MACKAY HARBOUR",
+        "street_name": "GRAEME HEGGIE ST, SHELL ST",
+        "start_utc": "2026-08-13T10:03:48Z",
+        "etr_utc": null,
+        "centroid_lon": 149.21445550432585,
+        "centroid_lat": -21.112093426514768,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
