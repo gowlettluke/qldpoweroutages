@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-14T11:45:31Z",
-        "snapshot_aest": "2026-08-14T21:45:31+10:00",
+        "snapshot_utc": "2026-08-14T12:00:42Z",
+        "snapshot_aest": "2026-08-14T22:00:42+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906226",
@@ -74,6 +74,106 @@
         "centroid_lat": -19.27177307602914,
         "lga_name": "Townsville City",
         "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.457708425811,
+              -24.1284917703733
+            ],
+            [
+              149.457538165099,
+              -24.1280043472378
+            ],
+            [
+              149.457964530836,
+              -24.1267063665096
+            ],
+            [
+              149.45797837935,
+              -24.1266699251121
+            ],
+            [
+              149.458890726201,
+              -24.1245634593344
+            ],
+            [
+              149.4588945539,
+              -24.1245548794689
+            ],
+            [
+              149.459113239611,
+              -24.1240786985805
+            ],
+            [
+              149.459138882023,
+              -24.1240309476177
+            ],
+            [
+              149.459237760429,
+              -24.1238713175706
+            ],
+            [
+              149.459536193855,
+              -24.1236588872422
+            ],
+            [
+              149.460904822796,
+              -24.1233173434103
+            ],
+            [
+              149.461495153684,
+              -24.1239089000836
+            ],
+            [
+              149.459589296421,
+              -24.1286528304446
+            ],
+            [
+              149.458990811705,
+              -24.1289300665645
+            ],
+            [
+              149.458016159147,
+              -24.1286702575516
+            ],
+            [
+              149.457852799953,
+              -24.1285940814555
+            ],
+            [
+              149.457708425811,
+              -24.1284917703733
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-14T12:00:42Z",
+        "snapshot_aest": "2026-08-14T22:00:42+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906228",
+        "outage_id": "906228",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 46,
+        "affected_customers_known": true,
+        "suburb": "WOORABINDA",
+        "street_name": "DOYLE ST, FREEMAN ST, GEORGE CL, GREEN ST, KEMP ST, MUNNS DR",
+        "start_utc": "2026-08-14T11:45:01Z",
+        "etr_utc": null,
+        "centroid_lon": 149.45945182915023,
+        "centroid_lat": -24.126123998711982,
+        "lga_name": "Central Highlands Regional",
+        "lga_code": "2270",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
