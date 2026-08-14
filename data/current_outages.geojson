@@ -63,14 +63,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-14T22:30:32Z",
-        "snapshot_aest": "2026-08-15T08:30:32+10:00",
+        "snapshot_utc": "2026-08-14T22:45:30Z",
+        "snapshot_aest": "2026-08-15T08:45:30+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976294-g",
         "outage_id": "INCD-976294-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 8,
         "affected_customers_known": true,
@@ -155,8 +155,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-14T22:30:32Z",
-        "snapshot_aest": "2026-08-15T08:30:32+10:00",
+        "snapshot_utc": "2026-08-14T22:45:30Z",
+        "snapshot_aest": "2026-08-15T08:45:30+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976302-g",
@@ -219,8 +219,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-14T22:30:32Z",
-        "snapshot_aest": "2026-08-15T08:30:32+10:00",
+        "snapshot_utc": "2026-08-14T22:45:30Z",
+        "snapshot_aest": "2026-08-15T08:45:30+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906233",
@@ -238,6 +238,86 @@
         "centroid_lat": -28.04897185441663,
         "lga_name": "Balonne Shire",
         "lga_code": "300",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.418164722814,
+              -23.2849988577696
+            ],
+            [
+              150.417611666251,
+              -23.2844682665438
+            ],
+            [
+              150.419649453962,
+              -23.2746314394614
+            ],
+            [
+              150.420026536344,
+              -23.2742752581621
+            ],
+            [
+              150.470199526129,
+              -23.2643255007322
+            ],
+            [
+              150.470762866996,
+              -23.2646177879935
+            ],
+            [
+              150.47051873936,
+              -23.265170469871
+            ],
+            [
+              150.431295914192,
+              -23.2831190085198
+            ],
+            [
+              150.431176358101,
+              -23.2831568350942
+            ],
+            [
+              150.430992795469,
+              -23.2831912396695
+            ],
+            [
+              150.43096934062,
+              -23.2831950878525
+            ],
+            [
+              150.418164722814,
+              -23.2849988577696
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-14T22:45:30Z",
+        "snapshot_aest": "2026-08-15T08:45:30+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906288",
+        "outage_id": "906288",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 17,
+        "affected_customers_known": true,
+        "suburb": "ALTON DOWNS, GLENLEE",
+        "street_name": "DAWSON RD, WEDEL RD",
+        "start_utc": "2026-08-14T22:38:42Z",
+        "etr_utc": "2026-08-15T02:00:00Z",
+        "centroid_lon": 150.4378996890169,
+        "centroid_lat": -23.27510621471717,
+        "lga_name": "Livingstone Shire",
+        "lga_code": "4530",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
