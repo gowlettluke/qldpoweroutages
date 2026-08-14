@@ -1,4 +1,57 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              153.434264307172,
+              -28.0235983635525
+            ],
+            [
+              153.433757489665,
+              -28.0240513202468
+            ],
+            [
+              153.433247053764,
+              -28.0236015744044
+            ],
+            [
+              153.433753871356,
+              -28.0231486195628
+            ],
+            [
+              153.434264307172,
+              -28.0235983635525
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-14T00:00:43Z",
+        "snapshot_aest": "2026-08-14T10:00:43+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-976123-g",
+        "outage_id": "INCD-976123-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Emergency Repairs",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "BROADBEACH",
+        "street_name": "BRITANNIA AVE",
+        "start_utc": "2026-08-13T23:35:14Z",
+        "etr_utc": "2026-08-14T02:00:00Z",
+        "centroid_lon": 153.4336642828615,
+        "centroid_lat": -28.02358327684437,
+        "lga_name": "Gold Coast City",
+        "lga_code": "3430",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    }
+  ]
 }
