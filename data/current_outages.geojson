@@ -103,15 +103,15 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-14T09:15:32Z",
-        "snapshot_aest": "2026-08-14T19:15:32+10:00",
+        "snapshot_utc": "2026-08-14T09:30:38Z",
+        "snapshot_aest": "2026-08-14T19:30:38+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976238-g",
         "outage_id": "INCD-976238-g",
         "outage_type": "unplanned",
         "status": "Awaiting",
-        "reason": "Emergency Repairs",
+        "reason": "Emergency repairs in-progress",
         "affected_customers": 63,
         "affected_customers_known": true,
         "suburb": "CHUWAR",
@@ -219,8 +219,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-14T09:15:32Z",
-        "snapshot_aest": "2026-08-14T19:15:32+10:00",
+        "snapshot_utc": "2026-08-14T09:30:38Z",
+        "snapshot_aest": "2026-08-14T19:30:38+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976264-g",
@@ -295,8 +295,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-14T09:15:32Z",
-        "snapshot_aest": "2026-08-14T19:15:32+10:00",
+        "snapshot_utc": "2026-08-14T09:30:38Z",
+        "snapshot_aest": "2026-08-14T19:30:38+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906226",
@@ -314,6 +314,122 @@
         "centroid_lat": -19.27177307602914,
         "lga_name": "Townsville City",
         "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.006742358562,
+              -28.228471881567
+            ],
+            [
+              152.006712777,
+              -28.2282782583429
+            ],
+            [
+              152.006779281558,
+              -28.2275815371393
+            ],
+            [
+              152.007242904981,
+              -28.2271710279027
+            ],
+            [
+              152.008695448552,
+              -28.22706262337
+            ],
+            [
+              152.008783857865,
+              -28.2270628615956
+            ],
+            [
+              152.012455676607,
+              -28.2273568000003
+            ],
+            [
+              152.01288981028,
+              -28.2276570836955
+            ],
+            [
+              152.013242614502,
+              -28.2285550334947
+            ],
+            [
+              152.013263783431,
+              -28.2287776626723
+            ],
+            [
+              152.013165756296,
+              -28.2292931876973
+            ],
+            [
+              152.013025559596,
+              -28.2295352627808
+            ],
+            [
+              152.011436554365,
+              -28.2309549084595
+            ],
+            [
+              152.011119444978,
+              -28.2310864293895
+            ],
+            [
+              152.008819764077,
+              -28.2312623648856
+            ],
+            [
+              152.008364028886,
+              -28.2310773758488
+            ],
+            [
+              152.007369088958,
+              -28.2298563699491
+            ],
+            [
+              152.007326340672,
+              -28.2297937381069
+            ],
+            [
+              152.007209683765,
+              -28.2295864077004
+            ],
+            [
+              152.007187734652,
+              -28.2295414134797
+            ],
+            [
+              152.006742358562,
+              -28.228471881567
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-14T09:30:38Z",
+        "snapshot_aest": "2026-08-14T19:30:38+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906227",
+        "outage_id": "906227",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 81,
+        "affected_customers_known": true,
+        "suburb": "WARWICK",
+        "street_name": "BAGULEY ST, MARGARET ST, O'DONNELL CT, ROSS ST, TYRELL ST",
+        "start_utc": "2026-08-14T09:11:49Z",
+        "etr_utc": null,
+        "centroid_lon": 152.009924923857,
+        "centroid_lat": -28.2289907983959,
+        "lga_name": "Southern Downs Regional",
+        "lga_code": "6660",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
