@@ -47,8 +47,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-15T07:45:31Z",
-        "snapshot_aest": "2026-08-15T17:45:31+10:00",
+        "snapshot_utc": "2026-08-15T08:00:37Z",
+        "snapshot_aest": "2026-08-15T18:00:37+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976347-g",
@@ -155,8 +155,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-15T07:45:31Z",
-        "snapshot_aest": "2026-08-15T17:45:31+10:00",
+        "snapshot_utc": "2026-08-15T08:00:37Z",
+        "snapshot_aest": "2026-08-15T18:00:37+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976362-g",
@@ -231,8 +231,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-15T07:45:31Z",
-        "snapshot_aest": "2026-08-15T17:45:31+10:00",
+        "snapshot_utc": "2026-08-15T08:00:37Z",
+        "snapshot_aest": "2026-08-15T18:00:37+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976353-g",
@@ -245,12 +245,112 @@
         "suburb": "BOREEN POINT, COOTHARABA",
         "street_name": "COOTHARABA RD, JUNCTION RD",
         "start_utc": "2026-08-15T04:01:27Z",
-        "etr_utc": "2026-08-15T08:00:00Z",
+        "etr_utc": "2026-08-15T08:30:00Z",
         "centroid_lon": 152.94620328261618,
         "centroid_lat": -26.29421579688327,
         "lga_name": "Noosa Shire",
         "lga_code": "5740",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.500557594654,
+              -19.3417107031225
+            ],
+            [
+              146.500429467315,
+              -19.3410121304173
+            ],
+            [
+              146.513393033674,
+              -19.3272530274003
+            ],
+            [
+              146.513417436197,
+              -19.32722897533
+            ],
+            [
+              146.571122724167,
+              -19.2743793869396
+            ],
+            [
+              146.571232462409,
+              -19.2743042190349
+            ],
+            [
+              146.596129622127,
+              -19.2619258846328
+            ],
+            [
+              146.596486707458,
+              -19.2618932831998
+            ],
+            [
+              146.610248288578,
+              -19.265802527755
+            ],
+            [
+              146.610538336049,
+              -19.2664359825373
+            ],
+            [
+              146.592173440503,
+              -19.3016425820741
+            ],
+            [
+              146.592143474866,
+              -19.3016919265041
+            ],
+            [
+              146.547580281947,
+              -19.3653908499222
+            ],
+            [
+              146.546985594993,
+              -19.3655516978983
+            ],
+            [
+              146.546812845648,
+              -19.3654766666628
+            ],
+            [
+              146.546784365495,
+              -19.3654631864448
+            ],
+            [
+              146.500557594654,
+              -19.3417107031225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-15T08:00:37Z",
+        "snapshot_aest": "2026-08-15T18:00:37+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906322",
+        "outage_id": "906322",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 46,
+        "affected_customers_known": true,
+        "suburb": "ALICE RIVER, BLACK RIVER, BOHLE PLAINS, HERVEY RANGE",
+        "street_name": "BLACK RIVER RD, ERNEST RD, GIESEMAN RD, HERVEYS RANGE RD, PAGE RD, PLUMERIA RD, PUMPING STATION, TOSCAVALE RD",
+        "start_utc": "2026-08-14T23:02:43Z",
+        "etr_utc": null,
+        "centroid_lon": 146.55682720110988,
+        "centroid_lat": -19.315005247526944,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
