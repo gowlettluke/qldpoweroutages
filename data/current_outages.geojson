@@ -75,14 +75,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-17T02:00:41Z",
-        "snapshot_aest": "2026-08-17T12:00:41+10:00",
+        "snapshot_utc": "2026-08-17T02:15:31Z",
+        "snapshot_aest": "2026-08-17T12:15:31+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976548-g",
         "outage_id": "INCD-976548-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 13,
         "affected_customers_known": true,
@@ -159,8 +159,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-17T02:00:41Z",
-        "snapshot_aest": "2026-08-17T12:00:41+10:00",
+        "snapshot_utc": "2026-08-17T02:15:31Z",
+        "snapshot_aest": "2026-08-17T12:15:31+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976553-g",
@@ -178,6 +178,114 @@
         "centroid_lat": -28.167636272006273,
         "lga_name": "Gold Coast City",
         "lga_code": "3430",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              153.203354510598,
+              -27.6950071894674
+            ],
+            [
+              153.203240358186,
+              -27.6946458768001
+            ],
+            [
+              153.203322379922,
+              -27.6941774968444
+            ],
+            [
+              153.203322801211,
+              -27.694175132316
+            ],
+            [
+              153.203343531632,
+              -27.6940607421246
+            ],
+            [
+              153.203550252851,
+              -27.6937647893178
+            ],
+            [
+              153.203624492637,
+              -27.6937177895918
+            ],
+            [
+              153.203690785454,
+              -27.6936822690414
+            ],
+            [
+              153.204532422939,
+              -27.6933059598924
+            ],
+            [
+              153.204537810978,
+              -27.6933035862893
+            ],
+            [
+              153.206789975473,
+              -27.6923261595936
+            ],
+            [
+              153.206801065278,
+              -27.692321493466
+            ],
+            [
+              153.207168254574,
+              -27.6921718040739
+            ],
+            [
+              153.207885815085,
+              -27.6926056484807
+            ],
+            [
+              153.207714218659,
+              -27.6955413890161
+            ],
+            [
+              153.207670508198,
+              -27.6957026320821
+            ],
+            [
+              153.20673522444,
+              -27.6975590450805
+            ],
+            [
+              153.205885598457,
+              -27.6976661452504
+            ],
+            [
+              153.203354510598,
+              -27.6950071894674
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-17T02:15:31Z",
+        "snapshot_aest": "2026-08-17T12:15:31+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-976565-g",
+        "outage_id": "INCD-976565-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Emergency Repairs",
+        "affected_customers": 130,
+        "affected_customers_known": true,
+        "suburb": "EAGLEBY",
+        "street_name": "COPPERFIELD DR, GILBERT ST, HERSES RD, MCKINLEY ST, PALMER ST, PAROO CT",
+        "start_utc": "2026-08-17T02:04:52Z",
+        "etr_utc": "2026-08-17T04:30:00Z",
+        "centroid_lon": 153.20587628123027,
+        "centroid_lat": -27.694809446585932,
+        "lga_name": "Logan City",
+        "lga_code": "4590",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     },
@@ -259,8 +367,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-17T02:00:41Z",
-        "snapshot_aest": "2026-08-17T12:00:41+10:00",
+        "snapshot_utc": "2026-08-17T02:15:31Z",
+        "snapshot_aest": "2026-08-17T12:15:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906348",
@@ -288,60 +396,96 @@
         "coordinates": [
           [
             [
-              151.183932610906,
-              -25.434459457417
+              147.844599196128,
+              -20.544385509576
             ],
             [
-              151.184271489339,
-              -25.4339185180926
+              147.844731854739,
+              -20.5439818661952
             ],
             [
-              151.184882164071,
-              -25.4342010289664
+              147.845073821847,
+              -20.5436606899969
             ],
             [
-              151.192423844119,
-              -25.4537296775851
+              147.845149553089,
+              -20.5436027608695
             ],
             [
-              151.192308950519,
-              -25.4541950717841
+              147.845578265358,
+              -20.5433380836238
             ],
             [
-              151.190587145154,
-              -25.4557807012036
+              147.846040853345,
+              -20.5433051713948
             ],
             [
-              151.189752351882,
-              -25.455573792515
+              147.846142600529,
+              -20.5433490565075
             ],
             [
-              151.183932610906,
-              -25.434459457417
+              147.846369370153,
+              -20.5435530723014
+            ],
+            [
+              147.846868316867,
+              -20.5444662352781
+            ],
+            [
+              147.846920940522,
+              -20.5446514973704
+            ],
+            [
+              147.846964866563,
+              -20.5455209829953
+            ],
+            [
+              147.846964470017,
+              -20.5455707064083
+            ],
+            [
+              147.846917712749,
+              -20.5462736251999
+            ],
+            [
+              147.846191229194,
+              -20.5466321667094
+            ],
+            [
+              147.845086105826,
+              -20.546003998365
+            ],
+            [
+              147.844862606944,
+              -20.5457009428495
+            ],
+            [
+              147.844599196128,
+              -20.544385509576
             ]
           ]
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-17T02:00:41Z",
-        "snapshot_aest": "2026-08-17T12:00:41+10:00",
+        "snapshot_utc": "2026-08-17T02:15:31Z",
+        "snapshot_aest": "2026-08-17T12:15:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
-        "outage_key": "au.qld.ergon|unplanned|906397",
-        "outage_id": "906397",
+        "outage_key": "au.qld.ergon|unplanned|906419",
+        "outage_id": "906419",
         "outage_type": "unplanned",
-        "status": "Crews working on-site",
-        "reason": "The loss of supply is due to fallen power lines.",
-        "affected_customers": 4,
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 22,
         "affected_customers_known": true,
-        "suburb": "EIDSVOLD, GROSVENOR",
-        "street_name": "BURNETT HWY, MESNERS RD",
-        "start_utc": "2026-08-16T20:39:13Z",
-        "etr_utc": "2026-08-17T02:00:00Z",
-        "centroid_lon": 151.18838791797347,
-        "centroid_lat": -25.446457252089353,
-        "lga_name": "North Burnett Regional",
-        "lga_code": "5760",
+        "suburb": "COLLINSVILLE",
+        "street_name": "BRADFIELD ST, SCARTWATER ST, SPEIRS ST",
+        "start_utc": "2026-08-17T01:24:36Z",
+        "etr_utc": null,
+        "centroid_lon": 147.84584860248813,
+        "centroid_lat": -20.544944783335648,
+        "lga_name": "Whitsunday Regional",
+        "lga_code": "7340",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
