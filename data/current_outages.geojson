@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-17T11:30:38Z",
-        "snapshot_aest": "2026-08-17T21:30:38+10:00",
+        "snapshot_utc": "2026-08-17T11:45:32Z",
+        "snapshot_aest": "2026-08-17T21:45:32+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976637-g",
@@ -179,8 +179,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-17T11:30:38Z",
-        "snapshot_aest": "2026-08-17T21:30:38+10:00",
+        "snapshot_utc": "2026-08-17T11:45:32Z",
+        "snapshot_aest": "2026-08-17T21:45:32+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906428",
@@ -259,8 +259,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-17T11:30:38Z",
-        "snapshot_aest": "2026-08-17T21:30:38+10:00",
+        "snapshot_utc": "2026-08-17T11:45:32Z",
+        "snapshot_aest": "2026-08-17T21:45:32+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906433",
@@ -278,6 +278,90 @@
         "centroid_lat": -26.933433213908422,
         "lga_name": "Western Downs Regional",
         "lga_code": "7310",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.688815299908,
+              -23.2390470010061
+            ],
+            [
+              147.688725669693,
+              -23.2384887670651
+            ],
+            [
+              147.781798243996,
+              -23.0906849776529
+            ],
+            [
+              147.782546019874,
+              -23.0905757780291
+            ],
+            [
+              147.896957734048,
+              -23.1853274347633
+            ],
+            [
+              147.897119243528,
+              -23.185696373328
+            ],
+            [
+              147.887191214168,
+              -23.313272439116
+            ],
+            [
+              147.887000966828,
+              -23.3135984665587
+            ],
+            [
+              147.875282196318,
+              -23.321893551891
+            ],
+            [
+              147.874878974766,
+              -23.3219760233051
+            ],
+            [
+              147.757538510218,
+              -23.2979223812197
+            ],
+            [
+              147.757312028157,
+              -23.2978125422241
+            ],
+            [
+              147.688815299908,
+              -23.2390470010061
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-17T11:45:32Z",
+        "snapshot_aest": "2026-08-17T21:45:32+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906434",
+        "outage_id": "906434",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 21,
+        "affected_customers_known": true,
+        "suburb": "CAPELLA, CLERMONT",
+        "street_name": "ACCESS RD, GREGORY HWY, MAGENTA RD, MALTHOID RD, NUTHOLM RD, OFF RUBYVALE RD, RUBYVALE RD",
+        "start_utc": "2026-08-17T11:27:51Z",
+        "etr_utc": null,
+        "centroid_lon": 147.80433959047724,
+        "centroid_lat": -23.21921837503287,
+        "lga_name": "Central Highlands Regional",
+        "lga_code": "2270",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
