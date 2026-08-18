@@ -95,8 +95,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-18T10:45:30Z",
-        "snapshot_aest": "2026-08-18T20:45:30+10:00",
+        "snapshot_utc": "2026-08-18T11:00:38Z",
+        "snapshot_aest": "2026-08-18T21:00:38+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976888-g",
@@ -152,40 +152,20 @@
               -26.4003860672141
             ],
             [
-              153.103902557078,
-              -26.4003844629688
+              153.1038749471,
+              -26.400385953493
             ],
             [
-              153.104116746784,
-              -26.4003782332329
+              153.104290142482,
+              -26.400353165687
             ],
             [
-              153.104195370071,
-              -26.4003815133823
+              153.104444330829,
+              -26.400362521727
             ],
             [
-              153.104567529055,
-              -26.4004235832223
-            ],
-            [
-              153.104579375361,
-              -26.4004250517856
-            ],
-            [
-              153.104757763888,
-              -26.4004491217558
-            ],
-            [
-              153.104936194905,
-              -26.4004732043016
-            ],
-            [
-              153.104952239241,
-              -26.4004756100406
-            ],
-            [
-              153.105198968395,
-              -26.4005163200686
+              153.105219011597,
+              -26.4005200093079
             ],
             [
               153.105343128555,
@@ -255,26 +235,98 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-18T10:45:30Z",
-        "snapshot_aest": "2026-08-18T20:45:30+10:00",
+        "snapshot_utc": "2026-08-18T11:00:38Z",
+        "snapshot_aest": "2026-08-18T21:00:38+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976935-g",
         "outage_id": "INCD-976935-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
-        "reason": "Under Investigation",
+        "status": "In Progress",
+        "reason": "Emergency Repairs",
         "affected_customers": 145,
         "affected_customers_known": true,
         "suburb": "SUNSHINE BEACH",
         "street_name": "CORONA ST, NEBULA ST, OCEANIA CRES, PACIFIC AVE, RAY ST, SOLWAY DR",
         "start_utc": "2026-08-18T08:50:34Z",
         "etr_utc": "2026-08-18T11:00:00Z",
-        "centroid_lon": 153.10521108369645,
-        "centroid_lat": -26.40223791073926,
+        "centroid_lon": 153.10520992106655,
+        "centroid_lat": -26.402233967063,
         "lga_name": "Noosa Shire",
         "lga_code": "5740",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.797658875578,
+              -19.2484123362446
+            ],
+            [
+              146.79745754042,
+              -19.247882211805
+            ],
+            [
+              146.797956981715,
+              -19.2475779352069
+            ],
+            [
+              146.802048750773,
+              -19.2479795013995
+            ],
+            [
+              146.802196219063,
+              -19.248017391406
+            ],
+            [
+              146.80346832955,
+              -19.2485648559966
+            ],
+            [
+              146.803639746105,
+              -19.249263104718
+            ],
+            [
+              146.802385866251,
+              -19.2507142184144
+            ],
+            [
+              146.801768893607,
+              -19.2508124863263
+            ],
+            [
+              146.797658875578,
+              -19.2484123362446
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-18T11:00:38Z",
+        "snapshot_aest": "2026-08-18T21:00:38+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906498",
+        "outage_id": "906498",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 18,
+        "affected_customers_known": true,
+        "suburb": "CASTLE HILL, NORTH WARD",
+        "street_name": "LANDSBOROUGH ST, YARRAWONGA DR",
+        "start_utc": "2026-08-18T10:50:00Z",
+        "etr_utc": null,
+        "centroid_lon": 146.80085466337368,
+        "centroid_lat": -19.248966207676812,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
