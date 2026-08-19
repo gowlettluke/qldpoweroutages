@@ -135,8 +135,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-19T16:15:31Z",
-        "snapshot_aest": "2026-08-20T02:15:31+10:00",
+        "snapshot_utc": "2026-08-19T16:30:37Z",
+        "snapshot_aest": "2026-08-20T02:30:37+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977127-g",
@@ -154,6 +154,66 @@
         "centroid_lat": -27.615795919063135,
         "lga_name": "Brisbane City",
         "lga_code": "1000",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.723542951425,
+              -26.8909508849331
+            ],
+            [
+              152.724083933701,
+              -26.8913659619067
+            ],
+            [
+              152.723621011481,
+              -26.8918510329055
+            ],
+            [
+              152.719460015061,
+              -26.8921410754295
+            ],
+            [
+              152.718919046188,
+              -26.8917259808971
+            ],
+            [
+              152.719381987826,
+              -26.891240925448
+            ],
+            [
+              152.723542951425,
+              -26.8909508849331
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-19T16:30:37Z",
+        "snapshot_aest": "2026-08-20T02:30:37+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-977132-g",
+        "outage_id": "INCD-977132-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Emergency Repairs",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "STONY CREEK",
+        "street_name": "STONY CREEK RD",
+        "start_utc": "2026-08-19T16:25:12Z",
+        "etr_utc": "2026-08-19T19:30:00Z",
+        "centroid_lon": 152.72150160951517,
+        "centroid_lat": -26.891546000801846,
+        "lga_name": "Moreton Bay City",
+        "lga_code": "5010",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     }
