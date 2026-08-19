@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-19T08:30:38Z",
-        "snapshot_aest": "2026-08-19T18:30:38+10:00",
+        "snapshot_utc": "2026-08-19T08:45:34Z",
+        "snapshot_aest": "2026-08-19T18:45:34+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-976995-g",
@@ -195,8 +195,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-19T08:30:38Z",
-        "snapshot_aest": "2026-08-19T18:30:38+10:00",
+        "snapshot_utc": "2026-08-19T08:45:34Z",
+        "snapshot_aest": "2026-08-19T18:45:34+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906552",
@@ -214,6 +214,58 @@
         "centroid_lat": -19.607318259706904,
         "lga_name": "Townsville City",
         "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.510335478752,
+              -26.3761198007075
+            ],
+            [
+              151.509853327902,
+              -26.3765856382481
+            ],
+            [
+              151.509336158164,
+              -26.3761513429869
+            ],
+            [
+              151.50981830984,
+              -26.3756855071422
+            ],
+            [
+              151.510335478752,
+              -26.3761198007075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-19T08:45:34Z",
+        "snapshot_aest": "2026-08-19T18:45:34+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906555",
+        "outage_id": "906555",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "BALLOGIE",
+        "street_name": "UNDERWOODS RD, WALKERS RD",
+        "start_utc": "2026-08-19T06:54:27Z",
+        "etr_utc": null,
+        "centroid_lon": 151.5098187479256,
+        "centroid_lat": -26.37613260078015,
+        "lga_name": "South Burnett Regional",
+        "lga_code": "6630",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
