@@ -127,8 +127,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-19T23:15:35Z",
-        "snapshot_aest": "2026-08-20T09:15:35+10:00",
+        "snapshot_utc": "2026-08-19T23:30:32Z",
+        "snapshot_aest": "2026-08-20T09:30:32+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977136-g",
@@ -219,8 +219,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-19T23:15:35Z",
-        "snapshot_aest": "2026-08-20T09:15:35+10:00",
+        "snapshot_utc": "2026-08-19T23:30:32Z",
+        "snapshot_aest": "2026-08-20T09:30:32+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977150-g",
@@ -233,12 +233,144 @@
         "suburb": "MANLY WEST",
         "street_name": "BARRAMUNDI ST",
         "start_utc": "2026-08-19T20:57:22Z",
-        "etr_utc": "2026-08-19T23:30:00Z",
+        "etr_utc": "2026-08-20T00:00:00Z",
         "centroid_lon": 153.16816397524406,
         "centroid_lat": -27.471612736406847,
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.552412427285,
+              -24.3257629828149
+            ],
+            [
+              151.552622385048,
+              -24.3250494643568
+            ],
+            [
+              151.553225386015,
+              -24.3248506660944
+            ],
+            [
+              151.55337492127,
+              -24.3248243351798
+            ],
+            [
+              151.553566585767,
+              -24.3248183032228
+            ],
+            [
+              151.553577212395,
+              -24.324818074159
+            ],
+            [
+              151.553855179474,
+              -24.32481483718
+            ],
+            [
+              151.553930091662,
+              -24.3248192172697
+            ],
+            [
+              151.554146679281,
+              -24.3248472162568
+            ],
+            [
+              151.554148813906,
+              -24.3248474965825
+            ],
+            [
+              151.55601768602,
+              -24.3250967452689
+            ],
+            [
+              151.556153954369,
+              -24.325133962702
+            ],
+            [
+              151.557854936131,
+              -24.3258579005105
+            ],
+            [
+              151.557862128254,
+              -24.3258610265381
+            ],
+            [
+              151.558474312371,
+              -24.3261326937623
+            ],
+            [
+              151.558486183869,
+              -24.3269379775634
+            ],
+            [
+              151.557431498834,
+              -24.3274386667824
+            ],
+            [
+              151.557259135168,
+              -24.3274864503531
+            ],
+            [
+              151.556618194544,
+              -24.3275510597949
+            ],
+            [
+              151.55659231646,
+              -24.3275530360443
+            ],
+            [
+              151.555586632214,
+              -24.3276053693086
+            ],
+            [
+              151.555433424824,
+              -24.3275912050008
+            ],
+            [
+              151.553856523607,
+              -24.3272101575125
+            ],
+            [
+              151.553605504862,
+              -24.3270643542677
+            ],
+            [
+              151.552412427285,
+              -24.3257629828149
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-19T23:30:32Z",
+        "snapshot_aest": "2026-08-20T09:30:32+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906637",
+        "outage_id": "906637",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 52,
+        "affected_customers_known": true,
+        "suburb": "MIRIAM VALE",
+        "street_name": "BRENNAN ST, BRUCE HWY, DEACON ST, HENDERSON ST, NORTH ST, ROE ST",
+        "start_utc": "2026-08-19T23:10:00Z",
+        "etr_utc": "2026-08-20T00:10:00Z",
+        "centroid_lon": 151.55540021881112,
+        "centroid_lat": -24.326227393979853,
+        "lga_name": "Gladstone Regional",
+        "lga_code": "3360",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
