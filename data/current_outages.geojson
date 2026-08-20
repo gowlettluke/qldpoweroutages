@@ -127,8 +127,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-20T00:30:38Z",
-        "snapshot_aest": "2026-08-20T10:30:38+10:00",
+        "snapshot_utc": "2026-08-20T00:45:26Z",
+        "snapshot_aest": "2026-08-20T10:45:26+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977136-g",
@@ -219,8 +219,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-20T00:30:38Z",
-        "snapshot_aest": "2026-08-20T10:30:38+10:00",
+        "snapshot_utc": "2026-08-20T00:45:26Z",
+        "snapshot_aest": "2026-08-20T10:45:26+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977150-g",
@@ -239,6 +239,114 @@
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.878552347088,
+              -21.1538648144438
+            ],
+            [
+              148.878491163904,
+              -21.1533045196387
+            ],
+            [
+              148.887235763471,
+              -21.1405421227007
+            ],
+            [
+              148.887537254034,
+              -21.1403452633221
+            ],
+            [
+              148.892881664359,
+              -21.1392422281612
+            ],
+            [
+              148.892973266947,
+              -21.1392318169887
+            ],
+            [
+              148.912890950076,
+              -21.1387716744255
+            ],
+            [
+              148.913325902497,
+              -21.1390077824382
+            ],
+            [
+              148.918955085428,
+              -21.1487426694785
+            ],
+            [
+              148.919013045788,
+              -21.1489736814602
+            ],
+            [
+              148.918435419422,
+              -21.1645628234884
+            ],
+            [
+              148.918084884876,
+              -21.1649817641392
+            ],
+            [
+              148.916395360911,
+              -21.1654283350333
+            ],
+            [
+              148.916369717658,
+              -21.1654344048664
+            ],
+            [
+              148.89687089781,
+              -21.1695176883711
+            ],
+            [
+              148.896652241321,
+              -21.169515736628
+            ],
+            [
+              148.894499390442,
+              -21.1690244995722
+            ],
+            [
+              148.894269452406,
+              -21.168901889227
+            ],
+            [
+              148.878552347088,
+              -21.1538648144438
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-20T00:45:26Z",
+        "snapshot_aest": "2026-08-20T10:45:26+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906646",
+        "outage_id": "906646",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 65,
+        "affected_customers_known": true,
+        "suburb": "MARIAN, MIRANI",
+        "street_name": "BRAND RD, DUMP RD, FORDYCES RD, MACKAY EUNGELLA RD, MIRANI BOLDON RD, NEWMANS RD, OTTERBURN CONNORS RD, PEACHS RD, SWANS RD, WRIGHTS RD",
+        "start_utc": "2026-08-20T00:19:00Z",
+        "etr_utc": null,
+        "centroid_lon": 148.90073084912032,
+        "centroid_lat": -21.153307293519514,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
