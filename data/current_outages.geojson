@@ -87,8 +87,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-20T21:45:29Z",
-        "snapshot_aest": "2026-08-21T07:45:29+10:00",
+        "snapshot_utc": "2026-08-20T22:00:39Z",
+        "snapshot_aest": "2026-08-21T08:00:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977332-g",
@@ -101,7 +101,7 @@
         "suburb": "TALLEBUDGERA",
         "street_name": "CURRINGA CT, KARRAGATA CT",
         "start_utc": "2026-08-20T19:38:27Z",
-        "etr_utc": "2026-08-20T22:00:00Z",
+        "etr_utc": "2026-08-20T22:30:00Z",
         "centroid_lon": 153.40771154925702,
         "centroid_lat": -28.14660740355042,
         "lga_name": "Gold Coast City",
@@ -147,8 +147,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-20T21:45:29Z",
-        "snapshot_aest": "2026-08-21T07:45:29+10:00",
+        "snapshot_utc": "2026-08-20T22:00:39Z",
+        "snapshot_aest": "2026-08-21T08:00:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906656",
@@ -271,8 +271,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-20T21:45:29Z",
-        "snapshot_aest": "2026-08-21T07:45:29+10:00",
+        "snapshot_utc": "2026-08-20T22:00:39Z",
+        "snapshot_aest": "2026-08-21T08:00:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906666",
@@ -290,6 +290,82 @@
         "centroid_lat": -25.08641990363698,
         "lga_name": "North Burnett Regional",
         "lga_code": "5760",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              143.130002571375,
+              -20.7169067545189
+            ],
+            [
+              143.130580991455,
+              -20.7162949764636
+            ],
+            [
+              143.132370925229,
+              -20.7168060729306
+            ],
+            [
+              143.132631540015,
+              -20.7169888942725
+            ],
+            [
+              143.135698867261,
+              -20.7213545541599
+            ],
+            [
+              143.135576120294,
+              -20.7219711173461
+            ],
+            [
+              143.134627259472,
+              -20.7226035603456
+            ],
+            [
+              143.133990821753,
+              -20.7225339328786
+            ],
+            [
+              143.131312981203,
+              -20.7196780996528
+            ],
+            [
+              143.131233116959,
+              -20.7195601349444
+            ],
+            [
+              143.130002571375,
+              -20.7169067545189
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-20T22:00:39Z",
+        "snapshot_aest": "2026-08-21T08:00:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906669",
+        "outage_id": "906669",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 13,
+        "affected_customers_known": true,
+        "suburb": "RICHMOND",
+        "street_name": "CRAWFORD ST, CRAWFORD WEST ST, MCLEOD ST",
+        "start_utc": "2026-08-20T21:29:08Z",
+        "etr_utc": null,
+        "centroid_lon": 143.13285981797503,
+        "centroid_lat": -20.719436742279502,
+        "lga_name": "Richmond Shire",
+        "lga_code": "6300",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
