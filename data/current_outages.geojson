@@ -87,8 +87,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-20T04:45:34Z",
-        "snapshot_aest": "2026-08-20T14:45:34+10:00",
+        "snapshot_utc": "2026-08-20T05:00:36Z",
+        "snapshot_aest": "2026-08-20T15:00:36+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977200-g",
@@ -107,6 +107,90 @@
         "lga_name": "Logan City",
         "lga_code": "4590",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.732939518139,
+              -27.7012314945874
+            ],
+            [
+              151.732946381534,
+              -27.7006982458681
+            ],
+            [
+              151.73756150738,
+              -27.6952422992984
+            ],
+            [
+              151.7380660462,
+              -27.6950718741957
+            ],
+            [
+              151.749335414994,
+              -27.697105300539
+            ],
+            [
+              151.74963621362,
+              -27.6972724722955
+            ],
+            [
+              151.767432606345,
+              -27.7179128385999
+            ],
+            [
+              151.767523481565,
+              -27.7182909370196
+            ],
+            [
+              151.762673726228,
+              -27.736460610817
+            ],
+            [
+              151.761778566049,
+              -27.7366288056517
+            ],
+            [
+              151.756522551363,
+              -27.7304691630324
+            ],
+            [
+              151.756514534851,
+              -27.7304595026503
+            ],
+            [
+              151.732939518139,
+              -27.7012314945874
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-20T05:00:36Z",
+        "snapshot_aest": "2026-08-20T15:00:36+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906653",
+        "outage_id": "906653",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 13,
+        "affected_customers_known": true,
+        "suburb": "CAMBOOYA, SOUTHBROOK",
+        "street_name": "CAMBOOYA FELTON RD, HAZELWOOD RD, JIMNA SPRINGS RD, SOUTHBROOK FELTON RD",
+        "start_utc": "2026-08-20T00:31:24Z",
+        "etr_utc": null,
+        "centroid_lon": 151.75188453294004,
+        "centroid_lat": -27.713053008821273,
+        "lga_name": "Toowoomba Regional",
+        "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
