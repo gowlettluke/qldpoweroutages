@@ -95,8 +95,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-20T10:30:35Z",
-        "snapshot_aest": "2026-08-20T20:30:35+10:00",
+        "snapshot_utc": "2026-08-20T10:45:32Z",
+        "snapshot_aest": "2026-08-20T20:45:32+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906656",
@@ -114,6 +114,98 @@
         "centroid_lat": -19.726131089071064,
         "lga_name": "Burdekin Shire",
         "lga_code": "1900",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.269181909317,
+              -27.878942479183
+            ],
+            [
+              151.269284444702,
+              -27.8785258149909
+            ],
+            [
+              151.272804479906,
+              -27.8748757538637
+            ],
+            [
+              151.273297497536,
+              -27.8747288075633
+            ],
+            [
+              151.273978331983,
+              -27.8748609574598
+            ],
+            [
+              151.274319326096,
+              -27.875509654368
+            ],
+            [
+              151.273064017402,
+              -27.8776430930824
+            ],
+            [
+              151.273018264451,
+              -27.8777070800647
+            ],
+            [
+              151.271705635824,
+              -27.8792404564597
+            ],
+            [
+              151.271603336292,
+              -27.8793300777638
+            ],
+            [
+              151.270455101632,
+              -27.880083580448
+            ],
+            [
+              151.270447086527,
+              -27.8800887334626
+            ],
+            [
+              151.270284979643,
+              -27.8801908271508
+            ],
+            [
+              151.269504482996,
+              -27.87994696194
+            ],
+            [
+              151.269181909317,
+              -27.878942479183
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-20T10:45:32Z",
+        "snapshot_aest": "2026-08-20T20:45:32+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906658",
+        "outage_id": "906658",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 32,
+        "affected_customers_known": true,
+        "suburb": "MILLMERRAN",
+        "street_name": "MARGARET ST, NARDOO ST, WILLIAM ST",
+        "start_utc": "2026-08-20T10:30:00Z",
+        "etr_utc": "2026-08-20T11:30:00Z",
+        "centroid_lon": 151.27170966660316,
+        "centroid_lat": -27.877495499224825,
+        "lga_name": "Toowoomba Regional",
+        "lga_code": "6910",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
