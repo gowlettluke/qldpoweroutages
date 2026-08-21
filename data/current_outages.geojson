@@ -39,8 +39,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-21T08:45:33Z",
-        "snapshot_aest": "2026-08-21T18:45:33+10:00",
+        "snapshot_utc": "2026-08-21T09:00:36Z",
+        "snapshot_aest": "2026-08-21T19:00:36+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977483-g",
@@ -187,14 +187,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-21T08:45:33Z",
-        "snapshot_aest": "2026-08-21T18:45:33+10:00",
+        "snapshot_utc": "2026-08-21T09:00:36Z",
+        "snapshot_aest": "2026-08-21T19:00:36+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906772",
         "outage_id": "906772",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews on route",
         "reason": "The loss of supply is there are supply problems resulting in low voltage conditions. It is advisable to disconnect sensitive electrical appliances.",
         "affected_customers": 393,
         "affected_customers_known": true,
@@ -279,8 +279,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-21T08:45:33Z",
-        "snapshot_aest": "2026-08-21T18:45:33+10:00",
+        "snapshot_utc": "2026-08-21T09:00:36Z",
+        "snapshot_aest": "2026-08-21T19:00:36+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|906773",
@@ -298,6 +298,106 @@
         "centroid_lat": -16.918925251342834,
         "lga_name": "Cairns Regional",
         "lga_code": "2080",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.290277278421,
+              -21.2985898335237
+            ],
+            [
+              149.290223428322,
+              -21.2983709474057
+            ],
+            [
+              149.290224790096,
+              -21.2983195573009
+            ],
+            [
+              149.29022527865,
+              -21.2983075557124
+            ],
+            [
+              149.290234897746,
+              -21.2981324417736
+            ],
+            [
+              149.290236226941,
+              -21.2981149037399
+            ],
+            [
+              149.290502041413,
+              -21.2953661883969
+            ],
+            [
+              149.290923740588,
+              -21.2949587737404
+            ],
+            [
+              149.292123177794,
+              -21.2948223120456
+            ],
+            [
+              149.29238595938,
+              -21.2948618209268
+            ],
+            [
+              149.292838759619,
+              -21.2950610558165
+            ],
+            [
+              149.293108733572,
+              -21.2955464852424
+            ],
+            [
+              149.292457652715,
+              -21.2990820134752
+            ],
+            [
+              149.292295324195,
+              -21.2993489016047
+            ],
+            [
+              149.291647688654,
+              -21.2998659052211
+            ],
+            [
+              149.290907576317,
+              -21.2997299187495
+            ],
+            [
+              149.290277278421,
+              -21.2985898335237
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-21T09:00:36Z",
+        "snapshot_aest": "2026-08-21T19:00:36+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906774",
+        "outage_id": "906774",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 84,
+        "affected_customers_known": true,
+        "suburb": "HAY POINT",
+        "street_name": "CAREY ST, HELLWEGE ST, MACCARTHY ST",
+        "start_utc": "2026-08-21T08:45:49Z",
+        "etr_utc": null,
+        "centroid_lon": 149.29159397251547,
+        "centroid_lat": -21.29718153267166,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
