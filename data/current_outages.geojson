@@ -51,8 +51,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-22T01:45:25Z",
-        "snapshot_aest": "2026-08-22T11:45:25+10:00",
+        "snapshot_utc": "2026-08-22T02:00:36Z",
+        "snapshot_aest": "2026-08-22T12:00:36+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977533-g",
@@ -171,8 +171,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-22T01:45:25Z",
-        "snapshot_aest": "2026-08-22T11:45:25+10:00",
+        "snapshot_utc": "2026-08-22T02:00:36Z",
+        "snapshot_aest": "2026-08-22T12:00:36+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977541-g",
@@ -191,6 +191,78 @@
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.79119258477,
+              -19.2694534315182
+            ],
+            [
+              146.791304057034,
+              -19.2688954385629
+            ],
+            [
+              146.791901940035,
+              -19.2688816866006
+            ],
+            [
+              146.792551798575,
+              -19.2693560468419
+            ],
+            [
+              146.792736388651,
+              -19.2697471729916
+            ],
+            [
+              146.792714861768,
+              -19.2700275240869
+            ],
+            [
+              146.792482462446,
+              -19.2703836294462
+            ],
+            [
+              146.792328831563,
+              -19.2704698884335
+            ],
+            [
+              146.791667284027,
+              -19.2702944036547
+            ],
+            [
+              146.79119258477,
+              -19.2694534315182
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-22T02:00:36Z",
+        "snapshot_aest": "2026-08-22T12:00:36+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906851",
+        "outage_id": "906851",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
+        "affected_customers": 10,
+        "affected_customers_known": true,
+        "suburb": "WEST END",
+        "street_name": "WOODMAN CT",
+        "start_utc": "2026-08-22T01:17:49Z",
+        "etr_utc": null,
+        "centroid_lon": 146.79196232921294,
+        "centroid_lat": -19.26965016377242,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
