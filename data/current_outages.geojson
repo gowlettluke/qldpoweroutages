@@ -51,8 +51,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-22T16:15:32Z",
-        "snapshot_aest": "2026-08-23T02:15:32+10:00",
+        "snapshot_utc": "2026-08-22T16:30:34Z",
+        "snapshot_aest": "2026-08-23T02:30:34+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977601-g",
@@ -65,12 +65,104 @@
         "suburb": "THAGOONA",
         "street_name": "BYRNE RD, MCGEARYS RD, MCGRATH RD",
         "start_utc": "2026-08-22T09:34:17Z",
-        "etr_utc": "2026-08-22T17:00:00Z",
+        "etr_utc": "2026-08-22T17:30:00Z",
         "centroid_lon": 152.63968930415626,
         "centroid_lat": -27.639625522320955,
         "lga_name": "Ipswich City",
         "lga_code": "3960",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.406212773302,
+              -16.4467940526494
+            ],
+            [
+              145.406194835589,
+              -16.4466629810926
+            ],
+            [
+              145.40625332462,
+              -16.443026182774
+            ],
+            [
+              145.406682550054,
+              -16.44258291766
+            ],
+            [
+              145.407181947135,
+              -16.4429514234367
+            ],
+            [
+              145.40807447493,
+              -16.4476322080975
+            ],
+            [
+              145.408077333089,
+              -16.4476489595141
+            ],
+            [
+              145.408242334007,
+              -16.4487439614353
+            ],
+            [
+              145.408246739363,
+              -16.4487887878614
+            ],
+            [
+              145.408281740913,
+              -16.4495437945436
+            ],
+            [
+              145.408278325514,
+              -16.4496220608761
+            ],
+            [
+              145.408186331355,
+              -16.4503070598261
+            ],
+            [
+              145.407756903012,
+              -16.4506995688017
+            ],
+            [
+              145.407271764689,
+              -16.4503730479258
+            ],
+            [
+              145.406212773302,
+              -16.4467940526494
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-22T16:30:34Z",
+        "snapshot_aest": "2026-08-23T02:30:34+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907621",
+        "outage_id": "907621",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage caused by external influences, such as birds or animals.",
+        "affected_customers": 22,
+        "affected_customers_known": true,
+        "suburb": "COOYA BEACH",
+        "street_name": "BOUGAINVILLEA ST, ESPLANADE, PALM ST, POINCIANA ST",
+        "start_utc": "2026-08-22T15:21:03Z",
+        "etr_utc": null,
+        "centroid_lon": 145.40716155689586,
+        "centroid_lat": -16.446734433994806,
+        "lga_name": "Douglas Shire",
+        "lga_code": "2810",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
