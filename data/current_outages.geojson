@@ -51,8 +51,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-22T17:00:41Z",
-        "snapshot_aest": "2026-08-23T03:00:41+10:00",
+        "snapshot_utc": "2026-08-22T17:15:29Z",
+        "snapshot_aest": "2026-08-23T03:15:29+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977601-g",
@@ -123,8 +123,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-22T17:00:41Z",
-        "snapshot_aest": "2026-08-23T03:00:41+10:00",
+        "snapshot_utc": "2026-08-22T17:15:29Z",
+        "snapshot_aest": "2026-08-23T03:15:29+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907622",
@@ -142,6 +142,106 @@
         "centroid_lat": -27.567542799297797,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              138.820904031975,
+              -17.9393352085361
+            ],
+            [
+              138.821151079129,
+              -17.9386593058134
+            ],
+            [
+              138.826872454394,
+              -17.9369196528244
+            ],
+            [
+              138.827217759312,
+              -17.9369433090366
+            ],
+            [
+              138.827695019727,
+              -17.9371642631885
+            ],
+            [
+              138.827701776828,
+              -17.937167456006
+            ],
+            [
+              138.827796287091,
+              -17.9372130231619
+            ],
+            [
+              138.828030165152,
+              -17.9374728709094
+            ],
+            [
+              138.828177440614,
+              -17.937900975051
+            ],
+            [
+              138.828192321654,
+              -17.9379556151401
+            ],
+            [
+              138.829070665411,
+              -17.9422824918686
+            ],
+            [
+              138.828845920236,
+              -17.9427553529193
+            ],
+            [
+              138.82764267328,
+              -17.9434224247756
+            ],
+            [
+              138.827308493503,
+              -17.9434724308491
+            ],
+            [
+              138.823382352631,
+              -17.9426524400893
+            ],
+            [
+              138.823093414907,
+              -17.94246414625
+            ],
+            [
+              138.820904031975,
+              -17.9393352085361
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-22T17:15:29Z",
+        "snapshot_aest": "2026-08-23T03:15:29+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907623",
+        "outage_id": "907623",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to public safety concerns as directed by emergency services.",
+        "affected_customers": 84,
+        "affected_customers_known": true,
+        "suburb": "DOOMADGEE, GLEN EDEN",
+        "street_name": "CAIRNS DR, CASTICK RD, DOUGLAS RD, FRIDAY ST, GOODEEDAWA ST, GUNNALUNJA DR, KNOT ST, NICHOL ST, PASCOE ST, POTTER ST, READ ST, SCHOOL RD, SHARPE ST, SHEARWATER DR, STOCKYARD ST, YUGGAL ST",
+        "start_utc": "2026-08-22T17:02:00Z",
+        "etr_utc": null,
+        "centroid_lon": 138.82544293745937,
+        "centroid_lat": -17.94024070805349,
+        "lga_name": "Burke Shire",
+        "lga_code": "1950",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
