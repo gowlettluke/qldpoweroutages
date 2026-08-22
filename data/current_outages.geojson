@@ -1,4 +1,69 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.850131390396,
+              -18.060940371757
+            ],
+            [
+              145.849770262337,
+              -18.060493788323
+            ],
+            [
+              145.849912761203,
+              -18.052208758029
+            ],
+            [
+              145.850692621769,
+              -18.0518732464881
+            ],
+            [
+              145.864817023156,
+              -18.0634627520236
+            ],
+            [
+              145.864929940558,
+              -18.0640116647917
+            ],
+            [
+              145.864398305425,
+              -18.0642448778344
+            ],
+            [
+              145.850131390396,
+              -18.060940371757
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-22T09:30:34Z",
+        "snapshot_aest": "2026-08-22T19:30:34+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|906857",
+        "outage_id": "906857",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "MURRAY UPPER",
+        "street_name": "DORE RD",
+        "start_utc": "2026-08-22T07:25:20Z",
+        "etr_utc": null,
+        "centroid_lon": 145.85527763391272,
+        "centroid_lat": -18.058916794146278,
+        "lga_name": "Cassowary Coast Regional",
+        "lga_code": "2260",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    }
+  ]
 }
