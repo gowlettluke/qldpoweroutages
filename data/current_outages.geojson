@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-22T21:30:38Z",
-        "snapshot_aest": "2026-08-23T07:30:38+10:00",
+        "snapshot_utc": "2026-08-22T21:45:28Z",
+        "snapshot_aest": "2026-08-23T07:45:28+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907623",
@@ -98,6 +98,94 @@
         "centroid_lat": -17.94024070805349,
         "lga_name": "Burke Shire",
         "lga_code": "1950",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.164872150862,
+              -25.3116236429765
+            ],
+            [
+              150.164879172492,
+              -25.3115339327333
+            ],
+            [
+              150.168299826578,
+              -25.2935166489289
+            ],
+            [
+              150.168310298855,
+              -25.2934739567417
+            ],
+            [
+              150.185323282938,
+              -25.2371130119246
+            ],
+            [
+              150.185784414629,
+              -25.2367816626619
+            ],
+            [
+              150.18626943859,
+              -25.2370834757011
+            ],
+            [
+              150.199600690981,
+              -25.2717380428363
+            ],
+            [
+              150.199598859076,
+              -25.2720406036852
+            ],
+            [
+              150.167323520086,
+              -25.3529896457181
+            ],
+            [
+              150.166891720712,
+              -25.3532858087811
+            ],
+            [
+              150.166713706064,
+              -25.3532971742456
+            ],
+            [
+              150.166182829668,
+              -25.3528603487305
+            ],
+            [
+              150.164872150862,
+              -25.3116236429765
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-22T21:45:28Z",
+        "snapshot_aest": "2026-08-23T07:45:28+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907625",
+        "outage_id": "907625",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is there are supply problems resulting in low voltage conditions. It is advisable to disconnect sensitive electrical appliances.",
+        "affected_customers": 12,
+        "affected_customers_known": true,
+        "suburb": "CRACOW, THEODORE",
+        "street_name": "CRACOW RD, GYRANDA RD",
+        "start_utc": "2026-08-22T10:37:53Z",
+        "etr_utc": null,
+        "centroid_lon": 150.18015331833487,
+        "centroid_lat": -25.29132496062,
+        "lga_name": "Banana Shire",
+        "lga_code": "370",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
