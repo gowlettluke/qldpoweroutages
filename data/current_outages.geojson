@@ -51,8 +51,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-23T11:45:31Z",
-        "snapshot_aest": "2026-08-23T21:45:31+10:00",
+        "snapshot_utc": "2026-08-23T12:00:35Z",
+        "snapshot_aest": "2026-08-23T22:00:35+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907682",
@@ -163,8 +163,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-23T11:45:31Z",
-        "snapshot_aest": "2026-08-23T21:45:31+10:00",
+        "snapshot_utc": "2026-08-23T12:00:35Z",
+        "snapshot_aest": "2026-08-23T22:00:35+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907683",
@@ -182,6 +182,74 @@
         "centroid_lat": -25.34469006325205,
         "lga_name": "Fraser Coast Regional",
         "lga_code": "3220",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.266420323792,
+              -18.6702798621935
+            ],
+            [
+              146.265930593223,
+              -18.6700879044002
+            ],
+            [
+              146.265932934225,
+              -18.6695832131944
+            ],
+            [
+              146.269137566141,
+              -18.6650891045485
+            ],
+            [
+              146.26965469528,
+              -18.6649072300089
+            ],
+            [
+              146.270002806623,
+              -18.6653145801844
+            ],
+            [
+              146.270256138524,
+              -18.6691324743661
+            ],
+            [
+              146.269878280691,
+              -18.6696036398046
+            ],
+            [
+              146.266420323792,
+              -18.6702798621935
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-23T12:00:35Z",
+        "snapshot_aest": "2026-08-23T22:00:35+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907684",
+        "outage_id": "907684",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "BRAEMEADOWS",
+        "street_name": "MASKELLS RD",
+        "start_utc": "2026-08-23T11:49:39Z",
+        "etr_utc": null,
+        "centroid_lon": 146.26850806698118,
+        "centroid_lat": -18.668051977444257,
+        "lga_name": "Hinchinbrook Shire",
+        "lga_code": "3800",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
