@@ -107,14 +107,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-23T22:30:34Z",
-        "snapshot_aest": "2026-08-24T08:30:34+10:00",
+        "snapshot_utc": "2026-08-23T22:45:29Z",
+        "snapshot_aest": "2026-08-24T08:45:29+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977716-g",
         "outage_id": "INCD-977716-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 120,
         "affected_customers_known": true,
@@ -215,8 +215,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-23T22:30:34Z",
-        "snapshot_aest": "2026-08-24T08:30:34+10:00",
+        "snapshot_utc": "2026-08-23T22:45:29Z",
+        "snapshot_aest": "2026-08-24T08:45:29+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907693",
@@ -275,8 +275,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-23T22:30:34Z",
-        "snapshot_aest": "2026-08-24T08:30:34+10:00",
+        "snapshot_utc": "2026-08-23T22:45:29Z",
+        "snapshot_aest": "2026-08-24T08:45:29+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907695",
@@ -288,12 +288,104 @@
         "affected_customers_known": true,
         "suburb": "MURGON",
         "street_name": "BRAITHWAITES RD",
-        "start_utc": "2026-08-23T19:45:21Z",
+        "start_utc": "2026-08-23T22:29:00Z",
         "etr_utc": null,
         "centroid_lon": 151.95570401462692,
         "centroid_lat": -26.191339409608585,
         "lga_name": "South Burnett Regional",
         "lga_code": "6630",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.0011702386,
+              -17.9209486322164
+            ],
+            [
+              145.001119089231,
+              -17.9202757461091
+            ],
+            [
+              145.112074660023,
+              -17.8107713740789
+            ],
+            [
+              145.112175055072,
+              -17.8106959475006
+            ],
+            [
+              145.194828513087,
+              -17.7643387560877
+            ],
+            [
+              145.195443123258,
+              -17.7644563994901
+            ],
+            [
+              145.493078685111,
+              -18.1413191328682
+            ],
+            [
+              145.49295575385,
+              -18.1419728916829
+            ],
+            [
+              145.480097930639,
+              -18.1498005914873
+            ],
+            [
+              145.479953388027,
+              -18.1498590416913
+            ],
+            [
+              145.455739013008,
+              -18.1553590430793
+            ],
+            [
+              145.45568385264,
+              -18.1553683072721
+            ],
+            [
+              145.338581720254,
+              -18.1682189149923
+            ],
+            [
+              145.338240783428,
+              -18.1681288556834
+            ],
+            [
+              145.0011702386,
+              -17.9209486322164
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-23T22:45:29Z",
+        "snapshot_aest": "2026-08-24T08:45:29+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907700",
+        "outage_id": "907700",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 20,
+        "affected_customers_known": true,
+        "suburb": "KIRRAMA, MOUNT GARNET",
+        "street_name": "CASHMERE RD, GUNNAWARRA RD, KENNEDY HWY, KIRRAMA RD",
+        "start_utc": "2026-08-23T23:00:00Z",
+        "etr_utc": "2026-08-24T02:00:00Z",
+        "centroid_lon": 145.2414314430286,
+        "centroid_lat": -17.978109638918028,
+        "lga_name": "Tablelands Regional",
+        "lga_code": "6820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
