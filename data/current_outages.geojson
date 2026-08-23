@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-23T02:45:26Z",
-        "snapshot_aest": "2026-08-23T12:45:26+10:00",
+        "snapshot_utc": "2026-08-23T03:00:43Z",
+        "snapshot_aest": "2026-08-23T13:00:43+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977636-g",
@@ -117,7 +117,7 @@
         "suburb": "WARANA",
         "street_name": "BALYATA ST, BARINGA ST, COONANG CRES, CURRAWAN ST, JINANG ST, KARUMBA ST, NARAMBI ST, NEELONG CT, NICKLIN WAY, OTAMA CT, TAMALA ST",
         "start_utc": "2026-08-22T23:38:15Z",
-        "etr_utc": "2026-08-23T03:00:00Z",
+        "etr_utc": "2026-08-23T03:30:00Z",
         "centroid_lon": 153.1312787725379,
         "centroid_lat": -26.716542529065755,
         "lga_name": "Sunshine Coast Regional",
@@ -235,8 +235,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-23T02:45:26Z",
-        "snapshot_aest": "2026-08-23T12:45:26+10:00",
+        "snapshot_utc": "2026-08-23T03:00:43Z",
+        "snapshot_aest": "2026-08-23T13:00:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907675",
@@ -399,14 +399,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-23T02:45:26Z",
-        "snapshot_aest": "2026-08-23T12:45:26+10:00",
+        "snapshot_utc": "2026-08-23T03:00:43Z",
+        "snapshot_aest": "2026-08-23T13:00:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907676",
         "outage_id": "907676",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 528,
         "affected_customers_known": true,
@@ -418,6 +418,82 @@
         "centroid_lat": -17.10892192073492,
         "lga_name": "Cairns Regional",
         "lga_code": "2080",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              139.510483783034,
+              -21.6937583649946
+            ],
+            [
+              139.511130774234,
+              -21.6933477792651
+            ],
+            [
+              139.512982434967,
+              -21.6939916638485
+            ],
+            [
+              139.513181641636,
+              -21.6941225539929
+            ],
+            [
+              139.514050598583,
+              -21.6950838802144
+            ],
+            [
+              139.514163803215,
+              -21.6953810920324
+            ],
+            [
+              139.514146299128,
+              -21.6963160881149
+            ],
+            [
+              139.51360241046,
+              -21.6967526186378
+            ],
+            [
+              139.510848690639,
+              -21.6964053290189
+            ],
+            [
+              139.510433175638,
+              -21.6959512875185
+            ],
+            [
+              139.510483783034,
+              -21.6937583649946
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-23T03:00:43Z",
+        "snapshot_aest": "2026-08-23T13:00:43+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907677",
+        "outage_id": "907677",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 24,
+        "affected_customers_known": true,
+        "suburb": "DAJARRA",
+        "street_name": "LETHAM ST, MATHESON ST, SPORTS PDE",
+        "start_utc": "2026-08-23T02:53:00Z",
+        "etr_utc": "2026-08-23T04:00:00Z",
+        "centroid_lon": 139.5121694902944,
+        "centroid_lat": -21.69519118655425,
+        "lga_name": "Cloncurry Shire",
+        "lga_code": "2450",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
