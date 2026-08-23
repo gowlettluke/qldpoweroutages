@@ -1,4 +1,77 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.059087335768,
+              -19.5610900523404
+            ],
+            [
+              147.059158328525,
+              -19.5604429839486
+            ],
+            [
+              147.062318387051,
+              -19.5581010151527
+            ],
+            [
+              147.063087755452,
+              -19.5584292166346
+            ],
+            [
+              147.063291977639,
+              -19.5615730084607
+            ],
+            [
+              147.063292873226,
+              -19.5616029749549
+            ],
+            [
+              147.063277671084,
+              -19.5645701847889
+            ],
+            [
+              147.062963357201,
+              -19.5649928252448
+            ],
+            [
+              147.062436396681,
+              -19.5648590873389
+            ],
+            [
+              147.059087335768,
+              -19.5610900523404
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-23T11:15:28Z",
+        "snapshot_aest": "2026-08-23T21:15:28+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907682",
+        "outage_id": "907682",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "affected_customers": 5,
+        "affected_customers_known": true,
+        "suburb": "GIRU, SHIRBOURNE",
+        "street_name": "GARRONE RD, SHIRBOURNE RD, SMITH RD",
+        "start_utc": "2026-08-23T10:33:41Z",
+        "etr_utc": null,
+        "centroid_lon": 147.06170786077425,
+        "centroid_lat": -19.561358852340987,
+        "lga_name": "Burdekin Shire",
+        "lga_code": "1900",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    }
+  ]
 }
