@@ -8,6 +8,134 @@
         "coordinates": [
           [
             [
+              152.96994569201,
+              -26.7496592032915
+            ],
+            [
+              152.969953572305,
+              -26.7491923987557
+            ],
+            [
+              152.972331909591,
+              -26.7457757463053
+            ],
+            [
+              152.972669052683,
+              -26.7455707215398
+            ],
+            [
+              152.98074569341,
+              -26.7442623851199
+            ],
+            [
+              152.981195940417,
+              -26.7443923575001
+            ],
+            [
+              152.991778704991,
+              -26.7541879201769
+            ],
+            [
+              152.991919353992,
+              -26.7545342688987
+            ],
+            [
+              152.991844568492,
+              -26.7554783390253
+            ],
+            [
+              152.991843726055,
+              -26.7554876198507
+            ],
+            [
+              152.991489690875,
+              -26.758946701011
+            ],
+            [
+              152.991064471731,
+              -26.759351714586
+            ],
+            [
+              152.987748717863,
+              -26.7598040360284
+            ],
+            [
+              152.982619415243,
+              -26.7605021402474
+            ],
+            [
+              152.982482071734,
+              -26.7605037988005
+            ],
+            [
+              152.979910592267,
+              -26.7602171286534
+            ],
+            [
+              152.979665932142,
+              -26.760126936232
+            ],
+            [
+              152.975511675007,
+              -26.7572577977518
+            ],
+            [
+              152.975458337877,
+              -26.7572152217601
+            ],
+            [
+              152.974056677877,
+              -26.7559252083082
+            ],
+            [
+              152.973988181882,
+              -26.7558462908288
+            ],
+            [
+              152.973583363613,
+              -26.7552547096868
+            ],
+            [
+              152.973577529505,
+              -26.755245964079
+            ],
+            [
+              152.96994569201,
+              -26.7496592032915
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-23T22:30:34Z",
+        "snapshot_aest": "2026-08-24T08:30:34+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-977716-g",
+        "outage_id": "INCD-977716-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Under Investigation",
+        "affected_customers": 120,
+        "affected_customers_known": true,
+        "suburb": "GLENVIEW, ILKLEY, MOOLOOLAH VALLEY",
+        "street_name": "BURNS LANE, FORSYTH PL, GLENVIEW RD, GUILFOYLE CT, OLD GYMPIE RD, TOLSON RD, UPPER TOLSON RD",
+        "start_utc": "2026-08-23T22:18:58Z",
+        "etr_utc": "2026-08-24T01:00:00Z",
+        "centroid_lon": 152.98095388286222,
+        "centroid_lat": -26.752731375571905,
+        "lga_name": "Sunshine Coast Regional",
+        "lga_code": "6720",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               150.537206614134,
               -23.3345495932747
             ],
@@ -87,8 +215,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-23T22:15:30Z",
-        "snapshot_aest": "2026-08-24T08:15:30+10:00",
+        "snapshot_utc": "2026-08-23T22:30:34Z",
+        "snapshot_aest": "2026-08-24T08:30:34+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907693",
@@ -106,6 +234,66 @@
         "centroid_lat": -23.33459997936601,
         "lga_name": "Rockhampton Regional",
         "lga_code": "6370",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.956482808578,
+              -26.1916227331251
+            ],
+            [
+              151.956316304768,
+              -26.1922413131803
+            ],
+            [
+              151.955630660657,
+              -26.1920910932098
+            ],
+            [
+              151.95493263753,
+              -26.1910573594486
+            ],
+            [
+              151.955099148383,
+              -26.1904387801351
+            ],
+            [
+              151.955784782148,
+              -26.1905890041591
+            ],
+            [
+              151.956482808578,
+              -26.1916227331251
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-23T22:30:34Z",
+        "snapshot_aest": "2026-08-24T08:30:34+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907695",
+        "outage_id": "907695",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "MURGON",
+        "street_name": "BRAITHWAITES RD",
+        "start_utc": "2026-08-23T19:45:21Z",
+        "etr_utc": null,
+        "centroid_lon": 151.95570401462692,
+        "centroid_lat": -26.191339409608585,
+        "lga_name": "South Burnett Regional",
+        "lga_code": "6630",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
