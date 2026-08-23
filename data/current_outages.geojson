@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-23T05:45:27Z",
-        "snapshot_aest": "2026-08-23T15:45:27+10:00",
+        "snapshot_utc": "2026-08-23T06:00:38Z",
+        "snapshot_aest": "2026-08-23T16:00:38+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907677",
@@ -74,6 +74,58 @@
         "centroid_lat": -21.69519118655425,
         "lga_name": "Cloncurry Shire",
         "lga_code": "2450",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.840053262181,
+              -26.7458128786922
+            ],
+            [
+              151.839571324853,
+              -26.746279849689
+            ],
+            [
+              151.839051203784,
+              -26.7458471596837
+            ],
+            [
+              151.839533142007,
+              -26.745380190406
+            ],
+            [
+              151.840053262181,
+              -26.7458128786922
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-23T06:00:38Z",
+        "snapshot_aest": "2026-08-23T16:00:38+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907680",
+        "outage_id": "907680",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "BROOKLANDS",
+        "street_name": "NANANGO RD",
+        "start_utc": "2026-08-23T03:01:36Z",
+        "etr_utc": null,
+        "centroid_lon": 151.8395614621436,
+        "centroid_lat": -26.745831645097013,
+        "lga_name": "South Burnett Regional",
+        "lga_code": "6630",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
