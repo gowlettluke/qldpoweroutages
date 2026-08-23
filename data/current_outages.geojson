@@ -51,14 +51,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-23T11:30:37Z",
-        "snapshot_aest": "2026-08-23T21:30:37+10:00",
+        "snapshot_utc": "2026-08-23T11:45:31Z",
+        "snapshot_aest": "2026-08-23T21:45:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907682",
         "outage_id": "907682",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to the operating of protective equipment.",
         "affected_customers": 5,
         "affected_customers_known": true,
@@ -70,6 +70,118 @@
         "centroid_lat": -19.561358852340987,
         "lga_name": "Burdekin Shire",
         "lga_code": "1900",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.590885368663,
+              -25.3423652174223
+            ],
+            [
+              152.591118822985,
+              -25.341899537198
+            ],
+            [
+              152.591680676232,
+              -25.3419337754981
+            ],
+            [
+              152.592093615203,
+              -25.3422323539907
+            ],
+            [
+              152.592106883882,
+              -25.3422422948934
+            ],
+            [
+              152.59380647178,
+              -25.3435613309089
+            ],
+            [
+              152.593822762182,
+              -25.343574549301
+            ],
+            [
+              152.594232532874,
+              -25.3439221107204
+            ],
+            [
+              152.59424156056,
+              -25.3439299639585
+            ],
+            [
+              152.595394028015,
+              -25.3449581376737
+            ],
+            [
+              152.595538772822,
+              -25.3453321724018
+            ],
+            [
+              152.595436229701,
+              -25.346116149721
+            ],
+            [
+              152.595376859574,
+              -25.3462823781252
+            ],
+            [
+              152.594915640372,
+              -25.3470327851452
+            ],
+            [
+              152.594203650042,
+              -25.3471844333506
+            ],
+            [
+              152.591793890131,
+              -25.3456831782135
+            ],
+            [
+              152.591594389228,
+              -25.3454241612071
+            ],
+            [
+              152.591251740106,
+              -25.3442124562685
+            ],
+            [
+              152.591243957204,
+              -25.3441800065317
+            ],
+            [
+              152.590885368663,
+              -25.3423652174223
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-23T11:45:31Z",
+        "snapshot_aest": "2026-08-23T21:45:31+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907683",
+        "outage_id": "907683",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 41,
+        "affected_customers_known": true,
+        "suburb": "TORBANLEA",
+        "street_name": "BRANCH ST, GEORGE ST, GYMPIE ST, ROBERTSON ST",
+        "start_utc": "2026-08-23T11:26:45Z",
+        "etr_utc": null,
+        "centroid_lon": 152.59313362071194,
+        "centroid_lat": -25.34469006325205,
+        "lga_name": "Fraser Coast Regional",
+        "lga_code": "3220",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
