@@ -67,8 +67,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-24T11:30:34Z",
-        "snapshot_aest": "2026-08-24T21:30:34+10:00",
+        "snapshot_utc": "2026-08-24T11:45:30Z",
+        "snapshot_aest": "2026-08-24T21:45:30+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977815-g",
@@ -143,8 +143,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-24T11:30:34Z",
-        "snapshot_aest": "2026-08-24T21:30:34+10:00",
+        "snapshot_utc": "2026-08-24T11:45:30Z",
+        "snapshot_aest": "2026-08-24T21:45:30+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907718",
@@ -162,6 +162,106 @@
         "centroid_lat": -21.07026244810286,
         "lga_name": "Mackay Regional",
         "lga_code": "4770",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.027838390727,
+              -21.992416924403
+            ],
+            [
+              148.027761836566,
+              -21.9921618105647
+            ],
+            [
+              148.02776536452,
+              -21.9920289866321
+            ],
+            [
+              148.028283717576,
+              -21.9915896322631
+            ],
+            [
+              148.164378918186,
+              -22.0005172315639
+            ],
+            [
+              148.164449493534,
+              -22.0005267388741
+            ],
+            [
+              148.294552986908,
+              -22.0272374906795
+            ],
+            [
+              148.29464442436,
+              -22.0272653406903
+            ],
+            [
+              148.392353114395,
+              -22.0673838204969
+            ],
+            [
+              148.392631881195,
+              -22.0677032610524
+            ],
+            [
+              148.431441420914,
+              -22.2376086972604
+            ],
+            [
+              148.431449033032,
+              -22.2376523918891
+            ],
+            [
+              148.43380107702,
+              -22.2571607829331
+            ],
+            [
+              148.433283379466,
+              -22.2576615320907
+            ],
+            [
+              148.199842634188,
+              -22.2415132232034
+            ],
+            [
+              148.199470979395,
+              -22.2413072299382
+            ],
+            [
+              148.027838390727,
+              -21.992416924403
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-24T11:45:30Z",
+        "snapshot_aest": "2026-08-24T21:45:30+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907726",
+        "outage_id": "907726",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "affected_customers": 1296,
+        "affected_customers_known": true,
+        "suburb": "DYSART, MORANBAH, NEBO",
+        "street_name": "ANDERSON CT, ANNANDALE ACCESS RD, ARCHER DR, BARRACLOUGH CRES, BENNETT CT, BLIGH CT, BOYLE DR, BRADMAN ST, BURKE DR, BUSHLARK DR, CLEMENTS ST, CLEWS LANE, CROMPTON ST, CUTHBERT ST, DE CASTELLA DR, DYSART RD, FINCH ST, FLINDERS DR, FLOHR DR, FRASER ST, GILCHRIST TCE, GOOLAGONG CRES, GOONYELLA RD, GORDON TCE, GOULD ST, GROUT ST, HANNAN DR, HANNAY ST, HART CT, INDUSTRIAL AVE, JACKSON AVE, KINGFISHER ST, LAMBERT DR, LANGFORD CT, LAWRENCE ST, LAWSON DR, LESLIE DR, LINDWALL CT, MACKAY ST, MCCALLUM CT, MCCOOL ST, MILLS AVE, MORANBAH ACCESS RD, NAUMANN ST, NEY ST, OXLEY DR, PAINE CT, PATTERSON LANE, PEAK DOWNS COAL MINE, PEAK DOWNS HWY, PEAK DOWNS RD, RAVEN CRES, REEF DR, ROBIN ST, ROSELLA CT, ROSEWALL ST, SEDGMAN ST, SPARROW LANE, TALLON ST, TRENAMAN ST, UTAH DR, WICKHAM ST, WILLIAMS ST",
+        "start_utc": "2026-08-24T11:24:59Z",
+        "etr_utc": null,
+        "centroid_lon": 148.25294877033886,
+        "centroid_lat": -22.12416980065285,
+        "lga_name": "Isaac Regional",
+        "lga_code": "3980",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
