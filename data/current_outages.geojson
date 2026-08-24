@@ -95,8 +95,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-24T23:15:33Z",
-        "snapshot_aest": "2026-08-25T09:15:33+10:00",
+        "snapshot_utc": "2026-08-24T23:30:35Z",
+        "snapshot_aest": "2026-08-25T09:30:35+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977892-g",
@@ -203,8 +203,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-24T23:15:33Z",
-        "snapshot_aest": "2026-08-25T09:15:33+10:00",
+        "snapshot_utc": "2026-08-24T23:30:35Z",
+        "snapshot_aest": "2026-08-25T09:30:35+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907729",
@@ -287,8 +287,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-24T23:15:33Z",
-        "snapshot_aest": "2026-08-25T09:15:33+10:00",
+        "snapshot_utc": "2026-08-24T23:30:35Z",
+        "snapshot_aest": "2026-08-25T09:30:35+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907760",
@@ -306,6 +306,66 @@
         "centroid_lat": -27.11926683069473,
         "lga_name": "Maranoa Regional",
         "lga_code": "4860",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.578376716164,
+              -17.4947614544132
+            ],
+            [
+              145.5782986383,
+              -17.4953960278869
+            ],
+            [
+              145.577637340817,
+              -17.4953211038872
+            ],
+            [
+              145.576849428182,
+              -17.4943625816756
+            ],
+            [
+              145.576927510308,
+              -17.4937280090408
+            ],
+            [
+              145.577588801602,
+              -17.4938029349778
+            ],
+            [
+              145.578376716164,
+              -17.4947614544132
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-24T23:30:35Z",
+        "snapshot_aest": "2026-08-25T09:30:35+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907771",
+        "outage_id": "907771",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "MILLAA MILLAA, MINBUN",
+        "street_name": "MALANDA RD, MOREGATTA RD",
+        "start_utc": "2026-08-24T23:18:00Z",
+        "etr_utc": "2026-08-25T03:00:00Z",
+        "centroid_lon": 145.5776213091193,
+        "centroid_lat": -17.494563009503995,
+        "lga_name": "Tablelands Regional",
+        "lga_code": "6820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
