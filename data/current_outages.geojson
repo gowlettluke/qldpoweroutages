@@ -95,8 +95,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-24T22:45:37Z",
-        "snapshot_aest": "2026-08-25T08:45:37+10:00",
+        "snapshot_utc": "2026-08-24T23:00:37Z",
+        "snapshot_aest": "2026-08-25T09:00:37+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977892-g",
@@ -109,7 +109,7 @@
         "suburb": "BARNEY VIEW, MOUNT BARNEY, PALEN CREEK, RATHDOWNEY",
         "street_name": "BARNEY VIEW RD, FLANAGAN RESERVE RD, GLENOAK RD, HARPER RD, KLAN RD, LOWER PORTALS RD, MASEN RD, MT BARNEY RD, MT LINDESAY HWY, PETT RD, PINE VALE RD, SEIDENSPINNER RD, UPPER LOGAN RD",
         "start_utc": "2026-08-24T22:43:17Z",
-        "etr_utc": "2026-08-25T01:00:00Z",
+        "etr_utc": "2026-08-25T01:30:00Z",
         "centroid_lon": 152.76816025147153,
         "centroid_lat": -28.253991201028594,
         "lga_name": "Scenic Rim Regional",
@@ -203,8 +203,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-24T22:45:37Z",
-        "snapshot_aest": "2026-08-25T08:45:37+10:00",
+        "snapshot_utc": "2026-08-24T23:00:37Z",
+        "snapshot_aest": "2026-08-25T09:00:37+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907729",
@@ -351,8 +351,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-24T22:45:37Z",
-        "snapshot_aest": "2026-08-25T08:45:37+10:00",
+        "snapshot_utc": "2026-08-24T23:00:37Z",
+        "snapshot_aest": "2026-08-25T09:00:37+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907730",
@@ -370,6 +370,90 @@
         "centroid_lat": -28.186146998340636,
         "lga_name": "Bulloo Shire",
         "lga_code": "1750",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.281527357201,
+              -27.1952211302377
+            ],
+            [
+              148.281407218496,
+              -27.1944543114206
+            ],
+            [
+              148.609020451633,
+              -26.9571797273782
+            ],
+            [
+              148.609457778997,
+              -26.9570919368386
+            ],
+            [
+              148.657760480938,
+              -26.9677094765134
+            ],
+            [
+              148.658114354471,
+              -26.9679946664536
+            ],
+            [
+              148.700866092683,
+              -27.0740831081534
+            ],
+            [
+              148.700767573515,
+              -27.0745373513542
+            ],
+            [
+              148.547738260517,
+              -27.2273007812362
+            ],
+            [
+              148.547479690815,
+              -27.2274383711407
+            ],
+            [
+              148.432042439555,
+              -27.2520152902145
+            ],
+            [
+              148.431729304647,
+              -27.2519920064565
+            ],
+            [
+              148.281527357201,
+              -27.1952211302377
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-24T23:00:37Z",
+        "snapshot_aest": "2026-08-25T09:00:37+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907760",
+        "outage_id": "907760",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 27,
+        "affected_customers_known": true,
+        "suburb": "ROMA, TINGUN",
+        "street_name": "BEGONIA RD, DRUMFERN RD, DUEIDAR RD, DUNKELD RD, EULOREL RD, FOYLEVIEW RD, HARTWOOD RD, NALDERA RD, SOUTHERN RD",
+        "start_utc": "2026-08-24T22:30:00Z",
+        "etr_utc": "2026-08-25T04:30:00Z",
+        "centroid_lon": 148.51807585544984,
+        "centroid_lat": -27.11926683069473,
+        "lga_name": "Maranoa Regional",
+        "lga_code": "4860",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
