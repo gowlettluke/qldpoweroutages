@@ -67,8 +67,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-24T12:45:32Z",
-        "snapshot_aest": "2026-08-24T22:45:32+10:00",
+        "snapshot_utc": "2026-08-24T13:00:39Z",
+        "snapshot_aest": "2026-08-24T23:00:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977815-g",
@@ -81,7 +81,7 @@
         "suburb": "INALA",
         "street_name": "FRANGIPANI ST",
         "start_utc": "2026-08-24T06:20:49Z",
-        "etr_utc": "2026-08-24T13:00:00Z",
+        "etr_utc": "2026-08-24T14:30:00Z",
         "centroid_lon": 152.96631127124894,
         "centroid_lat": -27.596251955230564,
         "lga_name": "Brisbane City",
@@ -191,8 +191,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-24T12:45:32Z",
-        "snapshot_aest": "2026-08-24T22:45:32+10:00",
+        "snapshot_utc": "2026-08-24T13:00:39Z",
+        "snapshot_aest": "2026-08-24T23:00:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-977850-g",
@@ -267,8 +267,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-24T12:45:32Z",
-        "snapshot_aest": "2026-08-24T22:45:32+10:00",
+        "snapshot_utc": "2026-08-24T13:00:39Z",
+        "snapshot_aest": "2026-08-24T23:00:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907718",
@@ -367,8 +367,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-24T12:45:32Z",
-        "snapshot_aest": "2026-08-24T22:45:32+10:00",
+        "snapshot_utc": "2026-08-24T13:00:39Z",
+        "snapshot_aest": "2026-08-24T23:00:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907726",
@@ -386,6 +386,82 @@
         "centroid_lat": -22.12416980065285,
         "lga_name": "Isaac Regional",
         "lga_code": "3980",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.668052171374,
+              -19.3805719800271
+            ],
+            [
+              146.668271771261,
+              -19.3798161152053
+            ],
+            [
+              146.687634499676,
+              -19.3750953608944
+            ],
+            [
+              146.688081497502,
+              -19.3752059128338
+            ],
+            [
+              146.699647925282,
+              -19.3856669763849
+            ],
+            [
+              146.699423424457,
+              -19.3864350378442
+            ],
+            [
+              146.695710541869,
+              -19.3872235510573
+            ],
+            [
+              146.695616231885,
+              -19.3872343641828
+            ],
+            [
+              146.675626208205,
+              -19.3876188310782
+            ],
+            [
+              146.675278535525,
+              -19.3874852891883
+            ],
+            [
+              146.668052171374,
+              -19.3805719800271
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-24T13:00:39Z",
+        "snapshot_aest": "2026-08-24T23:00:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907727",
+        "outage_id": "907727",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
+        "affected_customers": 15,
+        "affected_customers_known": true,
+        "suburb": "GUMLOW",
+        "street_name": "MONCRIEFF RD",
+        "start_utc": "2026-08-24T12:36:21Z",
+        "etr_utc": null,
+        "centroid_lon": 146.68376683709752,
+        "centroid_lat": -19.38231493713119,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
