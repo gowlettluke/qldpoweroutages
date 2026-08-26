@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T21:45:28Z",
-        "snapshot_aest": "2026-08-27T07:45:28+10:00",
+        "snapshot_utc": "2026-08-26T22:00:38Z",
+        "snapshot_aest": "2026-08-27T08:00:38+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978291-g",
@@ -77,12 +77,100 @@
         "suburb": "MERRYVALE, ROSEVALE",
         "street_name": "GREYS PLAINS RD, MOUNT WALKER WEST RD, SCHIMKE RD",
         "start_utc": "2026-08-26T17:53:44Z",
-        "etr_utc": "2026-08-26T22:00:00Z",
+        "etr_utc": "2026-08-27T00:00:00Z",
         "centroid_lon": 152.49624581616217,
         "centroid_lat": -27.820399734434474,
         "lga_name": "Scenic Rim Regional",
         "lga_code": "6510",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.785146332238,
+              -23.2044873994749
+            ],
+            [
+              150.785378245028,
+              -23.2039420990026
+            ],
+            [
+              150.785997056012,
+              -23.2040691038026
+            ],
+            [
+              150.787554485447,
+              -23.2059827985133
+            ],
+            [
+              150.787611701537,
+              -23.2060734086766
+            ],
+            [
+              150.788661917958,
+              -23.208296492276
+            ],
+            [
+              150.788684805589,
+              -23.2083559911528
+            ],
+            [
+              150.78880782394,
+              -23.208764421578
+            ],
+            [
+              150.788108097114,
+              -23.2092829533498
+            ],
+            [
+              150.788012084703,
+              -23.2092355354066
+            ],
+            [
+              150.787818930804,
+              -23.2090623409669
+            ],
+            [
+              150.785424108401,
+              -23.2052058070594
+            ],
+            [
+              150.785386146446,
+              -23.2051286732955
+            ],
+            [
+              150.785146332238,
+              -23.2044873994749
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-26T22:00:38Z",
+        "snapshot_aest": "2026-08-27T08:00:38+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907880",
+        "outage_id": "907880",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 30,
+        "affected_customers_known": true,
+        "suburb": "CAUSEWAY LAKE, KINKA BEACH",
+        "street_name": "RESADA ESP, SCENIC HWY",
+        "start_utc": "2026-08-26T21:43:00Z",
+        "etr_utc": "2026-08-26T23:45:00Z",
+        "centroid_lon": 150.78699416043543,
+        "centroid_lat": -23.206555633793602,
+        "lga_name": "Livingstone Shire",
+        "lga_code": "4530",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
