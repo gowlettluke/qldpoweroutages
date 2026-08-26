@@ -71,15 +71,15 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T04:30:37Z",
-        "snapshot_aest": "2026-08-26T14:30:37+10:00",
+        "snapshot_utc": "2026-08-26T04:45:28Z",
+        "snapshot_aest": "2026-08-26T14:45:28+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978190-g",
         "outage_id": "INCD-978190-g",
         "outage_type": "unplanned",
         "status": "Awaiting",
-        "reason": "Emergency Repairs",
+        "reason": "Emergency repairs in-progress",
         "affected_customers": 53,
         "affected_customers_known": true,
         "suburb": "HEATHWOOD",
@@ -91,6 +91,74 @@
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.570793666575,
+              -16.8126568008369
+            ],
+            [
+              145.57079827233,
+              -16.812041330349
+            ],
+            [
+              145.572924644181,
+              -16.8098709721878
+            ],
+            [
+              145.573698861586,
+              -16.8100072387996
+            ],
+            [
+              145.574262789978,
+              -16.8113103072619
+            ],
+            [
+              145.574099770103,
+              -16.8118536775672
+            ],
+            [
+              145.571962745724,
+              -16.8133022403231
+            ],
+            [
+              145.571346942186,
+              -16.8132380696793
+            ],
+            [
+              145.570793666575,
+              -16.8126568008369
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-26T04:45:28Z",
+        "snapshot_aest": "2026-08-26T14:45:28+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907866",
+        "outage_id": "907866",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 9,
+        "affected_customers_known": true,
+        "suburb": "KOWROWA, KURANDA, OAK FOREST",
+        "street_name": "GREEN FOREST RD, MYOLA RD, OAK FOREST RD",
+        "start_utc": "2026-08-26T04:28:00Z",
+        "etr_utc": null,
+        "centroid_lon": 145.57255435924043,
+        "centroid_lat": -16.811651597175537,
+        "lga_name": "Mareeba Shire",
+        "lga_code": "4880",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
