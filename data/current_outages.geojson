@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T06:00:38Z",
-        "snapshot_aest": "2026-08-26T16:00:38+10:00",
+        "snapshot_utc": "2026-08-26T06:15:27Z",
+        "snapshot_aest": "2026-08-26T16:15:27+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978190-g",
@@ -171,8 +171,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T06:00:38Z",
-        "snapshot_aest": "2026-08-26T16:00:38+10:00",
+        "snapshot_utc": "2026-08-26T06:15:27Z",
+        "snapshot_aest": "2026-08-26T16:15:27+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978224-g",
@@ -255,15 +255,15 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T06:00:38Z",
-        "snapshot_aest": "2026-08-26T16:00:38+10:00",
+        "snapshot_utc": "2026-08-26T06:15:27Z",
+        "snapshot_aest": "2026-08-26T16:15:27+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978234-g",
         "outage_id": "INCD-978234-g",
         "outage_type": "unplanned",
         "status": "In Progress",
-        "reason": "Under Investigation",
+        "reason": "Emergency repairs in-progress",
         "affected_customers": 25,
         "affected_customers_known": true,
         "suburb": "BLACK MOUNTAIN, COOROY, RIDGEWOOD",
@@ -323,8 +323,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T06:00:38Z",
-        "snapshot_aest": "2026-08-26T16:00:38+10:00",
+        "snapshot_utc": "2026-08-26T06:15:27Z",
+        "snapshot_aest": "2026-08-26T16:15:27+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907866",
@@ -403,8 +403,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T06:00:38Z",
-        "snapshot_aest": "2026-08-26T16:00:38+10:00",
+        "snapshot_utc": "2026-08-26T06:15:27Z",
+        "snapshot_aest": "2026-08-26T16:15:27+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907867",
@@ -422,6 +422,98 @@
         "centroid_lat": -17.593953400011905,
         "lga_name": "Cassowary Coast Regional",
         "lga_code": "2260",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.964027450516,
+              -27.5950684389513
+            ],
+            [
+              151.963411446365,
+              -27.5944726878894
+            ],
+            [
+              151.966774762864,
+              -27.5868627268559
+            ],
+            [
+              151.966887078596,
+              -27.5867098329965
+            ],
+            [
+              151.970430984107,
+              -27.5835431460042
+            ],
+            [
+              151.971231851516,
+              -27.583645056227
+            ],
+            [
+              151.972329407032,
+              -27.5854340630729
+            ],
+            [
+              151.972391304573,
+              -27.5856503654658
+            ],
+            [
+              151.972388634253,
+              -27.5881400911171
+            ],
+            [
+              151.972368284273,
+              -27.5882661202751
+            ],
+            [
+              151.97086135771,
+              -27.5928518179215
+            ],
+            [
+              151.970820359331,
+              -27.5929403266437
+            ],
+            [
+              151.970699764365,
+              -27.593137947016
+            ],
+            [
+              151.97040198592,
+              -27.5933538174976
+            ],
+            [
+              151.964027450516,
+              -27.5950684389513
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-26T06:15:27Z",
+        "snapshot_aest": "2026-08-26T16:15:27+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907868",
+        "outage_id": "907868",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 255,
+        "affected_customers_known": true,
+        "suburb": "CENTENARY HEIGHTS, RANGEVILLE, TOOWOOMBA",
+        "street_name": "ALDERLEY ST, BALLIN DR, DEBRA ST, HAZZARD ST, KNOCKATOR CRES, LUDLOW CT, MACKENZIE ST, SARDON ST, SKEHAN ST, WENTWORTH ST",
+        "start_utc": "2026-08-26T04:10:00Z",
+        "etr_utc": null,
+        "centroid_lon": 151.96855334479477,
+        "centroid_lat": -27.589688142967283,
+        "lga_name": "Toowoomba Regional",
+        "lga_code": "6910",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
