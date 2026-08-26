@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T23:30:33Z",
-        "snapshot_aest": "2026-08-27T09:30:33+10:00",
+        "snapshot_utc": "2026-08-26T23:45:28Z",
+        "snapshot_aest": "2026-08-27T09:45:28+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978291-g",
@@ -223,8 +223,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T23:30:33Z",
-        "snapshot_aest": "2026-08-27T09:30:33+10:00",
+        "snapshot_utc": "2026-08-26T23:45:28Z",
+        "snapshot_aest": "2026-08-27T09:45:28+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978316-g",
@@ -351,8 +351,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T23:30:33Z",
-        "snapshot_aest": "2026-08-27T09:30:33+10:00",
+        "snapshot_utc": "2026-08-26T23:45:28Z",
+        "snapshot_aest": "2026-08-27T09:45:28+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907955",
@@ -370,6 +370,90 @@
         "centroid_lat": -17.943657208492823,
         "lga_name": "Burke Shire",
         "lga_code": "1950",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              141.875070764753,
+              -20.7081437813881
+            ],
+            [
+              141.875238866883,
+              -20.707539667028
+            ],
+            [
+              142.091711770725,
+              -20.5828634202808
+            ],
+            [
+              142.092091888991,
+              -20.5828140560493
+            ],
+            [
+              142.319177306767,
+              -20.6431628828154
+            ],
+            [
+              142.319521940412,
+              -20.6435367442682
+            ],
+            [
+              142.410080313034,
+              -21.27980126713
+            ],
+            [
+              142.409575945886,
+              -21.2803106435697
+            ],
+            [
+              142.212870427727,
+              -21.2694586678544
+            ],
+            [
+              142.212485833871,
+              -21.2692390701778
+            ],
+            [
+              142.167454381253,
+              -21.1981398587152
+            ],
+            [
+              142.167448545077,
+              -21.1981303793058
+            ],
+            [
+              141.875070764753,
+              -20.7081437813881
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-26T23:45:28Z",
+        "snapshot_aest": "2026-08-27T09:45:28+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907960",
+        "outage_id": "907960",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 22,
+        "affected_customers_known": true,
+        "suburb": "JULIA CREEK, MAXWELTON, NELIA",
+        "street_name": "ALEXMERE STATION, ARDBRIN STATION, BELFORD STATION, BUNDA RD, CHANNEL DOWNS, CLARAFIELD STATION, EDITH DOWNS STATION, FLINDERS HWY, GAROMNA STATION, MAIN ST, NONDA WEST STATION, PROA STATION, QUAMBETOOK STATION, RAILWAY ST, WENSLEY STATION, WIVENHOE STATION, YORKSHIRE DOWNS STATION",
+        "start_utc": "2026-08-26T09:52:43Z",
+        "etr_utc": null,
+        "centroid_lon": 142.18241333756228,
+        "centroid_lat": -20.906612674224334,
+        "lga_name": "McKinlay Shire",
+        "lga_code": "4800",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
