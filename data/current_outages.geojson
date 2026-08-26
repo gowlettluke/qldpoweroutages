@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T06:15:27Z",
-        "snapshot_aest": "2026-08-26T16:15:27+10:00",
+        "snapshot_utc": "2026-08-26T06:30:33Z",
+        "snapshot_aest": "2026-08-26T16:30:33+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978190-g",
@@ -171,8 +171,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T06:15:27Z",
-        "snapshot_aest": "2026-08-26T16:15:27+10:00",
+        "snapshot_utc": "2026-08-26T06:30:33Z",
+        "snapshot_aest": "2026-08-26T16:30:33+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978224-g",
@@ -255,15 +255,15 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T06:15:27Z",
-        "snapshot_aest": "2026-08-26T16:15:27+10:00",
+        "snapshot_utc": "2026-08-26T06:30:33Z",
+        "snapshot_aest": "2026-08-26T16:30:33+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978234-g",
         "outage_id": "INCD-978234-g",
         "outage_type": "unplanned",
         "status": "In Progress",
-        "reason": "Emergency repairs in-progress",
+        "reason": "Powerlines down",
         "affected_customers": 25,
         "affected_customers_known": true,
         "suburb": "BLACK MOUNTAIN, COOROY, RIDGEWOOD",
@@ -274,6 +274,102 @@
         "centroid_lat": -26.44973176006113,
         "lga_name": "Noosa Shire",
         "lga_code": "5740",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              153.013667086617,
+              -27.4178227097521
+            ],
+            [
+              153.013334687307,
+              -27.4172376398853
+            ],
+            [
+              153.013438457497,
+              -27.4169792405883
+            ],
+            [
+              153.013694177077,
+              -27.4167252523357
+            ],
+            [
+              153.013974176849,
+              -27.4166042530871
+            ],
+            [
+              153.014271241829,
+              -27.4165643305931
+            ],
+            [
+              153.014522550887,
+              -27.4165986898116
+            ],
+            [
+              153.014561414893,
+              -27.4166054016638
+            ],
+            [
+              153.015684590426,
+              -27.4168404002761
+            ],
+            [
+              153.016068691122,
+              -27.4172090215698
+            ],
+            [
+              153.015831608151,
+              -27.4176657599805
+            ],
+            [
+              153.015386007024,
+              -27.4179071415606
+            ],
+            [
+              153.015253959791,
+              -27.4179574049779
+            ],
+            [
+              153.014824408197,
+              -27.4180597057872
+            ],
+            [
+              153.014550199139,
+              -27.4180563513647
+            ],
+            [
+              153.013667086617,
+              -27.4178227097521
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-26T06:30:33Z",
+        "snapshot_aest": "2026-08-26T16:30:33+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-978246-g",
+        "outage_id": "INCD-978246-g",
+        "outage_type": "unplanned",
+        "status": "In Progress",
+        "reason": "Under Investigation",
+        "affected_customers": 23,
+        "affected_customers_known": true,
+        "suburb": "STAFFORD",
+        "street_name": "WEBSTER RD, WOLVERHAMPTON ST",
+        "start_utc": "2026-08-26T06:08:13Z",
+        "etr_utc": "2026-08-26T07:30:00Z",
+        "centroid_lon": 153.01466119432882,
+        "centroid_lat": -27.417310215967973,
+        "lga_name": "Brisbane City",
+        "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     },
@@ -323,8 +419,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T06:15:27Z",
-        "snapshot_aest": "2026-08-26T16:15:27+10:00",
+        "snapshot_utc": "2026-08-26T06:30:33Z",
+        "snapshot_aest": "2026-08-26T16:30:33+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907866",
@@ -342,86 +438,6 @@
         "centroid_lat": -16.811651597175537,
         "lga_name": "Mareeba Shire",
         "lga_code": "4880",
-        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              146.109643995496,
-              -17.5938551262284
-            ],
-            [
-              146.110017217256,
-              -17.5931699833058
-            ],
-            [
-              146.110527201535,
-              -17.5931390008351
-            ],
-            [
-              146.110694491846,
-              -17.593157766405
-            ],
-            [
-              146.112249502699,
-              -17.5936127680931
-            ],
-            [
-              146.112344254434,
-              -17.5936518079463
-            ],
-            [
-              146.112760254174,
-              -17.5938778214137
-            ],
-            [
-              146.112973801422,
-              -17.5944173698513
-            ],
-            [
-              146.112460289489,
-              -17.5947182250742
-            ],
-            [
-              146.110190168787,
-              -17.5944020492316
-            ],
-            [
-              146.109854879627,
-              -17.5941889861836
-            ],
-            [
-              146.109643995496,
-              -17.5938551262284
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "snapshot_utc": "2026-08-26T06:15:27Z",
-        "snapshot_aest": "2026-08-26T16:15:27+10:00",
-        "provider_code": "au.qld.ergon",
-        "provider_name": "Ergon Energy",
-        "outage_key": "au.qld.ergon|unplanned|907867",
-        "outage_id": "907867",
-        "outage_type": "unplanned",
-        "status": "Crews working on-site",
-        "reason": "The loss of supply is due to damage requiring emergency repairs.",
-        "affected_customers": 11,
-        "affected_customers_known": true,
-        "suburb": "MOURILYAN, MOURILYAN HARBOUR",
-        "street_name": "JOHNSTONE ST, MOURILYAN HARBOUR RD",
-        "start_utc": "2026-08-26T04:57:05Z",
-        "etr_utc": null,
-        "centroid_lon": 146.11124038109233,
-        "centroid_lat": -17.593953400011905,
-        "lga_name": "Cassowary Coast Regional",
-        "lga_code": "2260",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     },
@@ -495,8 +511,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T06:15:27Z",
-        "snapshot_aest": "2026-08-26T16:15:27+10:00",
+        "snapshot_utc": "2026-08-26T06:30:33Z",
+        "snapshot_aest": "2026-08-26T16:30:33+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907868",
