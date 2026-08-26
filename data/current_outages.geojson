@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T09:30:34Z",
-        "snapshot_aest": "2026-08-26T19:30:34+10:00",
+        "snapshot_utc": "2026-08-26T09:45:31Z",
+        "snapshot_aest": "2026-08-26T19:45:31+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978234-g",
@@ -139,8 +139,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T09:30:34Z",
-        "snapshot_aest": "2026-08-26T19:30:34+10:00",
+        "snapshot_utc": "2026-08-26T09:45:31Z",
+        "snapshot_aest": "2026-08-26T19:45:31+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978266-g",
@@ -215,8 +215,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T09:30:34Z",
-        "snapshot_aest": "2026-08-26T19:30:34+10:00",
+        "snapshot_utc": "2026-08-26T09:45:31Z",
+        "snapshot_aest": "2026-08-26T19:45:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907874",
@@ -228,12 +228,80 @@
         "affected_customers_known": true,
         "suburb": "BABINDA",
         "street_name": "POLLARD RD",
-        "start_utc": "2026-08-26T08:30:22Z",
-        "etr_utc": null,
+        "start_utc": "2026-08-26T09:24:00Z",
+        "etr_utc": "2026-08-26T11:00:00Z",
         "centroid_lon": 145.91285579646038,
         "centroid_lat": -17.350415260709692,
         "lga_name": "Cairns Regional",
         "lga_code": "2080",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.32232676217,
+              -24.9166903080518
+            ],
+            [
+              152.321945252172,
+              -24.9161643703926
+            ],
+            [
+              152.32251504102,
+              -24.9158070871443
+            ],
+            [
+              152.32533473215,
+              -24.9162593101157
+            ],
+            [
+              152.325737171221,
+              -24.9167694535591
+            ],
+            [
+              152.325187847788,
+              -24.9171489057639
+            ],
+            [
+              152.323990301121,
+              -24.917011860443
+            ],
+            [
+              152.323948927569,
+              -24.9170054856745
+            ],
+            [
+              152.32232676217,
+              -24.9166903080518
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-26T09:45:31Z",
+        "snapshot_aest": "2026-08-26T19:45:31+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907875",
+        "outage_id": "907875",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 5,
+        "affected_customers_known": true,
+        "suburb": "KENSINGTON",
+        "street_name": "VON DEEST ST",
+        "start_utc": "2026-08-26T08:21:46Z",
+        "etr_utc": null,
+        "centroid_lon": 152.32383992304676,
+        "centroid_lat": -24.916488912395494,
+        "lga_name": "Bundaberg Regional",
+        "lga_code": "1820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
