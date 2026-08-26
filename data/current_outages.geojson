@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-26T17:45:44Z",
-        "snapshot_aest": "2026-08-27T03:45:44+10:00",
+        "snapshot_utc": "2026-08-26T18:00:41Z",
+        "snapshot_aest": "2026-08-27T04:00:41+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978283-g",
@@ -122,6 +122,90 @@
         "centroid_lat": -27.460237650795396,
         "lga_name": "Brisbane City",
         "lga_code": "1000",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.484915622059,
+              -27.8089854581219
+            ],
+            [
+              152.485676111203,
+              -27.80855718632
+            ],
+            [
+              152.510684867192,
+              -27.8214488378925
+            ],
+            [
+              152.510923670075,
+              -27.8217330193741
+            ],
+            [
+              152.512012568853,
+              -27.8257269556347
+            ],
+            [
+              152.511564269344,
+              -27.826282860948
+            ],
+            [
+              152.489413345407,
+              -27.8280378992762
+            ],
+            [
+              152.489161179932,
+              -27.8280004023115
+            ],
+            [
+              152.488179517472,
+              -27.8276104008068
+            ],
+            [
+              152.487885763075,
+              -27.8272719828999
+            ],
+            [
+              152.485365492039,
+              -27.8137262154694
+            ],
+            [
+              152.485360471356,
+              -27.8136903701803
+            ],
+            [
+              152.484915622059,
+              -27.8089854581219
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-26T18:00:41Z",
+        "snapshot_aest": "2026-08-27T04:00:41+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-978291-g",
+        "outage_id": "INCD-978291-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Under Investigation",
+        "affected_customers": 15,
+        "affected_customers_known": true,
+        "suburb": "MERRYVALE, ROSEVALE",
+        "street_name": "GREYS PLAINS RD, MOUNT WALKER WEST RD, SCHIMKE RD",
+        "start_utc": "2026-08-26T17:53:44Z",
+        "etr_utc": "2026-08-26T20:30:00Z",
+        "centroid_lon": 152.49624581616217,
+        "centroid_lat": -27.820399734434474,
+        "lga_name": "Scenic Rim Regional",
+        "lga_code": "6510",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     }
