@@ -119,8 +119,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-27T07:30:42Z",
-        "snapshot_aest": "2026-08-27T17:30:42+10:00",
+        "snapshot_utc": "2026-08-27T07:45:28Z",
+        "snapshot_aest": "2026-08-27T17:45:28+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978451-g",
@@ -275,8 +275,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-27T07:30:42Z",
-        "snapshot_aest": "2026-08-27T17:30:42+10:00",
+        "snapshot_utc": "2026-08-27T07:45:28Z",
+        "snapshot_aest": "2026-08-27T17:45:28+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978499-g",
@@ -371,8 +371,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-27T07:30:42Z",
-        "snapshot_aest": "2026-08-27T17:30:42+10:00",
+        "snapshot_utc": "2026-08-27T07:45:28Z",
+        "snapshot_aest": "2026-08-27T17:45:28+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907972",
@@ -390,6 +390,74 @@
         "centroid_lat": -17.943313326275117,
         "lga_name": "Burke Shire",
         "lga_code": "1950",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.688888140609,
+              -20.8058373791322
+            ],
+            [
+              148.688630016831,
+              -20.8051341345759
+            ],
+            [
+              148.707030101971,
+              -20.7816712857847
+            ],
+            [
+              148.707712531889,
+              -20.7815836363631
+            ],
+            [
+              148.714636866011,
+              -20.786678715902
+            ],
+            [
+              148.714770361241,
+              -20.7872365909172
+            ],
+            [
+              148.703094120163,
+              -20.8091644881539
+            ],
+            [
+              148.702536279861,
+              -20.8093974615721
+            ],
+            [
+              148.688888140609,
+              -20.8058373791322
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-27T07:45:28Z",
+        "snapshot_aest": "2026-08-27T17:45:28+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907980",
+        "outage_id": "907980",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 9,
+        "affected_customers_known": true,
+        "suburb": "WAGOORA, YALBOROO",
+        "street_name": "COMELLIS RD, STURMAS RD",
+        "start_utc": "2026-08-27T04:49:00Z",
+        "etr_utc": null,
+        "centroid_lon": 148.70267221720064,
+        "centroid_lat": -20.796584803960105,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
