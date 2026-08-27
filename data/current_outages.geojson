@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-27T06:15:31Z",
-        "snapshot_aest": "2026-08-27T16:15:31+10:00",
+        "snapshot_utc": "2026-08-27T06:30:34Z",
+        "snapshot_aest": "2026-08-27T16:30:34+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978316-g",
@@ -227,8 +227,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-27T06:15:31Z",
-        "snapshot_aest": "2026-08-27T16:15:31+10:00",
+        "snapshot_utc": "2026-08-27T06:30:34Z",
+        "snapshot_aest": "2026-08-27T16:30:34+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978451-g",
@@ -323,8 +323,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-27T06:15:31Z",
-        "snapshot_aest": "2026-08-27T16:15:31+10:00",
+        "snapshot_utc": "2026-08-27T06:30:34Z",
+        "snapshot_aest": "2026-08-27T16:30:34+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|907972",
@@ -342,6 +342,78 @@
         "centroid_lat": -17.943313326275117,
         "lga_name": "Burke Shire",
         "lga_code": "1950",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.339412547467,
+              -16.476529465892
+            ],
+            [
+              145.339272524162,
+              -16.4759196471177
+            ],
+            [
+              145.339974321006,
+              -16.4748029968417
+            ],
+            [
+              145.340369306001,
+              -16.4745854825946
+            ],
+            [
+              145.34827496269,
+              -16.4744971328179
+            ],
+            [
+              145.348733437621,
+              -16.4748346470685
+            ],
+            [
+              145.348504820957,
+              -16.475345483473
+            ],
+            [
+              145.342737784901,
+              -16.4783839596731
+            ],
+            [
+              145.342252993912,
+              -16.4783629404738
+            ],
+            [
+              145.339412547467,
+              -16.476529465892
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-27T06:30:34Z",
+        "snapshot_aest": "2026-08-27T16:30:34+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|907979",
+        "outage_id": "907979",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 40,
+        "affected_customers_known": true,
+        "suburb": "MANGO PARK, MOSSMAN, MOSSMAN GORGE",
+        "street_name": "GORGE RD, JANKAJI CL, JOHNSTON RD, KANKARR ST, MANJAL ST, WALKARR CL",
+        "start_utc": "2026-08-27T06:21:36Z",
+        "etr_utc": null,
+        "centroid_lon": 145.34348720504605,
+        "centroid_lat": -16.475994570984966,
+        "lga_name": "Douglas Shire",
+        "lga_code": "2810",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
