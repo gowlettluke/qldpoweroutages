@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-28T11:00:42Z",
-        "snapshot_aest": "2026-08-28T21:00:42+10:00",
+        "snapshot_utc": "2026-08-28T11:15:34Z",
+        "snapshot_aest": "2026-08-28T21:15:34+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978640-g",
@@ -75,6 +75,106 @@
         "lga_name": "Sunshine Coast Regional",
         "lga_code": "6720",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.332074007744,
+              -25.0162655478092
+            ],
+            [
+              152.331402349277,
+              -25.0158354427553
+            ],
+            [
+              152.332334075586,
+              -24.9792075617087
+            ],
+            [
+              152.332807636577,
+              -24.9787684251266
+            ],
+            [
+              152.334285362213,
+              -24.9787139539455
+            ],
+            [
+              152.334332818679,
+              -24.9787142854443
+            ],
+            [
+              152.357279407379,
+              -24.9798797558395
+            ],
+            [
+              152.357310702652,
+              -24.9798822554476
+            ],
+            [
+              152.366843263176,
+              -24.9809228401167
+            ],
+            [
+              152.367153310009,
+              -24.9810704431316
+            ],
+            [
+              152.376820670596,
+              -24.9909692294196
+            ],
+            [
+              152.376885414414,
+              -24.9914836774302
+            ],
+            [
+              152.370287449419,
+              -25.0025169658453
+            ],
+            [
+              152.370062353674,
+              -25.0027095230162
+            ],
+            [
+              152.367681390689,
+              -25.0037198569423
+            ],
+            [
+              152.367651079106,
+              -25.0037316141539
+            ],
+            [
+              152.332074007744,
+              -25.0162655478092
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-28T11:15:34Z",
+        "snapshot_aest": "2026-08-28T21:15:34+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908086",
+        "outage_id": "908086",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 58,
+        "affected_customers_known": true,
+        "suburb": "ALLOWAY, ELLIOTT",
+        "street_name": "GILLENS CREEK RD, GOODWOOD RD, GORDONS RD, LAKEVIEW DR, MAHOGANY CREEK RD, WOODS EAST RD",
+        "start_utc": "2026-08-28T10:58:50Z",
+        "etr_utc": null,
+        "centroid_lon": 152.35046270972677,
+        "centroid_lat": -24.994909109060487,
+        "lga_name": "Bundaberg Regional",
+        "lga_code": "1820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
