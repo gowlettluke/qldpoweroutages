@@ -71,15 +71,15 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-28T02:00:37Z",
-        "snapshot_aest": "2026-08-28T12:00:37+10:00",
+        "snapshot_utc": "2026-08-28T02:15:28Z",
+        "snapshot_aest": "2026-08-28T12:15:28+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978626-g",
         "outage_id": "INCD-978626-g",
         "outage_type": "unplanned",
         "status": "Awaiting",
-        "reason": "Under Investigation",
+        "reason": "Emergency Repairs",
         "affected_customers": 47,
         "affected_customers_known": true,
         "suburb": "ALLENVIEW",
@@ -91,90 +91,6 @@
         "lga_name": "Scenic Rim Regional",
         "lga_code": "6510",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              147.473416605208,
-              -19.6714505291308
-            ],
-            [
-              147.473443251434,
-              -19.6711642406859
-            ],
-            [
-              147.47574254308,
-              -19.6661745996122
-            ],
-            [
-              147.475901753041,
-              -19.6659881580489
-            ],
-            [
-              147.475983857404,
-              -19.6659323915066
-            ],
-            [
-              147.476322089483,
-              -19.6658513816869
-            ],
-            [
-              147.48332251056,
-              -19.6666963634974
-            ],
-            [
-              147.483605421736,
-              -19.666830785474
-            ],
-            [
-              147.488192092652,
-              -19.6713321051596
-            ],
-            [
-              147.48801110521,
-              -19.6720708155027
-            ],
-            [
-              147.475228911532,
-              -19.6764485870951
-            ],
-            [
-              147.474602923624,
-              -19.6761291910527
-            ],
-            [
-              147.473416605208,
-              -19.6714505291308
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "snapshot_utc": "2026-08-28T02:00:37Z",
-        "snapshot_aest": "2026-08-28T12:00:37+10:00",
-        "provider_code": "au.qld.ergon",
-        "provider_name": "Ergon Energy",
-        "outage_key": "au.qld.ergon|unplanned|908078",
-        "outage_id": "908078",
-        "outage_type": "unplanned",
-        "status": "Crews working on-site",
-        "reason": "The loss of supply is due to damage requiring emergency repairs.",
-        "affected_customers": 6,
-        "affected_customers_known": true,
-        "suburb": "HOME HILL",
-        "street_name": "GROPER CREEK RD, MARYPLAIN RD",
-        "start_utc": "2026-08-27T23:01:23Z",
-        "etr_utc": null,
-        "centroid_lon": 147.47973262561422,
-        "centroid_lat": -19.6708332638768,
-        "lga_name": "Burdekin Shire",
-        "lga_code": "1900",
-        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     },
     {
@@ -271,8 +187,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-28T02:00:37Z",
-        "snapshot_aest": "2026-08-28T12:00:37+10:00",
+        "snapshot_utc": "2026-08-28T02:15:28Z",
+        "snapshot_aest": "2026-08-28T12:15:28+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908079",
@@ -290,6 +206,74 @@
         "centroid_lat": -26.54734835812025,
         "lga_name": "Maranoa Regional",
         "lga_code": "4860",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.581129288482,
+              -17.2519821141841
+            ],
+            [
+              145.581394794173,
+              -17.2515044255687
+            ],
+            [
+              145.581946596589,
+              -17.2516146176911
+            ],
+            [
+              145.583342318979,
+              -17.2531335526003
+            ],
+            [
+              145.583331868406,
+              -17.2537426713026
+            ],
+            [
+              145.582699627772,
+              -17.2537881512532
+            ],
+            [
+              145.581388583747,
+              -17.2528001745366
+            ],
+            [
+              145.581213965155,
+              -17.2525130767623
+            ],
+            [
+              145.581129288482,
+              -17.2519821141841
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-28T02:15:28Z",
+        "snapshot_aest": "2026-08-28T12:15:28+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908081",
+        "outage_id": "908081",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "YUNGABURRA",
+        "street_name": "LAKESIDE DR, TINABURRA RD",
+        "start_utc": "2026-08-28T01:56:00Z",
+        "etr_utc": null,
+        "centroid_lon": 145.58220184117204,
+        "centroid_lat": -17.25268735443674,
+        "lga_name": "Tablelands Regional",
+        "lga_code": "6820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
