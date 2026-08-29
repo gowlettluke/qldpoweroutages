@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-29T03:45:28Z",
-        "snapshot_aest": "2026-08-29T13:45:28+10:00",
+        "snapshot_utc": "2026-08-29T04:00:40Z",
+        "snapshot_aest": "2026-08-29T14:00:40+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908087",
@@ -219,8 +219,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-29T03:45:28Z",
-        "snapshot_aest": "2026-08-29T13:45:28+10:00",
+        "snapshot_utc": "2026-08-29T04:00:40Z",
+        "snapshot_aest": "2026-08-29T14:00:40+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908088",
@@ -271,8 +271,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-29T03:45:28Z",
-        "snapshot_aest": "2026-08-29T13:45:28+10:00",
+        "snapshot_utc": "2026-08-29T04:00:40Z",
+        "snapshot_aest": "2026-08-29T14:00:40+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908143",
@@ -371,14 +371,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-29T03:45:28Z",
-        "snapshot_aest": "2026-08-29T13:45:28+10:00",
+        "snapshot_utc": "2026-08-29T04:00:40Z",
+        "snapshot_aest": "2026-08-29T14:00:40+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908148",
         "outage_id": "908148",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 90,
         "affected_customers_known": true,
@@ -535,8 +535,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-29T03:45:28Z",
-        "snapshot_aest": "2026-08-29T13:45:28+10:00",
+        "snapshot_utc": "2026-08-29T04:00:40Z",
+        "snapshot_aest": "2026-08-29T14:00:40+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908150",
@@ -554,6 +554,66 @@
         "centroid_lat": -16.34029268382543,
         "lga_name": "Douglas Shire",
         "lga_code": "2810",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.703054349501,
+              -27.7324678055225
+            ],
+            [
+              151.703562189987,
+              -27.7320193196817
+            ],
+            [
+              151.704066218634,
+              -27.7324711968217
+            ],
+            [
+              151.704029241921,
+              -27.7412282557979
+            ],
+            [
+              151.703521366591,
+              -27.7416767480125
+            ],
+            [
+              151.703017291372,
+              -27.7412248742358
+            ],
+            [
+              151.703054349501,
+              -27.7324678055225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-29T04:00:40Z",
+        "snapshot_aest": "2026-08-29T14:00:40+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908151",
+        "outage_id": "908151",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "BROXBURN, SOUTHBROOK",
+        "street_name": "NAUMANN RD, NAUMANNS RD",
+        "start_utc": "2026-08-29T03:43:37Z",
+        "etr_utc": "2026-08-29T07:00:00Z",
+        "centroid_lon": 151.70353939577546,
+        "centroid_lat": -27.73684766286433,
+        "lga_name": "Toowoomba Regional",
+        "lga_code": "6910",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
