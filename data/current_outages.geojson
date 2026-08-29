@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-29T21:45:29Z",
-        "snapshot_aest": "2026-08-30T07:45:29+10:00",
+        "snapshot_utc": "2026-08-29T22:00:39Z",
+        "snapshot_aest": "2026-08-30T08:00:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978795-g",
@@ -203,14 +203,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-29T21:45:29Z",
-        "snapshot_aest": "2026-08-30T07:45:29+10:00",
+        "snapshot_utc": "2026-08-29T22:00:39Z",
+        "snapshot_aest": "2026-08-30T08:00:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908160",
         "outage_id": "908160",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews on route",
         "reason": "The loss of supply is due to damage requiring emergency repairs.",
         "affected_customers": 100,
         "affected_customers_known": true,
@@ -222,6 +222,170 @@
         "centroid_lat": -16.942902318814053,
         "lga_name": "Cairns Regional",
         "lga_code": "2080",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.731346260524,
+              -25.9628060260761
+            ],
+            [
+              149.731141013584,
+              -25.9622704738459
+            ],
+            [
+              149.73167693793,
+              -25.961976307785
+            ],
+            [
+              149.802621197956,
+              -25.97057792037
+            ],
+            [
+              149.802748350057,
+              -25.9706091702808
+            ],
+            [
+              149.813390677089,
+              -25.9746519197892
+            ],
+            [
+              149.813482697872,
+              -25.9746977112512
+            ],
+            [
+              149.828631572239,
+              -25.9842397925253
+            ],
+            [
+              149.82852134425,
+              -25.9850322382583
+            ],
+            [
+              149.822023056527,
+              -25.9872323749842
+            ],
+            [
+              149.821836575168,
+              -25.9872609176874
+            ],
+            [
+              149.773036752008,
+              -25.9862432474378
+            ],
+            [
+              149.772784248167,
+              -25.98617503294
+            ],
+            [
+              149.731346260524,
+              -25.9628060260761
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-29T22:00:39Z",
+        "snapshot_aest": "2026-08-30T08:00:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908161",
+        "outage_id": "908161",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 8,
+        "affected_customers_known": true,
+        "suburb": "WANDOAN",
+        "street_name": "GROSMONT RD, K RD, M1 RD",
+        "start_utc": "2026-08-29T19:57:43Z",
+        "etr_utc": null,
+        "centroid_lon": 149.7828713183887,
+        "centroid_lat": -25.976291796395948,
+        "lga_name": "Western Downs Regional",
+        "lga_code": "7310",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              143.342566797861,
+              -12.7860552805199
+            ],
+            [
+              143.342522461599,
+              -12.7857147230603
+            ],
+            [
+              143.342984723952,
+              -12.7840306251666
+            ],
+            [
+              143.343029868672,
+              -12.7839234465913
+            ],
+            [
+              143.34325313924,
+              -12.7835414901519
+            ],
+            [
+              143.344087773439,
+              -12.7836222639875
+            ],
+            [
+              143.344778526706,
+              -12.7856390316611
+            ],
+            [
+              143.344458083183,
+              -12.786219642154
+            ],
+            [
+              143.343233814315,
+              -12.7865311291574
+            ],
+            [
+              143.342718810807,
+              -12.786317479363
+            ],
+            [
+              143.342566797861,
+              -12.7860552805199
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-29T22:00:39Z",
+        "snapshot_aest": "2026-08-30T08:00:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908162",
+        "outage_id": "908162",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 16,
+        "affected_customers_known": true,
+        "suburb": "LOCKHART RIVER",
+        "street_name": "BLADY GRASS RD, ILWAY ST, MAATHUY ST, PAYTHAM ST, PUCHEEWOO ST, UNKNOWN ST",
+        "start_utc": "2026-08-29T22:00:00Z",
+        "etr_utc": "2026-08-30T00:00:00Z",
+        "centroid_lon": 143.34361134147983,
+        "centroid_lat": -12.785144644839983,
+        "lga_name": "Cook Shire",
+        "lga_code": "2500",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
