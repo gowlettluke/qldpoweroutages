@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-29T22:15:30Z",
-        "snapshot_aest": "2026-08-30T08:15:30+10:00",
+        "snapshot_utc": "2026-08-29T22:30:37Z",
+        "snapshot_aest": "2026-08-30T08:30:37+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978795-g",
@@ -203,8 +203,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-29T22:15:30Z",
-        "snapshot_aest": "2026-08-30T08:15:30+10:00",
+        "snapshot_utc": "2026-08-29T22:30:37Z",
+        "snapshot_aest": "2026-08-30T08:30:37+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908160",
@@ -279,8 +279,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-29T22:15:30Z",
-        "snapshot_aest": "2026-08-30T08:15:30+10:00",
+        "snapshot_utc": "2026-08-29T22:30:37Z",
+        "snapshot_aest": "2026-08-30T08:30:37+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908162",
@@ -298,6 +298,70 @@
         "centroid_lat": -12.785144644839983,
         "lga_name": "Cook Shire",
         "lga_code": "2500",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.499960719228,
+              -17.2951773021277
+            ],
+            [
+              145.499876321007,
+              -17.2946402347939
+            ],
+            [
+              145.500390023701,
+              -17.2944133397497
+            ],
+            [
+              145.527294528747,
+              -17.3000252901039
+            ],
+            [
+              145.527497360738,
+              -17.3008127373123
+            ],
+            [
+              145.516208817878,
+              -17.3099249897036
+            ],
+            [
+              145.515576746101,
+              -17.3099015317531
+            ],
+            [
+              145.499960719228,
+              -17.2951773021277
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-29T22:30:37Z",
+        "snapshot_aest": "2026-08-30T08:30:37+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908174",
+        "outage_id": "908174",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 10,
+        "affected_customers_known": true,
+        "suburb": "ATHERTON",
+        "street_name": "DALIP RD, PELUCHETTI RD",
+        "start_utc": "2026-08-29T21:29:57Z",
+        "etr_utc": null,
+        "centroid_lon": 145.51432006140635,
+        "centroid_lat": -17.30151537836454,
+        "lga_name": "Tablelands Regional",
+        "lga_code": "6820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
