@@ -107,8 +107,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-29T12:15:35Z",
-        "snapshot_aest": "2026-08-29T22:15:35+10:00",
+        "snapshot_utc": "2026-08-29T12:30:37Z",
+        "snapshot_aest": "2026-08-29T22:30:37+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978778-g",
@@ -127,6 +127,122 @@
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.965643621405,
+              -27.6082797248851
+            ],
+            [
+              151.966272492524,
+              -27.6077796073562
+            ],
+            [
+              151.967811653601,
+              -27.6081415689448
+            ],
+            [
+              151.968009046218,
+              -27.6082331551143
+            ],
+            [
+              151.968598214632,
+              -27.608677264439
+            ],
+            [
+              151.968668478353,
+              -27.6087420354431
+            ],
+            [
+              151.969386071585,
+              -27.6095521253332
+            ],
+            [
+              151.96940596928,
+              -27.6095761895918
+            ],
+            [
+              151.969677919432,
+              -27.6099290483581
+            ],
+            [
+              151.969698563575,
+              -27.6099581618059
+            ],
+            [
+              151.97035102804,
+              -27.6109613437095
+            ],
+            [
+              151.970309116597,
+              -27.6114672963114
+            ],
+            [
+              151.969989110918,
+              -27.6118253096849
+            ],
+            [
+              151.969609392305,
+              -27.6119948132334
+            ],
+            [
+              151.968697537738,
+              -27.6120197731477
+            ],
+            [
+              151.968581638921,
+              -27.6120110123821
+            ],
+            [
+              151.967581097625,
+              -27.6118303166322
+            ],
+            [
+              151.967319993957,
+              -27.6117036467662
+            ],
+            [
+              151.966123118152,
+              -27.610611654662
+            ],
+            [
+              151.96598468471,
+              -27.6103622236194
+            ],
+            [
+              151.965643621405,
+              -27.6082797248851
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-29T12:30:37Z",
+        "snapshot_aest": "2026-08-29T22:30:37+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908153",
+        "outage_id": "908153",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 25,
+        "affected_customers_known": true,
+        "suburb": "MIDDLE RIDGE, TOOWOOMBA",
+        "street_name": "GLENCOE CT, MACKENZIE ST, ROWBOTHAM ST",
+        "start_utc": "2026-08-29T10:18:40Z",
+        "etr_utc": null,
+        "centroid_lon": 151.967869179129,
+        "centroid_lat": -27.610045580700813,
+        "lga_name": "Toowoomba Regional",
+        "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
