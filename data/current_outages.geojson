@@ -63,14 +63,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-30T08:45:29Z",
-        "snapshot_aest": "2026-08-30T18:45:29+10:00",
+        "snapshot_utc": "2026-08-30T09:00:44Z",
+        "snapshot_aest": "2026-08-30T19:00:44+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978844-g",
         "outage_id": "INCD-978844-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 11,
         "affected_customers_known": true,
@@ -131,8 +131,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-30T08:45:29Z",
-        "snapshot_aest": "2026-08-30T18:45:29+10:00",
+        "snapshot_utc": "2026-08-30T09:00:44Z",
+        "snapshot_aest": "2026-08-30T19:00:44+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908213",
@@ -223,8 +223,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-30T08:45:29Z",
-        "snapshot_aest": "2026-08-30T18:45:29+10:00",
+        "snapshot_utc": "2026-08-30T09:00:44Z",
+        "snapshot_aest": "2026-08-30T19:00:44+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908217",
@@ -237,11 +237,143 @@
         "suburb": "LONGREACH, VERGEMONT",
         "street_name": "LOCHERN NATIONAL PARK, OFF RIVER RD, TARCOMBE-TONKORO RD, TOCAL RD",
         "start_utc": "2026-08-30T06:00:00Z",
-        "etr_utc": "2026-08-30T09:00:00Z",
+        "etr_utc": "2026-08-30T10:00:00Z",
         "centroid_lon": 143.26919660374696,
         "centroid_lat": -24.072840918840775,
         "lga_name": "Longreach Regional",
         "lga_code": "4710",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              143.94916147533,
+              -22.3165103402712
+            ],
+            [
+              143.94954416517,
+              -22.3159527891491
+            ],
+            [
+              144.847877515296,
+              -22.1615847043246
+            ],
+            [
+              144.847905789207,
+              -22.1615805617085
+            ],
+            [
+              145.058651399498,
+              -22.1364753907026
+            ],
+            [
+              145.058981294737,
+              -22.1365470767759
+            ],
+            [
+              145.127174584633,
+              -22.1787087592539
+            ],
+            [
+              145.127343050429,
+              -22.1788885031371
+            ],
+            [
+              145.414808784018,
+              -22.7305110431189
+            ],
+            [
+              145.414857593854,
+              -22.7307014141882
+            ],
+            [
+              145.418333493516,
+              -22.9447997384637
+            ],
+            [
+              145.417909944915,
+              -22.9452541449324
+            ],
+            [
+              145.070161771226,
+              -22.9874574951457
+            ],
+            [
+              145.070102691805,
+              -22.9874612402999
+            ],
+            [
+              145.067671220779,
+              -22.9874783363964
+            ],
+            [
+              145.067567660731,
+              -22.9874687805817
+            ],
+            [
+              144.579457995448,
+              -22.892107858791
+            ],
+            [
+              144.579338943454,
+              -22.8920689050573
+            ],
+            [
+              144.56998530262,
+              -22.8876724664607
+            ],
+            [
+              144.569870587724,
+              -22.8875975337172
+            ],
+            [
+              144.171073967526,
+              -22.5360397755703
+            ],
+            [
+              144.171062447932,
+              -22.5360292375158
+            ],
+            [
+              143.952763340482,
+              -22.3291483541379
+            ],
+            [
+              143.952640440186,
+              -22.328946266902
+            ],
+            [
+              143.94916147533,
+              -22.3165103402712
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-30T09:00:44Z",
+        "snapshot_aest": "2026-08-30T19:00:44+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908218",
+        "outage_id": "908218",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 186,
+        "affected_customers_known": true,
+        "suburb": "ARAMAC, MUTTABURRA",
+        "street_name": "ARAMAC-FLEETWOOD RD, ARAMAC-ILFRACOMBE RD, ARAMAC-MUTTABURRA RD, BOORAMEEL RD, BOWEN DOWNS RD, BRIDGE ST, BRUFORD ST, CORNISH ST, CROSSMOOR RD, DEVON ST, EDKINS ST, FRANK ST, HOSPITAL RD, HUGHENDEN-M'BURRA RD, JERICHO-ARAMAC RD, KENSINGTON RD, KLUGH ST, LONGREACH-M'BURRA RD, LORD ST, MORELLA-BERYL RD, MORELLA-MUTTABURRA RD, MUTTABURRA RD, MUTTABURRA-PRAIRIE RD, OFF ARAMAC-MUTTABURRA RD, OFF BOWEN DOWNS RD, OFF M'BURRA-H'DEN RD, POTOSI RD, SWORD ST, THE LAKE RD, TORRENS CREEK RD, UNKNOWN ST",
+        "start_utc": "2026-08-30T08:48:17Z",
+        "etr_utc": null,
+        "centroid_lon": 144.79346300299522,
+        "centroid_lat": -22.557260324551194,
+        "lga_name": "Barcaldine Regional",
+        "lga_code": "410",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
