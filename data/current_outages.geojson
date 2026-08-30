@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-30T21:15:29Z",
-        "snapshot_aest": "2026-08-31T07:15:29+10:00",
+        "snapshot_utc": "2026-08-30T21:30:35Z",
+        "snapshot_aest": "2026-08-31T07:30:35+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978867-g",
@@ -123,8 +123,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-30T21:15:29Z",
-        "snapshot_aest": "2026-08-31T07:15:29+10:00",
+        "snapshot_utc": "2026-08-30T21:30:35Z",
+        "snapshot_aest": "2026-08-31T07:30:35+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908213",
@@ -142,6 +142,90 @@
         "centroid_lat": -18.66578972628838,
         "lga_name": "Charters Towers Regional",
         "lga_code": "2310",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.454183943757,
+              -25.8249073410091
+            ],
+            [
+              152.453820196445,
+              -25.824487482484
+            ],
+            [
+              152.452989683341,
+              -25.7995440903093
+            ],
+            [
+              152.453117273313,
+              -25.7992293694779
+            ],
+            [
+              152.49380030835,
+              -25.7583538812335
+            ],
+            [
+              152.494010375393,
+              -25.7582288050751
+            ],
+            [
+              152.516008956941,
+              -25.7514969809954
+            ],
+            [
+              152.516652068057,
+              -25.752023848452
+            ],
+            [
+              152.497216492555,
+              -25.8285801802027
+            ],
+            [
+              152.496860869474,
+              -25.8289138715499
+            ],
+            [
+              152.483389821929,
+              -25.8321833956433
+            ],
+            [
+              152.483128143442,
+              -25.8321823522411
+            ],
+            [
+              152.454183943757,
+              -25.8249073410091
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-30T21:30:35Z",
+        "snapshot_aest": "2026-08-31T07:30:35+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908226",
+        "outage_id": "908226",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 39,
+        "affected_customers_known": true,
+        "suburb": "GUNDIAH, MOUNT URAH, NETHERBY, ST MARY, TIARO",
+        "street_name": "BAUPLEVIEW RD, DEBORAH RD, EMERYS BRIDGE RD, FLINDERSIA RD, GLENBAR RD, JESSENS RD, LAMKES RD, RAMSEYS RD, RIVERBEND DR, THOMPSONS RD",
+        "start_utc": "2026-08-30T21:12:00Z",
+        "etr_utc": null,
+        "centroid_lon": 152.48463233445744,
+        "centroid_lat": -25.7962845795702,
+        "lga_name": "Fraser Coast Regional",
+        "lga_code": "3220",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
