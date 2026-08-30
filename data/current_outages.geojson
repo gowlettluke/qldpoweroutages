@@ -8,6 +8,82 @@
         "coordinates": [
           [
             [
+              153.008232856755,
+              -27.5427078834191
+            ],
+            [
+              153.008021630359,
+              -27.5420087212377
+            ],
+            [
+              153.008612211291,
+              -27.5413410233184
+            ],
+            [
+              153.008642996625,
+              -27.5413093588207
+            ],
+            [
+              153.009349916774,
+              -27.5406470310465
+            ],
+            [
+              153.010185139444,
+              -27.5407864698796
+            ],
+            [
+              153.010945234862,
+              -27.5424337964576
+            ],
+            [
+              153.010543282413,
+              -27.543052994786
+            ],
+            [
+              153.009674700353,
+              -27.5431553755934
+            ],
+            [
+              153.009421871539,
+              -27.5431275652936
+            ],
+            [
+              153.008232856755,
+              -27.5427078834191
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-30T19:00:45Z",
+        "snapshot_aest": "2026-08-31T05:00:45+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-978867-g",
+        "outage_id": "INCD-978867-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Emergency Repairs",
+        "affected_customers": 11,
+        "affected_customers_known": true,
+        "suburb": "ROCKLEA",
+        "street_name": "ABERCROMBIE ST, MEDWAY ST, SHERWOOD RD, SPERLING ST",
+        "start_utc": "2026-08-30T18:46:02Z",
+        "etr_utc": "2026-08-30T21:00:00Z",
+        "centroid_lon": 153.00951716989746,
+        "centroid_lat": -27.54201387972668,
+        "lga_name": "Brisbane City",
+        "lga_code": "1000",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               153.467691486024,
               -28.1189740170725
             ],
@@ -103,8 +179,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-30T18:45:30Z",
-        "snapshot_aest": "2026-08-31T04:45:30+10:00",
+        "snapshot_utc": "2026-08-30T19:00:45Z",
+        "snapshot_aest": "2026-08-31T05:00:45+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-978864-g",
@@ -171,8 +247,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-30T18:45:30Z",
-        "snapshot_aest": "2026-08-31T04:45:30+10:00",
+        "snapshot_utc": "2026-08-30T19:00:45Z",
+        "snapshot_aest": "2026-08-31T05:00:45+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908213",
@@ -190,90 +266,6 @@
         "centroid_lat": -18.66578972628838,
         "lga_name": "Charters Towers Regional",
         "lga_code": "2310",
-        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              152.862307112281,
-              -25.3009528531
-            ],
-            [
-              152.862532893207,
-              -25.3003263548109
-            ],
-            [
-              152.867962497222,
-              -25.2980551846069
-            ],
-            [
-              152.868556561118,
-              -25.2981840519302
-            ],
-            [
-              152.870323131793,
-              -25.3002067099855
-            ],
-            [
-              152.87039137398,
-              -25.3006612648193
-            ],
-            [
-              152.870225640574,
-              -25.3010178247559
-            ],
-            [
-              152.870196846359,
-              -25.3010700282259
-            ],
-            [
-              152.866771885869,
-              -25.3063864669034
-            ],
-            [
-              152.865942513039,
-              -25.3064204420187
-            ],
-            [
-              152.864615180631,
-              -25.3047298116233
-            ],
-            [
-              152.86458524593,
-              -25.3046867084566
-            ],
-            [
-              152.862307112281,
-              -25.3009528531
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "snapshot_utc": "2026-08-30T18:45:30Z",
-        "snapshot_aest": "2026-08-31T04:45:30+10:00",
-        "provider_code": "au.qld.ergon",
-        "provider_name": "Ergon Energy",
-        "outage_key": "au.qld.ergon|unplanned|908223",
-        "outage_id": "908223",
-        "outage_type": "unplanned",
-        "status": "Crews working on-site",
-        "reason": "The loss of supply is there are supply problems resulting in low voltage conditions. It is advisable to disconnect sensitive electrical appliances.",
-        "affected_customers": 80,
-        "affected_customers_known": true,
-        "suburb": "TORQUAY, WONDUNNA",
-        "street_name": "BIDEFORD ST, BOUNDARY RD, COLYTON ST, RAWARD RD, RENEE CT, TAVISTOCK ST, VICKI PDE",
-        "start_utc": "2026-08-30T14:48:29Z",
-        "etr_utc": "2026-08-30T19:30:00Z",
-        "centroid_lon": 152.8664777544892,
-        "centroid_lat": -25.30183434881668,
-        "lga_name": "Fraser Coast Regional",
-        "lga_code": "3220",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
