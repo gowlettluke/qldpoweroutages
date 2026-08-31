@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-08-31T09:15:32Z",
-        "snapshot_aest": "2026-08-31T19:15:32+10:00",
+        "snapshot_utc": "2026-08-31T09:30:39Z",
+        "snapshot_aest": "2026-08-31T19:30:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908254",
@@ -74,6 +74,90 @@
         "centroid_lat": -26.105735931159746,
         "lga_name": "Gympie Regional",
         "lga_code": "3620",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.957097492758,
+              -17.5575062440213
+            ],
+            [
+              145.957452815136,
+              -17.55695109557
+            ],
+            [
+              145.958149903091,
+              -17.556804918068
+            ],
+            [
+              145.958300555479,
+              -17.5567970503714
+            ],
+            [
+              145.95988983306,
+              -17.5569599346464
+            ],
+            [
+              145.959891003534,
+              -17.5569600560222
+            ],
+            [
+              145.960568723049,
+              -17.5570311549171
+            ],
+            [
+              145.960988254963,
+              -17.5574633711518
+            ],
+            [
+              145.961063338828,
+              -17.5593776145916
+            ],
+            [
+              145.960441322447,
+              -17.5598225587331
+            ],
+            [
+              145.957703367688,
+              -17.5589320448359
+            ],
+            [
+              145.957398711844,
+              -17.558617782642
+            ],
+            [
+              145.957097492758,
+              -17.5575062440213
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-08-31T09:30:39Z",
+        "snapshot_aest": "2026-08-31T19:30:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908255",
+        "outage_id": "908255",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 10,
+        "affected_customers_known": true,
+        "suburb": "PIN GIN HILL",
+        "street_name": "KIMBERLEY DR, MARK CL",
+        "start_utc": "2026-08-31T08:57:55Z",
+        "etr_utc": null,
+        "centroid_lon": 145.95923411480206,
+        "centroid_lat": -17.558161488355207,
+        "lga_name": "Cassowary Coast Regional",
+        "lga_code": "2260",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
