@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-01T21:15:35Z",
-        "snapshot_aest": "2026-09-02T07:15:35+10:00",
+        "snapshot_utc": "2026-09-01T21:30:41Z",
+        "snapshot_aest": "2026-09-02T07:30:41+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908289",
@@ -74,6 +74,86 @@
         "centroid_lat": -22.851775503376015,
         "lga_name": "Isaac Regional",
         "lga_code": "3980",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.394739339519,
+              -19.5608604052238
+            ],
+            [
+              147.394172569762,
+              -19.5609528498192
+            ],
+            [
+              147.393924462982,
+              -19.5604610406887
+            ],
+            [
+              147.394167521927,
+              -19.5593331396624
+            ],
+            [
+              147.394234705914,
+              -19.5591775843189
+            ],
+            [
+              147.394779780861,
+              -19.5583814565222
+            ],
+            [
+              147.39562718892,
+              -19.5584720095815
+            ],
+            [
+              147.395890597685,
+              -19.559153569439
+            ],
+            [
+              147.395919440468,
+              -19.5593235858209
+            ],
+            [
+              147.395913142161,
+              -19.5595085049665
+            ],
+            [
+              147.39578457705,
+              -19.5598028523645
+            ],
+            [
+              147.394739339519,
+              -19.5608604052238
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-01T21:30:41Z",
+        "snapshot_aest": "2026-09-02T07:30:41+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908291",
+        "outage_id": "908291",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 12,
+        "affected_customers_known": true,
+        "suburb": "AYR",
+        "street_name": "MCCATHIE ST",
+        "start_utc": "2026-09-01T21:04:07Z",
+        "etr_utc": null,
+        "centroid_lon": 147.3948962021719,
+        "centroid_lat": -19.55962015532314,
+        "lga_name": "Burdekin Shire",
+        "lga_code": "1900",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
