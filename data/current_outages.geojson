@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-02T04:00:50Z",
-        "snapshot_aest": "2026-09-02T14:00:50+10:00",
+        "snapshot_utc": "2026-09-02T04:15:35Z",
+        "snapshot_aest": "2026-09-02T14:15:35+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-979321-g",
@@ -275,8 +275,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-02T04:00:50Z",
-        "snapshot_aest": "2026-09-02T14:00:50+10:00",
+        "snapshot_utc": "2026-09-02T04:15:35Z",
+        "snapshot_aest": "2026-09-02T14:15:35+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-979364-g",
@@ -351,8 +351,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-02T04:00:50Z",
-        "snapshot_aest": "2026-09-02T14:00:50+10:00",
+        "snapshot_utc": "2026-09-02T04:15:35Z",
+        "snapshot_aest": "2026-09-02T14:15:35+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908289",
@@ -451,8 +451,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-02T04:00:50Z",
-        "snapshot_aest": "2026-09-02T14:00:50+10:00",
+        "snapshot_utc": "2026-09-02T04:15:35Z",
+        "snapshot_aest": "2026-09-02T14:15:35+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908338",
@@ -470,6 +470,98 @@
         "centroid_lat": -22.12416980065285,
         "lga_name": "Isaac Regional",
         "lga_code": "3980",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.758429744167,
+              -19.3019447979505
+            ],
+            [
+              146.758368726083,
+              -19.3011996781901
+            ],
+            [
+              146.760044466316,
+              -19.2999269924574
+            ],
+            [
+              146.760776496586,
+              -19.3000960172601
+            ],
+            [
+              146.761018313069,
+              -19.3006115339903
+            ],
+            [
+              146.761056503736,
+              -19.3008458423952
+            ],
+            [
+              146.760926602055,
+              -19.3019432106227
+            ],
+            [
+              146.760922280238,
+              -19.3019715796447
+            ],
+            [
+              146.760899429435,
+              -19.3020940235774
+            ],
+            [
+              146.760897483032,
+              -19.3021038225607
+            ],
+            [
+              146.760845448522,
+              -19.3023507897372
+            ],
+            [
+              146.760636246517,
+              -19.3026421815418
+            ],
+            [
+              146.760445240849,
+              -19.3027588378547
+            ],
+            [
+              146.759951507024,
+              -19.3027710636215
+            ],
+            [
+              146.758429744167,
+              -19.3019447979505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-02T04:15:35Z",
+        "snapshot_aest": "2026-09-02T14:15:35+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908339",
+        "outage_id": "908339",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 34,
+        "affected_customers_known": true,
+        "suburb": "CRANBROOK",
+        "street_name": "ALBERT ST, NATHAN ST, ROSS RIVER RD, WANDELLA CRES",
+        "start_utc": "2026-09-02T03:49:08Z",
+        "etr_utc": null,
+        "centroid_lon": 146.7598709492311,
+        "centroid_lat": -19.301395050315737,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
