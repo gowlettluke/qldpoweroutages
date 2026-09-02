@@ -135,14 +135,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-02T15:00:50Z",
-        "snapshot_aest": "2026-09-03T01:00:50+10:00",
+        "snapshot_utc": "2026-09-02T15:15:37Z",
+        "snapshot_aest": "2026-09-03T01:15:37+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-979475-g",
         "outage_id": "INCD-979475-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 107,
         "affected_customers_known": true,
@@ -154,6 +154,98 @@
         "centroid_lat": -27.648014407717127,
         "lga_name": "Logan City",
         "lga_code": "4590",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              153.056921157914,
+              -27.4284097835165
+            ],
+            [
+              153.056883668331,
+              -27.4281678405551
+            ],
+            [
+              153.056932409886,
+              -27.4278513408648
+            ],
+            [
+              153.057674337352,
+              -27.4275157863886
+            ],
+            [
+              153.058474505338,
+              -27.4279021348853
+            ],
+            [
+              153.058710539478,
+              -27.4281482525018
+            ],
+            [
+              153.059070683639,
+              -27.4290543115642
+            ],
+            [
+              153.059077361135,
+              -27.4293381059552
+            ],
+            [
+              153.058934192781,
+              -27.4297527666147
+            ],
+            [
+              153.058628989718,
+              -27.4300423108038
+            ],
+            [
+              153.058433408428,
+              -27.4301080204499
+            ],
+            [
+              153.057854028729,
+              -27.429960642575
+            ],
+            [
+              153.057487849415,
+              -27.4295355021204
+            ],
+            [
+              153.057425274779,
+              -27.4294409256006
+            ],
+            [
+              153.056921157914,
+              -27.4284097835165
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-02T15:15:37Z",
+        "snapshot_aest": "2026-09-03T01:15:37+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-979480-g",
+        "outage_id": "INCD-979480-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Emergency Repairs",
+        "affected_customers": 25,
+        "affected_customers_known": true,
+        "suburb": "ASCOT, CLAYFIELD",
+        "street_name": "ALEXANDRA RD, REEVE ST",
+        "start_utc": "2026-09-02T15:02:14Z",
+        "etr_utc": "2026-09-02T17:30:00Z",
+        "centroid_lon": 153.05800627615946,
+        "centroid_lat": -27.428794600853823,
+        "lga_name": "Brisbane City",
+        "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     },
@@ -195,8 +287,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-02T15:00:50Z",
-        "snapshot_aest": "2026-09-03T01:00:50+10:00",
+        "snapshot_utc": "2026-09-02T15:15:37Z",
+        "snapshot_aest": "2026-09-03T01:15:37+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908345",
