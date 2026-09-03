@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-03T22:15:34Z",
-        "snapshot_aest": "2026-09-04T08:15:34+10:00",
+        "snapshot_utc": "2026-09-03T22:30:42Z",
+        "snapshot_aest": "2026-09-04T08:30:42+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908444",
@@ -191,8 +191,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-03T22:15:34Z",
-        "snapshot_aest": "2026-09-04T08:15:34+10:00",
+        "snapshot_utc": "2026-09-03T22:30:42Z",
+        "snapshot_aest": "2026-09-04T08:30:42+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908450",
@@ -299,14 +299,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-03T22:15:34Z",
-        "snapshot_aest": "2026-09-04T08:15:34+10:00",
+        "snapshot_utc": "2026-09-03T22:30:42Z",
+        "snapshot_aest": "2026-09-04T08:30:42+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908478",
         "outage_id": "908478",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews on route",
         "reason": "The loss of supply is due to damage requiring emergency repairs.",
         "affected_customers": 88,
         "affected_customers_known": true,
@@ -318,6 +318,98 @@
         "centroid_lat": -24.816957502945804,
         "lga_name": "Bundaberg Regional",
         "lga_code": "1820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.775294848492,
+              -26.5689789532132
+            ],
+            [
+              151.775358725256,
+              -26.5684043179671
+            ],
+            [
+              151.791669986999,
+              -26.5540400614471
+            ],
+            [
+              151.791920003498,
+              -26.553920621922
+            ],
+            [
+              151.800913641897,
+              -26.5522671778838
+            ],
+            [
+              151.801497675439,
+              -26.5528239076857
+            ],
+            [
+              151.799357360008,
+              -26.5600637254422
+            ],
+            [
+              151.799292855121,
+              -26.5601940016348
+            ],
+            [
+              151.789185563415,
+              -26.5741270558182
+            ],
+            [
+              151.788902640795,
+              -26.5743142404811
+            ],
+            [
+              151.782885377702,
+              -26.5758461514655
+            ],
+            [
+              151.782802477519,
+              -26.5758606001242
+            ],
+            [
+              151.780949469135,
+              -26.5760396042545
+            ],
+            [
+              151.78048183703,
+              -26.5758449663237
+            ],
+            [
+              151.775294848492,
+              -26.5689789532132
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-03T22:30:42Z",
+        "snapshot_aest": "2026-09-04T08:30:42+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908482",
+        "outage_id": "908482",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 14,
+        "affected_customers_known": true,
+        "suburb": "INVERLAW, KINGAROY",
+        "street_name": "HOOPERS RD, LUCK RD, RIVER RD",
+        "start_utc": "2026-09-03T21:16:11Z",
+        "etr_utc": null,
+        "centroid_lon": 151.78857619773206,
+        "centroid_lat": -26.564509474030206,
+        "lga_name": "South Burnett Regional",
+        "lga_code": "6630",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
