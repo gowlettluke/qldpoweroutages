@@ -103,14 +103,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-03T22:00:53Z",
-        "snapshot_aest": "2026-09-04T08:00:53+10:00",
+        "snapshot_utc": "2026-09-03T22:15:34Z",
+        "snapshot_aest": "2026-09-04T08:15:34+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908444",
         "outage_id": "908444",
         "outage_type": "unplanned",
-        "status": "Work delayed - crews unable to continue",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 52,
         "affected_customers_known": true,
@@ -191,8 +191,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-03T22:00:53Z",
-        "snapshot_aest": "2026-09-04T08:00:53+10:00",
+        "snapshot_utc": "2026-09-03T22:15:34Z",
+        "snapshot_aest": "2026-09-04T08:15:34+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908450",
@@ -205,11 +205,119 @@
         "suburb": "CHARTERS TOWERS CITY",
         "street_name": "GILL ST",
         "start_utc": "2026-09-03T18:40:00Z",
-        "etr_utc": "2026-09-03T22:00:00Z",
+        "etr_utc": "2026-09-04T02:00:00Z",
         "centroid_lon": 146.2641472653468,
         "centroid_lat": -20.076828712068522,
         "lga_name": "Charters Towers Regional",
         "lga_code": "2310",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.465294544464,
+              -24.8160378510627
+            ],
+            [
+              152.465387619226,
+              -24.8156096492116
+            ],
+            [
+              152.465489014288,
+              -24.8155003182132
+            ],
+            [
+              152.465894340103,
+              -24.8153418845814
+            ],
+            [
+              152.466595669363,
+              -24.8153797563935
+            ],
+            [
+              152.466687328179,
+              -24.8153926839084
+            ],
+            [
+              152.46693056227,
+              -24.8154487883609
+            ],
+            [
+              152.467054439001,
+              -24.8154944012214
+            ],
+            [
+              152.467526326251,
+              -24.8157406444494
+            ],
+            [
+              152.467725047684,
+              -24.8159346406714
+            ],
+            [
+              152.468242305376,
+              -24.816906622312
+            ],
+            [
+              152.468260345299,
+              -24.8172613909001
+            ],
+            [
+              152.467781924205,
+              -24.8184235663783
+            ],
+            [
+              152.467556477434,
+              -24.8186603088401
+            ],
+            [
+              152.467177430012,
+              -24.8188489415315
+            ],
+            [
+              152.466504736583,
+              -24.8186625420727
+            ],
+            [
+              152.465782242587,
+              -24.81740232217
+            ],
+            [
+              152.465749677972,
+              -24.81733131483
+            ],
+            [
+              152.465294544464,
+              -24.8160378510627
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-03T22:15:34Z",
+        "snapshot_aest": "2026-09-04T08:15:34+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908478",
+        "outage_id": "908478",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 88,
+        "affected_customers_known": true,
+        "suburb": "BARGARA",
+        "street_name": "BASALT CT, BAXTER ST, ESPLANADE, EVERDELL ST, MILLER ST",
+        "start_utc": "2026-09-03T21:29:48Z",
+        "etr_utc": null,
+        "centroid_lon": 152.46681453784487,
+        "centroid_lat": -24.816957502945804,
+        "lga_name": "Bundaberg Regional",
+        "lga_code": "1820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
