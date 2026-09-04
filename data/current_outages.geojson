@@ -43,8 +43,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-04T17:30:45Z",
-        "snapshot_aest": "2026-09-05T03:30:45+10:00",
+        "snapshot_utc": "2026-09-04T17:45:38Z",
+        "snapshot_aest": "2026-09-05T03:45:38+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-979881-g",
@@ -191,14 +191,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-04T17:30:45Z",
-        "snapshot_aest": "2026-09-05T03:30:45+10:00",
+        "snapshot_utc": "2026-09-04T17:45:38Z",
+        "snapshot_aest": "2026-09-05T03:45:38+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908566",
         "outage_id": "908566",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 826,
         "affected_customers_known": true,
@@ -210,6 +210,122 @@
         "centroid_lat": -27.602237701222332,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.955560864931,
+              -21.1774345875465
+            ],
+            [
+              148.95557157506,
+              -21.1772788182354
+            ],
+            [
+              148.956471865244,
+              -21.1737998090004
+            ],
+            [
+              148.956992037597,
+              -21.1734574471754
+            ],
+            [
+              149.008898059794,
+              -21.1787741960937
+            ],
+            [
+              149.00903205139,
+              -21.1788066669503
+            ],
+            [
+              149.014967610485,
+              -21.1811410991546
+            ],
+            [
+              149.015262078179,
+              -21.1815315825043
+            ],
+            [
+              149.015402571574,
+              -21.1838230526444
+            ],
+            [
+              149.01539751127,
+              -21.1839191766384
+            ],
+            [
+              149.012480383877,
+              -21.2013008920826
+            ],
+            [
+              149.012417565857,
+              -21.2014630868884
+            ],
+            [
+              148.994708808723,
+              -21.2291207760346
+            ],
+            [
+              148.994499322019,
+              -21.2292976242753
+            ],
+            [
+              148.977561386003,
+              -21.2366956055886
+            ],
+            [
+              148.977465184975,
+              -21.2367265124529
+            ],
+            [
+              148.966662811267,
+              -21.2390373188116
+            ],
+            [
+              148.966213318284,
+              -21.2389146666136
+            ],
+            [
+              148.962445969428,
+              -21.2353445573929
+            ],
+            [
+              148.962309611533,
+              -21.2350762869284
+            ],
+            [
+              148.955560864931,
+              -21.1774345875465
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-04T17:45:38Z",
+        "snapshot_aest": "2026-09-05T03:45:38+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908567",
+        "outage_id": "908567",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 134,
+        "affected_customers_known": true,
+        "suburb": "BALNAGOWAN, ETON, MARIAN, MOUNT VINCE, NORTH ETON, PLEYSTOWE, TE KOWAI, VICTORIA PLAINS, WALKERSTON",
+        "street_name": "BARRONS RD, BRANDS RD, HANNANS RD, KENNYS RD, LENAHANS RD, MARIAN ETON RD, MILL ST, MT VINCE RD, NORTH ETON RD, PERI RD, PLATHS RD, PLEYSTOWE CONNECTION RD, PLEYSTOWE SCHOOL RD, ROCKY WATERHOLE WOLLINGFORD RD, TEDFORDS RD, VICTORIA PLAINS RD",
+        "start_utc": "2026-09-04T17:25:15Z",
+        "etr_utc": null,
+        "centroid_lon": 148.98264393563656,
+        "centroid_lat": -21.202607357872104,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
