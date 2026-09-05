@@ -43,8 +43,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-05T10:45:36Z",
-        "snapshot_aest": "2026-09-05T20:45:36+10:00",
+        "snapshot_utc": "2026-09-05T11:00:50Z",
+        "snapshot_aest": "2026-09-05T21:00:50+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-979954-g",
@@ -135,8 +135,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-05T10:45:36Z",
-        "snapshot_aest": "2026-09-05T20:45:36+10:00",
+        "snapshot_utc": "2026-09-05T11:00:50Z",
+        "snapshot_aest": "2026-09-05T21:00:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908646",
@@ -259,8 +259,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-05T10:45:36Z",
-        "snapshot_aest": "2026-09-05T20:45:36+10:00",
+        "snapshot_utc": "2026-09-05T11:00:50Z",
+        "snapshot_aest": "2026-09-05T21:00:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908650",
@@ -278,6 +278,98 @@
         "centroid_lat": -28.781993070347927,
         "lga_name": "Balonne Shire",
         "lga_code": "300",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.711770715822,
+              -27.4376457559249
+            ],
+            [
+              151.711178680707,
+              -27.4371359607824
+            ],
+            [
+              151.711917238951,
+              -27.432779883612
+            ],
+            [
+              151.712504745849,
+              -27.4324040269209
+            ],
+            [
+              151.713568682063,
+              -27.4325734141375
+            ],
+            [
+              151.7136869871,
+              -27.4326060190763
+            ],
+            [
+              151.713983324966,
+              -27.4327249213116
+            ],
+            [
+              151.714160071846,
+              -27.4328431460363
+            ],
+            [
+              151.715601557854,
+              -27.4343491519193
+            ],
+            [
+              151.715714514523,
+              -27.4345620407569
+            ],
+            [
+              151.715865819884,
+              -27.4353146973953
+            ],
+            [
+              151.715709524096,
+              -27.4357265332028
+            ],
+            [
+              151.713871301626,
+              -27.4372250669381
+            ],
+            [
+              151.713624105337,
+              -27.43733516309
+            ],
+            [
+              151.711770715822,
+              -27.4376457559249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-05T11:00:50Z",
+        "snapshot_aest": "2026-09-05T21:00:50+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908651",
+        "outage_id": "908651",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 42,
+        "affected_customers_known": true,
+        "suburb": "OAKEY",
+        "street_name": "CORY ST, CUNNINGHAM ST, TAYLOR ST",
+        "start_utc": "2026-09-05T10:37:50Z",
+        "etr_utc": null,
+        "centroid_lon": 151.71332016280638,
+        "centroid_lat": -27.43508672309086,
+        "lga_name": "Toowoomba Regional",
+        "lga_code": "6910",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
