@@ -43,8 +43,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-05T22:45:36Z",
-        "snapshot_aest": "2026-09-06T08:45:36+10:00",
+        "snapshot_utc": "2026-09-05T23:00:49Z",
+        "snapshot_aest": "2026-09-06T09:00:49+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-979954-g",
@@ -135,8 +135,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-05T22:45:36Z",
-        "snapshot_aest": "2026-09-06T08:45:36+10:00",
+        "snapshot_utc": "2026-09-05T23:00:49Z",
+        "snapshot_aest": "2026-09-06T09:00:49+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908646",
@@ -259,21 +259,21 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-05T22:45:36Z",
-        "snapshot_aest": "2026-09-06T08:45:36+10:00",
+        "snapshot_utc": "2026-09-05T23:00:49Z",
+        "snapshot_aest": "2026-09-06T09:00:49+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908650",
         "outage_id": "908650",
         "outage_type": "unplanned",
         "status": "Crews working on-site",
-        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
         "affected_customers": 70,
         "affected_customers_known": true,
         "suburb": "DIRRANBANDI, HEBEL",
         "street_name": "BALLANDOOL RD, CASTLEREAGH HWY, CHURCH ST, DAVIRTON RD, DIRRANBANDI-HEBEL RD, EURABA RD, HOOLAVALE RD, JAKELWAR GOODOOGA RD, JAKELWAR-GOODOOGA RD, JAMES ST, MARGARET ST, MARY ST, MAUD ST, MINNUM RD, MUNDAH RD, UNKNOWN RD, WILLIAM ST, WOOLERBILLA RD",
         "start_utc": "2026-09-05T08:52:19Z",
-        "etr_utc": null,
+        "etr_utc": "2026-09-06T02:00:00Z",
         "centroid_lon": 147.6938651147205,
         "centroid_lat": -28.781993070347927,
         "lga_name": "Balonne Shire",
@@ -367,8 +367,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-05T22:45:36Z",
-        "snapshot_aest": "2026-09-06T08:45:36+10:00",
+        "snapshot_utc": "2026-09-05T23:00:49Z",
+        "snapshot_aest": "2026-09-06T09:00:49+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908653",
@@ -386,6 +386,78 @@
         "centroid_lat": -19.346630575311906,
         "lga_name": "Townsville City",
         "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.504595078295,
+              -23.4877941094432
+            ],
+            [
+              144.50450055696,
+              -23.4870141064431
+            ],
+            [
+              144.514456211715,
+              -23.4803500519652
+            ],
+            [
+              144.515066814564,
+              -23.4803765091897
+            ],
+            [
+              144.515172854284,
+              -23.4809317999937
+            ],
+            [
+              144.510468586139,
+              -23.4888665224676
+            ],
+            [
+              144.510282554435,
+              -23.4890415528655
+            ],
+            [
+              144.50940984709,
+              -23.4895027650075
+            ],
+            [
+              144.508973770906,
+              -23.4895259633775
+            ],
+            [
+              144.504595078295,
+              -23.4877941094432
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-05T23:00:49Z",
+        "snapshot_aest": "2026-09-06T09:00:49+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908700",
+        "outage_id": "908700",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 26,
+        "affected_customers_known": true,
+        "suburb": "ILFRACOMBE",
+        "street_name": "CHURCH ST, ILFRACOMBE ARAMAC RD, LANDSBOROUGH HWY, MAIN AVE, SCOUR HILL RD, TORRS RD",
+        "start_utc": "2026-09-05T22:30:00Z",
+        "etr_utc": "2026-09-06T04:30:00Z",
+        "centroid_lon": 144.50990011637506,
+        "centroid_lat": -23.485563137806917,
+        "lga_name": "Longreach Regional",
+        "lga_code": "4710",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
