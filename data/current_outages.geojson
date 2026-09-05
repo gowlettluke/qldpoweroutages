@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-05T04:30:47Z",
-        "snapshot_aest": "2026-09-05T14:30:47+10:00",
+        "snapshot_utc": "2026-09-05T04:45:36Z",
+        "snapshot_aest": "2026-09-05T14:45:36+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-979914-g",
@@ -83,6 +83,82 @@
         "lga_name": "Sunshine Coast Regional",
         "lga_code": "6720",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              139.359953133718,
+              -17.8009196054164
+            ],
+            [
+              139.359410981321,
+              -17.8007500037748
+            ],
+            [
+              139.359442553522,
+              -17.8002044997009
+            ],
+            [
+              139.415589902865,
+              -17.7376718007819
+            ],
+            [
+              139.415955268281,
+              -17.7375158919307
+            ],
+            [
+              139.533995565169,
+              -17.7400500316095
+            ],
+            [
+              139.534004616105,
+              -17.7400503071521
+            ],
+            [
+              139.536464349073,
+              -17.7401480110319
+            ],
+            [
+              139.536907720269,
+              -17.7405292184761
+            ],
+            [
+              139.536601349279,
+              -17.7410187496428
+            ],
+            [
+              139.359953133718,
+              -17.8009196054164
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-05T04:45:36Z",
+        "snapshot_aest": "2026-09-05T14:45:36+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908644",
+        "outage_id": "908644",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 7,
+        "affected_customers_known": true,
+        "suburb": "BURKETOWN",
+        "street_name": "ESCOTT RD, ESCOTT STATION, MUSGRAVE ST, WILLS DEVELOPMENTAL RD",
+        "start_utc": "2026-09-05T04:16:00Z",
+        "etr_utc": "2026-09-05T07:00:00Z",
+        "centroid_lon": 139.43770500036507,
+        "centroid_lat": -17.759717111561987,
+        "lga_name": "Burke Shire",
+        "lga_code": "1950",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
