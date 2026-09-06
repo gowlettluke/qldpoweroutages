@@ -43,8 +43,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-06T07:30:44Z",
-        "snapshot_aest": "2026-09-06T17:30:44+10:00",
+        "snapshot_utc": "2026-09-06T07:45:44Z",
+        "snapshot_aest": "2026-09-06T17:45:44+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-979954-g",
@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-06T07:30:44Z",
-        "snapshot_aest": "2026-09-06T17:30:44+10:00",
+        "snapshot_utc": "2026-09-06T07:45:44Z",
+        "snapshot_aest": "2026-09-06T17:45:44+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-980027-g",
@@ -431,8 +431,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-06T07:30:44Z",
-        "snapshot_aest": "2026-09-06T17:30:44+10:00",
+        "snapshot_utc": "2026-09-06T07:45:44Z",
+        "snapshot_aest": "2026-09-06T17:45:44+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-980050-g",
@@ -531,8 +531,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-06T07:30:44Z",
-        "snapshot_aest": "2026-09-06T17:30:44+10:00",
+        "snapshot_utc": "2026-09-06T07:45:44Z",
+        "snapshot_aest": "2026-09-06T17:45:44+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-980057-g",
@@ -545,7 +545,7 @@
         "suburb": "SLACKS CREEK",
         "street_name": "GEEBA ST, GOMANA ST, LAKE RD, RESERVE RD, WINANI ST",
         "start_utc": "2026-09-06T06:30:53Z",
-        "etr_utc": "2026-09-06T07:30:00Z",
+        "etr_utc": "2026-09-06T09:30:00Z",
         "centroid_lon": 153.1244480928782,
         "centroid_lat": -27.63196368815654,
         "lga_name": "Logan City",
@@ -623,8 +623,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-06T07:30:44Z",
-        "snapshot_aest": "2026-09-06T17:30:44+10:00",
+        "snapshot_utc": "2026-09-06T07:45:44Z",
+        "snapshot_aest": "2026-09-06T17:45:44+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908646",
@@ -707,8 +707,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-06T07:30:44Z",
-        "snapshot_aest": "2026-09-06T17:30:44+10:00",
+        "snapshot_utc": "2026-09-06T07:45:44Z",
+        "snapshot_aest": "2026-09-06T17:45:44+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908722",
@@ -726,6 +726,66 @@
         "centroid_lat": -19.259161430288486,
         "lga_name": "Townsville City",
         "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.29318317381,
+              -19.6159349832975
+            ],
+            [
+              147.293688383384,
+              -19.6163582415203
+            ],
+            [
+              147.293241716853,
+              -19.6168369760242
+            ],
+            [
+              147.290789110958,
+              -19.6169798963775
+            ],
+            [
+              147.29028390689,
+              -19.6165566299784
+            ],
+            [
+              147.290730581519,
+              -19.6160779026929
+            ],
+            [
+              147.29318317381,
+              -19.6159349832975
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-06T07:45:44Z",
+        "snapshot_aest": "2026-09-06T17:45:44+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908723",
+        "outage_id": "908723",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 6,
+        "affected_customers_known": true,
+        "suburb": "AYR",
+        "street_name": "SEXTON RD",
+        "start_utc": "2026-09-06T06:41:44Z",
+        "etr_utc": null,
+        "centroid_lon": 147.29198675329792,
+        "centroid_lat": -19.616457520640772,
+        "lga_name": "Burdekin Shire",
+        "lga_code": "1900",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
