@@ -39,8 +39,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-07T03:00:54Z",
-        "snapshot_aest": "2026-09-07T13:00:54+10:00",
+        "snapshot_utc": "2026-09-07T03:15:38Z",
+        "snapshot_aest": "2026-09-07T13:15:38+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-980280-g",
@@ -139,8 +139,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-07T03:00:54Z",
-        "snapshot_aest": "2026-09-07T13:00:54+10:00",
+        "snapshot_utc": "2026-09-07T03:15:38Z",
+        "snapshot_aest": "2026-09-07T13:15:38+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908749",
@@ -158,6 +158,106 @@
         "centroid_lat": -17.949239733582203,
         "lga_name": "Cassowary Coast Regional",
         "lga_code": "2260",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.739012871958,
+              -16.8449231793114
+            ],
+            [
+              145.739384575869,
+              -16.8442836270907
+            ],
+            [
+              145.740206719755,
+              -16.8441923575237
+            ],
+            [
+              145.740289867562,
+              -16.8441902727583
+            ],
+            [
+              145.741971805147,
+              -16.844291977467
+            ],
+            [
+              145.742062534039,
+              -16.8443061494146
+            ],
+            [
+              145.743398595798,
+              -16.844646898272
+            ],
+            [
+              145.743662870595,
+              -16.8448245635814
+            ],
+            [
+              145.743885724291,
+              -16.8451311089466
+            ],
+            [
+              145.743858694261,
+              -16.8456831139732
+            ],
+            [
+              145.743671763249,
+              -16.8458946671083
+            ],
+            [
+              145.743572178264,
+              -16.8459794061926
+            ],
+            [
+              145.742815659272,
+              -16.8464583902864
+            ],
+            [
+              145.742411383375,
+              -16.8465101063478
+            ],
+            [
+              145.73949780811,
+              -16.845588133705
+            ],
+            [
+              145.739218857537,
+              -16.845349476634
+            ],
+            [
+              145.739012871958,
+              -16.8449231793114
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-07T03:15:38Z",
+        "snapshot_aest": "2026-09-07T13:15:38+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908750",
+        "outage_id": "908750",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to public safety concerns.",
+        "affected_customers": 44,
+        "affected_customers_known": true,
+        "suburb": "HOLLOWAYS BEACH",
+        "street_name": "ELM ST, GERBERA ST, MAGNOLIA ST, OLEANDER ST",
+        "start_utc": "2026-09-07T02:59:04Z",
+        "etr_utc": "2026-09-07T05:00:00Z",
+        "centroid_lon": 145.74155677832613,
+        "centroid_lat": -16.845233456733933,
+        "lga_name": "Cairns Regional",
+        "lga_code": "2080",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
