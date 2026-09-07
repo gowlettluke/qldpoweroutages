@@ -59,8 +59,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-07T05:45:35Z",
-        "snapshot_aest": "2026-09-07T15:45:35+10:00",
+        "snapshot_utc": "2026-09-07T06:00:50Z",
+        "snapshot_aest": "2026-09-07T16:00:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908753",
@@ -135,8 +135,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-07T05:45:35Z",
-        "snapshot_aest": "2026-09-07T15:45:35+10:00",
+        "snapshot_utc": "2026-09-07T06:00:50Z",
+        "snapshot_aest": "2026-09-07T16:00:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908754",
@@ -154,6 +154,78 @@
         "centroid_lat": -19.258322638098573,
         "lga_name": "Townsville City",
         "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.15170069677,
+              -23.0338543610717
+            ],
+            [
+              148.151688048098,
+              -23.033197152745
+            ],
+            [
+              148.304152293436,
+              -22.895185985626
+            ],
+            [
+              148.304689175257,
+              -22.895095290653
+            ],
+            [
+              148.304980349556,
+              -22.8955229249184
+            ],
+            [
+              148.299608210918,
+              -23.0539796265937
+            ],
+            [
+              148.299249409277,
+              -23.0544009835964
+            ],
+            [
+              148.204873534968,
+              -23.0782954249806
+            ],
+            [
+              148.204416648808,
+              -23.0781940424885
+            ],
+            [
+              148.15170069677,
+              -23.0338543610717
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-07T06:00:50Z",
+        "snapshot_aest": "2026-09-07T16:00:50+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908755",
+        "outage_id": "908755",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to a vehicle accident.",
+        "affected_customers": 10,
+        "affected_customers_known": true,
+        "suburb": "BELCONG, CAPELLA, DYSART, TIERI",
+        "street_name": "BOOROONDARRA CAPELLA RD, CRINUM RD, OLD MALVERN RD",
+        "start_utc": "2026-09-07T05:34:55Z",
+        "etr_utc": null,
+        "centroid_lon": 148.24566312933305,
+        "centroid_lat": -23.005652669936094,
+        "lga_name": "Central Highlands Regional",
+        "lga_code": "2270",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
