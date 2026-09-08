@@ -47,21 +47,21 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-08T02:30:43Z",
-        "snapshot_aest": "2026-09-08T12:30:43+10:00",
+        "snapshot_utc": "2026-09-08T02:45:37Z",
+        "snapshot_aest": "2026-09-08T12:45:37+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-980525-g",
         "outage_id": "INCD-980525-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 5,
         "affected_customers_known": true,
         "suburb": "ACACIA RIDGE",
         "street_name": "BRADMAN ST",
         "start_utc": "2026-09-08T02:23:46Z",
-        "etr_utc": "2026-09-08T04:00:00Z",
+        "etr_utc": "2026-09-08T03:30:00Z",
         "centroid_lon": 153.036292978589,
         "centroid_lat": -27.594345530816707,
         "lga_name": "Brisbane City",
@@ -115,8 +115,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-08T02:30:43Z",
-        "snapshot_aest": "2026-09-08T12:30:43+10:00",
+        "snapshot_utc": "2026-09-08T02:45:37Z",
+        "snapshot_aest": "2026-09-08T12:45:37+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908755",
@@ -215,8 +215,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-08T02:30:43Z",
-        "snapshot_aest": "2026-09-08T12:30:43+10:00",
+        "snapshot_utc": "2026-09-08T02:45:37Z",
+        "snapshot_aest": "2026-09-08T12:45:37+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908758",
@@ -331,14 +331,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-08T02:30:43Z",
-        "snapshot_aest": "2026-09-08T12:30:43+10:00",
+        "snapshot_utc": "2026-09-08T02:45:37Z",
+        "snapshot_aest": "2026-09-08T12:45:37+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908807",
         "outage_id": "908807",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 367,
         "affected_customers_known": true,
@@ -350,6 +350,106 @@
         "centroid_lat": -17.432536781020662,
         "lga_name": "Tablelands Regional",
         "lga_code": "6820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.008804901809,
+              -27.3870001885841
+            ],
+            [
+              152.00902359778,
+              -27.3864026159991
+            ],
+            [
+              152.021727849227,
+              -27.3804715028645
+            ],
+            [
+              152.02194487362,
+              -27.3804204916801
+            ],
+            [
+              152.044483894759,
+              -27.3797545076023
+            ],
+            [
+              152.044649126063,
+              -27.3797742306153
+            ],
+            [
+              152.048823170613,
+              -27.3809228263958
+            ],
+            [
+              152.049082061647,
+              -27.3816179519822
+            ],
+            [
+              152.041140911485,
+              -27.391342569752
+            ],
+            [
+              152.040955599836,
+              -27.3914814783611
+            ],
+            [
+              152.024380616723,
+              -27.3987399311615
+            ],
+            [
+              152.024113197524,
+              -27.3987841008859
+            ],
+            [
+              152.017172523491,
+              -27.3982243530422
+            ],
+            [
+              152.01697783261,
+              -27.3981718906135
+            ],
+            [
+              152.014377227586,
+              -27.3969150160621
+            ],
+            [
+              152.014164964548,
+              -27.3967180672319
+            ],
+            [
+              152.008804901809,
+              -27.3870001885841
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-08T02:45:37Z",
+        "snapshot_aest": "2026-09-08T12:45:37+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908810",
+        "outage_id": "908810",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 38,
+        "affected_customers_known": true,
+        "suburb": "GEHAM, HAMPTON, MOUNT LUKE",
+        "street_name": "ALF RD, CONNOLLY RD, JONAS RD, LUBACH RD, MOUNT LUKE RD, NEW ENGLAND HWY, PERKINS FLAT RD, ZELLER RD",
+        "start_utc": "2026-09-08T02:22:00Z",
+        "etr_utc": null,
+        "centroid_lon": 152.0277328141622,
+        "centroid_lat": -27.388190754529358,
+        "lga_name": "Toowoomba Regional",
+        "lga_code": "6910",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
