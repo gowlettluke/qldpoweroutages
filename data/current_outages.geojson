@@ -83,8 +83,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-09T03:30:50Z",
-        "snapshot_aest": "2026-09-09T13:30:50+10:00",
+        "snapshot_utc": "2026-09-09T03:45:39Z",
+        "snapshot_aest": "2026-09-09T13:45:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-980696-g",
@@ -167,8 +167,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-09T03:30:50Z",
-        "snapshot_aest": "2026-09-09T13:30:50+10:00",
+        "snapshot_utc": "2026-09-09T03:45:39Z",
+        "snapshot_aest": "2026-09-09T13:45:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908758",
@@ -239,8 +239,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-09T03:30:50Z",
-        "snapshot_aest": "2026-09-09T13:30:50+10:00",
+        "snapshot_utc": "2026-09-09T03:45:39Z",
+        "snapshot_aest": "2026-09-09T13:45:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908896",
@@ -258,6 +258,70 @@
         "centroid_lat": -15.892364321953236,
         "lga_name": "Cook Shire",
         "lga_code": "2500",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.782470277452,
+              -25.5329475704796
+            ],
+            [
+              152.78181221815,
+              -25.5331225789617
+            ],
+            [
+              152.781591415341,
+              -25.5325335427492
+            ],
+            [
+              152.785599197334,
+              -25.5247329120466
+            ],
+            [
+              152.786156724453,
+              -25.524484129417
+            ],
+            [
+              152.786983362081,
+              -25.5246522317626
+            ],
+            [
+              152.787304647718,
+              -25.5253150228969
+            ],
+            [
+              152.782470277452,
+              -25.5329475704796
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-09T03:45:39Z",
+        "snapshot_aest": "2026-09-09T13:45:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908897",
+        "outage_id": "908897",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "BEAVER ROCK, GRANVILLE",
+        "street_name": "BEAVER ROCK RD, DIMONDS RD",
+        "start_utc": "2026-09-09T03:00:36Z",
+        "etr_utc": "2026-09-09T07:00:00Z",
+        "centroid_lon": 152.78451682522106,
+        "centroid_lat": -25.528402689925397,
+        "lga_name": "Fraser Coast Regional",
+        "lga_code": "3220",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
