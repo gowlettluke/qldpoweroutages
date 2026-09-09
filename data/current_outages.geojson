@@ -83,8 +83,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-09T04:00:54Z",
-        "snapshot_aest": "2026-09-09T14:00:54+10:00",
+        "snapshot_utc": "2026-09-09T04:15:42Z",
+        "snapshot_aest": "2026-09-09T14:15:42+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-980696-g",
@@ -97,7 +97,7 @@
         "suburb": "COOLUM BEACH",
         "street_name": "BARRA CRES, COOLUM ESP, COOLUM TCE, DAVID LOW WAY, SCRUB RD",
         "start_utc": "2026-09-09T00:37:18Z",
-        "etr_utc": "2026-09-09T04:30:00Z",
+        "etr_utc": "2026-09-09T05:00:00Z",
         "centroid_lon": 153.0922659051432,
         "centroid_lat": -26.53524012432702,
         "lga_name": "Sunshine Coast Regional",
@@ -167,8 +167,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-09T04:00:54Z",
-        "snapshot_aest": "2026-09-09T14:00:54+10:00",
+        "snapshot_utc": "2026-09-09T04:15:42Z",
+        "snapshot_aest": "2026-09-09T14:15:42+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908758",
@@ -239,8 +239,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-09T04:00:54Z",
-        "snapshot_aest": "2026-09-09T14:00:54+10:00",
+        "snapshot_utc": "2026-09-09T04:15:42Z",
+        "snapshot_aest": "2026-09-09T14:15:42+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908896",
@@ -253,7 +253,7 @@
         "suburb": "LAKELAND",
         "street_name": "HONEY DAM RD, UNKNOWN ST",
         "start_utc": "2026-09-08T23:30:00Z",
-        "etr_utc": null,
+        "etr_utc": "2026-09-09T05:30:00Z",
         "centroid_lon": 144.80213268105405,
         "centroid_lat": -15.892364321953236,
         "lga_name": "Cook Shire",
@@ -303,8 +303,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-09T04:00:54Z",
-        "snapshot_aest": "2026-09-09T14:00:54+10:00",
+        "snapshot_utc": "2026-09-09T04:15:42Z",
+        "snapshot_aest": "2026-09-09T14:15:42+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908897",
@@ -322,6 +322,94 @@
         "centroid_lat": -25.528402689925397,
         "lga_name": "Fraser Coast Regional",
         "lga_code": "3220",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.903680877681,
+              -19.3659623238512
+            ],
+            [
+              146.903786722737,
+              -19.3654173107954
+            ],
+            [
+              146.904369289339,
+              -19.3653795193784
+            ],
+            [
+              146.906347988056,
+              -19.3666420488843
+            ],
+            [
+              146.906423495383,
+              -19.3667018402812
+            ],
+            [
+              146.90736362265,
+              -19.3676183162682
+            ],
+            [
+              146.907423248193,
+              -19.3676895756644
+            ],
+            [
+              146.907952305623,
+              -19.3684724392387
+            ],
+            [
+              146.90799472355,
+              -19.3688815206017
+            ],
+            [
+              146.907711895763,
+              -19.3695652309365
+            ],
+            [
+              146.90702564982,
+              -19.3697886507345
+            ],
+            [
+              146.905328030934,
+              -19.3688321341065
+            ],
+            [
+              146.905148311544,
+              -19.368651397219
+            ],
+            [
+              146.903680877681,
+              -19.3659623238512
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-09T04:15:42Z",
+        "snapshot_aest": "2026-09-09T14:15:42+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|908898",
+        "outage_id": "908898",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 10,
+        "affected_customers_known": true,
+        "suburb": "NOME",
+        "street_name": "MUNTALUNGA DR, SERENE CT",
+        "start_utc": "2026-09-09T01:48:33Z",
+        "etr_utc": null,
+        "centroid_lon": 146.90589009083263,
+        "centroid_lat": -19.367657268698103,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
