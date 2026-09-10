@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-10T20:30:49Z",
-        "snapshot_aest": "2026-09-11T06:30:49+10:00",
+        "snapshot_utc": "2026-09-10T20:45:46Z",
+        "snapshot_aest": "2026-09-11T06:45:46+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-981071-g",
@@ -91,6 +91,102 @@
         "lga_name": "Redland City",
         "lga_code": "6250",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.956666954034,
+              -21.150517089018
+            ],
+            [
+              148.956465852849,
+              -21.1500994724406
+            ],
+            [
+              148.95655703671,
+              -21.1493097545884
+            ],
+            [
+              148.956557797962,
+              -21.1493035612353
+            ],
+            [
+              148.956806969992,
+              -21.1473923820637
+            ],
+            [
+              148.956859779283,
+              -21.1472351624975
+            ],
+            [
+              148.957065068819,
+              -21.1468730701881
+            ],
+            [
+              148.957568875036,
+              -21.1466396635169
+            ],
+            [
+              148.957965226728,
+              -21.147013301782
+            ],
+            [
+              148.958223209275,
+              -21.148515823897
+            ],
+            [
+              148.958226289169,
+              -21.1485369176715
+            ],
+            [
+              148.958355874657,
+              -21.1496124586678
+            ],
+            [
+              148.958351221728,
+              -21.1497436084666
+            ],
+            [
+              148.958162574996,
+              -21.1507211820786
+            ],
+            [
+              148.957411501356,
+              -21.1510097382211
+            ],
+            [
+              148.956666954034,
+              -21.150517089018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-10T20:45:46Z",
+        "snapshot_aest": "2026-09-11T06:45:46+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909024",
+        "outage_id": "909024",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 20,
+        "affected_customers_known": true,
+        "suburb": "MARIAN",
+        "street_name": "GROSSKREUTZ AVE, KENNYS RD",
+        "start_utc": "2026-09-10T19:29:38Z",
+        "etr_utc": null,
+        "centroid_lon": 148.9574359601734,
+        "centroid_lat": -21.148964647916173,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
