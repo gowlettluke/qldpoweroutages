@@ -87,8 +87,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-10T01:15:40Z",
-        "snapshot_aest": "2026-09-10T11:15:40+10:00",
+        "snapshot_utc": "2026-09-10T01:30:43Z",
+        "snapshot_aest": "2026-09-10T11:30:43+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-980880-g",
@@ -101,7 +101,7 @@
         "suburb": "SOUTH BRISBANE, WEST END",
         "street_name": "BOUNDARY ST, MELBOURNE ST, MOLLISON ST, OCONNELL ST, RUSSELL ST",
         "start_utc": "2026-09-09T23:41:29Z",
-        "etr_utc": "2026-09-10T01:30:00Z",
+        "etr_utc": "2026-09-10T02:00:00Z",
         "centroid_lon": 153.01231393388937,
         "centroid_lat": -27.47795323339714,
         "lga_name": "Brisbane City",
@@ -187,8 +187,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-10T01:15:40Z",
-        "snapshot_aest": "2026-09-10T11:15:40+10:00",
+        "snapshot_utc": "2026-09-10T01:30:43Z",
+        "snapshot_aest": "2026-09-10T11:30:43+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-980845-g",
@@ -201,7 +201,7 @@
         "suburb": "COOROY, LAKE MACDONALD, TINBEERWAH",
         "street_name": "COOROY NOOSA RD, COVEYS RD, GUMBOIL RD, HAMERSLEY LANE, LAUREL LANE, SIVYERS RD, WORBA LANE",
         "start_utc": "2026-09-09T22:46:42Z",
-        "etr_utc": "2026-09-10T01:30:00Z",
+        "etr_utc": "2026-09-10T03:30:00Z",
         "centroid_lon": 152.9618954845259,
         "centroid_lat": -26.400413486857396,
         "lga_name": "Noosa Shire",
@@ -343,8 +343,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-10T01:15:40Z",
-        "snapshot_aest": "2026-09-10T11:15:40+10:00",
+        "snapshot_utc": "2026-09-10T01:30:43Z",
+        "snapshot_aest": "2026-09-10T11:30:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|908986",
@@ -362,6 +362,82 @@
         "centroid_lat": -27.554837769033817,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.114407595029,
+              -21.3063842969455
+            ],
+            [
+              149.114115402693,
+              -21.3056413119021
+            ],
+            [
+              149.120906515497,
+              -21.2983301938247
+            ],
+            [
+              149.121238888459,
+              -21.2981760661352
+            ],
+            [
+              149.123442733089,
+              -21.2980427954057
+            ],
+            [
+              149.123946234236,
+              -21.2984050720344
+            ],
+            [
+              149.125168482171,
+              -21.3041497029388
+            ],
+            [
+              149.125132483104,
+              -21.3044291212348
+            ],
+            [
+              149.123673494748,
+              -21.307355116286
+            ],
+            [
+              149.123165813645,
+              -21.3076105222401
+            ],
+            [
+              149.114407595029,
+              -21.3063842969455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-10T01:30:43Z",
+        "snapshot_aest": "2026-09-10T11:30:43+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909006",
+        "outage_id": "909006",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
+        "affected_customers": 10,
+        "affected_customers_known": true,
+        "suburb": "BALBERRA, NORTH MACKAY",
+        "street_name": "BALBERRA RD, CAMPBELLS RIDGE RD, HILL ST, IWERS RD",
+        "start_utc": "2026-09-10T00:03:13Z",
+        "etr_utc": null,
+        "centroid_lon": 149.12063576541323,
+        "centroid_lat": -21.303387570568674,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
