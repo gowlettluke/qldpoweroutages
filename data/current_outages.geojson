@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-12T05:30:49Z",
-        "snapshot_aest": "2026-09-12T15:30:49+10:00",
+        "snapshot_utc": "2026-09-12T05:45:38Z",
+        "snapshot_aest": "2026-09-12T15:45:38+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909127",
@@ -90,6 +90,86 @@
         "centroid_lat": -21.625758162406367,
         "lga_name": "Isaac Regional",
         "lga_code": "3980",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.452331114972,
+              -17.5642275230919
+            ],
+            [
+              145.452349081316,
+              -17.5637086489783
+            ],
+            [
+              145.452863931924,
+              -17.5635485448749
+            ],
+            [
+              145.453930237471,
+              -17.5638633095206
+            ],
+            [
+              145.453950509922,
+              -17.5638697800405
+            ],
+            [
+              145.456205838457,
+              -17.5646445423152
+            ],
+            [
+              145.456393055936,
+              -17.56537642232
+            ],
+            [
+              145.455166749589,
+              -17.5666500840249
+            ],
+            [
+              145.454495605495,
+              -17.5666704574933
+            ],
+            [
+              145.453206915213,
+              -17.5654912220173
+            ],
+            [
+              145.453137756987,
+              -17.5654114807192
+            ],
+            [
+              145.452331114972,
+              -17.5642275230919
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-12T05:45:38Z",
+        "snapshot_aest": "2026-09-12T15:45:38+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909235",
+        "outage_id": "909235",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 11,
+        "affected_customers_known": true,
+        "suburb": "TUMOULIN",
+        "street_name": "KYNARA ST, POZIERES ST, TUMOULIN RD",
+        "start_utc": "2026-09-12T05:18:01Z",
+        "etr_utc": null,
+        "centroid_lon": 145.454367752401,
+        "centroid_lat": -17.565059484210856,
+        "lga_name": "Tablelands Regional",
+        "lga_code": "6820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
