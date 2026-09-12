@@ -43,8 +43,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-12T22:45:36Z",
-        "snapshot_aest": "2026-09-13T08:45:36+10:00",
+        "snapshot_utc": "2026-09-12T23:00:53Z",
+        "snapshot_aest": "2026-09-13T09:00:53+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909520",
@@ -103,14 +103,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-12T22:45:36Z",
-        "snapshot_aest": "2026-09-13T08:45:36+10:00",
+        "snapshot_utc": "2026-09-12T23:00:53Z",
+        "snapshot_aest": "2026-09-13T09:00:53+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909561",
         "outage_id": "909561",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs.",
         "affected_customers": 3,
         "affected_customers_known": true,
@@ -122,6 +122,138 @@
         "centroid_lat": -17.154033377049167,
         "lga_name": "Mareeba Shire",
         "lga_code": "4880",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.703968074261,
+              -19.3378806624919
+            ],
+            [
+              146.703702229676,
+              -19.3373489136439
+            ],
+            [
+              146.704582278759,
+              -19.3342850476074
+            ],
+            [
+              146.704633090292,
+              -19.3341718407269
+            ],
+            [
+              146.708902788332,
+              -19.3274001330434
+            ],
+            [
+              146.709015205106,
+              -19.327278333732
+            ],
+            [
+              146.715083017354,
+              -19.3227038728331
+            ],
+            [
+              146.715112947108,
+              -19.3226830607547
+            ],
+            [
+              146.716602123933,
+              -19.3217298958815
+            ],
+            [
+              146.716666700375,
+              -19.3216951858843
+            ],
+            [
+              146.717587914321,
+              -19.3212865025659
+            ],
+            [
+              146.71784731008,
+              -19.3212473624008
+            ],
+            [
+              146.718780209193,
+              -19.321355867745
+            ],
+            [
+              146.718798621548,
+              -19.3213583567529
+            ],
+            [
+              146.71902671605,
+              -19.321393519862
+            ],
+            [
+              146.719426360698,
+              -19.3218454006133
+            ],
+            [
+              146.719184123908,
+              -19.3395769575278
+            ],
+            [
+              146.719164017944,
+              -19.3397011607301
+            ],
+            [
+              146.719055831676,
+              -19.3400428376364
+            ],
+            [
+              146.718961900109,
+              -19.3402062615808
+            ],
+            [
+              146.716861291515,
+              -19.3425404805146
+            ],
+            [
+              146.716478977717,
+              -19.3426984372215
+            ],
+            [
+              146.715356729877,
+              -19.3426528299805
+            ],
+            [
+              146.715183703965,
+              -19.3426142760446
+            ],
+            [
+              146.703968074261,
+              -19.3378806624919
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-12T23:00:53Z",
+        "snapshot_aest": "2026-09-13T09:00:53+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909564",
+        "outage_id": "909564",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 968,
+        "affected_customers_known": true,
+        "suburb": "BUSHLAND BEACH, CONDON, RASMUSSEN",
+        "street_name": "BALSAM ST, BECK DR, BONNY CT, BOWHUNTERS RD, BRIDGEWATER DR, BURGUNDY CT, CABERNET CT, CHARDONNAY DR, CLARET CL, DIANNE CT, EIDER CT, GIBBARD ST, GOLLOGLY LANE, GOULDIAN AVE, JACANA CRES, KIA-ORA CT, LARK CT, LIMESTONE CRES, MERLOT MEWS, MUSIC CT, NORTH BECK DR, NORTH VICKERS RD, PARKSIDE DR, RIESLING CT, RIVERGUM CT, RUTH CT, SATRIANI CRES, SHIRAZ AVE, SHRIKE CT, SMITH RD, TARTAN PL, TERN CT, THISTLE CT, VAI AVE",
+        "start_utc": "2026-09-12T22:46:39Z",
+        "etr_utc": null,
+        "centroid_lon": 146.71322654557875,
+        "centroid_lat": -19.332853807279726,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
