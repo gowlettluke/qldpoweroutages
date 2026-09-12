@@ -43,8 +43,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-12T22:40:56Z",
-        "snapshot_aest": "2026-09-13T08:40:56+10:00",
+        "snapshot_utc": "2026-09-12T22:45:36Z",
+        "snapshot_aest": "2026-09-13T08:45:36+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909520",
@@ -62,6 +62,66 @@
         "centroid_lat": -25.641142471532238,
         "lga_name": "Fraser Coast Regional",
         "lga_code": "3220",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.191161367292,
+              -17.1573207940217
+            ],
+            [
+              145.190853616936,
+              -17.1578870493976
+            ],
+            [
+              145.19026461231,
+              -17.1575911842917
+            ],
+            [
+              145.188031625355,
+              -17.150746181074
+            ],
+            [
+              145.188339369841,
+              -17.1501799293166
+            ],
+            [
+              145.188928348647,
+              -17.1504757977449
+            ],
+            [
+              145.191161367292,
+              -17.1573207940217
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-12T22:45:36Z",
+        "snapshot_aest": "2026-09-13T08:45:36+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909561",
+        "outage_id": "909561",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "MUTCHILBA",
+        "street_name": "ROBINSON RD",
+        "start_utc": "2026-09-12T21:04:41Z",
+        "etr_utc": null,
+        "centroid_lon": 145.1895953513938,
+        "centroid_lat": -17.154033377049167,
+        "lga_name": "Mareeba Shire",
+        "lga_code": "4880",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
