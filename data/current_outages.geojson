@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-13T14:00:57Z",
-        "snapshot_aest": "2026-09-14T00:00:57+10:00",
+        "snapshot_utc": "2026-09-13T14:15:39Z",
+        "snapshot_aest": "2026-09-14T00:15:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909608",
@@ -74,6 +74,66 @@
         "centroid_lat": -28.576317772685226,
         "lga_name": "Southern Downs Regional",
         "lga_code": "6660",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.083763506656,
+              -24.8696043457982
+            ],
+            [
+              152.084448134448,
+              -24.8694816332607
+            ],
+            [
+              152.084582645821,
+              -24.8701062189714
+            ],
+            [
+              152.082976844161,
+              -24.8722875609592
+            ],
+            [
+              152.082292198586,
+              -24.8724102693756
+            ],
+            [
+              152.082157693676,
+              -24.8717856802662
+            ],
+            [
+              152.083763506656,
+              -24.8696043457982
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-13T14:15:39Z",
+        "snapshot_aest": "2026-09-14T00:15:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909609",
+        "outage_id": "909609",
+        "outage_type": "unplanned",
+        "status": "Work delayed - crews unable to continue",
+        "reason": "The loss of supply is due to damage caused by external influences, such as birds or animals.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "BUCCA",
+        "street_name": "SOUTH BUCCA RD",
+        "start_utc": "2026-09-13T13:44:43Z",
+        "etr_utc": null,
+        "centroid_lon": 152.08337047795106,
+        "centroid_lat": -24.870946006809234,
+        "lga_name": "Bundaberg Regional",
+        "lga_code": "1820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
