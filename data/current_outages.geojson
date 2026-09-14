@@ -39,8 +39,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-14T21:30:44Z",
-        "snapshot_aest": "2026-09-15T07:30:44+10:00",
+        "snapshot_utc": "2026-09-14T21:45:49Z",
+        "snapshot_aest": "2026-09-15T07:45:49+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-981659-g",
@@ -111,14 +111,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-14T21:30:44Z",
-        "snapshot_aest": "2026-09-15T07:30:44+10:00",
+        "snapshot_utc": "2026-09-14T21:45:49Z",
+        "snapshot_aest": "2026-09-15T07:45:49+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909643",
         "outage_id": "909643",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 9,
         "affected_customers_known": true,
@@ -130,6 +130,122 @@
         "centroid_lat": -27.884297294500758,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.122357271211,
+              -16.5281276234219
+            ],
+            [
+              145.122790198301,
+              -16.527510214511
+            ],
+            [
+              145.132058974036,
+              -16.5274565318155
+            ],
+            [
+              145.132070617648,
+              -16.5274566037437
+            ],
+            [
+              145.133688397926,
+              -16.5274859939776
+            ],
+            [
+              145.133798402314,
+              -16.5275006952089
+            ],
+            [
+              145.13893110512,
+              -16.5287992308075
+            ],
+            [
+              145.139000876361,
+              -16.5288226939629
+            ],
+            [
+              145.205945480821,
+              -16.557214382276
+            ],
+            [
+              145.206069166063,
+              -16.5572911357704
+            ],
+            [
+              145.32355594398,
+              -16.6584865999601
+            ],
+            [
+              145.323712063153,
+              -16.6588429611092
+            ],
+            [
+              145.323397571117,
+              -16.6659218509484
+            ],
+            [
+              145.323392444957,
+              -16.6659718746153
+            ],
+            [
+              145.319808154288,
+              -16.6882087995967
+            ],
+            [
+              145.319457433556,
+              -16.688578038797
+            ],
+            [
+              145.313579430271,
+              -16.6899784447557
+            ],
+            [
+              145.31353311238,
+              -16.6899871214445
+            ],
+            [
+              145.195543879275,
+              -16.7061652988743
+            ],
+            [
+              145.195041886998,
+              -16.7058837596161
+            ],
+            [
+              145.122357271211,
+              -16.5281276234219
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-14T21:45:49Z",
+        "snapshot_aest": "2026-09-15T07:45:49+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909647",
+        "outage_id": "909647",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to public safety concerns.",
+        "affected_customers": 60,
+        "affected_customers_known": true,
+        "suburb": "MARYFARMS, MOUNT CARBINE, MOUNT MOLLOY, RIFLE CREEK",
+        "street_name": "BAIRD ST, BAKERS RD, BUTCHERS CREEK RD, EAST MARY RD, MITCHELLVALE RD, MOSSMAN MOUNT MOLLOY RD, MULLIGAN HWY, PENINSULA DEVELOPMENT RD, PUMP RD, UNKNOWN ST, WEST MARY RD",
+        "start_utc": "2026-09-14T21:34:00Z",
+        "etr_utc": null,
+        "centroid_lon": 145.2204473043572,
+        "centroid_lat": -16.628392232703543,
+        "lga_name": "Mareeba Shire",
+        "lga_code": "4880",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
