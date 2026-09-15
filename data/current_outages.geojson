@@ -59,8 +59,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-15T12:00:59Z",
-        "snapshot_aest": "2026-09-15T22:00:59+10:00",
+        "snapshot_utc": "2026-09-15T12:15:43Z",
+        "snapshot_aest": "2026-09-15T22:15:43+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-981833-g",
@@ -183,8 +183,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-15T12:00:59Z",
-        "snapshot_aest": "2026-09-15T22:00:59+10:00",
+        "snapshot_utc": "2026-09-15T12:15:43Z",
+        "snapshot_aest": "2026-09-15T22:15:43+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-981846-g",
@@ -243,8 +243,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-15T12:00:59Z",
-        "snapshot_aest": "2026-09-15T22:00:59+10:00",
+        "snapshot_utc": "2026-09-15T12:15:43Z",
+        "snapshot_aest": "2026-09-15T22:15:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909680",
@@ -262,6 +262,70 @@
         "centroid_lat": -25.786376683673645,
         "lga_name": "Murweh Shire",
         "lga_code": "5600",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.826987977181,
+              -15.9294703445203
+            ],
+            [
+              144.827345680502,
+              -15.92903337021
+            ],
+            [
+              144.836089015367,
+              -15.9269989943019
+            ],
+            [
+              144.836630529586,
+              -15.9272677831291
+            ],
+            [
+              144.836437253131,
+              -15.9278261907296
+            ],
+            [
+              144.827678491839,
+              -15.9328788510423
+            ],
+            [
+              144.826972576317,
+              -15.9324886176923
+            ],
+            [
+              144.826987977181,
+              -15.9294703445203
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-15T12:15:43Z",
+        "snapshot_aest": "2026-09-15T22:15:43+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909688",
+        "outage_id": "909688",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "LAKELAND",
+        "street_name": "PENINSULA DEVELOPMENT RD, UNKNOWN ST",
+        "start_utc": "2026-09-15T08:43:15Z",
+        "etr_utc": null,
+        "centroid_lon": 144.83075248578885,
+        "centroid_lat": -15.92965913646419,
+        "lga_name": "Cook Shire",
+        "lga_code": "2500",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
