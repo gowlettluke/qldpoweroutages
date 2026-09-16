@@ -39,8 +39,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-16T16:45:38Z",
-        "snapshot_aest": "2026-09-17T02:45:38+10:00",
+        "snapshot_utc": "2026-09-16T17:00:56Z",
+        "snapshot_aest": "2026-09-17T03:00:56+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-982063-g",
@@ -53,7 +53,7 @@
         "suburb": "KYBONG",
         "street_name": "GLORY HILL RD",
         "start_utc": "2026-09-16T12:17:36Z",
-        "etr_utc": "2026-09-16T17:00:00Z",
+        "etr_utc": "2026-09-16T17:30:00Z",
         "centroid_lon": 152.70555442982857,
         "centroid_lat": -26.298708261391308,
         "lga_name": "Gympie Regional",
@@ -147,8 +147,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-16T16:45:38Z",
-        "snapshot_aest": "2026-09-17T02:45:38+10:00",
+        "snapshot_utc": "2026-09-16T17:00:56Z",
+        "snapshot_aest": "2026-09-17T03:00:56+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909746",
@@ -166,6 +166,114 @@
         "centroid_lat": -12.78276984379686,
         "lga_name": "Cook Shire",
         "lga_code": "2500",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              138.117127783841,
+              -19.9232194488322
+            ],
+            [
+              138.11677904776,
+              -19.9226955783175
+            ],
+            [
+              138.117417953983,
+              -19.9197590001692
+            ],
+            [
+              138.117440935464,
+              -19.919685759435
+            ],
+            [
+              138.118131911807,
+              -19.9180208311008
+            ],
+            [
+              138.118770415599,
+              -19.917778483274
+            ],
+            [
+              138.120237275846,
+              -19.9184205982898
+            ],
+            [
+              138.120311572293,
+              -19.9184612426071
+            ],
+            [
+              138.124402341102,
+              -19.921196010954
+            ],
+            [
+              138.124325799094,
+              -19.9219677189709
+            ],
+            [
+              138.123067648056,
+              -19.9225108926101
+            ],
+            [
+              138.123008111328,
+              -19.9225321422962
+            ],
+            [
+              138.119833713834,
+              -19.9234394462822
+            ],
+            [
+              138.119756489028,
+              -19.9234550021678
+            ],
+            [
+              138.118974646855,
+              -19.9235488408994
+            ],
+            [
+              138.118861216289,
+              -19.9235494790133
+            ],
+            [
+              138.118275192306,
+              -19.9234858331392
+            ],
+            [
+              138.118214892314,
+              -19.9234755023226
+            ],
+            [
+              138.117127783841,
+              -19.9232194488322
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-16T17:00:56Z",
+        "snapshot_aest": "2026-09-17T03:00:56+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909750",
+        "outage_id": "909750",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to public safety concerns.",
+        "affected_customers": 33,
+        "affected_customers_known": true,
+        "suburb": "CAMOOWEAL",
+        "street_name": "AUSTRAL ST, BARKLY ST, KENNEDY ST, NOWRANIE ST",
+        "start_utc": "2026-09-16T16:41:07Z",
+        "etr_utc": null,
+        "centroid_lon": 138.120068156585,
+        "centroid_lat": -19.921024067962936,
+        "lga_name": "Mount Isa City",
+        "lga_code": "5300",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
