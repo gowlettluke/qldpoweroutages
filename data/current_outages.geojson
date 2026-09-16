@@ -8,106 +8,6 @@
         "coordinates": [
           [
             [
-              152.914681538732,
-              -27.4279956392567
-            ],
-            [
-              152.914607808653,
-              -27.4275907884858
-            ],
-            [
-              152.914850191047,
-              -27.426916793216
-            ],
-            [
-              152.915397733381,
-              -27.4266071555863
-            ],
-            [
-              152.916706018541,
-              -27.4267604252281
-            ],
-            [
-              152.916770538674,
-              -27.4267718318934
-            ],
-            [
-              152.917111148862,
-              -27.4268528953804
-            ],
-            [
-              152.917416098063,
-              -27.4270590956197
-            ],
-            [
-              152.917549567668,
-              -27.427260271498
-            ],
-            [
-              152.91760639071,
-              -27.4275947185303
-            ],
-            [
-              152.917362254228,
-              -27.4285102391935
-            ],
-            [
-              152.916790229325,
-              -27.4288514853777
-            ],
-            [
-              152.915481616057,
-              -27.4286647611349
-            ],
-            [
-              152.915259160572,
-              -27.42858093918
-            ],
-            [
-              152.915106808339,
-              -27.428479604262
-            ],
-            [
-              152.915001188228,
-              -27.4283846161486
-            ],
-            [
-              152.914681538732,
-              -27.4279956392567
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "snapshot_utc": "2026-09-16T05:15:39Z",
-        "snapshot_aest": "2026-09-16T15:15:39+10:00",
-        "provider_code": "au.qld.energex",
-        "provider_name": "Energex",
-        "outage_key": "au.qld.energex|unplanned|INCD-981988-g",
-        "outage_id": "INCD-981988-g",
-        "outage_type": "unplanned",
-        "status": "In Progress",
-        "reason": "Under Investigation",
-        "affected_customers": 32,
-        "affected_customers_known": true,
-        "suburb": "UPPER KEDRON",
-        "street_name": "BAUPLE CL, ENDEAVOUR ST, SUNDOWN CCT",
-        "start_utc": "2026-09-16T03:12:41Z",
-        "etr_utc": "2026-09-16T06:00:00Z",
-        "centroid_lon": 152.91612073403493,
-        "centroid_lat": -27.427705895734768,
-        "lga_name": "Brisbane City",
-        "lga_code": "1000",
-        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
               152.970173135654,
               -26.4217122778678
             ],
@@ -179,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-16T05:15:39Z",
-        "snapshot_aest": "2026-09-16T15:15:39+10:00",
+        "snapshot_utc": "2026-09-16T05:30:50Z",
+        "snapshot_aest": "2026-09-16T15:30:50+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-982007-g",
@@ -263,8 +163,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-16T05:15:39Z",
-        "snapshot_aest": "2026-09-16T15:15:39+10:00",
+        "snapshot_utc": "2026-09-16T05:30:50Z",
+        "snapshot_aest": "2026-09-16T15:30:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909742",
@@ -282,6 +182,66 @@
         "centroid_lat": -22.56989044837631,
         "lga_name": "Isaac Regional",
         "lga_code": "3980",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.767878576371,
+              -16.9335595587143
+            ],
+            [
+              145.768444522287,
+              -16.9338936983256
+            ],
+            [
+              145.76809737903,
+              -16.934438445526
+            ],
+            [
+              145.767607379167,
+              -16.9345514645255
+            ],
+            [
+              145.767041433007,
+              -16.9342173225839
+            ],
+            [
+              145.767388578726,
+              -16.9336725773387
+            ],
+            [
+              145.767878576371,
+              -16.9335595587143
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-16T05:30:50Z",
+        "snapshot_aest": "2026-09-16T15:30:50+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909744",
+        "outage_id": "909744",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to a vehicle accident.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "BUNGALOW, PORTSMITH",
+        "street_name": "HARTLEY ST",
+        "start_utc": "2026-09-16T03:40:34Z",
+        "etr_utc": null,
+        "centroid_lon": 145.76772512678724,
+        "centroid_lat": -16.93405343767114,
+        "lga_name": "Cairns Regional",
+        "lga_code": "2080",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
