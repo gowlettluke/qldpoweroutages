@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-16T04:00:55Z",
-        "snapshot_aest": "2026-09-16T14:00:55+10:00",
+        "snapshot_utc": "2026-09-16T04:15:36Z",
+        "snapshot_aest": "2026-09-16T14:15:36+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-981988-g",
@@ -99,6 +99,154 @@
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.036970681509,
+              -22.5141888293084
+            ],
+            [
+              148.037527260987,
+              -22.5136426633211
+            ],
+            [
+              148.123457920144,
+              -22.5274228217891
+            ],
+            [
+              148.123857552077,
+              -22.5278103932455
+            ],
+            [
+              148.13792023648,
+              -22.6295071799847
+            ],
+            [
+              148.137897822787,
+              -22.6297114255525
+            ],
+            [
+              148.136370380734,
+              -22.6338398856081
+            ],
+            [
+              148.136354191826,
+              -22.6338779361451
+            ],
+            [
+              148.132713006275,
+              -22.6414169830949
+            ],
+            [
+              148.131992012781,
+              -22.6416034786188
+            ],
+            [
+              148.056630985987,
+              -22.593114506845
+            ],
+            [
+              148.056434132236,
+              -22.5928445753536
+            ],
+            [
+              148.036970681509,
+              -22.5141888293084
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-16T04:15:36Z",
+        "snapshot_aest": "2026-09-16T14:15:36+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909742",
+        "outage_id": "909742",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 16,
+        "affected_customers_known": true,
+        "suburb": "CLERMONT, DYSART",
+        "street_name": "CLERMONT-DYSART RD, CLUEN ACCESS RD, LUXOR RD, OFF PEAK DOWNS HWY, UNKNOWN ST",
+        "start_utc": "2026-09-16T04:00:00Z",
+        "etr_utc": "2026-09-16T08:00:00Z",
+        "centroid_lon": 148.09199856329994,
+        "centroid_lat": -22.56989044837631,
+        "lga_name": "Isaac Regional",
+        "lga_code": "3980",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.775927778431,
+              -19.2443096961599
+            ],
+            [
+              146.775699817292,
+              -19.243836095068
+            ],
+            [
+              146.776092885126,
+              -19.2434730545669
+            ],
+            [
+              146.779955930714,
+              -19.2428909323819
+            ],
+            [
+              146.780500383822,
+              -19.2434078788596
+            ],
+            [
+              146.780085072464,
+              -19.2458994144358
+            ],
+            [
+              146.779375521265,
+              -19.246219111601
+            ],
+            [
+              146.775927778431,
+              -19.2443096961599
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-16T04:15:36Z",
+        "snapshot_aest": "2026-09-16T14:15:36+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909743",
+        "outage_id": "909743",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "BELGIAN GARDENS, ROWES BAY",
+        "street_name": "OLD COMMON RD",
+        "start_utc": "2026-09-16T04:30:00Z",
+        "etr_utc": "2026-09-16T06:30:00Z",
+        "centroid_lon": 146.77850435514367,
+        "centroid_lat": -19.244345594203967,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
