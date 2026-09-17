@@ -47,8 +47,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-17T19:30:45Z",
-        "snapshot_aest": "2026-09-18T05:30:45+10:00",
+        "snapshot_utc": "2026-09-17T19:45:36Z",
+        "snapshot_aest": "2026-09-18T05:45:36+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-982242-g",
@@ -123,8 +123,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-17T19:30:45Z",
-        "snapshot_aest": "2026-09-18T05:30:45+10:00",
+        "snapshot_utc": "2026-09-17T19:45:36Z",
+        "snapshot_aest": "2026-09-18T05:45:36+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909865",
@@ -227,8 +227,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-17T19:30:45Z",
-        "snapshot_aest": "2026-09-18T05:30:45+10:00",
+        "snapshot_utc": "2026-09-17T19:45:36Z",
+        "snapshot_aest": "2026-09-18T05:45:36+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909883",
@@ -335,8 +335,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-17T19:30:45Z",
-        "snapshot_aest": "2026-09-18T05:30:45+10:00",
+        "snapshot_utc": "2026-09-17T19:45:36Z",
+        "snapshot_aest": "2026-09-18T05:45:36+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909891",
@@ -354,6 +354,102 @@
         "centroid_lat": -9.954954209439695,
         "lga_name": "Torres Shire",
         "lga_code": "6950",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.755844383963,
+              -23.1539132259998
+            ],
+            [
+              150.755292365423,
+              -23.1537425476619
+            ],
+            [
+              150.755310517891,
+              -23.1532045836498
+            ],
+            [
+              150.757437564687,
+              -23.1507261992408
+            ],
+            [
+              150.757728349714,
+              -23.1505635607311
+            ],
+            [
+              150.758883006215,
+              -23.1503604428938
+            ],
+            [
+              150.758998956691,
+              -23.1503530851364
+            ],
+            [
+              150.759251706172,
+              -23.1503650061001
+            ],
+            [
+              150.759412913031,
+              -23.1503985348785
+            ],
+            [
+              150.760859732395,
+              -23.150950844576
+            ],
+            [
+              150.761136630204,
+              -23.1512261426695
+            ],
+            [
+              150.761267942724,
+              -23.1515936796463
+            ],
+            [
+              150.76110574723,
+              -23.1520899539853
+            ],
+            [
+              150.760633751552,
+              -23.1524320065969
+            ],
+            [
+              150.760484988365,
+              -23.152505532646
+            ],
+            [
+              150.755844383963,
+              -23.1539132259998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-17T19:45:36Z",
+        "snapshot_aest": "2026-09-18T05:45:36+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909892",
+        "outage_id": "909892",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 36,
+        "affected_customers_known": true,
+        "suburb": "COOEE BAY, LAMMERMOOR, TARANGANBA",
+        "street_name": "ALSE ST, DAFFCROFT ST, IVEY ST W, TARANGANBA RD",
+        "start_utc": "2026-09-17T14:46:31Z",
+        "etr_utc": null,
+        "centroid_lon": 150.7583037922692,
+        "centroid_lat": -23.1520331671436,
+        "lga_name": "Livingstone Shire",
+        "lga_code": "4530",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
