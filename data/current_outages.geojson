@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-18T21:15:40Z",
-        "snapshot_aest": "2026-09-19T07:15:40+10:00",
+        "snapshot_utc": "2026-09-18T21:30:51Z",
+        "snapshot_aest": "2026-09-19T07:30:51+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-982440-g",
@@ -139,8 +139,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-18T21:15:40Z",
-        "snapshot_aest": "2026-09-19T07:15:40+10:00",
+        "snapshot_utc": "2026-09-18T21:30:51Z",
+        "snapshot_aest": "2026-09-19T07:30:51+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909996",
@@ -158,6 +158,58 @@
         "centroid_lat": -24.537564969135243,
         "lga_name": "Gladstone Regional",
         "lga_code": "3360",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.391772947623,
+              -24.8910702601455
+            ],
+            [
+              152.391299669025,
+              -24.8915376732165
+            ],
+            [
+              152.390787233716,
+              -24.8911059756896
+            ],
+            [
+              152.39126051326,
+              -24.8906385641929
+            ],
+            [
+              152.391772947623,
+              -24.8910702601455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-18T21:30:51Z",
+        "snapshot_aest": "2026-09-19T07:30:51+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909997",
+        "outage_id": "909997",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "WOONGARRA",
+        "street_name": "BELLS RD",
+        "start_utc": "2026-09-18T21:15:17Z",
+        "etr_utc": null,
+        "centroid_lon": 152.3912541663102,
+        "centroid_lat": -24.891083884030124,
+        "lga_name": "Bundaberg Regional",
+        "lga_code": "1820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
