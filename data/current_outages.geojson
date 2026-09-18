@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-18T21:30:51Z",
-        "snapshot_aest": "2026-09-19T07:30:51+10:00",
+        "snapshot_utc": "2026-09-18T21:45:39Z",
+        "snapshot_aest": "2026-09-19T07:45:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-982440-g",
@@ -139,8 +139,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-18T21:30:51Z",
-        "snapshot_aest": "2026-09-19T07:30:51+10:00",
+        "snapshot_utc": "2026-09-18T21:45:39Z",
+        "snapshot_aest": "2026-09-19T07:45:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909996",
@@ -191,8 +191,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-18T21:30:51Z",
-        "snapshot_aest": "2026-09-19T07:30:51+10:00",
+        "snapshot_utc": "2026-09-18T21:45:39Z",
+        "snapshot_aest": "2026-09-19T07:45:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|909997",
@@ -210,6 +210,82 @@
         "centroid_lat": -24.891083884030124,
         "lga_name": "Bundaberg Regional",
         "lga_code": "1820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.408514961311,
+              -23.0597541267213
+            ],
+            [
+              150.408627790764,
+              -23.0592553656505
+            ],
+            [
+              150.410762236576,
+              -23.0573627133258
+            ],
+            [
+              150.411542462573,
+              -23.0575003957688
+            ],
+            [
+              150.422901344741,
+              -23.0804239587947
+            ],
+            [
+              150.422909455251,
+              -23.0804412700855
+            ],
+            [
+              150.428253542228,
+              -23.0925336522277
+            ],
+            [
+              150.428207825482,
+              -23.09295464379
+            ],
+            [
+              150.425774512207,
+              -23.0963282971607
+            ],
+            [
+              150.4249188871,
+              -23.0962511788861
+            ],
+            [
+              150.408514961311,
+              -23.0597541267213
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-18T21:45:39Z",
+        "snapshot_aest": "2026-09-19T07:45:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|909998",
+        "outage_id": "909998",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "affected_customers": 12,
+        "affected_customers_known": true,
+        "suburb": "MILMAN",
+        "street_name": "HANSCHENS RD",
+        "start_utc": "2026-09-18T20:47:39Z",
+        "etr_utc": null,
+        "centroid_lon": 150.41872073088703,
+        "centroid_lat": -23.07719950323969,
+        "lga_name": "Livingstone Shire",
+        "lga_code": "4530",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
