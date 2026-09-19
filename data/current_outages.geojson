@@ -47,8 +47,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-19T17:15:41Z",
-        "snapshot_aest": "2026-09-20T03:15:41+10:00",
+        "snapshot_utc": "2026-09-19T17:30:47Z",
+        "snapshot_aest": "2026-09-20T03:30:47+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-982491-g",
@@ -67,6 +67,138 @@
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.687341392588,
+              -25.5386757150696
+            ],
+            [
+              152.687479549592,
+              -25.5382819460983
+            ],
+            [
+              152.694051567771,
+              -25.5323209749512
+            ],
+            [
+              152.69438389975,
+              -25.5321895979507
+            ],
+            [
+              152.6957527449,
+              -25.5321441969678
+            ],
+            [
+              152.696044211727,
+              -25.5322184724132
+            ],
+            [
+              152.697351077964,
+              -25.5330024025759
+            ],
+            [
+              152.697549830869,
+              -25.5332405756946
+            ],
+            [
+              152.699541818285,
+              -25.5388927998529
+            ],
+            [
+              152.699356943454,
+              -25.5393962459856
+            ],
+            [
+              152.696591220577,
+              -25.541180454071
+            ],
+            [
+              152.696521189218,
+              -25.5412181820524
+            ],
+            [
+              152.694383368502,
+              -25.5421636978952
+            ],
+            [
+              152.694107687371,
+              -25.5422060336741
+            ],
+            [
+              152.690549505427,
+              -25.541822544266
+            ],
+            [
+              152.690482383977,
+              -25.541811008424
+            ],
+            [
+              152.689855391187,
+              -25.5416620083037
+            ],
+            [
+              152.68961293422,
+              -25.5415282003345
+            ],
+            [
+              152.688390928861,
+              -25.5402991903584
+            ],
+            [
+              152.688346074183,
+              -25.5402467670538
+            ],
+            [
+              152.687532071559,
+              -25.5391347688623
+            ],
+            [
+              152.68751827305,
+              -25.539114802487
+            ],
+            [
+              152.687432276408,
+              -25.5389828022787
+            ],
+            [
+              152.687370391884,
+              -25.5388297138734
+            ],
+            [
+              152.687341392588,
+              -25.5386757150696
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-19T17:30:47Z",
+        "snapshot_aest": "2026-09-20T03:30:47+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910089",
+        "outage_id": "910089",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 315,
+        "affected_customers_known": true,
+        "suburb": "MARYBOROUGH",
+        "street_name": "ALBERT ST, ALFRED ST, ALICE ST, ALVIE ST, ANN ST, ELLENA ST, FERRY ST, FORT LANE, FORT ST, JOHN ST, KENT ST, MEREDITH ST, NORMANBY ST, THOMAS ST, TOOLEY ST",
+        "start_utc": "2026-09-19T17:13:28Z",
+        "etr_utc": null,
+        "centroid_lon": 152.6938360214135,
+        "centroid_lat": -25.537647107679074,
+        "lga_name": "Fraser Coast Regional",
+        "lga_code": "3220",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
