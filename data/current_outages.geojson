@@ -47,8 +47,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-20T07:15:39Z",
-        "snapshot_aest": "2026-09-20T17:15:39+10:00",
+        "snapshot_utc": "2026-09-20T07:30:45Z",
+        "snapshot_aest": "2026-09-20T17:30:45+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-982491-g",
@@ -61,12 +61,92 @@
         "suburb": "BANYO",
         "street_name": "HURRICANE ST",
         "start_utc": "2026-09-19T05:54:57Z",
-        "etr_utc": "2026-09-20T08:00:00Z",
+        "etr_utc": "2026-09-20T10:00:00Z",
         "centroid_lon": 153.08892572269758,
         "centroid_lat": -27.38683157654682,
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.084592202967,
+              -20.0540107248583
+            ],
+            [
+              148.084133002197,
+              -20.0537033920447
+            ],
+            [
+              148.084301390567,
+              -20.0531960211435
+            ],
+            [
+              148.102402805494,
+              -20.0405204264209
+            ],
+            [
+              148.10253919854,
+              -20.0404538888874
+            ],
+            [
+              148.115437056478,
+              -20.0364777111076
+            ],
+            [
+              148.116057098044,
+              -20.0368344385561
+            ],
+            [
+              148.116630860554,
+              -20.0401575173007
+            ],
+            [
+              148.116637100195,
+              -20.0402301406748
+            ],
+            [
+              148.116641057577,
+              -20.0531688551753
+            ],
+            [
+              148.116169283194,
+              -20.0536207024932
+            ],
+            [
+              148.084592202967,
+              -20.0540107248583
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-20T07:30:45Z",
+        "snapshot_aest": "2026-09-20T17:30:45+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910156",
+        "outage_id": "910156",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 16,
+        "affected_customers_known": true,
+        "suburb": "BOWEN",
+        "street_name": "EAST EURI RD, SUMMER HILL, WEST EURI CREEK RD",
+        "start_utc": "2026-09-20T05:55:17Z",
+        "etr_utc": null,
+        "centroid_lon": 148.10470505231433,
+        "centroid_lat": -20.047271701932825,
+        "lga_name": "Whitsunday Regional",
+        "lga_code": "7340",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
