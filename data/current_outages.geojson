@@ -95,8 +95,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-20T21:45:33Z",
-        "snapshot_aest": "2026-09-21T07:45:33+10:00",
+        "snapshot_utc": "2026-09-20T22:00:55Z",
+        "snapshot_aest": "2026-09-21T08:00:55+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910158",
@@ -179,14 +179,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-20T21:45:33Z",
-        "snapshot_aest": "2026-09-21T07:45:33+10:00",
+        "snapshot_utc": "2026-09-20T22:00:55Z",
+        "snapshot_aest": "2026-09-21T08:00:55+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910161",
         "outage_id": "910161",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage caused by external influences, such as birds or animals.",
         "affected_customers": 34,
         "affected_customers_known": true,
@@ -198,6 +198,110 @@
         "centroid_lat": -19.275092388841905,
         "lga_name": "Townsville City",
         "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.030572412695,
+              -15.3513035764729
+            ],
+            [
+              145.030036318017,
+              -15.351196605498
+            ],
+            [
+              145.029975457178,
+              -15.3506688076638
+            ],
+            [
+              145.078634306014,
+              -15.2675538329817
+            ],
+            [
+              145.078883011649,
+              -15.2673513043011
+            ],
+            [
+              145.095635974949,
+              -15.2615653251173
+            ],
+            [
+              145.095809759214,
+              -15.2615395111758
+            ],
+            [
+              145.158449630987,
+              -15.263853598982
+            ],
+            [
+              145.158460265411,
+              -15.263854108673
+            ],
+            [
+              145.167020424223,
+              -15.2643595617966
+            ],
+            [
+              145.167321811359,
+              -15.2644915749414
+            ],
+            [
+              145.170088624125,
+              -15.2671859970336
+            ],
+            [
+              145.170220715304,
+              -15.2674479993825
+            ],
+            [
+              145.172363858779,
+              -15.2838101360848
+            ],
+            [
+              145.172106799508,
+              -15.2842729237319
+            ],
+            [
+              145.035540451799,
+              -15.3491186965163
+            ],
+            [
+              145.035528162717,
+              -15.3491243118744
+            ],
+            [
+              145.030572412695,
+              -15.3513035764729
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-20T22:00:55Z",
+        "snapshot_aest": "2026-09-21T08:00:55+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910162",
+        "outage_id": "910162",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 392,
+        "affected_customers_known": true,
+        "suburb": "COOKTOWN, HOPE VALE",
+        "street_name": "AIRPORT RD, ALEC CAMERON DR, BAYANBI ST, BEACH RD, BINTHIN ST, ELIM RD, ENDEAVOUR VALLEY RD, FLIERL ST, HOPE VALE RD, HOPEVALE RD, KELLER ST, KERNICH ST, KOTZUR ST, LINK RD, MC IVOR RD, MCIVOR RD, MCLEAN DR, MUNI ST, NORTH ST, PALM ST, POLAND ST, ROSE ST, TEA TREE RD, THEILE ST, THUPPI ST, UNKNOWN ST, WENKE ST",
+        "start_utc": "2026-09-20T21:35:00Z",
+        "etr_utc": null,
+        "centroid_lon": 145.10198512361657,
+        "centroid_lat": -15.294844458835582,
+        "lga_name": "Cook Shire",
+        "lga_code": "2500",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
