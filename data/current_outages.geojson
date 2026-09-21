@@ -39,8 +39,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-21T14:00:59Z",
-        "snapshot_aest": "2026-09-22T00:00:59+10:00",
+        "snapshot_utc": "2026-09-21T14:15:45Z",
+        "snapshot_aest": "2026-09-22T00:15:45+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-982769-g",
@@ -119,8 +119,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-21T14:00:59Z",
-        "snapshot_aest": "2026-09-22T00:00:59+10:00",
+        "snapshot_utc": "2026-09-21T14:15:45Z",
+        "snapshot_aest": "2026-09-22T00:15:45+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-982798-g",
@@ -139,6 +139,114 @@
         "lga_name": "Brisbane City",
         "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.01378458603,
+              -19.3553729012502
+            ],
+            [
+              147.013801677679,
+              -19.3551257400369
+            ],
+            [
+              147.046338950724,
+              -19.2686461535741
+            ],
+            [
+              147.046853003434,
+              -19.2683506054637
+            ],
+            [
+              147.049688317288,
+              -19.2687273408739
+            ],
+            [
+              147.050048311529,
+              -19.2689733979941
+            ],
+            [
+              147.112195120454,
+              -19.3873709184959
+            ],
+            [
+              147.112229807006,
+              -19.3874587794117
+            ],
+            [
+              147.112347649782,
+              -19.3878887461366
+            ],
+            [
+              147.112358604002,
+              -19.3879413569135
+            ],
+            [
+              147.114819424839,
+              -19.4050428839832
+            ],
+            [
+              147.114631996318,
+              -19.4054664431296
+            ],
+            [
+              147.114208793846,
+              -19.4057654456413
+            ],
+            [
+              147.113804764021,
+              -19.4058403974701
+            ],
+            [
+              147.047903870646,
+              -19.3896009729977
+            ],
+            [
+              147.047764779301,
+              -19.3895428954225
+            ],
+            [
+              147.017450926445,
+              -19.3709059386638
+            ],
+            [
+              147.017244384045,
+              -19.3706218511698
+            ],
+            [
+              147.01378458603,
+              -19.3553729012502
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-21T14:15:45Z",
+        "snapshot_aest": "2026-09-22T00:15:45+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910190",
+        "outage_id": "910190",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 353,
+        "affected_customers_known": true,
+        "suburb": "CAPE CLEVELAND, CUNGULLA",
+        "street_name": "AMBERJACK CT, ANGEL ST, BABINGTONIA RD, BARRACUDA CT, BONITO CT, CAPE CLEVELAND RD, CARTY RD, CONNELLY RD, COOLDETTA ST, CROCODILE CREEK RD, EMPRESS CL, FRANK RANDELL DR, GEORGE ANSELL AVE, GOODSELL RD, JOHN DORY ST, KESTREL ST, LIMPET CT, MEEHAN RD, MULLOWAY CT, RILEY RD, SANDPIPER AVE, SNAPPER CT, WHITING CT",
+        "start_utc": "2026-09-21T13:59:21Z",
+        "etr_utc": null,
+        "centroid_lon": 147.05995040653255,
+        "centroid_lat": -19.348865227443195,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
