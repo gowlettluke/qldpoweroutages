@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-21T19:30:51Z",
-        "snapshot_aest": "2026-09-22T05:30:51+10:00",
+        "snapshot_utc": "2026-09-21T19:45:41Z",
+        "snapshot_aest": "2026-09-22T05:45:41+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910190",
@@ -82,6 +82,78 @@
         "centroid_lat": -19.295973536376177,
         "lga_name": "Townsville City",
         "lga_code": "7010",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              139.340464208213,
+              -20.5878448944321
+            ],
+            [
+              139.340467834118,
+              -20.5877413181737
+            ],
+            [
+              139.341310519162,
+              -20.5824477907495
+            ],
+            [
+              139.342135794157,
+              -20.582215124488
+            ],
+            [
+              139.451896490993,
+              -20.6974870716808
+            ],
+            [
+              139.451866042588,
+              -20.6981148880425
+            ],
+            [
+              139.451198411524,
+              -20.6980972777476
+            ],
+            [
+              139.340762837056,
+              -20.5900155591343
+            ],
+            [
+              139.340631608385,
+              -20.5897420159279
+            ],
+            [
+              139.340464208213,
+              -20.5878448944321
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-21T19:45:41Z",
+        "snapshot_aest": "2026-09-22T05:45:41+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910191",
+        "outage_id": "910191",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "MOUNT ISA",
+        "street_name": "MAY DOWNS STATION",
+        "start_utc": "2026-09-21T19:15:47Z",
+        "etr_utc": null,
+        "centroid_lon": 139.38242657672606,
+        "centroid_lat": -20.627675037141216,
+        "lga_name": "Mount Isa City",
+        "lga_code": "5300",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
