@@ -95,8 +95,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-23T18:45:45Z",
-        "snapshot_aest": "2026-09-24T04:45:45+10:00",
+        "snapshot_utc": "2026-09-23T19:01:01Z",
+        "snapshot_aest": "2026-09-24T05:01:01+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983257-g",
@@ -219,8 +219,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-23T18:45:45Z",
-        "snapshot_aest": "2026-09-24T04:45:45+10:00",
+        "snapshot_utc": "2026-09-23T19:01:01Z",
+        "snapshot_aest": "2026-09-24T05:01:01+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910334",
@@ -238,6 +238,106 @@
         "centroid_lat": -20.972054680008224,
         "lga_name": "Mackay Regional",
         "lga_code": "4770",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.56641117816,
+              -22.044141239707
+            ],
+            [
+              148.566647247465,
+              -22.0437280674449
+            ],
+            [
+              148.573106026522,
+              -22.0401472963
+            ],
+            [
+              148.573346593562,
+              -22.0400838940922
+            ],
+            [
+              148.716111883053,
+              -22.0380922933677
+            ],
+            [
+              148.716410694905,
+              -22.038183064423
+            ],
+            [
+              148.844851501243,
+              -22.1282351964302
+            ],
+            [
+              148.845004754372,
+              -22.1284160745439
+            ],
+            [
+              148.93343749064,
+              -22.3175733406891
+            ],
+            [
+              148.933469302585,
+              -22.3178381917614
+            ],
+            [
+              148.916704233593,
+              -22.3996564876195
+            ],
+            [
+              148.916160337502,
+              -22.4000191193833
+            ],
+            [
+              148.882161145353,
+              -22.3956141666379
+            ],
+            [
+              148.881955349478,
+              -22.3955404565179
+            ],
+            [
+              148.57599847212,
+              -22.2016668441046
+            ],
+            [
+              148.575787657864,
+              -22.2013189543463
+            ],
+            [
+              148.56641117816,
+              -22.044141239707
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-23T19:01:01Z",
+        "snapshot_aest": "2026-09-24T05:01:01+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910335",
+        "outage_id": "910335",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 27,
+        "affected_customers_known": true,
+        "suburb": "NEBO, VALKYRIE",
+        "street_name": "DINGO DEVELOPMENT RD, FITZROY DEVELOPMENTAL RD, VALKYRIE ACCESS RD, VALKYRIE RD",
+        "start_utc": "2026-09-23T18:49:31Z",
+        "etr_utc": null,
+        "centroid_lon": 148.74757565136753,
+        "centroid_lat": -22.198502341870732,
+        "lga_name": "Isaac Regional",
+        "lga_code": "3980",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
