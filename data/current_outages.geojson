@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-24T01:15:42Z",
-        "snapshot_aest": "2026-09-24T11:15:42+10:00",
+        "snapshot_utc": "2026-09-24T01:30:47Z",
+        "snapshot_aest": "2026-09-24T11:30:47+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910335",
@@ -171,8 +171,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-24T01:15:42Z",
-        "snapshot_aest": "2026-09-24T11:15:42+10:00",
+        "snapshot_utc": "2026-09-24T01:30:47Z",
+        "snapshot_aest": "2026-09-24T11:30:47+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910360",
@@ -263,8 +263,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-24T01:15:42Z",
-        "snapshot_aest": "2026-09-24T11:15:42+10:00",
+        "snapshot_utc": "2026-09-24T01:30:47Z",
+        "snapshot_aest": "2026-09-24T11:30:47+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910434",
@@ -277,7 +277,7 @@
         "suburb": "STUART",
         "street_name": "PRISON RES, SOUTHWOOD RD",
         "start_utc": "2026-09-24T00:19:00Z",
-        "etr_utc": null,
+        "etr_utc": "2026-09-24T08:00:00Z",
         "centroid_lon": 146.8566930489987,
         "centroid_lat": -19.351270007449397,
         "lga_name": "Townsville City",
@@ -323,8 +323,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-24T01:15:42Z",
-        "snapshot_aest": "2026-09-24T11:15:42+10:00",
+        "snapshot_utc": "2026-09-24T01:30:47Z",
+        "snapshot_aest": "2026-09-24T11:30:47+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910436",
@@ -399,8 +399,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-24T01:15:42Z",
-        "snapshot_aest": "2026-09-24T11:15:42+10:00",
+        "snapshot_utc": "2026-09-24T01:30:47Z",
+        "snapshot_aest": "2026-09-24T11:30:47+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910439",
@@ -418,6 +418,78 @@
         "centroid_lat": -20.74535176190536,
         "lga_name": "Mount Isa City",
         "lga_code": "5300",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.510697953811,
+              -19.7156553522233
+            ],
+            [
+              147.510261193497,
+              -19.715201795237
+            ],
+            [
+              147.510358926424,
+              -19.702693652047
+            ],
+            [
+              147.510363973176,
+              -19.7026313645424
+            ],
+            [
+              147.510587969449,
+              -19.7011863626642
+            ],
+            [
+              147.510946647877,
+              -19.7008130949436
+            ],
+            [
+              147.511446740087,
+              -19.7009874446638
+            ],
+            [
+              147.522804069299,
+              -19.7158787753861
+            ],
+            [
+              147.522376987648,
+              -19.7165935642472
+            ],
+            [
+              147.510697953811,
+              -19.7156553522233
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-24T01:30:47Z",
+        "snapshot_aest": "2026-09-24T11:30:47+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910440",
+        "outage_id": "910440",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 11,
+        "affected_customers_known": true,
+        "suburb": "HOME HILL",
+        "street_name": "GROPER CREEK RD, MT ALMA RD",
+        "start_utc": "2026-09-23T22:54:44Z",
+        "etr_utc": "2026-09-24T02:00:00Z",
+        "centroid_lon": 147.514693634109,
+        "centroid_lat": -19.710691010409594,
+        "lga_name": "Burdekin Shire",
+        "lga_code": "1900",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
