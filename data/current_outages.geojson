@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-24T12:01:02Z",
-        "snapshot_aest": "2026-09-24T22:01:02+10:00",
+        "snapshot_utc": "2026-09-24T12:15:39Z",
+        "snapshot_aest": "2026-09-24T22:15:39+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983432-g",
@@ -131,8 +131,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-24T12:01:02Z",
-        "snapshot_aest": "2026-09-24T22:01:02+10:00",
+        "snapshot_utc": "2026-09-24T12:15:39Z",
+        "snapshot_aest": "2026-09-24T22:15:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910335",
@@ -239,8 +239,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-24T12:01:02Z",
-        "snapshot_aest": "2026-09-24T22:01:02+10:00",
+        "snapshot_utc": "2026-09-24T12:15:39Z",
+        "snapshot_aest": "2026-09-24T22:15:39+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910456",
@@ -258,6 +258,74 @@
         "centroid_lat": -17.539570345927544,
         "lga_name": "Tablelands Regional",
         "lga_code": "6820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.937466286605,
+              -21.1180092633003
+            ],
+            [
+              148.937531534559,
+              -21.1177495080898
+            ],
+            [
+              148.939099395839,
+              -21.1152469854381
+            ],
+            [
+              148.939658451692,
+              -21.1150450220336
+            ],
+            [
+              148.939994045114,
+              -21.1155106524357
+            ],
+            [
+              148.939066252023,
+              -21.1267632556629
+            ],
+            [
+              148.938584331161,
+              -21.1271799708651
+            ],
+            [
+              148.938106285356,
+              -21.1267593445848
+            ],
+            [
+              148.937466286605,
+              -21.1180092633003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-24T12:15:39Z",
+        "snapshot_aest": "2026-09-24T22:15:39+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910457",
+        "outage_id": "910457",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "DEVEREUX CREEK",
+        "street_name": "DEVEREUX CREEK RD, TIRENDIS RD",
+        "start_utc": "2026-09-24T11:17:46Z",
+        "etr_utc": null,
+        "centroid_lon": 148.93870393595972,
+        "centroid_lat": -21.120634619266948,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
