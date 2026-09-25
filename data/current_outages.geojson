@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-25T08:15:41Z",
-        "snapshot_aest": "2026-09-25T18:15:41+10:00",
+        "snapshot_utc": "2026-09-25T08:30:49Z",
+        "snapshot_aest": "2026-09-25T18:30:49+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983555-g",
@@ -139,8 +139,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-25T08:15:41Z",
-        "snapshot_aest": "2026-09-25T18:15:41+10:00",
+        "snapshot_utc": "2026-09-25T08:30:49Z",
+        "snapshot_aest": "2026-09-25T18:30:49+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983594-g",
@@ -199,8 +199,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-25T08:15:41Z",
-        "snapshot_aest": "2026-09-25T18:15:41+10:00",
+        "snapshot_utc": "2026-09-25T08:30:49Z",
+        "snapshot_aest": "2026-09-25T18:30:49+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910335",
@@ -307,8 +307,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-25T08:15:41Z",
-        "snapshot_aest": "2026-09-25T18:15:41+10:00",
+        "snapshot_utc": "2026-09-25T08:30:49Z",
+        "snapshot_aest": "2026-09-25T18:30:49+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910564",
@@ -326,6 +326,78 @@
         "centroid_lat": -17.669921964935615,
         "lga_name": "Cassowary Coast Regional",
         "lga_code": "2260",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.310105107179,
+              -23.48851711914
+            ],
+            [
+              148.309610193731,
+              -23.4878863611374
+            ],
+            [
+              148.315144910006,
+              -23.4762376720351
+            ],
+            [
+              148.315672980799,
+              -23.4759733982345
+            ],
+            [
+              148.319924542364,
+              -23.476620619351
+            ],
+            [
+              148.320020969039,
+              -23.4766448340431
+            ],
+            [
+              148.342867751498,
+              -23.4847694070718
+            ],
+            [
+              148.343176697718,
+              -23.4852520617917
+            ],
+            [
+              148.342738321287,
+              -23.4856402194772
+            ],
+            [
+              148.310105107179,
+              -23.48851711914
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-25T08:30:49Z",
+        "snapshot_aest": "2026-09-25T18:30:49+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910566",
+        "outage_id": "910566",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 5,
+        "affected_customers_known": true,
+        "suburb": "EMERALD",
+        "street_name": "FOLEY RD, LOCHARBOR RD, MOODEWARRA RD",
+        "start_utc": "2026-09-25T08:11:26Z",
+        "etr_utc": null,
+        "centroid_lon": 148.32326551764692,
+        "centroid_lat": -23.4831032003471,
+        "lga_name": "Central Highlands Regional",
+        "lga_code": "2270",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
