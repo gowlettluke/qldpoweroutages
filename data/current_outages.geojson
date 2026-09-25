@@ -39,8 +39,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-25T01:15:33Z",
-        "snapshot_aest": "2026-09-25T11:15:33+10:00",
+        "snapshot_utc": "2026-09-25T01:30:48Z",
+        "snapshot_aest": "2026-09-25T11:30:48+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910335",
@@ -155,8 +155,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-25T01:15:33Z",
-        "snapshot_aest": "2026-09-25T11:15:33+10:00",
+        "snapshot_utc": "2026-09-25T01:30:48Z",
+        "snapshot_aest": "2026-09-25T11:30:48+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910549",
@@ -215,8 +215,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-25T01:15:33Z",
-        "snapshot_aest": "2026-09-25T11:15:33+10:00",
+        "snapshot_utc": "2026-09-25T01:30:48Z",
+        "snapshot_aest": "2026-09-25T11:30:48+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910550",
@@ -275,14 +275,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-25T01:15:33Z",
-        "snapshot_aest": "2026-09-25T11:15:33+10:00",
+        "snapshot_utc": "2026-09-25T01:30:48Z",
+        "snapshot_aest": "2026-09-25T11:30:48+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910553",
         "outage_id": "910553",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs.",
         "affected_customers": 2,
         "affected_customers_known": true,
@@ -294,6 +294,98 @@
         "centroid_lat": -20.823756652353033,
         "lga_name": "Mackay Regional",
         "lga_code": "4770",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.142401362942,
+              -26.9997392291006
+            ],
+            [
+              151.142405441154,
+              -26.9996380852741
+            ],
+            [
+              151.151323869797,
+              -26.9462852614834
+            ],
+            [
+              151.151901930429,
+              -26.9459073771604
+            ],
+            [
+              151.188489787428,
+              -26.9512523801863
+            ],
+            [
+              151.188809228589,
+              -26.9514244637093
+            ],
+            [
+              151.194535239562,
+              -26.9581774458637
+            ],
+            [
+              151.194624266243,
+              -26.9583465961365
+            ],
+            [
+              151.199764937329,
+              -26.9778757795779
+            ],
+            [
+              151.199614149969,
+              -26.9783122302184
+            ],
+            [
+              151.145302999751,
+              -27.0226075418693
+            ],
+            [
+              151.14486290958,
+              -27.0227155972576
+            ],
+            [
+              151.1447304136,
+              -27.0226911442991
+            ],
+            [
+              151.144330404131,
+              -27.0222843620496
+            ],
+            [
+              151.142401362942,
+              -26.9997392291006
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-25T01:30:48Z",
+        "snapshot_aest": "2026-09-25T11:30:48+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910554",
+        "outage_id": "910554",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to public safety concerns.",
+        "affected_customers": 25,
+        "affected_customers_known": true,
+        "suburb": "JIMBOUR, MACALISTER",
+        "street_name": "KENTS RD, MACALISTER BELL RD, MACALISTER PIRRINUAN RD, MACALISTER-BELL RD, SANDERCOCK'S RD",
+        "start_utc": "2026-09-25T01:24:00Z",
+        "etr_utc": null,
+        "centroid_lon": 151.16711480479114,
+        "centroid_lat": -26.97831506287826,
+        "lga_name": "Western Downs Regional",
+        "lga_code": "7310",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
