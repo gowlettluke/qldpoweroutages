@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-25T11:15:39Z",
-        "snapshot_aest": "2026-09-25T21:15:39+10:00",
+        "snapshot_utc": "2026-09-25T11:30:51Z",
+        "snapshot_aest": "2026-09-25T21:30:51+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983594-g",
@@ -203,8 +203,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-25T11:15:39Z",
-        "snapshot_aest": "2026-09-25T21:15:39+10:00",
+        "snapshot_utc": "2026-09-25T11:30:51Z",
+        "snapshot_aest": "2026-09-25T21:30:51+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910568",
@@ -222,6 +222,98 @@
         "centroid_lat": -27.798336842167682,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.71243893656,
+              -20.274047239222
+            ],
+            [
+              148.711926124974,
+              -20.2734208803755
+            ],
+            [
+              148.712187834697,
+              -20.2728530806484
+            ],
+            [
+              148.712259986964,
+              -20.2727430263143
+            ],
+            [
+              148.712366871101,
+              -20.2726227417683
+            ],
+            [
+              148.712510944124,
+              -20.2725131466738
+            ],
+            [
+              148.713440012773,
+              -20.272052342304
+            ],
+            [
+              148.713764131091,
+              -20.2720107383289
+            ],
+            [
+              148.714294252192,
+              -20.272119208996
+            ],
+            [
+              148.714517383044,
+              -20.2722286515697
+            ],
+            [
+              148.71506729536,
+              -20.2727074093574
+            ],
+            [
+              148.715060240196,
+              -20.273377315563
+            ],
+            [
+              148.714753950583,
+              -20.2736335266694
+            ],
+            [
+              148.714510350399,
+              -20.2737417874448
+            ],
+            [
+              148.71243893656,
+              -20.274047239222
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-25T11:30:51Z",
+        "snapshot_aest": "2026-09-25T21:30:51+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910570",
+        "outage_id": "910570",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to public safety concerns as directed by emergency services.",
+        "affected_customers": 36,
+        "affected_customers_known": true,
+        "suburb": "AIRLIE BEACH, JUBILEE POCKET",
+        "street_name": "LAGUNA CT, SEAVIEW DR",
+        "start_utc": "2026-09-25T11:19:00Z",
+        "etr_utc": null,
+        "centroid_lon": 148.71354297925882,
+        "centroid_lat": -20.273057419674526,
+        "lga_name": "Whitsunday Regional",
+        "lga_code": "7340",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
