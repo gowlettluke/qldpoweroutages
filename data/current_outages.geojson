@@ -39,14 +39,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-26T14:45:41Z",
-        "snapshot_aest": "2026-09-27T00:45:41+10:00",
+        "snapshot_utc": "2026-09-26T15:01:01Z",
+        "snapshot_aest": "2026-09-27T01:01:01+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983715-g",
         "outage_id": "INCD-983715-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 2,
         "affected_customers_known": true,
@@ -115,8 +115,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-26T14:45:41Z",
-        "snapshot_aest": "2026-09-27T00:45:41+10:00",
+        "snapshot_utc": "2026-09-26T15:01:01Z",
+        "snapshot_aest": "2026-09-27T01:01:01+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983714-g",
@@ -129,7 +129,7 @@
         "suburb": "DOONAN",
         "street_name": "LIVISTONA DR, SOLITAIRE ST",
         "start_utc": "2026-09-26T12:51:28Z",
-        "etr_utc": "2026-09-26T15:30:00Z",
+        "etr_utc": "2026-09-26T17:30:00Z",
         "centroid_lon": 153.0154090510827,
         "centroid_lat": -26.4252978872101,
         "lga_name": "Noosa Shire",
@@ -191,8 +191,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-26T14:45:41Z",
-        "snapshot_aest": "2026-09-27T00:45:41+10:00",
+        "snapshot_utc": "2026-09-26T15:01:01Z",
+        "snapshot_aest": "2026-09-27T01:01:01+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983719-g",
@@ -275,8 +275,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-26T14:45:41Z",
-        "snapshot_aest": "2026-09-27T00:45:41+10:00",
+        "snapshot_utc": "2026-09-26T15:01:01Z",
+        "snapshot_aest": "2026-09-27T01:01:01+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910957",
@@ -375,8 +375,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-26T14:45:41Z",
-        "snapshot_aest": "2026-09-27T00:45:41+10:00",
+        "snapshot_utc": "2026-09-26T15:01:01Z",
+        "snapshot_aest": "2026-09-27T01:01:01+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910958",
@@ -394,6 +394,98 @@
         "centroid_lat": -23.550412115251984,
         "lga_name": "Central Highlands Regional",
         "lga_code": "2270",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.404646852883,
+              -24.5049219169147
+            ],
+            [
+              150.404663088208,
+              -24.5047401367537
+            ],
+            [
+              150.424859876476,
+              -24.4416792204571
+            ],
+            [
+              150.425626165414,
+              -24.4414439997809
+            ],
+            [
+              150.443999569605,
+              -24.4539297611246
+            ],
+            [
+              150.444070530604,
+              -24.4539885770375
+            ],
+            [
+              150.472783803625,
+              -24.4829000693057
+            ],
+            [
+              150.472909363141,
+              -24.4831572032445
+            ],
+            [
+              150.497285906648,
+              -24.6991676347277
+            ],
+            [
+              150.497254014983,
+              -24.6993796320712
+            ],
+            [
+              150.485577036911,
+              -24.726382840973
+            ],
+            [
+              150.485332324088,
+              -24.7266233119175
+            ],
+            [
+              150.437929610291,
+              -24.7474894971127
+            ],
+            [
+              150.437225263396,
+              -24.7471384148826
+            ],
+            [
+              150.404646852883,
+              -24.5049219169147
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-26T15:01:01Z",
+        "snapshot_aest": "2026-09-27T01:01:01+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910959",
+        "outage_id": "910959",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 51,
+        "affected_customers_known": true,
+        "suburb": "BANANA, BILOELA, PROSPECT, THANGOOL",
+        "street_name": "BATHS RD, CAMBOON RD, CROWSDALE CAMBOON RD, CROWSDALE RD, DRUMBURLE RD, FRAWLEYS RD, KENT RD, SHAWLANDS RD, ZIEBARTHS RD",
+        "start_utc": "2026-09-26T14:31:11Z",
+        "etr_utc": null,
+        "centroid_lon": 150.4508544949245,
+        "centroid_lat": -24.596350462548887,
+        "lga_name": "Banana Shire",
+        "lga_code": "370",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
