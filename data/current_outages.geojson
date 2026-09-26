@@ -75,8 +75,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-26T08:15:37Z",
-        "snapshot_aest": "2026-09-26T18:15:37+10:00",
+        "snapshot_utc": "2026-09-26T08:30:48Z",
+        "snapshot_aest": "2026-09-26T18:30:48+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983694-g",
@@ -95,6 +95,90 @@
         "lga_name": "Moreton Bay City",
         "lga_code": "5010",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.738772509471,
+              -18.4274198974111
+            ],
+            [
+              144.738206552418,
+              -18.4275839107204
+            ],
+            [
+              144.737915154411,
+              -18.4270926350192
+            ],
+            [
+              144.75432849197,
+              -18.3299729050454
+            ],
+            [
+              144.754793609977,
+              -18.329593208767
+            ],
+            [
+              144.755261606015,
+              -18.3299696659988
+            ],
+            [
+              144.760778031119,
+              -18.3611868836646
+            ],
+            [
+              144.760777980446,
+              -18.3613374635875
+            ],
+            [
+              144.754390849436,
+              -18.3973263133808
+            ],
+            [
+              144.754348677956,
+              -18.3974506641807
+            ],
+            [
+              144.739089250805,
+              -18.426970679067
+            ],
+            [
+              144.739055246425,
+              -18.4270261216149
+            ],
+            [
+              144.738772509471,
+              -18.4274198974111
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-26T08:30:48Z",
+        "snapshot_aest": "2026-09-26T18:30:48+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910957",
+        "outage_id": "910957",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "affected_customers": 5,
+        "affected_customers_known": true,
+        "suburb": "MOUNT GARNET, MOUNT SURPRISE",
+        "street_name": "KELLYS CREEK, KENNEDY HWY, UNKNOWN ST",
+        "start_utc": "2026-09-26T08:17:29Z",
+        "etr_utc": null,
+        "centroid_lon": 144.75096793284362,
+        "centroid_lat": -18.37876124970508,
+        "lga_name": "Charters Towers Regional",
+        "lga_code": "2310",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
