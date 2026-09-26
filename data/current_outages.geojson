@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-26T04:15:39Z",
-        "snapshot_aest": "2026-09-26T14:15:39+10:00",
+        "snapshot_utc": "2026-09-26T04:30:44Z",
+        "snapshot_aest": "2026-09-26T14:30:44+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983673-g",
@@ -179,8 +179,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-26T04:15:39Z",
-        "snapshot_aest": "2026-09-26T14:15:39+10:00",
+        "snapshot_utc": "2026-09-26T04:30:44Z",
+        "snapshot_aest": "2026-09-26T14:30:44+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983681-g",
@@ -295,8 +295,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-26T04:15:39Z",
-        "snapshot_aest": "2026-09-26T14:15:39+10:00",
+        "snapshot_utc": "2026-09-26T04:30:44Z",
+        "snapshot_aest": "2026-09-26T14:30:44+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|910751",
@@ -314,6 +314,74 @@
         "centroid_lat": -21.154127251048635,
         "lga_name": "Mackay Regional",
         "lga_code": "4770",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.52807769824,
+              -24.6497562447509
+            ],
+            [
+              150.527565745619,
+              -24.6493821050133
+            ],
+            [
+              150.527912285647,
+              -24.6488735836301
+            ],
+            [
+              150.629725990484,
+              -24.6213587136235
+            ],
+            [
+              150.630313341568,
+              -24.6216012387092
+            ],
+            [
+              150.630136687693,
+              -24.6221678309357
+            ],
+            [
+              150.589136515343,
+              -24.6467699243158
+            ],
+            [
+              150.588891790971,
+              -24.6468432219562
+            ],
+            [
+              150.52807769824,
+              -24.6497562447509
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-26T04:30:44Z",
+        "snapshot_aest": "2026-09-26T14:30:44+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|910954",
+        "outage_id": "910954",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 5,
+        "affected_customers_known": true,
+        "suburb": "THANGOOL",
+        "street_name": "DRUMBURLE RD, LOOKERBIE CIR, THANGOOL LOOKERBIE RD",
+        "start_utc": "2026-09-26T00:32:04Z",
+        "etr_utc": null,
+        "centroid_lon": 150.58198980291942,
+        "centroid_lat": -24.639102496997307,
+        "lga_name": "Banana Shire",
+        "lga_code": "370",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
