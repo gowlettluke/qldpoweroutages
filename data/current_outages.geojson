@@ -79,14 +79,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-28T09:45:41Z",
-        "snapshot_aest": "2026-09-28T19:45:41+10:00",
+        "snapshot_utc": "2026-09-28T10:01:01Z",
+        "snapshot_aest": "2026-09-28T20:01:01+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983938-g",
         "outage_id": "INCD-983938-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 33,
         "affected_customers_known": true,
@@ -179,8 +179,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-28T09:45:41Z",
-        "snapshot_aest": "2026-09-28T19:45:41+10:00",
+        "snapshot_utc": "2026-09-28T10:01:01Z",
+        "snapshot_aest": "2026-09-28T20:01:01+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-983985-g",
@@ -198,6 +198,138 @@
         "centroid_lat": -27.49735930822863,
         "lga_name": "Brisbane City",
         "lga_code": "1000",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              153.020746409563,
+              -27.1787593958961
+            ],
+            [
+              153.020615731238,
+              -27.1783739027858
+            ],
+            [
+              153.020757253457,
+              -27.1776281632235
+            ],
+            [
+              153.021152361113,
+              -27.1772616899223
+            ],
+            [
+              153.02196881836,
+              -27.1771102101607
+            ],
+            [
+              153.022247313579,
+              -27.1771291188258
+            ],
+            [
+              153.02358406946,
+              -27.1775737876697
+            ],
+            [
+              153.023607611481,
+              -27.1775822267514
+            ],
+            [
+              153.024190869648,
+              -27.1778066754896
+            ],
+            [
+              153.024453467776,
+              -27.1780397197308
+            ],
+            [
+              153.024532099787,
+              -27.1781997401093
+            ],
+            [
+              153.024570616624,
+              -27.1784390378785
+            ],
+            [
+              153.024552156533,
+              -27.1785671879273
+            ],
+            [
+              153.024549372492,
+              -27.178584008389
+            ],
+            [
+              153.024353567025,
+              -27.1796305293236
+            ],
+            [
+              153.024327120939,
+              -27.1797174334247
+            ],
+            [
+              153.02426695165,
+              -27.1798579829733
+            ],
+            [
+              153.023715423174,
+              -27.1801422703393
+            ],
+            [
+              153.02355173203,
+              -27.180118730282
+            ],
+            [
+              153.023150888015,
+              -27.1800610165913
+            ],
+            [
+              153.022950439877,
+              -27.1800321415875
+            ],
+            [
+              153.022776076423,
+              -27.1799762372737
+            ],
+            [
+              153.021177262452,
+              -27.1791408241917
+            ],
+            [
+              153.021064939768,
+              -27.1790610167978
+            ],
+            [
+              153.020746409563,
+              -27.1787593958961
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-28T10:01:01Z",
+        "snapshot_aest": "2026-09-28T20:01:01+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-983991-g",
+        "outage_id": "INCD-983991-g",
+        "outage_type": "unplanned",
+        "status": "In Progress",
+        "reason": "Under Investigation",
+        "affected_customers": 70,
+        "affected_customers_known": true,
+        "suburb": "DECEPTION BAY",
+        "street_name": "BATEMAN ST, LENORE CT, MOORE ST, MORGAN CT, RICHARD CT, SIMON ST",
+        "start_utc": "2026-09-28T09:46:21Z",
+        "etr_utc": "2026-09-28T11:00:00Z",
+        "centroid_lon": 153.02267139838665,
+        "centroid_lat": -27.178562820750876,
+        "lga_name": "Moreton Bay City",
+        "lga_code": "5010",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     }
