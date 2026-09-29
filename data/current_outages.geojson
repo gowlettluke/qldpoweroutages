@@ -87,8 +87,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-29T06:45:43Z",
-        "snapshot_aest": "2026-09-29T16:45:43+10:00",
+        "snapshot_utc": "2026-09-29T07:00:55Z",
+        "snapshot_aest": "2026-09-29T17:00:55+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984070-g",
@@ -183,8 +183,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-29T06:45:43Z",
-        "snapshot_aest": "2026-09-29T16:45:43+10:00",
+        "snapshot_utc": "2026-09-29T07:00:55Z",
+        "snapshot_aest": "2026-09-29T17:00:55+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984126-g",
@@ -283,8 +283,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-29T06:45:43Z",
-        "snapshot_aest": "2026-09-29T16:45:43+10:00",
+        "snapshot_utc": "2026-09-29T07:00:55Z",
+        "snapshot_aest": "2026-09-29T17:00:55+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911383",
@@ -297,7 +297,7 @@
         "suburb": "AIRVILLE, AYR",
         "street_name": "GIDDY RD, MAIDAVALE RD, MCLAUGHLIN RD, MENSO RD",
         "start_utc": "2026-09-29T04:43:44Z",
-        "etr_utc": null,
+        "etr_utc": "2026-09-29T12:30:00Z",
         "centroid_lon": 147.35685994926203,
         "centroid_lat": -19.61783890609166,
         "lga_name": "Burdekin Shire",
@@ -395,8 +395,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-29T06:45:43Z",
-        "snapshot_aest": "2026-09-29T16:45:43+10:00",
+        "snapshot_utc": "2026-09-29T07:00:55Z",
+        "snapshot_aest": "2026-09-29T17:00:55+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911387",
@@ -467,8 +467,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-29T06:45:43Z",
-        "snapshot_aest": "2026-09-29T16:45:43+10:00",
+        "snapshot_utc": "2026-09-29T07:00:55Z",
+        "snapshot_aest": "2026-09-29T17:00:55+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911388",
@@ -486,6 +486,74 @@
         "centroid_lat": -23.4831032003471,
         "lga_name": "Central Highlands Regional",
         "lga_code": "2270",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.756908112059,
+              -18.0450780443097
+            ],
+            [
+              144.75650084191,
+              -18.044576111445
+            ],
+            [
+              144.757021331153,
+              -18.044181379375
+            ],
+            [
+              144.781966931265,
+              -18.0468137854442
+            ],
+            [
+              144.781996689243,
+              -18.0468178446602
+            ],
+            [
+              144.793769139162,
+              -18.0487909714367
+            ],
+            [
+              144.79415436414,
+              -18.0493041376176
+            ],
+            [
+              144.793626339344,
+              -18.0496836200061
+            ],
+            [
+              144.756908112059,
+              -18.0450780443097
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-29T07:00:55Z",
+        "snapshot_aest": "2026-09-29T17:00:55+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911389",
+        "outage_id": "911389",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "MOUNT GARNET",
+        "street_name": "KENNEDY HWY",
+        "start_utc": "2026-09-29T06:18:00Z",
+        "etr_utc": "2026-09-29T08:30:00Z",
+        "centroid_lon": 144.77580943204373,
+        "centroid_lat": -18.046861583778643,
+        "lga_name": "Mareeba Shire",
+        "lga_code": "4880",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
