@@ -75,21 +75,21 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-29T09:15:45Z",
-        "snapshot_aest": "2026-09-29T19:15:45+10:00",
+        "snapshot_utc": "2026-09-29T09:30:51Z",
+        "snapshot_aest": "2026-09-29T19:30:51+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984126-g",
         "outage_id": "INCD-984126-g",
         "outage_type": "unplanned",
         "status": "Awaiting",
-        "reason": "Emergency Repairs",
+        "reason": "Damage to our equipment",
         "affected_customers": 11,
         "affected_customers_known": true,
         "suburb": "RIVERHILLS",
         "street_name": "PARWAN CL, PROSSER ST",
         "start_utc": "2026-09-29T00:00:28Z",
-        "etr_utc": "2026-09-29T04:30:00Z",
+        "etr_utc": "2026-09-29T12:00:00Z",
         "centroid_lon": 152.90889668328904,
         "centroid_lat": -27.562434117869273,
         "lga_name": "Brisbane City",
@@ -175,8 +175,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-29T09:15:45Z",
-        "snapshot_aest": "2026-09-29T19:15:45+10:00",
+        "snapshot_utc": "2026-09-29T09:30:51Z",
+        "snapshot_aest": "2026-09-29T19:30:51+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911383",
@@ -194,6 +194,250 @@
         "centroid_lat": -19.61783890609166,
         "lga_name": "Burdekin Shire",
         "lga_code": "1900",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.243545341561,
+              -23.8662084258312
+            ],
+            [
+              151.243190432905,
+              -23.8657075258998
+            ],
+            [
+              151.243271176689,
+              -23.8652090733293
+            ],
+            [
+              151.243295860097,
+              -23.8651201402017
+            ],
+            [
+              151.243619091651,
+              -23.8643106685683
+            ],
+            [
+              151.24366345933,
+              -23.8642272938371
+            ],
+            [
+              151.247608320921,
+              -23.8584186598908
+            ],
+            [
+              151.247953527335,
+              -23.8582114360527
+            ],
+            [
+              151.249942648732,
+              -23.8579460807886
+            ],
+            [
+              151.250481737155,
+              -23.8582610061745
+            ],
+            [
+              151.251740764506,
+              -23.8620719769244
+            ],
+            [
+              151.251760968512,
+              -23.8622311205695
+            ],
+            [
+              151.251542201674,
+              -23.8654450925498
+            ],
+            [
+              151.251244361619,
+              -23.8658318136851
+            ],
+            [
+              151.248762378037,
+              -23.8667989436005
+            ],
+            [
+              151.248759443427,
+              -23.8668000767449
+            ],
+            [
+              151.248504856103,
+              -23.8668974872555
+            ],
+            [
+              151.248447665673,
+              -23.866915648348
+            ],
+            [
+              151.247759789975,
+              -23.8670912000782
+            ],
+            [
+              151.247647563844,
+              -23.8671072763394
+            ],
+            [
+              151.247248141505,
+              -23.8671213710858
+            ],
+            [
+              151.247099676056,
+              -23.8671056331353
+            ],
+            [
+              151.243545341561,
+              -23.8662084258312
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-29T09:30:51Z",
+        "snapshot_aest": "2026-09-29T19:30:51+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911391",
+        "outage_id": "911391",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to public safety concerns.",
+        "affected_customers": 330,
+        "affected_customers_known": true,
+        "suburb": "WEST GLADSTONE",
+        "street_name": "BEALE ST, BOYNE CRES, BRUNKE ST, BURROWS ST, BUSTEED ST, BYRNE ST, CARRON ST, CHARLES ST, FAR ST, LOMAS ST, MATSON CRES, MCCRUDDEN ST, MELLEFONT ST, MOORE LANE, PATRICK ST, PETERS CRES, PIPER ST, RIGBY CRES, SMITH ST, UPPER PIPER ST, WALTERS AVE",
+        "start_utc": "2026-09-29T09:00:00Z",
+        "etr_utc": null,
+        "centroid_lon": 151.24802642749364,
+        "centroid_lat": -23.86303259355153,
+        "lga_name": "Gladstone Regional",
+        "lga_code": "3360",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              140.486386363496,
+              -20.7209100785321
+            ],
+            [
+              140.48646309645,
+              -20.7206704651805
+            ],
+            [
+              140.488605277587,
+              -20.7175597061466
+            ],
+            [
+              140.488795614171,
+              -20.7174006983422
+            ],
+            [
+              140.505663136974,
+              -20.7096097321989
+            ],
+            [
+              140.505905514592,
+              -20.7095647529328
+            ],
+            [
+              140.510022844361,
+              -20.7098244568939
+            ],
+            [
+              140.510070912174,
+              -20.7098298017463
+            ],
+            [
+              140.510401497778,
+              -20.7098826637052
+            ],
+            [
+              140.510797841128,
+              -20.7102946728804
+            ],
+            [
+              140.510871346404,
+              -20.7112980814188
+            ],
+            [
+              140.510859111648,
+              -20.7114345209216
+            ],
+            [
+              140.506061153279,
+              -20.7301075476649
+            ],
+            [
+              140.504805415508,
+              -20.7349826395434
+            ],
+            [
+              140.504800112216,
+              -20.735001439322
+            ],
+            [
+              140.501991422821,
+              -20.7441531562315
+            ],
+            [
+              140.501145527904,
+              -20.7442916842613
+            ],
+            [
+              140.487036298102,
+              -20.7259250641473
+            ],
+            [
+              140.486974459856,
+              -20.7258151806541
+            ],
+            [
+              140.486379632238,
+              -20.7242729884845
+            ],
+            [
+              140.48635101997,
+              -20.7241150905872
+            ],
+            [
+              140.486386363496,
+              -20.7209100785321
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-29T09:30:51Z",
+        "snapshot_aest": "2026-09-29T19:30:51+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911392",
+        "outage_id": "911392",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage caused by external influences, such as birds or animals.",
+        "affected_customers": 58,
+        "affected_customers_known": true,
+        "suburb": "CLONCURRY",
+        "street_name": "BURKE RD, KING ST, MCKINLAY ST, MILE GDN, PHILLIPS ST, POWERHOUSE RD, ROXMERE RD, ROXMERE STN RD, SCARR ST, STATION ST, WALTONS FARM HOLDING, WALTONS WELL RVR, WELL RVR",
+        "start_utc": "2026-09-29T08:01:00Z",
+        "etr_utc": null,
+        "centroid_lon": 140.49913366424676,
+        "centroid_lat": -20.724428619106764,
+        "lga_name": "Cloncurry Shire",
+        "lga_code": "2450",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
