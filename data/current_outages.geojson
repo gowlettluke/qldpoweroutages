@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-30T19:15:45Z",
-        "snapshot_aest": "2026-10-01T05:15:45+10:00",
+        "snapshot_utc": "2026-09-30T19:30:50Z",
+        "snapshot_aest": "2026-10-01T05:30:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911434",
@@ -90,6 +90,98 @@
         "centroid_lat": -27.56349571736211,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.899294561334,
+              -18.4614881516167
+            ],
+            [
+              145.899500087854,
+              -18.4609764455623
+            ],
+            [
+              145.903746023036,
+              -18.4584741361093
+            ],
+            [
+              145.903953672932,
+              -18.4584084408667
+            ],
+            [
+              145.925195114314,
+              -18.4566393172662
+            ],
+            [
+              145.925708475149,
+              -18.4571229280059
+            ],
+            [
+              145.925115180329,
+              -18.4647414803171
+            ],
+            [
+              145.925076340986,
+              -18.4648900607765
+            ],
+            [
+              145.920894011986,
+              -18.4739544345417
+            ],
+            [
+              145.920428437209,
+              -18.4742231462752
+            ],
+            [
+              145.912889832217,
+              -18.4737325621725
+            ],
+            [
+              145.912853762025,
+              -18.473728885152
+            ],
+            [
+              145.902922862447,
+              -18.4723473453736
+            ],
+            [
+              145.902536851646,
+              -18.4720275144578
+            ],
+            [
+              145.899294561334,
+              -18.4614881516167
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-30T19:30:50Z",
+        "snapshot_aest": "2026-10-01T05:30:50+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911436",
+        "outage_id": "911436",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 26,
+        "affected_customers_known": true,
+        "suburb": "ABERGOWRIE",
+        "street_name": "ALAMEIN RD, EL ALAMEIN RD, TARAKAN RD, TOBRUK RD",
+        "start_utc": "2026-09-30T18:46:48Z",
+        "etr_utc": null,
+        "centroid_lon": 145.91309103188195,
+        "centroid_lat": -18.46515996161223,
+        "lga_name": "Hinchinbrook Shire",
+        "lga_code": "3800",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
