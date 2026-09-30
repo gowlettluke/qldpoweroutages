@@ -143,8 +143,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-30T22:15:39Z",
-        "snapshot_aest": "2026-10-01T08:15:39+10:00",
+        "snapshot_utc": "2026-09-30T22:30:56Z",
+        "snapshot_aest": "2026-10-01T08:30:56+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984463-g",
@@ -162,6 +162,74 @@
         "centroid_lat": -27.558528799606858,
         "lga_name": "Brisbane City",
         "lga_code": "1000",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.933512954855,
+              -26.3665464895057
+            ],
+            [
+              152.933742202573,
+              -26.3660528247953
+            ],
+            [
+              152.934445671,
+              -26.3656727363604
+            ],
+            [
+              152.93502457183,
+              -26.3657132767763
+            ],
+            [
+              152.935172445426,
+              -26.3662190924006
+            ],
+            [
+              152.934682309387,
+              -26.36739085383
+            ],
+            [
+              152.934182710544,
+              -26.3676822902248
+            ],
+            [
+              152.933726281575,
+              -26.3673381603786
+            ],
+            [
+              152.933512954855,
+              -26.3665464895057
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-30T22:30:56Z",
+        "snapshot_aest": "2026-10-01T08:30:56+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-984474-g",
+        "outage_id": "INCD-984474-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Under Investigation",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "LAKE MACDONALD",
+        "street_name": "GWANDALAN RD",
+        "start_utc": "2026-09-30T22:16:41Z",
+        "etr_utc": "2026-10-01T00:00:00Z",
+        "centroid_lon": 152.9343259388843,
+        "centroid_lat": -26.366594669703876,
+        "lga_name": "Noosa Shire",
+        "lga_code": "5740",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     },
@@ -235,8 +303,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-30T22:15:39Z",
-        "snapshot_aest": "2026-10-01T08:15:39+10:00",
+        "snapshot_utc": "2026-09-30T22:30:56Z",
+        "snapshot_aest": "2026-10-01T08:30:56+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911434",
@@ -254,86 +322,6 @@
         "centroid_lat": -27.56349571736211,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
-        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              148.686836496862,
-              -23.3659871853019
-            ],
-            [
-              148.686417730955,
-              -23.3656284496471
-            ],
-            [
-              148.686653129551,
-              -23.3651479006248
-            ],
-            [
-              148.740284937063,
-              -23.336629362853
-            ],
-            [
-              148.740420734226,
-              -23.3365802910669
-            ],
-            [
-              148.785235569745,
-              -23.3271747628467
-            ],
-            [
-              148.785672325085,
-              -23.3272804933002
-            ],
-            [
-              148.841725642677,
-              -23.3741750366493
-            ],
-            [
-              148.841776833834,
-              -23.3747944038485
-            ],
-            [
-              148.834761692971,
-              -23.3827607639282
-            ],
-            [
-              148.834322074563,
-              -23.3829240195611
-            ],
-            [
-              148.686836496862,
-              -23.3659871853019
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "snapshot_utc": "2026-09-30T22:15:39Z",
-        "snapshot_aest": "2026-10-01T08:15:39+10:00",
-        "provider_code": "au.qld.ergon",
-        "provider_name": "Ergon Energy",
-        "outage_key": "au.qld.ergon|unplanned|911438",
-        "outage_id": "911438",
-        "outage_type": "unplanned",
-        "status": "Crews working on-site",
-        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-        "affected_customers": 16,
-        "affected_customers_known": true,
-        "suburb": "BLACKWATER",
-        "street_name": "BEDFORD WEIR RD, MT STUART RD, OFF WEIR RD, RILEY'S CROSSING RD, WEIR RD",
-        "start_utc": "2026-09-30T20:11:34Z",
-        "etr_utc": null,
-        "centroid_lon": 148.77052226453853,
-        "centroid_lat": -23.357542536275844,
-        "lga_name": "Isaac Regional",
-        "lga_code": "3980",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
