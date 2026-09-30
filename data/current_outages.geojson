@@ -127,8 +127,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-30T10:00:53Z",
-        "snapshot_aest": "2026-09-30T20:00:53+10:00",
+        "snapshot_utc": "2026-09-30T10:15:43Z",
+        "snapshot_aest": "2026-09-30T20:15:43+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984400-g",
@@ -203,8 +203,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-30T10:00:53Z",
-        "snapshot_aest": "2026-09-30T20:00:53+10:00",
+        "snapshot_utc": "2026-09-30T10:15:43Z",
+        "snapshot_aest": "2026-09-30T20:15:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911405",
@@ -287,8 +287,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-09-30T10:00:53Z",
-        "snapshot_aest": "2026-09-30T20:00:53+10:00",
+        "snapshot_utc": "2026-09-30T10:15:43Z",
+        "snapshot_aest": "2026-09-30T20:15:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911432",
@@ -306,6 +306,98 @@
         "centroid_lat": -25.11039851693552,
         "lga_name": "Bundaberg Regional",
         "lga_code": "1820",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.957406190545,
+              -27.5630467733404
+            ],
+            [
+              151.957828128012,
+              -27.562416986466
+            ],
+            [
+              151.958522670448,
+              -27.5623673745066
+            ],
+            [
+              151.958756821839,
+              -27.5624003964082
+            ],
+            [
+              151.959257248267,
+              -27.562585738517
+            ],
+            [
+              151.959304970274,
+              -27.5626060873991
+            ],
+            [
+              151.959964208778,
+              -27.5629260319152
+            ],
+            [
+              151.960211301085,
+              -27.5632075456384
+            ],
+            [
+              151.960532286822,
+              -27.5643027233847
+            ],
+            [
+              151.959816828989,
+              -27.5648185635131
+            ],
+            [
+              151.958998645671,
+              -27.5644519770605
+            ],
+            [
+              151.958942982355,
+              -27.5644229276118
+            ],
+            [
+              151.957844234784,
+              -27.5637620766106
+            ],
+            [
+              151.957664459165,
+              -27.5635701949451
+            ],
+            [
+              151.957406190545,
+              -27.5630467733404
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-09-30T10:15:43Z",
+        "snapshot_aest": "2026-09-30T20:15:43+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911434",
+        "outage_id": "911434",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 19,
+        "affected_customers_known": true,
+        "suburb": "EAST TOOWOOMBA, TOOWOOMBA",
+        "street_name": "CLOPTON ST, HUME ST, KITCHENER ST, PHILLIP ST",
+        "start_utc": "2026-09-30T07:26:29Z",
+        "etr_utc": null,
+        "centroid_lon": 151.95902105228592,
+        "centroid_lat": -27.56349571736211,
+        "lga_name": "Toowoomba Regional",
+        "lga_code": "6910",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
