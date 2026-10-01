@@ -51,8 +51,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-01T21:45:42Z",
-        "snapshot_aest": "2026-10-02T07:45:42+10:00",
+        "snapshot_utc": "2026-10-01T22:00:55Z",
+        "snapshot_aest": "2026-10-02T08:00:55+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984655-g",
@@ -135,8 +135,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-01T21:45:42Z",
-        "snapshot_aest": "2026-10-02T07:45:42+10:00",
+        "snapshot_utc": "2026-10-01T22:00:55Z",
+        "snapshot_aest": "2026-10-02T08:00:55+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911434",
@@ -215,8 +215,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-01T21:45:42Z",
-        "snapshot_aest": "2026-10-02T07:45:42+10:00",
+        "snapshot_utc": "2026-10-01T22:00:55Z",
+        "snapshot_aest": "2026-10-02T08:00:55+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911491",
@@ -234,6 +234,74 @@
         "centroid_lat": -15.778549745533656,
         "lga_name": "Cook Shire",
         "lga_code": "2500",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.824591571926,
+              -25.2725665950999
+            ],
+            [
+              152.824444018342,
+              -25.2721751292851
+            ],
+            [
+              152.824476977808,
+              -25.2719741466137
+            ],
+            [
+              152.82492961384,
+              -25.271592057953
+            ],
+            [
+              152.82543909935,
+              -25.2719094997794
+            ],
+            [
+              152.825547500671,
+              -25.2722332372678
+            ],
+            [
+              152.825333746031,
+              -25.2727470454665
+            ],
+            [
+              152.824732931047,
+              -25.2726893508203
+            ],
+            [
+              152.824591571926,
+              -25.2725665950999
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-01T22:00:55Z",
+        "snapshot_aest": "2026-10-02T08:00:55+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911498",
+        "outage_id": "911498",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "PIALBA",
+        "street_name": "HELVIG CCT",
+        "start_utc": "2026-10-01T21:20:00Z",
+        "etr_utc": null,
+        "centroid_lon": 152.82499697613702,
+        "centroid_lat": -25.27221243034639,
+        "lga_name": "Fraser Coast Regional",
+        "lga_code": "3220",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
