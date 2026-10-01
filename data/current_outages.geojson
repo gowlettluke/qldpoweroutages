@@ -43,8 +43,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-01T15:01:00Z",
-        "snapshot_aest": "2026-10-02T01:01:00+10:00",
+        "snapshot_utc": "2026-10-01T15:30:56Z",
+        "snapshot_aest": "2026-10-02T01:30:56+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984463-g",
@@ -135,8 +135,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-01T15:01:00Z",
-        "snapshot_aest": "2026-10-02T01:01:00+10:00",
+        "snapshot_utc": "2026-10-01T15:30:56Z",
+        "snapshot_aest": "2026-10-02T01:30:56+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984636-g",
@@ -149,7 +149,7 @@
         "suburb": "COOLUM BEACH",
         "street_name": "BEACH RD, FRANK ST, LONG BEACH AVE, PERRY ST",
         "start_utc": "2026-10-01T10:46:27Z",
-        "etr_utc": "2026-10-01T15:30:00Z",
+        "etr_utc": "2026-10-01T16:00:00Z",
         "centroid_lon": 153.08952317015996,
         "centroid_lat": -26.532175434619973,
         "lga_name": "Sunshine Coast Regional",
@@ -219,8 +219,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-01T15:01:00Z",
-        "snapshot_aest": "2026-10-02T01:01:00+10:00",
+        "snapshot_utc": "2026-10-01T15:30:56Z",
+        "snapshot_aest": "2026-10-02T01:30:56+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911434",
@@ -335,14 +335,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-01T15:01:00Z",
-        "snapshot_aest": "2026-10-02T01:01:00+10:00",
+        "snapshot_utc": "2026-10-01T15:30:56Z",
+        "snapshot_aest": "2026-10-02T01:30:56+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911490",
         "outage_id": "911490",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 132,
         "affected_customers_known": true,
@@ -354,6 +354,86 @@
         "centroid_lat": -17.181732003432675,
         "lga_name": "Mareeba Shire",
         "lga_code": "4880",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.825214864133,
+              -15.8162923688941
+            ],
+            [
+              144.825175563343,
+              -15.8158675431039
+            ],
+            [
+              144.836480858654,
+              -15.7901447156159
+            ],
+            [
+              144.836651657236,
+              -15.7899455253998
+            ],
+            [
+              145.020517667974,
+              -15.6712966052167
+            ],
+            [
+              145.021115158165,
+              -15.6713619951
+            ],
+            [
+              145.021149398122,
+              -15.6719436053612
+            ],
+            [
+              144.925152974114,
+              -15.795794251375
+            ],
+            [
+              144.925119488707,
+              -15.7958327474251
+            ],
+            [
+              144.85846286395,
+              -15.864289150619
+            ],
+            [
+              144.857733215922,
+              -15.8642272249123
+            ],
+            [
+              144.825214864133,
+              -15.8162923688941
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-01T15:30:56Z",
+        "snapshot_aest": "2026-10-02T01:30:56+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911491",
+        "outage_id": "911491",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 38,
+        "affected_customers_known": true,
+        "suburb": "LAKELAND",
+        "street_name": "ANDERSON ST, DAWSON RD, HURSE RD, MULLIGAN HWY, PENINSULA DEVELOPMENT RD, UNKNOWN ST",
+        "start_utc": "2026-10-01T15:00:31Z",
+        "etr_utc": null,
+        "centroid_lon": 144.90361905086584,
+        "centroid_lat": -15.778549745533656,
+        "lga_name": "Cook Shire",
+        "lga_code": "2500",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
