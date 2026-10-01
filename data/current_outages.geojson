@@ -51,8 +51,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-01T23:00:58Z",
-        "snapshot_aest": "2026-10-02T09:00:58+10:00",
+        "snapshot_utc": "2026-10-01T23:30:48Z",
+        "snapshot_aest": "2026-10-02T09:30:48+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984655-g",
@@ -135,8 +135,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-01T23:00:58Z",
-        "snapshot_aest": "2026-10-02T09:00:58+10:00",
+        "snapshot_utc": "2026-10-01T23:30:48Z",
+        "snapshot_aest": "2026-10-02T09:30:48+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911434",
@@ -215,8 +215,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-01T23:00:58Z",
-        "snapshot_aest": "2026-10-02T09:00:58+10:00",
+        "snapshot_utc": "2026-10-01T23:30:48Z",
+        "snapshot_aest": "2026-10-02T09:30:48+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911491",
@@ -283,8 +283,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-01T23:00:58Z",
-        "snapshot_aest": "2026-10-02T09:00:58+10:00",
+        "snapshot_utc": "2026-10-01T23:30:48Z",
+        "snapshot_aest": "2026-10-02T09:30:48+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911498",
@@ -302,6 +302,74 @@
         "centroid_lat": -25.27221243034639,
         "lga_name": "Fraser Coast Regional",
         "lga_code": "3220",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.580840663243,
+              -24.3993253683155
+            ],
+            [
+              148.580857949926,
+              -24.3987997589605
+            ],
+            [
+              148.581406960829,
+              -24.3986457033722
+            ],
+            [
+              148.584849350964,
+              -24.399705598429
+            ],
+            [
+              148.585181281147,
+              -24.4001905012661
+            ],
+            [
+              148.584727307944,
+              -24.4005838133487
+            ],
+            [
+              148.58218424295,
+              -24.4007497977409
+            ],
+            [
+              148.581740006143,
+              -24.4005512522194
+            ],
+            [
+              148.580840663243,
+              -24.3993253683155
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-01T23:30:48Z",
+        "snapshot_aest": "2026-10-02T09:30:48+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911561",
+        "outage_id": "911561",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 4,
+        "affected_customers_known": true,
+        "suburb": "ROLLESTON, SPRINGSURE",
+        "street_name": "OFF DAWSON HWY, STARLEE RD",
+        "start_utc": "2026-10-01T21:01:05Z",
+        "etr_utc": null,
+        "centroid_lon": 148.58281056459822,
+        "centroid_lat": -24.399818596116972,
+        "lga_name": "Central Highlands Regional",
+        "lga_code": "2270",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
