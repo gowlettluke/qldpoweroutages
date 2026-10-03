@@ -47,8 +47,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-03T06:45:39Z",
-        "snapshot_aest": "2026-10-03T16:45:39+10:00",
+        "snapshot_utc": "2026-10-03T07:00:58Z",
+        "snapshot_aest": "2026-10-03T17:00:58+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984882-g",
@@ -143,8 +143,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-03T06:45:39Z",
-        "snapshot_aest": "2026-10-03T16:45:39+10:00",
+        "snapshot_utc": "2026-10-03T07:00:58Z",
+        "snapshot_aest": "2026-10-03T17:00:58+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911674",
@@ -251,8 +251,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-03T06:45:39Z",
-        "snapshot_aest": "2026-10-03T16:45:39+10:00",
+        "snapshot_utc": "2026-10-03T07:00:58Z",
+        "snapshot_aest": "2026-10-03T17:00:58+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911675",
@@ -339,8 +339,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-03T06:45:39Z",
-        "snapshot_aest": "2026-10-03T16:45:39+10:00",
+        "snapshot_utc": "2026-10-03T07:00:58Z",
+        "snapshot_aest": "2026-10-03T17:00:58+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911678",
@@ -353,7 +353,7 @@
         "suburb": "BRINSMEAD",
         "street_name": "ALLAMANDA RISE, BRINSMEAD RD, RADIATA CT",
         "start_utc": "2026-10-03T06:10:30Z",
-        "etr_utc": null,
+        "etr_utc": "2026-10-03T11:59:00Z",
         "centroid_lon": 145.70770681787644,
         "centroid_lat": -16.890923764989154,
         "lga_name": "Cairns Regional",
@@ -423,14 +423,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-03T06:45:39Z",
-        "snapshot_aest": "2026-10-03T16:45:39+10:00",
+        "snapshot_utc": "2026-10-03T07:00:58Z",
+        "snapshot_aest": "2026-10-03T17:00:58+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911679",
         "outage_id": "911679",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews on route",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 25,
         "affected_customers_known": true,
@@ -442,6 +442,86 @@
         "centroid_lat": -24.237572423326053,
         "lga_name": "Banana Shire",
         "lga_code": "370",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.707619270237,
+              -16.8913604913651
+            ],
+            [
+              145.707276112175,
+              -16.8905990579372
+            ],
+            [
+              145.708371944146,
+              -16.8894771153755
+            ],
+            [
+              145.708430768885,
+              -16.8894262484895
+            ],
+            [
+              145.708870898415,
+              -16.8891058074222
+            ],
+            [
+              145.708937622194,
+              -16.8890652365705
+            ],
+            [
+              145.710804822446,
+              -16.8881313172049
+            ],
+            [
+              145.711367716194,
+              -16.8882275292525
+            ],
+            [
+              145.711416488338,
+              -16.8887759385812
+            ],
+            [
+              145.709839518456,
+              -16.8911476060354
+            ],
+            [
+              145.709445467651,
+              -16.8913558487971
+            ],
+            [
+              145.707619270237,
+              -16.8913604913651
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-03T07:00:58Z",
+        "snapshot_aest": "2026-10-03T17:00:58+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911680",
+        "outage_id": "911680",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to a vehicle accident.",
+        "affected_customers": 20,
+        "affected_customers_known": true,
+        "suburb": "BRINSMEAD",
+        "street_name": "ALLAMANDA RISE, BRINSMEAD RD, RADIATA CT",
+        "start_utc": "2026-10-03T06:09:55Z",
+        "etr_utc": "2026-10-03T11:59:00Z",
+        "centroid_lon": 145.70939926306994,
+        "centroid_lat": -16.889922379978028,
+        "lga_name": "Cairns Regional",
+        "lga_code": "2080",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
