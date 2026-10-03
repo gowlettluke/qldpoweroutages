@@ -1,4 +1,65 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.957115977138,
+              -26.8880597041903
+            ],
+            [
+              152.956814786719,
+              -26.8886381964496
+            ],
+            [
+              152.956169631418,
+              -26.888368125589
+            ],
+            [
+              152.954453507209,
+              -26.8841342010221
+            ],
+            [
+              152.954754697668,
+              -26.8835557134274
+            ],
+            [
+              152.955399822285,
+              -26.8838257908949
+            ],
+            [
+              152.957115977138,
+              -26.8880597041903
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-03T11:00:57Z",
+        "snapshot_aest": "2026-10-03T21:00:57+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-984909-g",
+        "outage_id": "INCD-984909-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Emergency Repairs",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "GLASSHOUSE MOUNTAINS",
+        "street_name": "YOUNGS RD",
+        "start_utc": "2026-10-03T09:37:29Z",
+        "etr_utc": "2026-10-03T11:30:00Z",
+        "centroid_lon": 152.95577824688752,
+        "centroid_lat": -26.886095828905553,
+        "lga_name": "Sunshine Coast Regional",
+        "lga_code": "6720",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    }
+  ]
 }
