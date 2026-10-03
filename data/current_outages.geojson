@@ -87,8 +87,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-03T02:00:58Z",
-        "snapshot_aest": "2026-10-03T12:00:58+10:00",
+        "snapshot_utc": "2026-10-03T02:15:41Z",
+        "snapshot_aest": "2026-10-03T12:15:41+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984859-g",
@@ -183,8 +183,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-03T02:00:58Z",
-        "snapshot_aest": "2026-10-03T12:00:58+10:00",
+        "snapshot_utc": "2026-10-03T02:15:41Z",
+        "snapshot_aest": "2026-10-03T12:15:41+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911671",
@@ -202,6 +202,102 @@
         "centroid_lat": -17.498172520927156,
         "lga_name": "Cassowary Coast Regional",
         "lga_code": "2260",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.98517637766,
+              -26.6756952863407
+            ],
+            [
+              151.985178139292,
+              -26.6756321301493
+            ],
+            [
+              151.98527692791,
+              -26.6747036346208
+            ],
+            [
+              151.985300321365,
+              -26.6746042473218
+            ],
+            [
+              151.985468087709,
+              -26.6741516855169
+            ],
+            [
+              151.985768369176,
+              -26.673872182801
+            ],
+            [
+              151.986837994058,
+              -26.673513851882
+            ],
+            [
+              151.98750939713,
+              -26.6739966073914
+            ],
+            [
+              151.987397178379,
+              -26.6747330729533
+            ],
+            [
+              151.987395756809,
+              -26.6747417695085
+            ],
+            [
+              151.986897733182,
+              -26.6775943675007
+            ],
+            [
+              151.986493995988,
+              -26.6779671846839
+            ],
+            [
+              151.985968435486,
+              -26.677748945747
+            ],
+            [
+              151.985281600566,
+              -26.6766756344276
+            ],
+            [
+              151.9852154558,
+              -26.6764716515078
+            ],
+            [
+              151.98517637766,
+              -26.6756952863407
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-03T02:15:41Z",
+        "snapshot_aest": "2026-10-03T12:15:41+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911674",
+        "outage_id": "911674",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 16,
+        "affected_customers_known": true,
+        "suburb": "NANANGO",
+        "street_name": "MCGINLEY RD",
+        "start_utc": "2026-10-03T01:57:22Z",
+        "etr_utc": null,
+        "centroid_lon": 151.98630661511837,
+        "centroid_lat": -26.675597294643342,
+        "lga_name": "South Burnett Regional",
+        "lga_code": "6630",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
