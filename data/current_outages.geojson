@@ -59,8 +59,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-03T03:45:42Z",
-        "snapshot_aest": "2026-10-03T13:45:42+10:00",
+        "snapshot_utc": "2026-10-03T04:00:56Z",
+        "snapshot_aest": "2026-10-03T14:00:56+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984863-g",
@@ -73,7 +73,7 @@
         "suburb": "ROSEMOUNT",
         "street_name": "UPPER ROSEMOUNT RD",
         "start_utc": "2026-10-03T02:12:41Z",
-        "etr_utc": "2026-10-03T04:00:00Z",
+        "etr_utc": "2026-10-03T04:30:00Z",
         "centroid_lon": 153.00414196831645,
         "centroid_lat": -26.625973303639903,
         "lga_name": "Sunshine Coast Regional",
@@ -155,8 +155,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-03T03:45:42Z",
-        "snapshot_aest": "2026-10-03T13:45:42+10:00",
+        "snapshot_utc": "2026-10-03T04:00:56Z",
+        "snapshot_aest": "2026-10-03T14:00:56+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911674",
@@ -263,8 +263,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-03T03:45:42Z",
-        "snapshot_aest": "2026-10-03T13:45:42+10:00",
+        "snapshot_utc": "2026-10-03T04:00:56Z",
+        "snapshot_aest": "2026-10-03T14:00:56+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911675",
@@ -282,6 +282,98 @@
         "centroid_lat": -17.67963084751571,
         "lga_name": "Carpentaria Shire",
         "lga_code": "2250",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.913954673628,
+              -17.222185084668
+            ],
+            [
+              145.913894399792,
+              -17.2219571399233
+            ],
+            [
+              145.913944874136,
+              -17.2185896710616
+            ],
+            [
+              145.913990262944,
+              -17.2184023762571
+            ],
+            [
+              145.91423819197,
+              -17.2179004769558
+            ],
+            [
+              145.914717016604,
+              -17.2176453822515
+            ],
+            [
+              145.915178059467,
+              -17.217696662559
+            ],
+            [
+              145.915250480271,
+              -17.2177103211295
+            ],
+            [
+              145.917664691865,
+              -17.2183582856235
+            ],
+            [
+              145.917989596745,
+              -17.2189201231312
+            ],
+            [
+              145.916612095924,
+              -17.2234563323213
+            ],
+            [
+              145.915904764852,
+              -17.22370881788
+            ],
+            [
+              145.914335186567,
+              -17.2227300759361
+            ],
+            [
+              145.914181240404,
+              -17.2225724282431
+            ],
+            [
+              145.913954673628,
+              -17.222185084668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-03T04:00:56Z",
+        "snapshot_aest": "2026-10-03T14:00:56+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911677",
+        "outage_id": "911677",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 23,
+        "affected_customers_known": true,
+        "suburb": "DEERAL",
+        "street_name": "BRADGAN RD, BRUCE HWY, LANDER CL, ROSS RD",
+        "start_utc": "2026-10-03T02:19:56Z",
+        "etr_utc": null,
+        "centroid_lon": 145.9157068350283,
+        "centroid_lat": -17.220440497056913,
+        "lga_name": "Cairns Regional",
+        "lga_code": "2080",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
