@@ -1,4 +1,69 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.62220045223,
+              -25.7054103211995
+            ],
+            [
+              152.621771186716,
+              -25.7048503895354
+            ],
+            [
+              152.622150112868,
+              -25.7035229439427
+            ],
+            [
+              152.622890091455,
+              -25.7032520846929
+            ],
+            [
+              152.625847063013,
+              -25.7048937345831
+            ],
+            [
+              152.62605785689,
+              -25.7054215186969
+            ],
+            [
+              152.625536365441,
+              -25.7057245284548
+            ],
+            [
+              152.62220045223,
+              -25.7054103211995
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-04T09:00:56Z",
+        "snapshot_aest": "2026-10-04T19:00:56+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911757",
+        "outage_id": "911757",
+        "outage_type": "unplanned",
+        "status": "Crews on route",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "TIARO",
+        "street_name": "WILSONS RD",
+        "start_utc": "2026-10-04T08:31:45Z",
+        "etr_utc": null,
+        "centroid_lon": 152.62366804811697,
+        "centroid_lat": -25.704678419501068,
+        "lga_name": "Fraser Coast Regional",
+        "lga_code": "3220",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    }
+  ]
 }
