@@ -43,14 +43,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-04T09:15:43Z",
-        "snapshot_aest": "2026-10-04T19:15:43+10:00",
+        "snapshot_utc": "2026-10-04T09:30:54Z",
+        "snapshot_aest": "2026-10-04T19:30:54+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911757",
         "outage_id": "911757",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 3,
         "affected_customers_known": true,
@@ -62,6 +62,98 @@
         "centroid_lat": -25.704678419501068,
         "lga_name": "Fraser Coast Regional",
         "lga_code": "3220",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.306785610573,
+              -21.3605175320146
+            ],
+            [
+              149.30668732518,
+              -21.3600064601419
+            ],
+            [
+              149.307258089224,
+              -21.3588545151197
+            ],
+            [
+              149.30735378499,
+              -21.358725979847
+            ],
+            [
+              149.307575749293,
+              -21.3585172374994
+            ],
+            [
+              149.308326725943,
+              -21.3585978849586
+            ],
+            [
+              149.308455037029,
+              -21.3587916795753
+            ],
+            [
+              149.30850580943,
+              -21.3591632806758
+            ],
+            [
+              149.308457675225,
+              -21.359308754278
+            ],
+            [
+              149.308420302689,
+              -21.3593915024966
+            ],
+            [
+              149.307790356433,
+              -21.3604718814519
+            ],
+            [
+              149.307492044958,
+              -21.3606915627672
+            ],
+            [
+              149.307350946193,
+              -21.360726949194
+            ],
+            [
+              149.306887464897,
+              -21.3606118755224
+            ],
+            [
+              149.306785610573,
+              -21.3605175320146
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-04T09:30:54Z",
+        "snapshot_aest": "2026-10-04T19:30:54+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911758",
+        "outage_id": "911758",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 19,
+        "affected_customers_known": true,
+        "suburb": "GRASSTREE BEACH",
+        "street_name": "THE ESPLANADE, ZELMA ST",
+        "start_utc": "2026-10-04T08:43:07Z",
+        "etr_utc": null,
+        "centroid_lon": 149.30759546466788,
+        "centroid_lat": -21.3595959936217,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
