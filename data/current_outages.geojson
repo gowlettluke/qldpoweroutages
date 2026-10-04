@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-04T00:30:50Z",
-        "snapshot_aest": "2026-10-04T10:30:50+10:00",
+        "snapshot_utc": "2026-10-04T00:45:41Z",
+        "snapshot_aest": "2026-10-04T10:45:41+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-984939-g",
@@ -139,8 +139,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-04T00:30:50Z",
-        "snapshot_aest": "2026-10-04T10:30:50+10:00",
+        "snapshot_utc": "2026-10-04T00:45:41Z",
+        "snapshot_aest": "2026-10-04T10:45:41+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911746",
@@ -255,8 +255,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-04T00:30:50Z",
-        "snapshot_aest": "2026-10-04T10:30:50+10:00",
+        "snapshot_utc": "2026-10-04T00:45:41Z",
+        "snapshot_aest": "2026-10-04T10:45:41+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911747",
@@ -274,6 +274,82 @@
         "centroid_lat": -16.573800566639562,
         "lga_name": "Mareeba Shire",
         "lga_code": "4880",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.274809047456,
+              -25.1737036599882
+            ],
+            [
+              152.274797776634,
+              -25.1729282616103
+            ],
+            [
+              152.277115462825,
+              -25.1716483038549
+            ],
+            [
+              152.277275990668,
+              -25.1715915717009
+            ],
+            [
+              152.284194408747,
+              -25.1703453309253
+            ],
+            [
+              152.284688260059,
+              -25.1705195345701
+            ],
+            [
+              152.290210824018,
+              -25.1773287664337
+            ],
+            [
+              152.289767855286,
+              -25.1780440596176
+            ],
+            [
+              152.282002891944,
+              -25.1773961866085
+            ],
+            [
+              152.281802822397,
+              -25.1773388305381
+            ],
+            [
+              152.274809047456,
+              -25.1737036599882
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-04T00:45:41Z",
+        "snapshot_aest": "2026-10-04T10:45:41+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911750",
+        "outage_id": "911750",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 9,
+        "affected_customers_known": true,
+        "suburb": "FARNSFIELD, NORTH ISIS",
+        "street_name": "KNOCKROE RD, MCDONALDS RD",
+        "start_utc": "2026-10-03T22:59:30Z",
+        "etr_utc": null,
+        "centroid_lon": 152.28267088204433,
+        "centroid_lat": -25.174286913833605,
+        "lga_name": "Bundaberg Regional",
+        "lga_code": "1820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
