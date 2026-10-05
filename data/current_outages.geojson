@@ -47,8 +47,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-05T03:15:47Z",
-        "snapshot_aest": "2026-10-05T13:15:47+10:00",
+        "snapshot_utc": "2026-10-05T03:30:49Z",
+        "snapshot_aest": "2026-10-05T13:30:49+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-985048-g",
@@ -61,7 +61,7 @@
         "suburb": "CARBROOK",
         "street_name": "STERN RD",
         "start_utc": "2026-10-05T01:30:57Z",
-        "etr_utc": "2026-10-05T03:30:00Z",
+        "etr_utc": "2026-10-05T04:00:00Z",
         "centroid_lon": 153.2451780742117,
         "centroid_lat": -27.664022494393777,
         "lga_name": "Logan City",
@@ -147,8 +147,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-05T03:15:47Z",
-        "snapshot_aest": "2026-10-05T13:15:47+10:00",
+        "snapshot_utc": "2026-10-05T03:30:49Z",
+        "snapshot_aest": "2026-10-05T13:30:49+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-985047-g",
@@ -263,8 +263,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-05T03:15:47Z",
-        "snapshot_aest": "2026-10-05T13:15:47+10:00",
+        "snapshot_utc": "2026-10-05T03:30:49Z",
+        "snapshot_aest": "2026-10-05T13:30:49+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911762",
@@ -282,6 +282,82 @@
         "centroid_lat": -10.18621148905002,
         "lga_name": "Torres Shire",
         "lga_code": "6950",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.188528810901,
+              -22.5473463747785
+            ],
+            [
+              149.189273629025,
+              -22.5469165315568
+            ],
+            [
+              149.236901583629,
+              -22.5751861412785
+            ],
+            [
+              149.237065347186,
+              -22.5753482315243
+            ],
+            [
+              149.272435254279,
+              -22.6347618127373
+            ],
+            [
+              149.272248190599,
+              -22.6353736035131
+            ],
+            [
+              149.248611996043,
+              -22.6477185364052
+            ],
+            [
+              149.248460918412,
+              -22.647769174472
+            ],
+            [
+              149.201931749131,
+              -22.6556491969186
+            ],
+            [
+              149.201361105311,
+              -22.6552546865846
+            ],
+            [
+              149.188528810901,
+              -22.5473463747785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-05T03:30:49Z",
+        "snapshot_aest": "2026-10-05T13:30:49+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911776",
+        "outage_id": "911776",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 22,
+        "affected_customers_known": true,
+        "suburb": "MARLBOROUGH",
+        "street_name": "MARLBOROUGH-SARINA RD, MAY DOWNS RD",
+        "start_utc": "2026-10-05T03:13:43Z",
+        "etr_utc": null,
+        "centroid_lon": 149.22377371880205,
+        "centroid_lat": -22.608863002128714,
+        "lga_name": "Isaac Regional",
+        "lga_code": "3980",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
