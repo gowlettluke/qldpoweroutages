@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-05T09:45:42Z",
-        "snapshot_aest": "2026-10-05T19:45:42+10:00",
+        "snapshot_utc": "2026-10-05T10:01:02Z",
+        "snapshot_aest": "2026-10-05T20:01:02+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-985095-g",
@@ -163,8 +163,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-05T09:45:42Z",
-        "snapshot_aest": "2026-10-05T19:45:42+10:00",
+        "snapshot_utc": "2026-10-05T10:01:02Z",
+        "snapshot_aest": "2026-10-05T20:01:02+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-985093-g",
@@ -177,7 +177,7 @@
         "suburb": "WELLINGTON POINT",
         "street_name": "AARON CT, ACACIA ST, ALLAN DAY DR, BAYVIEW ST, BEACHCREST RD, CASEY CT, CHAMPION LANE, CRONIN DR, DOURO RD, EDIE TCE, ESPLANADE, HELENA ST, JELLICOE ST, KING ISLAND DR, MAIN RD, MARCEL PL, MARSHALL LANE, OCONNELL PDE, PETERS CT, RESERVE ESP, SOPHIE CT, SORRENTO CL, VANTAGE CRES",
         "start_utc": "2026-10-05T07:50:17Z",
-        "etr_utc": "2026-10-05T10:30:00Z",
+        "etr_utc": "2026-10-05T12:30:00Z",
         "centroid_lon": 153.23590296366746,
         "centroid_lat": -27.4779151219458,
         "lga_name": "Redland City",
@@ -239,8 +239,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-05T09:45:42Z",
-        "snapshot_aest": "2026-10-05T19:45:42+10:00",
+        "snapshot_utc": "2026-10-05T10:01:02Z",
+        "snapshot_aest": "2026-10-05T20:01:02+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911776",
@@ -335,8 +335,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-05T09:45:42Z",
-        "snapshot_aest": "2026-10-05T19:45:42+10:00",
+        "snapshot_utc": "2026-10-05T10:01:02Z",
+        "snapshot_aest": "2026-10-05T20:01:02+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911780",
@@ -354,6 +354,58 @@
         "centroid_lat": -20.735632305904232,
         "lga_name": "Mount Isa City",
         "lga_code": "5300",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.764236255052,
+              -19.2947417244608
+            ],
+            [
+              146.763759706674,
+              -19.2951929753976
+            ],
+            [
+              146.763284455078,
+              -19.2947404932035
+            ],
+            [
+              146.76376100342,
+              -19.2942892434845
+            ],
+            [
+              146.764236255052,
+              -19.2947417244608
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-05T10:01:02Z",
+        "snapshot_aest": "2026-10-05T20:01:02+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911781",
+        "outage_id": "911781",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "AITKENVALE",
+        "street_name": "CHARLES ST, ELIZABETH ST",
+        "start_utc": "2026-10-05T08:43:18Z",
+        "etr_utc": null,
+        "centroid_lon": 146.76378021335074,
+        "centroid_lat": -19.294743720096307,
+        "lga_name": "Townsville City",
+        "lga_code": "7010",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
