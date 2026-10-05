@@ -143,14 +143,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-05T19:16:09Z",
-        "snapshot_aest": "2026-10-06T05:16:09+10:00",
+        "snapshot_utc": "2026-10-05T19:46:36Z",
+        "snapshot_aest": "2026-10-06T05:46:36+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911786",
         "outage_id": "911786",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews on route",
         "reason": "The loss of supply is due to damage caused by storm activity.",
         "affected_customers": 3598,
         "affected_customers_known": true,
@@ -160,6 +160,86 @@
         "etr_utc": null,
         "centroid_lon": 151.795105108833,
         "centroid_lat": -28.211481711810354,
+        "lga_name": "Southern Downs Regional",
+        "lga_code": "6660",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.132816681114,
+              -28.1316266072041
+            ],
+            [
+              152.132690936943,
+              -28.1311117746712
+            ],
+            [
+              152.133630349045,
+              -28.1292066599952
+            ],
+            [
+              152.133644398887,
+              -28.1291804962686
+            ],
+            [
+              152.134426036228,
+              -28.1278380824236
+            ],
+            [
+              152.135061427727,
+              -28.1276252649503
+            ],
+            [
+              152.13536657003,
+              -28.1281632297613
+            ],
+            [
+              152.134287462322,
+              -28.1316587586336
+            ],
+            [
+              152.134271938171,
+              -28.1317008047038
+            ],
+            [
+              152.134187286814,
+              -28.1318968936011
+            ],
+            [
+              152.133373942594,
+              -28.1320706913641
+            ],
+            [
+              152.132816681114,
+              -28.1316266072041
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-05T19:46:36Z",
+        "snapshot_aest": "2026-10-06T05:46:36+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911789",
+        "outage_id": "911789",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 9,
+        "affected_customers_known": true,
+        "suburb": "FREESTONE",
+        "street_name": "FREESTONE RD, SHELLEYS RD",
+        "start_utc": "2026-10-05T18:45:13Z",
+        "etr_utc": null,
+        "centroid_lon": 152.13405958311162,
+        "centroid_lat": -28.129998272726972,
         "lga_name": "Southern Downs Regional",
         "lga_code": "6660",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
