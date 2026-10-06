@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-06T19:45:51Z",
-        "snapshot_aest": "2026-10-07T05:45:51+10:00",
+        "snapshot_utc": "2026-10-06T20:01:07Z",
+        "snapshot_aest": "2026-10-07T06:01:07+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911843",
@@ -171,14 +171,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-06T19:45:51Z",
-        "snapshot_aest": "2026-10-07T05:45:51+10:00",
+        "snapshot_utc": "2026-10-06T20:01:07Z",
+        "snapshot_aest": "2026-10-07T06:01:07+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911864",
         "outage_id": "911864",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs.",
         "affected_customers": 14,
         "affected_customers_known": true,
@@ -263,8 +263,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-06T19:45:51Z",
-        "snapshot_aest": "2026-10-07T05:45:51+10:00",
+        "snapshot_utc": "2026-10-06T20:01:07Z",
+        "snapshot_aest": "2026-10-07T06:01:07+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911865",
@@ -347,14 +347,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-06T19:45:51Z",
-        "snapshot_aest": "2026-10-07T05:45:51+10:00",
+        "snapshot_utc": "2026-10-06T20:01:07Z",
+        "snapshot_aest": "2026-10-07T06:01:07+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911866",
         "outage_id": "911866",
         "outage_type": "unplanned",
-        "status": "Work delayed - crews unable to continue",
+        "status": "Outage reported",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 20,
         "affected_customers_known": true,
@@ -411,8 +411,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-06T19:45:51Z",
-        "snapshot_aest": "2026-10-07T05:45:51+10:00",
+        "snapshot_utc": "2026-10-06T20:01:07Z",
+        "snapshot_aest": "2026-10-07T06:01:07+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|911869",
@@ -430,6 +430,90 @@
         "centroid_lat": -27.162368228789312,
         "lga_name": "Western Downs Regional",
         "lga_code": "7310",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.342619004179,
+              -26.6550213664876
+            ],
+            [
+              151.342392718403,
+              -26.6546290078859
+            ],
+            [
+              151.347227964215,
+              -26.5293386485297
+            ],
+            [
+              151.3478730932,
+              -26.5289230964147
+            ],
+            [
+              151.425106960242,
+              -26.5498707430205
+            ],
+            [
+              151.425340356704,
+              -26.5500063885644
+            ],
+            [
+              151.438788835941,
+              -26.5639076836305
+            ],
+            [
+              151.438897251129,
+              -26.5640954023732
+            ],
+            [
+              151.467812172961,
+              -26.6693229117311
+            ],
+            [
+              151.467514726517,
+              -26.6698480218717
+            ],
+            [
+              151.406299510852,
+              -26.6922442543172
+            ],
+            [
+              151.405835966441,
+              -26.6922039758512
+            ],
+            [
+              151.342619004179,
+              -26.6550213664876
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-06T20:01:07Z",
+        "snapshot_aest": "2026-10-07T06:01:07+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|911870",
+        "outage_id": "911870",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 57,
+        "affected_customers_known": true,
+        "suburb": "BOYNESIDE, IRONPOT, JARAIL CREEK, KUMBIA",
+        "street_name": "DIAMOND RD, DIAMONDY RD, GREYSTONLEA RD, IRONPOT RD, JARAIL CREEK RD, JARAIL RD, MCGILLS RD, RED TANK RD, SARUM RD",
+        "start_utc": "2026-10-06T17:49:42Z",
+        "etr_utc": null,
+        "centroid_lon": 151.39843859055003,
+        "centroid_lat": -26.613852684413907,
+        "lga_name": "South Burnett Regional",
+        "lga_code": "6630",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
