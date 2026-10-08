@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-08T21:45:43Z",
-        "snapshot_aest": "2026-10-09T07:45:43+10:00",
+        "snapshot_utc": "2026-10-08T22:00:57Z",
+        "snapshot_aest": "2026-10-09T08:00:57+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-10085-h",
@@ -147,8 +147,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-08T21:45:43Z",
-        "snapshot_aest": "2026-10-09T07:45:43+10:00",
+        "snapshot_utc": "2026-10-08T22:00:57Z",
+        "snapshot_aest": "2026-10-09T08:00:57+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|912116",
@@ -227,8 +227,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-08T21:45:43Z",
-        "snapshot_aest": "2026-10-09T07:45:43+10:00",
+        "snapshot_utc": "2026-10-08T22:00:57Z",
+        "snapshot_aest": "2026-10-09T08:00:57+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|912123",
@@ -246,6 +246,86 @@
         "centroid_lat": -20.810535129965384,
         "lga_name": "Whitsunday Regional",
         "lga_code": "7340",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.083167027074,
+              -25.7978460224107
+            ],
+            [
+              146.083102323918,
+              -25.7972503327967
+            ],
+            [
+              146.083747681596,
+              -25.7971200678046
+            ],
+            [
+              146.190645114862,
+              -25.8505940570477
+            ],
+            [
+              146.190668387945,
+              -25.8506064404723
+            ],
+            [
+              146.337839010878,
+              -25.9337121088811
+            ],
+            [
+              146.337865047135,
+              -25.9337278340228
+            ],
+            [
+              146.519399903159,
+              -26.0507470630866
+            ],
+            [
+              146.519254442955,
+              -26.0515470006234
+            ],
+            [
+              146.419207821192,
+              -26.0787973123485
+            ],
+            [
+              146.41872452091,
+              -26.0786967174081
+            ],
+            [
+              146.083167027074,
+              -25.7978460224107
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-08T22:00:57Z",
+        "snapshot_aest": "2026-10-09T08:00:57+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|912131",
+        "outage_id": "912131",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 9,
+        "affected_customers_known": true,
+        "suburb": "CHARLEVILLE",
+        "street_name": "CHARLEVILLE RD, VALERA VALE RD, WARD RD",
+        "start_utc": "2026-10-08T21:27:00Z",
+        "etr_utc": "2026-10-09T02:00:00Z",
+        "centroid_lon": 146.33344398339295,
+        "centroid_lat": -25.966895605495758,
+        "lga_name": "Murweh Shire",
+        "lga_code": "5600",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
