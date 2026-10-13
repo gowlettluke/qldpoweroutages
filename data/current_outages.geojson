@@ -67,8 +67,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-13T23:30:56Z",
-        "snapshot_aest": "2026-10-14T09:30:56+10:00",
+        "snapshot_utc": "2026-10-13T23:45:42Z",
+        "snapshot_aest": "2026-10-14T09:45:42+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|912883",
@@ -127,8 +127,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-13T23:30:56Z",
-        "snapshot_aest": "2026-10-14T09:30:56+10:00",
+        "snapshot_utc": "2026-10-13T23:45:42Z",
+        "snapshot_aest": "2026-10-14T09:45:42+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|912900",
@@ -275,8 +275,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-13T23:30:56Z",
-        "snapshot_aest": "2026-10-14T09:30:56+10:00",
+        "snapshot_utc": "2026-10-13T23:45:42Z",
+        "snapshot_aest": "2026-10-14T09:45:42+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|912926",
@@ -391,8 +391,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-13T23:30:56Z",
-        "snapshot_aest": "2026-10-14T09:30:56+10:00",
+        "snapshot_utc": "2026-10-13T23:45:42Z",
+        "snapshot_aest": "2026-10-14T09:45:42+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|912927",
@@ -491,14 +491,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-13T23:30:56Z",
-        "snapshot_aest": "2026-10-14T09:30:56+10:00",
+        "snapshot_utc": "2026-10-13T23:45:42Z",
+        "snapshot_aest": "2026-10-14T09:45:42+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|912940",
         "outage_id": "912940",
         "outage_type": "unplanned",
-        "status": "Outage reported",
+        "status": "Crews on route",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 127,
         "affected_customers_known": true,
@@ -510,6 +510,78 @@
         "centroid_lat": -27.551666441059897,
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.642371172495,
+              -20.2884874702272
+            ],
+            [
+              148.641681692509,
+              -20.2880074118647
+            ],
+            [
+              148.641932445459,
+              -20.2866570189655
+            ],
+            [
+              148.642378567472,
+              -20.2862839419959
+            ],
+            [
+              148.644529474537,
+              -20.2861761642796
+            ],
+            [
+              148.645005153722,
+              -20.28647394065
+            ],
+            [
+              148.644840449556,
+              -20.2869896528648
+            ],
+            [
+              148.643473214743,
+              -20.2879486476921
+            ],
+            [
+              148.643405602639,
+              -20.287988289619
+            ],
+            [
+              148.642371172495,
+              -20.2884874702272
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-13T23:45:42Z",
+        "snapshot_aest": "2026-10-14T09:45:42+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|912945",
+        "outage_id": "912945",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 6,
+        "affected_customers_known": true,
+        "suburb": "RIORDANVALE",
+        "street_name": "RIORDANVALE RD",
+        "start_utc": "2026-10-13T22:37:14Z",
+        "etr_utc": null,
+        "centroid_lon": 148.64316283647014,
+        "centroid_lat": -20.28715054667946,
+        "lga_name": "Whitsunday Regional",
+        "lga_code": "7340",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
