@@ -55,8 +55,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-13T02:15:38Z",
-        "snapshot_aest": "2026-10-13T12:15:38+10:00",
+        "snapshot_utc": "2026-10-13T02:30:58Z",
+        "snapshot_aest": "2026-10-13T12:30:58+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-986237-g",
@@ -135,8 +135,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-13T02:15:38Z",
-        "snapshot_aest": "2026-10-13T12:15:38+10:00",
+        "snapshot_utc": "2026-10-13T02:30:58Z",
+        "snapshot_aest": "2026-10-13T12:30:58+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-986660-g",
@@ -149,7 +149,7 @@
         "suburb": "LOGANHOLME",
         "street_name": "CAIRNS ST",
         "start_utc": "2026-10-12T11:35:40Z",
-        "etr_utc": "2026-10-13T03:00:00Z",
+        "etr_utc": "2026-10-13T04:30:00Z",
         "centroid_lon": 153.19164109314582,
         "centroid_lat": -27.67660714701781,
         "lga_name": "Logan City",
@@ -219,8 +219,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-13T02:15:38Z",
-        "snapshot_aest": "2026-10-13T12:15:38+10:00",
+        "snapshot_utc": "2026-10-13T02:30:58Z",
+        "snapshot_aest": "2026-10-13T12:30:58+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-986744-g",
@@ -233,11 +233,87 @@
         "suburb": "MURPHYS CREEK",
         "street_name": "FREYA ST, MOON ST, OSSIAN ST",
         "start_utc": "2026-10-12T23:30:15Z",
-        "etr_utc": "2026-10-13T03:00:00Z",
+        "etr_utc": "2026-10-13T03:30:00Z",
         "centroid_lon": 152.05657397208043,
         "centroid_lat": -27.463676566971202,
         "lga_name": "Lockyer Valley Regional",
         "lga_code": "4580",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              153.003486106129,
+              -27.4526348117954
+            ],
+            [
+              153.003515224383,
+              -27.4524219517138
+            ],
+            [
+              153.003582624964,
+              -27.4522628123213
+            ],
+            [
+              153.004146780988,
+              -27.4519782875935
+            ],
+            [
+              153.004561956866,
+              -27.4524222135696
+            ],
+            [
+              153.004562057418,
+              -27.4527016431769
+            ],
+            [
+              153.004551351778,
+              -27.4527941515899
+            ],
+            [
+              153.004518553665,
+              -27.4529341220468
+            ],
+            [
+              153.004001083936,
+              -27.4532927242915
+            ],
+            [
+              153.003520805532,
+              -27.452895072251
+            ],
+            [
+              153.003486106129,
+              -27.4526348117954
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-13T02:30:58Z",
+        "snapshot_aest": "2026-10-13T12:30:58+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-986800-g",
+        "outage_id": "INCD-986800-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Emergency Repairs",
+        "affected_customers": 9,
+        "affected_customers_known": true,
+        "suburb": "RED HILL",
+        "street_name": "ENOGGERA TCE, WATERWORKS RD",
+        "start_utc": "2026-10-13T02:26:10Z",
+        "etr_utc": "2026-10-13T05:00:00Z",
+        "centroid_lon": 153.00405827299127,
+        "centroid_lat": -27.452634635047094,
+        "lga_name": "Brisbane City",
+        "lga_code": "1000",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     },
@@ -287,8 +363,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-13T02:15:38Z",
-        "snapshot_aest": "2026-10-13T12:15:38+10:00",
+        "snapshot_utc": "2026-10-13T02:30:58Z",
+        "snapshot_aest": "2026-10-13T12:30:58+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|912730",
@@ -306,6 +382,230 @@
         "centroid_lat": -21.307666477680744,
         "lga_name": "Isaac Regional",
         "lga_code": "3980",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.233677760871,
+              -27.0770774819384
+            ],
+            [
+              150.233704759788,
+              -27.0768706668801
+            ],
+            [
+              150.249699912081,
+              -27.0375547103786
+            ],
+            [
+              150.250325614111,
+              -27.0372793577369
+            ],
+            [
+              150.299862429208,
+              -27.0513793282337
+            ],
+            [
+              150.299909897999,
+              -27.0513952253217
+            ],
+            [
+              150.342311172167,
+              -27.0678086311003
+            ],
+            [
+              150.342614136039,
+              -27.0682485379453
+            ],
+            [
+              150.340194191299,
+              -27.1056282331246
+            ],
+            [
+              150.340175359487,
+              -27.1057269191313
+            ],
+            [
+              150.33905527652,
+              -27.1092073561793
+            ],
+            [
+              150.339044020409,
+              -27.1092381296011
+            ],
+            [
+              150.301201285926,
+              -27.2012966381093
+            ],
+            [
+              150.300333305708,
+              -27.2014214180149
+            ],
+            [
+              150.24133963431,
+              -27.1349623411289
+            ],
+            [
+              150.241233890356,
+              -27.1347346401058
+            ],
+            [
+              150.233677760871,
+              -27.0770774819384
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-13T02:30:58Z",
+        "snapshot_aest": "2026-10-13T12:30:58+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|912863",
+        "outage_id": "912863",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 53,
+        "affected_customers_known": true,
+        "suburb": "CONDAMINE, TARA, THE GUMS",
+        "street_name": "BAKERS RD, BLACKBURNS RD, DRILLDOOL RD, GAZZARDS RD, HUMBUG RD, MACHANESS RD, MCCASKER RD, MCCASKERS RD, MILLERS RD, TOLMAH CT",
+        "start_utc": "2026-10-13T02:18:01Z",
+        "etr_utc": "2026-10-13T08:00:00Z",
+        "centroid_lon": 150.28695920554352,
+        "centroid_lat": -27.108386603900943,
+        "lga_name": "Western Downs Regional",
+        "lga_code": "7310",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.73963650593,
+              -16.8951091381242
+            ],
+            [
+              145.739806523042,
+              -16.894667200882
+            ],
+            [
+              145.740501264853,
+              -16.8941399798677
+            ],
+            [
+              145.740586894181,
+              -16.8940883312817
+            ],
+            [
+              145.741564987824,
+              -16.8936313285078
+            ],
+            [
+              145.742006004275,
+              -16.8936473028577
+            ],
+            [
+              145.742576066076,
+              -16.8939666942866
+            ],
+            [
+              145.742670017575,
+              -16.8940359464771
+            ],
+            [
+              145.743016000539,
+              -16.8943653393054
+            ],
+            [
+              145.743151718349,
+              -16.8947426374113
+            ],
+            [
+              145.743019649589,
+              -16.8957609314153
+            ],
+            [
+              145.742987160399,
+              -16.8958787440483
+            ],
+            [
+              145.742559550504,
+              -16.8968667535966
+            ],
+            [
+              145.742516774561,
+              -16.8969436837627
+            ],
+            [
+              145.742280763476,
+              -16.8972843605749
+            ],
+            [
+              145.741777870217,
+              -16.8974723599196
+            ],
+            [
+              145.741447671231,
+              -16.8973939516616
+            ],
+            [
+              145.741375795321,
+              -16.8973708172638
+            ],
+            [
+              145.741042568004,
+              -16.8972338699082
+            ],
+            [
+              145.7408672501,
+              -16.8971086939859
+            ],
+            [
+              145.739870497081,
+              -16.8959647910995
+            ],
+            [
+              145.739769514389,
+              -16.8957614204017
+            ],
+            [
+              145.73963650593,
+              -16.8951091381242
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-13T02:30:58Z",
+        "snapshot_aest": "2026-10-13T12:30:58+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|912865",
+        "outage_id": "912865",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 39,
+        "affected_customers_known": true,
+        "suburb": "EDGE HILL",
+        "street_name": "BELLEVUE CRES, MAPLE CRES, WOODLANDS AVE",
+        "start_utc": "2026-10-13T02:17:25Z",
+        "etr_utc": null,
+        "centroid_lon": 145.7414933058157,
+        "centroid_lat": -16.89546360735863,
+        "lga_name": "Cairns Regional",
+        "lga_code": "2080",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
