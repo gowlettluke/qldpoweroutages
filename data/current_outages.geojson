@@ -63,8 +63,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-14T06:30:51Z",
-        "snapshot_aest": "2026-10-14T16:30:51+10:00",
+        "snapshot_utc": "2026-10-14T06:45:46Z",
+        "snapshot_aest": "2026-10-14T16:45:46+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-987086-g",
@@ -227,14 +227,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-14T06:30:51Z",
-        "snapshot_aest": "2026-10-14T16:30:51+10:00",
+        "snapshot_utc": "2026-10-14T06:45:46Z",
+        "snapshot_aest": "2026-10-14T16:45:46+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-987141-g",
         "outage_id": "INCD-987141-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 2057,
         "affected_customers_known": true,
@@ -247,6 +247,78 @@
         "lga_name": "Moreton Bay City",
         "lga_code": "5010",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.666298243346,
+              -22.8056778052015
+            ],
+            [
+              147.666934736307,
+              -22.8051998753606
+            ],
+            [
+              147.673048158079,
+              -22.807063530287
+            ],
+            [
+              147.673378997092,
+              -22.8075515622579
+            ],
+            [
+              147.672923148581,
+              -22.8079435444991
+            ],
+            [
+              147.667591604857,
+              -22.8082194143231
+            ],
+            [
+              147.667223422533,
+              -22.8080909897032
+            ],
+            [
+              147.666629325666,
+              -22.8075510563984
+            ],
+            [
+              147.666486053937,
+              -22.8072774026062
+            ],
+            [
+              147.666298243346,
+              -22.8056778052015
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-14T06:45:46Z",
+        "snapshot_aest": "2026-10-14T16:45:46+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|912959",
+        "outage_id": "912959",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage caused by storm activity.",
+        "affected_customers": 6,
+        "affected_customers_known": true,
+        "suburb": "CLERMONT",
+        "street_name": "GREGORY HWY, MATCHETT LANE",
+        "start_utc": "2026-10-14T05:47:50Z",
+        "etr_utc": "2026-10-14T09:00:00Z",
+        "centroid_lon": 147.6692385266682,
+        "centroid_lat": -22.80698409334112,
+        "lga_name": "Isaac Regional",
+        "lga_code": "3980",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
   ]
