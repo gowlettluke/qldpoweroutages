@@ -103,8 +103,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-14T08:45:48Z",
-        "snapshot_aest": "2026-10-14T18:45:48+10:00",
+        "snapshot_utc": "2026-10-14T09:01:07Z",
+        "snapshot_aest": "2026-10-14T19:01:07+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-987141-g",
@@ -191,8 +191,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-14T08:45:48Z",
-        "snapshot_aest": "2026-10-14T18:45:48+10:00",
+        "snapshot_utc": "2026-10-14T09:01:07Z",
+        "snapshot_aest": "2026-10-14T19:01:07+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|912959",
@@ -303,14 +303,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-14T08:45:48Z",
-        "snapshot_aest": "2026-10-14T18:45:48+10:00",
+        "snapshot_utc": "2026-10-14T09:01:07Z",
+        "snapshot_aest": "2026-10-14T19:01:07+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|912960",
         "outage_id": "912960",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 34,
         "affected_customers_known": true,
@@ -403,8 +403,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-14T08:45:48Z",
-        "snapshot_aest": "2026-10-14T18:45:48+10:00",
+        "snapshot_utc": "2026-10-14T09:01:07Z",
+        "snapshot_aest": "2026-10-14T19:01:07+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|912962",
@@ -422,6 +422,70 @@
         "centroid_lat": -15.40620920860688,
         "lga_name": "Cook Shire",
         "lga_code": "2500",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              141.20593399022,
+              -19.4536574881481
+            ],
+            [
+              141.205891965421,
+              -19.4531300187769
+            ],
+            [
+              141.294737572625,
+              -19.3164729123502
+            ],
+            [
+              141.295597774194,
+              -19.3165894678277
+            ],
+            [
+              141.396957500809,
+              -19.6653982497038
+            ],
+            [
+              141.396721825507,
+              -19.6659154360442
+            ],
+            [
+              141.396137823708,
+              -19.6658092891829
+            ],
+            [
+              141.20593399022,
+              -19.4536574881481
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-14T09:01:07Z",
+        "snapshot_aest": "2026-10-14T19:01:07+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|912964",
+        "outage_id": "912964",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 9,
+        "affected_customers_known": true,
+        "suburb": "JULIA CREEK",
+        "street_name": "ARIZONA STATION, DORAVALE STATION, LRYRIAN RD, NUMIL DOWNS STATION, TALDORA STATION",
+        "start_utc": "2026-10-14T08:39:40Z",
+        "etr_utc": null,
+        "centroid_lon": 141.2995126631901,
+        "centroid_lat": -19.4787841677878,
+        "lga_name": "McKinlay Shire",
+        "lga_code": "4800",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
