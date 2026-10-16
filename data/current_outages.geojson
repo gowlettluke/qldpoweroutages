@@ -163,8 +163,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-16T11:00:57Z",
-        "snapshot_aest": "2026-10-16T21:00:57+10:00",
+        "snapshot_utc": "2026-10-16T11:15:45Z",
+        "snapshot_aest": "2026-10-16T21:15:45+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-987698-g",
@@ -251,14 +251,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-16T11:00:57Z",
-        "snapshot_aest": "2026-10-16T21:00:57+10:00",
+        "snapshot_utc": "2026-10-16T11:15:45Z",
+        "snapshot_aest": "2026-10-16T21:15:45+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913276",
         "outage_id": "913276",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs.",
         "affected_customers": 25,
         "affected_customers_known": true,
@@ -327,8 +327,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-16T11:00:57Z",
-        "snapshot_aest": "2026-10-16T21:00:57+10:00",
+        "snapshot_utc": "2026-10-16T11:15:45Z",
+        "snapshot_aest": "2026-10-16T21:15:45+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913277",
@@ -346,6 +346,66 @@
         "centroid_lat": -20.05761789752544,
         "lga_name": "Cloncurry Shire",
         "lga_code": "2450",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              147.078483003344,
+              -19.6721711125258
+            ],
+            [
+              147.078877883571,
+              -19.6726892066321
+            ],
+            [
+              147.078330941934,
+              -19.6730632604651
+            ],
+            [
+              147.076745912559,
+              -19.6728208398163
+            ],
+            [
+              147.076351038841,
+              -19.6723027410099
+            ],
+            [
+              147.076897982521,
+              -19.6719286931654
+            ],
+            [
+              147.078483003344,
+              -19.6721711125258
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-16T11:15:45Z",
+        "snapshot_aest": "2026-10-16T21:15:45+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|913283",
+        "outage_id": "913283",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 2,
+        "affected_customers_known": true,
+        "suburb": "GIRU",
+        "street_name": "BILL BRITT RD",
+        "start_utc": "2026-10-16T09:51:00Z",
+        "etr_utc": "2026-10-18T03:00:00Z",
+        "centroid_lon": 147.07761767658636,
+        "centroid_lat": -19.672496406891575,
+        "lga_name": "Burdekin Shire",
+        "lga_code": "1900",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
