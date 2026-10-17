@@ -39,8 +39,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-17T20:45:45Z",
-        "snapshot_aest": "2026-10-18T06:45:45+10:00",
+        "snapshot_utc": "2026-10-17T21:01:06Z",
+        "snapshot_aest": "2026-10-18T07:01:06+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913283",
@@ -123,8 +123,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-17T20:45:45Z",
-        "snapshot_aest": "2026-10-18T06:45:45+10:00",
+        "snapshot_utc": "2026-10-17T21:01:06Z",
+        "snapshot_aest": "2026-10-18T07:01:06+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913398",
@@ -207,8 +207,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-17T20:45:45Z",
-        "snapshot_aest": "2026-10-18T06:45:45+10:00",
+        "snapshot_utc": "2026-10-17T21:01:06Z",
+        "snapshot_aest": "2026-10-18T07:01:06+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913399",
@@ -319,8 +319,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-17T20:45:45Z",
-        "snapshot_aest": "2026-10-18T06:45:45+10:00",
+        "snapshot_utc": "2026-10-17T21:01:06Z",
+        "snapshot_aest": "2026-10-18T07:01:06+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913401",
@@ -411,8 +411,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-17T20:45:45Z",
-        "snapshot_aest": "2026-10-18T06:45:45+10:00",
+        "snapshot_utc": "2026-10-17T21:01:06Z",
+        "snapshot_aest": "2026-10-18T07:01:06+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913403",
@@ -551,15 +551,15 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-17T20:45:45Z",
-        "snapshot_aest": "2026-10-18T06:45:45+10:00",
+        "snapshot_utc": "2026-10-17T21:01:06Z",
+        "snapshot_aest": "2026-10-18T07:01:06+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913408",
         "outage_id": "913408",
         "outage_type": "unplanned",
         "status": "Outage reported",
-        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "reason": "The loss of supply is due to fallen power lines.",
         "affected_customers": 67,
         "affected_customers_known": true,
         "suburb": "AYR, JARVISFIELD",
@@ -570,6 +570,90 @@
         "centroid_lat": -19.56998154880478,
         "lga_name": "Burdekin Shire",
         "lga_code": "1900",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.238932490519,
+              -17.6496231262124
+            ],
+            [
+              145.239113772343,
+              -17.6491476978624
+            ],
+            [
+              145.323433277611,
+              -17.5907075842404
+            ],
+            [
+              145.32408086549,
+              -17.5907959845412
+            ],
+            [
+              145.330397904452,
+              -17.5985705591734
+            ],
+            [
+              145.330497403938,
+              -17.5988469745168
+            ],
+            [
+              145.330670798271,
+              -17.657744968997
+            ],
+            [
+              145.330570345819,
+              -17.6580250618268
+            ],
+            [
+              145.315145704913,
+              -17.6768749145745
+            ],
+            [
+              145.314638347172,
+              -17.6770284417919
+            ],
+            [
+              145.240710470076,
+              -17.6555536862931
+            ],
+            [
+              145.240389980429,
+              -17.6552306054355
+            ],
+            [
+              145.238932490519,
+              -17.6496231262124
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-17T21:01:06Z",
+        "snapshot_aest": "2026-10-18T07:01:06+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|913410",
+        "outage_id": "913410",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
+        "affected_customers": 81,
+        "affected_customers_known": true,
+        "suburb": "INNOT HOT SPRINGS, MILLSTREAM, RAVENSHOE, SILVER VALLEY",
+        "street_name": "BAILLIE RD, BLAIRS GLY, CLARK RD, GRANT RD, KENNEDY HWY, POOLS RD, SHADY CREEK RD, SILVER VALLEY RD, SPLIT ROCK RD, SUNSET RDGE, TOBACCO RD, WILD RIVER RD, WOODLEIGH RD",
+        "start_utc": "2026-10-17T20:27:16Z",
+        "etr_utc": null,
+        "centroid_lon": 145.29692519555456,
+        "centroid_lat": -17.639349916281827,
+        "lga_name": "Tablelands Regional",
+        "lga_code": "6820",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
