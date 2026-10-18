@@ -71,8 +71,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-18T08:01:04Z",
-        "snapshot_aest": "2026-10-18T18:01:04+10:00",
+        "snapshot_utc": "2026-10-18T08:15:50Z",
+        "snapshot_aest": "2026-10-18T18:15:50+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-987915-g",
@@ -135,8 +135,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-18T08:01:04Z",
-        "snapshot_aest": "2026-10-18T18:01:04+10:00",
+        "snapshot_utc": "2026-10-18T08:15:50Z",
+        "snapshot_aest": "2026-10-18T18:15:50+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913492",
@@ -154,6 +154,106 @@
         "centroid_lat": -20.846904903137222,
         "lga_name": "McKinlay Shire",
         "lga_code": "4800",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.752189361066,
+              -16.9284635936938
+            ],
+            [
+              145.752284675311,
+              -16.9280367597818
+            ],
+            [
+              145.75280282227,
+              -16.9274633542261
+            ],
+            [
+              145.753037437103,
+              -16.9273229436687
+            ],
+            [
+              145.753930761517,
+              -16.9270964085163
+            ],
+            [
+              145.754398149477,
+              -16.9272298645028
+            ],
+            [
+              145.75564859445,
+              -16.9285574648087
+            ],
+            [
+              145.755768972937,
+              -16.9288275920793
+            ],
+            [
+              145.755889074228,
+              -16.9303877645242
+            ],
+            [
+              145.75577231947,
+              -16.9307207817422
+            ],
+            [
+              145.75532796639,
+              -16.9312036512815
+            ],
+            [
+              145.755161064678,
+              -16.9313195390912
+            ],
+            [
+              145.754082776198,
+              -16.9317631871436
+            ],
+            [
+              145.753926265637,
+              -16.9317987491176
+            ],
+            [
+              145.753615310758,
+              -16.9318166366058
+            ],
+            [
+              145.753137775398,
+              -16.9314958316393
+            ],
+            [
+              145.752189361066,
+              -16.9284635936938
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-18T08:15:50Z",
+        "snapshot_aest": "2026-10-18T18:15:50+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|913493",
+        "outage_id": "913493",
+        "outage_type": "unplanned",
+        "status": "Crews working on-site",
+        "reason": "The loss of supply is to allow emergency maintenance of the electricity network.",
+        "affected_customers": 119,
+        "affected_customers_known": true,
+        "suburb": "WESTCOURT",
+        "street_name": "BOLAND ST, CREEDY ST, HOGAN ST, MANN ST",
+        "start_utc": "2026-10-18T08:06:00Z",
+        "etr_utc": null,
+        "centroid_lon": 145.75407082679362,
+        "centroid_lat": -16.92942915638711,
+        "lga_name": "Cairns Regional",
+        "lga_code": "2080",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
