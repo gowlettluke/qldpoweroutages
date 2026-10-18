@@ -95,8 +95,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-18T11:15:38Z",
-        "snapshot_aest": "2026-10-18T21:15:38+10:00",
+        "snapshot_utc": "2026-10-18T11:30:54Z",
+        "snapshot_aest": "2026-10-18T21:30:54+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-987932-g",
@@ -109,7 +109,7 @@
         "suburb": "ASHGROVE",
         "street_name": "GLENLYON DR, GLORY ST, THEALE TCE, WATERWORKS RD, WOONGA DR",
         "start_utc": "2026-10-18T09:41:34Z",
-        "etr_utc": "2026-10-18T11:30:00Z",
+        "etr_utc": "2026-10-18T12:00:00Z",
         "centroid_lon": 152.97937564010823,
         "centroid_lat": -27.447813072045808,
         "lga_name": "Brisbane City",
@@ -159,8 +159,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-18T11:15:38Z",
-        "snapshot_aest": "2026-10-18T21:15:38+10:00",
+        "snapshot_utc": "2026-10-18T11:30:54Z",
+        "snapshot_aest": "2026-10-18T21:30:54+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913492",
@@ -259,8 +259,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-18T11:15:38Z",
-        "snapshot_aest": "2026-10-18T21:15:38+10:00",
+        "snapshot_utc": "2026-10-18T11:30:54Z",
+        "snapshot_aest": "2026-10-18T21:30:54+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913495",
@@ -367,8 +367,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-18T11:15:38Z",
-        "snapshot_aest": "2026-10-18T21:15:38+10:00",
+        "snapshot_utc": "2026-10-18T11:30:54Z",
+        "snapshot_aest": "2026-10-18T21:30:54+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913496",
@@ -386,6 +386,90 @@
         "centroid_lat": -12.682034293712903,
         "lga_name": "Cook Shire",
         "lga_code": "2500",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              143.48795800265,
+              -20.8608359532275
+            ],
+            [
+              143.48783836381,
+              -20.8604651672368
+            ],
+            [
+              143.48915704128,
+              -20.8522348996363
+            ],
+            [
+              143.489456012006,
+              -20.8518822790385
+            ],
+            [
+              143.574005091761,
+              -20.8206179252296
+            ],
+            [
+              143.574321291656,
+              -20.8206063377417
+            ],
+            [
+              143.708450256962,
+              -20.8591577514261
+            ],
+            [
+              143.708776302658,
+              -20.8594819667467
+            ],
+            [
+              143.728805807483,
+              -20.9363686154563
+            ],
+            [
+              143.728770035725,
+              -20.9366754812159
+            ],
+            [
+              143.670300356478,
+              -21.0479219928274
+            ],
+            [
+              143.669514435501,
+              -21.048026206087
+            ],
+            [
+              143.48795800265,
+              -20.8608359532275
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-18T11:30:54Z",
+        "snapshot_aest": "2026-10-18T21:30:54+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|913498",
+        "outage_id": "913498",
+        "outage_type": "unplanned",
+        "status": "Work delayed - crews unable to continue",
+        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "affected_customers": 15,
+        "affected_customers_known": true,
+        "suburb": "HUGHENDEN, STAMFORD",
+        "street_name": "FLINDERS HWY, KALBOONA STATION, KILLARNEY STATION, MARATHON STATION, MARATHON STH STATION, MORVADA STATION, NINDI STATION, TAMWORTH STATION, THORNHILL STATION",
+        "start_utc": "2026-10-18T11:20:00Z",
+        "etr_utc": null,
+        "centroid_lon": 143.6255222628486,
+        "centroid_lat": -20.9133863273307,
+        "lga_name": "Flinders Shire",
+        "lga_code": "3200",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
