@@ -8,6 +8,98 @@
         "coordinates": [
           [
             [
+              152.770934056405,
+              -26.8970272971053
+            ],
+            [
+              152.771528888833,
+              -26.8965268810767
+            ],
+            [
+              152.783235114881,
+              -26.898551558312
+            ],
+            [
+              152.783639959284,
+              -26.8990465182344
+            ],
+            [
+              152.78262229522,
+              -26.9069616219667
+            ],
+            [
+              152.782600789529,
+              -26.9070499029147
+            ],
+            [
+              152.781892367137,
+              -26.9089971750187
+            ],
+            [
+              152.781835719066,
+              -26.9091033781229
+            ],
+            [
+              152.780318384403,
+              -26.9111941550269
+            ],
+            [
+              152.779638329498,
+              -26.9113356573828
+            ],
+            [
+              152.773250154022,
+              -26.9079191667321
+            ],
+            [
+              152.773022839063,
+              -26.9076518890118
+            ],
+            [
+              152.771963051177,
+              -26.9042185264716
+            ],
+            [
+              152.771948865134,
+              -26.9041552872088
+            ],
+            [
+              152.770934056405,
+              -26.8970272971053
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-18T06:45:45Z",
+        "snapshot_aest": "2026-10-18T16:45:45+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-987915-g",
+        "outage_id": "INCD-987915-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Emergency Repairs",
+        "affected_customers": 17,
+        "affected_customers_known": true,
+        "suburb": "CEDARTON, STANMORE",
+        "street_name": "BURKE RD, HART RD, HART ST, KILCOY-BEERWAH RD, WRIGHT RD",
+        "start_utc": "2026-10-18T06:42:23Z",
+        "etr_utc": "2026-10-18T09:30:00Z",
+        "centroid_lon": 152.77741710804145,
+        "centroid_lat": -26.903296826973452,
+        "lga_name": "Moreton Bay City",
+        "lga_code": "5010",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               147.078483003344,
               -19.6721711125258
             ],
@@ -39,8 +131,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-18T06:30:53Z",
-        "snapshot_aest": "2026-10-18T16:30:53+10:00",
+        "snapshot_utc": "2026-10-18T06:45:45Z",
+        "snapshot_aest": "2026-10-18T16:45:45+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913283",
@@ -195,8 +287,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-18T06:30:53Z",
-        "snapshot_aest": "2026-10-18T16:30:53+10:00",
+        "snapshot_utc": "2026-10-18T06:45:45Z",
+        "snapshot_aest": "2026-10-18T16:45:45+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913491",
@@ -214,6 +306,70 @@
         "centroid_lat": -20.063632351898644,
         "lga_name": "Charters Towers Regional",
         "lga_code": "2310",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              140.865282968395,
+              -20.7974551697435
+            ],
+            [
+              140.865296099186,
+              -20.7969305641233
+            ],
+            [
+              140.865829087142,
+              -20.7967751086
+            ],
+            [
+              140.979937527075,
+              -20.8325875983105
+            ],
+            [
+              140.980233049703,
+              -20.8331744518441
+            ],
+            [
+              140.948682053447,
+              -20.9108228338566
+            ],
+            [
+              140.947840225746,
+              -20.9109162342828
+            ],
+            [
+              140.865282968395,
+              -20.7974551697435
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-18T06:45:45Z",
+        "snapshot_aest": "2026-10-18T16:45:45+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|913492",
+        "outage_id": "913492",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 5,
+        "affected_customers_known": true,
+        "suburb": "JULIA CREEK, OORINDI",
+        "street_name": "ARROLLA STATION, LEVUKA STATION, WYNBERG STATION",
+        "start_utc": "2026-10-17T23:43:50Z",
+        "etr_utc": null,
+        "centroid_lon": 140.93108579382957,
+        "centroid_lat": -20.846904903137222,
+        "lga_name": "McKinlay Shire",
+        "lga_code": "4800",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
