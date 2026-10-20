@@ -79,15 +79,15 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-20T08:45:39Z",
-        "snapshot_aest": "2026-10-20T18:45:39+10:00",
+        "snapshot_utc": "2026-10-20T09:01:06Z",
+        "snapshot_aest": "2026-10-20T19:01:06+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-988555-g",
         "outage_id": "INCD-988555-g",
         "outage_type": "unplanned",
         "status": "Awaiting",
-        "reason": "Emergency Repairs",
+        "reason": "Emergency repairs in-progress",
         "affected_customers": 45,
         "affected_customers_known": true,
         "suburb": "CLARENDON, COOMINYA, PATRICK ESTATE",
@@ -139,8 +139,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-20T08:45:39Z",
-        "snapshot_aest": "2026-10-20T18:45:39+10:00",
+        "snapshot_utc": "2026-10-20T09:01:06Z",
+        "snapshot_aest": "2026-10-20T19:01:06+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913620",
@@ -263,8 +263,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-20T08:45:39Z",
-        "snapshot_aest": "2026-10-20T18:45:39+10:00",
+        "snapshot_utc": "2026-10-20T09:01:06Z",
+        "snapshot_aest": "2026-10-20T19:01:06+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913631",
@@ -323,8 +323,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-20T08:45:39Z",
-        "snapshot_aest": "2026-10-20T18:45:39+10:00",
+        "snapshot_utc": "2026-10-20T09:01:06Z",
+        "snapshot_aest": "2026-10-20T19:01:06+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913637",
@@ -391,8 +391,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-20T08:45:39Z",
-        "snapshot_aest": "2026-10-20T18:45:39+10:00",
+        "snapshot_utc": "2026-10-20T09:01:06Z",
+        "snapshot_aest": "2026-10-20T19:01:06+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913639",
@@ -467,8 +467,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-20T08:45:39Z",
-        "snapshot_aest": "2026-10-20T18:45:39+10:00",
+        "snapshot_utc": "2026-10-20T09:01:06Z",
+        "snapshot_aest": "2026-10-20T19:01:06+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|913640",
@@ -486,6 +486,106 @@
         "centroid_lat": -18.085857574696366,
         "lga_name": "Cassowary Coast Regional",
         "lga_code": "2260",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.355431185567,
+              -24.4691431474246
+            ],
+            [
+              144.355630049327,
+              -24.4687654402725
+            ],
+            [
+              144.454402677205,
+              -24.4015925231005
+            ],
+            [
+              144.4547482996,
+              -24.401505904714
+            ],
+            [
+              144.538285853961,
+              -24.4095465697306
+            ],
+            [
+              144.538637924494,
+              -24.4097362339154
+            ],
+            [
+              144.595424930871,
+              -24.4838218858497
+            ],
+            [
+              144.59543539873,
+              -24.4838360997831
+            ],
+            [
+              144.635668081768,
+              -24.5407418632974
+            ],
+            [
+              144.635663385477,
+              -24.54123867338
+            ],
+            [
+              144.500608105479,
+              -24.7247584313176
+            ],
+            [
+              144.500045203888,
+              -24.7249353620989
+            ],
+            [
+              144.478041969563,
+              -24.7183797740387
+            ],
+            [
+              144.477778244816,
+              -24.7181927773464
+            ],
+            [
+              144.358378618322,
+              -24.5462621555938
+            ],
+            [
+              144.358302186583,
+              -24.5460358940676
+            ],
+            [
+              144.355431185567,
+              -24.4691431474246
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-20T09:01:06Z",
+        "snapshot_aest": "2026-10-20T19:01:06+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|913643",
+        "outage_id": "913643",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 15,
+        "affected_customers_known": true,
+        "suburb": "EMMET, ISISFORD",
+        "street_name": "BLACKALL RD, EMMET-ISISFORD RD, ISISFORD-YARAKA RD, LISTER RD, UNKNOWN ST",
+        "start_utc": "2026-10-20T08:46:49Z",
+        "etr_utc": null,
+        "centroid_lon": 144.48795736498667,
+        "centroid_lat": -24.54364893471643,
+        "lga_name": "Longreach Regional",
+        "lga_code": "4710",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     }
