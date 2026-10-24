@@ -119,8 +119,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T08:31:01Z",
-        "snapshot_aest": "2026-10-24T18:31:01+10:00",
+        "snapshot_utc": "2026-10-24T08:45:43Z",
+        "snapshot_aest": "2026-10-24T18:45:43+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-989723-g",
@@ -133,7 +133,7 @@
         "suburb": "BROOLOO, CAMBROON, CONONDALE, KENILWORTH",
         "street_name": "ALEXANDRA ST, ANNE ST, BOOLOUMBA CREEK RD, CAMBROON LANE, CHAPPLE RD, CHARLES ST, CHINAMAN CREEK RD, EASTERN MARY RIVER RD, EDWARD PL, ELIZABETH ST, EUMUNDI-KENILWORTH RD, GEORGE ST, GRIGOR RD, JAGER DR, KENILWORTH-BROOLOO RD, LEES RD, MALENY-KENILWORTH RD, MARGARET ST, MARY ST, MARY VALLEY RD, OBI OBI RD, PAULGER RD, PHILIP ST, PLATZ RD, PULLEN LANE, RADDATZ RD, ROGERS RD, SCRUBBY CREEK RD, SUNDAY CREEK RD, TAMLYN RD, WALLI CREEK RD, WALLI MOUNTAIN RD",
         "start_utc": "2026-10-24T07:03:08Z",
-        "etr_utc": "2026-10-24T09:00:00Z",
+        "etr_utc": "2026-10-24T11:00:00Z",
         "centroid_lon": 152.70109692712796,
         "centroid_lat": -26.640684714117132,
         "lga_name": "Sunshine Coast Regional",
@@ -179,8 +179,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T08:31:01Z",
-        "snapshot_aest": "2026-10-24T18:31:01+10:00",
+        "snapshot_utc": "2026-10-24T08:45:43Z",
+        "snapshot_aest": "2026-10-24T18:45:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914225",
@@ -239,8 +239,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T08:31:01Z",
-        "snapshot_aest": "2026-10-24T18:31:01+10:00",
+        "snapshot_utc": "2026-10-24T08:45:43Z",
+        "snapshot_aest": "2026-10-24T18:45:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914545",
@@ -323,8 +323,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T08:31:01Z",
-        "snapshot_aest": "2026-10-24T18:31:01+10:00",
+        "snapshot_utc": "2026-10-24T08:45:43Z",
+        "snapshot_aest": "2026-10-24T18:45:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914655",
@@ -407,8 +407,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T08:31:01Z",
-        "snapshot_aest": "2026-10-24T18:31:01+10:00",
+        "snapshot_utc": "2026-10-24T08:45:43Z",
+        "snapshot_aest": "2026-10-24T18:45:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914668",
@@ -426,6 +426,90 @@
         "centroid_lat": -19.62802525957747,
         "lga_name": "Burdekin Shire",
         "lga_code": "1900",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              148.10485418846,
+              -23.227402864807
+            ],
+            [
+              148.10453928198,
+              -23.2266250875172
+            ],
+            [
+              148.166968533737,
+              -23.1715205282604
+            ],
+            [
+              148.167765310641,
+              -23.1716936916988
+            ],
+            [
+              148.172350765376,
+              -23.1834333005619
+            ],
+            [
+              148.172372633673,
+              -23.1835095821258
+            ],
+            [
+              148.178465409222,
+              -23.2160048715637
+            ],
+            [
+              148.178138057428,
+              -23.2165105426767
+            ],
+            [
+              148.150044517666,
+              -23.2251347513284
+            ],
+            [
+              148.149983331654,
+              -23.2251495419386
+            ],
+            [
+              148.131186321221,
+              -23.2285085495563
+            ],
+            [
+              148.131071200794,
+              -23.2285162821508
+            ],
+            [
+              148.10485418846,
+              -23.227402864807
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-24T08:45:43Z",
+        "snapshot_aest": "2026-10-24T18:45:43+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|914678",
+        "outage_id": "914678",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage caused by storm activity.",
+        "affected_customers": 11,
+        "affected_customers_known": true,
+        "suburb": "CAPELLA",
+        "street_name": "MONTROSE RD",
+        "start_utc": "2026-10-24T08:28:09Z",
+        "etr_utc": null,
+        "centroid_lon": 148.14929209809387,
+        "centroid_lat": -23.206774356936613,
+        "lga_name": "Central Highlands Regional",
+        "lga_code": "2270",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0"
       }
     },
@@ -487,8 +571,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T08:31:01Z",
-        "snapshot_aest": "2026-10-24T18:31:01+10:00",
+        "snapshot_utc": "2026-10-24T08:45:43Z",
+        "snapshot_aest": "2026-10-24T18:45:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914677",
@@ -579,8 +663,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T08:31:01Z",
-        "snapshot_aest": "2026-10-24T18:31:01+10:00",
+        "snapshot_utc": "2026-10-24T08:45:43Z",
+        "snapshot_aest": "2026-10-24T18:45:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914673",
@@ -651,8 +735,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T08:31:01Z",
-        "snapshot_aest": "2026-10-24T18:31:01+10:00",
+        "snapshot_utc": "2026-10-24T08:45:43Z",
+        "snapshot_aest": "2026-10-24T18:45:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914674",
@@ -747,8 +831,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T08:31:01Z",
-        "snapshot_aest": "2026-10-24T18:31:01+10:00",
+        "snapshot_utc": "2026-10-24T08:45:43Z",
+        "snapshot_aest": "2026-10-24T18:45:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914675",
@@ -847,14 +931,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T08:31:01Z",
-        "snapshot_aest": "2026-10-24T18:31:01+10:00",
+        "snapshot_utc": "2026-10-24T08:45:43Z",
+        "snapshot_aest": "2026-10-24T18:45:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914546",
         "outage_id": "914546",
         "outage_type": "unplanned",
-        "status": "Crews working on-site",
+        "status": "Work delayed - crews unable to continue",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 18,
         "affected_customers_known": true,
@@ -979,8 +1063,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T08:31:01Z",
-        "snapshot_aest": "2026-10-24T18:31:01+10:00",
+        "snapshot_utc": "2026-10-24T08:45:43Z",
+        "snapshot_aest": "2026-10-24T18:45:43+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914676",
