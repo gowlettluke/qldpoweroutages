@@ -87,8 +87,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T06:15:52Z",
-        "snapshot_aest": "2026-10-24T16:15:52+10:00",
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-989700-g",
@@ -101,7 +101,7 @@
         "suburb": "WEST WOOMBYE, WOOMBYE",
         "street_name": "BACK WOOMBYE RD, BARTS ST, BLACKALL ST, CARY ST, OLD PALMWOODS RD",
         "start_utc": "2026-10-24T04:15:55Z",
-        "etr_utc": "2026-10-24T07:00:00Z",
+        "etr_utc": "2026-10-24T09:00:00Z",
         "centroid_lon": 152.96286123854165,
         "centroid_lat": -26.659769849446178,
         "lga_name": "Sunshine Coast Regional",
@@ -159,8 +159,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T06:15:52Z",
-        "snapshot_aest": "2026-10-24T16:15:52+10:00",
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-989707-g",
@@ -283,25 +283,101 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T06:15:52Z",
-        "snapshot_aest": "2026-10-24T16:15:52+10:00",
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-989716-g",
         "outage_id": "INCD-989716-g",
         "outage_type": "unplanned",
-        "status": "Awaiting",
+        "status": "In Progress",
         "reason": "Under Investigation",
         "affected_customers": 687,
         "affected_customers_known": true,
         "suburb": "DOONAN, EUMUNDI, VERRIERDALE",
         "street_name": "BARTLE FRERE CT, BONAVISTA CRES, BOTANICA CCT, BOWDEN RD, BUTLER RD, COAST VIEW PDE, COCOS CT, DOONAN BRIDGE RD, DUKE RD, EAGLE FARM CL, EUMUNDI NOOSA RD, GIDGEE CT, LAGUNA GR, LILY CT, LITTLERIDGE CT, MALLEE CL, MARLOCK CT, MARNIE CRES, MINDI RD, MORRELL CT, MT EERWAH VISTA DR, NATURALIST PL, NOOMAR DR, ORCHARD GR, PANAVISTA CT, PANORAMA DR, PARKDALE AVE, PENDA CT, REDWOOD RD, SILVERTOP RD, STEWART CT, SUNRISE RD, TALLGUM AVE, VIEWLAND DR, YOUNGS DR",
         "start_utc": "2026-10-24T06:13:38Z",
-        "etr_utc": "2026-10-24T09:00:00Z",
+        "etr_utc": "2026-10-24T08:30:00Z",
         "centroid_lon": 152.99621776636715,
         "centroid_lat": -26.455869604935845,
         "lga_name": "Sunshine Coast Regional",
         "lga_code": "6720",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              152.5910199188,
+              -27.4653911547148
+            ],
+            [
+              152.591028155792,
+              -27.4651871699597
+            ],
+            [
+              152.591555243474,
+              -27.4634483016983
+            ],
+            [
+              152.592180400178,
+              -27.4631315004322
+            ],
+            [
+              152.593684964736,
+              -27.463507928162
+            ],
+            [
+              152.594052086086,
+              -27.4638999277803
+            ],
+            [
+              152.594387109998,
+              -27.4670506968774
+            ],
+            [
+              152.593803676973,
+              -27.4675390838516
+            ],
+            [
+              152.591763669152,
+              -27.4672490831511
+            ],
+            [
+              152.591346572716,
+              -27.4668894855449
+            ],
+            [
+              152.5910199188,
+              -27.4653911547148
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-989718-g",
+        "outage_id": "INCD-989718-g",
+        "outage_type": "unplanned",
+        "status": "Awaiting",
+        "reason": "Emergency Repairs",
+        "affected_customers": 6,
+        "affected_customers_known": true,
+        "suburb": "WIVENHOE POCKET",
+        "street_name": "NERREMAN RD",
+        "start_utc": "2026-10-24T06:18:54Z",
+        "etr_utc": "2026-10-24T09:00:00Z",
+        "centroid_lon": 152.5927231112008,
+        "centroid_lat": -27.465409662476517,
+        "lga_name": "Somerset Regional",
+        "lga_code": "6580",
         "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0"
       }
     },
@@ -343,8 +419,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T06:15:52Z",
-        "snapshot_aest": "2026-10-24T16:15:52+10:00",
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914225",
@@ -403,8 +479,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T06:15:52Z",
-        "snapshot_aest": "2026-10-24T16:15:52+10:00",
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914545",
@@ -567,8 +643,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T06:15:52Z",
-        "snapshot_aest": "2026-10-24T16:15:52+10:00",
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914669",
@@ -651,8 +727,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T06:15:52Z",
-        "snapshot_aest": "2026-10-24T16:15:52+10:00",
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914655",
@@ -735,8 +811,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T06:15:52Z",
-        "snapshot_aest": "2026-10-24T16:15:52+10:00",
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914668",
@@ -815,15 +891,15 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T06:15:52Z",
-        "snapshot_aest": "2026-10-24T16:15:52+10:00",
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914670",
         "outage_id": "914670",
         "outage_type": "unplanned",
         "status": "Crews working on-site",
-        "reason": "The loss of supply is due to the operating of protective equipment.",
+        "reason": "The loss of supply is due to fallen power lines.",
         "affected_customers": 6,
         "affected_customers_known": true,
         "suburb": "BARCALDINE",
@@ -907,14 +983,14 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T06:15:52Z",
-        "snapshot_aest": "2026-10-24T16:15:52+10:00",
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914673",
         "outage_id": "914673",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
         "affected_customers": 41,
         "affected_customers_known": true,
@@ -1007,8 +1083,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T06:15:52Z",
-        "snapshot_aest": "2026-10-24T16:15:52+10:00",
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914546",
@@ -1131,8 +1207,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-10-24T06:15:52Z",
-        "snapshot_aest": "2026-10-24T16:15:52+10:00",
+        "snapshot_utc": "2026-10-24T06:31:00Z",
+        "snapshot_aest": "2026-10-24T16:31:00+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|914559",
