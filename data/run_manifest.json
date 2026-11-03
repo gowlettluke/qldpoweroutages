@@ -1,27 +1,41 @@
 {
-  "generated_utc": "2026-11-03T10:15:50Z",
-  "generated_aest": "2026-11-03T20:15:50+10:00",
+  "generated_utc": "2026-11-03T10:21:47Z",
+  "generated_aest": "2026-11-03T20:21:47+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 61,
+  "current_outage_records": 59,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 522,
-  "current_records_after_outage_type_filter": 77,
+  "current_records_before_outage_type_filter": 520,
+  "current_records_after_outage_type_filter": 75,
   "current_records_dropped_planned_or_unknown": 445,
-  "provider_fetch_errors": {},
-  "provider_fetch_error_count": 0,
-  "current_energex_records": 22,
-  "current_ergon_records": 39,
+  "provider_fetch_errors": {
+    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: HTTP Error 403: ",
+    "Ergon": "Council allocation fallback to map estimates: HTTPError: HTTP Error 403: "
+  },
+  "provider_fetch_error_count": 2,
+  "council_allocation_status": {
+    "Energex": {
+      "status": "geometry_fallback",
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: HTTP Error 403: "
+    },
+    "Ergon": {
+      "status": "geometry_fallback",
+      "error": "Council allocation fallback to map estimates: HTTPError: HTTP Error 403: "
+    }
+  },
+  "legacy_council_snapshot_rows": 3501,
+  "current_energex_records": 21,
+  "current_ergon_records": 38,
   "current_essential_records_fetched": 17,
-  "current_energex_records_fetched": 149,
-  "current_ergon_records_fetched": 356,
+  "current_energex_records_fetched": 148,
+  "current_ergon_records_fetched": 355,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 16,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3512,
-  "lga_totals_rows_48h": 4269,
-  "lga_totals_latest_rows": 46,
+  "snapshot_rows_48h": 3560,
+  "lga_totals_rows_48h": 4297,
+  "lga_totals_latest_rows": 44,
   "lga_cumulative_rows": 85,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
@@ -38,84 +52,24 @@
       "https://www.energex.com.au/api/outages-map/filestore-404/ex-map-current-planned/filestore-proxy?SQ_SESSION_MODE=read_only_async"
     ],
     "ergon_layer_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
+    "energex_council_api_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+    "ergon_council_text_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
     "essential_energy_kml_url": "https://www.essentialenergy.com.au/Assets/kmz/current.kml?dFdLgoAP",
     "qld_lga_layer_url": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Boundaries/AdminBoundariesFramework/FeatureServer/11",
     "local_lga_boundary_file": "data/qld_lga_boundaries.kmz"
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-03T10:15:50Z",
+    "snapshot_utc": "2026-11-03T10:21:47Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-03T10:15:53Z",
+      "fetched_utc": "2026-11-03T10:21:51Z",
       "error": "HTTPError: HTTP Error 403: "
     },
     "ergon": {
-      "status": "ok",
-      "fetched_utc": "2026-11-03T10:15:53Z",
-      "outage_type": "unplanned",
-      "scope": "all_councils",
-      "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view?SQ_SESSION_MODE=read_only_async",
-      "source_updated_utc": "2026-11-03T09:40:01Z",
-      "total_customers": 12221,
-      "rows": [
-        {
-          "lga_name": "Central Highlands Regional",
-          "affected_customers": 2404
-        },
-        {
-          "lga_name": "Cherbourg Aboriginal Shire",
-          "affected_customers": 380
-        },
-        {
-          "lga_name": "Etheridge Shire",
-          "affected_customers": 46
-        },
-        {
-          "lga_name": "Fraser Coast Regional",
-          "affected_customers": 8
-        },
-        {
-          "lga_name": "Gympie Regional",
-          "affected_customers": 1007
-        },
-        {
-          "lga_name": "Mckinlay Shire",
-          "affected_customers": 10
-        },
-        {
-          "lga_name": "North Burnett Regional",
-          "affected_customers": 37
-        },
-        {
-          "lga_name": "Richmond Shire",
-          "affected_customers": 8
-        },
-        {
-          "lga_name": "Rockhampton Regional",
-          "affected_customers": 48
-        },
-        {
-          "lga_name": "Somerset Regional",
-          "affected_customers": 2
-        },
-        {
-          "lga_name": "South Burnett Regional",
-          "affected_customers": 5824
-        },
-        {
-          "lga_name": "Southern Downs Regional",
-          "affected_customers": 95
-        },
-        {
-          "lga_name": "Toowoomba Regional",
-          "affected_customers": 2261
-        },
-        {
-          "lga_name": "Western Downs Regional",
-          "affected_customers": 91
-        }
-      ]
+      "status": "error",
+      "fetched_utc": "2026-11-03T10:21:51Z",
+      "error": "HTTPError: HTTP Error 403: "
     }
   }
 }
