@@ -1,28 +1,28 @@
 {
-  "generated_utc": "2026-11-03T09:45:59Z",
-  "generated_aest": "2026-11-03T19:45:59+10:00",
+  "generated_utc": "2026-11-03T09:53:17Z",
+  "generated_aest": "2026-11-03T19:53:17+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 60,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 522,
-  "current_records_after_outage_type_filter": 79,
+  "current_records_before_outage_type_filter": 521,
+  "current_records_after_outage_type_filter": 78,
   "current_records_dropped_planned_or_unknown": 443,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "current_energex_records": 21,
   "current_ergon_records": 39,
-  "current_essential_records_fetched": 20,
+  "current_essential_records_fetched": 19,
   "current_energex_records_fetched": 146,
   "current_ergon_records_fetched": 356,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 19,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 18,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3341,
-  "lga_totals_rows_48h": 4155,
-  "lga_totals_latest_rows": 40,
-  "lga_cumulative_rows": 83,
+  "snapshot_rows_48h": 3401,
+  "lga_totals_rows_48h": 4197,
+  "lga_totals_latest_rows": 42,
+  "lga_cumulative_rows": 85,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
     "outage_snapshots_48h_csv": "data/outage_snapshots_48h.csv",
@@ -44,21 +44,75 @@
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-03T09:45:59Z",
+    "snapshot_utc": "2026-11-03T09:53:17Z",
     "energex": {
-      "status": "error",
-      "fetched_utc": "2026-11-03T09:46:02Z",
-      "error": "HTTPError: HTTP Error 403: "
+      "status": "ok",
+      "fetched_utc": "2026-11-03T09:53:20Z",
+      "outage_type": "unplanned",
+      "scope": "all_councils",
+      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/council?council=",
+      "source_updated_utc": "2026-11-03T09:45:02Z",
+      "total_customers": 2795,
+      "rows": [
+        {
+          "lga_name": "Brisbane City",
+          "affected_customers": 905
+        },
+        {
+          "lga_name": "Gold Coast City",
+          "affected_customers": 1326
+        },
+        {
+          "lga_name": "Gympie Regional",
+          "affected_customers": 39
+        },
+        {
+          "lga_name": "Ipswich City",
+          "affected_customers": 49
+        },
+        {
+          "lga_name": "Lockyer Valley Regional",
+          "affected_customers": 15
+        },
+        {
+          "lga_name": "Logan City",
+          "affected_customers": 241
+        },
+        {
+          "lga_name": "Moreton Bay Regional",
+          "affected_customers": 26
+        },
+        {
+          "lga_name": "Noosa",
+          "affected_customers": 61
+        },
+        {
+          "lga_name": "Scenic Rim Regional",
+          "affected_customers": 27
+        },
+        {
+          "lga_name": "Somerset Regional",
+          "affected_customers": 105
+        },
+        {
+          "lga_name": "Toowoomba Regional",
+          "affected_customers": 1
+        }
+      ]
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-03T09:46:02Z",
+      "fetched_utc": "2026-11-03T09:53:20Z",
       "outage_type": "unplanned",
       "scope": "all_councils",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view?SQ_SESSION_MODE=read_only_async",
-      "source_updated_utc": "2026-11-03T09:40:01Z",
-      "total_customers": 12221,
+      "source_updated_utc": "2026-11-03T09:50:00Z",
+      "total_customers": 12185,
       "rows": [
+        {
+          "lga_name": "Banana Shire",
+          "affected_customers": 4
+        },
         {
           "lga_name": "Central Highlands Regional",
           "affected_customers": 2404
@@ -109,7 +163,7 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 2261
+          "affected_customers": 2221
         },
         {
           "lga_name": "Western Downs Regional",
