@@ -1,46 +1,46 @@
 {
-  "generated_utc": "2026-11-03T22:31:12Z",
-  "generated_aest": "2026-11-04T08:31:12+10:00",
+  "generated_utc": "2026-11-03T22:46:09Z",
+  "generated_aest": "2026-11-04T08:46:09+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 35,
+  "current_outage_records": 33,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 529,
+  "current_records_before_outage_type_filter": 547,
   "current_records_after_outage_type_filter": 50,
-  "current_records_dropped_planned_or_unknown": 479,
+  "current_records_dropped_planned_or_unknown": 497,
   "provider_fetch_errors": {
-    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Gold Coast City"
+    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling"
   },
   "provider_fetch_error_count": 1,
   "council_allocation_status": {
     "Energex": {
       "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Gold Coast City"
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-03T22:30:34Z",
-      "published_customers": 1099,
-      "event_count": 30
+      "source_updated_utc": "2026-11-03T22:45:00Z",
+      "published_customers": 1091,
+      "event_count": 29
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-03T22:31:12Z",
+    "snapshot_utc": "2026-11-03T22:46:09Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-03T22:31:21Z",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Gold Coast City"
+      "fetched_utc": "2026-11-03T22:46:18Z",
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-03T22:31:21Z",
+      "fetched_utc": "2026-11-03T22:46:18Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-03T22:30:34Z",
-      "total_customers": 1099,
+      "source_updated_utc": "2026-11-03T22:45:00Z",
+      "total_customers": 1091,
       "rows": [
         {
           "lga_name": "Banana Shire",
@@ -116,24 +116,24 @@
         },
         {
           "lga_name": "Western Downs Regional",
-          "affected_customers": 52
+          "affected_customers": 44
         }
       ]
     }
   },
-  "legacy_council_snapshot_rows": 3102,
-  "current_energex_records": 4,
-  "current_ergon_records": 30,
-  "current_essential_records_fetched": 75,
-  "current_energex_records_fetched": 115,
-  "current_ergon_records_fetched": 340,
+  "legacy_council_snapshot_rows": 3091,
+  "current_energex_records": 3,
+  "current_ergon_records": 29,
+  "current_essential_records_fetched": 80,
+  "current_energex_records_fetched": 114,
+  "current_ergon_records_fetched": 353,
   "current_essential_records_after_qld_polygon_prefilter": 1,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 15,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 17,
   "current_essential_records_included_qld": 1,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5170,
-  "lga_totals_rows_48h": 5959,
-  "lga_totals_latest_rows": 46,
+  "snapshot_rows_48h": 5192,
+  "lga_totals_rows_48h": 5981,
+  "lga_totals_latest_rows": 44,
   "lga_cumulative_rows": 97,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
