@@ -1,6 +1,7 @@
 from datetime import datetime, timezone
 import json
 import unittest
+from urllib.parse import urlsplit
 
 from write_provider_council_counts import (
     ENERGEX_API, ERGON_TEXT, collect_counts, count, energex_counts, ergon_counts,
@@ -82,7 +83,7 @@ class CouncilCountsTests(unittest.TestCase):
         calls = []
         def fetch(url):
             calls.append(url)
-            if url.endswith("summary") and len(calls) == 3:
+            if urlsplit(url).path.endswith("/summary") and len(calls) == 3:
                 return json.dumps({"data": {"secondsSinceEpoch": str(int(EPOCH) + 1), "totalCustomersAffected": 1009}})
             return energex_fetch()(url)
         with self.assertRaisesRegex(ValueError, "changed"):

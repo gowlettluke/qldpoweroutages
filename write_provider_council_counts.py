@@ -60,7 +60,10 @@ def fetch_text(url):
         "User-Agent": USER_AGENT,
         "Accept": "application/json,text/html;q=0.9,*/*;q=0.8",
         "Cache-Control": "no-cache",
+        "Accept-Language": "en-AU,en;q=0.9",
     }
+    if url.startswith(ENERGEX_API):
+        headers["Referer"] = "https://www.energex.com.au/outages/outage-finder/emergency-outages-text-view"
     try:
         with urlopen(Request(url, headers=headers), timeout=20) as response:
             return response.read().decode("utf-8")
@@ -76,7 +79,10 @@ def fetch_text(url):
 
 def energex_counts(fetch, now):
     def data(path):
-        return json.loads(fetch(ENERGEX_API + path))["data"]
+        # Squiz can deny its default session mode to hosted pollers. This is the
+        # public read-only mode also used by the providers' other outage feeds.
+        separator = "&" if "?" in path else "?"
+        return json.loads(fetch(ENERGEX_API + path + separator + "SQ_SESSION_MODE=read_only_async"))["data"]
 
     before = data("summary")
     councils = data("council?council=")
