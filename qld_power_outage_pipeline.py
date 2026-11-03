@@ -2836,6 +2836,27 @@ def run_pipeline(args: argparse.Namespace) -> int:
         encoding="utf-8",
     )
 
+    published_councils = {"schema_version": 1, "snapshot_utc": to_utc_iso(snapshot_dt)}
+    for code, name, key in (("au.qld.energex", "Energex", "energex"), ("au.qld.ergon", "Ergon", "ergon")):
+        meta = council_allocation_status.get(name) or {}
+        if meta.get("status") == "provider":
+            totals = {}
+            for record in all_current:
+                if record.provider_code == code and is_unplanned_record(record):
+                    for allocation in record.lga_allocations or []:
+                        lga = allocation["lga_name"]
+                        totals[lga] = totals.get(lga, 0) + allocation["affected_customers"]
+            published_councils[key] = {
+                "status": "ok", "fetched_utc": to_utc_iso(utc_now()), "scope": "all_councils",
+                "outage_type": "unplanned", "source_url": meta["source_url"],
+                "source_updated_utc": meta["source_updated_utc"],
+                "total_customers": sum(totals.values()),
+                "rows": [{"lga_name": lga, "affected_customers": total} for lga, total in sorted(totals.items())],
+            }
+        else:
+            published_councils[key] = {"status": "error", "fetched_utc": to_utc_iso(utc_now()),
+                                       "error": meta.get("error") or "Provider council collection skipped"}
+
     manifest = {
         "generated_utc": to_utc_iso(snapshot_dt),
         "generated_aest": to_aest_iso(snapshot_dt),
@@ -2849,6 +2870,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
         "provider_fetch_errors": provider_fetch_errors,
         "provider_fetch_error_count": len(provider_fetch_errors),
         "council_allocation_status": council_allocation_status,
+        "provider_council_counts": published_councils,
         "legacy_council_snapshot_rows": sum(r.get("lga_assignment_source") == "geometry_legacy" for r in combined_rows),
         "current_energex_records": len([r for r in all_current if r.provider_code == "au.qld.energex"]),
         "current_ergon_records": len([r for r in all_current if r.provider_code == "au.qld.ergon"]),

@@ -6,6 +6,7 @@ attach its published council allocations so statewide totals count it once.
 from __future__ import annotations
 
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from html.parser import HTMLParser
@@ -237,7 +238,13 @@ def parse_ergon_councils(page: str) -> list[dict[str, Any]]:
 def fetch_ergon_councils(get_text: Callable[[str], str]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     # Use the provider's public read-only mode and verify its publisher time.
     url = ERGON_TEXT_URL + "?" + urlencode({"SQ_SESSION_MODE": "read_only_async"})
-    page = get_text(url)
+    try:
+        page = get_text(url)
+    except Exception:
+        # One ordinary retry for a transient fetch failure; keep the same URL,
+        # transport and validation. Persistent failures remain explicit errors.
+        time.sleep(2)
+        page = get_text(url)
     verified = ergon_counts(lambda _: page, datetime.now(timezone.utc))
     events = parse_ergon_councils(page)
     if sum(e["affected_customers"] for e in events) != verified["total_customers"]:

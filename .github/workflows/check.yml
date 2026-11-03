@@ -31,20 +31,9 @@ jobs:
         run: |
           python - <<'PY'
           from datetime import datetime, timezone
-          from write_provider_council_counts import collect_counts, iso
           from provider_councils import fetch_energex_councils, fetch_ergon_councils
           from write_provider_council_counts import fetch_text
           import json
-          now = datetime.now(timezone.utc)
-          result = collect_counts(iso(now), now=now)
-          failed = []
-          for provider in ('energex', 'ergon'):
-              entry = result[provider]
-              print(provider, entry['status'], entry.get('total_customers'), entry.get('error', ''))
-              if entry['status'] != 'ok':
-                  failed.append(provider)
-          if failed:
-              raise SystemExit('Live council source verification failed: ' + ', '.join(failed))
           for provider, loader in (
               ('energex', lambda: fetch_energex_councils(lambda url: json.loads(fetch_text(url)))),
               ('ergon', lambda: fetch_ergon_councils(fetch_text)),

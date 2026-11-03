@@ -229,7 +229,15 @@ def main():
     parser.add_argument("--manifest", type=Path, default=Path("data/run_manifest.json"))
     args = parser.parse_args()
     manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
-    counts = collect_counts(manifest["generated_utc"])
+    # The pipeline's event allocations and council totals must describe the same
+    # publisher snapshot. Reuse its validated result instead of fetching again
+    # after it has already written the CSVs. Retain the standalone collector for
+    # older manifests and callers.
+    counts = manifest.get("provider_council_counts")
+    if not (counts and counts.get("schema_version") == 1
+            and counts.get("snapshot_utc") == manifest["generated_utc"]
+            and manifest.get("council_allocation_status") is not None):
+        counts = collect_counts(manifest["generated_utc"])
     manifest["provider_council_counts"] = counts
     args.manifest.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     for code in ("energex", "ergon"):

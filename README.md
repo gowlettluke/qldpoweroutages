@@ -1,8 +1,9 @@
 # Queensland outage data
 
-The poll workflow fetches current outage geometries and publishes the existing
-GeoJSON and historical CSVs. It also runs `write_provider_council_counts.py` to
-add `provider_council_counts` to `data/run_manifest.json` for the Mapping report.
+The poll workflow fetches current outage geometries, provider council allocations,
+and publishes the GeoJSON, historical CSVs and `provider_council_counts` in the
+manifest for the Mapping report. `write_provider_council_counts.py` reuses the
+pipeline's verified snapshot; it also supports older manifests independently.
 
 ## Provider council counts
 
@@ -41,6 +42,8 @@ compatibility; use the allocations array or LGA totals CSV for council totals.
 The dashboard uses all allocations for council counts, map shading and shares,
 while statewide/provider totals and active-outage counts count the event once.
 Website-only events are counted even if a map polygon has not arrived yet.
+The Mapping manifest, event counts and CSV totals share this same collection;
+they are not fetched again after the snapshot is written.
 
 `lga_assignment_source` is `provider` for published allocations and
 `geometry_fallback` when a provider council source fails validation. Fallbacks

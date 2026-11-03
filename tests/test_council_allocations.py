@@ -8,7 +8,8 @@ from unittest.mock import patch
 from urllib.parse import parse_qs, urlparse
 
 import qld_power_outage_pipeline as pipeline
-from provider_councils import fetch_energex_councils, parse_ergon_councils
+import write_provider_council_counts as council_writer
+from provider_councils import fetch_energex_councils, fetch_ergon_councils, parse_ergon_councils
 
 
 def ergon_item(event, council, customers, outage_type="UNPLANNED"):
@@ -66,6 +67,18 @@ class CouncilAllocationTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 parse_ergon_councils(page)
         self.assertEqual(parse_ergon_councils('<ul class="results"></ul>'), [])
+
+    def test_ergon_transient_fetch_retry_still_requires_a_fresh_verified_page(self):
+        page = ('<ul class="results">' + ergon_item("26E1", "Gympie Regional", "5")
+                + f'<div id="hiddenDate">{int(time.time())}</div>')
+        with patch("provider_councils.time.sleep"), patch("builtins.print"):
+            from unittest.mock import Mock
+            fetch = Mock(side_effect=[RuntimeError("Temporary failure"), page])
+            events, meta = fetch_ergon_councils(fetch)
+            self.assertEqual(fetch.call_count, 2)
+            self.assertEqual(events[0]["affected_customers"], 5)
+            self.assertEqual(meta["published_customers"], 5)
+            self.assertTrue(meta["source_updated_utc"])
 
     def test_energex_suburbs_are_summed_within_their_published_councils(self):
         events, meta = fetch_energex_councils(fixture_fetch)
@@ -139,7 +152,7 @@ class CouncilAllocationTests(unittest.TestCase):
             with patch.object(pipeline, "fetch_energex", return_value=energex), \
                  patch.object(pipeline, "fetch_ergon", return_value=[]), \
                  patch.object(pipeline, "fetch_energex_councils", side_effect=ValueError("Unavailable")), \
-                 patch.object(pipeline, "fetch_ergon_councils", return_value=(ergon_events, {"source_url": "ergon", "status": "provider"})), \
+                 patch.object(pipeline, "fetch_ergon_councils", return_value=(ergon_events, {"source_url": "ergon", "status": "provider", "source_updated_utc": "2026-11-03T10:00:00Z"})), \
                  patch.object(pipeline, "assign_lgas"):
                 pipeline.run_pipeline(args)
             manifest = json.loads((Path(temp) / "run_manifest.json").read_text())
@@ -147,6 +160,8 @@ class CouncilAllocationTests(unittest.TestCase):
             self.assertEqual(manifest["provider_fetch_error_count"], 1)
             self.assertEqual(manifest["council_allocation_status"]["Energex"]["status"], "geometry_fallback")
             self.assertEqual(sum(f["properties"]["affected_customers"] for f in current), 81)
+            self.assertEqual(manifest["provider_council_counts"]["ergon"]["total_customers"], 5)
+            self.assertEqual(manifest["provider_council_counts"]["energex"]["status"], "error")
 
     def test_zero_current_poll_does_not_reuse_old_lga_totals(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -160,6 +175,21 @@ class CouncilAllocationTests(unittest.TestCase):
             ])
             pipeline.run_pipeline(args)
             self.assertEqual(pipeline.read_csv_rows(Path(temp) / "lga_totals_latest.csv"), [])
+
+    def test_manifest_writer_reuses_the_verified_event_snapshot(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "run_manifest.json"
+            snapshot = "2026-11-03T10:00:00Z"
+            counts = {"schema_version": 1, "snapshot_utc": snapshot,
+                      "energex": {"status": "ok", "total_customers": 76},
+                      "ergon": {"status": "ok", "total_customers": 5}}
+            path.write_text(json.dumps({"generated_utc": snapshot, "provider_council_counts": counts,
+                                        "council_allocation_status": {"Energex": {"status": "provider"}}}))
+            with patch("sys.argv", ["write_provider_council_counts.py", "--manifest", str(path)]), \
+                 patch.object(council_writer, "collect_counts", side_effect=AssertionError("must not refetch")), \
+                 patch("builtins.print"):
+                council_writer.main()
+            self.assertEqual(json.loads(path.read_text())["provider_council_counts"], counts)
 
 
 if __name__ == "__main__":
