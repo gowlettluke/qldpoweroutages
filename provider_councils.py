@@ -6,7 +6,6 @@ attach its published council allocations so statewide totals count it once.
 from __future__ import annotations
 
 import re
-import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from html.parser import HTMLParser
@@ -80,11 +79,9 @@ def fetch_energex_councils(get_json: Callable[[str], Any]) -> tuple[list[dict[st
     """
     last_error: Exception | None = None
     for attempt in range(2):
-        poll = str(time.time_ns())
-
         def fetch(path: str, **params: str) -> Any:
             payload = get_json(ENERGEX_TEXT_API + path + "?" + urlencode({
-                **params, "SQ_SESSION_MODE": "read_only_async", "_": poll,
+                **params, "SQ_SESSION_MODE": "read_only_async",
             }))
             if not isinstance(payload, dict) or "data" not in payload:
                 raise ValueError("Invalid Energex text API response")
@@ -238,8 +235,8 @@ def parse_ergon_councils(page: str) -> list[dict[str, Any]]:
 
 
 def fetch_ergon_councils(get_text: Callable[[str], str]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    # Ergon's public text view is cached; request a fresh read for each poll.
-    url = ERGON_TEXT_URL + "?" + urlencode({"SQ_SESSION_MODE": "read_only_async", "_": str(time.time_ns())})
+    # Use the provider's public read-only mode and verify its publisher time.
+    url = ERGON_TEXT_URL + "?" + urlencode({"SQ_SESSION_MODE": "read_only_async"})
     page = get_text(url)
     verified = ergon_counts(lambda _: page, datetime.now(timezone.utc))
     events = parse_ergon_councils(page)

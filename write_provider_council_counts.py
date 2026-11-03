@@ -64,17 +64,27 @@ def fetch_text(url):
     }
     if url.startswith(ENERGEX_API):
         headers["Referer"] = "https://www.energex.com.au/outages/outage-finder/emergency-outages-text-view"
+        headers["Content-Type"] = "application/json; charset=utf-8"
     try:
         with urlopen(Request(url, headers=headers), timeout=20) as response:
             return response.read().decode("utf-8")
     except HTTPError as error:
         if error.code not in (403, 429, 503):
             raise
-        # Same public request, using the dependency already installed by the poller.
+        # Establish the ordinary public website session before retrying its API.
+        # Some hosted runners need the public session cookies as well as TLS.
         from curl_cffi import requests
-        response = requests.get(url, headers=headers, timeout=20, impersonate="chrome")
-        response.raise_for_status()
-        return response.text
+        landing = ("https://www.energex.com.au/outages/outage-finder/emergency-outages-text-view"
+                   if url.startswith(ENERGEX_API) else
+                   "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view")
+        with requests.Session() as session:
+            session.get(landing, headers={"User-Agent": USER_AGENT, "Accept": "text/html"},
+                        timeout=20, impersonate="chrome")
+            response = session.get(url, headers=headers, timeout=20, impersonate="chrome")
+            if response.status_code >= 400:
+                detail = re.sub(r"\s+", " ", response.text)[:240]
+                raise RuntimeError(f"Provider returned HTTP {response.status_code}: {detail}")
+            return response.text
 
 
 def energex_counts(fetch, now):
