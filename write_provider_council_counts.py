@@ -11,7 +11,9 @@ from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
+from time import time_ns
 from urllib.error import HTTPError
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 
 
@@ -56,6 +58,16 @@ def council_name(value):
 
 
 def fetch_text(url):
+    parts = urlsplit(url)
+    if (parts.scheme == "https" and parts.hostname == "www.ergon.com.au"
+            and parts.path.rstrip("/") == "/network/outages/outage-finder/outage-finder-text-view"):
+        # Ergon's CDN can serve old HTML despite Cache-Control: no-cache.
+        # A distinct public read-only request avoids reusing that cached page.
+        query = [(key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True) if key != "_"]
+        if not any(key == "SQ_SESSION_MODE" for key, _value in query):
+            query.append(("SQ_SESSION_MODE", "read_only_async"))
+        query.append(("_", str(time_ns())))
+        url = urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), parts.fragment))
     headers = {
         "User-Agent": USER_AGENT,
         "Accept": "application/json,text/html;q=0.9,*/*;q=0.8",
@@ -248,3 +260,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
