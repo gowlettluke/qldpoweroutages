@@ -8,7 +8,8 @@ add `provider_council_counts` to `data/run_manifest.json` for the Mapping report
 
 - Energex: the official emergency text view's `v1.0.ex/council` and `summary`
   endpoints. Council counts must sum to the provider total, and the update time
-  must stay consistent during collection.
+  must stay consistent during collection. Requests explicitly select the public
+  read-only Squiz session mode.
 - Ergon: current text-view council/event rows, including `UNPLN` and `FORCD`,
   excluding `PLN`. Its `hiddenDate` supplies the publisher update time. Events
   split across councils retain the provider's individual council counts.
@@ -31,3 +32,5 @@ properties and historical LGA CSVs are separate geographical estimates and
 must not be presented as provider council allocations.
 
 Run offline checks with `python -m unittest discover -s tests -v`.
+CI also checks live retrieval from the hosted runner, where website access can
+differ from a local environment.

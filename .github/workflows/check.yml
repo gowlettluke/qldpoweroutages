@@ -17,3 +17,21 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m unittest discover -s tests -v
+      - name: Install source transport dependencies
+        run: pip install -r requirements.txt
+      - name: Verify live council sources from the hosted runner
+        run: |
+          python - <<'PY'
+          from datetime import datetime, timezone
+          from write_provider_council_counts import collect_counts, iso
+          now = datetime.now(timezone.utc)
+          result = collect_counts(iso(now), now=now)
+          failed = []
+          for provider in ('energex', 'ergon'):
+              entry = result[provider]
+              print(provider, entry['status'], entry.get('total_customers'), entry.get('error', ''))
+              if entry['status'] != 'ok':
+                  failed.append(provider)
+          if failed:
+              raise SystemExit('Live council source verification failed: ' + ', '.join(failed))
+          PY
