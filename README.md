@@ -27,10 +27,34 @@ manifest, and `energex` / `ergon` entries. Successful entries contain `status:
 `{lga_name, affected_customers}`. Failed entries have `status: "error"` and an
 `error` description, without customer rows.
 
-These are provider-published counts. Existing centroid-derived `lga_name`
-properties and historical LGA CSVs are separate geographical estimates and
-must not be presented as provider council allocations.
+The dashboard pipeline also reads the providers' event/council allocations using
+`provider_councils.py`. Energex suburb entries are summed within the council the
+provider supplies, then checked against its council and network totals. Ergon's
+per-event council rows are retained. Both use the publisher freshness checks.
 
-Run offline checks with `python -m unittest discover -s tests -v`.
+Each outage remains one event in `current_outages.geojson` and the snapshot CSV.
+Its `affected_customers` is the sum of its council allocations. The GeoJSON's
+`lga_allocations` array is stored as `lga_allocations_json` in the CSV. Each entry
+contains `lga_name`, `lga_code` when available, and `affected_customers`.
+`lga_name`/`lga_code` on the event identify its primary (largest) council for
+compatibility; use the allocations array or LGA totals CSV for council totals.
+The dashboard uses all allocations for council counts, map shading and shares,
+while statewide/provider totals and active-outage counts count the event once.
+Website-only events are counted even if a map polygon has not arrived yet.
+
+`lga_assignment_source` is `provider` for published allocations and
+`geometry_fallback` when a provider council source fails validation. Fallbacks
+retain available map data and publish a provider error instead of silently
+claiming verified counts. Essential Energy continues to use geographical lookup.
+
+Ergon event identity uses `EVENT_ID`, not ArcGIS `OBJECTID`. Every poll repairs
+retained 48-hour snapshot keys from their original `raw_json`, joining records
+whose database row IDs changed. Historical customer counts and timestamps are
+preserved. Old council snapshots have `lga_assignment_source: geometry_legacy`;
+their original estimates cannot be reconstructed from today's allocations. The
+dashboard labels that historical limitation until those rows leave the window.
+
+Install `requirements.txt`, then run offline checks with
+`python -m unittest discover -s tests -v` and `node tests/dashboard.test.cjs`.
 CI also checks live retrieval from the hosted runner, where website access can
 differ from a local environment.

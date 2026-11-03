@@ -1352,7 +1352,30 @@
 
       placemarks.forEach((placemark, index) => {
         const nameNode = [...placemark.children].find((node) => node.localName === "name") || placemark.getElementsByTagNameNS("*", "name")[0];
-        const name = (nameNode?.textContent || `LGA ${index + 1}`).trim();
+        const properties = new Map();
+        [...placemark.getElementsByTagNameNS("*", "Data")].forEach((node) => {
+          const key = node.getAttribute("name");
+          const value = node.getElementsByTagNameNS("*", "value")[0]?.textContent;
+          if (key && value) properties.set(key.toLowerCase(), value.trim());
+        });
+        [...placemark.getElementsByTagNameNS("*", "SimpleData")].forEach((node) => {
+          const key = node.getAttribute("name");
+          if (key) properties.set(key.toLowerCase(), node.textContent.trim());
+        });
+        // This ArcGIS KMZ labels every Placemark "LOCAL GOVERNMENT"; the real
+        // council name is in its inert HTML description table.
+        const description = placemark.getElementsByTagNameNS("*", "description")[0]?.textContent;
+        if (description) {
+          const attributes = new DOMParser().parseFromString(description, "text/html");
+          attributes.querySelectorAll("tr").forEach((row) => {
+            const cells = [...row.children].filter((node) => node.localName === "td");
+            if (cells.length === 2) properties.set(cells[0].textContent.trim().toLowerCase(), cells[1].textContent.trim());
+          });
+        }
+        const validName = (value) => value && !/^local government(?: area)?$/i.test(value);
+        const name = ["lga", "lga_name", "adminareaname", "abbrev_name", "name"]
+          .map((key) => properties.get(key)).find(validName)
+          || (validName(nameNode?.textContent?.trim()) ? nameNode.textContent.trim() : `LGA ${index + 1}`);
         const featureRings = [];
         [...placemark.getElementsByTagNameNS("*", "Polygon")].forEach((polygon) => addPolygonRings(polygon, featureRings));
         if (featureRings.length) features.push({ name, key: lgaMatchKey(name), rings: featureRings });
@@ -1409,7 +1432,6 @@
       const manifest = JSON.parse(manifestText);
       const snapshots = parseCsv(snapshotsText).map(normaliseSnapshotRow).filter((r) => r.snapshotUtcMs);
       const health = parseCsv(healthText).map(normaliseHealthRow).filter((r) => r.providerName);
-      if (!snapshots.length) throw new Error("No snapshot rows were loaded.");
       state.data = prepareDashboardData(manifest, snapshots, health);
       renderAll();
       scheduleRefresh();
@@ -1418,14 +1440,19 @@
 
     function normaliseSnapshotRow(r) {
       const snapshotUtcMs = parseUtcMs(r.snapshot_utc);
+      const allocations = normaliseLgaAllocations(r);
+      let outageId = r.outage_id || "";
+      if (r.provider_code === "au.qld.ergon") {
+        try { outageId = JSON.parse(r.raw_json || "{}").EVENT_ID || outageId; } catch (err) {}
+      }
       return {
         snapshotUtc: r.snapshot_utc || "",
         snapshotAest: r.snapshot_aest || "",
         snapshotUtcMs,
         providerCode: r.provider_code || "unknown",
         providerName: r.provider_name || r.provider_code || "Unknown",
-        outageKey: r.outage_key || `${r.provider_code || "unknown"}|${r.outage_id || Math.random()}`,
-        outageId: r.outage_id || "",
+        outageKey: outageId ? `${r.provider_code}|${r.outage_type}|${outageId}` : r.outage_key,
+        outageId,
         outageType: r.outage_type || "unknown",
         status: r.status || "",
         reason: r.reason || "",
@@ -1437,10 +1464,28 @@
         etrUtc: r.etr_utc || "",
         centroidLon: toNullableNumber(r.centroid_lon),
         centroidLat: toNullableNumber(r.centroid_lat),
-        lgaName: r.lga_name || "Unmatched",
+        lgaName: allocations.map((a) => a.lgaName).join(", "),
         lgaCode: r.lga_code || "",
+        lgaAllocations: allocations,
+        lgaAssignmentSource: r.lga_assignment_source || "geometry_legacy",
         sourceUrl: r.source_url || ""
       };
+    }
+
+    function normaliseLgaAllocations(r) {
+      if (r.lga_allocations_json) {
+        const items = JSON.parse(r.lga_allocations_json);
+        if (!Array.isArray(items) || !items.length || items.some((a) =>
+          !a.lga_name || !Number.isFinite(Number(a.affected_customers)) || Number(a.affected_customers) < 0)) {
+          throw new Error("Invalid council customer allocations.");
+        }
+        const total = items.reduce((sum, a) => sum + Number(a.affected_customers), 0);
+        if (total !== toNumber(r.affected_customers)) throw new Error("Council counts do not match the outage total.");
+        return items.map((a) => ({
+          lgaName: a.lga_name, lgaCode: a.lga_code || "", affectedCustomers: Number(a.affected_customers)
+        }));
+      }
+      return [{ lgaName: r.lga_name || "Unmatched", lgaCode: r.lga_code || "", affectedCustomers: toNumber(r.affected_customers) }];
     }
 
     function normaliseHealthRow(r) {
@@ -1456,10 +1501,13 @@
     }
 
     function prepareDashboardData(manifest, snapshots, health) {
-      const latestMs = Math.max(...snapshots.map((r) => r.snapshotUtcMs));
-      const snapshotTimes = [...new Set(snapshots.map((r) => r.snapshotUtcMs))].sort((a, b) => a - b);
+      const latestMs = parseUtcMs(manifest.generated_utc) || Math.max(0, ...snapshots.map((r) => r.snapshotUtcMs));
+      const snapshotTimes = [...new Set([...snapshots.map((r) => r.snapshotUtcMs), latestMs])].sort((a, b) => a - b);
       const previousMs = snapshotTimes.slice().reverse().find((ms) => ms < latestMs) || null;
       const latestRows = snapshots.filter((r) => r.snapshotUtcMs === latestMs);
+      if (Number(manifest.current_outage_records) > 0 && !latestRows.length) {
+        throw new Error("The current snapshot is still updating. Please refresh shortly.");
+      }
       const previousRows = previousMs ? snapshots.filter((r) => r.snapshotUtcMs === previousMs) : [];
       const since0900StartMs = getSince0900StartUtcMs(latestMs);
       const rolling24StartMs = latestMs - 24 * 60 * 60 * 1000;
@@ -1474,6 +1522,11 @@
         .sort((a, b) => b.lastSeenMs - a.lastSeenMs || b.peakCustomers - a.peakCustomers);
       const trendSince = buildTrendSeries(sinceRows);
       const trend24 = buildTrendSeries(rollingRows);
+      if (!latestRows.length) {
+        const zero = { snapshotUtcMs: latestMs, customers: 0, incidents: 0 };
+        trendSince.push(zero);
+        trend24.push(zero);
+      }
 
       const currentSummary = summariseIncidentList(currentIncidents, "latestCustomers");
       const sinceSummary = summariseIncidentList(sinceIncidents, "peakCustomers");
@@ -1499,7 +1552,7 @@
       const lgaMapPoints = buildLgaMapPoints(currentIncidents);
       const unknownCustomerIncidents = currentIncidents.filter((i) => !i.latestRow.affectedCustomersKnown).length;
       const matchableIncidents = currentIncidents.length;
-      const matchedIncidents = currentIncidents.filter((i) => i.lgaName && i.lgaName !== "Unmatched").length;
+      const matchedIncidents = currentIncidents.filter((i) => i.lgaAllocations.every((a) => a.lgaName !== "Unmatched")).length;
       const lgaMatchRate = matchableIncidents ? matchedIncidents / matchableIncidents : 1;
       const missingCoords = currentIncidents.filter((i) => !isFiniteNumber(i.latestRow.centroidLon) || !isFiniteNumber(i.latestRow.centroidLat)).length;
       const oldestCurrent = currentIncidents.reduce((oldest, incident) => {
@@ -1563,6 +1616,7 @@
             providerCode: row.providerCode,
             lgaName: row.lgaName || "Unmatched",
             lgaCode: row.lgaCode,
+            lgaAllocations: row.lgaAllocations,
             latestCustomers: row.affectedCustomers,
             peakCustomers: row.affectedCustomers,
             firstSeenMs: row.snapshotUtcMs,
@@ -1586,6 +1640,8 @@
             providerCode: row.providerCode,
             lgaName: row.lgaName || "Unmatched",
             lgaCode: row.lgaCode,
+            lgaAllocations: row.lgaAllocations,
+            lgaPeaks: new Map(row.lgaAllocations.map((a) => [a.lgaName, { ...a }])),
             latestCustomers: row.affectedCustomers,
             peakCustomers: row.affectedCustomers,
             firstSeenMs: row.snapshotUtcMs,
@@ -1600,6 +1656,12 @@
           incident.peakCustomers = row.affectedCustomers;
           incident.peakRow = row;
         }
+        row.lgaAllocations.forEach((allocation) => {
+          const prior = incident.lgaPeaks.get(allocation.lgaName);
+          if (!prior || allocation.affectedCustomers > prior.affectedCustomers) {
+            incident.lgaPeaks.set(allocation.lgaName, { ...allocation });
+          }
+        });
         incident.firstSeenMs = Math.min(incident.firstSeenMs, row.snapshotUtcMs);
         if (row.snapshotUtcMs >= incident.lastSeenMs) {
           incident.lastSeenMs = row.snapshotUtcMs;
@@ -1609,6 +1671,7 @@
           incident.providerCode = row.providerCode;
           incident.lgaName = row.lgaName || "Unmatched";
           incident.lgaCode = row.lgaCode;
+          incident.lgaAllocations = row.lgaAllocations;
         }
       });
       return [...map.values()].sort((a, b) => b.peakCustomers - a.peakCustomers || a.lgaName.localeCompare(b.lgaName));
@@ -1617,19 +1680,31 @@
     function summariseIncidentList(incidents, customerField) {
       const customers = incidents.reduce((sum, i) => sum + (i[customerField] || 0), 0);
       const latestCustomers = incidents.reduce((sum, i) => sum + i.latestCustomers, 0);
-      const lgas = new Set(incidents.filter((i) => i.lgaName && i.lgaName !== "Unmatched").map((i) => i.lgaName));
-      const unmatched = incidents.filter((i) => !i.lgaName || i.lgaName === "Unmatched");
+      const allocations = incidents.flatMap((i) => i.lgaAllocations);
+      const lgas = new Set(allocations.filter((a) => a.lgaName !== "Unmatched").map((a) => a.lgaName));
+      const unmatched = incidents.filter((i) => i.lgaAllocations.some((a) => a.lgaName === "Unmatched"));
       return {
         incidents: incidents.length,
         customerSum: customers,
         latestCustomerSum: latestCustomers,
         lgaCount: lgas.size,
         unmatchedIncidents: unmatched.length,
-        unmatchedCustomers: unmatched.reduce((sum, i) => sum + (i[customerField] || i.latestCustomers || 0), 0)
+        unmatchedCustomers: allocations.filter((a) => a.lgaName === "Unmatched").reduce((sum, a) => sum + a.affectedCustomers, 0)
       };
     }
 
     function buildDimensionRows(field, current, since, rolling, currentTotal) {
+      if (field === "lgaName") {
+        const expand = (items, historical) => items.flatMap((incident) => {
+          const allocations = historical ? [...incident.lgaPeaks.values()] : incident.lgaAllocations;
+          return allocations.map((a) => ({ ...incident,
+            lgaName: a.lgaName, latestCustomers: a.affectedCustomers, peakCustomers: a.affectedCustomers
+          }));
+        });
+        current = expand(current, false);
+        since = expand(since, true);
+        rolling = expand(rolling, true);
+      }
       const names = new Set([...current, ...since, ...rolling].map((i) => i[field] || "Unmatched"));
       return [...names].map((name) => {
         const currentItems = current.filter((i) => (i[field] || "Unmatched") === name);
@@ -1779,23 +1854,26 @@
       const map = new Map();
       currentIncidents.forEach((incident) => {
         const r = incident.latestRow;
-        if (!isFiniteNumber(r.centroidLon) || !isFiniteNumber(r.centroidLat)) return;
-        const key = incident.lgaName || "Unmatched";
-        const item = map.get(key) || { name: key, customers: 0, incidents: 0, weightedLon: 0, weightedLat: 0, weight: 0 };
-        const weight = Math.max(incident.latestCustomers, 1);
-        item.customers += incident.latestCustomers;
-        item.incidents += 1;
-        item.weightedLon += r.centroidLon * weight;
-        item.weightedLat += r.centroidLat * weight;
-        item.weight += weight;
-        map.set(key, item);
+        incident.lgaAllocations.forEach((allocation) => {
+          const key = allocation.lgaName;
+          const item = map.get(key) || { name: key, customers: 0, incidents: 0, weightedLon: 0, weightedLat: 0, weight: 0 };
+          item.customers += allocation.affectedCustomers;
+          item.incidents += 1;
+          if (isFiniteNumber(r.centroidLon) && isFiniteNumber(r.centroidLat)) {
+            const weight = Math.max(allocation.affectedCustomers, 1);
+            item.weightedLon += r.centroidLon * weight;
+            item.weightedLat += r.centroidLat * weight;
+            item.weight += weight;
+          }
+          map.set(key, item);
+        });
       });
       return [...map.values()].map((item) => ({
         name: item.name,
         customers: item.customers,
         incidents: item.incidents,
-        lon: item.weightedLon / Math.max(1, item.weight),
-        lat: item.weightedLat / Math.max(1, item.weight)
+        lon: item.weight ? item.weightedLon / item.weight : null,
+        lat: item.weight ? item.weightedLat / item.weight : null
       })).filter((p) => p.customers > 0).sort((a, b) => b.customers - a.customers);
     }
 
@@ -1893,7 +1971,9 @@
     function renderLgaView() {
       const d = state.data;
       const top5Share = d.currentSummary.latestCustomerSum ? d.top5LgaCustomerSum / d.currentSummary.latestCustomerSum : 0;
-      $("lgaLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}. Historical high columns are separately grouped.`;
+      const legacy = d.snapshots.some((r) => r.lgaAssignmentSource === "geometry_legacy");
+      const fallback = d.latestRows.some((r) => r.lgaAssignmentSource === "geometry_fallback");
+      $("lgaLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}. Historical high columns are separately grouped.${fallback ? " Some current council counts use location estimates while a provider council feed is unavailable." : ""}${legacy ? " Older council history uses location estimates." : ""}`;
       $("lgaMetrics").innerHTML = [
         metricCard("LGAs currently affected", fmtInt.format(d.currentSummary.lgaCount), "LGAs with at least one active outage"),
         metricCard("1,000+ customers", fmtInt.format(d.lgaBands.major), "LGAs in the major band"),
@@ -2660,7 +2740,7 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
         <article class="wall-map-panel">${map}</article>
         <article class="wall-list-panel"><div class="wall-panel-title"><strong>Most affected LGAs</strong><span>Customers now</span></div><div class="wall-ranking" style="grid-template-rows:repeat(${Math.max(1, rows.length)},1fr)">${ranking}</div></article>
       </div>`;
-      return wallSceneShell(scene, "Current outage locations are plotted from provider coordinates; marker size represents customers affected.", body);
+      return wallSceneShell(scene, "Council colours and markers show current customer impact. Markers are centred within each council area.", body);
     }
 
     function buildWallQldBoundaryGeometry(w, h) {
@@ -2729,7 +2809,26 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
         return `<path class="${classes}" d="${feature.path}" style="--lga-fill:${fill};animation-delay:${Math.min(1.15, .18 + idx * .018).toFixed(2)}s"><title>${escapeHtml(title)}</title></path>`;
       }).join("");
 
-      const valid = points.filter((p) => isFiniteNumber(p.lon) && isFiniteNumber(p.lat)).slice(0, 18);
+      const located = points.map((point) => {
+        const feature = geometry.features.find((f) => f.key === lgaMatchKey(point.name));
+        if (!feature) return point;
+        // The largest land ring avoids offshore islands pulling the label out to sea.
+        let best = null;
+        feature.rings.forEach((ring) => {
+          let area = 0, x = 0, y = 0;
+          for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+            const cross = ring[j][0] * ring[i][1] - ring[i][0] * ring[j][1];
+            area += cross;
+            x += (ring[j][0] + ring[i][0]) * cross;
+            y += (ring[j][1] + ring[i][1]) * cross;
+          }
+          if (Math.abs(area) > 1e-12 && (!best || Math.abs(area) > best.area)) {
+            best = { area: Math.abs(area), lon: x / (3 * area), lat: y / (3 * area) };
+          }
+        });
+        return best ? { ...point, lon: best.lon, lat: best.lat } : point;
+      });
+      const valid = located.filter((p) => isFiniteNumber(p.lon) && isFiniteNumber(p.lat)).slice(0, 18);
       const max = Math.max(1, ...valid.map((p) => p.customers));
       const topNames = new Set(valid.slice(0, 4).map((p) => p.name));
       const markers = valid.map((p, idx) => {

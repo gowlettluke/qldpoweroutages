@@ -3,6 +3,9 @@ on:
   push:
     paths:
       - 'write_provider_council_counts.py'
+      - 'provider_councils.py'
+      - 'qld_power_outage_pipeline.py'
+      - 'index.html'
       - 'fail_if_provider_failed.py'
       - 'tests/**'
       - '.github/workflows/*.yml'
@@ -16,14 +19,22 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m unittest discover -s tests -v
       - name: Install source transport dependencies
         run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check dashboard aggregation
+        run: node tests/dashboard.test.cjs
       - name: Verify live council sources from the hosted runner
         run: |
           python - <<'PY'
           from datetime import datetime, timezone
           from write_provider_council_counts import collect_counts, iso
+          from provider_councils import fetch_energex_councils, fetch_ergon_councils
+          from write_provider_council_counts import fetch_text
+          import json
           now = datetime.now(timezone.utc)
           result = collect_counts(iso(now), now=now)
           failed = []
@@ -34,4 +45,12 @@ jobs:
                   failed.append(provider)
           if failed:
               raise SystemExit('Live council source verification failed: ' + ', '.join(failed))
+          for provider, loader in (
+              ('energex', lambda: fetch_energex_councils(lambda url: json.loads(fetch_text(url)))),
+              ('ergon', lambda: fetch_ergon_councils(fetch_text)),
+          ):
+              events, metadata = loader()
+              total = sum(event['affected_customers'] for event in events)
+              assert total == metadata['published_customers']
+              print(provider, 'event allocations verified:', len(events), total)
           PY

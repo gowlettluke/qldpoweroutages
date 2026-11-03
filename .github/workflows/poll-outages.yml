@@ -2,6 +2,11 @@ name: Poll QLD power outages
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'qld_power_outage_pipeline.py'
+      - 'provider_councils.py'
+      - 'write_provider_council_counts.py'
 
 permissions:
   contents: write

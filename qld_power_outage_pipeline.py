@@ -27,8 +27,8 @@ Design notes
   2 hours and the workflow runs every 15 minutes, it appears in about 8 snapshots.
 - "lga_totals_48h.csv" is the main Power BI time-series table.
 - "lga_cumulative_48h.csv" estimates customer-hours over the rolling window.
-- LGA assignment uses the outage centroid and Queensland Government's ArcGIS
-  Local Government area boundary layer. This avoids needing GeoPandas/Shapely.
+- Energex/Ergon council customer counts come from their published text views.
+  Centroid assignment is a flagged fallback, and is still used for Essential.
 - Energex is fetched from its public ArcGIS FeatureServer first, with the older website GeoJSON feeds kept only as fallback.
 - Essential Energy is fetched from its KML current-outages feed, then filtered
   to records whose centroid resolves to a Queensland LGA.
@@ -51,7 +51,7 @@ import re
 import sys
 import time
 import zipfile
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, Iterator, List, Optional, Sequence, Tuple
@@ -64,6 +64,12 @@ except Exception:  # pragma: no cover - Python <3.9 fallback not expected in Git
     ZoneInfo = None  # type: ignore
 
 import requests
+
+from provider_councils import (
+    ENERGEX_TEXT_API, ERGON_TEXT_URL, council_key, fetch_energex_councils,
+    fetch_ergon_councils,
+)
+from write_provider_council_counts import fetch_text as fetch_council_text
 
 
 # --------------------------------------------------------------------------------------
@@ -135,6 +141,9 @@ SNAPSHOT_COLUMNS = [
     "geometry_type",
     "geometry_json",
     "raw_json",
+    "lga_allocations_json",
+    "lga_assignment_source",
+    "council_source_url",
 ]
 
 LGA_TOTAL_COLUMNS = [
@@ -901,6 +910,9 @@ class OutageRecord:
     raw: Dict[str, Any]
     lga_name: Optional[str] = None
     lga_code: Optional[str] = None
+    lga_allocations: Optional[List[Dict[str, Any]]] = None
+    lga_assignment_source: str = "geometry"
+    council_source_url: Optional[str] = None
 
     @property
     def affected_customers_known(self) -> bool:
@@ -1646,7 +1658,7 @@ def fetch_ergon(timeout: int, chunk_size: int, where: str, debug: bool, user_age
         outage_type = infer_outage_type(attrs)
         outage_id = (
             as_str(first_present(attrs, [
-                "INCIDENT_ID", "incidentId", "IncidentId", "incident_id",
+                "EVENT_ID", "INCIDENT_ID", "incidentId", "IncidentId", "incident_id",
                 "OUTAGE_ID", "outageId", "id", "ID",
             ]))
             or as_str(first_present(attrs, [oid_field, "OBJECTID"]))
@@ -1754,6 +1766,93 @@ def is_unplanned_snapshot_row(row: Dict[str, str]) -> bool:
 # --------------------------------------------------------------------------------------
 # LGA assignment
 # --------------------------------------------------------------------------------------
+
+def apply_council_events(
+    records: List[OutageRecord], provider_code: str, provider_name: str,
+    events: List[Dict[str, Any]], source_url: str,
+) -> List[OutageRecord]:
+    """Replace a provider's unplanned counts with its published council allocations.
+
+    Keep map geometry when available. Website-only events still count, even if
+    the map feed has not supplied a polygon. No proportional geography estimates.
+    """
+    maps = {}
+    for record in records:
+        if record.provider_code == provider_code and is_unplanned_record(record):
+            event_id = as_str(record.raw.get("EVENT_ID")) or record.outage_id
+            maps[event_id] = record
+    result = [r for r in records if r.provider_code != provider_code or not is_unplanned_record(r)]
+    for event in events:
+        event_id = event["event_id"]
+        details = event["details"]
+        base = maps.get(event_id)
+        if base is None:
+            base = OutageRecord(
+                provider_code=provider_code, provider_name=provider_name,
+                outage_key="", outage_id=event_id, outage_type="unplanned",
+                status=None, reason=None, affected_customers=None, suburb=None,
+                street_name=None, start_utc=None, etr_utc=None, centroid_lon=None,
+                centroid_lat=None, source_url=source_url, geometry=None, raw={},
+            )
+        raw = dict(base.raw)
+        raw["EVENT_ID"] = event_id
+        start = parse_epoch_any_to_utc_iso(details.get("startTime"))
+        if start is None and details.get("startTime"):
+            start = parse_au_local_datetime_to_utc_iso(details["startTime"], "Australia/Brisbane")
+        etr = parse_epoch_any_to_utc_iso(details.get("restoreTime"))
+        if etr is None and details.get("restoreTime"):
+            etr = parse_au_local_datetime_to_utc_iso(details["restoreTime"], "Australia/Brisbane")
+        result.append(replace(
+            base, outage_id=event_id, outage_key=f"{provider_code}|unplanned|{event_id}",
+            affected_customers=event["affected_customers"],
+            lga_allocations=[dict(a) for a in event["allocations"]],
+            lga_assignment_source="provider", council_source_url=source_url,
+            suburb=event.get("suburb") or base.suburb,
+            street_name=base.street_name or event.get("street_name"),
+            status=details.get("status") or base.status,
+            reason=details.get("cause") or base.reason,
+            start_utc=start or base.start_utc, etr_utc=etr or base.etr_utc, raw=raw,
+        ))
+    return result
+
+
+def migrate_snapshot_event_ids(rows: List[Dict[str, str]]) -> List[Dict[str, str]]:
+    """Repair retained Ergon keys using the original provider data, not row IDs.
+
+    Old council allocations cannot be reconstructed from today's counts. Keep
+    their original estimates explicitly marked as legacy, without backdating.
+    """
+    result = []
+    for row in rows:
+        row = dict(row)
+        if row.get("provider_code") == "au.qld.ergon":
+            try:
+                raw = json.loads(row.get("raw_json") or "{}")
+            except (ValueError, TypeError):
+                raw = {}
+            event_id = as_str(raw.get("EVENT_ID")) if isinstance(raw, dict) else None
+            if event_id:
+                row["outage_id"] = event_id
+                row["outage_key"] = f"au.qld.ergon|{row.get('outage_type') or 'unknown'}|{event_id}"
+        if not row.get("lga_assignment_source"):
+            row["lga_assignment_source"] = "geometry_legacy"
+        result.append(row)
+    return result
+
+
+def row_lga_allocations(row: Dict[str, str]) -> List[Dict[str, Any]]:
+    encoded = row.get("lga_allocations_json")
+    if encoded:
+        allocations = json.loads(encoded)
+        if not isinstance(allocations, list) or not allocations:
+            raise ValueError("Invalid stored council allocations")
+        if sum(int(a["affected_customers"]) for a in allocations) != int_from_row(row, "affected_customers"):
+            raise ValueError("Council allocations do not match the event customer count")
+        return allocations
+    return [{
+        "lga_name": row.get("lga_name") or "Unmatched", "lga_code": row.get("lga_code") or "",
+        "affected_customers": int_from_row(row, "affected_customers"),
+    }]
 
 DEFAULT_LOCAL_LGA_BOUNDARY_FILES = [
     Path("data/qld_lga_boundaries.geojson"),
@@ -2193,7 +2292,19 @@ def assign_lgas(
                 file=sys.stderr,
             )
 
+    local_by_name = {council_key(b.lga_name): b for b in local_boundaries}
+
     for r in records:
+        if r.lga_allocations:
+            for allocation in r.lga_allocations:
+                boundary = local_by_name.get(council_key(allocation["lga_name"]))
+                if boundary:
+                    allocation["lga_name"] = boundary.lga_name
+                    allocation["lga_code"] = boundary.lga_code
+            primary = r.lga_allocations[0]
+            r.lga_name, r.lga_code = primary["lga_name"], primary.get("lga_code")
+            matched += 1
+            continue
         lga_name = None
         lga_code = None
         for idx, (lon, lat) in enumerate(lga_candidate_points(r)):
@@ -2260,6 +2371,9 @@ def snapshot_row(record: OutageRecord, snapshot_dt: datetime) -> Dict[str, str]:
         "geometry_type": geom_type or "",
         "geometry_json": json_dumps_compact(record.geometry) if record.geometry else "",
         "raw_json": json_dumps_compact(record.raw),
+        "lga_allocations_json": json_dumps_compact(record.lga_allocations) if record.lga_allocations else "",
+        "lga_assignment_source": record.lga_assignment_source,
+        "council_source_url": record.council_source_url or "",
     }
 
 
@@ -2394,8 +2508,10 @@ def build_lga_totals(snapshot_rows: List[Dict[str, str]]) -> List[Dict[str, Any]
             g["unknown_type_customers"] += customers
 
     for row in snapshot_rows:
-        add(row, row.get("provider_code", "") or "unknown", row.get("provider_name", "") or "Unknown")
-        add(row, "all", "All providers")
+        for allocation in row_lga_allocations(row):
+            allocated_row = {**row, **allocation, "affected_customers": str(allocation["affected_customers"])}
+            add(allocated_row, row.get("provider_code", "") or "unknown", row.get("provider_name", "") or "Unknown")
+            add(allocated_row, "all", "All providers")
 
     rows = list(group.values())
     rows.sort(key=lambda r: (r["snapshot_utc"], r["lga_name"], r["provider_code"]))
@@ -2518,6 +2634,9 @@ def current_geojson(records: List[OutageRecord], snapshot_dt: datetime) -> Dict[
             "lga_name": r.lga_name or "Unmatched",
             "lga_code": r.lga_code,
             "source_url": r.source_url,
+            "lga_allocations": r.lga_allocations,
+            "lga_assignment_source": r.lga_assignment_source,
+            "council_source_url": r.council_source_url,
         }
         features.append({"type": "Feature", "geometry": r.geometry, "properties": props})
     return {"type": "FeatureCollection", "features": features}
@@ -2601,6 +2720,32 @@ def run_pipeline(args: argparse.Namespace) -> int:
     else:
         essential = []
 
+    council_allocation_status = {}
+    for code, name, skipped, loader in (
+        ("au.qld.energex", "Energex", args.skip_energex, lambda: fetch_energex_councils(
+            lambda url: json.loads(fetch_council_text(url)))),
+        ("au.qld.ergon", "Ergon", args.skip_ergon, lambda: fetch_ergon_councils(
+            fetch_council_text)),
+    ):
+        if skipped:
+            continue
+        try:
+            events, allocation_meta = loader()
+            display_name = "Ergon Energy" if name == "Ergon" else name
+            all_current = apply_council_events(all_current, code, display_name, events, allocation_meta["source_url"])
+            council_allocation_status[name] = allocation_meta
+        except Exception as exc:
+            message = f"Council allocation fallback to map estimates: {type(exc).__name__}: {exc}"
+            provider_fetch_errors[name] = "; ".join(filter(None, [provider_fetch_errors.get(name), message]))
+            council_allocation_status[name] = {"status": "geometry_fallback", "error": message}
+            for record in all_current:
+                if record.provider_code == code:
+                    record.lga_assignment_source = "geometry_fallback"
+            if args.strict_provider_failures:
+                raise
+            if args.debug:
+                print(f"[WARN] {name}: {message}", file=sys.stderr)
+
     all_current = dedupe_current_records(all_current)
 
     current_records_before_outage_type_filter = len(all_current)
@@ -2666,13 +2811,13 @@ def run_pipeline(args: argparse.Namespace) -> int:
     existing_rows = read_csv_rows(snapshot_path)
     if not args.include_planned:
         existing_rows = [row for row in existing_rows if is_unplanned_snapshot_row(row)]
-    combined_rows = existing_rows + new_snapshot_rows
+    combined_rows = migrate_snapshot_event_ids(existing_rows) + new_snapshot_rows
     combined_rows = trim_to_window(combined_rows, now_dt=snapshot_dt, hours=args.window_hours)
     combined_rows = dedupe_snapshot_rows(combined_rows)
     combined_rows = backfill_latest_outage_details(combined_rows)
 
     lga_totals_rows = build_lga_totals(combined_rows)
-    lga_totals_latest_rows = latest_rows_by_snapshot(lga_totals_rows)
+    lga_totals_latest_rows = [r for r in lga_totals_rows if r["snapshot_utc"] == to_utc_iso(snapshot_dt)]
     lga_cumulative_rows = build_lga_cumulative(
         lga_totals_rows,
         now_dt=snapshot_dt,
@@ -2703,6 +2848,8 @@ def run_pipeline(args: argparse.Namespace) -> int:
         "current_records_dropped_planned_or_unknown": current_records_dropped_non_unplanned,
         "provider_fetch_errors": provider_fetch_errors,
         "provider_fetch_error_count": len(provider_fetch_errors),
+        "council_allocation_status": council_allocation_status,
+        "legacy_council_snapshot_rows": sum(r.get("lga_assignment_source") == "geometry_legacy" for r in combined_rows),
         "current_energex_records": len([r for r in all_current if r.provider_code == "au.qld.energex"]),
         "current_ergon_records": len([r for r in all_current if r.provider_code == "au.qld.ergon"]),
         "current_essential_records_fetched": len(essential),
@@ -2728,6 +2875,8 @@ def run_pipeline(args: argparse.Namespace) -> int:
             "energex_arcgis_layer_url": ENERGEX_ARCGIS_LAYER_URL,
             "energex_website_fallback_urls": ENERGEX_URLS,
             "ergon_layer_url": ERGON_LAYER_URL,
+            "energex_council_api_url": ENERGEX_TEXT_API,
+            "ergon_council_text_url": ERGON_TEXT_URL,
             "essential_energy_kml_url": args.essential_url,
             "qld_lga_layer_url": QLD_LGA_LAYER_URL,
             "local_lga_boundary_file": str(lga_boundary_file) if lga_boundary_file else "",
