@@ -1,12 +1,12 @@
 {
-  "generated_utc": "2026-11-03T11:15:47Z",
-  "generated_aest": "2026-11-03T21:15:47+10:00",
+  "generated_utc": "2026-11-03T11:31:08Z",
+  "generated_aest": "2026-11-03T21:31:08+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 56,
+  "current_outage_records": 53,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 516,
-  "current_records_after_outage_type_filter": 71,
+  "current_records_before_outage_type_filter": 512,
+  "current_records_after_outage_type_filter": 67,
   "current_records_dropped_planned_or_unknown": 445,
   "provider_fetch_errors": {
     "Ergon": "Council allocation fallback to map estimates: ValueError: Provider council counts are stale or future-dated"
@@ -16,10 +16,10 @@
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "3 November 2026 9:00 PM",
-      "source_updated_utc": "2026-11-03T11:00:02Z",
-      "published_customers": 2000,
-      "event_count": 23
+      "source_updated": "3 November 2026 9:15 PM",
+      "source_updated_utc": "2026-11-03T11:15:02Z",
+      "published_customers": 1881,
+      "event_count": 20
     },
     "Ergon": {
       "status": "geometry_fallback",
@@ -28,15 +28,15 @@
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-03T11:15:47Z",
+    "snapshot_utc": "2026-11-03T11:31:08Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-03T11:15:58Z",
+      "fetched_utc": "2026-11-03T11:31:19Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-03T11:00:02Z",
-      "total_customers": 2000,
+      "source_updated_utc": "2026-11-03T11:15:02Z",
+      "total_customers": 1881,
       "rows": [
         {
           "lga_name": "Brisbane City",
@@ -56,11 +56,11 @@
         },
         {
           "lga_name": "Lockyer Valley Regional",
-          "affected_customers": 19
+          "affected_customers": 13
         },
         {
           "lga_name": "Logan City",
-          "affected_customers": 131
+          "affected_customers": 34
         },
         {
           "lga_name": "Moreton Bay City",
@@ -76,7 +76,7 @@
         },
         {
           "lga_name": "Somerset Regional",
-          "affected_customers": 105
+          "affected_customers": 89
         },
         {
           "lga_name": "Sunshine Coast Regional",
@@ -90,22 +90,22 @@
     },
     "ergon": {
       "status": "error",
-      "fetched_utc": "2026-11-03T11:15:58Z",
+      "fetched_utc": "2026-11-03T11:31:19Z",
       "error": "Council allocation fallback to map estimates: ValueError: Provider council counts are stale or future-dated"
     }
   },
-  "legacy_council_snapshot_rows": 3466,
-  "current_energex_records": 23,
+  "legacy_council_snapshot_rows": 3448,
+  "current_energex_records": 20,
   "current_ergon_records": 33,
-  "current_essential_records_fetched": 16,
-  "current_energex_records_fetched": 144,
+  "current_essential_records_fetched": 15,
+  "current_energex_records_fetched": 142,
   "current_ergon_records_fetched": 350,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 15,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 14,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3830,
-  "lga_totals_rows_48h": 4493,
+  "snapshot_rows_48h": 3865,
+  "lga_totals_rows_48h": 4514,
   "lga_totals_latest_rows": 49,
   "lga_cumulative_rows": 89,
   "outputs": {
