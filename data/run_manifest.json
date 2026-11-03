@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-03T17:01:55Z",
-  "generated_aest": "2026-11-04T03:01:55+10:00",
+  "generated_utc": "2026-11-03T17:16:45Z",
+  "generated_aest": "2026-11-04T03:16:45+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 34,
@@ -14,30 +14,30 @@
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "4 November 2026 3:00 AM",
-      "source_updated_utc": "2026-11-03T17:00:06Z",
-      "published_customers": 72,
-      "event_count": 7
+      "source_updated": "4 November 2026 3:15 AM",
+      "source_updated_utc": "2026-11-03T17:15:06Z",
+      "published_customers": 62,
+      "event_count": 6
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-03T17:00:01Z",
-      "published_customers": 626,
-      "event_count": 27
+      "source_updated_utc": "2026-11-03T17:15:17Z",
+      "published_customers": 630,
+      "event_count": 28
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-03T17:01:55Z",
+    "snapshot_utc": "2026-11-03T17:16:45Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-03T17:02:08Z",
+      "fetched_utc": "2026-11-03T17:16:54Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-03T17:00:06Z",
-      "total_customers": 72,
+      "source_updated_utc": "2026-11-03T17:15:06Z",
+      "total_customers": 62,
       "rows": [
         {
           "lga_name": "Gympie Regional",
@@ -49,7 +49,7 @@
         },
         {
           "lga_name": "Moreton Bay City",
-          "affected_customers": 23
+          "affected_customers": 13
         },
         {
           "lga_name": "Scenic Rim Regional",
@@ -59,12 +59,12 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-03T17:02:08Z",
+      "fetched_utc": "2026-11-03T17:16:54Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-03T17:00:01Z",
-      "total_customers": 626,
+      "source_updated_utc": "2026-11-03T17:15:17Z",
+      "total_customers": 630,
       "rows": [
         {
           "lga_name": "Banana Shire",
@@ -103,6 +103,10 @@
           "affected_customers": 10
         },
         {
+          "lga_name": "Mount Isa City",
+          "affected_customers": 4
+        },
+        {
           "lga_name": "North Burnett Regional",
           "affected_customers": 58
         },
@@ -133,19 +137,19 @@
       ]
     }
   },
-  "legacy_council_snapshot_rows": 3276,
-  "current_energex_records": 7,
-  "current_ergon_records": 27,
+  "legacy_council_snapshot_rows": 3269,
+  "current_energex_records": 6,
+  "current_ergon_records": 28,
   "current_essential_records_fetched": 7,
-  "current_energex_records_fetched": 101,
+  "current_energex_records_fetched": 100,
   "current_ergon_records_fetched": 344,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 4587,
-  "lga_totals_rows_48h": 5321,
-  "lga_totals_latest_rows": 40,
+  "snapshot_rows_48h": 4614,
+  "lga_totals_rows_48h": 5351,
+  "lga_totals_latest_rows": 42,
   "lga_cumulative_rows": 95,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
