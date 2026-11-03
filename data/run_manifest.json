@@ -1,27 +1,27 @@
 {
-  "generated_utc": "2026-11-03T10:01:19Z",
-  "generated_aest": "2026-11-03T20:01:19+10:00",
+  "generated_utc": "2026-11-03T10:15:50Z",
+  "generated_aest": "2026-11-03T20:15:50+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 61,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 523,
-  "current_records_after_outage_type_filter": 78,
+  "current_records_before_outage_type_filter": 522,
+  "current_records_after_outage_type_filter": 77,
   "current_records_dropped_planned_or_unknown": 445,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "current_energex_records": 22,
   "current_ergon_records": 39,
-  "current_essential_records_fetched": 18,
+  "current_essential_records_fetched": 17,
   "current_energex_records_fetched": 149,
   "current_ergon_records_fetched": 356,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 17,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 16,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3451,
-  "lga_totals_rows_48h": 4223,
-  "lga_totals_latest_rows": 42,
+  "snapshot_rows_48h": 3512,
+  "lga_totals_rows_48h": 4269,
+  "lga_totals_latest_rows": 46,
   "lga_cumulative_rows": 85,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
@@ -44,16 +44,78 @@
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-03T10:01:19Z",
+    "snapshot_utc": "2026-11-03T10:15:50Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-03T10:01:22Z",
+      "fetched_utc": "2026-11-03T10:15:53Z",
       "error": "HTTPError: HTTP Error 403: "
     },
     "ergon": {
-      "status": "error",
-      "fetched_utc": "2026-11-03T10:01:22Z",
-      "error": "HTTPError: HTTP Error 403: "
+      "status": "ok",
+      "fetched_utc": "2026-11-03T10:15:53Z",
+      "outage_type": "unplanned",
+      "scope": "all_councils",
+      "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view?SQ_SESSION_MODE=read_only_async",
+      "source_updated_utc": "2026-11-03T09:40:01Z",
+      "total_customers": 12221,
+      "rows": [
+        {
+          "lga_name": "Central Highlands Regional",
+          "affected_customers": 2404
+        },
+        {
+          "lga_name": "Cherbourg Aboriginal Shire",
+          "affected_customers": 380
+        },
+        {
+          "lga_name": "Etheridge Shire",
+          "affected_customers": 46
+        },
+        {
+          "lga_name": "Fraser Coast Regional",
+          "affected_customers": 8
+        },
+        {
+          "lga_name": "Gympie Regional",
+          "affected_customers": 1007
+        },
+        {
+          "lga_name": "Mckinlay Shire",
+          "affected_customers": 10
+        },
+        {
+          "lga_name": "North Burnett Regional",
+          "affected_customers": 37
+        },
+        {
+          "lga_name": "Richmond Shire",
+          "affected_customers": 8
+        },
+        {
+          "lga_name": "Rockhampton Regional",
+          "affected_customers": 48
+        },
+        {
+          "lga_name": "Somerset Regional",
+          "affected_customers": 2
+        },
+        {
+          "lga_name": "South Burnett Regional",
+          "affected_customers": 5824
+        },
+        {
+          "lga_name": "Southern Downs Regional",
+          "affected_customers": 95
+        },
+        {
+          "lga_name": "Toowoomba Regional",
+          "affected_customers": 2261
+        },
+        {
+          "lga_name": "Western Downs Regional",
+          "affected_customers": 91
+        }
+      ]
     }
   }
 }
