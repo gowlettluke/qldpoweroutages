@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-03T23:01:25Z",
-  "generated_aest": "2026-11-04T09:01:25+10:00",
+  "generated_utc": "2026-11-03T23:16:08Z",
+  "generated_aest": "2026-11-04T09:16:08+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 33,
+  "current_outage_records": 34,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 547,
-  "current_records_after_outage_type_filter": 48,
-  "current_records_dropped_planned_or_unknown": 499,
+  "current_records_before_outage_type_filter": 552,
+  "current_records_after_outage_type_filter": 49,
+  "current_records_dropped_planned_or_unknown": 503,
   "provider_fetch_errors": {
     "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Gold Coast City"
   },
@@ -20,27 +20,27 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-03T23:00:00Z",
-      "published_customers": 1021,
-      "event_count": 28
+      "source_updated_utc": "2026-11-03T23:15:00Z",
+      "published_customers": 1031,
+      "event_count": 29
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-03T23:01:25Z",
+    "snapshot_utc": "2026-11-03T23:16:08Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-03T23:01:36Z",
+      "fetched_utc": "2026-11-03T23:16:18Z",
       "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Gold Coast City"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-03T23:01:36Z",
+      "fetched_utc": "2026-11-03T23:16:18Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-03T23:00:00Z",
-      "total_customers": 1021,
+      "source_updated_utc": "2026-11-03T23:15:00Z",
+      "total_customers": 1031,
       "rows": [
         {
           "lga_name": "Banana Shire",
@@ -56,7 +56,7 @@
         },
         {
           "lga_name": "Central Highlands Regional",
-          "affected_customers": 211
+          "affected_customers": 219
         },
         {
           "lga_name": "Charters Towers Regional",
@@ -91,10 +91,6 @@
           "affected_customers": 24
         },
         {
-          "lga_name": "Richmond Shire",
-          "affected_customers": 8
-        },
-        {
           "lga_name": "Rockhampton Regional",
           "affected_customers": 63
         },
@@ -108,7 +104,7 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 44
+          "affected_customers": 54
         },
         {
           "lga_name": "Western Downs Regional",
@@ -117,19 +113,19 @@
       ]
     }
   },
-  "legacy_council_snapshot_rows": 3081,
+  "legacy_council_snapshot_rows": 3070,
   "current_energex_records": 4,
-  "current_ergon_records": 28,
-  "current_essential_records_fetched": 77,
+  "current_ergon_records": 29,
+  "current_essential_records_fetched": 78,
   "current_energex_records_fetched": 116,
-  "current_ergon_records_fetched": 355,
+  "current_ergon_records_fetched": 357,
   "current_essential_records_after_qld_polygon_prefilter": 1,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 15,
   "current_essential_records_included_qld": 1,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5215,
-  "lga_totals_rows_48h": 6005,
-  "lga_totals_latest_rows": 44,
+  "snapshot_rows_48h": 5238,
+  "lga_totals_rows_48h": 6027,
+  "lga_totals_latest_rows": 42,
   "lga_cumulative_rows": 97,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
