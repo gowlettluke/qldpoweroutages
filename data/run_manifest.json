@@ -1,12 +1,12 @@
 {
-  "generated_utc": "2026-11-03T12:09:32Z",
-  "generated_aest": "2026-11-03T22:09:32+10:00",
+  "generated_utc": "2026-11-03T12:01:19Z",
+  "generated_aest": "2026-11-03T22:01:19+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 46,
+  "current_outage_records": 45,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 504,
-  "current_records_after_outage_type_filter": 59,
+  "current_records_before_outage_type_filter": 503,
+  "current_records_after_outage_type_filter": 58,
   "current_records_dropped_planned_or_unknown": 445,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
@@ -22,17 +22,17 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-03T12:05:00Z",
-      "published_customers": 3593,
-      "event_count": 29
+      "source_updated_utc": "2026-11-03T12:00:01Z",
+      "published_customers": 3763,
+      "event_count": 28
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-03T12:09:32Z",
+    "snapshot_utc": "2026-11-03T12:01:19Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-03T12:09:42Z",
+      "fetched_utc": "2026-11-03T12:01:31Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -83,12 +83,12 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-03T12:09:42Z",
+      "fetched_utc": "2026-11-03T12:01:31Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-03T12:05:00Z",
-      "total_customers": 3593,
+      "source_updated_utc": "2026-11-03T12:00:01Z",
+      "total_customers": 3763,
       "rows": [
         {
           "lga_name": "Central Highlands Regional",
@@ -132,11 +132,11 @@
         },
         {
           "lga_name": "South Burnett Regional",
-          "affected_customers": 925
+          "affected_customers": 1059
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 127
+          "affected_customers": 163
         },
         {
           "lga_name": "Unknown",
@@ -151,16 +151,16 @@
   },
   "legacy_council_snapshot_rows": 3427,
   "current_energex_records": 17,
-  "current_ergon_records": 29,
+  "current_ergon_records": 28,
   "current_essential_records_fetched": 14,
   "current_energex_records_fetched": 141,
-  "current_ergon_records_fetched": 346,
+  "current_ergon_records_fetched": 345,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 13,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3987,
-  "lga_totals_rows_48h": 4624,
+  "snapshot_rows_48h": 3941,
+  "lga_totals_rows_48h": 4577,
   "lga_totals_latest_rows": 47,
   "lga_cumulative_rows": 93,
   "outputs": {
