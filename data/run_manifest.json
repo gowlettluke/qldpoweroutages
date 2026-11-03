@@ -1,45 +1,45 @@
 {
-  "generated_utc": "2026-11-03T21:47:17Z",
-  "generated_aest": "2026-11-04T07:47:17+10:00",
+  "generated_utc": "2026-11-03T22:01:17Z",
+  "generated_aest": "2026-11-04T08:01:17+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 33,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 489,
-  "current_records_after_outage_type_filter": 47,
-  "current_records_dropped_planned_or_unknown": 442,
+  "current_records_before_outage_type_filter": 536,
+  "current_records_after_outage_type_filter": 45,
+  "current_records_dropped_planned_or_unknown": 491,
   "provider_fetch_errors": {
-    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Failed to perform, curl: (28) Operation timed out after 20001 milliseconds with 2937 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Noosa"
   },
   "provider_fetch_error_count": 1,
   "council_allocation_status": {
     "Energex": {
       "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Failed to perform, curl: (28) Operation timed out after 20001 milliseconds with 2937 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Noosa"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-03T21:45:15Z",
+      "source_updated_utc": "2026-11-03T22:00:22Z",
       "published_customers": 1052,
       "event_count": 29
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-03T21:47:17Z",
+    "snapshot_utc": "2026-11-03T22:01:17Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-03T21:48:21Z",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Failed to perform, curl: (28) Operation timed out after 20001 milliseconds with 2937 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+      "fetched_utc": "2026-11-03T22:01:28Z",
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Noosa"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-03T21:48:21Z",
+      "fetched_utc": "2026-11-03T22:01:28Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-03T21:45:15Z",
+      "source_updated_utc": "2026-11-03T22:00:22Z",
       "total_customers": 1052,
       "rows": [
         {
@@ -117,18 +117,18 @@
       ]
     }
   },
-  "legacy_council_snapshot_rows": 3129,
+  "legacy_council_snapshot_rows": 3121,
   "current_energex_records": 3,
   "current_ergon_records": 29,
-  "current_essential_records_fetched": 39,
-  "current_energex_records_fetched": 100,
-  "current_ergon_records_fetched": 350,
+  "current_essential_records_fetched": 72,
+  "current_energex_records_fetched": 112,
+  "current_ergon_records_fetched": 352,
   "current_essential_records_after_qld_polygon_prefilter": 1,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 14,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 12,
   "current_essential_records_included_qld": 1,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5096,
-  "lga_totals_rows_48h": 5883,
+  "snapshot_rows_48h": 5121,
+  "lga_totals_rows_48h": 5909,
   "lga_totals_latest_rows": 42,
   "lga_cumulative_rows": 95,
   "outputs": {
