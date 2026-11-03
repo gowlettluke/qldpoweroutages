@@ -39,6 +39,9 @@ jobs:
         run: |
           python qld_power_outage_pipeline.py --output-dir data --debug
 
+      - name: Write provider council counts
+        run: python write_provider_council_counts.py
+
       - name: Write provider health history
         run: |
           python write_provider_health.py
@@ -60,3 +63,4 @@ jobs:
       - name: Fail if provider feed failed
         run: |
           python fail_if_provider_failed.py
+
