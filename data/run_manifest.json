@@ -1,42 +1,42 @@
 {
-  "generated_utc": "2026-11-03T20:16:55Z",
-  "generated_aest": "2026-11-04T06:16:55+10:00",
+  "generated_utc": "2026-11-03T20:32:14Z",
+  "generated_aest": "2026-11-04T06:32:14+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 34,
+  "current_outage_records": 33,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 456,
+  "current_records_before_outage_type_filter": 455,
   "current_records_after_outage_type_filter": 42,
-  "current_records_dropped_planned_or_unknown": 414,
+  "current_records_dropped_planned_or_unknown": 413,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "council_allocation_status": {
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "4 November 2026 6:15 AM",
-      "source_updated_utc": "2026-11-03T20:15:02Z",
+      "source_updated": "4 November 2026 6:30 AM",
+      "source_updated_utc": "2026-11-03T20:30:06Z",
       "published_customers": 117,
       "event_count": 6
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-03T20:15:15Z",
-      "published_customers": 2535,
-      "event_count": 28
+      "source_updated_utc": "2026-11-03T20:25:00Z",
+      "published_customers": 937,
+      "event_count": 27
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-03T20:16:55Z",
+    "snapshot_utc": "2026-11-03T20:32:14Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-03T20:17:05Z",
+      "fetched_utc": "2026-11-03T20:32:28Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-03T20:15:02Z",
+      "source_updated_utc": "2026-11-03T20:30:06Z",
       "total_customers": 117,
       "rows": [
         {
@@ -59,12 +59,12 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-03T20:17:05Z",
+      "fetched_utc": "2026-11-03T20:32:28Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-03T20:15:15Z",
-      "total_customers": 2535,
+      "source_updated_utc": "2026-11-03T20:25:00Z",
+      "total_customers": 937,
       "rows": [
         {
           "lga_name": "Banana Shire",
@@ -96,7 +96,7 @@
         },
         {
           "lga_name": "Gladstone Regional",
-          "affected_customers": 69
+          "affected_customers": 43
         },
         {
           "lga_name": "Livingstone Shire",
@@ -128,27 +128,27 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 1654
+          "affected_customers": 47
         },
         {
           "lga_name": "Western Downs Regional",
-          "affected_customers": 17
+          "affected_customers": 52
         }
       ]
     }
   },
-  "legacy_council_snapshot_rows": 3178,
+  "legacy_council_snapshot_rows": 3169,
   "current_energex_records": 6,
-  "current_ergon_records": 28,
-  "current_essential_records_fetched": 9,
+  "current_ergon_records": 27,
+  "current_essential_records_fetched": 10,
   "current_energex_records_fetched": 100,
-  "current_ergon_records_fetched": 345,
+  "current_ergon_records_fetched": 344,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 8,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 9,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 4941,
-  "lga_totals_rows_48h": 5723,
+  "snapshot_rows_48h": 4965,
+  "lga_totals_rows_48h": 5749,
   "lga_totals_latest_rows": 42,
   "lga_cumulative_rows": 95,
   "outputs": {
