@@ -1,0 +1,19 @@
+name: Check council count collection
+on:
+  push:
+    paths:
+      - 'write_provider_council_counts.py'
+      - 'fail_if_provider_failed.py'
+      - 'tests/**'
+      - '.github/workflows/*.yml'
+  pull_request:
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -v
