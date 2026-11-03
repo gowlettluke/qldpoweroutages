@@ -1,26 +1,26 @@
 {
-  "generated_utc": "2026-11-03T09:31:09Z",
-  "generated_aest": "2026-11-03T19:31:09+10:00",
+  "generated_utc": "2026-11-03T09:45:59Z",
+  "generated_aest": "2026-11-03T19:45:59+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 57,
+  "current_outage_records": 60,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 518,
-  "current_records_after_outage_type_filter": 75,
+  "current_records_before_outage_type_filter": 522,
+  "current_records_after_outage_type_filter": 79,
   "current_records_dropped_planned_or_unknown": 443,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
-  "current_energex_records": 20,
-  "current_ergon_records": 37,
-  "current_essential_records_fetched": 19,
-  "current_energex_records_fetched": 145,
-  "current_ergon_records_fetched": 354,
+  "current_energex_records": 21,
+  "current_ergon_records": 39,
+  "current_essential_records_fetched": 20,
+  "current_energex_records_fetched": 146,
+  "current_ergon_records_fetched": 356,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 18,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 19,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3303,
-  "lga_totals_rows_48h": 4147,
+  "snapshot_rows_48h": 3341,
+  "lga_totals_rows_48h": 4155,
   "lga_totals_latest_rows": 40,
   "lga_cumulative_rows": 83,
   "outputs": {
@@ -41,5 +41,81 @@
     "essential_energy_kml_url": "https://www.essentialenergy.com.au/Assets/kmz/current.kml?dFdLgoAP",
     "qld_lga_layer_url": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Boundaries/AdminBoundariesFramework/FeatureServer/11",
     "local_lga_boundary_file": "data/qld_lga_boundaries.kmz"
+  },
+  "provider_council_counts": {
+    "schema_version": 1,
+    "snapshot_utc": "2026-11-03T09:45:59Z",
+    "energex": {
+      "status": "error",
+      "fetched_utc": "2026-11-03T09:46:02Z",
+      "error": "HTTPError: HTTP Error 403: "
+    },
+    "ergon": {
+      "status": "ok",
+      "fetched_utc": "2026-11-03T09:46:02Z",
+      "outage_type": "unplanned",
+      "scope": "all_councils",
+      "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view?SQ_SESSION_MODE=read_only_async",
+      "source_updated_utc": "2026-11-03T09:40:01Z",
+      "total_customers": 12221,
+      "rows": [
+        {
+          "lga_name": "Central Highlands Regional",
+          "affected_customers": 2404
+        },
+        {
+          "lga_name": "Cherbourg Aboriginal Shire",
+          "affected_customers": 380
+        },
+        {
+          "lga_name": "Etheridge Shire",
+          "affected_customers": 46
+        },
+        {
+          "lga_name": "Fraser Coast Regional",
+          "affected_customers": 8
+        },
+        {
+          "lga_name": "Gympie Regional",
+          "affected_customers": 1007
+        },
+        {
+          "lga_name": "Mckinlay Shire",
+          "affected_customers": 10
+        },
+        {
+          "lga_name": "North Burnett Regional",
+          "affected_customers": 37
+        },
+        {
+          "lga_name": "Richmond Shire",
+          "affected_customers": 8
+        },
+        {
+          "lga_name": "Rockhampton Regional",
+          "affected_customers": 48
+        },
+        {
+          "lga_name": "Somerset Regional",
+          "affected_customers": 2
+        },
+        {
+          "lga_name": "South Burnett Regional",
+          "affected_customers": 5824
+        },
+        {
+          "lga_name": "Southern Downs Regional",
+          "affected_customers": 95
+        },
+        {
+          "lga_name": "Toowoomba Regional",
+          "affected_customers": 2261
+        },
+        {
+          "lga_name": "Western Downs Regional",
+          "affected_customers": 91
+        }
+      ]
+    }
   }
 }
