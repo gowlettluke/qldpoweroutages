@@ -15,6 +15,13 @@ pipeline's verified snapshot; it also supports older manifests independently.
   excluding `PLN`. Its `hiddenDate` supplies the publisher update time. Events
   split across councils retain the provider's individual council counts.
 
+Ergon's website can return an old CDN-cached page despite `Cache-Control:
+no-cache`. Each public text-page request includes a distinct query value and
+the read-only session mode to avoid reusing that cached response. The event
+allocation pipeline and standalone collector share this transport. The original
+publisher timestamp still determines freshness; a new fetch does not make old
+data current.
+
 Both sources require a publisher timestamp within 45 minutes (at most five
 minutes ahead). Invalid or incomplete responses produce an explicit error for
 that provider, never an empty successful result. No previous council counts are
@@ -61,3 +68,4 @@ Install `requirements.txt`, then run offline checks with
 `python -m unittest discover -s tests -v` and `node tests/dashboard.test.cjs`.
 CI also checks live retrieval from the hosted runner, where website access can
 differ from a local environment.
+
