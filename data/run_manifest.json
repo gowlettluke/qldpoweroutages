@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-04T16:01:29Z",
-  "generated_aest": "2026-11-05T02:01:29+10:00",
+  "generated_utc": "2026-11-04T16:15:59Z",
+  "generated_aest": "2026-11-05T02:15:59+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 15,
@@ -19,23 +19,23 @@
       "source_updated_utc": "2026-11-04T16:00:02Z",
       "published_customers": 248,
       "event_count": 4,
-      "fetched_utc": "2026-11-04T16:01:36Z"
+      "fetched_utc": "2026-11-04T16:16:07Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T16:00:16Z",
-      "published_customers": 803,
+      "source_updated_utc": "2026-11-04T16:15:17Z",
+      "published_customers": 183,
       "event_count": 11,
-      "fetched_utc": "2026-11-04T16:01:39Z"
+      "fetched_utc": "2026-11-04T16:16:10Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T16:01:29Z",
+    "snapshot_utc": "2026-11-04T16:15:59Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T16:01:36Z",
+      "fetched_utc": "2026-11-04T16:16:07Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -55,13 +55,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T16:01:39Z",
+      "fetched_utc": "2026-11-04T16:16:10Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T16:00:16Z",
+      "source_updated_utc": "2026-11-04T16:15:17Z",
       "retained": false,
-      "total_customers": 803,
+      "total_customers": 183,
       "rows": [
         {
           "lga_name": "Carpentaria Shire",
@@ -88,10 +88,6 @@
           "affected_customers": 3
         },
         {
-          "lga_name": "Lockyer Valley Regional",
-          "affected_customers": 1
-        },
-        {
           "lga_name": "Mount Isa City",
           "affected_customers": 4
         },
@@ -101,24 +97,24 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 626
+          "affected_customers": 7
         }
       ]
     }
   },
-  "legacy_council_snapshot_rows": 1963,
+  "legacy_council_snapshot_rows": 1948,
   "current_energex_records": 4,
   "current_ergon_records": 11,
   "current_essential_records_fetched": 8,
-  "current_energex_records_fetched": 88,
+  "current_energex_records_fetched": 87,
   "current_ergon_records_fetched": 283,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 7,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
   "snapshot_rows_48h": 5489,
-  "lga_totals_rows_48h": 6424,
-  "lga_totals_latest_rows": 24,
+  "lga_totals_rows_48h": 6426,
+  "lga_totals_latest_rows": 22,
   "lga_cumulative_rows": 106,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
