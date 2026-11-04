@@ -152,7 +152,10 @@ class CouncilAllocationTests(unittest.TestCase):
             with patch.object(pipeline, "fetch_energex", return_value=energex), \
                  patch.object(pipeline, "fetch_ergon", return_value=[]), \
                  patch.object(pipeline, "fetch_energex_councils", side_effect=ValueError("Unavailable")), \
-                 patch.object(pipeline, "fetch_ergon_councils", return_value=(ergon_events, {"source_url": "ergon", "status": "provider", "source_updated_utc": "2026-11-03T10:00:00Z"})), \
+                 patch.object(pipeline, "fetch_ergon_councils", return_value=(ergon_events, {
+                     "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+                     "status": "provider", "source_updated_utc": pipeline.to_utc_iso(datetime.now(timezone.utc)),
+                     "published_customers": 5, "event_count": 1})), \
                  patch.object(pipeline, "assign_lgas"):
                 pipeline.run_pipeline(args)
             manifest = json.loads((Path(temp) / "run_manifest.json").read_text())

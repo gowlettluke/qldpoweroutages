@@ -44,6 +44,7 @@ def main():
 
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     errors = manifest.get("provider_fetch_errors") or {}
+    warnings = manifest.get("provider_fetch_warnings") or {}
 
     generated_utc = manifest.get("generated_utc", "")
     generated_aest = manifest.get("generated_aest", "")
@@ -59,15 +60,16 @@ def main():
     current_keys = set()
     for provider_name, error_keys, fetched_count_field, fallback_count_field in PROVIDERS:
         error_message = next((errors.get(key, "") for key in error_keys if errors.get(key)), "")
+        warning_message = next((warnings.get(key, "") for key in error_keys if warnings.get(key)), "")
         record_count = manifest.get(fetched_count_field, manifest.get(fallback_count_field, 0))
         current_keys.add((generated_utc, provider_name))
         new_rows.append({
             "generated_utc": generated_utc,
             "generated_aest": generated_aest,
             "provider_name": provider_name,
-            "status": "FAIL" if error_message else "OK",
+            "status": "FAIL" if error_message else "WARNING" if warning_message else "OK",
             "record_count": str(record_count),
-            "error_message": error_message,
+            "error_message": error_message or warning_message,
         })
 
     cutoff = cutoff_base - timedelta(hours=48)

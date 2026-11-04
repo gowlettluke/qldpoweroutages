@@ -59,9 +59,12 @@ def council_name(value):
 
 def fetch_text(url):
     parts = urlsplit(url)
-    if (parts.scheme == "https" and parts.hostname == "www.ergon.com.au"
-            and parts.path.rstrip("/") == "/network/outages/outage-finder/outage-finder-text-view"):
-        # Ergon's CDN can serve old HTML despite Cache-Control: no-cache.
+    is_ergon = (parts.hostname == "www.ergon.com.au"
+                and parts.path.rstrip("/") == "/network/outages/outage-finder/outage-finder-text-view")
+    is_energex = (parts.hostname == "www.energex.com.au"
+                  and parts.path.startswith("/api/outages-text/v1.0.ex/"))
+    if parts.scheme == "https" and (is_ergon or is_energex):
+        # Both providers' CDNs can serve responses hours apart despite no-cache.
         # A distinct public read-only request avoids reusing that cached page.
         query = [(key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True) if key != "_"]
         if not any(key == "SQ_SESSION_MODE" for key, _value in query):

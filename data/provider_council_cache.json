@@ -1,0 +1,452 @@
+{
+  "schema_version": 1,
+  "providers": {
+    "Energex": {
+      "fetched_utc": "2026-11-04T09:35:36Z",
+      "metadata": {
+        "status": "provider",
+        "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+        "source_updated": "4 November 2026 7:30 PM",
+        "source_updated_utc": "2026-11-04T09:30:03Z",
+        "published_customers": 111,
+        "event_count": 3
+      },
+      "events": [
+        {
+          "event_id": "INCD-992928-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-992928-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4032",
+            "suburb": "CHERMSIDE",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-04T20:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "HAMILTON RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "CHERMSIDE",
+          "street_name": "HAMILTON RD"
+        },
+        {
+          "event_id": "INCD-993007-g",
+          "allocations": [
+            {
+              "lga_name": "Scenic Rim Regional",
+              "lga_code": null,
+              "affected_customers": 7
+            }
+          ],
+          "details": {
+            "event": "INCD-993007-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Scenic Rim Regional",
+            "postcode": "4275",
+            "suburb": "FERNY GLEN",
+            "customersAffected": "3",
+            "restoreTime": "2026-11-04T20:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "TUCKER LANE"
+            ]
+          },
+          "affected_customers": 7,
+          "suburb": "FERNY GLEN, WITHEREN",
+          "street_name": "BEECHMONT RD, TUCKER LANE"
+        },
+        {
+          "event_id": "INCD-993029-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 103
+            }
+          ],
+          "details": {
+            "event": "INCD-993029-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4051",
+            "suburb": "GRANGE",
+            "customersAffected": "91",
+            "restoreTime": "2026-11-04T20:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "CARBERRY ST",
+              "COLSTON RD",
+              "DAYS RD"
+            ]
+          },
+          "affected_customers": 103,
+          "suburb": "GRANGE, NEWMARKET",
+          "street_name": "CARBERRY ST, COLSTON RD, DAYS RD, WILSTON RD"
+        }
+      ]
+    },
+    "Ergon": {
+      "fetched_utc": "2026-11-04T09:35:46Z",
+      "metadata": {
+        "status": "provider",
+        "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "source_updated_utc": "2026-11-04T09:30:01Z",
+        "published_customers": 525,
+        "event_count": 14
+      },
+      "events": [
+        {
+          "event_id": "26CA12889",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 20
+            }
+          ],
+          "details": {
+            "event": "26CA12889",
+            "council": "Central Highlands Regional Council",
+            "suburb": "DINGO",
+            "type": "UNPLANNED",
+            "startTime": "03/11/2026 18:11",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "20",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 20,
+          "suburb": "DINGO",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA12978",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26CA12978",
+            "council": "Central Highlands Regional Council",
+            "suburb": "ROLLESTON",
+            "type": "UNPLANNED",
+            "startTime": "03/11/2026 14:48",
+            "restoreTime": "04/11/2026 20:00",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 2,
+          "suburb": "ROLLESTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA12981",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 4
+            }
+          ],
+          "details": {
+            "event": "26CA12981",
+            "council": "Central Highlands Regional Council",
+            "suburb": "BLUFF, JELLINBAH",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 17:57",
+            "restoreTime": "04/11/2026 20:00",
+            "customersAffected": "4",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 4,
+          "suburb": "BLUFF, JELLINBAH",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN10866",
+          "allocations": [
+            {
+              "lga_name": "Etheridge Shire",
+              "lga_code": null,
+              "affected_customers": 6
+            }
+          ],
+          "details": {
+            "event": "26FN10866",
+            "council": "Etheridge Shire Council",
+            "suburb": "GEORGETOWN",
+            "type": "UNPLANNED",
+            "startTime": "03/11/2026 17:25",
+            "restoreTime": "05/11/2026 17:00",
+            "customersAffected": "6",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 6,
+          "suburb": "GEORGETOWN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN10911",
+          "allocations": [
+            {
+              "lga_name": "Carpentaria Shire",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26FN10911",
+            "council": "Carpentaria Shire Council",
+            "suburb": "KARUMBA, NORMANTON",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 13:43",
+            "restoreTime": "05/11/2026 17:00",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to the operating of protective equipment.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 2,
+          "suburb": "KARUMBA, NORMANTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26MK7016",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 247
+            }
+          ],
+          "details": {
+            "event": "26MK7016",
+            "council": "Mackay Regional Council",
+            "suburb": "GEEBERGA, KUTTABUL, ROYSTON PARK, YAKAPARI",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 17:22",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "247",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 247,
+          "suburb": "GEEBERGA, KUTTABUL, ROYSTON PARK, YAKAPARI",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13579",
+          "allocations": [
+            {
+              "lga_name": "Cloncurry Shire",
+              "lga_code": null,
+              "affected_customers": 30
+            }
+          ],
+          "details": {
+            "event": "26NQ13579",
+            "council": "Cloncurry Shire Council",
+            "suburb": "CLONCURRY",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 14:58",
+            "restoreTime": "05/11/2026 18:00",
+            "customersAffected": "30",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 30,
+          "suburb": "CLONCURRY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13591",
+          "allocations": [
+            {
+              "lga_name": "Flinders Shire",
+              "lga_code": null,
+              "affected_customers": 5
+            }
+          ],
+          "details": {
+            "event": "26NQ13591",
+            "council": "Flinders Shire Council",
+            "suburb": "HUGHENDEN",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 16:47",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "5",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 5,
+          "suburb": "HUGHENDEN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13592",
+          "allocations": [
+            {
+              "lga_name": "Flinders Shire",
+              "lga_code": null,
+              "affected_customers": 10
+            }
+          ],
+          "details": {
+            "event": "26NQ13592",
+            "council": "Flinders Shire Council",
+            "suburb": "HUGHENDEN, STAMFORD",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 16:52",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "10",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 10,
+          "suburb": "HUGHENDEN, STAMFORD",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13594",
+          "allocations": [
+            {
+              "lga_name": "Flinders Shire",
+              "lga_code": null,
+              "affected_customers": 90
+            }
+          ],
+          "details": {
+            "event": "26NQ13594",
+            "council": "Flinders Shire Council",
+            "suburb": "HUGHENDEN",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 16:58",
+            "restoreTime": "05/11/2026 18:00",
+            "customersAffected": "90",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 90,
+          "suburb": "HUGHENDEN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13607",
+          "allocations": [
+            {
+              "lga_name": "Burdekin Shire",
+              "lga_code": null,
+              "affected_customers": 26
+            }
+          ],
+          "details": {
+            "event": "26NQ13607",
+            "council": "Burdekin Shire Council",
+            "suburb": "ALVA, AYR",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 18:39",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "26",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 26,
+          "suburb": "ALVA, AYR",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14209",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 78
+            }
+          ],
+          "details": {
+            "event": "26SW14209",
+            "council": "Toowoomba Regional Council",
+            "suburb": "NORTH TOOWOOMBA",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 15:47",
+            "restoreTime": "04/11/2026 21:30",
+            "customersAffected": "78",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 78,
+          "suburb": "NORTH TOOWOOMBA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10629",
+          "allocations": [
+            {
+              "lga_name": "South Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26WB10629",
+            "council": "South Burnett Regional Council",
+            "suburb": "MOONDOONER, MURGON",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 17:06",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 2,
+          "suburb": "MOONDOONER, MURGON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB9727",
+          "allocations": [
+            {
+              "lga_name": "Fraser Coast Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26WB9727",
+            "council": "Fraser Coast Regional Council",
+            "suburb": "HOWARD",
+            "type": "UNPLANNED",
+            "startTime": "20/10/2026 14:55",
+            "restoreTime": "30/11/2026 12:30",
+            "customersAffected": "3",
+            "cause": "The loss of supply is there are supply problems resulting in fluctuating voltage conditions. It is advisable to disconnect sensitive electrical appliances.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 3,
+          "suburb": "HOWARD",
+          "street_name": ""
+        }
+      ]
+    }
+  }
+}

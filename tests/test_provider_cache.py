@@ -27,7 +27,7 @@ class ProviderCacheTests(unittest.TestCase):
             self.assertEqual(query["SQ_SESSION_MODE"], ["read_only_async"])
             self.assertEqual(query["extra"], ["keep"])
 
-    def test_public_ergon_page_uses_read_only_mode_and_other_sources_keep_their_urls(self):
+    def test_both_provider_routes_use_fresh_reads_and_unrelated_urls_stay_unchanged(self):
         urls = [ERGON_TEXT.split("?")[0], ENERGEX_API + "summary?SQ_SESSION_MODE=read_only_async",
                 "https://www.ergon.com.au/unrelated"]
         requests = []
@@ -40,7 +40,27 @@ class ProviderCacheTests(unittest.TestCase):
         query = parse_qs(urlsplit(requests[0].full_url).query)
         self.assertEqual(query["SQ_SESSION_MODE"], ["read_only_async"])
         self.assertIn("_", query)
-        self.assertEqual([r.full_url for r in requests[1:]], urls[1:])
+        energex = parse_qs(urlsplit(requests[1].full_url).query)
+        self.assertEqual(energex["SQ_SESSION_MODE"], ["read_only_async"])
+        self.assertIn("_", energex)
+        self.assertEqual(requests[2].full_url, urls[2])
+
+    def test_energex_summary_council_and_search_each_get_fresh_responses(self):
+        requests = []
+        def open_url(request, **_options):
+            requests.append(request)
+            response = MagicMock()
+            # Reproduce a CDN serving stale data for the old, fixed URL.
+            current = "_" in parse_qs(urlsplit(request.full_url).query)
+            response.__enter__.return_value.read.return_value = b"current" if current else b"stale"
+            return response
+        urls = [ENERGEX_API + "summary", ENERGEX_API + "council?council=",
+                ENERGEX_API + "search?council=Scenic+Rim+Regional", ENERGEX_API + "summary"]
+        with patch("write_provider_council_counts.urlopen", side_effect=open_url):
+            self.assertEqual([fetch_text(url) for url in urls], ["current"] * 4)
+        self.assertEqual(len({request.full_url for request in requests}), 4)
+        self.assertIn("council=", requests[1].full_url)
+        self.assertEqual(parse_qs(urlsplit(requests[2].full_url).query)["council"], ["Scenic Rim Regional"])
 
 
 if __name__ == "__main__":

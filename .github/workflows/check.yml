@@ -4,6 +4,9 @@ on:
     paths:
       - 'write_provider_council_counts.py'
       - 'provider_councils.py'
+      - 'provider_snapshot_cache.py'
+      - 'check_provider_collection.py'
+      - 'write_provider_health.py'
       - 'qld_power_outage_pipeline.py'
       - 'index.html'
       - 'fail_if_provider_failed.py'
@@ -28,18 +31,4 @@ jobs:
       - name: Check dashboard aggregation
         run: node tests/dashboard.test.cjs
       - name: Verify live council sources from the hosted runner
-        run: |
-          python - <<'PY'
-          from datetime import datetime, timezone
-          from provider_councils import fetch_energex_councils, fetch_ergon_councils
-          from write_provider_council_counts import fetch_text
-          import json
-          for provider, loader in (
-              ('energex', lambda: fetch_energex_councils(lambda url: json.loads(fetch_text(url)))),
-              ('ergon', lambda: fetch_ergon_councils(fetch_text)),
-          ):
-              events, metadata = loader()
-              total = sum(event['affected_customers'] for event in events)
-              assert total == metadata['published_customers']
-              print(provider, 'event allocations verified:', len(events), total)
-          PY
+        run: python -u check_provider_collection.py --rounds 3

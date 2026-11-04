@@ -53,4 +53,18 @@ const empty = context.prepareDashboardData({ generated_utc: "2026-11-03T09:46:00
 assert.equal(empty.currentSummary.incidents, 0);
 assert.throws(() => context.prepareDashboardData({ generated_utc: "2026-11-03T09:46:00Z", current_outage_records: 1 }, current, []), /still updating/);
 assert.throws(() => row({ affected_customers: "999" }), /do not match/);
+const delayed = { council_allocation_status: { Ergon: { status: "provider_cache", source_updated_utc: "2026-11-03T09:15:00Z" } } };
+assert.match(context.providerDelayMessages(delayed)[0], /Ergon update delayed; verified data from.*19:15/);
+assert.equal(context.providerDelayMessages({}).length, 0);
+const retained = row({ lga_assignment_source: "provider_cache", provider_data_as_of_utc: "2026-11-03T09:15:00Z" });
+assert.equal(retained.providerDataAsOfUtc, "2026-11-03T09:15:00Z");
+const elements = {};
+context.document = { getElementById: (id) => elements[id] ||= {} };
+context.testManifest = delayed;
+vm.runInContext('state.data = { latestMs: Date.now(), manifest: testManifest }; renderStatusStrip();', context);
+assert.match(elements.statusStrip.innerHTML, /provider update delayed/);
+assert.doesNotMatch(elements.statusStrip.innerHTML, /All providers OK/);
+vm.runInContext('state.data.providerHealthLatest = new Map();', context);
+assert.equal(context.getWallHealthIssue().count, 1);
+assert.match(context.getWallHealthIssue().delayedMessages[0], /Ergon update delayed/);
 console.log("Dashboard checks passed: council allocations, unique events, history migration, cleared/empty feeds, inconsistent snapshots.");

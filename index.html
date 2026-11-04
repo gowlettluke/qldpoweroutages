@@ -194,6 +194,7 @@
     .health-chart { width:100%; min-height:190px; }
     .health-dot-ok { fill:var(--green); }
     .health-dot-fail { fill:var(--danger); }
+    .health-dot-warning { fill:var(--amber); }
     .health-dot-unknown { fill:var(--muted-2); }
     .health-line { stroke:var(--line-strong); stroke-width:1; }
 
@@ -1468,6 +1469,7 @@
         lgaCode: r.lga_code || "",
         lgaAllocations: allocations,
         lgaAssignmentSource: r.lga_assignment_source || "geometry_legacy",
+        providerDataAsOfUtc: r.provider_data_as_of_utc || "",
         sourceUrl: r.source_url || ""
       };
     }
@@ -1905,14 +1907,24 @@
       updateCountdowns();
     }
 
+    function providerDelayMessages(manifest) {
+      return Object.entries(manifest.council_allocation_status || {})
+        .filter(([, value]) => value.status === "provider_cache")
+        .map(([name, value]) => `${name} update delayed; verified data from ${formatUtcAsAest(value.source_updated_utc, true)}.`);
+    }
+
     function renderStatusStrip() {
       const d = state.data;
-      const ageMs = Date.now() - d.latestMs;
+      const sourceTimes = Object.values(d.manifest.provider_council_counts || {})
+        .filter((value) => value && value.status === "ok")
+        .map((value) => parseUtcMs(value.source_updated_utc)).filter(Boolean);
+      const ageMs = Date.now() - (sourceTimes.length ? Math.min(...sourceTimes) : d.latestMs);
       const stale = ageMs > 35 * 60 * 1000;
       const providerErrors = Number(d.manifest.provider_fetch_error_count || 0);
       const freshnessClass = stale ? "danger" : ageMs > 22 * 60 * 1000 ? "warn" : "ok";
-      const healthClass = providerErrors ? "danger" : "ok";
-      const healthText = providerErrors ? `${providerErrors} provider issue${providerErrors === 1 ? "" : "s"}` : "All providers OK";
+      const delayed = providerDelayMessages(d.manifest).length;
+      const healthClass = providerErrors ? "danger" : delayed ? "warn" : "ok";
+      const healthText = providerErrors ? `${providerErrors} provider issue${providerErrors === 1 ? "" : "s"}` : delayed ? `${delayed} provider update${delayed === 1 ? "" : "s"} delayed` : "All providers OK";
       $("statusStrip").innerHTML = `
         <span class="pill ${freshnessClass}">Updated <strong>${escapeHtml(formatAest(d.latestMs, true))}</strong></span>
         <span class="pill ${freshnessClass}">Data age <strong>${escapeHtml(formatDuration(ageMs, true))}</strong></span>
@@ -1927,7 +1939,7 @@
       const largest = d.currentIncidents[0];
       const periodHigh = d.peakToday;
       const belowHigh = periodHigh.customers ? Math.max(0, (periodHigh.customers - d.currentSummary.latestCustomerSum) / periodHigh.customers) : 0;
-      $("overviewLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}.`;
+      $("overviewLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}. ${providerDelayMessages(d.manifest).join(" ")}`.trim();
       $("overviewMetrics").innerHTML = [
         metricCard("Customers affected now", fmtInt.format(d.currentSummary.latestCustomerSum), `${fmtInt.format(d.currentSummary.incidents)} active outage${plural(d.currentSummary.incidents)} statewide`),
         metricCard("Active outages", fmtInt.format(d.currentSummary.incidents), `${fmtInt.format(d.currentSummary.lgaCount)} LGA${plural(d.currentSummary.lgaCount)} currently affected`),
@@ -1973,7 +1985,7 @@
       const top5Share = d.currentSummary.latestCustomerSum ? d.top5LgaCustomerSum / d.currentSummary.latestCustomerSum : 0;
       const legacy = d.snapshots.some((r) => r.lgaAssignmentSource === "geometry_legacy");
       const fallback = d.latestRows.some((r) => r.lgaAssignmentSource === "geometry_fallback");
-      $("lgaLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}. Historical high columns are separately grouped.${fallback ? " Some current council counts use location estimates while a provider council feed is unavailable." : ""}${legacy ? " Older council history uses location estimates." : ""}`;
+      $("lgaLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}. ${providerDelayMessages(d.manifest).join(" ")} Historical high columns are separately grouped.${fallback ? " Some current council counts use location estimates while a provider council feed is unavailable." : ""}${legacy ? " Older council history uses location estimates." : ""}`;
       $("lgaMetrics").innerHTML = [
         metricCard("LGAs currently affected", fmtInt.format(d.currentSummary.lgaCount), "LGAs with at least one active outage"),
         metricCard("1,000+ customers", fmtInt.format(d.lgaBands.major), "LGAs in the major band"),
@@ -2017,7 +2029,7 @@
     function renderProviderView() {
       const d = state.data;
       const providers = d.topProviders;
-      $("providerLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}.`;
+      $("providerLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}. ${providerDelayMessages(d.manifest).join(" ")}`.trim();
       const providerCards = providers.slice(0, 5).map((p) => metricCard(p.name, fmtInt.format(p.currentCustomers), `${fmtPct.format(p.share)} of customers currently affected · ${fmtInt.format(p.currentIncidents)} active outage${plural(p.currentIncidents)}`, "place")).join("");
       $("providerMetrics").innerHTML = providerCards || metricCard("Providers", "—", "No provider has active outages in the latest snapshot");
       $("providerBars").innerHTML = renderProviderBars(providers, d.currentSummary.latestCustomerSum, 10);
@@ -2034,7 +2046,7 @@
         metricCard("No restoration estimate", fmtInt.format(noEtr.incidents), "Active outages without an ETR"),
         metricCard("Oldest listed start time", oldest ? formatAest(oldest.startedMs, false) : "—", oldest ? `${escapeHtml(oldest.incident.lgaName)} · listed for ${formatDuration(d.latestMs - oldest.startedMs, true)}` : "No active outage start times supplied")
       ].join("");
-      $("outagesLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}.`;
+      $("outagesLiveTime").textContent = `Latest snapshot: ${formatAest(d.latestMs, true)}. ${providerDelayMessages(d.manifest).join(" ")}`.trim();
       renderLargestOutagesTable();
       $("reasonBreakdown").innerHTML = renderReasonBreakdown();
       $("etrBreakdown").innerHTML = renderEtrBreakdown();
@@ -2188,7 +2200,7 @@
       return rows.map((name) => {
         const item = d.providerHealthLatest.get(name);
         const status = item ? item.status : "NO HEALTH ROW";
-        const cls = status === "OK" ? "ok" : "danger";
+        const cls = status === "OK" ? "ok" : status === "WARNING" ? "warn" : "danger";
         return `<tr>
           <td><strong>${escapeHtml(name)}</strong>${item && item.errorMessage ? `<div class="muted ellipsis">${escapeHtml(item.errorMessage)}</div>` : ""}</td>
           <td><span class="pill ${cls}" style="min-height:28px;padding:4px 9px;"><strong>${escapeHtml(status)}</strong></span></td>
@@ -2218,7 +2230,7 @@
           const rows = d.providerHealth24.get(name) || [];
           return `<text class="axis-label strong" x="8" y="${y + 4}">${escapeHtml(name)}</text>
             <line class="health-line" x1="${left}" y1="${y}" x2="${width - right}" y2="${y}"></line>
-            ${rows.map((row) => `<circle class="${row.status === "OK" ? "health-dot-ok" : "health-dot-fail"}" cx="${xFor(row.generatedUtcMs)}" cy="${y}" r="6"><title>${escapeHtml(name)} ${escapeHtml(row.status)} at ${escapeHtml(formatAest(row.generatedUtcMs, true))} · records read ${fmtInt.format(row.recordCount)}</title></circle>`).join("") || `<circle class="health-dot-unknown" cx="${left + plotW / 2}" cy="${y}" r="4"><title>${escapeHtml(name)}: no health rows loaded in the last 24 hours</title></circle>`}`;
+            ${rows.map((row) => `<circle class="${row.status === "OK" ? "health-dot-ok" : row.status === "WARNING" ? "health-dot-warning" : "health-dot-fail"}" cx="${xFor(row.generatedUtcMs)}" cy="${y}" r="6"><title>${escapeHtml(name)} ${escapeHtml(row.status)} at ${escapeHtml(formatAest(row.generatedUtcMs, true))} · records read ${fmtInt.format(row.recordCount)}</title></circle>`).join("") || `<circle class="health-dot-unknown" cx="${left + plotW / 2}" cy="${y}" r="4"><title>${escapeHtml(name)}: no health rows loaded in the last 24 hours</title></circle>`}`;
         }).join("")}
       </svg>`;
     }
@@ -2229,13 +2241,14 @@
       return names.map((name) => {
         const healthRows = d.providerHealth24.get(name) || [];
         const okCount = healthRows.filter((r) => r.status === "OK").length;
-        const failCount = healthRows.filter((r) => r.status !== "OK").length;
+        const failCount = healthRows.filter((r) => r.status !== "OK" && r.status !== "WARNING").length;
+        const warningCount = healthRows.filter((r) => r.status === "WARNING").length;
         const outage = d.providerOutageWindows24.get(name) || { records: 0, snapshots: new Set(), firstMs: null, lastMs: null, peakCustomers: 0 };
         const activity = outage.records
           ? `${escapeHtml(formatAest(outage.firstMs, false))}–${escapeHtml(formatAest(outage.lastMs, false))}; peak ${fmtInt.format(outage.peakCustomers)} customers`
           : "No unplanned outage records captured in the rolling 24h window.";
         const healthText = healthRows.length
-          ? `${fmtInt.format(okCount)} OK${failCount ? ` · ${fmtInt.format(failCount)} failed` : ""}`
+          ? `${fmtInt.format(okCount)} OK${warningCount ? ` · ${fmtInt.format(warningCount)} delayed` : ""}${failCount ? ` · ${fmtInt.format(failCount)} failed` : ""}`
           : "No health checks loaded";
         return `<tr>
           <td><strong>${escapeHtml(name)}</strong></td>
@@ -3115,9 +3128,10 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
         const status = String(item.status || "UNKNOWN").toUpperCase();
         if (!["OK", "SUCCESS", "HEALTHY", "PASS", "PASSED"].includes(status)) failed.push(name);
       });
-      const count = Math.max(manifestCount, failed.length);
+      const delayedMessages = providerDelayMessages(state.data.manifest);
+      const count = Math.max(manifestCount, failed.length, delayedMessages.length);
       if (!count) return null;
-      return { count, names: failed, signature: `${count}|${failed.sort().join("|")}` };
+      return { count, names: failed, delayedMessages, signature: `${count}|${failed.sort().join("|")}|${delayedMessages.join("|")}` };
     }
 
     function updateWallHealthIndicator() {
@@ -3135,7 +3149,9 @@ ${escapeHtml(error.stack || error.message || String(error))}</div>`;
         alert.classList.remove("visible");
         return;
       }
-      $("wallHealthText").textContent = issue.names.length ? `Provider feed issue: ${issue.names.join(", ")}` : `${issue.count} provider feed issue${plural(issue.count)}`;
+      $("wallHealthText").textContent = issue.delayedMessages.length && !Number(state.data.manifest.provider_fetch_error_count || 0)
+        ? issue.delayedMessages.join(" ")
+        : issue.names.length ? `Provider feed issue: ${issue.names.join(", ")}` : `${issue.count} provider feed issue${plural(issue.count)}`;
       alert.classList.add("visible");
     }
 

@@ -70,6 +70,7 @@ from provider_councils import (
     fetch_ergon_councils,
 )
 from write_provider_council_counts import fetch_text as fetch_council_text
+from provider_snapshot_cache import collect_verified_snapshot, read_cache, write_cache
 
 
 # --------------------------------------------------------------------------------------
@@ -144,6 +145,7 @@ SNAPSHOT_COLUMNS = [
     "lga_allocations_json",
     "lga_assignment_source",
     "council_source_url",
+    "provider_data_as_of_utc",
 ]
 
 LGA_TOTAL_COLUMNS = [
@@ -913,6 +915,7 @@ class OutageRecord:
     lga_allocations: Optional[List[Dict[str, Any]]] = None
     lga_assignment_source: str = "geometry"
     council_source_url: Optional[str] = None
+    provider_data_as_of_utc: Optional[str] = None
 
     @property
     def affected_customers_known(self) -> bool:
@@ -1770,6 +1773,7 @@ def is_unplanned_snapshot_row(row: Dict[str, str]) -> bool:
 def apply_council_events(
     records: List[OutageRecord], provider_code: str, provider_name: str,
     events: List[Dict[str, Any]], source_url: str,
+    assignment_source: str = "provider", data_as_of_utc: Optional[str] = None,
 ) -> List[OutageRecord]:
     """Replace a provider's unplanned counts with its published council allocations.
 
@@ -1806,7 +1810,8 @@ def apply_council_events(
             base, outage_id=event_id, outage_key=f"{provider_code}|unplanned|{event_id}",
             affected_customers=event["affected_customers"],
             lga_allocations=[dict(a) for a in event["allocations"]],
-            lga_assignment_source="provider", council_source_url=source_url,
+            lga_assignment_source=assignment_source, council_source_url=source_url,
+            provider_data_as_of_utc=data_as_of_utc,
             suburb=event.get("suburb") or base.suburb,
             street_name=base.street_name or event.get("street_name"),
             status=details.get("status") or base.status,
@@ -2374,6 +2379,7 @@ def snapshot_row(record: OutageRecord, snapshot_dt: datetime) -> Dict[str, str]:
         "lga_allocations_json": json_dumps_compact(record.lga_allocations) if record.lga_allocations else "",
         "lga_assignment_source": record.lga_assignment_source,
         "council_source_url": record.council_source_url or "",
+        "provider_data_as_of_utc": record.provider_data_as_of_utc or "",
     }
 
 
@@ -2637,6 +2643,7 @@ def current_geojson(records: List[OutageRecord], snapshot_dt: datetime) -> Dict[
             "lga_allocations": r.lga_allocations,
             "lga_assignment_source": r.lga_assignment_source,
             "council_source_url": r.council_source_url,
+            "provider_data_as_of_utc": r.provider_data_as_of_utc,
         }
         features.append({"type": "Feature", "geometry": r.geometry, "properties": props})
     return {"type": "FeatureCollection", "features": features}
@@ -2670,6 +2677,9 @@ def run_pipeline(args: argparse.Namespace) -> int:
 
     all_current: List[OutageRecord] = []
     provider_fetch_errors: Dict[str, str] = {}
+    provider_fetch_warnings: Dict[str, str] = {}
+    provider_cache_path = output_dir / "provider_council_cache.json"
+    provider_cache = read_cache(provider_cache_path)
 
     def fetch_provider(provider_name: str, func: Any) -> List[OutageRecord]:
         try:
@@ -2730,10 +2740,10 @@ def run_pipeline(args: argparse.Namespace) -> int:
         if skipped:
             continue
         try:
-            events, allocation_meta = loader()
-            display_name = "Ergon Energy" if name == "Ergon" else name
-            all_current = apply_council_events(all_current, code, display_name, events, allocation_meta["source_url"])
-            council_allocation_status[name] = allocation_meta
+            events, allocation_meta = collect_verified_snapshot(
+                provider_cache, name, loader, utc_now,
+                allow_backup=not args.strict_provider_failures,
+            )
         except Exception as exc:
             message = f"Council allocation fallback to map estimates: {type(exc).__name__}: {exc}"
             provider_fetch_errors[name] = "; ".join(filter(None, [provider_fetch_errors.get(name), message]))
@@ -2745,6 +2755,20 @@ def run_pipeline(args: argparse.Namespace) -> int:
                 raise
             if args.debug:
                 print(f"[WARN] {name}: {message}", file=sys.stderr)
+            continue
+        if allocation_meta["status"] == "provider_cache":
+            message = f"Update delayed; using verified provider data from {allocation_meta['source_updated_utc']}. {allocation_meta['collection_error']}"
+            provider_fetch_warnings[name] = message
+            if args.debug:
+                print(f"[WARN] {name}: {message}", file=sys.stderr)
+        display_name = "Ergon Energy" if name == "Ergon" else name
+        all_current = apply_council_events(
+            all_current, code, display_name, events, allocation_meta["source_url"],
+            allocation_meta["status"], allocation_meta["source_updated_utc"],
+        )
+        council_allocation_status[name] = allocation_meta
+
+    write_cache(provider_cache_path, provider_cache)
 
     all_current = dedupe_current_records(all_current)
 
@@ -2839,7 +2863,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
     published_councils = {"schema_version": 1, "snapshot_utc": to_utc_iso(snapshot_dt)}
     for code, name, key in (("au.qld.energex", "Energex", "energex"), ("au.qld.ergon", "Ergon", "ergon")):
         meta = council_allocation_status.get(name) or {}
-        if meta.get("status") == "provider":
+        if meta.get("status") in ("provider", "provider_cache"):
             totals = {}
             for record in all_current:
                 if record.provider_code == code and is_unplanned_record(record):
@@ -2847,9 +2871,10 @@ def run_pipeline(args: argparse.Namespace) -> int:
                         lga = allocation["lga_name"]
                         totals[lga] = totals.get(lga, 0) + allocation["affected_customers"]
             published_councils[key] = {
-                "status": "ok", "fetched_utc": to_utc_iso(utc_now()), "scope": "all_councils",
+                "status": "ok", "fetched_utc": meta["fetched_utc"], "scope": "all_councils",
                 "outage_type": "unplanned", "source_url": meta["source_url"],
                 "source_updated_utc": meta["source_updated_utc"],
+                "retained": meta["status"] == "provider_cache",
                 "total_customers": sum(totals.values()),
                 "rows": [{"lga_name": lga, "affected_customers": total} for lga, total in sorted(totals.items())],
             }
@@ -2869,6 +2894,7 @@ def run_pipeline(args: argparse.Namespace) -> int:
         "current_records_dropped_planned_or_unknown": current_records_dropped_non_unplanned,
         "provider_fetch_errors": provider_fetch_errors,
         "provider_fetch_error_count": len(provider_fetch_errors),
+        "provider_fetch_warnings": provider_fetch_warnings,
         "council_allocation_status": council_allocation_status,
         "provider_council_counts": published_councils,
         "legacy_council_snapshot_rows": sum(r.get("lga_assignment_source") == "geometry_legacy" for r in combined_rows),

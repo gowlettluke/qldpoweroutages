@@ -79,7 +79,7 @@ def fetch_energex_councils(get_json: Callable[[str], Any]) -> tuple[list[dict[st
     totals. A moving/incomplete response is retried as a whole, never rescaled.
     """
     last_error: Exception | None = None
-    for attempt in range(2):
+    for attempt in range(3):
         def fetch(path: str, **params: str) -> Any:
             payload = get_json(ENERGEX_TEXT_API + path + "?" + urlencode({
                 **params, "SQ_SESSION_MODE": "read_only_async",
@@ -138,6 +138,8 @@ def fetch_energex_councils(get_json: Callable[[str], Any]) -> tuple[list[dict[st
             }
         except Exception as exc:
             last_error = exc
+            if attempt < 2:
+                time.sleep(2 ** (attempt + 1))
     raise ValueError(f"Energex council allocations unavailable: {last_error}") from last_error
 
 
