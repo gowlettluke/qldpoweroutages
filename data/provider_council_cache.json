@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T18:16:06Z",
+      "fetched_utc": "2026-11-04T18:31:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 4:00 AM",
-        "source_updated_utc": "2026-11-04T18:00:02Z",
-        "published_customers": 165,
-        "event_count": 3
+        "source_updated": "5 November 2026 4:30 AM",
+        "source_updated_utc": "2026-11-04T18:30:02Z",
+        "published_customers": 278,
+        "event_count": 4
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4574",
             "suburb": "COOLABINE",
             "customersAffected": "4",
-            "restoreTime": "2026-11-05T05:00:00+10:00",
+            "restoreTime": "2026-11-05T07:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -105,15 +105,46 @@
           "affected_customers": 131,
           "suburb": "SOUTHSIDE",
           "street_name": "ANDREA AVE, GILES ST, GRANT ST, HELEN ST, KESTEVEN DR, LODER ST, POWER RD, RAMSAY RD, WITHEY ST"
+        },
+        {
+          "event_id": "INCD-993118-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 113
+            }
+          ],
+          "details": {
+            "event": "INCD-993118-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4010",
+            "suburb": "ALBION",
+            "customersAffected": "113",
+            "restoreTime": "2026-11-05T04:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "CAMPBELL ST",
+              "LITTLE ST",
+              "SANDGATE RD",
+              "WHYTECLIFFE ST"
+            ]
+          },
+          "affected_customers": 113,
+          "suburb": "ALBION",
+          "street_name": "CAMPBELL ST, LITTLE ST, SANDGATE RD, WHYTECLIFFE ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T18:16:09Z",
+      "fetched_utc": "2026-11-04T18:31:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T18:15:17Z",
+        "source_updated_utc": "2026-11-04T18:30:23Z",
         "published_customers": 183,
         "event_count": 11
       },
