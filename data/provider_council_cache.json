@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T23:01:30Z",
+      "fetched_utc": "2026-11-04T23:16:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -14,13 +14,13 @@
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T23:01:34Z",
+      "fetched_utc": "2026-11-04T23:16:16Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T23:00:33Z",
-        "published_customers": 986,
-        "event_count": 12
+        "source_updated_utc": "2026-11-04T23:15:00Z",
+        "published_customers": 1056,
+        "event_count": 14
       },
       "events": [
         {
@@ -69,11 +69,35 @@
             "startTime": "05/11/2026 08:14",
             "restoreTime": "Under Investigation",
             "customersAffected": "1",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "cause": "The loss of supply is due to a vehicle accident.",
             "status": "Crews working on-site"
           },
           "affected_customers": 776,
           "suburb": "ALTON DOWNS, DALMA, GLENLEE, MARLBOROUGH, MORINISH, MORINISH SOUTH, NINE MILE, PINK LILY, RIDGELANDS, SOUTH YAAMBA, STANWELL",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA12997",
+          "allocations": [
+            {
+              "lga_name": "Gladstone Regional",
+              "lga_code": null,
+              "affected_customers": 61
+            }
+          ],
+          "details": {
+            "event": "26CA12997",
+            "council": "Gladstone Regional Council",
+            "suburb": "AGNES WATER",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 08:34",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "61",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 61,
+          "suburb": "AGNES WATER",
           "street_name": ""
         },
         {
@@ -242,6 +266,30 @@
           },
           "affected_customers": 6,
           "suburb": "MAXWELTON, NONDA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13629",
+          "allocations": [
+            {
+              "lga_name": "Flinders Shire",
+              "lga_code": null,
+              "affected_customers": 9
+            }
+          ],
+          "details": {
+            "event": "26NQ13629",
+            "council": "Flinders Shire Council",
+            "suburb": "PRAIRIE, TORRENS CREEK",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 22:09",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "9",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 9,
+          "suburb": "PRAIRIE, TORRENS CREEK",
           "street_name": ""
         },
         {
