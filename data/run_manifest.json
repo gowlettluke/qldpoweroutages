@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-04T00:01:21Z",
-  "generated_aest": "2026-11-04T10:01:21+10:00",
+  "generated_utc": "2026-11-04T00:16:02Z",
+  "generated_aest": "2026-11-04T10:16:02+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 35,
+  "current_outage_records": 38,
   "outage_type_filter": "unplanned_only",
   "current_records_before_outage_type_filter": 545,
-  "current_records_after_outage_type_filter": 49,
-  "current_records_dropped_planned_or_unknown": 496,
+  "current_records_after_outage_type_filter": 51,
+  "current_records_dropped_planned_or_unknown": 494,
   "provider_fetch_errors": {
     "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Brisbane City"
   },
@@ -20,30 +20,30 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T00:00:01Z",
-      "published_customers": 770,
-      "event_count": 29
+      "source_updated_utc": "2026-11-04T00:10:27Z",
+      "published_customers": 833,
+      "event_count": 31
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T00:01:21Z",
+    "snapshot_utc": "2026-11-04T00:16:02Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-04T00:01:35Z",
+      "fetched_utc": "2026-11-04T00:16:11Z",
       "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Brisbane City"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T00:01:35Z",
+      "fetched_utc": "2026-11-04T00:16:11Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T00:00:01Z",
-      "total_customers": 770,
+      "source_updated_utc": "2026-11-04T00:10:27Z",
+      "total_customers": 833,
       "rows": [
         {
-          "lga_name": "Banana Shire",
+          "lga_name": "Barcoo Shire",
           "affected_customers": 2
         },
         {
@@ -84,11 +84,15 @@
         },
         {
           "lga_name": "North Burnett Regional",
-          "affected_customers": 27
+          "affected_customers": 7
+        },
+        {
+          "lga_name": "Quilpie Shire",
+          "affected_customers": 84
         },
         {
           "lga_name": "Rockhampton Regional",
-          "affected_customers": 53
+          "affected_customers": 59
         },
         {
           "lga_name": "South Burnett Regional",
@@ -96,7 +100,7 @@
         },
         {
           "lga_name": "Southern Downs Regional",
-          "affected_customers": 114
+          "affected_customers": 107
         },
         {
           "lga_name": "Toowoomba Regional",
@@ -113,20 +117,20 @@
       ]
     }
   },
-  "legacy_council_snapshot_rows": 3030,
-  "current_energex_records": 5,
-  "current_ergon_records": 29,
+  "legacy_council_snapshot_rows": 3017,
+  "current_energex_records": 6,
+  "current_ergon_records": 31,
   "current_essential_records_fetched": 75,
-  "current_energex_records_fetched": 116,
-  "current_ergon_records_fetched": 355,
+  "current_energex_records_fetched": 117,
+  "current_ergon_records_fetched": 353,
   "current_essential_records_after_qld_polygon_prefilter": 1,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 14,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 13,
   "current_essential_records_included_qld": 1,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5304,
-  "lga_totals_rows_48h": 6095,
-  "lga_totals_latest_rows": 44,
-  "lga_cumulative_rows": 97,
+  "snapshot_rows_48h": 5329,
+  "lga_totals_rows_48h": 6121,
+  "lga_totals_latest_rows": 48,
+  "lga_cumulative_rows": 99,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
     "outage_snapshots_48h_csv": "data/outage_snapshots_48h.csv",
