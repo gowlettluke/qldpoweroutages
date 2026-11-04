@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T16:16:07Z",
+      "fetched_utc": "2026-11-04T16:31:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 2:00 AM",
-        "source_updated_utc": "2026-11-04T16:00:02Z",
-        "published_customers": 248,
-        "event_count": 4
+        "source_updated": "5 November 2026 2:30 AM",
+        "source_updated_utc": "2026-11-04T16:30:02Z",
+        "published_customers": 165,
+        "event_count": 3
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4574",
             "suburb": "COOLABINE",
             "customersAffected": "4",
-            "restoreTime": "2026-11-05T03:00:00+10:00",
+            "restoreTime": "2026-11-05T05:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -40,37 +40,6 @@
           "affected_customers": 17,
           "suburb": "COOLABINE, KENILWORTH",
           "street_name": "BEACON HILL RD, COOLABINE RD, EUMUNDI-KENILWORTH RD, OBI OBI RD"
-        },
-        {
-          "event_id": "INCD-993042-g",
-          "allocations": [
-            {
-              "lga_name": "Gympie Regional",
-              "lga_code": null,
-              "affected_customers": 83
-            }
-          ],
-          "details": {
-            "event": "INCD-993042-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Gympie Regional",
-            "postcode": "4570",
-            "suburb": "MONKLAND",
-            "customersAffected": "83",
-            "restoreTime": "2026-11-05T03:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "MCAULIFFE RD",
-              "NOOSA RD",
-              "SHAW ST",
-              "WALSH CT"
-            ]
-          },
-          "affected_customers": 83,
-          "suburb": "MONKLAND",
-          "street_name": "MCAULIFFE RD, NOOSA RD, SHAW ST, WALSH CT"
         },
         {
           "event_id": "INCD-993090-g",
@@ -140,11 +109,11 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T16:16:10Z",
+      "fetched_utc": "2026-11-04T16:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T16:15:17Z",
+        "source_updated_utc": "2026-11-04T16:30:01Z",
         "published_customers": 183,
         "event_count": 11
       },
