@@ -1,46 +1,46 @@
 {
-  "generated_utc": "2026-11-04T08:46:00Z",
-  "generated_aest": "2026-11-04T18:46:00+10:00",
+  "generated_utc": "2026-11-04T09:01:19Z",
+  "generated_aest": "2026-11-04T19:01:19+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 14,
+  "current_outage_records": 15,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 405,
-  "current_records_after_outage_type_filter": 23,
+  "current_records_before_outage_type_filter": 403,
+  "current_records_after_outage_type_filter": 21,
   "current_records_dropped_planned_or_unknown": 382,
   "provider_fetch_errors": {
-    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Scenic Rim Regional"
+    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling"
   },
   "provider_fetch_error_count": 1,
   "council_allocation_status": {
     "Energex": {
       "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Scenic Rim Regional"
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T08:45:01Z",
-      "published_customers": 1371,
-      "event_count": 13
+      "source_updated_utc": "2026-11-04T09:00:01Z",
+      "published_customers": 1373,
+      "event_count": 14
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T08:46:00Z",
+    "snapshot_utc": "2026-11-04T09:01:19Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-04T08:46:12Z",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Scenic Rim Regional"
+      "fetched_utc": "2026-11-04T09:01:27Z",
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T08:46:12Z",
+      "fetched_utc": "2026-11-04T09:01:27Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T08:45:01Z",
-      "total_customers": 1371,
+      "source_updated_utc": "2026-11-04T09:00:01Z",
+      "total_customers": 1373,
       "rows": [
         {
           "lga_name": "Burdekin Shire",
@@ -75,25 +75,29 @@
           "affected_customers": 247
         },
         {
+          "lga_name": "South Burnett Regional",
+          "affected_customers": 2
+        },
+        {
           "lga_name": "Toowoomba Regional",
           "affected_customers": 926
         }
       ]
     }
   },
-  "legacy_council_snapshot_rows": 2580,
+  "legacy_council_snapshot_rows": 2557,
   "current_energex_records": 1,
-  "current_ergon_records": 13,
-  "current_essential_records_fetched": 10,
+  "current_ergon_records": 14,
+  "current_essential_records_fetched": 7,
   "current_energex_records_fetched": 110,
-  "current_ergon_records_fetched": 284,
+  "current_ergon_records_fetched": 286,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 9,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5693,
-  "lga_totals_rows_48h": 6457,
-  "lga_totals_latest_rows": 20,
+  "snapshot_rows_48h": 5685,
+  "lga_totals_rows_48h": 6446,
+  "lga_totals_latest_rows": 22,
   "lga_cumulative_rows": 107,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
