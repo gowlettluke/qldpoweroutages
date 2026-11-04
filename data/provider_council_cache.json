@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T11:46:10Z",
+      "fetched_utc": "2026-11-04T12:01:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "4 November 2026 9:30 PM",
-        "source_updated_utc": "2026-11-04T11:30:03Z",
+        "source_updated": "4 November 2026 10:00 PM",
+        "source_updated_utc": "2026-11-04T12:00:02Z",
         "published_customers": 193,
         "event_count": 3
       },
@@ -57,7 +57,7 @@
             "postcode": "4051",
             "suburb": "GRANGE",
             "customersAffected": "91",
-            "restoreTime": "2026-11-04T22:30:00+10:00",
+            "restoreTime": "2026-11-04T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -104,12 +104,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T11:46:15Z",
+      "fetched_utc": "2026-11-04T12:01:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T11:45:01Z",
-        "published_customers": 282,
+        "source_updated_utc": "2026-11-04T12:00:26Z",
+        "published_customers": 214,
         "event_count": 12
       },
       "events": [
@@ -335,30 +335,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW14209",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 78
-            }
-          ],
-          "details": {
-            "event": "26SW14209",
-            "council": "Toowoomba Regional Council",
-            "suburb": "NORTH TOOWOOMBA",
-            "type": "UNPLANNED",
-            "startTime": "04/11/2026 15:47",
-            "restoreTime": "04/11/2026 21:30",
-            "customersAffected": "78",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 78,
-          "suburb": "NORTH TOOWOOMBA",
-          "street_name": ""
-        },
-        {
           "event_id": "26WB10632",
           "allocations": [
             {
@@ -380,6 +356,30 @@
           },
           "affected_customers": 9,
           "suburb": "BOORAL",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10634",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 10
+            }
+          ],
+          "details": {
+            "event": "26WB10634",
+            "council": "Bundaberg Regional Council",
+            "suburb": "SHARON",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 19:16",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "10",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 10,
+          "suburb": "SHARON",
           "street_name": ""
         },
         {
