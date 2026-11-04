@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-04T07:46:06Z",
-  "generated_aest": "2026-11-04T17:46:06+10:00",
+  "generated_utc": "2026-11-04T08:01:17Z",
+  "generated_aest": "2026-11-04T18:01:17+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 17,
@@ -9,38 +9,38 @@
   "current_records_after_outage_type_filter": 22,
   "current_records_dropped_planned_or_unknown": 383,
   "provider_fetch_errors": {
-    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Provider council counts are stale or future-dated"
+    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Scenic Rim Regional"
   },
   "provider_fetch_error_count": 1,
   "council_allocation_status": {
     "Energex": {
       "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Provider council counts are stale or future-dated"
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Scenic Rim Regional"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T07:45:00Z",
-      "published_customers": 1408,
-      "event_count": 13
+      "source_updated_utc": "2026-11-04T08:00:01Z",
+      "published_customers": 1412,
+      "event_count": 14
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T07:46:06Z",
+    "snapshot_utc": "2026-11-04T08:01:17Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-04T07:46:16Z",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Provider council counts are stale or future-dated"
+      "fetched_utc": "2026-11-04T08:01:28Z",
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Scenic Rim Regional"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T07:46:16Z",
+      "fetched_utc": "2026-11-04T08:01:28Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T07:45:00Z",
-      "total_customers": 1408,
+      "source_updated_utc": "2026-11-04T08:00:01Z",
+      "total_customers": 1412,
       "rows": [
         {
           "lga_name": "Carpentaria Shire",
@@ -48,7 +48,7 @@
         },
         {
           "lga_name": "Central Highlands Regional",
-          "affected_customers": 26
+          "affected_customers": 30
         },
         {
           "lga_name": "Cloncurry Shire",
@@ -81,18 +81,18 @@
       ]
     }
   },
-  "legacy_council_snapshot_rows": 2665,
-  "current_energex_records": 4,
-  "current_ergon_records": 13,
+  "legacy_council_snapshot_rows": 2645,
+  "current_energex_records": 3,
+  "current_ergon_records": 14,
   "current_essential_records_fetched": 6,
-  "current_energex_records_fetched": 113,
-  "current_ergon_records_fetched": 284,
+  "current_energex_records_fetched": 112,
+  "current_ergon_records_fetched": 286,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 5,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5716,
-  "lga_totals_rows_48h": 6493,
+  "snapshot_rows_48h": 5713,
+  "lga_totals_rows_48h": 6488,
   "lga_totals_latest_rows": 24,
   "lga_cumulative_rows": 105,
   "outputs": {
