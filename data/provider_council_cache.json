@@ -2,23 +2,55 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T23:31:12Z",
+      "fetched_utc": "2026-11-04T23:46:10Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 9:15 AM",
-        "source_updated_utc": "2026-11-04T23:15:02Z",
-        "published_customers": 0,
-        "event_count": 0
+        "source_updated": "5 November 2026 9:30 AM",
+        "source_updated_utc": "2026-11-04T23:30:02Z",
+        "published_customers": 241,
+        "event_count": 1
       },
-      "events": []
+      "events": [
+        {
+          "event_id": "INCD-993170-g",
+          "allocations": [
+            {
+              "lga_name": "Gympie Regional",
+              "lga_code": null,
+              "affected_customers": 241
+            }
+          ],
+          "details": {
+            "event": "INCD-993170-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Gympie Regional",
+            "postcode": "4570",
+            "suburb": "COONDOO",
+            "customersAffected": "35",
+            "restoreTime": "2026-11-05T12:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "KIN KIN RD",
+              "MCRAE RD",
+              "PARSONS RD",
+              "STEWART RD"
+            ]
+          },
+          "affected_customers": 241,
+          "suburb": "COONDOO, GOOMBOORIAN, WILSONS POCKET, WOLVI",
+          "street_name": "COUNTER RD, DAVID WALKER RD, EATON RD, HARRIS RD, HOFF RD, KIN KIN RD, MCRAE RD, NEUSAVALE RD, NEWINGA RD, PARSONS RD, RYAN RD, STEWART RD, TAGIGAN RD, TREEBY RD, TURNER RD, VERNE RD, VINES RD, WILSONS POCKET RD, WOLVI MOUNTAIN RD, YELLOW GULLY RD"
+        }
+      ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T23:31:15Z",
+      "fetched_utc": "2026-11-04T23:46:14Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T23:30:00Z",
+        "source_updated_utc": "2026-11-04T23:45:00Z",
         "published_customers": 411,
         "event_count": 14
       },
@@ -62,7 +94,7 @@
             "suburb": "ALTON DOWNS, DALMA, MORINISH, NINE MILE, PINK LILY, STANWELL",
             "type": "UNPLANNED",
             "startTime": "05/11/2026 08:14",
-            "restoreTime": "05/11/2026 16:00",
+            "restoreTime": "05/11/2026 14:30",
             "customersAffected": "131",
             "cause": "The loss of supply is due to a vehicle accident.",
             "status": "Crews working on-site"
@@ -257,7 +289,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "6",
             "cause": "The loss of supply is due to the operating of protective equipment.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 6,
           "suburb": "MAXWELTON, NONDA",
