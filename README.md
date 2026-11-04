@@ -45,6 +45,13 @@ revalidates retained snapshot age and council totals. Collection, backups and
 publishing run entirely in this repository and GitHub Actions; the site remains
 on GitHub Pages.
 
+The data publisher creates one commit for the complete snapshot. A temporary
+GitHub server/network error retries that same commit after 5, 15 and 30 seconds;
+it never force-pushes or recollects different data during a retry. Permanent
+rejections still fail explicitly. If publishing fails, the workflow uploads the
+generated CSVs, GeoJSON and JSON as a run artifact retained for three days, so
+the collected snapshot is available even when GitHub cannot accept the push.
+
 `provider_council_counts` has `schema_version: 1`, a `snapshot_utc` matching the
 manifest, and `energex` / `ergon` entries. Successful entries contain `status:
 "ok"`, `scope: "all_councils"`, `outage_type: "unplanned"`, `fetched_utc`,
