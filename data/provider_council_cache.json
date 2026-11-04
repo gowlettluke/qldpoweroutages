@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T15:45:53Z",
+      "fetched_utc": "2026-11-04T16:01:36Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 1:30 AM",
-        "source_updated_utc": "2026-11-04T15:30:02Z",
-        "published_customers": 351,
-        "event_count": 5
+        "source_updated": "5 November 2026 2:00 AM",
+        "source_updated_utc": "2026-11-04T16:00:02Z",
+        "published_customers": 248,
+        "event_count": 4
       },
       "events": [
         {
@@ -40,36 +40,6 @@
           "affected_customers": 17,
           "suburb": "COOLABINE, KENILWORTH",
           "street_name": "BEACON HILL RD, COOLABINE RD, EUMUNDI-KENILWORTH RD, OBI OBI RD"
-        },
-        {
-          "event_id": "INCD-993029-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 103
-            }
-          ],
-          "details": {
-            "event": "INCD-993029-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4051",
-            "suburb": "GRANGE",
-            "customersAffected": "91",
-            "restoreTime": "2026-11-04T21:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "CARBERRY ST",
-              "COLSTON RD",
-              "DAYS RD"
-            ]
-          },
-          "affected_customers": 103,
-          "suburb": "GRANGE, NEWMARKET",
-          "street_name": "CARBERRY ST, COLSTON RD, DAYS RD, WILSTON RD"
         },
         {
           "event_id": "INCD-993042-g",
@@ -170,11 +140,11 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T15:45:56Z",
+      "fetched_utc": "2026-11-04T16:01:39Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T15:40:00Z",
+        "source_updated_utc": "2026-11-04T16:00:16Z",
         "published_customers": 803,
         "event_count": 11
       },
