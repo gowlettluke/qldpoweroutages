@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T10:31:22Z",
+      "fetched_utc": "2026-11-04T11:12:47Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "4 November 2026 8:30 PM",
-        "source_updated_utc": "2026-11-04T10:30:06Z",
-        "published_customers": 111,
-        "event_count": 3
+        "source_updated": "4 November 2026 9:00 PM",
+        "source_updated_utc": "2026-11-04T11:00:02Z",
+        "published_customers": 194,
+        "event_count": 4
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4032",
             "suburb": "CHERMSIDE",
             "customersAffected": "1",
-            "restoreTime": "2026-11-04T21:00:00+10:00",
+            "restoreTime": "2026-11-04T22:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -57,7 +57,7 @@
             "postcode": "4275",
             "suburb": "FERNY GLEN",
             "customersAffected": "3",
-            "restoreTime": "2026-11-04T21:30:00+10:00",
+            "restoreTime": "2026-11-04T22:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -85,7 +85,7 @@
             "postcode": "4051",
             "suburb": "GRANGE",
             "customersAffected": "91",
-            "restoreTime": "2026-11-04T21:00:00+10:00",
+            "restoreTime": "2026-11-04T22:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -97,17 +97,48 @@
           "affected_customers": 103,
           "suburb": "GRANGE, NEWMARKET",
           "street_name": "CARBERRY ST, COLSTON RD, DAYS RD, WILSTON RD"
+        },
+        {
+          "event_id": "INCD-993042-g",
+          "allocations": [
+            {
+              "lga_name": "Gympie Regional",
+              "lga_code": null,
+              "affected_customers": 83
+            }
+          ],
+          "details": {
+            "event": "INCD-993042-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Gympie Regional",
+            "postcode": "4570",
+            "suburb": "MONKLAND",
+            "customersAffected": "83",
+            "restoreTime": "2026-11-04T23:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "MCAULIFFE RD",
+              "NOOSA RD",
+              "SHAW ST",
+              "WALSH CT"
+            ]
+          },
+          "affected_customers": 83,
+          "suburb": "MONKLAND",
+          "street_name": "MCAULIFFE RD, NOOSA RD, SHAW ST, WALSH CT"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T10:31:25Z",
+      "fetched_utc": "2026-11-04T11:12:53Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T10:30:01Z",
-        "published_customers": 250,
-        "event_count": 11
+        "source_updated_utc": "2026-11-04T11:10:00Z",
+        "published_customers": 279,
+        "event_count": 13
       },
       "events": [
         {
@@ -152,10 +183,39 @@
             "restoreTime": "04/11/2026 22:30",
             "customersAffected": "4",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 4,
           "suburb": "BLUFF, JELLINBAH",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA12983",
+          "allocations": [
+            {
+              "lga_name": "Gladstone Regional",
+              "lga_code": null,
+              "affected_customers": 20
+            },
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26CA12983",
+            "council": "Gladstone Regional Council",
+            "suburb": "BOYNE VALLEY, CALLIOPE, UBOBO",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 20:52",
+            "restoreTime": "05/11/2026 00:30",
+            "customersAffected": "20",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 23,
+          "suburb": "BOYNE VALLEY, CALLIOPE, MUNGUNGO, UBOBO",
           "street_name": ""
         },
         {
@@ -300,6 +360,30 @@
           },
           "affected_customers": 90,
           "suburb": "HUGHENDEN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13612",
+          "allocations": [
+            {
+              "lga_name": "Richmond Shire",
+              "lga_code": null,
+              "affected_customers": 6
+            }
+          ],
+          "details": {
+            "event": "26NQ13612",
+            "council": "Richmond Shire Council",
+            "suburb": "MAXWELTON, NONDA",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 17:31",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "6",
+            "cause": "The loss of supply is due to the operating of protective equipment.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 6,
+          "suburb": "MAXWELTON, NONDA",
           "street_name": ""
         },
         {
