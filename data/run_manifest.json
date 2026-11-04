@@ -1,46 +1,86 @@
 {
-  "generated_utc": "2026-11-04T02:15:53Z",
-  "generated_aest": "2026-11-04T12:15:53+10:00",
+  "generated_utc": "2026-11-04T02:31:13Z",
+  "generated_aest": "2026-11-04T12:31:13+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 33,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 513,
+  "current_records_before_outage_type_filter": 510,
   "current_records_after_outage_type_filter": 38,
-  "current_records_dropped_planned_or_unknown": 475,
-  "provider_fetch_errors": {
-    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Moreton Bay Regional"
-  },
-  "provider_fetch_error_count": 1,
+  "current_records_dropped_planned_or_unknown": 472,
+  "provider_fetch_errors": {},
+  "provider_fetch_error_count": 0,
   "council_allocation_status": {
     "Energex": {
-      "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Moreton Bay Regional"
+      "status": "provider",
+      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+      "source_updated": "4 November 2026 12:30 PM",
+      "source_updated_utc": "2026-11-04T02:30:02Z",
+      "published_customers": 232,
+      "event_count": 9
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T02:10:00Z",
-      "published_customers": 989,
-      "event_count": 25
+      "source_updated_utc": "2026-11-04T02:30:01Z",
+      "published_customers": 875,
+      "event_count": 24
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T02:15:53Z",
+    "snapshot_utc": "2026-11-04T02:31:13Z",
     "energex": {
-      "status": "error",
-      "fetched_utc": "2026-11-04T02:16:06Z",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Moreton Bay Regional"
+      "status": "ok",
+      "fetched_utc": "2026-11-04T02:31:25Z",
+      "scope": "all_councils",
+      "outage_type": "unplanned",
+      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+      "source_updated_utc": "2026-11-04T02:30:02Z",
+      "total_customers": 232,
+      "rows": [
+        {
+          "lga_name": "Brisbane City",
+          "affected_customers": 93
+        },
+        {
+          "lga_name": "Gold Coast City",
+          "affected_customers": 10
+        },
+        {
+          "lga_name": "Gympie Regional",
+          "affected_customers": 39
+        },
+        {
+          "lga_name": "Lockyer Valley Regional",
+          "affected_customers": 8
+        },
+        {
+          "lga_name": "Moreton Bay City",
+          "affected_customers": 7
+        },
+        {
+          "lga_name": "Noosa Shire",
+          "affected_customers": 1
+        },
+        {
+          "lga_name": "Redland City",
+          "affected_customers": 66
+        },
+        {
+          "lga_name": "Sunshine Coast Regional",
+          "affected_customers": 8
+        }
+      ]
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T02:16:06Z",
+      "fetched_utc": "2026-11-04T02:31:25Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T02:10:00Z",
-      "total_customers": 989,
+      "source_updated_utc": "2026-11-04T02:30:01Z",
+      "total_customers": 875,
       "rows": [
         {
           "lga_name": "Barcoo Shire",
@@ -99,28 +139,24 @@
           "affected_customers": 366
         },
         {
-          "lga_name": "Southern Downs Regional",
-          "affected_customers": 114
-        },
-        {
           "lga_name": "Townsville City",
           "affected_customers": 22
         }
       ]
     }
   },
-  "legacy_council_snapshot_rows": 2928,
-  "current_energex_records": 8,
-  "current_ergon_records": 25,
-  "current_essential_records_fetched": 53,
-  "current_energex_records_fetched": 119,
-  "current_ergon_records_fetched": 341,
+  "legacy_council_snapshot_rows": 2908,
+  "current_energex_records": 9,
+  "current_ergon_records": 24,
+  "current_essential_records_fetched": 52,
+  "current_energex_records_fetched": 118,
+  "current_ergon_records_fetched": 339,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 5,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5535,
-  "lga_totals_rows_48h": 6371,
+  "snapshot_rows_48h": 5548,
+  "lga_totals_rows_48h": 6385,
   "lga_totals_latest_rows": 46,
   "lga_cumulative_rows": 101,
   "outputs": {
