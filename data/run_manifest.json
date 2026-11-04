@@ -1,48 +1,45 @@
 {
-  "generated_utc": "2026-11-04T11:31:10Z",
-  "generated_aest": "2026-11-04T21:31:10+10:00",
+  "generated_utc": "2026-11-04T11:46:03Z",
+  "generated_aest": "2026-11-04T21:46:03+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 16,
+  "current_outage_records": 15,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 408,
-  "current_records_after_outage_type_filter": 26,
+  "current_records_before_outage_type_filter": 407,
+  "current_records_after_outage_type_filter": 25,
   "current_records_dropped_planned_or_unknown": 382,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {
-    "Ergon": "Update delayed; using verified provider data from 2026-11-04T11:10:00Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "4 November 2026 9:15 PM",
-      "source_updated_utc": "2026-11-04T11:15:04Z",
+      "source_updated": "4 November 2026 9:30 PM",
+      "source_updated_utc": "2026-11-04T11:30:03Z",
       "published_customers": 193,
       "event_count": 3,
-      "fetched_utc": "2026-11-04T11:31:16Z"
+      "fetched_utc": "2026-11-04T11:46:10Z"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T11:10:00Z",
-      "published_customers": 279,
-      "event_count": 13,
-      "fetched_utc": "2026-11-04T11:16:08Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "source_updated_utc": "2026-11-04T11:45:01Z",
+      "published_customers": 282,
+      "event_count": 12,
+      "fetched_utc": "2026-11-04T11:46:15Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T11:31:10Z",
+    "snapshot_utc": "2026-11-04T11:46:03Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T11:31:16Z",
+      "fetched_utc": "2026-11-04T11:46:10Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-04T11:15:04Z",
+      "source_updated_utc": "2026-11-04T11:30:03Z",
       "retained": false,
       "total_customers": 193,
       "rows": [
@@ -62,13 +59,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T11:16:08Z",
+      "fetched_utc": "2026-11-04T11:46:15Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T11:10:00Z",
-      "retained": true,
-      "total_customers": 279,
+      "source_updated_utc": "2026-11-04T11:45:01Z",
+      "retained": false,
+      "total_customers": 282,
       "rows": [
         {
           "lga_name": "Carpentaria Shire",
@@ -76,7 +73,7 @@
         },
         {
           "lga_name": "Central Highlands Regional",
-          "affected_customers": 24
+          "affected_customers": 20
         },
         {
           "lga_name": "Cloncurry Shire",
@@ -92,7 +89,7 @@
         },
         {
           "lga_name": "Fraser Coast Regional",
-          "affected_customers": 3
+          "affected_customers": 12
         },
         {
           "lga_name": "Gladstone Regional",
@@ -107,29 +104,25 @@
           "affected_customers": 6
         },
         {
-          "lga_name": "South Burnett Regional",
-          "affected_customers": 2
-        },
-        {
           "lga_name": "Toowoomba Regional",
           "affected_customers": 78
         }
       ]
     }
   },
-  "legacy_council_snapshot_rows": 2328,
+  "legacy_council_snapshot_rows": 2284,
   "current_energex_records": 3,
-  "current_ergon_records": 13,
+  "current_ergon_records": 12,
   "current_essential_records_fetched": 11,
   "current_energex_records_fetched": 112,
-  "current_ergon_records_fetched": 285,
+  "current_ergon_records_fetched": 284,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 10,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5601,
-  "lga_totals_rows_48h": 6404,
-  "lga_totals_latest_rows": 28,
+  "snapshot_rows_48h": 5572,
+  "lga_totals_rows_48h": 6380,
+  "lga_totals_latest_rows": 26,
   "lga_cumulative_rows": 107,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",

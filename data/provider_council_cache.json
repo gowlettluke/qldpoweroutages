@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T11:31:16Z",
+      "fetched_utc": "2026-11-04T11:46:10Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "4 November 2026 9:15 PM",
-        "source_updated_utc": "2026-11-04T11:15:04Z",
+        "source_updated": "4 November 2026 9:30 PM",
+        "source_updated_utc": "2026-11-04T11:30:03Z",
         "published_customers": 193,
         "event_count": 3
       },
@@ -23,13 +23,13 @@
           ],
           "details": {
             "event": "INCD-993007-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
             "council": "Scenic Rim Regional",
             "postcode": "4275",
             "suburb": "FERNY GLEN",
             "customersAffected": "3",
-            "restoreTime": "2026-11-04T22:00:00+10:00",
+            "restoreTime": "2026-11-04T23:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -57,7 +57,7 @@
             "postcode": "4051",
             "suburb": "GRANGE",
             "customersAffected": "91",
-            "restoreTime": "2026-11-04T22:00:00+10:00",
+            "restoreTime": "2026-11-04T22:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -104,13 +104,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T11:16:08Z",
+      "fetched_utc": "2026-11-04T11:46:15Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T11:10:00Z",
-        "published_customers": 279,
-        "event_count": 13
+        "source_updated_utc": "2026-11-04T11:45:01Z",
+        "published_customers": 282,
+        "event_count": 12
       },
       "events": [
         {
@@ -135,30 +135,6 @@
           },
           "affected_customers": 20,
           "suburb": "DINGO",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA12981",
-          "allocations": [
-            {
-              "lga_name": "Central Highlands Regional",
-              "lga_code": null,
-              "affected_customers": 4
-            }
-          ],
-          "details": {
-            "event": "26CA12981",
-            "council": "Central Highlands Regional Council",
-            "suburb": "BLUFF, JELLINBAH",
-            "type": "UNPLANNED",
-            "startTime": "04/11/2026 17:57",
-            "restoreTime": "04/11/2026 22:30",
-            "customersAffected": "4",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 4,
-          "suburb": "BLUFF, JELLINBAH",
           "street_name": ""
         },
         {
@@ -352,7 +328,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "6",
             "cause": "The loss of supply is due to the operating of protective equipment.",
-            "status": "Outage reported"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 6,
           "suburb": "MAXWELTON, NONDA",
@@ -383,27 +359,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26WB10629",
+          "event_id": "26WB10632",
           "allocations": [
             {
-              "lga_name": "South Burnett Regional",
+              "lga_name": "Fraser Coast Regional",
               "lga_code": null,
-              "affected_customers": 2
+              "affected_customers": 9
             }
           ],
           "details": {
-            "event": "26WB10629",
-            "council": "South Burnett Regional Council",
-            "suburb": "MOONDOONER, MURGON",
+            "event": "26WB10632",
+            "council": "Fraser Coast Regional Council",
+            "suburb": "BOORAL",
             "type": "UNPLANNED",
-            "startTime": "04/11/2026 17:06",
+            "startTime": "04/11/2026 21:19",
             "restoreTime": "Under Investigation",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "customersAffected": "9",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews on route"
           },
-          "affected_customers": 2,
-          "suburb": "MOONDOONER, MURGON",
+          "affected_customers": 9,
+          "suburb": "BOORAL",
           "street_name": ""
         },
         {
