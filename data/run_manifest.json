@@ -1,102 +1,54 @@
 {
-  "generated_utc": "2026-11-04T05:31:20Z",
-  "generated_aest": "2026-11-04T15:31:20+10:00",
+  "generated_utc": "2026-11-04T05:46:01Z",
+  "generated_aest": "2026-11-04T15:46:01+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 16,
+  "current_outage_records": 18,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 415,
-  "current_records_after_outage_type_filter": 22,
-  "current_records_dropped_planned_or_unknown": 393,
+  "current_records_before_outage_type_filter": 414,
+  "current_records_after_outage_type_filter": 24,
+  "current_records_dropped_planned_or_unknown": 390,
   "provider_fetch_errors": {
-    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling"
+    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling",
+    "Ergon": "Council allocation fallback to map estimates: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
   },
-  "provider_fetch_error_count": 1,
+  "provider_fetch_error_count": 2,
   "council_allocation_status": {
     "Energex": {
       "status": "geometry_fallback",
       "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling"
     },
     "Ergon": {
-      "status": "provider",
-      "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T05:30:10Z",
-      "published_customers": 781,
-      "event_count": 15
+      "status": "geometry_fallback",
+      "error": "Council allocation fallback to map estimates: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T05:31:20Z",
+    "snapshot_utc": "2026-11-04T05:46:01Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-04T05:31:29Z",
+      "fetched_utc": "2026-11-04T05:46:09Z",
       "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling"
     },
     "ergon": {
-      "status": "ok",
-      "fetched_utc": "2026-11-04T05:31:29Z",
-      "scope": "all_councils",
-      "outage_type": "unplanned",
-      "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T05:30:10Z",
-      "total_customers": 781,
-      "rows": [
-        {
-          "lga_name": "Burke Shire",
-          "affected_customers": 2
-        },
-        {
-          "lga_name": "Carpentaria Shire",
-          "affected_customers": 7
-        },
-        {
-          "lga_name": "Central Highlands Regional",
-          "affected_customers": 146
-        },
-        {
-          "lga_name": "Cloncurry Shire",
-          "affected_customers": 29
-        },
-        {
-          "lga_name": "Cook Shire",
-          "affected_customers": 15
-        },
-        {
-          "lga_name": "Etheridge Shire",
-          "affected_customers": 46
-        },
-        {
-          "lga_name": "Fraser Coast Regional",
-          "affected_customers": 8
-        },
-        {
-          "lga_name": "Rockhampton Regional",
-          "affected_customers": 64
-        },
-        {
-          "lga_name": "South Burnett Regional",
-          "affected_customers": 12
-        },
-        {
-          "lga_name": "Whitsunday Regional",
-          "affected_customers": 452
-        }
-      ]
+      "status": "error",
+      "fetched_utc": "2026-11-04T05:46:09Z",
+      "error": "Council allocation fallback to map estimates: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
     }
   },
-  "legacy_council_snapshot_rows": 2793,
-  "current_energex_records": 1,
-  "current_ergon_records": 15,
-  "current_essential_records_fetched": 10,
-  "current_energex_records_fetched": 111,
+  "legacy_council_snapshot_rows": 2784,
+  "current_energex_records": 2,
+  "current_ergon_records": 16,
+  "current_essential_records_fetched": 9,
+  "current_energex_records_fetched": 112,
   "current_ergon_records_fetched": 293,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5707,
-  "lga_totals_rows_48h": 6525,
+  "snapshot_rows_48h": 5716,
+  "lga_totals_rows_48h": 6531,
   "lga_totals_latest_rows": 22,
   "lga_cumulative_rows": 105,
   "outputs": {
