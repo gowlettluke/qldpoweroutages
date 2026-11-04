@@ -2,45 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T19:01:33Z",
+      "fetched_utc": "2026-11-04T19:16:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 5:00 AM",
-        "source_updated_utc": "2026-11-04T19:00:02Z",
-        "published_customers": 148,
-        "event_count": 2
+        "source_updated": "5 November 2026 5:15 AM",
+        "source_updated_utc": "2026-11-04T19:15:02Z",
+        "published_customers": 131,
+        "event_count": 1
       },
       "events": [
-        {
-          "event_id": "INCD-992976-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 17
-            }
-          ],
-          "details": {
-            "event": "INCD-992976-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Sunshine Coast",
-            "postcode": "4574",
-            "suburb": "COOLABINE",
-            "customersAffected": "4",
-            "restoreTime": "2026-11-05T07:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BEACON HILL RD",
-              "COOLABINE RD"
-            ]
-          },
-          "affected_customers": 17,
-          "suburb": "COOLABINE, KENILWORTH",
-          "street_name": "BEACON HILL RD, COOLABINE RD, EUMUNDI-KENILWORTH RD, OBI OBI RD"
-        },
         {
           "event_id": "INCD-993109-g",
           "allocations": [
@@ -58,7 +29,7 @@
             "postcode": "4570",
             "suburb": "SOUTHSIDE",
             "customersAffected": "131",
-            "restoreTime": "2026-11-05T03:30:00+10:00",
+            "restoreTime": "2026-11-05T07:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -80,13 +51,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T19:01:37Z",
+      "fetched_utc": "2026-11-04T19:16:23Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T19:00:00Z",
-        "published_customers": 183,
-        "event_count": 11
+        "source_updated_utc": "2026-11-04T19:15:17Z",
+        "published_customers": 179,
+        "event_count": 10
       },
       "events": [
         {
@@ -279,30 +250,6 @@
           },
           "affected_customers": 6,
           "suburb": "MAXWELTON, NONDA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13615",
-          "allocations": [
-            {
-              "lga_name": "Mount Isa City",
-              "lga_code": null,
-              "affected_customers": 4
-            }
-          ],
-          "details": {
-            "event": "26NQ13615",
-            "council": "Mount Isa City Council",
-            "suburb": "MOUNT ISA",
-            "type": "UNPLANNED",
-            "startTime": "05/11/2026 00:52",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "4",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 4,
-          "suburb": "MOUNT ISA",
           "street_name": ""
         },
         {
