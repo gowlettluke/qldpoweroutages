@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T12:01:19Z",
+      "fetched_utc": "2026-11-04T12:16:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "4 November 2026 10:00 PM",
-        "source_updated_utc": "2026-11-04T12:00:02Z",
+        "source_updated": "4 November 2026 10:15 PM",
+        "source_updated_utc": "2026-11-04T12:15:02Z",
         "published_customers": 193,
         "event_count": 3
       },
@@ -104,13 +104,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T12:01:24Z",
+      "fetched_utc": "2026-11-04T12:16:23Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T12:00:26Z",
-        "published_customers": 214,
-        "event_count": 12
+        "source_updated_utc": "2026-11-04T12:15:24Z",
+        "published_customers": 191,
+        "event_count": 11
       },
       "events": [
         {
@@ -135,35 +135,6 @@
           },
           "affected_customers": 20,
           "suburb": "DINGO",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA12983",
-          "allocations": [
-            {
-              "lga_name": "Gladstone Regional",
-              "lga_code": null,
-              "affected_customers": 20
-            },
-            {
-              "lga_name": "North Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26CA12983",
-            "council": "Gladstone Regional Council",
-            "suburb": "BOYNE VALLEY, CALLIOPE, UBOBO",
-            "type": "UNPLANNED",
-            "startTime": "04/11/2026 20:52",
-            "restoreTime": "05/11/2026 00:30",
-            "customersAffected": "20",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 23,
-          "suburb": "BOYNE VALLEY, CALLIOPE, MUNGUNGO, UBOBO",
           "street_name": ""
         },
         {
@@ -352,7 +323,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "9",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 9,
           "suburb": "BOORAL",
@@ -376,7 +347,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "10",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 10,
           "suburb": "SHARON",
