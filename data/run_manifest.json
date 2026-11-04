@@ -1,86 +1,46 @@
 {
-  "generated_utc": "2026-11-04T00:46:01Z",
-  "generated_aest": "2026-11-04T10:46:01+10:00",
+  "generated_utc": "2026-11-04T01:01:03Z",
+  "generated_aest": "2026-11-04T11:01:03+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 40,
+  "current_outage_records": 39,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 544,
-  "current_records_after_outage_type_filter": 54,
-  "current_records_dropped_planned_or_unknown": 490,
-  "provider_fetch_errors": {},
-  "provider_fetch_error_count": 0,
+  "current_records_before_outage_type_filter": 540,
+  "current_records_after_outage_type_filter": 52,
+  "current_records_dropped_planned_or_unknown": 488,
+  "provider_fetch_errors": {
+    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Brisbane City"
+  },
+  "provider_fetch_error_count": 1,
   "council_allocation_status": {
     "Energex": {
-      "status": "provider",
-      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "4 November 2026 10:30 AM",
-      "source_updated_utc": "2026-11-04T00:30:02Z",
-      "published_customers": 226,
-      "event_count": 10
+      "status": "geometry_fallback",
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Brisbane City"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T00:45:00Z",
-      "published_customers": 1120,
-      "event_count": 29
+      "source_updated_utc": "2026-11-04T00:55:00Z",
+      "published_customers": 1123,
+      "event_count": 30
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T00:46:01Z",
+    "snapshot_utc": "2026-11-04T01:01:03Z",
     "energex": {
-      "status": "ok",
-      "fetched_utc": "2026-11-04T00:46:11Z",
-      "scope": "all_councils",
-      "outage_type": "unplanned",
-      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-04T00:30:02Z",
-      "total_customers": 226,
-      "rows": [
-        {
-          "lga_name": "Brisbane City",
-          "affected_customers": 93
-        },
-        {
-          "lga_name": "Gold Coast City",
-          "affected_customers": 10
-        },
-        {
-          "lga_name": "Gympie Regional",
-          "affected_customers": 39
-        },
-        {
-          "lga_name": "Lockyer Valley Regional",
-          "affected_customers": 9
-        },
-        {
-          "lga_name": "Moreton Bay City",
-          "affected_customers": 7
-        },
-        {
-          "lga_name": "Noosa Shire",
-          "affected_customers": 1
-        },
-        {
-          "lga_name": "Redland City",
-          "affected_customers": 66
-        },
-        {
-          "lga_name": "Scenic Rim Regional",
-          "affected_customers": 1
-        }
-      ]
+      "status": "error",
+      "fetched_utc": "2026-11-04T01:01:18Z",
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Brisbane City"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T00:46:11Z",
+      "fetched_utc": "2026-11-04T01:01:18Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T00:45:00Z",
-      "total_customers": 1120,
+      "source_updated_utc": "2026-11-04T00:55:00Z",
+      "total_customers": 1123,
       "rows": [
         {
           "lga_name": "Barcoo Shire",
@@ -136,7 +96,7 @@
         },
         {
           "lga_name": "South Burnett Regional",
-          "affected_customers": 366
+          "affected_customers": 369
         },
         {
           "lga_name": "Southern Downs Regional",
@@ -158,18 +118,18 @@
     }
   },
   "legacy_council_snapshot_rows": 2990,
-  "current_energex_records": 10,
-  "current_ergon_records": 29,
-  "current_essential_records_fetched": 73,
-  "current_energex_records_fetched": 118,
+  "current_energex_records": 8,
+  "current_ergon_records": 30,
+  "current_essential_records_fetched": 71,
+  "current_energex_records_fetched": 119,
   "current_ergon_records_fetched": 350,
   "current_essential_records_after_qld_polygon_prefilter": 1,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 14,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 13,
   "current_essential_records_included_qld": 1,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5379,
-  "lga_totals_rows_48h": 6183,
-  "lga_totals_latest_rows": 54,
+  "snapshot_rows_48h": 5418,
+  "lga_totals_rows_48h": 6235,
+  "lga_totals_latest_rows": 52,
   "lga_cumulative_rows": 101,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
