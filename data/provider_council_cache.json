@@ -2,16 +2,45 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T13:45:57Z",
+      "fetched_utc": "2026-11-04T14:01:31Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "4 November 2026 11:30 PM",
-        "source_updated_utc": "2026-11-04T13:30:02Z",
-        "published_customers": 203,
-        "event_count": 3
+        "source_updated": "5 November 2026 12:00 AM",
+        "source_updated_utc": "2026-11-04T14:00:35Z",
+        "published_customers": 221,
+        "event_count": 5
       },
       "events": [
+        {
+          "event_id": "INCD-992976-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 17
+            }
+          ],
+          "details": {
+            "event": "INCD-992976-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Sunshine Coast",
+            "postcode": "4574",
+            "suburb": "COOLABINE",
+            "customersAffected": "4",
+            "restoreTime": "2026-11-05T01:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BEACON HILL RD",
+              "COOLABINE RD"
+            ]
+          },
+          "affected_customers": 17,
+          "suburb": "COOLABINE, KENILWORTH",
+          "street_name": "BEACON HILL RD, COOLABINE RD, EUMUNDI-KENILWORTH RD, OBI OBI RD"
+        },
         {
           "event_id": "INCD-993029-g",
           "allocations": [
@@ -74,6 +103,34 @@
           "street_name": "MCAULIFFE RD, NOOSA RD, SHAW ST, WALSH CT"
         },
         {
+          "event_id": "INCD-993044-g",
+          "allocations": [
+            {
+              "lga_name": "Ipswich City",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-993044-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Ipswich City",
+            "postcode": "4306",
+            "suburb": "HAIGSLEA",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-05T00:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BUTLERS RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "HAIGSLEA",
+          "street_name": "BUTLERS RD"
+        },
+        {
           "event_id": "INCD-993090-g",
           "allocations": [
             {
@@ -105,11 +162,11 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T13:46:04Z",
+      "fetched_utc": "2026-11-04T14:01:35Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T13:40:06Z",
+        "source_updated_utc": "2026-11-04T14:00:24Z",
         "published_customers": 799,
         "event_count": 10
       },
