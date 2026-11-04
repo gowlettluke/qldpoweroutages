@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-04T02:31:13Z",
-  "generated_aest": "2026-11-04T12:31:13+10:00",
+  "generated_utc": "2026-11-04T02:45:48Z",
+  "generated_aest": "2026-11-04T12:45:48+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 33,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 510,
+  "current_records_before_outage_type_filter": 496,
   "current_records_after_outage_type_filter": 38,
-  "current_records_dropped_planned_or_unknown": 472,
+  "current_records_dropped_planned_or_unknown": 458,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "council_allocation_status": {
@@ -22,17 +22,17 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T02:30:01Z",
-      "published_customers": 875,
+      "source_updated_utc": "2026-11-04T02:40:00Z",
+      "published_customers": 640,
       "event_count": 24
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T02:31:13Z",
+    "snapshot_utc": "2026-11-04T02:45:48Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T02:31:25Z",
+      "fetched_utc": "2026-11-04T02:46:02Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -75,12 +75,12 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T02:31:25Z",
+      "fetched_utc": "2026-11-04T02:46:02Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T02:30:01Z",
-      "total_customers": 875,
+      "source_updated_utc": "2026-11-04T02:40:00Z",
+      "total_customers": 640,
       "rows": [
         {
           "lga_name": "Barcoo Shire",
@@ -96,7 +96,7 @@
         },
         {
           "lga_name": "Central Highlands Regional",
-          "affected_customers": 167
+          "affected_customers": 280
         },
         {
           "lga_name": "Etheridge Shire",
@@ -109,10 +109,6 @@
         {
           "lga_name": "Gladstone Regional",
           "affected_customers": 40
-        },
-        {
-          "lga_name": "Livingstone Shire",
-          "affected_customers": 13
         },
         {
           "lga_name": "McKinlay Shire",
@@ -136,7 +132,7 @@
         },
         {
           "lga_name": "South Burnett Regional",
-          "affected_customers": 366
+          "affected_customers": 31
         },
         {
           "lga_name": "Townsville City",
@@ -148,16 +144,16 @@
   "legacy_council_snapshot_rows": 2908,
   "current_energex_records": 9,
   "current_ergon_records": 24,
-  "current_essential_records_fetched": 52,
-  "current_energex_records_fetched": 118,
-  "current_ergon_records_fetched": 339,
+  "current_essential_records_fetched": 46,
+  "current_energex_records_fetched": 117,
+  "current_ergon_records_fetched": 331,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 5,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5548,
-  "lga_totals_rows_48h": 6385,
-  "lga_totals_latest_rows": 46,
+  "snapshot_rows_48h": 5581,
+  "lga_totals_rows_48h": 6429,
+  "lga_totals_latest_rows": 44,
   "lga_cumulative_rows": 101,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
