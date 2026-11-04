@@ -2,25 +2,25 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T20:01:27Z",
+      "fetched_utc": "2026-11-04T20:16:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 6:00 AM",
-        "source_updated_utc": "2026-11-04T20:00:02Z",
+        "source_updated": "5 November 2026 6:15 AM",
+        "source_updated_utc": "2026-11-04T20:15:02Z",
         "published_customers": 0,
         "event_count": 0
       },
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T20:01:31Z",
+      "fetched_utc": "2026-11-04T20:16:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T19:55:55Z",
-        "published_customers": 179,
-        "event_count": 10
+        "source_updated_utc": "2026-11-04T20:15:18Z",
+        "published_customers": 215,
+        "event_count": 11
       },
       "events": [
         {
@@ -45,6 +45,35 @@
           },
           "affected_customers": 20,
           "suburb": "DINGO",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA12988",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 33
+            },
+            {
+              "lga_name": "Isaac Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26CA12988",
+            "council": "Central Highlands Regional Council",
+            "suburb": "BINGEGANG, DINGO",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 05:47",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "33",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 36,
+          "suburb": "BINGEGANG, BLUFF, DINGO, MACKENZIE RIVER",
           "street_name": ""
         },
         {
