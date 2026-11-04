@@ -1,46 +1,46 @@
 {
-  "generated_utc": "2026-11-04T01:46:00Z",
-  "generated_aest": "2026-11-04T11:46:00+10:00",
+  "generated_utc": "2026-11-04T02:01:18Z",
+  "generated_aest": "2026-11-04T12:01:18+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 37,
+  "current_outage_records": 34,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 521,
-  "current_records_after_outage_type_filter": 44,
+  "current_records_before_outage_type_filter": 518,
+  "current_records_after_outage_type_filter": 41,
   "current_records_dropped_planned_or_unknown": 477,
   "provider_fetch_errors": {
-    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Moreton Bay Regional"
+    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Sunshine Coast"
   },
   "provider_fetch_error_count": 1,
   "council_allocation_status": {
     "Energex": {
       "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Moreton Bay Regional"
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Sunshine Coast"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T01:45:17Z",
-      "published_customers": 1043,
-      "event_count": 29
+      "source_updated_utc": "2026-11-04T02:00:27Z",
+      "published_customers": 992,
+      "event_count": 26
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T01:46:00Z",
+    "snapshot_utc": "2026-11-04T02:01:18Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-04T01:46:12Z",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Moreton Bay Regional"
+      "fetched_utc": "2026-11-04T02:01:29Z",
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Sunshine Coast"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T01:46:12Z",
+      "fetched_utc": "2026-11-04T02:01:29Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T01:45:17Z",
-      "total_customers": 1043,
+      "source_updated_utc": "2026-11-04T02:00:27Z",
+      "total_customers": 992,
       "rows": [
         {
           "lga_name": "Barcoo Shire",
@@ -56,7 +56,7 @@
         },
         {
           "lga_name": "Central Highlands Regional",
-          "affected_customers": 169
+          "affected_customers": 167
         },
         {
           "lga_name": "Etheridge Shire",
@@ -72,7 +72,7 @@
         },
         {
           "lga_name": "Livingstone Shire",
-          "affected_customers": 58
+          "affected_customers": 13
         },
         {
           "lga_name": "McKinlay Shire",
@@ -84,7 +84,7 @@
         },
         {
           "lga_name": "North Burnett Regional",
-          "affected_customers": 4
+          "affected_customers": 2
         },
         {
           "lga_name": "Quilpie Shire",
@@ -109,27 +109,23 @@
         {
           "lga_name": "Townsville City",
           "affected_customers": 22
-        },
-        {
-          "lga_name": "Western Downs Regional",
-          "affected_customers": 2
         }
       ]
     }
   },
-  "legacy_council_snapshot_rows": 2940,
+  "legacy_council_snapshot_rows": 2928,
   "current_energex_records": 8,
-  "current_ergon_records": 29,
+  "current_ergon_records": 26,
   "current_essential_records_fetched": 58,
   "current_energex_records_fetched": 119,
-  "current_ergon_records_fetched": 344,
+  "current_ergon_records_fetched": 343,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 7,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5480,
-  "lga_totals_rows_48h": 6297,
-  "lga_totals_latest_rows": 50,
+  "snapshot_rows_48h": 5502,
+  "lga_totals_rows_48h": 6325,
+  "lga_totals_latest_rows": 48,
   "lga_cumulative_rows": 101,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
