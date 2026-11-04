@@ -1,62 +1,46 @@
 {
-  "generated_utc": "2026-11-04T09:15:49Z",
-  "generated_aest": "2026-11-04T19:15:49+10:00",
+  "generated_utc": "2026-11-04T09:31:09Z",
+  "generated_aest": "2026-11-04T19:31:09+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 16,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 405,
-  "current_records_after_outage_type_filter": 23,
+  "current_records_before_outage_type_filter": 408,
+  "current_records_after_outage_type_filter": 26,
   "current_records_dropped_planned_or_unknown": 382,
-  "provider_fetch_errors": {},
-  "provider_fetch_error_count": 0,
+  "provider_fetch_errors": {
+    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Brisbane City"
+  },
+  "provider_fetch_error_count": 1,
   "council_allocation_status": {
     "Energex": {
-      "status": "provider",
-      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "4 November 2026 7:00 PM",
-      "source_updated_utc": "2026-11-04T09:00:03Z",
-      "published_customers": 8,
-      "event_count": 2
+      "status": "geometry_fallback",
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Brisbane City"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T09:10:00Z",
-      "published_customers": 1191,
+      "source_updated_utc": "2026-11-04T09:30:01Z",
+      "published_customers": 525,
       "event_count": 14
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T09:15:49Z",
+    "snapshot_utc": "2026-11-04T09:31:09Z",
     "energex": {
-      "status": "ok",
-      "fetched_utc": "2026-11-04T09:15:57Z",
-      "scope": "all_councils",
-      "outage_type": "unplanned",
-      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-04T09:00:03Z",
-      "total_customers": 8,
-      "rows": [
-        {
-          "lga_name": "Brisbane City",
-          "affected_customers": 1
-        },
-        {
-          "lga_name": "Scenic Rim Regional",
-          "affected_customers": 7
-        }
-      ]
+      "status": "error",
+      "fetched_utc": "2026-11-04T09:31:18Z",
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Brisbane City"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T09:15:57Z",
+      "fetched_utc": "2026-11-04T09:31:18Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T09:10:00Z",
-      "total_customers": 1191,
+      "source_updated_utc": "2026-11-04T09:30:01Z",
+      "total_customers": 525,
       "rows": [
         {
           "lga_name": "Burdekin Shire",
@@ -96,23 +80,23 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 744
+          "affected_customers": 78
         }
       ]
     }
   },
-  "legacy_council_snapshot_rows": 2557,
+  "legacy_council_snapshot_rows": 2533,
   "current_energex_records": 2,
   "current_ergon_records": 14,
-  "current_essential_records_fetched": 8,
+  "current_essential_records_fetched": 11,
   "current_energex_records_fetched": 111,
   "current_ergon_records_fetched": 286,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 7,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 10,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5701,
-  "lga_totals_rows_48h": 6470,
+  "snapshot_rows_48h": 5693,
+  "lga_totals_rows_48h": 6463,
   "lga_totals_latest_rows": 24,
   "lga_cumulative_rows": 107,
   "outputs": {
