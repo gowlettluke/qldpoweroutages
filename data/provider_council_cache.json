@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T14:16:07Z",
+      "fetched_utc": "2026-11-04T14:31:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 12:00 AM",
-        "source_updated_utc": "2026-11-04T14:00:35Z",
-        "published_customers": 221,
-        "event_count": 5
+        "source_updated": "5 November 2026 12:30 AM",
+        "source_updated_utc": "2026-11-04T14:30:02Z",
+        "published_customers": 416,
+        "event_count": 6
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4574",
             "suburb": "COOLABINE",
             "customersAffected": "4",
-            "restoreTime": "2026-11-05T01:00:00+10:00",
+            "restoreTime": "2026-11-05T03:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -108,7 +108,7 @@
             {
               "lga_name": "Ipswich City",
               "lga_code": null,
-              "affected_customers": 1
+              "affected_customers": 65
             }
           ],
           "details": {
@@ -118,17 +118,24 @@
             "council": "Ipswich City",
             "postcode": "4306",
             "suburb": "HAIGSLEA",
-            "customersAffected": "1",
+            "customersAffected": "65",
             "restoreTime": "2026-11-05T00:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "BUTLERS RD"
+              "BUTLERS RD",
+              "CLAUS RD",
+              "COOPER RD",
+              "LINNINGS RD",
+              "NOBLE RD",
+              "RETSCHLAG RD",
+              "TATHAM RD",
+              "WARREGO HWY"
             ]
           },
-          "affected_customers": 1,
+          "affected_customers": 65,
           "suburb": "HAIGSLEA",
-          "street_name": "BUTLERS RD"
+          "street_name": "BUTLERS RD, CLAUS RD, COOPER RD, LINNINGS RD, NOBLE RD, RETSCHLAG RD, TATHAM RD, WARREGO HWY"
         },
         {
           "event_id": "INCD-993090-g",
@@ -158,15 +165,51 @@
           "affected_customers": 17,
           "suburb": "COOLABINE, KENILWORTH",
           "street_name": "BEACON HILL RD, COOLABINE RD, EUMUNDI-KENILWORTH RD, OBI OBI RD"
+        },
+        {
+          "event_id": "INCD-993109-g",
+          "allocations": [
+            {
+              "lga_name": "Gympie Regional",
+              "lga_code": null,
+              "affected_customers": 131
+            }
+          ],
+          "details": {
+            "event": "INCD-993109-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Gympie Regional",
+            "postcode": "4570",
+            "suburb": "SOUTHSIDE",
+            "customersAffected": "131",
+            "restoreTime": "2026-11-05T02:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ANDREA AVE",
+              "GILES ST",
+              "GRANT ST",
+              "HELEN ST",
+              "KESTEVEN DR",
+              "LODER ST",
+              "POWER RD",
+              "RAMSAY RD",
+              "WITHEY ST"
+            ]
+          },
+          "affected_customers": 131,
+          "suburb": "SOUTHSIDE",
+          "street_name": "ANDREA AVE, GILES ST, GRANT ST, HELEN ST, KESTEVEN DR, LODER ST, POWER RD, RAMSAY RD, WITHEY ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T14:16:11Z",
+      "fetched_utc": "2026-11-04T14:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T14:15:15Z",
+        "source_updated_utc": "2026-11-04T14:30:23Z",
         "published_customers": 799,
         "event_count": 10
       },
