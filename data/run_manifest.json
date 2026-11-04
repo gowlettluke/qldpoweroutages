@@ -1,62 +1,46 @@
 {
-  "generated_utc": "2026-11-04T05:15:51Z",
-  "generated_aest": "2026-11-04T15:15:51+10:00",
+  "generated_utc": "2026-11-04T05:31:20Z",
+  "generated_aest": "2026-11-04T15:31:20+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 18,
+  "current_outage_records": 16,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 427,
-  "current_records_after_outage_type_filter": 24,
-  "current_records_dropped_planned_or_unknown": 403,
-  "provider_fetch_errors": {},
-  "provider_fetch_error_count": 0,
+  "current_records_before_outage_type_filter": 415,
+  "current_records_after_outage_type_filter": 22,
+  "current_records_dropped_planned_or_unknown": 393,
+  "provider_fetch_errors": {
+    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling"
+  },
+  "provider_fetch_error_count": 1,
   "council_allocation_status": {
     "Energex": {
-      "status": "provider",
-      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "4 November 2026 3:00 PM",
-      "source_updated_utc": "2026-11-04T05:00:02Z",
-      "published_customers": 48,
-      "event_count": 3
+      "status": "geometry_fallback",
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T05:10:00Z",
-      "published_customers": 807,
+      "source_updated_utc": "2026-11-04T05:30:10Z",
+      "published_customers": 781,
       "event_count": 15
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T05:15:51Z",
+    "snapshot_utc": "2026-11-04T05:31:20Z",
     "energex": {
-      "status": "ok",
-      "fetched_utc": "2026-11-04T05:16:04Z",
-      "scope": "all_councils",
-      "outage_type": "unplanned",
-      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-04T05:00:02Z",
-      "total_customers": 48,
-      "rows": [
-        {
-          "lga_name": "Brisbane City",
-          "affected_customers": 9
-        },
-        {
-          "lga_name": "Gympie Regional",
-          "affected_customers": 39
-        }
-      ]
+      "status": "error",
+      "fetched_utc": "2026-11-04T05:31:29Z",
+      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex council totals changed during polling"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T05:16:04Z",
+      "fetched_utc": "2026-11-04T05:31:29Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-04T05:10:00Z",
-      "total_customers": 807,
+      "source_updated_utc": "2026-11-04T05:30:10Z",
+      "total_customers": 781,
       "rows": [
         {
           "lga_name": "Burke Shire",
@@ -72,7 +56,7 @@
         },
         {
           "lga_name": "Cloncurry Shire",
-          "affected_customers": 55
+          "affected_customers": 29
         },
         {
           "lga_name": "Cook Shire",
@@ -101,19 +85,19 @@
       ]
     }
   },
-  "legacy_council_snapshot_rows": 2811,
-  "current_energex_records": 3,
+  "legacy_council_snapshot_rows": 2793,
+  "current_energex_records": 1,
   "current_ergon_records": 15,
-  "current_essential_records_fetched": 11,
-  "current_energex_records_fetched": 112,
-  "current_ergon_records_fetched": 303,
+  "current_essential_records_fetched": 10,
+  "current_energex_records_fetched": 111,
+  "current_ergon_records_fetched": 293,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5709,
-  "lga_totals_rows_48h": 6535,
-  "lga_totals_latest_rows": 24,
+  "snapshot_rows_48h": 5707,
+  "lga_totals_rows_48h": 6525,
+  "lga_totals_latest_rows": 22,
   "lga_cumulative_rows": 105,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
