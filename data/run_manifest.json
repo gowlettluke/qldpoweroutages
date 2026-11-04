@@ -1,45 +1,69 @@
 {
-  "generated_utc": "2026-11-04T09:31:09Z",
-  "generated_aest": "2026-11-04T19:31:09+10:00",
+  "generated_utc": "2026-11-04T09:38:24Z",
+  "generated_aest": "2026-11-04T19:38:24+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 16,
+  "current_outage_records": 17,
   "outage_type_filter": "unplanned_only",
   "current_records_before_outage_type_filter": 408,
   "current_records_after_outage_type_filter": 26,
   "current_records_dropped_planned_or_unknown": 382,
-  "provider_fetch_errors": {
-    "Energex": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Brisbane City"
+  "provider_fetch_errors": {},
+  "provider_fetch_error_count": 0,
+  "provider_fetch_warnings": {
+    "Ergon": "Update delayed; using verified provider data from 2026-11-04T09:30:01Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
   },
-  "provider_fetch_error_count": 1,
   "council_allocation_status": {
     "Energex": {
-      "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Brisbane City"
+      "status": "provider",
+      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+      "source_updated": "4 November 2026 7:30 PM",
+      "source_updated_utc": "2026-11-04T09:30:03Z",
+      "published_customers": 111,
+      "event_count": 3,
+      "fetched_utc": "2026-11-04T09:38:31Z"
     },
     "Ergon": {
-      "status": "provider",
+      "status": "provider_cache",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
       "source_updated_utc": "2026-11-04T09:30:01Z",
       "published_customers": 525,
-      "event_count": 14
+      "event_count": 14,
+      "fetched_utc": "2026-11-04T09:35:46Z",
+      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-04T09:31:09Z",
+    "snapshot_utc": "2026-11-04T09:38:24Z",
     "energex": {
-      "status": "error",
-      "fetched_utc": "2026-11-04T09:31:18Z",
-      "error": "Council allocation fallback to map estimates: ValueError: Energex council allocations unavailable: Energex details changed during polling for Brisbane City"
+      "status": "ok",
+      "fetched_utc": "2026-11-04T09:38:31Z",
+      "scope": "all_councils",
+      "outage_type": "unplanned",
+      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+      "source_updated_utc": "2026-11-04T09:30:03Z",
+      "retained": false,
+      "total_customers": 111,
+      "rows": [
+        {
+          "lga_name": "Brisbane City",
+          "affected_customers": 104
+        },
+        {
+          "lga_name": "Scenic Rim Regional",
+          "affected_customers": 7
+        }
+      ]
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-04T09:31:18Z",
+      "fetched_utc": "2026-11-04T09:35:46Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
       "source_updated_utc": "2026-11-04T09:30:01Z",
+      "retained": true,
       "total_customers": 525,
       "rows": [
         {
@@ -85,18 +109,18 @@
       ]
     }
   },
-  "legacy_council_snapshot_rows": 2533,
-  "current_energex_records": 2,
+  "legacy_council_snapshot_rows": 2509,
+  "current_energex_records": 3,
   "current_ergon_records": 14,
-  "current_essential_records_fetched": 11,
+  "current_essential_records_fetched": 10,
   "current_energex_records_fetched": 111,
   "current_ergon_records_fetched": 286,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 10,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 9,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5693,
-  "lga_totals_rows_48h": 6463,
+  "snapshot_rows_48h": 5686,
+  "lga_totals_rows_48h": 6458,
   "lga_totals_latest_rows": 24,
   "lga_cumulative_rows": 107,
   "outputs": {
