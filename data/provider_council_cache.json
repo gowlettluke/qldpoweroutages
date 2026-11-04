@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T22:01:22Z",
+      "fetched_utc": "2026-11-04T22:16:10Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -43,13 +43,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T22:01:25Z",
+      "fetched_utc": "2026-11-04T22:16:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T22:00:31Z",
-        "published_customers": 179,
-        "event_count": 10
+        "source_updated_utc": "2026-11-04T22:15:18Z",
+        "published_customers": 210,
+        "event_count": 11
       },
       "events": [
         {
@@ -142,7 +142,7 @@
             "restoreTime": "05/11/2026 18:00",
             "customersAffected": "30",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 30,
           "suburb": "CLONCURRY",
@@ -238,10 +238,34 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "6",
             "cause": "The loss of supply is due to the operating of protective equipment.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews on route"
           },
           "affected_customers": 6,
           "suburb": "MAXWELTON, NONDA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14206",
+          "allocations": [
+            {
+              "lga_name": "Murweh Shire",
+              "lga_code": null,
+              "affected_customers": 31
+            }
+          ],
+          "details": {
+            "event": "26SW14206",
+            "council": "Murweh Shire Council",
+            "suburb": "CHARLEVILLE, MORVEN",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 08:03",
+            "restoreTime": "05/11/2026 14:00",
+            "customersAffected": "31",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 31,
+          "suburb": "CHARLEVILLE, MORVEN",
           "street_name": ""
         },
         {
