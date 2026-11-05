@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T11:01:14Z",
+      "fetched_utc": "2026-11-05T11:16:08Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 8:45 PM",
-        "source_updated_utc": "2026-11-05T10:45:02Z",
-        "published_customers": 860,
-        "event_count": 11
+        "source_updated": "5 November 2026 9:00 PM",
+        "source_updated_utc": "2026-11-05T11:00:03Z",
+        "published_customers": 863,
+        "event_count": 12
       },
       "events": [
         {
@@ -57,7 +57,7 @@
             "postcode": "4272",
             "suburb": "TAMBORINE MOUNTAIN",
             "customersAffected": "97",
-            "restoreTime": "2026-11-05T21:00:00+10:00",
+            "restoreTime": "2026-11-05T23:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -165,7 +165,7 @@
             "postcode": "4000",
             "suburb": "SPRING HILL",
             "customersAffected": "68",
-            "restoreTime": "2026-11-05T21:30:00+10:00",
+            "restoreTime": "2026-11-05T22:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -198,7 +198,7 @@
             "postcode": "4006",
             "suburb": "FORTITUDE VALLEY",
             "customersAffected": "1",
-            "restoreTime": "2026-11-05T21:00:00+10:00",
+            "restoreTime": "2026-11-05T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -226,7 +226,7 @@
             "postcode": "4152",
             "suburb": "CAMP HILL",
             "customersAffected": "72",
-            "restoreTime": "2026-11-05T21:30:00+10:00",
+            "restoreTime": "2026-11-05T22:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -257,7 +257,7 @@
             "postcode": "4223",
             "suburb": "CURRUMBIN VALLEY",
             "customersAffected": "9",
-            "restoreTime": "2026-11-05T21:30:00+10:00",
+            "restoreTime": "2026-11-05T22:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -285,7 +285,7 @@
             "postcode": "4506",
             "suburb": "MORAYFIELD",
             "customersAffected": "1",
-            "restoreTime": "2026-11-05T21:30:00+10:00",
+            "restoreTime": "2026-11-05T23:30:00+10:00",
             "etrFlag": "RB",
             "etrFlagBool": "Y",
             "streets": [
@@ -361,15 +361,43 @@
           "affected_customers": 100,
           "suburb": "ARANA HILLS, FERNY HILLS",
           "street_name": "CALCA CRES, CAMDEN CT, CARAWATHA AVE, CONLO CRES, CORANG CRES, KEPERRA CT, PATRICKS RD"
+        },
+        {
+          "event_id": "INCD-993491-g",
+          "allocations": [
+            {
+              "lga_name": "Scenic Rim Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "INCD-993491-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Scenic Rim Regional",
+            "postcode": "4285",
+            "suburb": "JOSEPHVILLE",
+            "customersAffected": "3",
+            "restoreTime": "2026-11-05T23:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "TALLY-HO RD"
+            ]
+          },
+          "affected_customers": 3,
+          "suburb": "JOSEPHVILLE",
+          "street_name": "TALLY-HO RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T11:01:17Z",
+      "fetched_utc": "2026-11-05T11:16:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T11:00:00Z",
+        "source_updated_utc": "2026-11-05T11:10:00Z",
         "published_customers": 27,
         "event_count": 4
       },
