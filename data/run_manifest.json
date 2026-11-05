@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-05T05:46:04Z",
-  "generated_aest": "2026-11-05T15:46:04+10:00",
+  "generated_utc": "2026-11-05T06:01:26Z",
+  "generated_aest": "2026-11-05T16:01:26+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 20,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 444,
-  "current_records_after_outage_type_filter": 32,
-  "current_records_dropped_planned_or_unknown": 412,
+  "current_records_before_outage_type_filter": 441,
+  "current_records_after_outage_type_filter": 31,
+  "current_records_dropped_planned_or_unknown": 410,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
@@ -15,33 +15,33 @@
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "5 November 2026 3:30 PM",
-      "source_updated_utc": "2026-11-05T05:30:02Z",
-      "published_customers": 3152,
+      "source_updated": "5 November 2026 4:00 PM",
+      "source_updated_utc": "2026-11-05T06:00:02Z",
+      "published_customers": 1615,
       "event_count": 7,
-      "fetched_utc": "2026-11-05T05:46:12Z"
+      "fetched_utc": "2026-11-05T06:01:34Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-05T05:45:00Z",
-      "published_customers": 1310,
+      "source_updated_utc": "2026-11-05T06:00:01Z",
+      "published_customers": 1351,
       "event_count": 13,
-      "fetched_utc": "2026-11-05T05:46:14Z"
+      "fetched_utc": "2026-11-05T06:01:37Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-05T05:46:04Z",
+    "snapshot_utc": "2026-11-05T06:01:26Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-05T05:46:12Z",
+      "fetched_utc": "2026-11-05T06:01:34Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-05T05:30:02Z",
+      "source_updated_utc": "2026-11-05T06:00:02Z",
       "retained": false,
-      "total_customers": 3152,
+      "total_customers": 1615,
       "rows": [
         {
           "lga_name": "Moreton Bay City",
@@ -49,11 +49,11 @@
         },
         {
           "lga_name": "Noosa Shire",
-          "affected_customers": 144
+          "affected_customers": 87
         },
         {
           "lga_name": "Scenic Rim Regional",
-          "affected_customers": 1645
+          "affected_customers": 165
         },
         {
           "lga_name": "Somerset Regional",
@@ -67,13 +67,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-05T05:46:14Z",
+      "fetched_utc": "2026-11-05T06:01:37Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-05T05:45:00Z",
+      "source_updated_utc": "2026-11-05T06:00:01Z",
       "retained": false,
-      "total_customers": 1310,
+      "total_customers": 1351,
       "rows": [
         {
           "lga_name": "Carpentaria Shire",
@@ -88,10 +88,6 @@
           "affected_customers": 308
         },
         {
-          "lga_name": "Etheridge Shire",
-          "affected_customers": 6
-        },
-        {
           "lga_name": "Flinders Shire",
           "affected_customers": 95
         },
@@ -100,12 +96,16 @@
           "affected_customers": 3
         },
         {
+          "lga_name": "Gladstone Regional",
+          "affected_customers": 24
+        },
+        {
           "lga_name": "Longreach Regional",
           "affected_customers": 4
         },
         {
           "lga_name": "Rockhampton Regional",
-          "affected_customers": 194
+          "affected_customers": 217
         },
         {
           "lga_name": "South Burnett Regional",
@@ -118,18 +118,18 @@
       ]
     }
   },
-  "legacy_council_snapshot_rows": 856,
+  "legacy_council_snapshot_rows": 826,
   "current_energex_records": 7,
   "current_ergon_records": 13,
-  "current_essential_records_fetched": 15,
+  "current_essential_records_fetched": 14,
   "current_energex_records_fetched": 128,
-  "current_ergon_records_fetched": 299,
+  "current_ergon_records_fetched": 297,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 12,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 11,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5228,
-  "lga_totals_rows_48h": 6386,
+  "snapshot_rows_48h": 5218,
+  "lga_totals_rows_48h": 6390,
   "lga_totals_latest_rows": 30,
   "lga_cumulative_rows": 109,
   "outputs": {
