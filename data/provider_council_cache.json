@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T20:16:22Z",
+      "fetched_utc": "2026-11-05T20:31:28Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 6:15 AM",
-        "source_updated_utc": "2026-11-05T20:15:02Z",
+        "source_updated": "6 November 2026 6:30 AM",
+        "source_updated_utc": "2026-11-05T20:30:02Z",
         "published_customers": 188,
         "event_count": 3
       },
@@ -93,7 +93,7 @@
             "postcode": "4171",
             "suburb": "BULIMBA",
             "customersAffected": "60",
-            "restoreTime": "2026-11-06T06:30:00+10:00",
+            "restoreTime": "2026-11-06T07:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -111,13 +111,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T20:16:25Z",
+      "fetched_utc": "2026-11-05T20:31:32Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T20:15:01Z",
-        "published_customers": 124,
-        "event_count": 6
+        "source_updated_utc": "2026-11-05T20:30:01Z",
+        "published_customers": 22,
+        "event_count": 4
       },
       "events": [
         {
@@ -142,54 +142,6 @@
           },
           "affected_customers": 2,
           "suburb": "MOURA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13063",
-          "allocations": [
-            {
-              "lga_name": "Rockhampton Regional",
-              "lga_code": null,
-              "affected_customers": 63
-            }
-          ],
-          "details": {
-            "event": "26CA13063",
-            "council": "Rockhampton Regional Council",
-            "suburb": "ALLENSTOWN, ROCKHAMPTON, ROCKHAMPTON CITY",
-            "type": "UNPLANNED",
-            "startTime": "06/11/2026 01:48",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "63",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 63,
-          "suburb": "ALLENSTOWN, ROCKHAMPTON, ROCKHAMPTON CITY",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN10967",
-          "allocations": [
-            {
-              "lga_name": "Cassowary Coast Regional",
-              "lga_code": null,
-              "affected_customers": 39
-            }
-          ],
-          "details": {
-            "event": "26FN10967",
-            "council": "Cassowary Coast Regional Council",
-            "suburb": "GOONDI",
-            "type": "UNPLANNED",
-            "startTime": "06/11/2026 05:10",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "39",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 39,
-          "suburb": "GOONDI",
           "street_name": ""
         },
         {
@@ -239,7 +191,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "7",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 14,
           "suburb": "QUILPIE, WINDORAH",
