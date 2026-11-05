@@ -2,73 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T04:16:09Z",
+      "fetched_utc": "2026-11-05T04:31:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 2:00 PM",
-        "source_updated_utc": "2026-11-05T04:00:02Z",
-        "published_customers": 1213,
-        "event_count": 5
+        "source_updated": "5 November 2026 2:30 PM",
+        "source_updated_utc": "2026-11-05T04:30:02Z",
+        "published_customers": 1138,
+        "event_count": 3
       },
       "events": [
-        {
-          "event_id": "INCD-993136-g",
-          "allocations": [
-            {
-              "lga_name": "Somerset Regional",
-              "lga_code": null,
-              "affected_customers": 7
-            }
-          ],
-          "details": {
-            "event": "INCD-993136-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Somerset Regional",
-            "postcode": "4306",
-            "suburb": "FAIRNEY VIEW",
-            "customersAffected": "7",
-            "restoreTime": "2026-11-05T15:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BARRETTS RD",
-              "HECKS RD"
-            ]
-          },
-          "affected_customers": 7,
-          "suburb": "FAIRNEY VIEW",
-          "street_name": "BARRETTS RD, HECKS RD"
-        },
-        {
-          "event_id": "INCD-993217-g",
-          "allocations": [
-            {
-              "lga_name": "Noosa Shire",
-              "lga_code": null,
-              "affected_customers": 69
-            }
-          ],
-          "details": {
-            "event": "INCD-993217-g",
-            "cause": "Emergency repairs in-progress",
-            "status": "Emergency Repairs",
-            "council": "Noosa",
-            "postcode": "4573",
-            "suburb": "MARCUS BEACH",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-05T16:00:00+10:00",
-            "etrFlag": "RB",
-            "etrFlagBool": "Y",
-            "streets": [
-              "PERSIMMON DR"
-            ]
-          },
-          "affected_customers": 69,
-          "suburb": "MARCUS BEACH, PEREGIAN BEACH",
-          "street_name": "LORILET ST, LOWRY ST, MIMOSA ST, PALDAO RISE, PERSIMMON DR"
-        },
         {
           "event_id": "INCD-993232-g",
           "allocations": [
@@ -86,7 +29,7 @@
             "postcode": "4343",
             "suburb": "GATTON",
             "customersAffected": "94",
-            "restoreTime": "2026-11-05T14:00:00+10:00",
+            "restoreTime": "2026-11-05T15:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -136,7 +79,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 1033
+              "affected_customers": 1034
             },
             {
               "lga_name": "Brisbane City",
@@ -159,20 +102,20 @@
               "JOHNSON RD"
             ]
           },
-          "affected_customers": 1035,
+          "affected_customers": 1036,
           "suburb": "FORESTDALE, HILLCREST, PARKINSON",
           "street_name": "ABBEY ST, ABBOTT ST, ALLANADALE CT, ARCHERY ST, BLYTH CT, BOYD CT, BROADSWORD CT, CENTRAL CT, CLABON ST, COORA CT, CRANNOCK CT, DEIRWOLD CT, DUNDEE DR, ELLIOTT CT, FEATHER CL, FORESTDALE DR, GISBOURNE ST, HAMPTON CT, HOOD CT, HUNTINGDON ST, HUON PL, JOHNSON RD, KIRKLEES PL, LEARMONTH CT, LINCOLN GREEN DR, LIONHEART ST, MACADAMIA ST, NEWBURN ST, NOTTINGHAM CT, PARINGA CT, PERSEA ST, PEVERELL ST, PLANTAGENET CT, PRIORY PL, RENFREW ST, SARACEN CT, SCRIBNER AVE, SHERIFF ST, SIENKO ST, STAFF PL, TRENT CT, WESTLAND CT, WESTWOOD DR, WINSLOW CT, WOODBINE ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T04:01:27Z",
+      "fetched_utc": "2026-11-05T04:31:23Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T04:00:00Z",
-        "published_customers": 1154,
-        "event_count": 15
+        "source_updated_utc": "2026-11-05T04:30:24Z",
+        "published_customers": 1369,
+        "event_count": 14
       },
       "events": [
         {
@@ -214,37 +157,13 @@
             "suburb": "ALTON DOWNS, DALMA, MORINISH, NINE MILE, PINK LILY, STANWELL",
             "type": "UNPLANNED",
             "startTime": "05/11/2026 08:14",
-            "restoreTime": "05/11/2026 14:30",
+            "restoreTime": "05/11/2026 17:00",
             "customersAffected": "131",
             "cause": "The loss of supply is due to a vehicle accident.",
             "status": "Crews working on-site"
           },
           "affected_customers": 131,
           "suburb": "ALTON DOWNS, DALMA, MORINISH, NINE MILE, PINK LILY, STANWELL",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13006",
-          "allocations": [
-            {
-              "lga_name": "Central Highlands Regional",
-              "lga_code": null,
-              "affected_customers": 23
-            }
-          ],
-          "details": {
-            "event": "26CA13006",
-            "council": "Central Highlands Regional Council",
-            "suburb": "EMERALD, YAMALA",
-            "type": "UNPLANNED",
-            "startTime": "05/11/2026 10:15",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "23",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 23,
-          "suburb": "EMERALD, YAMALA",
           "street_name": ""
         },
         {
@@ -434,7 +353,7 @@
             "council": "Charters Towers Regional Council",
             "suburb": "BALFES CREEK, BASALT, GREENVALE, PENTLAND",
             "type": "UNPLANNED",
-            "startTime": "05/11/2026 07:00",
+            "startTime": "05/11/2026 13:59",
             "restoreTime": "Under Investigation",
             "customersAffected": "39",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
@@ -445,27 +364,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW14206",
+          "event_id": "26NQ13635",
           "allocations": [
             {
-              "lga_name": "Murweh Shire",
+              "lga_name": "Charters Towers Regional",
               "lga_code": null,
-              "affected_customers": 31
+              "affected_customers": 269
             }
           ],
           "details": {
-            "event": "26SW14206",
-            "council": "Murweh Shire Council",
-            "suburb": "CHARLEVILLE, MORVEN",
+            "event": "26NQ13635",
+            "council": "Charters Towers Regional Council",
+            "suburb": "BALFES CREEK, BASALT, GREENVALE, HOMESTEAD, PENTLAND",
             "type": "UNPLANNED",
-            "startTime": "05/11/2026 08:03",
-            "restoreTime": "05/11/2026 15:00",
-            "customersAffected": "31",
+            "startTime": "05/11/2026 14:05",
+            "restoreTime": "05/11/2026 19:00",
+            "customersAffected": "269",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 31,
-          "suburb": "CHARLEVILLE, MORVEN",
+          "affected_customers": 269,
+          "suburb": "BALFES CREEK, BASALT, GREENVALE, HOMESTEAD, PENTLAND",
           "street_name": ""
         },
         {
@@ -507,7 +426,7 @@
             "suburb": "CRAIGNISH, DUNDOWRAN, TOOGOOM",
             "type": "UNPLANNED",
             "startTime": "05/11/2026 13:42",
-            "restoreTime": "05/11/2026 14:30",
+            "restoreTime": "05/11/2026 15:30",
             "customersAffected": "465",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
