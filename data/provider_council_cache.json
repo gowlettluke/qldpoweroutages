@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T06:46:10Z",
+      "fetched_utc": "2026-11-05T07:01:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 4:30 PM",
-        "source_updated_utc": "2026-11-05T06:30:07Z",
-        "published_customers": 2244,
-        "event_count": 8
+        "source_updated": "5 November 2026 4:45 PM",
+        "source_updated_utc": "2026-11-05T06:45:02Z",
+        "published_customers": 1790,
+        "event_count": 12
       },
       "events": [
         {
@@ -18,7 +18,7 @@
             {
               "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
-              "affected_customers": 1292
+              "affected_customers": 635
             }
           ],
           "details": {
@@ -28,7 +28,7 @@
             "council": "Sunshine Coast",
             "postcode": "4556",
             "suburb": "BUDERIM",
-            "customersAffected": "336",
+            "customersAffected": "334",
             "restoreTime": "2026-11-05T18:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
@@ -41,7 +41,6 @@
               "CHELSEA ROSE CL",
               "CRANFIELD DR",
               "DIXON RD",
-              "ELSA WILSON DR",
               "HERMITAGE CT",
               "JACKS LANE",
               "JANELLE CRES",
@@ -57,13 +56,68 @@
               "SERENA CL",
               "SERENELLA CT",
               "SHIRAZ CT",
-              "STANTON CT",
-              "SYD LINGARD DR"
+              "STANTON CT"
             ]
           },
-          "affected_customers": 1292,
+          "affected_customers": 635,
           "suburb": "BUDERIM, MOUNTAIN CREEK",
-          "street_name": "ADORI DR, ADRIAN CL, APPLEGUM PL, ARALUEN CL, BARRACUDA CT, BIRCH ST, BOCCACCIO CT, BRIANNA CL, CABERNET CT, CANDLEBARK CT, CARBEEN CT, CHABLIS CT, CHARDONNAY CT, CHELSEA ROSE CL, COHO CT, CONEY CT, COOMOO CRES, CRANFIELD DR, DIXON RD, EKALA ST, ELSA WILSON DR, ESCOLAR DR, FELICIA CT, FERNLEIGH CRES, FIGTREE CT, FIREWHEEL CT, GAREMA CT, GLENFIELDS BVD, GOURAMI CT, GREENWAY PL, GYMEA CT, HADDYS CL, HAKEA CT, HERMITAGE CT, IRONWOOD CT, JACKS LANE, JANELLE CRES, JAY CL, KARAWATHA DR, KINGFISH CT, KRISTEN CL, LADY MUSGRAVE DR, LEAH CL, LOANG CT, LURNEA CRES, MADISON CL, MAKO CT, MALABAR CT, MARA CL, MEANDERSEA CT, MERLOT CT, MOLAKAI DR, MOONAH CT, MOUNTAIN CL, MOUNTAIN CREEK RD, MUNBILLA CL, MYALL CT, PAPERBARK CT, PARKLEA ESP, PETRALE CT, PINARI CT, POMPANO CT, QUILLBACK CT, RAINSFORD PL, REDBUD CT, RENMANO CT, SAILFISH DR, SATINAY ST, SATINWOOD PL, SAUGER CT, SERENA CL, SERENELLA CT, SHIRAZ CT, STANTON CT, SUNBURST CT, SUNSHINE MWY, SWEETBRUSH PL, SYD LINGARD DR, TEASEL CT, TILAPIA CT, WHITEWOOD CT"
+          "street_name": "ADORI DR, ADRIAN CL, ARALUEN CL, BRIANNA CL, CABERNET CT, CHABLIS CT, CHARDONNAY CT, CHELSEA ROSE CL, COOMOO CRES, CRANFIELD DR, DIXON RD, EKALA ST, GAREMA CT, GYMEA CT, HADDYS CL, HERMITAGE CT, JACKS LANE, JANELLE CRES, JAY CL, KARAWATHA DR, KRISTEN CL, LEAH CL, LOANG CT, LURNEA CRES, MADISON CL, MARA CL, MEANDERSEA CT, MERLOT CT, MOUNTAIN CL, MOUNTAIN CREEK RD, MUNBILLA CL, PINARI CT, RAINSFORD PL, RENMANO CT, SERENA CL, SERENELLA CT, SHIRAZ CT, STANTON CT"
+        },
+        {
+          "event_id": "INCD-993306-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 9
+            }
+          ],
+          "details": {
+            "event": "INCD-993306-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4521",
+            "suburb": "OCEAN VIEW",
+            "customersAffected": "9",
+            "restoreTime": "2026-11-05T17:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "OCEAN VIEW RD"
+            ]
+          },
+          "affected_customers": 9,
+          "suburb": "OCEAN VIEW",
+          "street_name": "OCEAN VIEW RD"
+        },
+        {
+          "event_id": "INCD-993309-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 7
+            }
+          ],
+          "details": {
+            "event": "INCD-993309-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4132",
+            "suburb": "CRESTMEAD",
+            "customersAffected": "7",
+            "restoreTime": "2026-11-05T17:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "MAGNESIUM DR"
+            ]
+          },
+          "affected_customers": 7,
+          "suburb": "CRESTMEAD",
+          "street_name": "MAGNESIUM DR"
         },
         {
           "event_id": "INCD-993321-g",
@@ -308,6 +362,76 @@
           "affected_customers": 122,
           "suburb": "BELLI PARK, GHEERULLA, MOY POCKET",
           "street_name": "BELLI OAK TREE RD, BONNEY LANE, BOYLE RD, CEDAR CREEK RD, EUMUNDI-KENILWORTH RD, MCGINN RD, MURRAY RD, PADDY MELON LANE, STEPHENSON LANE, SUTTON LANE"
+        },
+        {
+          "event_id": "INCD-993387-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 185
+            },
+            {
+              "lga_name": "Somerset Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-993387-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Moreton Bay Regional",
+            "postcode": "4520",
+            "suburb": "MT GLORIOUS",
+            "customersAffected": "185",
+            "restoreTime": "2026-11-05T19:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALEX RD",
+              "ATTUNGA LANE",
+              "BROWNS RD",
+              "FAHEY RD",
+              "HARLAND RD",
+              "JOELLE LANE",
+              "LINDSAY RD",
+              "MT GLORIOUS RD",
+              "RENZO LANE",
+              "TED ST"
+            ]
+          },
+          "affected_customers": 186,
+          "suburb": "DUNDAS, MT GLORIOUS",
+          "street_name": "ALEX RD, ATTUNGA LANE, BROWNS RD, FAHEY RD, HARLAND RD, JOELLE LANE, LINDSAY RD, MT GLORIOUS RD, RENZO LANE, TED ST"
+        },
+        {
+          "event_id": "INCD-993388-g",
+          "allocations": [
+            {
+              "lga_name": "Scenic Rim Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-993388-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Scenic Rim Regional",
+            "postcode": "4285",
+            "suburb": "JOSEPHVILLE",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-05T20:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "TALLY-HO RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "JOSEPHVILLE",
+          "street_name": "TALLY-HO RD"
         }
       ]
     },
