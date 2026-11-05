@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-05T01:31:29Z",
-  "generated_aest": "2026-11-05T11:31:29+10:00",
+  "generated_utc": "2026-11-05T01:45:54Z",
+  "generated_aest": "2026-11-05T11:45:54+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 20,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 536,
+  "current_records_before_outage_type_filter": 535,
   "current_records_after_outage_type_filter": 28,
-  "current_records_dropped_planned_or_unknown": 508,
+  "current_records_dropped_planned_or_unknown": 507,
   "provider_fetch_errors": {
     "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
   },
@@ -21,29 +21,29 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-05T01:30:29Z",
-      "published_customers": 402,
-      "event_count": 15,
-      "fetched_utc": "2026-11-05T01:31:49Z"
+      "source_updated_utc": "2026-11-05T01:45:00Z",
+      "published_customers": 449,
+      "event_count": 16,
+      "fetched_utc": "2026-11-05T01:46:07Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-05T01:31:29Z",
+    "snapshot_utc": "2026-11-05T01:45:54Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-05T01:31:50Z",
+      "fetched_utc": "2026-11-05T01:46:08Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-05T01:31:49Z",
+      "fetched_utc": "2026-11-05T01:46:07Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-05T01:30:29Z",
+      "source_updated_utc": "2026-11-05T01:45:00Z",
       "retained": false,
-      "total_customers": 402,
+      "total_customers": 449,
       "rows": [
         {
           "lga_name": "Carpentaria Shire",
@@ -70,6 +70,10 @@
           "affected_customers": 3
         },
         {
+          "lga_name": "Mackay Regional",
+          "affected_customers": 47
+        },
+        {
           "lga_name": "Murweh Shire",
           "affected_customers": 31
         },
@@ -89,17 +93,17 @@
     }
   },
   "legacy_council_snapshot_rows": 1248,
-  "current_energex_records": 5,
-  "current_ergon_records": 15,
-  "current_essential_records_fetched": 60,
-  "current_energex_records_fetched": 129,
-  "current_ergon_records_fetched": 347,
+  "current_energex_records": 4,
+  "current_ergon_records": 16,
+  "current_essential_records_fetched": 59,
+  "current_energex_records_fetched": 128,
+  "current_ergon_records_fetched": 348,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 8,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5295,
-  "lga_totals_rows_48h": 6257,
+  "snapshot_rows_48h": 5315,
+  "lga_totals_rows_48h": 6285,
   "lga_totals_latest_rows": 28,
   "lga_cumulative_rows": 102,
   "outputs": {
