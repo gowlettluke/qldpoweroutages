@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T03:31:05Z",
+      "fetched_utc": "2026-11-05T03:46:12Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 1:15 PM",
-        "source_updated_utc": "2026-11-05T03:15:02Z",
-        "published_customers": 2766,
-        "event_count": 5
+        "source_updated": "5 November 2026 1:30 PM",
+        "source_updated_utc": "2026-11-05T03:30:03Z",
+        "published_customers": 2753,
+        "event_count": 4
       },
       "events": [
         {
@@ -42,36 +42,6 @@
           "street_name": "BARRETTS RD, HECKS RD"
         },
         {
-          "event_id": "INCD-993170-g",
-          "allocations": [
-            {
-              "lga_name": "Gympie Regional",
-              "lga_code": null,
-              "affected_customers": 13
-            }
-          ],
-          "details": {
-            "event": "INCD-993170-g",
-            "cause": "Powerlines down",
-            "status": "Under Investigation",
-            "council": "Gympie Regional",
-            "postcode": "4570",
-            "suburb": "WILSONS POCKET",
-            "customersAffected": "13",
-            "restoreTime": "2026-11-05T14:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "HARRIS RD",
-              "TURNER RD",
-              "WILSONS POCKET RD"
-            ]
-          },
-          "affected_customers": 13,
-          "suburb": "WILSONS POCKET",
-          "street_name": "HARRIS RD, TURNER RD, WILSONS POCKET RD"
-        },
-        {
           "event_id": "INCD-993217-g",
           "allocations": [
             {
@@ -88,7 +58,7 @@
             "postcode": "4573",
             "suburb": "MARCUS BEACH",
             "customersAffected": "2",
-            "restoreTime": "2026-11-05T14:00:00+10:00",
+            "restoreTime": "2026-11-05T16:00:00+10:00",
             "etrFlag": "RB",
             "etrFlagBool": "Y",
             "streets": [
@@ -116,7 +86,7 @@
             "postcode": "4343",
             "suburb": "GATTON",
             "customersAffected": "94",
-            "restoreTime": "2026-11-05T13:30:00+10:00",
+            "restoreTime": "2026-11-05T14:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -167,12 +137,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T03:31:09Z",
+      "fetched_utc": "2026-11-05T03:46:15Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T03:30:00Z",
-        "published_customers": 597,
+        "source_updated_utc": "2026-11-05T03:45:00Z",
+        "published_customers": 1056,
         "event_count": 14
       },
       "events": [
@@ -367,33 +337,9 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "5",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Work delayed - crews unable to continue"
-          },
-          "affected_customers": 5,
-          "suburb": "HUGHENDEN",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13592",
-          "allocations": [
-            {
-              "lga_name": "Flinders Shire",
-              "lga_code": null,
-              "affected_customers": 6
-            }
-          ],
-          "details": {
-            "event": "26NQ13592",
-            "council": "Flinders Shire Council",
-            "suburb": "HUGHENDEN",
-            "type": "UNPLANNED",
-            "startTime": "04/11/2026 16:52",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "6",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 6,
+          "affected_customers": 5,
           "suburb": "HUGHENDEN",
           "street_name": ""
         },
@@ -491,6 +437,30 @@
           },
           "affected_customers": 32,
           "suburb": "BUXTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10656",
+          "allocations": [
+            {
+              "lga_name": "Fraser Coast Regional",
+              "lga_code": null,
+              "affected_customers": 465
+            }
+          ],
+          "details": {
+            "event": "26WB10656",
+            "council": "Fraser Coast Regional Council",
+            "suburb": "CRAIGNISH, DUNDOWRAN, TOOGOOM",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 13:42",
+            "restoreTime": "05/11/2026 14:30",
+            "customersAffected": "465",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 465,
+          "suburb": "CRAIGNISH, DUNDOWRAN, TOOGOOM",
           "street_name": ""
         },
         {
