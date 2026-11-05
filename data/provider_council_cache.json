@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T23:31:24Z",
+      "fetched_utc": "2026-11-05T23:45:53Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -48,12 +48,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T23:31:27Z",
+      "fetched_utc": "2026-11-05T23:45:56Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T23:30:00Z",
-        "published_customers": 95,
+        "source_updated_utc": "2026-11-05T23:40:00Z",
+        "published_customers": 84,
         "event_count": 8
       },
       "events": [
@@ -99,10 +99,34 @@
             "restoreTime": "06/11/2026 14:00",
             "customersAffected": "5",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 5,
           "suburb": "HUGHENDEN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13695",
+          "allocations": [
+            {
+              "lga_name": "Hinchinbrook Shire",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26NQ13695",
+            "council": "Hinchinbrook Shire Council",
+            "suburb": "VICTORIA PLANTATION",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 09:30",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 3,
+          "suburb": "VICTORIA PLANTATION",
           "street_name": ""
         },
         {
@@ -151,35 +175,6 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14282",
-          "allocations": [
-            {
-              "lga_name": "Barcoo Shire",
-              "lga_code": null,
-              "affected_customers": 7
-            },
-            {
-              "lga_name": "Quilpie Shire",
-              "lga_code": null,
-              "affected_customers": 7
-            }
-          ],
-          "details": {
-            "event": "26SW14282",
-            "council": "Barcoo Shire Council",
-            "suburb": "QUILPIE, WINDORAH",
-            "type": "UNPLANNED",
-            "startTime": "06/11/2026 06:07",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "7",
-            "cause": "The loss of supply is due to damage caused by accidental contact with powerlines by a third party.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 14,
-          "suburb": "QUILPIE, WINDORAH",
           "street_name": ""
         },
         {
