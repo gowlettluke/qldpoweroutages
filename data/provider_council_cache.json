@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T03:16:06Z",
+      "fetched_utc": "2026-11-05T03:31:05Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 1:00 PM",
-        "source_updated_utc": "2026-11-05T03:00:02Z",
-        "published_customers": 89,
-        "event_count": 3
+        "source_updated": "5 November 2026 1:15 PM",
+        "source_updated_utc": "2026-11-05T03:15:02Z",
+        "published_customers": 2766,
+        "event_count": 5
       },
       "events": [
         {
@@ -23,13 +23,13 @@
           ],
           "details": {
             "event": "INCD-993136-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
             "council": "Somerset Regional",
             "postcode": "4306",
             "suburb": "FAIRNEY VIEW",
             "customersAffected": "7",
-            "restoreTime": "2026-11-05T13:30:00+10:00",
+            "restoreTime": "2026-11-05T15:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -98,17 +98,82 @@
           "affected_customers": 69,
           "suburb": "MARCUS BEACH, PEREGIAN BEACH",
           "street_name": "LORILET ST, LOWRY ST, MIMOSA ST, PALDAO RISE, PERSIMMON DR"
+        },
+        {
+          "event_id": "INCD-993232-g",
+          "allocations": [
+            {
+              "lga_name": "Lockyer Valley Regional",
+              "lga_code": null,
+              "affected_customers": 94
+            }
+          ],
+          "details": {
+            "event": "INCD-993232-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Lockyer Valley Regional",
+            "postcode": "4343",
+            "suburb": "GATTON",
+            "customersAffected": "94",
+            "restoreTime": "2026-11-05T13:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "AVIL CT",
+              "FALCONER ST",
+              "HENNESSY ST",
+              "MCKAY ST",
+              "TEW CT"
+            ]
+          },
+          "affected_customers": 94,
+          "suburb": "GATTON",
+          "street_name": "AVIL CT, FALCONER ST, HENNESSY ST, MCKAY ST, TEW CT"
+        },
+        {
+          "event_id": "INCD-993261-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 2581
+            },
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "INCD-993261-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4115",
+            "suburb": "PARKINSON",
+            "customersAffected": "2",
+            "restoreTime": "2026-11-05T15:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "JOHNSON RD"
+            ]
+          },
+          "affected_customers": 2583,
+          "suburb": "BORONIA HEIGHTS, FORESTDALE, HILLCREST, PARK RIDGE, PARKINSON, REGENTS PARK",
+          "street_name": "ABBEY ST, ABBOTT ST, ACORUS CT, AILSA ST, ALGOL ST, ALLANADALE CT, ARCHERY ST, ARONIA CT, ASPEN CT, BARKER ST, BEAUFORTIA CT, BLYTH CT, BOYD CT, BROADSWORD CT, CALLUNA CT, CENTRAL CT, CIANTHUS ST, CLABON ST, CLONMEL ST, COCAS ST, COLISA CRES, COORA CT, COPEINA CT, CRANNOCK CT, CRESTHILL AVE, CYDONIA CT, DEIRWOLD CT, DEVEREAUX RD, DRACON ST, DUNDEE DR, ELLIOTT CT, ELMWOOD CT, EMERALD DR, ETHION DR, FEATHER CL, FEDRICK ST, FENWOOD CL, FLORENCE ST, FOLIUM CT, FORESTDALE DR, FOXHALL ST, FRANKENIA CT, GINGKO CRES, GISBOURNE ST, GORDONIA DR, GRECIAN ST, GREEN RD, GREENVALE CT, GUNNING ST, HALDHAM CRES, HAMPTON CT, HOOD CT, HUNTINGDON ST, HUON PL, HYDE CT, HYDRABAD ST, IBERIS CT, INDICA CRES, ITEA CT, IXORA CT, JOHNSON RD, KINGFIELD CT, KINGVALE ST, KIRKLEES PL, LEARMONTH CT, LETITIA ST, LINCOLN GREEN DR, LIONHEART ST, LITSEA CT, LUCIDA CT, LUTTON CT, MACADAMIA ST, MACTIER DR, MATSON AVE, MT LINDESAY HWY, MYLES CT, NEWBURN ST, NOTTINGHAM CT, OWENS CRES, PARINGA CT, PARKROYAL CRES, PERSEA ST, PEVERELL ST, PHOENIX CT, PLANTAGENET CT, PRIORY PL, RENFREW ST, SARACEN CT, SCRIBNER AVE, SELLWOOD ST, SEYMORE CT, SHERIFF ST, SIENKO ST, STAFF PL, TENIELLE ST, TRENT CT, VANSITTART RD, VERGULDE RD, VIROSA CT, VOLANT ST, WATKINSIA CT, WESTLAND CT, WESTWOOD DR, WINSLOW CT, WOODBINE ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T03:16:09Z",
+      "fetched_utc": "2026-11-05T03:31:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T03:15:19Z",
-        "published_customers": 424,
-        "event_count": 16
+        "source_updated_utc": "2026-11-05T03:30:00Z",
+        "published_customers": 597,
+        "event_count": 14
       },
       "events": [
         {
@@ -117,7 +182,7 @@
             {
               "lga_name": "Central Highlands Regional",
               "lga_code": null,
-              "affected_customers": 20
+              "affected_customers": 26
             }
           ],
           "details": {
@@ -127,11 +192,11 @@
             "type": "UNPLANNED",
             "startTime": "03/11/2026 18:11",
             "restoreTime": "Under Investigation",
-            "customersAffected": "20",
+            "customersAffected": "26",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 20,
+          "affected_customers": 26,
           "suburb": "DINGO",
           "street_name": ""
         },
@@ -177,7 +242,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "23",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 23,
           "suburb": "EMERALD, YAMALA",
@@ -256,27 +321,32 @@
           "street_name": ""
         },
         {
-          "event_id": "26MK7018",
+          "event_id": "26FN10947",
           "allocations": [
             {
-              "lga_name": "Mackay Regional",
+              "lga_name": "Tablelands Regional",
               "lga_code": null,
-              "affected_customers": 47
+              "affected_customers": 223
+            },
+            {
+              "lga_name": "Mareeba Shire",
+              "lga_code": null,
+              "affected_customers": 1
             }
           ],
           "details": {
-            "event": "26MK7018",
-            "council": "Mackay Regional Council",
-            "suburb": "GRASSTREE BEACH",
+            "event": "26FN10947",
+            "council": "Mareeba Shire Council",
+            "suburb": "MOUNT GARNET",
             "type": "UNPLANNED",
-            "startTime": "05/11/2026 11:30",
+            "startTime": "05/11/2026 13:02",
             "restoreTime": "Under Investigation",
-            "customersAffected": "47",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "customersAffected": "1",
+            "cause": "The loss of supply is due to public safety concerns.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 47,
-          "suburb": "GRASSTREE BEACH",
+          "affected_customers": 224,
+          "suburb": "MOUNT GARNET",
           "street_name": ""
         },
         {
@@ -309,22 +379,22 @@
             {
               "lga_name": "Flinders Shire",
               "lga_code": null,
-              "affected_customers": 10
+              "affected_customers": 6
             }
           ],
           "details": {
             "event": "26NQ13592",
             "council": "Flinders Shire Council",
-            "suburb": "HUGHENDEN, STAMFORD",
+            "suburb": "HUGHENDEN",
             "type": "UNPLANNED",
             "startTime": "04/11/2026 16:52",
             "restoreTime": "Under Investigation",
-            "customersAffected": "10",
+            "customersAffected": "6",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 10,
-          "suburb": "HUGHENDEN, STAMFORD",
+          "affected_customers": 6,
+          "suburb": "HUGHENDEN",
           "street_name": ""
         },
         {
@@ -397,54 +467,6 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14242",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26SW14242",
-            "council": "Toowoomba Regional Council",
-            "suburb": "CROWS NEST",
-            "type": "UNPLANNED",
-            "startTime": "05/11/2026 06:30",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 3,
-          "suburb": "CROWS NEST",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14254",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26SW14254",
-            "council": "Toowoomba Regional Council",
-            "suburb": "ELLANGOWAN",
-            "type": "UNPLANNED",
-            "startTime": "05/11/2026 08:01",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 3,
-          "suburb": "ELLANGOWAN",
           "street_name": ""
         },
         {
