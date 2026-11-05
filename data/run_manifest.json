@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-05T06:01:26Z",
-  "generated_aest": "2026-11-05T16:01:26+10:00",
+  "generated_utc": "2026-11-05T06:16:03Z",
+  "generated_aest": "2026-11-05T16:16:03+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 20,
+  "current_outage_records": 18,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 441,
-  "current_records_after_outage_type_filter": 31,
-  "current_records_dropped_planned_or_unknown": 410,
+  "current_records_before_outage_type_filter": 435,
+  "current_records_after_outage_type_filter": 26,
+  "current_records_dropped_planned_or_unknown": 409,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
@@ -19,23 +19,23 @@
       "source_updated_utc": "2026-11-05T06:00:02Z",
       "published_customers": 1615,
       "event_count": 7,
-      "fetched_utc": "2026-11-05T06:01:34Z"
+      "fetched_utc": "2026-11-05T06:16:10Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-05T06:00:01Z",
-      "published_customers": 1351,
-      "event_count": 13,
-      "fetched_utc": "2026-11-05T06:01:37Z"
+      "source_updated_utc": "2026-11-05T06:15:00Z",
+      "published_customers": 1131,
+      "event_count": 11,
+      "fetched_utc": "2026-11-05T06:16:13Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-05T06:01:26Z",
+    "snapshot_utc": "2026-11-05T06:16:03Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-05T06:01:34Z",
+      "fetched_utc": "2026-11-05T06:16:10Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -67,13 +67,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-05T06:01:37Z",
+      "fetched_utc": "2026-11-05T06:16:13Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-05T06:00:01Z",
+      "source_updated_utc": "2026-11-05T06:15:00Z",
       "retained": false,
-      "total_customers": 1351,
+      "total_customers": 1131,
       "rows": [
         {
           "lga_name": "Carpentaria Shire",
@@ -81,7 +81,7 @@
         },
         {
           "lga_name": "Central Highlands Regional",
-          "affected_customers": 41
+          "affected_customers": 15
         },
         {
           "lga_name": "Charters Towers Regional",
@@ -105,7 +105,7 @@
         },
         {
           "lga_name": "Rockhampton Regional",
-          "affected_customers": 217
+          "affected_customers": 23
         },
         {
           "lga_name": "South Burnett Regional",
@@ -118,20 +118,20 @@
       ]
     }
   },
-  "legacy_council_snapshot_rows": 826,
+  "legacy_council_snapshot_rows": 799,
   "current_energex_records": 7,
-  "current_ergon_records": 13,
-  "current_essential_records_fetched": 14,
-  "current_energex_records_fetched": 128,
-  "current_ergon_records_fetched": 297,
+  "current_ergon_records": 11,
+  "current_essential_records_fetched": 11,
+  "current_energex_records_fetched": 127,
+  "current_ergon_records_fetched": 294,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 11,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 8,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5218,
-  "lga_totals_rows_48h": 6390,
+  "snapshot_rows_48h": 5209,
+  "lga_totals_rows_48h": 6398,
   "lga_totals_latest_rows": 30,
-  "lga_cumulative_rows": 109,
+  "lga_cumulative_rows": 107,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
     "outage_snapshots_48h_csv": "data/outage_snapshots_48h.csv",
