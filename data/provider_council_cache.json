@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T00:31:25Z",
+      "fetched_utc": "2026-11-05T02:15:55Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 10:30 AM",
-        "source_updated_utc": "2026-11-05T00:30:02Z",
-        "published_customers": 361,
-        "event_count": 3
+        "source_updated": "5 November 2026 12:00 PM",
+        "source_updated_utc": "2026-11-05T02:00:05Z",
+        "published_customers": 1072,
+        "event_count": 4
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4306",
             "suburb": "FAIRNEY VIEW",
             "customersAffected": "7",
-            "restoreTime": "2026-11-05T11:00:00+10:00",
+            "restoreTime": "2026-11-05T12:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -47,7 +47,7 @@
             {
               "lga_name": "Gympie Regional",
               "lga_code": null,
-              "affected_customers": 241
+              "affected_customers": 13
             }
           ],
           "details": {
@@ -56,62 +56,85 @@
             "status": "Under Investigation",
             "council": "Gympie Regional",
             "postcode": "4570",
-            "suburb": "COONDOO",
-            "customersAffected": "35",
+            "suburb": "WILSONS POCKET",
+            "customersAffected": "13",
             "restoreTime": "2026-11-05T12:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "KIN KIN RD",
-              "MCRAE RD",
-              "PARSONS RD",
-              "STEWART RD"
+              "HARRIS RD",
+              "TURNER RD",
+              "WILSONS POCKET RD"
             ]
           },
-          "affected_customers": 241,
-          "suburb": "COONDOO, GOOMBOORIAN, WILSONS POCKET, WOLVI",
-          "street_name": "COUNTER RD, DAVID WALKER RD, EATON RD, HARRIS RD, HOFF RD, KIN KIN RD, MCRAE RD, NEUSAVALE RD, NEWINGA RD, PARSONS RD, RYAN RD, STEWART RD, TAGIGAN RD, TREEBY RD, TURNER RD, VERNE RD, VINES RD, WILSONS POCKET RD, WOLVI MOUNTAIN RD, YELLOW GULLY RD"
+          "affected_customers": 13,
+          "suburb": "WILSONS POCKET",
+          "street_name": "HARRIS RD, TURNER RD, WILSONS POCKET RD"
         },
         {
-          "event_id": "INCD-993172-g",
+          "event_id": "INCD-993206-g",
           "allocations": [
             {
-              "lga_name": "Brisbane City",
+              "lga_name": "Somerset Regional",
               "lga_code": null,
-              "affected_customers": 113
+              "affected_customers": 983
             }
           ],
           "details": {
-            "event": "INCD-993172-g",
+            "event": "INCD-993206-g",
             "cause": "Under Investigation",
             "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4012",
-            "suburb": "NUNDAH",
-            "customersAffected": "113",
-            "restoreTime": "2026-11-05T11:30:00+10:00",
+            "council": "Somerset Regional",
+            "postcode": "4306",
+            "suburb": "FAIRNEY VIEW",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-05T13:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "COLLINS ST",
-              "GLENHILL ST",
-              "HAMSON TCE",
-              "TOOMBUL TCE",
-              "WESTACOTT ST"
+              "FAIRNEYVIEW FERNVALE RD"
             ]
           },
-          "affected_customers": 113,
-          "suburb": "NUNDAH",
-          "street_name": "COLLINS ST, GLENHILL ST, HAMSON TCE, TOOMBUL TCE, WESTACOTT ST"
+          "affected_customers": 983,
+          "suburb": "FAIRNEY VIEW, FERNVALE",
+          "street_name": "ASPERA CT, ASPERA ST, AZOLLA CT, BANKS CREEK RD, BEESTON DR, BOLINGBROKE ST, BRENTWOOD CT, BRIGHTWOOD PL, BRISBANE VALLEY HWY, BROUFF RD, BUNYA PINE PL, BURNS ST, CARRALLUMA CRES, CASSIA CT, CHRISTELLA CT, CINDERWOOD CT, CLIVE ST, CONDAMINE DR, CRYSTALWOOD CT, CYPRESS CCT, DAINTREE CT, DAVILLEA CT, DELTA CT, ELKHORN ST, FAIRNEYVIEW FERNVALE RD, GRAHAM RD, HONEYWOOD DR, IVY PL, KESWICK CL, KNOX LANE N, LYNDALE PL, MAMAKU ST, MARANOA CT, MARSILEA RD, NARDOO ST, NIDUS CT, OSMUND CT, OVERTON PL, PARKWOOD ST, POOLE RD, POWELLS RD, SCHMIDT RD, SIMPSON ST, STAGHORN CT, STRINGYBARK PL, TITMARSH CCT, TRUSCOT CT, WILLOWOOD PL"
+        },
+        {
+          "event_id": "INCD-993217-g",
+          "allocations": [
+            {
+              "lga_name": "Noosa Shire",
+              "lga_code": null,
+              "affected_customers": 69
+            }
+          ],
+          "details": {
+            "event": "INCD-993217-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Noosa",
+            "postcode": "4573",
+            "suburb": "MARCUS BEACH",
+            "customersAffected": "2",
+            "restoreTime": "2026-11-05T14:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "PERSIMMON DR"
+            ]
+          },
+          "affected_customers": 69,
+          "suburb": "MARCUS BEACH, PEREGIAN BEACH",
+          "street_name": "LORILET ST, LOWRY ST, MIMOSA ST, PALDAO RISE, PERSIMMON DR"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T02:01:41Z",
+      "fetched_utc": "2026-11-05T02:16:00Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T02:00:01Z",
+        "source_updated_utc": "2026-11-05T02:10:19Z",
         "published_customers": 419,
         "event_count": 15
       },
@@ -349,7 +372,7 @@
             "startTime": "04/11/2026 22:09",
             "restoreTime": "Under Investigation",
             "customersAffected": "9",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "cause": "The loss of supply is due to the operating of protective equipment.",
             "status": "Crews on route"
           },
           "affected_customers": 9,
