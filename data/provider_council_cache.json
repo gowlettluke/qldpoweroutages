@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T14:45:57Z",
+      "fetched_utc": "2026-11-05T15:01:31Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 12:30 AM",
-        "source_updated_utc": "2026-11-05T14:30:02Z",
-        "published_customers": 635,
-        "event_count": 4
+        "source_updated": "6 November 2026 1:00 AM",
+        "source_updated_utc": "2026-11-05T15:00:02Z",
+        "published_customers": 10699,
+        "event_count": 3
       },
       "events": [
         {
@@ -46,70 +46,6 @@
           "street_name": "BOYLE RD, EUMUNDI-KENILWORTH RD, MCGINN RD, SUTTON LANE"
         },
         {
-          "event_id": "INCD-993449-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-993449-g",
-            "cause": "Emergency repairs in-progress",
-            "status": "Emergency Repairs",
-            "council": "Moreton Bay Regional",
-            "postcode": "4506",
-            "suburb": "MORAYFIELD",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-06T01:30:00+10:00",
-            "etrFlag": "RB",
-            "etrFlagBool": "Y",
-            "streets": [
-              "GRAHAM RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "MORAYFIELD",
-          "street_name": "GRAHAM RD"
-        },
-        {
-          "event_id": "INCD-993463-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 96
-            }
-          ],
-          "details": {
-            "event": "INCD-993463-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4060",
-            "suburb": "ASHGROVE",
-            "customersAffected": "96",
-            "restoreTime": "2026-11-06T01:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ASHBOURNE ST",
-              "BUXTON ST",
-              "CANBERRA DR",
-              "DOVEDALE CRES",
-              "FRASERS RD",
-              "MATLOCK ST",
-              "MIRRABOOKA RD",
-              "TAY ST",
-              "VENUS ST"
-            ]
-          },
-          "affected_customers": 96,
-          "suburb": "ASHGROVE",
-          "street_name": "ASHBOURNE ST, BUXTON ST, CANBERRA DR, DOVEDALE CRES, FRASERS RD, MATLOCK ST, MIRRABOOKA RD, TAY ST, VENUS ST"
-        },
-        {
           "event_id": "INCD-993517-g",
           "allocations": [
             {
@@ -126,7 +62,7 @@
             "postcode": "4567",
             "suburb": "NOOSA HEADS",
             "customersAffected": "410",
-            "restoreTime": "2026-11-06T02:00:00+10:00",
+            "restoreTime": "2026-11-06T02:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -152,15 +88,43 @@
           "affected_customers": 511,
           "suburb": "NOOSA HEADS, NOOSAVILLE",
           "street_name": "ALLAMBI TCE, ARKANA DR, COOYAR ST, CREEK RD, DELORME ST, KOEL ST, LAKE WEYBA DR, LANYANA WAY, LUNAR CRES, MILPERA RTT, NOOSA DR, PIPI CRES, PITTA PL, SAFARI ST, SARAH CT, SWAN ST, TAINE ST, TANGMERE CT, TOULAMBI ST, WARANA ST, WEYBA ESP, WINBIRRA WAY, WYANDRA ST, WYLAH ST, WYONA DR"
+        },
+        {
+          "event_id": "INCD-993522-g",
+          "allocations": [
+            {
+              "lga_name": "Gold Coast City",
+              "lga_code": null,
+              "affected_customers": 10161
+            }
+          ],
+          "details": {
+            "event": "INCD-993522-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Gold Coast City",
+            "postcode": "4218",
+            "suburb": "BROADBEACH WATERS",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-06T03:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "SUNSHINE BVD"
+            ]
+          },
+          "affected_customers": 10161,
+          "suburb": "BROADBEACH WATERS, BURLEIGH HEADS, BURLEIGH WATERS, MERMAID BEACH, MERMAID WATERS, MIAMI, ROBINA",
+          "street_name": "ADAMS AVE, ALBATROSS AVE, ALBICORE ST, ALBION AVE, ALEC AVE, ALFRED ST, ALLANDALE ENT, ANCHOR CT, ANGIE CT, ANITA AVE, ANTHONY DR, ANZAC PDE, ARCADIA DR, ARTHUR ST, AUSTRALIS CT, AVALON PDE, AVANTI ST, BABBLER CT, BALLANDRA CT, BARBET PL, BARDON AVE, BARRIER REEF DR, BEACONSFIELD DR, BEDARA CT, BERMUDA ST, BIRIGUN ST, BOSTON PL, BOWERBIRD PL, BOWLINE RD, BRADLEY AVE, BRAKES CRES, BRAMPTON CT, BRIBIE CT, BURLEIGH ST, CADENCE AVE, CANBERRA CT, CANTALA AVE, CANTWELL CT, CARIB CT, CASSOWARY DR, CHAINEY AVE, CHAIRLIFT AVE, CHAIRLIFT AVE E, CHRISTINE AVE, CLAYFIELD AVE, COMPASS CT, CORONET CRES, COTTESLOE DR, COURTSIDE DR, CRAFT CT, CRESTMORE CT, CRIMSON CT, CRISP CT, CRUISER CT, DAVID CT, DAWN PDE, DIPPER DR, DOGGETT DR, DOLPHIN AVE, DUET DR, DUNLIN DR, EVANDALE CRES, FAIRSKY AVE, FALCON CT, FIFTH AVE, FIMISTON PL, FIRMIN CT, FRANGIPANI ST, FRASER AVE, GALEEN DR, GALLILEO PL, GARDENIA GR, GAYE PDE, GOLD COAST HWY, GOLDFINCH AVE, GRASSMERE CT, GREAT HALL DR, GREBE PL, HEDGES AVE, HENCHMAN AVE, HERON AVE, HIBISCUS HAVEN, HILDA ST, HILLCREST PDE, HILLSTAR AVE, HIMALAYA ST, HONEYEATER DR, HOOD CT, HYTHE ST, ILLAURA ST, INTREPID DR, JIB CT, JOAN ST, JODIE CT, JOEITH CT, JUNE CT, KALLAY ST, KARABELLA CT, KARBUNYA ST, KARRATHA CT, KAYDEE CT, KEDRON AVE, KELLY AVE, KEPPEL CT, KETCH CT, KEVIN CT, KIERS RD, KINGLET ST, KIRUP ST, KIWI CT, KRATZMANN AVE, LA FRANCE CT, LANCELIN DR, LANDAU CT, LAUNCH RD, LAVARACK RD, LEMANA LANE, LESLEY AVE, LOGAN AVE, LORIKEET LANE, LUTANA AVE, MACAW AVE, MACKAY PL, MAGPIE CT, MANAKIN AVE, MARALINGA AVE, MARDELLA CT, MARINE PDE, MARKERI ST, MAYRA CT, MCILWAIN DR, MESSINES CRES, METRICUP CT, MIAMI SHORE PDE, MONARCH PL, MONTEBELLO CT, MONTREAL CRES, MOUNTAIN VIEW AVE, MURESK CT, NAGEL AVE, NALYA CT, NARROGIN PL, NOBBY PDE, NUNDAH AVE, NUTHATCH ST, OAK AVE, OCEANIC DR, ORIANA DR, ORR PL, OZONE PDE, PACIFIC AVE, PARADISE AVE, PEACOCK PL, PENGUIN PDE, PETER BLONDELL DR, PETER PDE, PETREL AVE, PETUNIA CT, PHEASANT CT, PHILS PL, PILOT CT, PIPIT PDE, PITTA PL, PIZZEY DR, PORT DR, QUAIL CT, QUEST CT, RAVEN PDE, RAWLINNA DR, REDONDO AVE, REDWING CT, RIO VISTA BVD, RIVIERA RD, ROPE CT, RUMRUNNER ST, RUSSELL CT, SALACIA AVE, SALAMANDER CT, SANTA MONICA RD, SCHUSTER AVE, SCOTT PL, SCOULLER PL, SEABEACH AVE, SEAGULL AVE, SEAHAWK CRES, SEASHELL AVE, SEASIDE AVE, SEQUANA AVE, SERIEMA ST, SHEARWATER ST, SHRIKE CT, SIXTH AVE, SNIPE ST, SONIA ST, SOUTHERLY ST, SOVEREIGN DR, SPARROW PL, SPLICE ST, SPOONBILL CT, SUNBIRD ST, SUNDOWNER CT, SUNSHINE BVD, SUNSHINE PDE, SURF ST, TARTAN CT, TATTLER WAY, TEAL CT, TEQUILA CT, THE ESPLANADE, THORNBILL PL, TIMANA AVE, TOOMBUL AVE, TULIP ST, TURTLE ST, VANCOUVER DR, VIOLET CT, WAGIN CT, WANDERER AVE, WANNEROO CT, WAVE ST, WAYFARER AVE, WEATHERLY AVE, WHITEHEAD DR, WILLIS CT, WINCH CT, YALGOO CT, YERECOIN PL, YERINGBA ST, YVONNE CT"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T14:46:01Z",
+      "fetched_utc": "2026-11-05T15:01:34Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T14:40:00Z",
+        "source_updated_utc": "2026-11-05T15:00:01Z",
         "published_customers": 8,
         "event_count": 3
       },
