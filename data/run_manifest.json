@@ -1,50 +1,47 @@
 {
-  "generated_utc": "2026-11-05T07:01:05Z",
-  "generated_aest": "2026-11-05T17:01:05+10:00",
+  "generated_utc": "2026-11-05T07:16:09Z",
+  "generated_aest": "2026-11-05T17:16:09+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 22,
+  "current_outage_records": 20,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 432,
-  "current_records_after_outage_type_filter": 29,
-  "current_records_dropped_planned_or_unknown": 403,
+  "current_records_before_outage_type_filter": 429,
+  "current_records_after_outage_type_filter": 27,
+  "current_records_dropped_planned_or_unknown": 402,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {
-    "Ergon": "Update delayed; using verified provider data from 2026-11-05T06:45:00Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "5 November 2026 4:45 PM",
-      "source_updated_utc": "2026-11-05T06:45:02Z",
-      "published_customers": 1790,
-      "event_count": 12,
-      "fetched_utc": "2026-11-05T07:01:13Z"
+      "source_updated": "5 November 2026 5:15 PM",
+      "source_updated_utc": "2026-11-05T07:15:06Z",
+      "published_customers": 1701,
+      "event_count": 9,
+      "fetched_utc": "2026-11-05T07:16:19Z"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-05T06:45:00Z",
-      "published_customers": 1014,
-      "event_count": 10,
-      "fetched_utc": "2026-11-05T06:46:14Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "source_updated_utc": "2026-11-05T07:15:15Z",
+      "published_customers": 1058,
+      "event_count": 11,
+      "fetched_utc": "2026-11-05T07:16:23Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-05T07:01:05Z",
+    "snapshot_utc": "2026-11-05T07:16:09Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-05T07:01:13Z",
+      "fetched_utc": "2026-11-05T07:16:19Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-05T06:45:02Z",
+      "source_updated_utc": "2026-11-05T07:15:06Z",
       "retained": false,
-      "total_customers": 1790,
+      "total_customers": 1701,
       "rows": [
         {
           "lga_name": "Gympie Regional",
@@ -59,16 +56,12 @@
           "affected_customers": 255
         },
         {
-          "lga_name": "Noosa Shire",
-          "affected_customers": 87
-        },
-        {
           "lga_name": "Scenic Rim Regional",
-          "affected_customers": 166
+          "affected_customers": 165
         },
         {
           "lga_name": "Somerset Regional",
-          "affected_customers": 2
+          "affected_customers": 1
         },
         {
           "lga_name": "Sunshine Coast Regional",
@@ -78,18 +71,14 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-05T06:46:14Z",
+      "fetched_utc": "2026-11-05T07:16:23Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-05T06:45:00Z",
-      "retained": true,
-      "total_customers": 1014,
+      "source_updated_utc": "2026-11-05T07:15:15Z",
+      "retained": false,
+      "total_customers": 1058,
       "rows": [
-        {
-          "lga_name": "Carpentaria Shire",
-          "affected_customers": 2
-        },
         {
           "lga_name": "Central Highlands Regional",
           "affected_customers": 2
@@ -97,6 +86,10 @@
         {
           "lga_name": "Charters Towers Regional",
           "affected_customers": 269
+        },
+        {
+          "lga_name": "Etheridge Shire",
+          "affected_customers": 19
         },
         {
           "lga_name": "Flinders Shire",
@@ -112,11 +105,11 @@
         },
         {
           "lga_name": "Mackay Regional",
-          "affected_customers": 15
+          "affected_customers": 2
         },
         {
           "lga_name": "Rockhampton Regional",
-          "affected_customers": 23
+          "affected_customers": 63
         },
         {
           "lga_name": "South Burnett Regional",
@@ -129,20 +122,20 @@
       ]
     }
   },
-  "legacy_council_snapshot_rows": 742,
-  "current_energex_records": 12,
-  "current_ergon_records": 10,
+  "legacy_council_snapshot_rows": 682,
+  "current_energex_records": 9,
+  "current_ergon_records": 11,
   "current_essential_records_fetched": 9,
-  "current_energex_records_fetched": 132,
+  "current_energex_records_fetched": 131,
   "current_ergon_records_fetched": 288,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 7,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5209,
-  "lga_totals_rows_48h": 6454,
-  "lga_totals_latest_rows": 34,
-  "lga_cumulative_rows": 107,
+  "snapshot_rows_48h": 5169,
+  "lga_totals_rows_48h": 6432,
+  "lga_totals_latest_rows": 32,
+  "lga_cumulative_rows": 105,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
     "outage_snapshots_48h_csv": "data/outage_snapshots_48h.csv",
