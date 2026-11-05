@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T09:46:03Z",
+      "fetched_utc": "2026-11-05T10:01:29Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 7:30 PM",
-        "source_updated_utc": "2026-11-05T09:30:02Z",
-        "published_customers": 1400,
+        "source_updated": "5 November 2026 8:00 PM",
+        "source_updated_utc": "2026-11-05T10:00:03Z",
+        "published_customers": 1035,
         "event_count": 12
       },
       "events": [
@@ -72,35 +72,6 @@
           "affected_customers": 97,
           "suburb": "TAMBORINE MOUNTAIN",
           "street_name": "ALPINE TCE, BARTLE RD, FERN ST, MAIN WESTERN RD, THE SHELF RD, WHITE RD"
-        },
-        {
-          "event_id": "INCD-993369-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 66
-            }
-          ],
-          "details": {
-            "event": "INCD-993369-g",
-            "cause": "Trees on powerlines",
-            "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4285",
-            "suburb": "CEDAR GROVE",
-            "customersAffected": "17",
-            "restoreTime": "2026-11-05T21:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "IRWIN RD",
-              "PINDARI RD"
-            ]
-          },
-          "affected_customers": 66,
-          "suburb": "CEDAR GROVE, WOODHILL",
-          "street_name": "BRUMBY DR, IRWIN RD, PINDARI RD"
         },
         {
           "event_id": "INCD-993371-g",
@@ -194,7 +165,7 @@
             "postcode": "4019",
             "suburb": "MARGATE",
             "customersAffected": "114",
-            "restoreTime": "2026-11-05T19:30:00+10:00",
+            "restoreTime": "2026-11-05T20:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -215,7 +186,7 @@
             {
               "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 461
+              "affected_customers": 67
             }
           ],
           "details": {
@@ -225,18 +196,17 @@
             "council": "Brisbane City",
             "postcode": "4006",
             "suburb": "BOWEN HILLS",
-            "customersAffected": "3",
+            "customersAffected": "1",
             "restoreTime": "2026-11-05T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "EDMONDSTONE RD",
-              "JORDAN TCE"
+              "EDMONDSTONE RD"
             ]
           },
-          "affected_customers": 461,
+          "affected_customers": 67,
           "suburb": "BOWEN HILLS, NEWSTEAD",
-          "street_name": "AUSTIN ST, BREAKFAST CREEK RD, EDMONDSTONE RD, EDMUND ST, EVELYN ST, HALFORD ST, JORDAN TCE, MAUD ST, NEWSTEAD AVE, NEWSTEAD TCE, ROSS ST"
+          "street_name": "BREAKFAST CREEK RD, EDMONDSTONE RD, EDMUND ST, ROSS ST"
         },
         {
           "event_id": "INCD-993415-g",
@@ -255,7 +225,7 @@
             "postcode": "4000",
             "suburb": "SPRING HILL",
             "customersAffected": "68",
-            "restoreTime": "2026-11-05T19:30:00+10:00",
+            "restoreTime": "2026-11-05T21:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -288,7 +258,7 @@
             "postcode": "4006",
             "suburb": "FORTITUDE VALLEY",
             "customersAffected": "1",
-            "restoreTime": "2026-11-05T19:30:00+10:00",
+            "restoreTime": "2026-11-05T20:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -316,7 +286,7 @@
             "postcode": "4152",
             "suburb": "CAMP HILL",
             "customersAffected": "72",
-            "restoreTime": "2026-11-05T20:30:00+10:00",
+            "restoreTime": "2026-11-05T21:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -347,7 +317,7 @@
             "postcode": "4223",
             "suburb": "CURRUMBIN VALLEY",
             "customersAffected": "9",
-            "restoreTime": "2026-11-05T20:30:00+10:00",
+            "restoreTime": "2026-11-05T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -385,15 +355,51 @@
           "affected_customers": 1,
           "suburb": "MORAYFIELD",
           "street_name": "GRAHAM RD"
+        },
+        {
+          "event_id": "INCD-993463-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 95
+            }
+          ],
+          "details": {
+            "event": "INCD-993463-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4060",
+            "suburb": "ASHGROVE",
+            "customersAffected": "95",
+            "restoreTime": "2026-11-05T23:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ASHBOURNE ST",
+              "BUXTON ST",
+              "CANBERRA DR",
+              "DOVEDALE CRES",
+              "FRASERS RD",
+              "MATLOCK ST",
+              "MIRRABOOKA RD",
+              "TAY ST",
+              "VENUS ST"
+            ]
+          },
+          "affected_customers": 95,
+          "suburb": "ASHGROVE",
+          "street_name": "ASHBOURNE ST, BUXTON ST, CANBERRA DR, DOVEDALE CRES, FRASERS RD, MATLOCK ST, MIRRABOOKA RD, TAY ST, VENUS ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T09:46:07Z",
+      "fetched_utc": "2026-11-05T10:01:32Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T09:40:00Z",
+        "source_updated_utc": "2026-11-05T09:55:03Z",
         "published_customers": 27,
         "event_count": 4
       },
@@ -440,7 +446,7 @@
             "restoreTime": "05/11/2026 23:00",
             "customersAffected": "19",
             "cause": "The loss of supply is due to the operating of protective equipment.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 19,
           "suburb": "EINASLEIGH, KIDSTON",
