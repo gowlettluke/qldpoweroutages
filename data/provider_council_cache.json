@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T10:46:12Z",
+      "fetched_utc": "2026-11-05T11:01:14Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 8:30 PM",
-        "source_updated_utc": "2026-11-05T10:30:02Z",
-        "published_customers": 855,
-        "event_count": 10
+        "source_updated": "5 November 2026 8:45 PM",
+        "source_updated_utc": "2026-11-05T10:45:02Z",
+        "published_customers": 860,
+        "event_count": 11
       },
       "events": [
         {
@@ -79,7 +79,7 @@
             {
               "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
-              "affected_customers": 120
+              "affected_customers": 25
             },
             {
               "lga_name": "Gympie Regional",
@@ -102,9 +102,9 @@
               "SUTTON LANE"
             ]
           },
-          "affected_customers": 122,
+          "affected_customers": 27,
           "suburb": "BELLI PARK, GHEERULLA, MOY POCKET",
-          "street_name": "BELLI OAK TREE RD, BONNEY LANE, BOYLE RD, CEDAR CREEK RD, EUMUNDI-KENILWORTH RD, MCGINN RD, MURRAY RD, PADDY MELON LANE, STEPHENSON LANE, SUTTON LANE"
+          "street_name": "BOYLE RD, EUMUNDI-KENILWORTH RD, MCGINN RD, SUTTON LANE"
         },
         {
           "event_id": "INCD-993387-g",
@@ -165,7 +165,7 @@
             "postcode": "4000",
             "suburb": "SPRING HILL",
             "customersAffected": "68",
-            "restoreTime": "2026-11-05T21:00:00+10:00",
+            "restoreTime": "2026-11-05T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -331,15 +331,45 @@
           "affected_customers": 96,
           "suburb": "ASHGROVE",
           "street_name": "ASHBOURNE ST, BUXTON ST, CANBERRA DR, DOVEDALE CRES, FRASERS RD, MATLOCK ST, MIRRABOOKA RD, TAY ST, VENUS ST"
+        },
+        {
+          "event_id": "INCD-993489-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 100
+            }
+          ],
+          "details": {
+            "event": "INCD-993489-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4054",
+            "suburb": "ARANA HILLS",
+            "customersAffected": "38",
+            "restoreTime": "2026-11-05T22:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "CAMDEN CT",
+              "KEPERRA CT",
+              "PATRICKS RD"
+            ]
+          },
+          "affected_customers": 100,
+          "suburb": "ARANA HILLS, FERNY HILLS",
+          "street_name": "CALCA CRES, CAMDEN CT, CARAWATHA AVE, CONLO CRES, CORANG CRES, KEPERRA CT, PATRICKS RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T10:46:16Z",
+      "fetched_utc": "2026-11-05T11:01:17Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T10:45:00Z",
+        "source_updated_utc": "2026-11-05T11:00:00Z",
         "published_customers": 27,
         "event_count": 4
       },
