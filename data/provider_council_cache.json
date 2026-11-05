@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T04:46:07Z",
+      "fetched_utc": "2026-11-05T05:01:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 2:30 PM",
-        "source_updated_utc": "2026-11-05T04:30:02Z",
-        "published_customers": 1138,
+        "source_updated": "5 November 2026 2:45 PM",
+        "source_updated_utc": "2026-11-05T04:45:02Z",
+        "published_customers": 1394,
         "event_count": 3
       },
       "events": [
@@ -29,7 +29,7 @@
             "postcode": "4343",
             "suburb": "GATTON",
             "customersAffected": "94",
-            "restoreTime": "2026-11-05T15:00:00+10:00",
+            "restoreTime": "2026-11-05T15:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -74,48 +74,68 @@
           "street_name": "LINDEMAN RD, OLD GYMPIE RD"
         },
         {
-          "event_id": "INCD-993261-g",
+          "event_id": "INCD-993305-g",
           "allocations": [
             {
-              "lga_name": "Logan City",
+              "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
-              "affected_customers": 1034
-            },
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 2
+              "affected_customers": 1292
             }
           ],
           "details": {
-            "event": "INCD-993261-g",
+            "event": "INCD-993305-g",
             "cause": "Under Investigation",
             "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4115",
-            "suburb": "PARKINSON",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-05T15:30:00+10:00",
+            "council": "Sunshine Coast",
+            "postcode": "4556",
+            "suburb": "BUDERIM",
+            "customersAffected": "336",
+            "restoreTime": "2026-11-05T17:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "JOHNSON RD"
+              "ADRIAN CL",
+              "BRIANNA CL",
+              "CABERNET CT",
+              "CHABLIS CT",
+              "CHARDONNAY CT",
+              "CHELSEA ROSE CL",
+              "CRANFIELD DR",
+              "DIXON RD",
+              "ELSA WILSON DR",
+              "HERMITAGE CT",
+              "JACKS LANE",
+              "JANELLE CRES",
+              "JAY CL",
+              "KARAWATHA DR",
+              "KRISTEN CL",
+              "LEAH CL",
+              "MADISON CL",
+              "MERLOT CT",
+              "MOUNTAIN CREEK RD",
+              "RAINSFORD PL",
+              "RENMANO CT",
+              "SERENA CL",
+              "SERENELLA CT",
+              "SHIRAZ CT",
+              "STANTON CT",
+              "SYD LINGARD DR"
             ]
           },
-          "affected_customers": 1036,
-          "suburb": "FORESTDALE, HILLCREST, PARKINSON",
-          "street_name": "ABBEY ST, ABBOTT ST, ALLANADALE CT, ARCHERY ST, BLYTH CT, BOYD CT, BROADSWORD CT, CENTRAL CT, CLABON ST, COORA CT, CRANNOCK CT, DEIRWOLD CT, DUNDEE DR, ELLIOTT CT, FEATHER CL, FORESTDALE DR, GISBOURNE ST, HAMPTON CT, HOOD CT, HUNTINGDON ST, HUON PL, JOHNSON RD, KIRKLEES PL, LEARMONTH CT, LINCOLN GREEN DR, LIONHEART ST, MACADAMIA ST, NEWBURN ST, NOTTINGHAM CT, PARINGA CT, PERSEA ST, PEVERELL ST, PLANTAGENET CT, PRIORY PL, RENFREW ST, SARACEN CT, SCRIBNER AVE, SHERIFF ST, SIENKO ST, STAFF PL, TRENT CT, WESTLAND CT, WESTWOOD DR, WINSLOW CT, WOODBINE ST"
+          "affected_customers": 1292,
+          "suburb": "BUDERIM, MOUNTAIN CREEK",
+          "street_name": "ADORI DR, ADRIAN CL, APPLEGUM PL, ARALUEN CL, BARRACUDA CT, BIRCH ST, BOCCACCIO CT, BRIANNA CL, CABERNET CT, CANDLEBARK CT, CARBEEN CT, CHABLIS CT, CHARDONNAY CT, CHELSEA ROSE CL, COHO CT, CONEY CT, COOMOO CRES, CRANFIELD DR, DIXON RD, EKALA ST, ELSA WILSON DR, ESCOLAR DR, FELICIA CT, FERNLEIGH CRES, FIGTREE CT, FIREWHEEL CT, GAREMA CT, GLENFIELDS BVD, GOURAMI CT, GREENWAY PL, GYMEA CT, HADDYS CL, HAKEA CT, HERMITAGE CT, IRONWOOD CT, JACKS LANE, JANELLE CRES, JAY CL, KARAWATHA DR, KINGFISH CT, KRISTEN CL, LADY MUSGRAVE DR, LEAH CL, LOANG CT, LURNEA CRES, MADISON CL, MAKO CT, MALABAR CT, MARA CL, MEANDERSEA CT, MERLOT CT, MOLAKAI DR, MOONAH CT, MOUNTAIN CL, MOUNTAIN CREEK RD, MUNBILLA CL, MYALL CT, PAPERBARK CT, PARKLEA ESP, PETRALE CT, PINARI CT, POMPANO CT, QUILLBACK CT, RAINSFORD PL, REDBUD CT, RENMANO CT, SAILFISH DR, SATINAY ST, SATINWOOD PL, SAUGER CT, SERENA CL, SERENELLA CT, SHIRAZ CT, STANTON CT, SUNBURST CT, SUNSHINE MWY, SWEETBRUSH PL, SYD LINGARD DR, TEASEL CT, TILAPIA CT, WHITEWOOD CT"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T04:46:11Z",
+      "fetched_utc": "2026-11-05T05:01:16Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T04:45:00Z",
-        "published_customers": 904,
-        "event_count": 13
+        "source_updated_utc": "2026-11-05T05:00:25Z",
+        "published_customers": 680,
+        "event_count": 12
       },
       "events": [
         {
@@ -239,35 +259,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26FN10947",
-          "allocations": [
-            {
-              "lga_name": "Tablelands Regional",
-              "lga_code": null,
-              "affected_customers": 223
-            },
-            {
-              "lga_name": "Mareeba Shire",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "26FN10947",
-            "council": "Mareeba Shire Council",
-            "suburb": "MOUNT GARNET",
-            "type": "UNPLANNED",
-            "startTime": "05/11/2026 13:02",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "1",
-            "cause": "The loss of supply is due to public safety concerns.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 224,
-          "suburb": "MOUNT GARNET",
-          "street_name": ""
-        },
-        {
           "event_id": "26FN10950",
           "allocations": [
             {
@@ -282,7 +273,7 @@
             "suburb": "EARLVILLE",
             "type": "UNPLANNED",
             "startTime": "05/11/2026 13:50",
-            "restoreTime": "05/11/2026 14:50",
+            "restoreTime": "05/11/2026 16:00",
             "customersAffected": "91",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
