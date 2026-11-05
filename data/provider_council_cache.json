@@ -2,48 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T05:16:04Z",
+      "fetched_utc": "2026-11-05T05:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 3:00 PM",
-        "source_updated_utc": "2026-11-05T05:00:02Z",
-        "published_customers": 1396,
-        "event_count": 5
+        "source_updated": "5 November 2026 3:30 PM",
+        "source_updated_utc": "2026-11-05T05:30:02Z",
+        "published_customers": 3152,
+        "event_count": 7
       },
       "events": [
-        {
-          "event_id": "INCD-993232-g",
-          "allocations": [
-            {
-              "lga_name": "Lockyer Valley Regional",
-              "lga_code": null,
-              "affected_customers": 94
-            }
-          ],
-          "details": {
-            "event": "INCD-993232-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Lockyer Valley Regional",
-            "postcode": "4343",
-            "suburb": "GATTON",
-            "customersAffected": "94",
-            "restoreTime": "2026-11-05T15:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "AVIL CT",
-              "FALCONER ST",
-              "HENNESSY ST",
-              "MCKAY ST",
-              "TEW CT"
-            ]
-          },
-          "affected_customers": 94,
-          "suburb": "GATTON",
-          "street_name": "AVIL CT, FALCONER ST, HENNESSY ST, MCKAY ST, TEW CT"
-        },
         {
           "event_id": "INCD-993251-g",
           "allocations": [
@@ -181,17 +149,181 @@
           "affected_customers": 1,
           "suburb": "MOOMBRA",
           "street_name": "STELEY RD"
+        },
+        {
+          "event_id": "INCD-993335-g",
+          "allocations": [
+            {
+              "lga_name": "Noosa Shire",
+              "lga_code": null,
+              "affected_customers": 144
+            }
+          ],
+          "details": {
+            "event": "INCD-993335-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Noosa",
+            "postcode": "4563",
+            "suburb": "COOROY",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-05T18:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "LAUREL LANE"
+            ]
+          },
+          "affected_customers": 144,
+          "suburb": "COOROY, LAKE MACDONALD, TINBEERWAH",
+          "street_name": "CLEARVIEW DR, COLLWOOD RD, COOKS RD, COOROY NOOSA RD, COVEYS RD, FIGBIRD CT, GUMBOIL RD, HAMERSLEY LANE, HILLTOP CT, LAUREL LANE, MCINTYRE LANE, OLD TEWANTIN RD, SIVYERS RD, WORBA LANE"
+        },
+        {
+          "event_id": "INCD-993341-g",
+          "allocations": [
+            {
+              "lga_name": "Scenic Rim Regional",
+              "lga_code": null,
+              "affected_customers": 1645
+            }
+          ],
+          "details": {
+            "event": "INCD-993341-g",
+            "cause": "Trees on powerlines",
+            "status": "Emergency Repairs",
+            "council": "Scenic Rim Regional",
+            "postcode": "4272",
+            "suburb": "TAMBORINE MOUNTAIN",
+            "customersAffected": "1645",
+            "restoreTime": "2026-11-05T18:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALPINE TCE",
+              "ARECA CT",
+              "ARENGA DR",
+              "AVENS CT",
+              "BARTLE RD",
+              "BEECHMONT AVE",
+              "BENOWA ST",
+              "BISHOPP CT",
+              "CADE AVE",
+              "CAREY PDE",
+              "CARYOTA CT",
+              "CAYAMBE CT",
+              "CENTRAL AVE",
+              "CLIFF RD",
+              "CLIFF WAY",
+              "COCOS ST",
+              "CONTOUR RD",
+              "CORYPHA CT",
+              "CURTIS RD",
+              "DEMAVEND DR",
+              "DRISCOLL LANE",
+              "EAGLE HEIGHTS RD",
+              "EAGLES CL",
+              "EAGLES RETREAT PL",
+              "EDEN CT",
+              "ELBERT CT",
+              "EREBUS CT",
+              "ESME ST",
+              "FERN ST",
+              "FORAKER DR",
+              "FORSYTHIA DR",
+              "GOLFERS CRES",
+              "HARTLEY RD",
+              "HERMON RD",
+              "HOLT RD",
+              "HUYBER LANE",
+              "JURA CT",
+              "JUSTIN AVE",
+              "KAILAS CT",
+              "KALMIA CT",
+              "KAMET CT",
+              "KINABALU DR",
+              "LAHEY RD",
+              "LICUALA DR",
+              "LONG RD",
+              "LUCANIA CT",
+              "MACDONNELL RD",
+              "MAGNETIC DR",
+              "MAIN WESTERN RD",
+              "MAKALU CT",
+              "MORETON BAY AVE",
+              "NIPA CT",
+              "NORMANDIE CT",
+              "ORCHIS DR",
+              "PALM GROVE AVE",
+              "PARADISE DR",
+              "RAINER DR",
+              "ROSLYN CT",
+              "SAGUARO CT",
+              "SAINT JAMES CT",
+              "SALVIA DR",
+              "SCHOOL RD",
+              "SHASTA DR",
+              "SHORT ST",
+              "SOUTHPORT AVE",
+              "ST BERNARD ST",
+              "STRADBROKE AVE",
+              "TAAL CT",
+              "TABOR DR",
+              "TETON CT",
+              "THE SHELF RD",
+              "TOLIMA DR",
+              "TWEED HEADS AVE",
+              "WHITE RD",
+              "WITHERBY CRES",
+              "WONGAWALLAN RD"
+            ]
+          },
+          "affected_customers": 1645,
+          "suburb": "TAMBORINE MOUNTAIN",
+          "street_name": "ALPINE TCE, ARECA CT, ARENGA DR, AVENS CT, BARTLE RD, BEECHMONT AVE, BENOWA ST, BISHOPP CT, CADE AVE, CAREY PDE, CARYOTA CT, CAYAMBE CT, CENTRAL AVE, CLIFF RD, CLIFF WAY, COCOS ST, CONTOUR RD, CORYPHA CT, CURTIS RD, DEMAVEND DR, DRISCOLL LANE, EAGLE HEIGHTS RD, EAGLES CL, EAGLES RETREAT PL, EDEN CT, ELBERT CT, EREBUS CT, ESME ST, FERN ST, FORAKER DR, FORSYTHIA DR, GOLFERS CRES, HARTLEY RD, HERMON RD, HOLT RD, HUYBER LANE, JURA CT, JUSTIN AVE, KAILAS CT, KALMIA CT, KAMET CT, KINABALU DR, LAHEY RD, LICUALA DR, LONG RD, LUCANIA CT, MACDONNELL RD, MAGNETIC DR, MAIN WESTERN RD, MAKALU CT, MORETON BAY AVE, NIPA CT, NORMANDIE CT, ORCHIS DR, PALM GROVE AVE, PARADISE DR, RAINER DR, ROSLYN CT, SAGUARO CT, SAINT JAMES CT, SALVIA DR, SCHOOL RD, SHASTA DR, SHORT ST, SOUTHPORT AVE, ST BERNARD ST, STRADBROKE AVE, TAAL CT, TABOR DR, TETON CT, THE SHELF RD, TOLIMA DR, TWEED HEADS AVE, WHITE RD, WITHERBY CRES, WONGAWALLAN RD"
+        },
+        {
+          "event_id": "INCD-993348-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 61
+            }
+          ],
+          "details": {
+            "event": "INCD-993348-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4506",
+            "suburb": "MORAYFIELD",
+            "customersAffected": "61",
+            "restoreTime": "2026-11-05T17:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALEXANDER CRES",
+              "COOPER PL",
+              "GRAHAM RD",
+              "KENEALLY CT",
+              "MASTERS CT",
+              "WIMBLEDON DR"
+            ]
+          },
+          "affected_customers": 61,
+          "suburb": "MORAYFIELD",
+          "street_name": "ALEXANDER CRES, COOPER PL, GRAHAM RD, KENEALLY CT, MASTERS CT, WIMBLEDON DR"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T05:16:07Z",
+      "fetched_utc": "2026-11-05T05:31:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T05:15:00Z",
-        "published_customers": 680,
-        "event_count": 12
+        "source_updated_utc": "2026-11-05T05:30:00Z",
+        "published_customers": 1338,
+        "event_count": 14
       },
       "events": [
         {
@@ -264,6 +396,30 @@
           },
           "affected_customers": 15,
           "suburb": "MOURA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13045",
+          "allocations": [
+            {
+              "lga_name": "Longreach Regional",
+              "lga_code": null,
+              "affected_customers": 4
+            }
+          ],
+          "details": {
+            "event": "26CA13045",
+            "council": "Longreach Regional Council",
+            "suburb": "ISISFORD",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 15:30",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "4",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 4,
+          "suburb": "ISISFORD",
           "street_name": ""
         },
         {
@@ -456,6 +612,30 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10663",
+          "allocations": [
+            {
+              "lga_name": "South Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 654
+            }
+          ],
+          "details": {
+            "event": "26WB10663",
+            "council": "South Burnett Regional Council",
+            "suburb": "BARKER CREEK FLAT, BROOKLANDS, COOLABUNIA, KUNIOON, MAIDENWELL, NANANGO, NEUMGNA, PIMPIMBUDGEE, TARONG, WENGENVILLE",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 14:51",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "654",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 654,
+          "suburb": "BARKER CREEK FLAT, BROOKLANDS, COOLABUNIA, KUNIOON, MAIDENWELL, NANANGO, NEUMGNA, PIMPIMBUDGEE, TARONG, WENGENVILLE",
           "street_name": ""
         },
         {
