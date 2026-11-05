@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-05T01:15:45Z",
-  "generated_aest": "2026-11-05T11:15:45+10:00",
+  "generated_utc": "2026-11-05T01:31:29Z",
+  "generated_aest": "2026-11-05T11:31:29+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 20,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 538,
-  "current_records_after_outage_type_filter": 25,
-  "current_records_dropped_planned_or_unknown": 513,
+  "current_records_before_outage_type_filter": 536,
+  "current_records_after_outage_type_filter": 28,
+  "current_records_dropped_planned_or_unknown": 508,
   "provider_fetch_errors": {
     "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
   },
@@ -21,29 +21,29 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-05T01:10:00Z",
-      "published_customers": 421,
-      "event_count": 16,
-      "fetched_utc": "2026-11-05T01:16:04Z"
+      "source_updated_utc": "2026-11-05T01:30:29Z",
+      "published_customers": 402,
+      "event_count": 15,
+      "fetched_utc": "2026-11-05T01:31:49Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-05T01:15:45Z",
+    "snapshot_utc": "2026-11-05T01:31:29Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-05T01:16:05Z",
+      "fetched_utc": "2026-11-05T01:31:50Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-05T01:16:04Z",
+      "fetched_utc": "2026-11-05T01:31:49Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-05T01:10:00Z",
+      "source_updated_utc": "2026-11-05T01:30:29Z",
       "retained": false,
-      "total_customers": 421,
+      "total_customers": 402,
       "rows": [
         {
           "lga_name": "Carpentaria Shire",
@@ -56,10 +56,6 @@
         {
           "lga_name": "Cloncurry Shire",
           "affected_customers": 30
-        },
-        {
-          "lga_name": "Cook Shire",
-          "affected_customers": 19
         },
         {
           "lga_name": "Etheridge Shire",
@@ -92,18 +88,18 @@
       ]
     }
   },
-  "legacy_council_snapshot_rows": 1291,
-  "current_energex_records": 4,
-  "current_ergon_records": 16,
-  "current_essential_records_fetched": 58,
-  "current_energex_records_fetched": 128,
-  "current_ergon_records_fetched": 352,
+  "legacy_council_snapshot_rows": 1248,
+  "current_energex_records": 5,
+  "current_ergon_records": 15,
+  "current_essential_records_fetched": 60,
+  "current_energex_records_fetched": 129,
+  "current_ergon_records_fetched": 347,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 5,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 8,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5318,
-  "lga_totals_rows_48h": 6277,
+  "snapshot_rows_48h": 5295,
+  "lga_totals_rows_48h": 6257,
   "lga_totals_latest_rows": 28,
   "lga_cumulative_rows": 102,
   "outputs": {
