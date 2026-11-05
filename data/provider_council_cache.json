@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T09:16:18Z",
+      "fetched_utc": "2026-11-05T09:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 7:15 PM",
-        "source_updated_utc": "2026-11-05T09:15:02Z",
-        "published_customers": 1446,
+        "source_updated": "5 November 2026 7:30 PM",
+        "source_updated_utc": "2026-11-05T09:30:02Z",
+        "published_customers": 1400,
         "event_count": 12
       },
       "events": [
@@ -57,7 +57,7 @@
             "postcode": "4272",
             "suburb": "TAMBORINE MOUNTAIN",
             "customersAffected": "97",
-            "restoreTime": "2026-11-05T20:00:00+10:00",
+            "restoreTime": "2026-11-05T21:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -79,7 +79,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 112
+              "affected_customers": 66
             }
           ],
           "details": {
@@ -89,21 +89,18 @@
             "council": "Logan City",
             "postcode": "4285",
             "suburb": "CEDAR GROVE",
-            "customersAffected": "63",
+            "customersAffected": "17",
             "restoreTime": "2026-11-05T21:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "IRWIN RD",
-              "MARION RD",
-              "PHILLIPS RD",
-              "PINDARI RD",
-              "SANDAVER CRES"
+              "PINDARI RD"
             ]
           },
-          "affected_customers": 112,
+          "affected_customers": 66,
           "suburb": "CEDAR GROVE, WOODHILL",
-          "street_name": "BRUMBY DR, IRWIN RD, MARION RD, PHILLIPS RD, PINDARI RD, SANDAVER CRES"
+          "street_name": "BRUMBY DR, IRWIN RD, PINDARI RD"
         },
         {
           "event_id": "INCD-993371-g",
@@ -223,7 +220,7 @@
           ],
           "details": {
             "event": "INCD-993411-g",
-            "cause": "Under Investigation",
+            "cause": "Damage to our equipment",
             "status": "Under Investigation",
             "council": "Brisbane City",
             "postcode": "4006",
@@ -319,7 +316,7 @@
             "postcode": "4152",
             "suburb": "CAMP HILL",
             "customersAffected": "72",
-            "restoreTime": "2026-11-05T20:00:00+10:00",
+            "restoreTime": "2026-11-05T20:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -392,13 +389,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T09:16:21Z",
+      "fetched_utc": "2026-11-05T09:31:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T09:15:01Z",
-        "published_customers": 37,
-        "event_count": 5
+        "source_updated_utc": "2026-11-05T09:30:01Z",
+        "published_customers": 27,
+        "event_count": 4
       },
       "events": [
         {
@@ -416,7 +413,7 @@
             "suburb": "MOURA",
             "type": "UNPLANNED",
             "startTime": "05/11/2026 12:46",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "06/11/2026 16:00",
             "customersAffected": "2",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
@@ -471,30 +468,6 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10663",
-          "allocations": [
-            {
-              "lga_name": "South Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 10
-            }
-          ],
-          "details": {
-            "event": "26WB10663",
-            "council": "South Burnett Regional Council",
-            "suburb": "BROOKLANDS, NANANGO",
-            "type": "UNPLANNED",
-            "startTime": "05/11/2026 14:51",
-            "restoreTime": "05/11/2026 19:30",
-            "customersAffected": "10",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 10,
-          "suburb": "BROOKLANDS, NANANGO",
           "street_name": ""
         },
         {
