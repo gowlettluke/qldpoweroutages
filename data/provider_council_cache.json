@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T02:46:04Z",
+      "fetched_utc": "2026-11-05T03:01:32Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 12:30 PM",
-        "source_updated_utc": "2026-11-05T02:30:02Z",
-        "published_customers": 1072,
-        "event_count": 4
+        "source_updated": "5 November 2026 1:00 PM",
+        "source_updated_utc": "2026-11-05T03:00:02Z",
+        "published_customers": 89,
+        "event_count": 3
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4306",
             "suburb": "FAIRNEY VIEW",
             "customersAffected": "7",
-            "restoreTime": "2026-11-05T13:00:00+10:00",
+            "restoreTime": "2026-11-05T13:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -72,34 +72,6 @@
           "street_name": "HARRIS RD, TURNER RD, WILSONS POCKET RD"
         },
         {
-          "event_id": "INCD-993206-g",
-          "allocations": [
-            {
-              "lga_name": "Somerset Regional",
-              "lga_code": null,
-              "affected_customers": 983
-            }
-          ],
-          "details": {
-            "event": "INCD-993206-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Somerset Regional",
-            "postcode": "4306",
-            "suburb": "FAIRNEY VIEW",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-05T13:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "FAIRNEYVIEW FERNVALE RD"
-            ]
-          },
-          "affected_customers": 983,
-          "suburb": "FAIRNEY VIEW, FERNVALE",
-          "street_name": "ASPERA CT, ASPERA ST, AZOLLA CT, BANKS CREEK RD, BEESTON DR, BOLINGBROKE ST, BRENTWOOD CT, BRIGHTWOOD PL, BRISBANE VALLEY HWY, BROUFF RD, BUNYA PINE PL, BURNS ST, CARRALLUMA CRES, CASSIA CT, CHRISTELLA CT, CINDERWOOD CT, CLIVE ST, CONDAMINE DR, CRYSTALWOOD CT, CYPRESS CCT, DAINTREE CT, DAVILLEA CT, DELTA CT, ELKHORN ST, FAIRNEYVIEW FERNVALE RD, GRAHAM RD, HONEYWOOD DR, IVY PL, KESWICK CL, KNOX LANE N, LYNDALE PL, MAMAKU ST, MARANOA CT, MARSILEA RD, NARDOO ST, NIDUS CT, OSMUND CT, OVERTON PL, PARKWOOD ST, POOLE RD, POWELLS RD, SCHMIDT RD, SIMPSON ST, STAGHORN CT, STRINGYBARK PL, TITMARSH CCT, TRUSCOT CT, WILLOWOOD PL"
-        },
-        {
           "event_id": "INCD-993217-g",
           "allocations": [
             {
@@ -130,12 +102,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T02:31:16Z",
+      "fetched_utc": "2026-11-05T03:01:36Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T02:30:01Z",
-        "published_customers": 422,
+        "source_updated_utc": "2026-11-05T03:00:02Z",
+        "published_customers": 424,
         "event_count": 16
       },
       "events": [
@@ -205,10 +177,34 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "23",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 23,
           "suburb": "EMERALD, YAMALA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13023",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 15
+            }
+          ],
+          "details": {
+            "event": "26CA13023",
+            "council": "Central Highlands Regional Council",
+            "suburb": "MOURA",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 12:46",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "15",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 15,
+          "suburb": "MOURA",
           "street_name": ""
         },
         {
@@ -349,34 +345,10 @@
             "restoreTime": "05/11/2026 18:00",
             "customersAffected": "90",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 90,
           "suburb": "HUGHENDEN",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13629",
-          "allocations": [
-            {
-              "lga_name": "Flinders Shire",
-              "lga_code": null,
-              "affected_customers": 9
-            }
-          ],
-          "details": {
-            "event": "26NQ13629",
-            "council": "Flinders Shire Council",
-            "suburb": "PRAIRIE, TORRENS CREEK",
-            "type": "UNPLANNED",
-            "startTime": "04/11/2026 22:09",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "9",
-            "cause": "The loss of supply is due to the operating of protective equipment.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 9,
-          "suburb": "PRAIRIE, TORRENS CREEK",
           "street_name": ""
         },
         {
@@ -409,7 +381,7 @@
             {
               "lga_name": "Toowoomba Regional",
               "lga_code": null,
-              "affected_customers": 7
+              "affected_customers": 3
             }
           ],
           "details": {
@@ -418,12 +390,12 @@
             "suburb": "HAMPTON",
             "type": "UNPLANNED",
             "startTime": "04/11/2026 22:23",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "7",
+            "restoreTime": "06/11/2026 12:00",
+            "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
+            "status": "Work delayed - crews unable to continue"
           },
-          "affected_customers": 7,
+          "affected_customers": 3,
           "suburb": "HAMPTON",
           "street_name": ""
         },
@@ -445,7 +417,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 3,
           "suburb": "CROWS NEST",
