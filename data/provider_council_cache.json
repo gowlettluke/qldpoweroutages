@@ -2,45 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T06:16:10Z",
+      "fetched_utc": "2026-11-05T06:31:07Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 4:00 PM",
-        "source_updated_utc": "2026-11-05T06:00:02Z",
-        "published_customers": 1615,
-        "event_count": 7
+        "source_updated": "5 November 2026 4:15 PM",
+        "source_updated_utc": "2026-11-05T06:15:02Z",
+        "published_customers": 2123,
+        "event_count": 8
       },
       "events": [
-        {
-          "event_id": "INCD-993251-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 8
-            }
-          ],
-          "details": {
-            "event": "INCD-993251-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4519",
-            "suburb": "BEERWAH",
-            "customersAffected": "8",
-            "restoreTime": "2026-11-05T16:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "LINDEMAN RD",
-              "OLD GYMPIE RD"
-            ]
-          },
-          "affected_customers": 8,
-          "suburb": "BEERWAH",
-          "street_name": "LINDEMAN RD, OLD GYMPIE RD"
-        },
         {
           "event_id": "INCD-993305-g",
           "allocations": [
@@ -161,15 +132,15 @@
           ],
           "details": {
             "event": "INCD-993335-g",
-            "cause": "Emergency Repairs",
+            "cause": "Emergency repairs in-progress",
             "status": "Emergency Repairs",
             "council": "Noosa",
             "postcode": "4563",
             "suburb": "COOROY",
             "customersAffected": "1",
             "restoreTime": "2026-11-05T18:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
+            "etrFlag": "RB",
+            "etrFlagBool": "Y",
             "streets": [
               "LAUREL LANE"
             ]
@@ -248,17 +219,101 @@
           "affected_customers": 61,
           "suburb": "MORAYFIELD",
           "street_name": "ALEXANDER CRES, COOPER PL, GRAHAM RD, KENEALLY CT, MASTERS CT, WIMBLEDON DR"
+        },
+        {
+          "event_id": "INCD-993366-g",
+          "allocations": [
+            {
+              "lga_name": "Somerset Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-993366-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Somerset Regional",
+            "postcode": "4311",
+            "suburb": "COOLANA",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-05T19:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "LEHMANNS RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "COOLANA",
+          "street_name": "LEHMANNS RD"
+        },
+        {
+          "event_id": "INCD-993369-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 515
+            }
+          ],
+          "details": {
+            "event": "INCD-993369-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Logan City",
+            "postcode": "4285",
+            "suburb": "CEDAR GROVE",
+            "customersAffected": "466",
+            "restoreTime": "2026-11-05T19:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALVISIO CT",
+              "ARTHY DR",
+              "ASH PL",
+              "BIRCH PL",
+              "BOYTAR CT",
+              "BRUSHWOOD CRES",
+              "CEDAR GROVE RD",
+              "CEDAR POCKET RD",
+              "COULDERY CT",
+              "DARRYL CT",
+              "ERROL CT",
+              "FIG CT",
+              "FLAMETREE CT",
+              "HICKORY PL",
+              "IRWIN RD",
+              "LAUREL PL",
+              "MARION RD",
+              "MORRISON CT",
+              "OAK TREE CT",
+              "PEARSON CT",
+              "PHILLIPS RD",
+              "PINDARI RD",
+              "RUSSELL CT",
+              "SANDAVER CRES",
+              "SHEOAK PL",
+              "SPOTTED GUM CT",
+              "TAMARIND PL",
+              "THORA RD",
+              "WHITAKER RD"
+            ]
+          },
+          "affected_customers": 515,
+          "suburb": "CEDAR GROVE, WOODHILL",
+          "street_name": "ALVISIO CT, ARTHY DR, ASH PL, BIRCH PL, BOYTAR CT, BRUMBY DR, BRUSHWOOD CRES, CEDAR GROVE RD, CEDAR POCKET RD, COULDERY CT, DARRYL CT, ERROL CT, FIG CT, FLAMETREE CT, HICKORY PL, IRWIN RD, LAUREL PL, MARION RD, MORRISON CT, OAK TREE CT, PEARSON CT, PHILLIPS RD, PINDARI RD, RUSSELL CT, SANDAVER CRES, SHEOAK PL, SPOTTED GUM CT, TAMARIND PL, THORA RD, WHITAKER RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T06:16:13Z",
+      "fetched_utc": "2026-11-05T06:31:10Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T06:15:00Z",
-        "published_customers": 1131,
-        "event_count": 11
+        "source_updated_utc": "2026-11-05T06:30:01Z",
+        "published_customers": 1012,
+        "event_count": 9
       },
       "events": [
         {
@@ -283,30 +338,6 @@
           },
           "affected_customers": 15,
           "suburb": "MOURA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13045",
-          "allocations": [
-            {
-              "lga_name": "Longreach Regional",
-              "lga_code": null,
-              "affected_customers": 4
-            }
-          ],
-          "details": {
-            "event": "26CA13045",
-            "council": "Longreach Regional Council",
-            "suburb": "ISISFORD",
-            "type": "UNPLANNED",
-            "startTime": "05/11/2026 15:30",
-            "restoreTime": "05/11/2026 16:45",
-            "customersAffected": "4",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 4,
-          "suburb": "ISISFORD",
           "street_name": ""
         },
         {
@@ -392,7 +423,7 @@
             {
               "lga_name": "Flinders Shire",
               "lga_code": null,
-              "affected_customers": 90
+              "affected_customers": 14
             }
           ],
           "details": {
@@ -402,36 +433,12 @@
             "type": "UNPLANNED",
             "startTime": "04/11/2026 16:58",
             "restoreTime": "05/11/2026 18:00",
-            "customersAffected": "90",
+            "customersAffected": "14",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 90,
+          "affected_customers": 14,
           "suburb": "HUGHENDEN",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13611",
-          "allocations": [
-            {
-              "lga_name": "Charters Towers Regional",
-              "lga_code": null,
-              "affected_customers": 39
-            }
-          ],
-          "details": {
-            "event": "26NQ13611",
-            "council": "Charters Towers Regional Council",
-            "suburb": "BALFES CREEK, BASALT, GREENVALE, PENTLAND",
-            "type": "UNPLANNED",
-            "startTime": "05/11/2026 13:59",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "39",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 39,
-          "suburb": "BALFES CREEK, BASALT, GREENVALE, PENTLAND",
           "street_name": ""
         },
         {
@@ -500,7 +507,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "654",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 654,
           "suburb": "BARKER CREEK FLAT, BROOKLANDS, COOLABUNIA, KUNIOON, MAIDENWELL, NANANGO, NEUMGNA, PIMPIMBUDGEE, TARONG, WENGENVILLE",
