@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T23:16:25Z",
+      "fetched_utc": "2026-11-05T23:31:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 9:15 AM",
-        "source_updated_utc": "2026-11-05T23:15:02Z",
+        "source_updated": "6 November 2026 9:30 AM",
+        "source_updated_utc": "2026-11-05T23:30:02Z",
         "published_customers": 4,
         "event_count": 1
       },
@@ -48,13 +48,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T23:16:28Z",
+      "fetched_utc": "2026-11-05T23:31:27Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T23:15:00Z",
-        "published_customers": 91,
-        "event_count": 6
+        "source_updated_utc": "2026-11-05T23:30:00Z",
+        "published_customers": 95,
+        "event_count": 8
       },
       "events": [
         {
@@ -176,10 +176,58 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "7",
             "cause": "The loss of supply is due to damage caused by accidental contact with powerlines by a third party.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 14,
           "suburb": "QUILPIE, WINDORAH",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10671",
+          "allocations": [
+            {
+              "lga_name": "South Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26WB10671",
+            "council": "South Burnett Regional Council",
+            "suburb": "COOLABUNIA",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 09:30",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 2,
+          "suburb": "COOLABUNIA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10673",
+          "allocations": [
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26WB10673",
+            "council": "North Burnett Regional Council",
+            "suburb": "RIVERLEIGH",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 10:16",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 2,
+          "suburb": "RIVERLEIGH",
           "street_name": ""
         },
         {
