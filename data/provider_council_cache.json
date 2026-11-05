@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T10:16:06Z",
+      "fetched_utc": "2026-11-05T10:31:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 8:00 PM",
-        "source_updated_utc": "2026-11-05T10:00:03Z",
-        "published_customers": 1035,
-        "event_count": 12
+        "source_updated": "5 November 2026 8:30 PM",
+        "source_updated_utc": "2026-11-05T10:30:02Z",
+        "published_customers": 855,
+        "event_count": 10
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4556",
             "suburb": "BUDERIM",
             "customersAffected": "1",
-            "restoreTime": "2026-11-05T20:30:00+10:00",
+            "restoreTime": "2026-11-05T23:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -128,7 +128,7 @@
             "postcode": "4520",
             "suburb": "MT GLORIOUS",
             "customersAffected": "175",
-            "restoreTime": "2026-11-05T21:00:00+10:00",
+            "restoreTime": "2026-11-05T22:30:00+10:00",
             "etrFlag": "RB",
             "etrFlagBool": "Y",
             "streets": [
@@ -147,66 +147,6 @@
           "affected_customers": 176,
           "suburb": "DUNDAS, MT GLORIOUS",
           "street_name": "ALEX RD, ATTUNGA LANE, BROWNS RD, FAHEY RD, HARLAND RD, JOELLE LANE, LINDSAY RD, MT GLORIOUS RD, RENZO LANE, TED ST"
-        },
-        {
-          "event_id": "INCD-993407-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 114
-            }
-          ],
-          "details": {
-            "event": "INCD-993407-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Moreton Bay Regional",
-            "postcode": "4019",
-            "suburb": "MARGATE",
-            "customersAffected": "114",
-            "restoreTime": "2026-11-05T20:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BEACONSFIELD ST",
-              "DISRAELI ST",
-              "TRAMORE ST",
-              "WEBB ST",
-              "WIGHTON ST"
-            ]
-          },
-          "affected_customers": 114,
-          "suburb": "MARGATE",
-          "street_name": "BEACONSFIELD ST, DISRAELI ST, TRAMORE ST, WEBB ST, WIGHTON ST"
-        },
-        {
-          "event_id": "INCD-993411-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 67
-            }
-          ],
-          "details": {
-            "event": "INCD-993411-g",
-            "cause": "Damage to our equipment",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4006",
-            "suburb": "BOWEN HILLS",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-05T21:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "EDMONDSTONE RD"
-            ]
-          },
-          "affected_customers": 67,
-          "suburb": "BOWEN HILLS, NEWSTEAD",
-          "street_name": "BREAKFAST CREEK RD, EDMONDSTONE RD, EDMUND ST, ROSS ST"
         },
         {
           "event_id": "INCD-993415-g",
@@ -258,7 +198,7 @@
             "postcode": "4006",
             "suburb": "FORTITUDE VALLEY",
             "customersAffected": "1",
-            "restoreTime": "2026-11-05T20:30:00+10:00",
+            "restoreTime": "2026-11-05T21:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -286,7 +226,7 @@
             "postcode": "4152",
             "suburb": "CAMP HILL",
             "customersAffected": "72",
-            "restoreTime": "2026-11-05T21:00:00+10:00",
+            "restoreTime": "2026-11-05T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -362,7 +302,7 @@
             {
               "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 95
+              "affected_customers": 96
             }
           ],
           "details": {
@@ -372,8 +312,8 @@
             "council": "Brisbane City",
             "postcode": "4060",
             "suburb": "ASHGROVE",
-            "customersAffected": "95",
-            "restoreTime": "2026-11-05T23:00:00+10:00",
+            "customersAffected": "96",
+            "restoreTime": "2026-11-05T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -388,18 +328,18 @@
               "VENUS ST"
             ]
           },
-          "affected_customers": 95,
+          "affected_customers": 96,
           "suburb": "ASHGROVE",
           "street_name": "ASHBOURNE ST, BUXTON ST, CANBERRA DR, DOVEDALE CRES, FRASERS RD, MATLOCK ST, MIRRABOOKA RD, TAY ST, VENUS ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T10:16:09Z",
+      "fetched_utc": "2026-11-05T10:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T10:15:00Z",
+        "source_updated_utc": "2026-11-05T10:30:00Z",
         "published_customers": 42,
         "event_count": 5
       },
