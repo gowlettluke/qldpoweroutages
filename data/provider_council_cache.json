@@ -2,16 +2,45 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-04T23:46:10Z",
+      "fetched_utc": "2026-11-05T00:01:14Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 9:30 AM",
-        "source_updated_utc": "2026-11-04T23:30:02Z",
-        "published_customers": 241,
-        "event_count": 1
+        "source_updated": "5 November 2026 9:45 AM",
+        "source_updated_utc": "2026-11-04T23:45:02Z",
+        "published_customers": 361,
+        "event_count": 3
       },
       "events": [
+        {
+          "event_id": "INCD-993136-g",
+          "allocations": [
+            {
+              "lga_name": "Somerset Regional",
+              "lga_code": null,
+              "affected_customers": 7
+            }
+          ],
+          "details": {
+            "event": "INCD-993136-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Somerset Regional",
+            "postcode": "4306",
+            "suburb": "FAIRNEY VIEW",
+            "customersAffected": "7",
+            "restoreTime": "2026-11-05T10:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BARRETTS RD",
+              "HECKS RD"
+            ]
+          },
+          "affected_customers": 7,
+          "suburb": "FAIRNEY VIEW",
+          "street_name": "BARRETTS RD, HECKS RD"
+        },
         {
           "event_id": "INCD-993170-g",
           "allocations": [
@@ -42,6 +71,38 @@
           "affected_customers": 241,
           "suburb": "COONDOO, GOOMBOORIAN, WILSONS POCKET, WOLVI",
           "street_name": "COUNTER RD, DAVID WALKER RD, EATON RD, HARRIS RD, HOFF RD, KIN KIN RD, MCRAE RD, NEUSAVALE RD, NEWINGA RD, PARSONS RD, RYAN RD, STEWART RD, TAGIGAN RD, TREEBY RD, TURNER RD, VERNE RD, VINES RD, WILSONS POCKET RD, WOLVI MOUNTAIN RD, YELLOW GULLY RD"
+        },
+        {
+          "event_id": "INCD-993172-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 113
+            }
+          ],
+          "details": {
+            "event": "INCD-993172-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4012",
+            "suburb": "NUNDAH",
+            "customersAffected": "113",
+            "restoreTime": "2026-11-05T11:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "COLLINS ST",
+              "GLENHILL ST",
+              "HAMSON TCE",
+              "TOOMBUL TCE",
+              "WESTACOTT ST"
+            ]
+          },
+          "affected_customers": 113,
+          "suburb": "NUNDAH",
+          "street_name": "COLLINS ST, GLENHILL ST, HAMSON TCE, TOOMBUL TCE, WESTACOTT ST"
         }
       ]
     },
