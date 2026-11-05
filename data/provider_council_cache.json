@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T02:15:55Z",
+      "fetched_utc": "2026-11-05T02:31:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 12:00 PM",
-        "source_updated_utc": "2026-11-05T02:00:05Z",
+        "source_updated": "5 November 2026 12:15 PM",
+        "source_updated_utc": "2026-11-05T02:15:02Z",
         "published_customers": 1072,
         "event_count": 4
       },
@@ -29,7 +29,7 @@
             "postcode": "4306",
             "suburb": "FAIRNEY VIEW",
             "customersAffected": "7",
-            "restoreTime": "2026-11-05T12:30:00+10:00",
+            "restoreTime": "2026-11-05T13:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -52,7 +52,7 @@
           ],
           "details": {
             "event": "INCD-993170-g",
-            "cause": "Under Investigation",
+            "cause": "Powerlines down",
             "status": "Under Investigation",
             "council": "Gympie Regional",
             "postcode": "4570",
@@ -110,15 +110,15 @@
           ],
           "details": {
             "event": "INCD-993217-g",
-            "cause": "Emergency Repairs",
+            "cause": "Emergency repairs in-progress",
             "status": "Emergency Repairs",
             "council": "Noosa",
             "postcode": "4573",
             "suburb": "MARCUS BEACH",
             "customersAffected": "2",
             "restoreTime": "2026-11-05T14:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
+            "etrFlag": "RB",
+            "etrFlagBool": "Y",
             "streets": [
               "PERSIMMON DR"
             ]
@@ -130,13 +130,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T02:16:00Z",
+      "fetched_utc": "2026-11-05T02:31:16Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T02:10:19Z",
-        "published_customers": 419,
-        "event_count": 15
+        "source_updated_utc": "2026-11-05T02:30:01Z",
+        "published_customers": 422,
+        "event_count": 16
       },
       "events": [
         {
@@ -226,10 +226,10 @@
             "suburb": "GEORGETOWN",
             "type": "UNPLANNED",
             "startTime": "03/11/2026 17:25",
-            "restoreTime": "05/11/2026 17:00",
+            "restoreTime": "05/11/2026 16:00",
             "customersAffected": "6",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 6,
           "suburb": "GEORGETOWN",
@@ -449,6 +449,30 @@
           },
           "affected_customers": 3,
           "suburb": "CROWS NEST",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14254",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26SW14254",
+            "council": "Toowoomba Regional Council",
+            "suburb": "ELLANGOWAN",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 08:01",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 3,
+          "suburb": "ELLANGOWAN",
           "street_name": ""
         },
         {
