@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T00:16:06Z",
+      "fetched_utc": "2026-11-05T00:31:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 10:00 AM",
-        "source_updated_utc": "2026-11-05T00:00:02Z",
+        "source_updated": "5 November 2026 10:30 AM",
+        "source_updated_utc": "2026-11-05T00:30:02Z",
         "published_customers": 361,
         "event_count": 3
       },
@@ -29,7 +29,7 @@
             "postcode": "4306",
             "suburb": "FAIRNEY VIEW",
             "customersAffected": "7",
-            "restoreTime": "2026-11-05T10:30:00+10:00",
+            "restoreTime": "2026-11-05T11:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -58,7 +58,7 @@
             "postcode": "4570",
             "suburb": "COONDOO",
             "customersAffected": "35",
-            "restoreTime": "2026-11-05T12:00:00+10:00",
+            "restoreTime": "2026-11-05T12:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -89,7 +89,7 @@
             "postcode": "4012",
             "suburb": "NUNDAH",
             "customersAffected": "113",
-            "restoreTime": "2026-11-05T11:00:00+10:00",
+            "restoreTime": "2026-11-05T11:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -107,12 +107,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-04T23:46:14Z",
+      "fetched_utc": "2026-11-05T00:31:28Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-04T23:45:00Z",
-        "published_customers": 411,
+        "source_updated_utc": "2026-11-05T00:30:00Z",
+        "published_customers": 366,
         "event_count": 14
       },
       "events": [
@@ -165,30 +165,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26CA12997",
-          "allocations": [
-            {
-              "lga_name": "Gladstone Regional",
-              "lga_code": null,
-              "affected_customers": 61
-            }
-          ],
-          "details": {
-            "event": "26CA12997",
-            "council": "Gladstone Regional Council",
-            "suburb": "AGNES WATER",
-            "type": "UNPLANNED",
-            "startTime": "05/11/2026 08:34",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "61",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 61,
-          "suburb": "AGNES WATER",
-          "street_name": ""
-        },
-        {
           "event_id": "26FN10866",
           "allocations": [
             {
@@ -234,6 +210,30 @@
           },
           "affected_customers": 2,
           "suburb": "KARUMBA, NORMANTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN10936",
+          "allocations": [
+            {
+              "lga_name": "Cook Shire",
+              "lga_code": null,
+              "affected_customers": 19
+            }
+          ],
+          "details": {
+            "event": "26FN10936",
+            "council": "Cook Shire Council",
+            "suburb": "AYTON, BLOOMFIELD",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 09:47",
+            "restoreTime": "05/11/2026 13:00",
+            "customersAffected": "19",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 19,
+          "suburb": "AYTON, BLOOMFIELD",
           "street_name": ""
         },
         {
@@ -333,30 +333,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ13612",
-          "allocations": [
-            {
-              "lga_name": "Richmond Shire",
-              "lga_code": null,
-              "affected_customers": 6
-            }
-          ],
-          "details": {
-            "event": "26NQ13612",
-            "council": "Richmond Shire Council",
-            "suburb": "MAXWELTON, NONDA",
-            "type": "UNPLANNED",
-            "startTime": "04/11/2026 17:31",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "6",
-            "cause": "The loss of supply is due to the operating of protective equipment.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 6,
-          "suburb": "MAXWELTON, NONDA",
-          "street_name": ""
-        },
-        {
           "event_id": "26NQ13629",
           "allocations": [
             {
@@ -426,6 +402,30 @@
           },
           "affected_customers": 7,
           "suburb": "HAMPTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14242",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26SW14242",
+            "council": "Toowoomba Regional Council",
+            "suburb": "CROWS NEST",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 06:30",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 3,
+          "suburb": "CROWS NEST",
           "street_name": ""
         },
         {
