@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T17:31:10Z",
+      "fetched_utc": "2026-11-05T17:46:18Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 3:15 AM",
-        "source_updated_utc": "2026-11-05T17:15:02Z",
-        "published_customers": 2684,
-        "event_count": 3
+        "source_updated": "6 November 2026 3:45 AM",
+        "source_updated_utc": "2026-11-05T17:45:02Z",
+        "published_customers": 372,
+        "event_count": 2
       },
       "events": [
         {
@@ -51,7 +51,7 @@
             {
               "lga_name": "Gold Coast City",
               "lga_code": null,
-              "affected_customers": 1014
+              "affected_customers": 368
             }
           ],
           "details": {
@@ -61,62 +61,32 @@
             "council": "Gold Coast City",
             "postcode": "4220",
             "suburb": "BURLEIGH HEADS",
-            "customersAffected": "377",
+            "customersAffected": "351",
             "restoreTime": "2026-11-06T03:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "ANZAC PDE",
-              "CHRISTINE AVE",
               "FIFTH AVE",
               "GARDENIA GR",
               "GOLD COAST HWY",
               "HIBISCUS HAVEN",
-              "LEMANA LANE",
               "SIXTH AVE",
               "THE ESPLANADE"
             ]
           },
-          "affected_customers": 1014,
-          "suburb": "BURLEIGH HEADS, BURLEIGH WATERS, MIAMI",
-          "street_name": "ALBION AVE, ANZAC PDE, BABBLER CT, CARIB CT, CHRISTINE AVE, CRISP CT, DOGGETT DR, EVANDALE CRES, FIFTH AVE, GARDENIA GR, GOLD COAST HWY, HIBISCUS HAVEN, JOAN ST, LEMANA LANE, MACAW AVE, MOUNTAIN VIEW AVE, NOBBY PDE, NUNDAH AVE, PHEASANT CT, SEAHAWK CRES, SIXTH AVE, SNIPE ST, SUNSHINE PDE, THE ESPLANADE"
-        },
-        {
-          "event_id": "INCD-993527-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 1666
-            }
-          ],
-          "details": {
-            "event": "INCD-993527-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4103",
-            "suburb": "ANNERLEY",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-06T04:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "IPSWICH RD"
-            ]
-          },
-          "affected_customers": 1666,
-          "suburb": "ANNERLEY, DUTTON PARK, HIGHGATE HILL, SOUTH BRISBANE, WEST END, WOOLLOONGABBA",
-          "street_name": "ABINGDON ST, ANNERLEY RD, APPEL ST, ATHLONE ST, AUDENSHAW ST, BESANT ST, BLAKENEY ST, BOUNDARY ST, BRIGHTON RD, BROOK ST, BROWNING ST, CLARENCE ST, COLIN ST, CROWN ST, DORCHESTER ST, EDMONDSTONE ST, EMILY ST, FRANKLIN ST, FRITH ST, GLADSTONE RD, GLOUCESTER ST, GROVE ST, HAMPSTEAD RD, HEASLOP ST, IPSWICH RD, JANE ST, LAURA ST, LINDON ST, LOCHABER ST, LOCKHART ST, MARLY ST, MERTON RD, MOLLISON ST, NELSON ST, OCONNELL ST, PARK RD W, PROSPECT TCE, ROSS ST, RUTH ST, SCHOOL ST, SEXTON ST, STANLEY ST, STEPHENS RD, STRATH ST, SUSSEX ST, THOMAS ST, TILLOT ST, VULTURE ST, WESTBOURNE ST"
+          "affected_customers": 368,
+          "suburb": "BURLEIGH HEADS, MIAMI",
+          "street_name": "ANZAC PDE, CHRISTINE AVE, FIFTH AVE, GARDENIA GR, GOLD COAST HWY, HIBISCUS HAVEN, SIXTH AVE, THE ESPLANADE"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T17:31:13Z",
+      "fetched_utc": "2026-11-05T17:46:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T17:30:20Z",
+        "source_updated_utc": "2026-11-05T17:45:00Z",
         "published_customers": 71,
         "event_count": 4
       },
