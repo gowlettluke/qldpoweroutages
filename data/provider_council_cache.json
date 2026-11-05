@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T19:15:58Z",
+      "fetched_utc": "2026-11-05T19:31:27Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 5:00 AM",
-        "source_updated_utc": "2026-11-05T19:00:02Z",
-        "published_customers": 213,
-        "event_count": 2
+        "source_updated": "6 November 2026 5:30 AM",
+        "source_updated_utc": "2026-11-05T19:30:02Z",
+        "published_customers": 188,
+        "event_count": 3
       },
       "events": [
         {
@@ -51,7 +51,7 @@
             {
               "lga_name": "Gold Coast City",
               "lga_code": null,
-              "affected_customers": 209
+              "affected_customers": 124
             }
           ],
           "details": {
@@ -61,33 +61,63 @@
             "council": "Gold Coast City",
             "postcode": "4220",
             "suburb": "BURLEIGH HEADS",
-            "customersAffected": "209",
-            "restoreTime": "2026-11-06T06:00:00+10:00",
+            "customersAffected": "124",
+            "restoreTime": "2026-11-06T07:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "ANZAC PDE",
               "FIFTH AVE",
               "GARDENIA GR",
               "GOLD COAST HWY",
-              "HIBISCUS HAVEN",
               "THE ESPLANADE"
             ]
           },
-          "affected_customers": 209,
+          "affected_customers": 124,
           "suburb": "BURLEIGH HEADS",
-          "street_name": "ANZAC PDE, FIFTH AVE, GARDENIA GR, GOLD COAST HWY, HIBISCUS HAVEN, THE ESPLANADE"
+          "street_name": "FIFTH AVE, GARDENIA GR, GOLD COAST HWY, THE ESPLANADE"
+        },
+        {
+          "event_id": "INCD-993543-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 60
+            }
+          ],
+          "details": {
+            "event": "INCD-993543-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4171",
+            "suburb": "BULIMBA",
+            "customersAffected": "60",
+            "restoreTime": "2026-11-06T06:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BALDWIN ST",
+              "BOLAN ST",
+              "KARTHINA ST",
+              "LYTTON RD",
+              "MICHAEL ST"
+            ]
+          },
+          "affected_customers": 60,
+          "suburb": "BULIMBA",
+          "street_name": "BALDWIN ST, BOLAN ST, KARTHINA ST, LYTTON RD, MICHAEL ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T19:16:02Z",
+      "fetched_utc": "2026-11-05T19:31:30Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T19:10:00Z",
-        "published_customers": 71,
-        "event_count": 4
+        "source_updated_utc": "2026-11-05T19:30:00Z",
+        "published_customers": 110,
+        "event_count": 5
       },
       "events": [
         {
@@ -132,10 +162,34 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "63",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 63,
           "suburb": "ALLENSTOWN, ROCKHAMPTON, ROCKHAMPTON CITY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN10967",
+          "allocations": [
+            {
+              "lga_name": "Cassowary Coast Regional",
+              "lga_code": null,
+              "affected_customers": 39
+            }
+          ],
+          "details": {
+            "event": "26FN10967",
+            "council": "Cassowary Coast Regional Council",
+            "suburb": "GOONDI",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 05:10",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "39",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 39,
+          "suburb": "GOONDI",
           "street_name": ""
         },
         {
