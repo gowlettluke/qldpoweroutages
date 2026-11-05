@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T09:01:25Z",
+      "fetched_utc": "2026-11-05T09:16:18Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 7:00 PM",
-        "source_updated_utc": "2026-11-05T09:00:04Z",
-        "published_customers": 1845,
-        "event_count": 13
+        "source_updated": "5 November 2026 7:15 PM",
+        "source_updated_utc": "2026-11-05T09:15:02Z",
+        "published_customers": 1446,
+        "event_count": 12
       },
       "events": [
         {
@@ -39,34 +39,6 @@
           "affected_customers": 126,
           "suburb": "BUDERIM, MOUNTAIN CREEK",
           "street_name": "ADORI DR, GYMEA CT, HADDYS CL, LURNEA CRES, MEANDERSEA CT, MOUNTAIN CL, MOUNTAIN CREEK RD"
-        },
-        {
-          "event_id": "INCD-993306-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 9
-            }
-          ],
-          "details": {
-            "event": "INCD-993306-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Moreton Bay Regional",
-            "postcode": "4521",
-            "suburb": "OCEAN VIEW",
-            "customersAffected": "9",
-            "restoreTime": "2026-11-05T19:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "OCEAN VIEW RD"
-            ]
-          },
-          "affected_customers": 9,
-          "suburb": "OCEAN VIEW",
-          "street_name": "OCEAN VIEW RD"
         },
         {
           "event_id": "INCD-993341-g",
@@ -246,7 +218,7 @@
             {
               "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 791
+              "affected_customers": 461
             }
           ],
           "details": {
@@ -265,9 +237,9 @@
               "JORDAN TCE"
             ]
           },
-          "affected_customers": 791,
+          "affected_customers": 461,
           "suburb": "BOWEN HILLS, NEWSTEAD",
-          "street_name": "AUSTIN ST, BREAKFAST CREEK RD, EDMONDSTONE RD, EDMUND ST, EVELYN ST, HALFORD ST, JORDAN TCE, LONGLAND ST, MASTERS ST, MAUD ST, NEWSTEAD AVE, NEWSTEAD TCE, ROSS ST, WYANDRA ST"
+          "street_name": "AUSTIN ST, BREAKFAST CREEK RD, EDMONDSTONE RD, EDMUND ST, EVELYN ST, HALFORD ST, JORDAN TCE, MAUD ST, NEWSTEAD AVE, NEWSTEAD TCE, ROSS ST"
         },
         {
           "event_id": "INCD-993415-g",
@@ -395,41 +367,36 @@
             {
               "lga_name": "Moreton Bay City",
               "lga_code": null,
-              "affected_customers": 61
+              "affected_customers": 1
             }
           ],
           "details": {
             "event": "INCD-993449-g",
-            "cause": "Emergency Repairs",
+            "cause": "Emergency repairs in-progress",
             "status": "Emergency Repairs",
             "council": "Moreton Bay Regional",
             "postcode": "4506",
             "suburb": "MORAYFIELD",
-            "customersAffected": "61",
+            "customersAffected": "1",
             "restoreTime": "2026-11-05T21:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
+            "etrFlag": "RB",
+            "etrFlagBool": "Y",
             "streets": [
-              "ALEXANDER CRES",
-              "COOPER PL",
-              "GRAHAM RD",
-              "KENEALLY CT",
-              "MASTERS CT",
-              "WIMBLEDON DR"
+              "GRAHAM RD"
             ]
           },
-          "affected_customers": 61,
+          "affected_customers": 1,
           "suburb": "MORAYFIELD",
-          "street_name": "ALEXANDER CRES, COOPER PL, GRAHAM RD, KENEALLY CT, MASTERS CT, WIMBLEDON DR"
+          "street_name": "GRAHAM RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T09:01:28Z",
+      "fetched_utc": "2026-11-05T09:16:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T09:00:01Z",
+        "source_updated_utc": "2026-11-05T09:15:01Z",
         "published_customers": 37,
         "event_count": 5
       },
