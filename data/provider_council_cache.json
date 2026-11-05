@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T22:45:54Z",
+      "fetched_utc": "2026-11-05T23:01:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 8:30 AM",
-        "source_updated_utc": "2026-11-05T22:30:02Z",
+        "source_updated": "6 November 2026 9:00 AM",
+        "source_updated_utc": "2026-11-05T23:00:02Z",
         "published_customers": 4,
         "event_count": 1
       },
@@ -48,13 +48,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T22:45:57Z",
+      "fetched_utc": "2026-11-05T23:01:28Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T22:40:00Z",
-        "published_customers": 27,
-        "event_count": 5
+        "source_updated_utc": "2026-11-05T23:00:25Z",
+        "published_customers": 91,
+        "event_count": 6
       },
       "events": [
         {
@@ -103,6 +103,30 @@
           },
           "affected_customers": 5,
           "suburb": "HUGHENDEN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14100",
+          "allocations": [
+            {
+              "lga_name": "Southern Downs Regional",
+              "lga_code": null,
+              "affected_customers": 64
+            }
+          ],
+          "details": {
+            "event": "26SW14100",
+            "council": "Southern Downs Regional Council",
+            "suburb": "WARWICK",
+            "type": "UNPLANNED",
+            "startTime": "03/11/2026 18:12",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "64",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 64,
+          "suburb": "WARWICK",
           "street_name": ""
         },
         {
