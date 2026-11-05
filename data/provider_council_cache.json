@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T20:46:12Z",
+      "fetched_utc": "2026-11-05T21:01:33Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 6:30 AM",
-        "source_updated_utc": "2026-11-05T20:30:02Z",
-        "published_customers": 188,
-        "event_count": 3
+        "source_updated": "6 November 2026 7:00 AM",
+        "source_updated_utc": "2026-11-05T21:00:06Z",
+        "published_customers": 64,
+        "event_count": 2
       },
       "events": [
         {
@@ -46,37 +46,6 @@
           "street_name": "BOYLE RD, MCGINN RD, SUTTON LANE"
         },
         {
-          "event_id": "INCD-993522-g",
-          "allocations": [
-            {
-              "lga_name": "Gold Coast City",
-              "lga_code": null,
-              "affected_customers": 124
-            }
-          ],
-          "details": {
-            "event": "INCD-993522-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Gold Coast City",
-            "postcode": "4220",
-            "suburb": "BURLEIGH HEADS",
-            "customersAffected": "124",
-            "restoreTime": "2026-11-06T07:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "FIFTH AVE",
-              "GARDENIA GR",
-              "GOLD COAST HWY",
-              "THE ESPLANADE"
-            ]
-          },
-          "affected_customers": 124,
-          "suburb": "BURLEIGH HEADS",
-          "street_name": "FIFTH AVE, GARDENIA GR, GOLD COAST HWY, THE ESPLANADE"
-        },
-        {
           "event_id": "INCD-993543-g",
           "allocations": [
             {
@@ -93,7 +62,7 @@
             "postcode": "4171",
             "suburb": "BULIMBA",
             "customersAffected": "60",
-            "restoreTime": "2026-11-06T07:00:00+10:00",
+            "restoreTime": "2026-11-06T07:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -111,13 +80,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T20:46:15Z",
+      "fetched_utc": "2026-11-05T21:01:36Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T20:45:00Z",
-        "published_customers": 22,
-        "event_count": 4
+        "source_updated_utc": "2026-11-05T21:00:20Z",
+        "published_customers": 27,
+        "event_count": 5
       },
       "events": [
         {
@@ -142,6 +111,30 @@
           },
           "affected_customers": 2,
           "suburb": "MOURA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13592",
+          "allocations": [
+            {
+              "lga_name": "Flinders Shire",
+              "lga_code": null,
+              "affected_customers": 5
+            }
+          ],
+          "details": {
+            "event": "26NQ13592",
+            "council": "Flinders Shire Council",
+            "suburb": "HUGHENDEN",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 16:52",
+            "restoreTime": "06/11/2026 14:00",
+            "customersAffected": "5",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 5,
+          "suburb": "HUGHENDEN",
           "street_name": ""
         },
         {
