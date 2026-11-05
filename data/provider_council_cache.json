@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T20:01:32Z",
+      "fetched_utc": "2026-11-05T20:16:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 6:00 AM",
-        "source_updated_utc": "2026-11-05T20:00:07Z",
+        "source_updated": "6 November 2026 6:15 AM",
+        "source_updated_utc": "2026-11-05T20:15:02Z",
         "published_customers": 188,
         "event_count": 3
       },
@@ -111,13 +111,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T20:01:35Z",
+      "fetched_utc": "2026-11-05T20:16:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T20:00:01Z",
-        "published_customers": 110,
-        "event_count": 5
+        "source_updated_utc": "2026-11-05T20:15:01Z",
+        "published_customers": 124,
+        "event_count": 6
       },
       "events": [
         {
@@ -214,6 +214,35 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14282",
+          "allocations": [
+            {
+              "lga_name": "Barcoo Shire",
+              "lga_code": null,
+              "affected_customers": 7
+            },
+            {
+              "lga_name": "Quilpie Shire",
+              "lga_code": null,
+              "affected_customers": 7
+            }
+          ],
+          "details": {
+            "event": "26SW14282",
+            "council": "Barcoo Shire Council",
+            "suburb": "QUILPIE, WINDORAH",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 06:07",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "7",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 14,
+          "suburb": "QUILPIE, WINDORAH",
           "street_name": ""
         },
         {

@@ -1,12 +1,12 @@
 {
-  "generated_utc": "2026-11-05T20:01:22Z",
-  "generated_aest": "2026-11-06T06:01:22+10:00",
+  "generated_utc": "2026-11-05T20:16:15Z",
+  "generated_aest": "2026-11-06T06:16:15+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 8,
+  "current_outage_records": 9,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 370,
-  "current_records_after_outage_type_filter": 9,
+  "current_records_before_outage_type_filter": 371,
+  "current_records_after_outage_type_filter": 10,
   "current_records_dropped_planned_or_unknown": 361,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
@@ -15,31 +15,31 @@
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "6 November 2026 6:00 AM",
-      "source_updated_utc": "2026-11-05T20:00:07Z",
+      "source_updated": "6 November 2026 6:15 AM",
+      "source_updated_utc": "2026-11-05T20:15:02Z",
       "published_customers": 188,
       "event_count": 3,
-      "fetched_utc": "2026-11-05T20:01:32Z"
+      "fetched_utc": "2026-11-05T20:16:22Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-05T20:00:01Z",
-      "published_customers": 110,
-      "event_count": 5,
-      "fetched_utc": "2026-11-05T20:01:35Z"
+      "source_updated_utc": "2026-11-05T20:15:01Z",
+      "published_customers": 124,
+      "event_count": 6,
+      "fetched_utc": "2026-11-05T20:16:25Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-05T20:01:22Z",
+    "snapshot_utc": "2026-11-05T20:16:15Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-05T20:01:32Z",
+      "fetched_utc": "2026-11-05T20:16:22Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-05T20:00:07Z",
+      "source_updated_utc": "2026-11-05T20:15:02Z",
       "retained": false,
       "total_customers": 188,
       "rows": [
@@ -63,14 +63,18 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-05T20:01:35Z",
+      "fetched_utc": "2026-11-05T20:16:25Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-05T20:00:01Z",
+      "source_updated_utc": "2026-11-05T20:15:01Z",
       "retained": false,
-      "total_customers": 110,
+      "total_customers": 124,
       "rows": [
+        {
+          "lga_name": "Barcoo Shire",
+          "affected_customers": 7
+        },
         {
           "lga_name": "Cassowary Coast Regional",
           "affected_customers": 39
@@ -82,6 +86,10 @@
         {
           "lga_name": "Fraser Coast Regional",
           "affected_customers": 3
+        },
+        {
+          "lga_name": "Quilpie Shire",
+          "affected_customers": 7
         },
         {
           "lga_name": "Rockhampton Regional",
@@ -96,17 +104,17 @@
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 3,
-  "current_ergon_records": 5,
+  "current_ergon_records": 6,
   "current_essential_records_fetched": 2,
   "current_energex_records_fetched": 88,
-  "current_ergon_records_fetched": 280,
+  "current_ergon_records_fetched": 281,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 1,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3355,
-  "lga_totals_rows_48h": 5044,
-  "lga_totals_latest_rows": 18,
+  "snapshot_rows_48h": 3330,
+  "lga_totals_rows_48h": 5024,
+  "lga_totals_latest_rows": 22,
   "lga_cumulative_rows": 98,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
