@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T03:46:12Z",
+      "fetched_utc": "2026-11-05T04:01:23Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 1:30 PM",
-        "source_updated_utc": "2026-11-05T03:30:03Z",
-        "published_customers": 2753,
-        "event_count": 4
+        "source_updated": "5 November 2026 2:00 PM",
+        "source_updated_utc": "2026-11-05T04:00:02Z",
+        "published_customers": 1213,
+        "event_count": 5
       },
       "events": [
         {
@@ -102,12 +102,41 @@
           "street_name": "AVIL CT, FALCONER ST, HENNESSY ST, MCKAY ST, TEW CT"
         },
         {
+          "event_id": "INCD-993251-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 8
+            }
+          ],
+          "details": {
+            "event": "INCD-993251-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4519",
+            "suburb": "BEERWAH",
+            "customersAffected": "8",
+            "restoreTime": "2026-11-05T15:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "LINDEMAN RD",
+              "OLD GYMPIE RD"
+            ]
+          },
+          "affected_customers": 8,
+          "suburb": "BEERWAH",
+          "street_name": "LINDEMAN RD, OLD GYMPIE RD"
+        },
+        {
           "event_id": "INCD-993261-g",
           "allocations": [
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 2581
+              "affected_customers": 1033
             },
             {
               "lga_name": "Brisbane City",
@@ -130,20 +159,20 @@
               "JOHNSON RD"
             ]
           },
-          "affected_customers": 2583,
-          "suburb": "BORONIA HEIGHTS, FORESTDALE, HILLCREST, PARK RIDGE, PARKINSON, REGENTS PARK",
-          "street_name": "ABBEY ST, ABBOTT ST, ACORUS CT, AILSA ST, ALGOL ST, ALLANADALE CT, ARCHERY ST, ARONIA CT, ASPEN CT, BARKER ST, BEAUFORTIA CT, BLYTH CT, BOYD CT, BROADSWORD CT, CALLUNA CT, CENTRAL CT, CIANTHUS ST, CLABON ST, CLONMEL ST, COCAS ST, COLISA CRES, COORA CT, COPEINA CT, CRANNOCK CT, CRESTHILL AVE, CYDONIA CT, DEIRWOLD CT, DEVEREAUX RD, DRACON ST, DUNDEE DR, ELLIOTT CT, ELMWOOD CT, EMERALD DR, ETHION DR, FEATHER CL, FEDRICK ST, FENWOOD CL, FLORENCE ST, FOLIUM CT, FORESTDALE DR, FOXHALL ST, FRANKENIA CT, GINGKO CRES, GISBOURNE ST, GORDONIA DR, GRECIAN ST, GREEN RD, GREENVALE CT, GUNNING ST, HALDHAM CRES, HAMPTON CT, HOOD CT, HUNTINGDON ST, HUON PL, HYDE CT, HYDRABAD ST, IBERIS CT, INDICA CRES, ITEA CT, IXORA CT, JOHNSON RD, KINGFIELD CT, KINGVALE ST, KIRKLEES PL, LEARMONTH CT, LETITIA ST, LINCOLN GREEN DR, LIONHEART ST, LITSEA CT, LUCIDA CT, LUTTON CT, MACADAMIA ST, MACTIER DR, MATSON AVE, MT LINDESAY HWY, MYLES CT, NEWBURN ST, NOTTINGHAM CT, OWENS CRES, PARINGA CT, PARKROYAL CRES, PERSEA ST, PEVERELL ST, PHOENIX CT, PLANTAGENET CT, PRIORY PL, RENFREW ST, SARACEN CT, SCRIBNER AVE, SELLWOOD ST, SEYMORE CT, SHERIFF ST, SIENKO ST, STAFF PL, TENIELLE ST, TRENT CT, VANSITTART RD, VERGULDE RD, VIROSA CT, VOLANT ST, WATKINSIA CT, WESTLAND CT, WESTWOOD DR, WINSLOW CT, WOODBINE ST"
+          "affected_customers": 1035,
+          "suburb": "FORESTDALE, HILLCREST, PARKINSON",
+          "street_name": "ABBEY ST, ABBOTT ST, ALLANADALE CT, ARCHERY ST, BLYTH CT, BOYD CT, BROADSWORD CT, CENTRAL CT, CLABON ST, COORA CT, CRANNOCK CT, DEIRWOLD CT, DUNDEE DR, ELLIOTT CT, FEATHER CL, FORESTDALE DR, GISBOURNE ST, HAMPTON CT, HOOD CT, HUNTINGDON ST, HUON PL, JOHNSON RD, KIRKLEES PL, LEARMONTH CT, LINCOLN GREEN DR, LIONHEART ST, MACADAMIA ST, NEWBURN ST, NOTTINGHAM CT, PARINGA CT, PERSEA ST, PEVERELL ST, PLANTAGENET CT, PRIORY PL, RENFREW ST, SARACEN CT, SCRIBNER AVE, SHERIFF ST, SIENKO ST, STAFF PL, TRENT CT, WESTLAND CT, WESTWOOD DR, WINSLOW CT, WOODBINE ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T03:46:15Z",
+      "fetched_utc": "2026-11-05T04:01:27Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T03:45:00Z",
-        "published_customers": 1056,
-        "event_count": 14
+        "source_updated_utc": "2026-11-05T04:00:00Z",
+        "published_customers": 1154,
+        "event_count": 15
       },
       "events": [
         {
@@ -320,6 +349,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26FN10950",
+          "allocations": [
+            {
+              "lga_name": "Cairns Regional",
+              "lga_code": null,
+              "affected_customers": 91
+            }
+          ],
+          "details": {
+            "event": "26FN10950",
+            "council": "Cairns Regional Council",
+            "suburb": "EARLVILLE",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 13:50",
+            "restoreTime": "05/11/2026 14:50",
+            "customersAffected": "91",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 91,
+          "suburb": "EARLVILLE",
+          "street_name": ""
+        },
+        {
           "event_id": "26NQ13591",
           "allocations": [
             {
@@ -368,6 +421,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26NQ13611",
+          "allocations": [
+            {
+              "lga_name": "Charters Towers Regional",
+              "lga_code": null,
+              "affected_customers": 39
+            }
+          ],
+          "details": {
+            "event": "26NQ13611",
+            "council": "Charters Towers Regional Council",
+            "suburb": "BALFES CREEK, BASALT, GREENVALE, PENTLAND",
+            "type": "UNPLANNED",
+            "startTime": "05/11/2026 07:00",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "39",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 39,
+          "suburb": "BALFES CREEK, BASALT, GREENVALE, PENTLAND",
+          "street_name": ""
+        },
+        {
           "event_id": "26SW14206",
           "allocations": [
             {
@@ -382,7 +459,7 @@
             "suburb": "CHARLEVILLE, MORVEN",
             "type": "UNPLANNED",
             "startTime": "05/11/2026 08:03",
-            "restoreTime": "05/11/2026 14:00",
+            "restoreTime": "05/11/2026 15:00",
             "customersAffected": "31",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
@@ -413,30 +490,6 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10652",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 32
-            }
-          ],
-          "details": {
-            "event": "26WB10652",
-            "council": "Bundaberg Regional Council",
-            "suburb": "BUXTON",
-            "type": "UNPLANNED",
-            "startTime": "05/11/2026 11:30",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "32",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 32,
-          "suburb": "BUXTON",
           "street_name": ""
         },
         {
