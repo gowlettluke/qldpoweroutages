@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T16:01:48Z",
+      "fetched_utc": "2026-11-05T16:16:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 2:00 AM",
-        "source_updated_utc": "2026-11-05T16:00:02Z",
-        "published_customers": 3675,
-        "event_count": 4
+        "source_updated": "6 November 2026 2:15 AM",
+        "source_updated_utc": "2026-11-05T16:15:02Z",
+        "published_customers": 3512,
+        "event_count": 3
       },
       "events": [
         {
@@ -18,7 +18,7 @@
             {
               "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
-              "affected_customers": 25
+              "affected_customers": 18
             },
             {
               "lga_name": "Gympie Regional",
@@ -41,41 +41,9 @@
               "SUTTON LANE"
             ]
           },
-          "affected_customers": 27,
+          "affected_customers": 20,
           "suburb": "BELLI PARK, GHEERULLA, MOY POCKET",
-          "street_name": "BOYLE RD, EUMUNDI-KENILWORTH RD, MCGINN RD, SUTTON LANE"
-        },
-        {
-          "event_id": "INCD-993517-g",
-          "allocations": [
-            {
-              "lga_name": "Noosa Shire",
-              "lga_code": null,
-              "affected_customers": 156
-            }
-          ],
-          "details": {
-            "event": "INCD-993517-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Noosa",
-            "postcode": "4567",
-            "suburb": "NOOSA HEADS",
-            "customersAffected": "55",
-            "restoreTime": "2026-11-06T02:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ARKANA DR",
-              "LUNAR CRES",
-              "NOOSA DR",
-              "WARANA ST",
-              "WEYBA ESP"
-            ]
-          },
-          "affected_customers": 156,
-          "suburb": "NOOSA HEADS, NOOSAVILLE",
-          "street_name": "ARKANA DR, CREEK RD, KOEL ST, LAKE WEYBA DR, LUNAR CRES, NOOSA DR, PIPI CRES, PITTA PL, SWAN ST, TAINE ST, WARANA ST, WEYBA ESP, WYLAH ST"
+          "street_name": "BOYLE RD, MCGINN RD, SUTTON LANE"
         },
         {
           "event_id": "INCD-993522-g",
@@ -130,7 +98,7 @@
             "postcode": "4103",
             "suburb": "ANNERLEY",
             "customersAffected": "1",
-            "restoreTime": "2026-11-06T04:00:00+10:00",
+            "restoreTime": "2026-11-06T04:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -144,13 +112,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T16:01:53Z",
+      "fetched_utc": "2026-11-05T16:16:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T16:00:00Z",
-        "published_customers": 8,
-        "event_count": 3
+        "source_updated_utc": "2026-11-05T16:15:00Z",
+        "published_customers": 71,
+        "event_count": 4
       },
       "events": [
         {
@@ -175,6 +143,30 @@
           },
           "affected_customers": 2,
           "suburb": "MOURA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13063",
+          "allocations": [
+            {
+              "lga_name": "Rockhampton Regional",
+              "lga_code": null,
+              "affected_customers": 63
+            }
+          ],
+          "details": {
+            "event": "26CA13063",
+            "council": "Rockhampton Regional Council",
+            "suburb": "ALLENSTOWN, ROCKHAMPTON, ROCKHAMPTON CITY",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 01:48",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "63",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 63,
+          "suburb": "ALLENSTOWN, ROCKHAMPTON, ROCKHAMPTON CITY",
           "street_name": ""
         },
         {
