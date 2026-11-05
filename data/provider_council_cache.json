@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T05:01:13Z",
+      "fetched_utc": "2026-11-05T05:16:04Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "5 November 2026 2:45 PM",
-        "source_updated_utc": "2026-11-05T04:45:02Z",
-        "published_customers": 1394,
-        "event_count": 3
+        "source_updated": "5 November 2026 3:00 PM",
+        "source_updated_utc": "2026-11-05T05:00:02Z",
+        "published_customers": 1396,
+        "event_count": 5
       },
       "events": [
         {
@@ -125,15 +125,71 @@
           "affected_customers": 1292,
           "suburb": "BUDERIM, MOUNTAIN CREEK",
           "street_name": "ADORI DR, ADRIAN CL, APPLEGUM PL, ARALUEN CL, BARRACUDA CT, BIRCH ST, BOCCACCIO CT, BRIANNA CL, CABERNET CT, CANDLEBARK CT, CARBEEN CT, CHABLIS CT, CHARDONNAY CT, CHELSEA ROSE CL, COHO CT, CONEY CT, COOMOO CRES, CRANFIELD DR, DIXON RD, EKALA ST, ELSA WILSON DR, ESCOLAR DR, FELICIA CT, FERNLEIGH CRES, FIGTREE CT, FIREWHEEL CT, GAREMA CT, GLENFIELDS BVD, GOURAMI CT, GREENWAY PL, GYMEA CT, HADDYS CL, HAKEA CT, HERMITAGE CT, IRONWOOD CT, JACKS LANE, JANELLE CRES, JAY CL, KARAWATHA DR, KINGFISH CT, KRISTEN CL, LADY MUSGRAVE DR, LEAH CL, LOANG CT, LURNEA CRES, MADISON CL, MAKO CT, MALABAR CT, MARA CL, MEANDERSEA CT, MERLOT CT, MOLAKAI DR, MOONAH CT, MOUNTAIN CL, MOUNTAIN CREEK RD, MUNBILLA CL, MYALL CT, PAPERBARK CT, PARKLEA ESP, PETRALE CT, PINARI CT, POMPANO CT, QUILLBACK CT, RAINSFORD PL, REDBUD CT, RENMANO CT, SAILFISH DR, SATINAY ST, SATINWOOD PL, SAUGER CT, SERENA CL, SERENELLA CT, SHIRAZ CT, STANTON CT, SUNBURST CT, SUNSHINE MWY, SWEETBRUSH PL, SYD LINGARD DR, TEASEL CT, TILAPIA CT, WHITEWOOD CT"
+        },
+        {
+          "event_id": "INCD-993321-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-993321-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4574",
+            "suburb": "KENILWORTH",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-05T17:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "PAULGER RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "KENILWORTH",
+          "street_name": "PAULGER RD"
+        },
+        {
+          "event_id": "INCD-993322-g",
+          "allocations": [
+            {
+              "lga_name": "Somerset Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-993322-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Somerset Regional",
+            "postcode": "4312",
+            "suburb": "MOOMBRA",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-05T16:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "STELEY RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "MOOMBRA",
+          "street_name": "STELEY RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T05:01:16Z",
+      "fetched_utc": "2026-11-05T05:16:07Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T05:00:25Z",
+        "source_updated_utc": "2026-11-05T05:15:00Z",
         "published_customers": 680,
         "event_count": 12
       },
