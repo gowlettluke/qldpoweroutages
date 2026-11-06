@@ -2,52 +2,23 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T16:16:21Z",
+      "fetched_utc": "2026-11-06T16:31:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 2:15 AM",
-        "source_updated_utc": "2026-11-06T16:15:02Z",
-        "published_customers": 711,
-        "event_count": 1
+        "source_updated": "7 November 2026 2:30 AM",
+        "source_updated_utc": "2026-11-06T16:30:02Z",
+        "published_customers": 0,
+        "event_count": 0
       },
-      "events": [
-        {
-          "event_id": "INCD-993820-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 711
-            }
-          ],
-          "details": {
-            "event": "INCD-993820-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4051",
-            "suburb": "ALDERLEY",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-07T03:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "SHAND ST"
-            ]
-          },
-          "affected_customers": 711,
-          "suburb": "ALDERLEY, ENOGGERA",
-          "street_name": "BAUHINIA AVE, CLOVER ST, CORBETT ST, DERBY LANE, ELKHORN ST, FERN ST, HURDCOTTE ST, KINNEN ST, LAUREL ST, MAGURA ST, ORCHID ST, PICKERING ST, PICNIC ST, SHAND ST, SHELFORD ST, SICKLEFIELD RD, SOUTH PINE RD, STAGHORN ST, TUNBA ST, WARDELL ST, WATTLE ST, WILLANDRA ST"
-        }
-      ]
+      "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T16:16:26Z",
+      "fetched_utc": "2026-11-06T16:31:23Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T16:15:04Z",
+        "source_updated_utc": "2026-11-06T16:30:01Z",
         "published_customers": 79,
         "event_count": 7
       },
