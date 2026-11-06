@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T00:16:18Z",
+      "fetched_utc": "2026-11-06T00:31:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -80,13 +80,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T00:16:21Z",
+      "fetched_utc": "2026-11-06T00:31:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T00:15:00Z",
-        "published_customers": 84,
-        "event_count": 8
+        "source_updated_utc": "2026-11-06T00:30:01Z",
+        "published_customers": 189,
+        "event_count": 9
       },
       "events": [
         {
@@ -255,6 +255,35 @@
           },
           "affected_customers": 2,
           "suburb": "RIVERLEIGH",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10677",
+          "allocations": [
+            {
+              "lga_name": "South Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 104
+            },
+            {
+              "lga_name": "Western Downs Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "26WB10677",
+            "council": "South Burnett Regional Council",
+            "suburb": "BOONDOOMA, DARR CREEK, DURONG, DURONG SOUTH",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 10:25",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "104",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 105,
+          "suburb": "BOONDOOMA, DARR CREEK, DURONG, DURONG SOUTH",
           "street_name": ""
         },
         {
