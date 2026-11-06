@@ -2,45 +2,43 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T08:01:28Z",
+      "fetched_utc": "2026-11-06T08:16:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 6:00 PM",
-        "source_updated_utc": "2026-11-06T08:00:06Z",
-        "published_customers": 35,
+        "source_updated": "6 November 2026 6:15 PM",
+        "source_updated_utc": "2026-11-06T08:15:02Z",
+        "published_customers": 1,
         "event_count": 1
       },
       "events": [
         {
-          "event_id": "INCD-993739-g",
+          "event_id": "INCD-993788-g",
           "allocations": [
             {
-              "lga_name": "Somerset Regional",
+              "lga_name": "Scenic Rim Regional",
               "lga_code": null,
-              "affected_customers": 35
+              "affected_customers": 1
             }
           ],
           "details": {
-            "event": "INCD-993739-g",
-            "cause": "Emergency repairs in-progress",
-            "status": "Emergency Repairs",
-            "council": "Somerset Regional",
-            "postcode": "4311",
-            "suburb": "CLARENDON",
-            "customersAffected": "35",
-            "restoreTime": "2026-11-06T20:30:00+10:00",
-            "etrFlag": "RB",
-            "etrFlagBool": "Y",
+            "event": "INCD-993788-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Scenic Rim Regional",
+            "postcode": "4309",
+            "suburb": "FRAZERVIEW",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-06T21:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
             "streets": [
-              "CLARENDON RD",
-              "NUNNS RD",
-              "PATRICK RD"
+              "WEST STALLMAN RD"
             ]
           },
-          "affected_customers": 35,
-          "suburb": "CLARENDON",
-          "street_name": "CLARENDON RD, NUNNS RD, PATRICK RD"
+          "affected_customers": 1,
+          "suburb": "FRAZERVIEW",
+          "street_name": "WEST STALLMAN RD"
         }
       ]
     },
