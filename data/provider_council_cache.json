@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T05:01:35Z",
+      "fetched_utc": "2026-11-06T05:16:02Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -105,13 +105,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T05:01:39Z",
+      "fetched_utc": "2026-11-06T05:16:05Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T05:00:01Z",
-        "published_customers": 61,
-        "event_count": 6
+        "source_updated_utc": "2026-11-06T05:10:00Z",
+        "published_customers": 884,
+        "event_count": 7
       },
       "events": [
         {
@@ -136,6 +136,30 @@
           },
           "affected_customers": 24,
           "suburb": "SPEEWAH",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11011",
+          "allocations": [
+            {
+              "lga_name": "Douglas Shire",
+              "lga_code": null,
+              "affected_customers": 823
+            }
+          ],
+          "details": {
+            "event": "26FN11011",
+            "council": "Douglas Shire Council",
+            "suburb": "CRAIGLIE, PORT DOUGLAS",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 15:02",
+            "restoreTime": "06/11/2026 17:00",
+            "customersAffected": "823",
+            "cause": "The loss of supply is due to public safety concerns.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 823,
+          "suburb": "CRAIGLIE, PORT DOUGLAS",
           "street_name": ""
         },
         {
