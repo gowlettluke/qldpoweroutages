@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T03:01:34Z",
+      "fetched_utc": "2026-11-06T03:16:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -80,13 +80,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T03:01:37Z",
+      "fetched_utc": "2026-11-06T03:16:15Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T03:00:14Z",
-        "published_customers": 220,
-        "event_count": 9
+        "source_updated_utc": "2026-11-06T03:15:00Z",
+        "published_customers": 237,
+        "event_count": 10
       },
       "events": [
         {
@@ -183,6 +183,30 @@
           },
           "affected_customers": 5,
           "suburb": "GIRU, SHIRBOURNE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13770",
+          "allocations": [
+            {
+              "lga_name": "Cloncurry Shire",
+              "lga_code": null,
+              "affected_customers": 17
+            }
+          ],
+          "details": {
+            "event": "26NQ13770",
+            "council": "Cloncurry Shire Council",
+            "suburb": "CLONCURRY",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 13:09",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "17",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 17,
+          "suburb": "CLONCURRY",
           "street_name": ""
         },
         {

@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-06T03:01:26Z",
-  "generated_aest": "2026-11-06T13:01:26+10:00",
+  "generated_utc": "2026-11-06T03:16:02Z",
+  "generated_aest": "2026-11-06T13:16:02+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 11,
+  "current_outage_records": 12,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 466,
-  "current_records_after_outage_type_filter": 19,
-  "current_records_dropped_planned_or_unknown": 447,
+  "current_records_before_outage_type_filter": 460,
+  "current_records_after_outage_type_filter": 18,
+  "current_records_dropped_planned_or_unknown": 442,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
@@ -19,23 +19,23 @@
       "source_updated_utc": "2026-11-06T03:00:02Z",
       "published_customers": 92,
       "event_count": 2,
-      "fetched_utc": "2026-11-06T03:01:34Z"
+      "fetched_utc": "2026-11-06T03:16:09Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-06T03:00:14Z",
-      "published_customers": 220,
-      "event_count": 9,
-      "fetched_utc": "2026-11-06T03:01:37Z"
+      "source_updated_utc": "2026-11-06T03:15:00Z",
+      "published_customers": 237,
+      "event_count": 10,
+      "fetched_utc": "2026-11-06T03:16:15Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-06T03:01:26Z",
+    "snapshot_utc": "2026-11-06T03:16:02Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-06T03:01:34Z",
+      "fetched_utc": "2026-11-06T03:16:09Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -59,13 +59,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-06T03:01:37Z",
+      "fetched_utc": "2026-11-06T03:16:15Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-06T03:00:14Z",
+      "source_updated_utc": "2026-11-06T03:15:00Z",
       "retained": false,
-      "total_customers": 220,
+      "total_customers": 237,
       "rows": [
         {
           "lga_name": "Bundaberg Regional",
@@ -74,6 +74,10 @@
         {
           "lga_name": "Burdekin Shire",
           "affected_customers": 157
+        },
+        {
+          "lga_name": "Cloncurry Shire",
+          "affected_customers": 17
         },
         {
           "lga_name": "Flinders Shire",
@@ -104,17 +108,17 @@
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 2,
-  "current_ergon_records": 9,
-  "current_essential_records_fetched": 25,
+  "current_ergon_records": 10,
+  "current_essential_records_fetched": 19,
   "current_energex_records_fetched": 121,
-  "current_ergon_records_fetched": 320,
+  "current_ergon_records_fetched": 319,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 8,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 2583,
-  "lga_totals_rows_48h": 4286,
-  "lga_totals_latest_rows": 22,
+  "snapshot_rows_48h": 2566,
+  "lga_totals_rows_48h": 4276,
+  "lga_totals_latest_rows": 24,
   "lga_cumulative_rows": 92,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
