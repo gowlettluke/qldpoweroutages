@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T04:45:53Z",
+      "fetched_utc": "2026-11-06T05:01:35Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 2:30 PM",
-        "source_updated_utc": "2026-11-06T04:30:02Z",
+        "source_updated": "6 November 2026 3:00 PM",
+        "source_updated_utc": "2026-11-06T05:00:02Z",
         "published_customers": 144,
         "event_count": 3
       },
@@ -61,7 +61,7 @@
             "postcode": "4221",
             "suburb": "ELANORA",
             "customersAffected": "21",
-            "restoreTime": "2026-11-06T15:30:00+10:00",
+            "restoreTime": "2026-11-06T17:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -105,39 +105,15 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T04:45:56Z",
+      "fetched_utc": "2026-11-06T05:01:39Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T04:40:00Z",
-        "published_customers": 246,
-        "event_count": 8
+        "source_updated_utc": "2026-11-06T05:00:01Z",
+        "published_customers": 61,
+        "event_count": 6
       },
       "events": [
-        {
-          "event_id": "26CA13091",
-          "allocations": [
-            {
-              "lga_name": "Central Highlands Regional",
-              "lga_code": null,
-              "affected_customers": 21
-            }
-          ],
-          "details": {
-            "event": "26CA13091",
-            "council": "Central Highlands Regional Council",
-            "suburb": "BLACKWATER",
-            "type": "UNPLANNED",
-            "startTime": "06/11/2026 14:04",
-            "restoreTime": "06/11/2026 16:30",
-            "customersAffected": "21",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 21,
-          "suburb": "BLACKWATER",
-          "street_name": ""
-        },
         {
           "event_id": "26FN10996",
           "allocations": [
@@ -168,22 +144,22 @@
             {
               "lga_name": "Burdekin Shire",
               "lga_code": null,
-              "affected_customers": 152
+              "affected_customers": 12
             }
           ],
           "details": {
             "event": "26NQ13766",
             "council": "Burdekin Shire Council",
-            "suburb": "AYR, BARRATTA, MONA PARK",
+            "suburb": "BARRATTA, MONA PARK",
             "type": "UNPLANNED",
             "startTime": "06/11/2026 12:27",
             "restoreTime": "Under Investigation",
-            "customersAffected": "152",
+            "customersAffected": "12",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 152,
-          "suburb": "AYR, BARRATTA, MONA PARK",
+          "affected_customers": 12,
+          "suburb": "BARRATTA, MONA PARK",
           "street_name": ""
         },
         {
@@ -204,7 +180,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "17",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 17,
           "suburb": "CLONCURRY",
@@ -232,30 +208,6 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10634",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 24
-            }
-          ],
-          "details": {
-            "event": "26WB10634",
-            "council": "Bundaberg Regional Council",
-            "suburb": "OAKWOOD, SHARON",
-            "type": "UNPLANNED",
-            "startTime": "04/11/2026 19:16",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "24",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 24,
-          "suburb": "OAKWOOD, SHARON",
           "street_name": ""
         },
         {
