@@ -1,66 +1,59 @@
 {
-  "generated_utc": "2026-11-06T12:46:02Z",
-  "generated_aest": "2026-11-06T22:46:02+10:00",
+  "generated_utc": "2026-11-06T13:01:12Z",
+  "generated_aest": "2026-11-06T23:01:12+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 7,
+  "current_outage_records": 6,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 418,
-  "current_records_after_outage_type_filter": 13,
+  "current_records_before_outage_type_filter": 417,
+  "current_records_after_outage_type_filter": 12,
   "current_records_dropped_planned_or_unknown": 405,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {
-    "Ergon": "Update delayed; using verified provider data from 2026-11-06T12:30:01Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "6 November 2026 10:30 PM",
-      "source_updated_utc": "2026-11-06T12:30:02Z",
+      "source_updated": "6 November 2026 11:00 PM",
+      "source_updated_utc": "2026-11-06T13:00:05Z",
       "published_customers": 0,
       "event_count": 0,
-      "fetched_utc": "2026-11-06T12:46:08Z"
+      "fetched_utc": "2026-11-06T13:01:17Z"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-06T12:30:01Z",
-      "published_customers": 144,
-      "event_count": 7,
-      "fetched_utc": "2026-11-06T12:31:11Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "source_updated_utc": "2026-11-06T13:00:00Z",
+      "published_customers": 105,
+      "event_count": 6,
+      "fetched_utc": "2026-11-06T13:01:22Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-06T12:46:02Z",
+    "snapshot_utc": "2026-11-06T13:01:12Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-06T12:46:08Z",
+      "fetched_utc": "2026-11-06T13:01:17Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-06T12:30:02Z",
+      "source_updated_utc": "2026-11-06T13:00:05Z",
       "retained": false,
       "total_customers": 0,
       "rows": []
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-06T12:31:11Z",
+      "fetched_utc": "2026-11-06T13:01:22Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-06T12:30:01Z",
-      "retained": true,
-      "total_customers": 144,
+      "source_updated_utc": "2026-11-06T13:00:00Z",
+      "retained": false,
+      "total_customers": 105,
       "rows": [
-        {
-          "lga_name": "Banana Shire",
-          "affected_customers": 5
-        },
         {
           "lga_name": "Central Highlands Regional",
           "affected_customers": 6
@@ -74,23 +67,23 @@
           "affected_customers": 3
         },
         {
+          "lga_name": "Isaac Regional",
+          "affected_customers": 41
+        },
+        {
           "lga_name": "Paroo Shire",
           "affected_customers": 35
         },
         {
           "lga_name": "Toowoomba Regional",
           "affected_customers": 3
-        },
-        {
-          "lga_name": "Townsville City",
-          "affected_customers": 75
         }
       ]
     }
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 0,
-  "current_ergon_records": 7,
+  "current_ergon_records": 6,
   "current_essential_records_fetched": 7,
   "current_energex_records_fetched": 121,
   "current_ergon_records_fetched": 289,
@@ -98,9 +91,9 @@
   "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 2282,
-  "lga_totals_rows_48h": 4090,
-  "lga_totals_latest_rows": 14,
+  "snapshot_rows_48h": 2273,
+  "lga_totals_rows_48h": 4076,
+  "lga_totals_latest_rows": 12,
   "lga_cumulative_rows": 98,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",

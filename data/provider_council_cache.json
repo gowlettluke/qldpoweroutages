@@ -2,25 +2,25 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T12:46:08Z",
+      "fetched_utc": "2026-11-06T13:01:17Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 10:30 PM",
-        "source_updated_utc": "2026-11-06T12:30:02Z",
+        "source_updated": "6 November 2026 11:00 PM",
+        "source_updated_utc": "2026-11-06T13:00:05Z",
         "published_customers": 0,
         "event_count": 0
       },
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T12:31:11Z",
+      "fetched_utc": "2026-11-06T13:01:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T12:30:01Z",
-        "published_customers": 144,
-        "event_count": 7
+        "source_updated_utc": "2026-11-06T13:00:00Z",
+        "published_customers": 105,
+        "event_count": 6
       },
       "events": [
         {
@@ -48,27 +48,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26CA13118",
+          "event_id": "26MK7077",
           "allocations": [
             {
-              "lga_name": "Banana Shire",
+              "lga_name": "Isaac Regional",
               "lga_code": null,
-              "affected_customers": 5
+              "affected_customers": 41
             }
           ],
           "details": {
-            "event": "26CA13118",
-            "council": "Banana Shire Council",
-            "suburb": "BARALABA, MOURA",
+            "event": "26MK7077",
+            "council": "Isaac Regional Council",
+            "suburb": "MORANBAH",
             "type": "UNPLANNED",
-            "startTime": "06/11/2026 21:33",
+            "startTime": "06/11/2026 22:32",
             "restoreTime": "Under Investigation",
-            "customersAffected": "5",
-            "cause": "The loss of supply is there are supply problems resulting in low voltage conditions. It is advisable to disconnect sensitive electrical appliances.",
-            "status": "Crews on route"
+            "customersAffected": "41",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews working on-site"
           },
-          "affected_customers": 5,
-          "suburb": "BARALABA, MOURA",
+          "affected_customers": 41,
+          "suburb": "MORANBAH",
           "street_name": ""
         },
         {
@@ -93,30 +93,6 @@
           },
           "affected_customers": 17,
           "suburb": "CLONCURRY",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13788",
-          "allocations": [
-            {
-              "lga_name": "Townsville City",
-              "lga_code": null,
-              "affected_customers": 75
-            }
-          ],
-          "details": {
-            "event": "26NQ13788",
-            "council": "Townsville City Council",
-            "suburb": "WULGURU",
-            "type": "UNPLANNED",
-            "startTime": "06/11/2026 19:32",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "75",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 75,
-          "suburb": "WULGURU",
           "street_name": ""
         },
         {
