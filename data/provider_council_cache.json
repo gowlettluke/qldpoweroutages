@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T21:46:08Z",
+      "fetched_utc": "2026-11-06T22:01:14Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 7:30 AM",
-        "source_updated_utc": "2026-11-06T21:30:02Z",
-        "published_customers": 5,
-        "event_count": 1
+        "source_updated": "7 November 2026 7:45 AM",
+        "source_updated_utc": "2026-11-06T21:45:06Z",
+        "published_customers": 17,
+        "event_count": 2
       },
       "events": [
         {
@@ -40,15 +40,43 @@
           "affected_customers": 5,
           "suburb": "MAROON",
           "street_name": "BOONAH-RATHDOWNEY RD, NEWMAN RD"
+        },
+        {
+          "event_id": "INCD-993837-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 12
+            }
+          ],
+          "details": {
+            "event": "INCD-993837-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Brisbane City",
+            "postcode": "4009",
+            "suburb": "EAGLE FARM",
+            "customersAffected": "12",
+            "restoreTime": "2026-11-07T10:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "KINGSFORD SMITH DR"
+            ]
+          },
+          "affected_customers": 12,
+          "suburb": "EAGLE FARM",
+          "street_name": "KINGSFORD SMITH DR"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T21:46:12Z",
+      "fetched_utc": "2026-11-06T22:01:17Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T21:45:00Z",
+        "source_updated_utc": "2026-11-06T22:00:01Z",
         "published_customers": 70,
         "event_count": 6
       },
