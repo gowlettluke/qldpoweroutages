@@ -2,48 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T05:45:56Z",
+      "fetched_utc": "2026-11-06T06:01:29Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 3:30 PM",
-        "source_updated_utc": "2026-11-06T05:30:02Z",
-        "published_customers": 123,
-        "event_count": 2
+        "source_updated": "6 November 2026 4:00 PM",
+        "source_updated_utc": "2026-11-06T06:00:02Z",
+        "published_customers": 35,
+        "event_count": 1
       },
       "events": [
-        {
-          "event_id": "INCD-993690-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 88
-            }
-          ],
-          "details": {
-            "event": "INCD-993690-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Brisbane City",
-            "postcode": "4122",
-            "suburb": "MANSFIELD",
-            "customersAffected": "88",
-            "restoreTime": "2026-11-06T17:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BINDI ST",
-              "BLUEBELL ST",
-              "CORNFLOWER ST",
-              "DEWDROP ST",
-              "GREENMEADOW RD"
-            ]
-          },
-          "affected_customers": 88,
-          "suburb": "MANSFIELD",
-          "street_name": "BINDI ST, BLUEBELL ST, CORNFLOWER ST, DEWDROP ST, GREENMEADOW RD"
-        },
         {
           "event_id": "INCD-993739-g",
           "allocations": [
@@ -61,7 +29,7 @@
             "postcode": "4311",
             "suburb": "CLARENDON",
             "customersAffected": "35",
-            "restoreTime": "2026-11-06T16:30:00+10:00",
+            "restoreTime": "2026-11-06T18:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -77,13 +45,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T05:45:59Z",
+      "fetched_utc": "2026-11-06T06:01:32Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T05:40:00Z",
-        "published_customers": 174,
-        "event_count": 8
+        "source_updated_utc": "2026-11-06T06:00:00Z",
+        "published_customers": 162,
+        "event_count": 7
       },
       "events": [
         {
@@ -159,30 +127,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ13766",
-          "allocations": [
-            {
-              "lga_name": "Burdekin Shire",
-              "lga_code": null,
-              "affected_customers": 12
-            }
-          ],
-          "details": {
-            "event": "26NQ13766",
-            "council": "Burdekin Shire Council",
-            "suburb": "BARRATTA, MONA PARK",
-            "type": "UNPLANNED",
-            "startTime": "06/11/2026 12:27",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "12",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 12,
-          "suburb": "BARRATTA, MONA PARK",
-          "street_name": ""
-        },
-        {
           "event_id": "26NQ13770",
           "allocations": [
             {
@@ -197,10 +141,10 @@
             "suburb": "CLONCURRY",
             "type": "UNPLANNED",
             "startTime": "06/11/2026 13:09",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "07/11/2026 18:00",
             "customersAffected": "17",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
+            "cause": "The loss of supply is due to a pole fire.",
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 17,
           "suburb": "CLONCURRY",
