@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T05:16:02Z",
+      "fetched_utc": "2026-11-06T05:31:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 3:00 PM",
-        "source_updated_utc": "2026-11-06T05:00:02Z",
+        "source_updated": "6 November 2026 3:15 PM",
+        "source_updated_utc": "2026-11-06T05:15:02Z",
         "published_customers": 144,
         "event_count": 3
       },
@@ -105,15 +105,39 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T05:16:05Z",
+      "fetched_utc": "2026-11-06T05:31:16Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T05:10:00Z",
-        "published_customers": 884,
-        "event_count": 7
+        "source_updated_utc": "2026-11-06T05:30:00Z",
+        "published_customers": 971,
+        "event_count": 8
       },
       "events": [
+        {
+          "event_id": "26CA13104",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 87
+            }
+          ],
+          "details": {
+            "event": "26CA13104",
+            "council": "Central Highlands Regional Council",
+            "suburb": "SPRINGSURE",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 15:20",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "87",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 87,
+          "suburb": "SPRINGSURE",
+          "street_name": ""
+        },
         {
           "event_id": "26FN10996",
           "allocations": [
