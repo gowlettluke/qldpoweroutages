@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T13:01:17Z",
+      "fetched_utc": "2026-11-06T13:16:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -14,13 +14,13 @@
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T13:01:22Z",
+      "fetched_utc": "2026-11-06T13:16:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T13:00:00Z",
-        "published_customers": 105,
-        "event_count": 6
+        "source_updated_utc": "2026-11-06T13:15:13Z",
+        "published_customers": 111,
+        "event_count": 7
       },
       "events": [
         {
@@ -45,6 +45,30 @@
           },
           "affected_customers": 6,
           "suburb": "SPRINGSURE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11024",
+          "allocations": [
+            {
+              "lga_name": "Cairns Regional",
+              "lga_code": null,
+              "affected_customers": 6
+            }
+          ],
+          "details": {
+            "event": "26FN11024",
+            "council": "Cairns Regional Council",
+            "suburb": "BESSIE POINT, EAST TRINITY, SECOND BEACH, YARRABAH",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 21:30",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "6",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 6,
+          "suburb": "BESSIE POINT, EAST TRINITY, SECOND BEACH, YARRABAH",
           "street_name": ""
         },
         {
