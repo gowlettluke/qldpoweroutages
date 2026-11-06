@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T03:16:09Z",
+      "fetched_utc": "2026-11-06T03:31:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 1:00 PM",
-        "source_updated_utc": "2026-11-06T03:00:02Z",
-        "published_customers": 92,
-        "event_count": 2
+        "source_updated": "6 November 2026 1:30 PM",
+        "source_updated_utc": "2026-11-06T03:30:03Z",
+        "published_customers": 113,
+        "event_count": 3
       },
       "events": [
         {
@@ -62,7 +62,7 @@
             "postcode": "4122",
             "suburb": "MANSFIELD",
             "customersAffected": "88",
-            "restoreTime": "2026-11-06T13:30:00+10:00",
+            "restoreTime": "2026-11-06T14:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -76,6 +76,34 @@
           "affected_customers": 88,
           "suburb": "MANSFIELD",
           "street_name": "BINDI ST, BLUEBELL ST, CORNFLOWER ST, DEWDROP ST, GREENMEADOW RD"
+        },
+        {
+          "event_id": "INCD-993722-g",
+          "allocations": [
+            {
+              "lga_name": "Gold Coast City",
+              "lga_code": null,
+              "affected_customers": 21
+            }
+          ],
+          "details": {
+            "event": "INCD-993722-g",
+            "cause": "A vehicle damaging our equipment",
+            "status": "Emergency Repairs",
+            "council": "Gold Coast City",
+            "postcode": "4221",
+            "suburb": "ELANORA",
+            "customersAffected": "21",
+            "restoreTime": "2026-11-06T15:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BUCKINGHAM WAY"
+            ]
+          },
+          "affected_customers": 21,
+          "suburb": "ELANORA",
+          "street_name": "BUCKINGHAM WAY"
         }
       ]
     },
