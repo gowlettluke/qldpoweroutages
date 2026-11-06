@@ -2,16 +2,66 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T10:15:56Z",
+      "fetched_utc": "2026-11-06T10:31:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 8:00 PM",
-        "source_updated_utc": "2026-11-06T10:00:02Z",
-        "published_customers": 0,
-        "event_count": 0
+        "source_updated": "6 November 2026 8:30 PM",
+        "source_updated_utc": "2026-11-06T10:30:05Z",
+        "published_customers": 917,
+        "event_count": 1
       },
-      "events": []
+      "events": [
+        {
+          "event_id": "INCD-993801-g",
+          "allocations": [
+            {
+              "lga_name": "Redland City",
+              "lga_code": null,
+              "affected_customers": 917
+            }
+          ],
+          "details": {
+            "event": "INCD-993801-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Redland City",
+            "postcode": "4163",
+            "suburb": "CLEVELAND",
+            "customersAffected": "792",
+            "restoreTime": "2026-11-06T22:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ANCHORAGE DR",
+              "BINNACLE CL",
+              "BOLLARD CT",
+              "BONAVENTURE CT",
+              "BOWSPRIT PDE",
+              "CAPTAINS CT",
+              "CARAVEL CT",
+              "COMPASS CT",
+              "ESPERANCE CT",
+              "GENOA CT",
+              "KINSAIL CT",
+              "MAINROYAL CT",
+              "MASTHEAD DR",
+              "PLYMOUTH CT",
+              "PORTSMOUTH PL",
+              "SEACREST CT",
+              "SEAHAVEN CT",
+              "SENTINEL CT",
+              "SOMMERSEA DR",
+              "STERNLIGHT CT",
+              "VOYAGERS CT",
+              "WINCH CL"
+            ]
+          },
+          "affected_customers": 917,
+          "suburb": "CLEVELAND, ORMISTON",
+          "street_name": "ANCHORAGE DR, BAINBRIDGE ST, BINNACLE CL, BOLLARD CT, BONAVENTURE CT, BOWSPRIT PDE, CAPTAINS CT, CARAVEL CT, CAYMAN CRES, COMPASS CT, ESPERANCE CT, FREETH ST E, GENOA CT, GRENOBLE PL, HORATIO ST, KINSAIL CT, MAINROYAL CT, MASTHEAD DR, MEDINA CT, MISTRAL CT, NAUTILUS DR, NELSON ST, PLYMOUTH CT, PORTSMOUTH PL, SEACREST CT, SEAHAVEN CT, SENTINEL CT, SIROCCO CT, SOMMERSEA DR, STERNLIGHT CT, VOYAGERS CT, WINCH CL"
+        }
+      ]
     },
     "Ergon": {
       "fetched_utc": "2026-11-06T10:15:59Z",
