@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T06:45:55Z",
+      "fetched_utc": "2026-11-06T07:01:30Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 4:30 PM",
-        "source_updated_utc": "2026-11-06T06:30:02Z",
+        "source_updated": "6 November 2026 5:00 PM",
+        "source_updated_utc": "2026-11-06T07:00:02Z",
         "published_customers": 35,
         "event_count": 1
       },
@@ -23,15 +23,15 @@
           ],
           "details": {
             "event": "INCD-993739-g",
-            "cause": "Emergency Repairs",
+            "cause": "Emergency repairs in-progress",
             "status": "Emergency Repairs",
             "council": "Somerset Regional",
             "postcode": "4311",
             "suburb": "CLARENDON",
             "customersAffected": "35",
             "restoreTime": "2026-11-06T18:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
+            "etrFlag": "RB",
+            "etrFlagBool": "Y",
             "streets": [
               "CLARENDON RD",
               "NUNNS RD",
@@ -45,13 +45,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T06:45:58Z",
+      "fetched_utc": "2026-11-06T07:01:34Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T06:40:00Z",
-        "published_customers": 734,
-        "event_count": 7
+        "source_updated_utc": "2026-11-06T06:55:00Z",
+        "published_customers": 708,
+        "event_count": 6
       },
       "events": [
         {
@@ -76,30 +76,6 @@
           },
           "affected_customers": 87,
           "suburb": "SPRINGSURE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN11015",
-          "allocations": [
-            {
-              "lga_name": "Cassowary Coast Regional",
-              "lga_code": null,
-              "affected_customers": 26
-            }
-          ],
-          "details": {
-            "event": "26FN11015",
-            "council": "Cassowary Coast Regional Council",
-            "suburb": "DARADGEE, JUBILEE HEIGHTS",
-            "type": "UNPLANNED",
-            "startTime": "06/11/2026 15:11",
-            "restoreTime": "06/11/2026 17:00",
-            "customersAffected": "26",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 26,
-          "suburb": "DARADGEE, JUBILEE HEIGHTS",
           "street_name": ""
         },
         {
