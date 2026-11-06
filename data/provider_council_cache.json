@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T06:01:29Z",
+      "fetched_utc": "2026-11-06T06:16:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -45,13 +45,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T06:01:32Z",
+      "fetched_utc": "2026-11-06T06:16:12Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T06:00:00Z",
-        "published_customers": 162,
-        "event_count": 7
+        "source_updated_utc": "2026-11-06T06:15:00Z",
+        "published_customers": 758,
+        "event_count": 8
       },
       "events": [
         {
@@ -124,6 +124,35 @@
           },
           "affected_customers": 26,
           "suburb": "DARADGEE, JUBILEE HEIGHTS",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11016",
+          "allocations": [
+            {
+              "lga_name": "Yarrabah Aboriginal Shire",
+              "lga_code": null,
+              "affected_customers": 542
+            },
+            {
+              "lga_name": "Cairns Regional",
+              "lga_code": null,
+              "affected_customers": 54
+            }
+          ],
+          "details": {
+            "event": "26FN11016",
+            "council": "Cairns Regional Council",
+            "suburb": "BESSIE POINT, EAST TRINITY, KOOMBAL PARK, SECOND BEACH, YARRABAH",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 16:05",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "54",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 596,
+          "suburb": "BESSIE POINT, EAST TRINITY, KOOMBAL PARK, SECOND BEACH, YARRABAH",
           "street_name": ""
         },
         {
