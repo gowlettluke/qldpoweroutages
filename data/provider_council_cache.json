@@ -2,25 +2,25 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T11:31:14Z",
+      "fetched_utc": "2026-11-06T11:46:10Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 9:15 PM",
-        "source_updated_utc": "2026-11-06T11:15:02Z",
+        "source_updated": "6 November 2026 9:30 PM",
+        "source_updated_utc": "2026-11-06T11:30:06Z",
         "published_customers": 0,
         "event_count": 0
       },
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T11:31:17Z",
+      "fetched_utc": "2026-11-06T11:46:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T11:30:00Z",
-        "published_customers": 397,
-        "event_count": 7
+        "source_updated_utc": "2026-11-06T11:45:01Z",
+        "published_customers": 402,
+        "event_count": 8
       },
       "events": [
         {
@@ -45,6 +45,30 @@
           },
           "affected_customers": 6,
           "suburb": "SPRINGSURE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13118",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 5
+            }
+          ],
+          "details": {
+            "event": "26CA13118",
+            "council": "Banana Shire Council",
+            "suburb": "BARALABA, MOURA",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 21:33",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "5",
+            "cause": "The loss of supply is there are supply problems resulting in low voltage conditions. It is advisable to disconnect sensitive electrical appliances.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 5,
+          "suburb": "BARALABA, MOURA",
           "street_name": ""
         },
         {
