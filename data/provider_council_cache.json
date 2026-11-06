@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T09:01:24Z",
+      "fetched_utc": "2026-11-06T09:16:08Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -14,12 +14,12 @@
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T08:46:19Z",
+      "fetched_utc": "2026-11-06T09:16:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T08:45:00Z",
-        "published_customers": 971,
+        "source_updated_utc": "2026-11-06T09:15:00Z",
+        "published_customers": 798,
         "event_count": 7
       },
       "events": [
@@ -82,7 +82,7 @@
             {
               "lga_name": "Cairns Regional",
               "lga_code": null,
-              "affected_customers": 262
+              "affected_customers": 57
             }
           ],
           "details": {
@@ -91,12 +91,12 @@
             "suburb": "CAIRNS, CAIRNS CITY",
             "type": "UNPLANNED",
             "startTime": "06/11/2026 17:09",
-            "restoreTime": "06/11/2026 23:00",
-            "customersAffected": "262",
+            "restoreTime": "06/11/2026 21:00",
+            "customersAffected": "57",
             "cause": "The loss of supply is due to the operating of protective equipment.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 262,
+          "affected_customers": 57,
           "suburb": "CAIRNS, CAIRNS CITY",
           "street_name": ""
         },
@@ -125,30 +125,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ13785",
-          "allocations": [
-            {
-              "lga_name": "Burdekin Shire",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26NQ13785",
-            "council": "Burdekin Shire Council",
-            "suburb": "HOME HILL",
-            "type": "UNPLANNED",
-            "startTime": "06/11/2026 18:40",
-            "restoreTime": "06/11/2026 21:00",
-            "customersAffected": "3",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 3,
-          "suburb": "HOME HILL",
-          "street_name": ""
-        },
-        {
           "event_id": "26SW14224",
           "allocations": [
             {
@@ -170,6 +146,30 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14339",
+          "allocations": [
+            {
+              "lga_name": "Paroo Shire",
+              "lga_code": null,
+              "affected_customers": 35
+            }
+          ],
+          "details": {
+            "event": "26SW14339",
+            "council": "Paroo Shire Council",
+            "suburb": "CUNNAMULLA",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 18:57",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "35",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 35,
+          "suburb": "CUNNAMULLA",
           "street_name": ""
         },
         {
