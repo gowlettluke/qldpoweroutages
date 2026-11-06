@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T01:31:17Z",
+      "fetched_utc": "2026-11-06T01:46:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -48,12 +48,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T01:31:21Z",
+      "fetched_utc": "2026-11-06T01:46:12Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T01:30:25Z",
-        "published_customers": 189,
+        "source_updated_utc": "2026-11-06T01:45:00Z",
+        "published_customers": 86,
         "event_count": 9
       },
       "events": [
@@ -75,7 +75,7 @@
             "restoreTime": "06/11/2026 16:00",
             "customersAffected": "2",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 2,
           "suburb": "MOURA",
@@ -231,27 +231,22 @@
             {
               "lga_name": "South Burnett Regional",
               "lga_code": null,
-              "affected_customers": 104
-            },
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 1
+              "affected_customers": 2
             }
           ],
           "details": {
             "event": "26WB10677",
             "council": "South Burnett Regional Council",
-            "suburb": "BOONDOOMA, DARR CREEK, DURONG, DURONG SOUTH",
+            "suburb": "BOONDOOMA",
             "type": "UNPLANNED",
             "startTime": "06/11/2026 10:25",
             "restoreTime": "Under Investigation",
-            "customersAffected": "104",
+            "customersAffected": "2",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 105,
-          "suburb": "BOONDOOMA, DARR CREEK, DURONG, DURONG SOUTH",
+          "affected_customers": 2,
+          "suburb": "BOONDOOMA",
           "street_name": ""
         },
         {
