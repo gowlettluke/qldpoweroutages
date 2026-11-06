@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T18:31:17Z",
+      "fetched_utc": "2026-11-06T18:46:08Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -14,13 +14,13 @@
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T18:31:20Z",
+      "fetched_utc": "2026-11-06T18:46:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T18:30:29Z",
-        "published_customers": 79,
-        "event_count": 7
+        "source_updated_utc": "2026-11-06T18:45:29Z",
+        "published_customers": 732,
+        "event_count": 8
       },
       "events": [
         {
@@ -45,6 +45,35 @@
           },
           "affected_customers": 6,
           "suburb": "SPRINGSURE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13121",
+          "allocations": [
+            {
+              "lga_name": "Rockhampton Regional",
+              "lga_code": null,
+              "affected_customers": 652
+            },
+            {
+              "lga_name": "Unknown",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "26CA13121",
+            "council": "Rockhampton Regional Council",
+            "suburb": "ROCKHAMPTON, THE RANGE, WANDAL, WEST ROCKHAMPTON",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 04:34",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "652",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 653,
+          "suburb": "ROCKHAMPTON, THE RANGE, WANDAL, WEST ROCKHAMPTON",
           "street_name": ""
         },
         {
