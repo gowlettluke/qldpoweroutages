@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T04:16:08Z",
+      "fetched_utc": "2026-11-06T04:31:30Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 2:00 PM",
-        "source_updated_utc": "2026-11-06T04:00:02Z",
-        "published_customers": 109,
-        "event_count": 2
+        "source_updated": "6 November 2026 2:30 PM",
+        "source_updated_utc": "2026-11-06T04:30:02Z",
+        "published_customers": 144,
+        "event_count": 3
       },
       "events": [
         {
@@ -71,15 +71,45 @@
           "affected_customers": 21,
           "suburb": "ELANORA",
           "street_name": "BUCKINGHAM WAY"
+        },
+        {
+          "event_id": "INCD-993739-g",
+          "allocations": [
+            {
+              "lga_name": "Somerset Regional",
+              "lga_code": null,
+              "affected_customers": 35
+            }
+          ],
+          "details": {
+            "event": "INCD-993739-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Somerset Regional",
+            "postcode": "4311",
+            "suburb": "CLARENDON",
+            "customersAffected": "35",
+            "restoreTime": "2026-11-06T16:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "CLARENDON RD",
+              "NUNNS RD",
+              "PATRICK RD"
+            ]
+          },
+          "affected_customers": 35,
+          "suburb": "CLARENDON",
+          "street_name": "CLARENDON RD, NUNNS RD, PATRICK RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T04:16:11Z",
+      "fetched_utc": "2026-11-06T04:31:33Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T04:15:16Z",
+        "source_updated_utc": "2026-11-06T04:30:01Z",
         "published_customers": 246,
         "event_count": 8
       },
