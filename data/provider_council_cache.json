@@ -2,54 +2,25 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T08:31:05Z",
+      "fetched_utc": "2026-11-06T08:46:16Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 6:15 PM",
-        "source_updated_utc": "2026-11-06T08:15:02Z",
-        "published_customers": 1,
-        "event_count": 1
+        "source_updated": "6 November 2026 6:45 PM",
+        "source_updated_utc": "2026-11-06T08:45:02Z",
+        "published_customers": 0,
+        "event_count": 0
       },
-      "events": [
-        {
-          "event_id": "INCD-993788-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-993788-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Scenic Rim Regional",
-            "postcode": "4309",
-            "suburb": "FRAZERVIEW",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-06T21:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "WEST STALLMAN RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "FRAZERVIEW",
-          "street_name": "WEST STALLMAN RD"
-        }
-      ]
+      "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T08:01:31Z",
+      "fetched_utc": "2026-11-06T08:46:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T08:00:00Z",
-        "published_customers": 968,
-        "event_count": 6
+        "source_updated_utc": "2026-11-06T08:45:00Z",
+        "published_customers": 971,
+        "event_count": 7
       },
       "events": [
         {
@@ -151,6 +122,30 @@
           },
           "affected_customers": 17,
           "suburb": "CLONCURRY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13785",
+          "allocations": [
+            {
+              "lga_name": "Burdekin Shire",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26NQ13785",
+            "council": "Burdekin Shire Council",
+            "suburb": "HOME HILL",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 18:40",
+            "restoreTime": "06/11/2026 21:00",
+            "customersAffected": "3",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 3,
+          "suburb": "HOME HILL",
           "street_name": ""
         },
         {
