@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T05:31:11Z",
+      "fetched_utc": "2026-11-06T05:45:56Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 3:15 PM",
-        "source_updated_utc": "2026-11-06T05:15:02Z",
-        "published_customers": 144,
-        "event_count": 3
+        "source_updated": "6 November 2026 3:30 PM",
+        "source_updated_utc": "2026-11-06T05:30:02Z",
+        "published_customers": 123,
+        "event_count": 2
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4122",
             "suburb": "MANSFIELD",
             "customersAffected": "88",
-            "restoreTime": "2026-11-06T15:30:00+10:00",
+            "restoreTime": "2026-11-06T17:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -43,34 +43,6 @@
           "affected_customers": 88,
           "suburb": "MANSFIELD",
           "street_name": "BINDI ST, BLUEBELL ST, CORNFLOWER ST, DEWDROP ST, GREENMEADOW RD"
-        },
-        {
-          "event_id": "INCD-993722-g",
-          "allocations": [
-            {
-              "lga_name": "Gold Coast City",
-              "lga_code": null,
-              "affected_customers": 21
-            }
-          ],
-          "details": {
-            "event": "INCD-993722-g",
-            "cause": "A vehicle damaging our equipment",
-            "status": "Emergency Repairs",
-            "council": "Gold Coast City",
-            "postcode": "4221",
-            "suburb": "ELANORA",
-            "customersAffected": "21",
-            "restoreTime": "2026-11-06T17:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BUCKINGHAM WAY"
-            ]
-          },
-          "affected_customers": 21,
-          "suburb": "ELANORA",
-          "street_name": "BUCKINGHAM WAY"
         },
         {
           "event_id": "INCD-993739-g",
@@ -105,12 +77,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T05:31:16Z",
+      "fetched_utc": "2026-11-06T05:45:59Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T05:30:00Z",
-        "published_customers": 971,
+        "source_updated_utc": "2026-11-06T05:40:00Z",
+        "published_customers": 174,
         "event_count": 8
       },
       "events": [
@@ -132,7 +104,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "87",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 87,
           "suburb": "SPRINGSURE",
@@ -163,27 +135,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26FN11011",
+          "event_id": "26FN11015",
           "allocations": [
             {
-              "lga_name": "Douglas Shire",
+              "lga_name": "Cassowary Coast Regional",
               "lga_code": null,
-              "affected_customers": 823
+              "affected_customers": 26
             }
           ],
           "details": {
-            "event": "26FN11011",
-            "council": "Douglas Shire Council",
-            "suburb": "CRAIGLIE, PORT DOUGLAS",
+            "event": "26FN11015",
+            "council": "Cassowary Coast Regional Council",
+            "suburb": "DARADGEE, JUBILEE HEIGHTS",
             "type": "UNPLANNED",
-            "startTime": "06/11/2026 15:02",
-            "restoreTime": "06/11/2026 17:00",
-            "customersAffected": "823",
-            "cause": "The loss of supply is due to public safety concerns.",
-            "status": "Crews working on-site"
+            "startTime": "06/11/2026 15:11",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "26",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
           },
-          "affected_customers": 823,
-          "suburb": "CRAIGLIE, PORT DOUGLAS",
+          "affected_customers": 26,
+          "suburb": "DARADGEE, JUBILEE HEIGHTS",
           "street_name": ""
         },
         {
@@ -273,7 +245,7 @@
             "suburb": "BOONDOOMA",
             "type": "UNPLANNED",
             "startTime": "06/11/2026 10:25",
-            "restoreTime": "06/11/2026 14:29",
+            "restoreTime": "06/11/2026 16:29",
             "customersAffected": "2",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
