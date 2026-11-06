@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-05T23:45:53Z",
+      "fetched_utc": "2026-11-06T00:01:31Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 9:30 AM",
-        "source_updated_utc": "2026-11-05T23:30:02Z",
-        "published_customers": 4,
-        "event_count": 1
+        "source_updated": "6 November 2026 10:00 AM",
+        "source_updated_utc": "2026-11-06T00:00:07Z",
+        "published_customers": 92,
+        "event_count": 2
       },
       "events": [
         {
@@ -44,15 +44,47 @@
           "affected_customers": 4,
           "suburb": "GHEERULLA, MOY POCKET",
           "street_name": "BOYLE RD, MCGINN RD, SUTTON LANE"
+        },
+        {
+          "event_id": "INCD-993646-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 88
+            }
+          ],
+          "details": {
+            "event": "INCD-993646-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4122",
+            "suburb": "MANSFIELD",
+            "customersAffected": "88",
+            "restoreTime": "2026-11-06T11:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BINDI ST",
+              "BLUEBELL ST",
+              "CORNFLOWER ST",
+              "DEWDROP ST",
+              "GREENMEADOW RD"
+            ]
+          },
+          "affected_customers": 88,
+          "suburb": "MANSFIELD",
+          "street_name": "BINDI ST, BLUEBELL ST, CORNFLOWER ST, DEWDROP ST, GREENMEADOW RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-05T23:45:56Z",
+      "fetched_utc": "2026-11-06T00:01:34Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-05T23:40:00Z",
+        "source_updated_utc": "2026-11-06T00:00:01Z",
         "published_customers": 84,
         "event_count": 8
       },
