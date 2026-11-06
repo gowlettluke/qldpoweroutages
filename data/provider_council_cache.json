@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T02:46:08Z",
+      "fetched_utc": "2026-11-06T03:01:34Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "6 November 2026 12:30 PM",
-        "source_updated_utc": "2026-11-06T02:30:02Z",
+        "source_updated": "6 November 2026 1:00 PM",
+        "source_updated_utc": "2026-11-06T03:00:02Z",
         "published_customers": 92,
         "event_count": 2
       },
@@ -62,7 +62,7 @@
             "postcode": "4122",
             "suburb": "MANSFIELD",
             "customersAffected": "88",
-            "restoreTime": "2026-11-06T13:00:00+10:00",
+            "restoreTime": "2026-11-06T13:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -80,37 +80,37 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T02:46:14Z",
+      "fetched_utc": "2026-11-06T03:01:37Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T02:45:00Z",
-        "published_customers": 522,
-        "event_count": 7
+        "source_updated_utc": "2026-11-06T03:00:14Z",
+        "published_customers": 220,
+        "event_count": 9
       },
       "events": [
         {
-          "event_id": "26FN10992",
+          "event_id": "26FN10996",
           "allocations": [
             {
               "lga_name": "Mareeba Shire",
               "lga_code": null,
-              "affected_customers": 355
+              "affected_customers": 24
             }
           ],
           "details": {
-            "event": "26FN10992",
+            "event": "26FN10996",
             "council": "Mareeba Shire Council",
-            "suburb": "CLOHESY RIVER, KURANDA, SPEEWAH",
+            "suburb": "SPEEWAH",
             "type": "UNPLANNED",
             "startTime": "06/11/2026 11:48",
             "restoreTime": "Under Investigation",
-            "customersAffected": "355",
+            "customersAffected": "24",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 355,
-          "suburb": "CLOHESY RIVER, KURANDA, SPEEWAH",
+          "affected_customers": 24,
+          "suburb": "SPEEWAH",
           "street_name": ""
         },
         {
@@ -162,6 +162,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26NQ13769",
+          "allocations": [
+            {
+              "lga_name": "Burdekin Shire",
+              "lga_code": null,
+              "affected_customers": 5
+            }
+          ],
+          "details": {
+            "event": "26NQ13769",
+            "council": "Burdekin Shire Council",
+            "suburb": "GIRU, SHIRBOURNE",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 05:39",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "5",
+            "cause": "The loss of supply is due to the operating of protective equipment.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 5,
+          "suburb": "GIRU, SHIRBOURNE",
+          "street_name": ""
+        },
+        {
           "event_id": "26SW14224",
           "allocations": [
             {
@@ -183,6 +207,30 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10634",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 24
+            }
+          ],
+          "details": {
+            "event": "26WB10634",
+            "council": "Bundaberg Regional Council",
+            "suburb": "OAKWOOD, SHARON",
+            "type": "UNPLANNED",
+            "startTime": "04/11/2026 19:16",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "24",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 24,
+          "suburb": "OAKWOOD, SHARON",
           "street_name": ""
         },
         {
