@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-06T09:31:18Z",
+      "fetched_utc": "2026-11-06T09:45:58Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -14,12 +14,12 @@
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-06T09:16:11Z",
+      "fetched_utc": "2026-11-06T09:46:02Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-06T09:15:00Z",
-        "published_customers": 798,
+        "source_updated_utc": "2026-11-06T09:40:00Z",
+        "published_customers": 735,
         "event_count": 7
       },
       "events": [
@@ -29,7 +29,7 @@
             {
               "lga_name": "Central Highlands Regional",
               "lga_code": null,
-              "affected_customers": 87
+              "affected_customers": 6
             }
           ],
           "details": {
@@ -39,11 +39,11 @@
             "type": "UNPLANNED",
             "startTime": "06/11/2026 15:20",
             "restoreTime": "Under Investigation",
-            "customersAffected": "87",
+            "customersAffected": "6",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 87,
+          "affected_customers": 6,
           "suburb": "SPRINGSURE",
           "street_name": ""
         },
@@ -67,37 +67,13 @@
             "suburb": "BESSIE POINT, EAST TRINITY, KOOMBAL PARK, SECOND BEACH, YARRABAH",
             "type": "UNPLANNED",
             "startTime": "06/11/2026 16:05",
-            "restoreTime": "06/11/2026 19:00",
+            "restoreTime": "06/11/2026 22:00",
             "customersAffected": "54",
             "cause": "The loss of supply is due to the operating of protective equipment.",
             "status": "Crews working on-site"
           },
           "affected_customers": 596,
           "suburb": "BESSIE POINT, EAST TRINITY, KOOMBAL PARK, SECOND BEACH, YARRABAH",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN11019",
-          "allocations": [
-            {
-              "lga_name": "Cairns Regional",
-              "lga_code": null,
-              "affected_customers": 57
-            }
-          ],
-          "details": {
-            "event": "26FN11019",
-            "council": "Cairns Regional Council",
-            "suburb": "CAIRNS, CAIRNS CITY",
-            "type": "UNPLANNED",
-            "startTime": "06/11/2026 17:09",
-            "restoreTime": "06/11/2026 21:00",
-            "customersAffected": "57",
-            "cause": "The loss of supply is due to the operating of protective equipment.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 57,
-          "suburb": "CAIRNS, CAIRNS CITY",
           "street_name": ""
         },
         {
@@ -122,6 +98,30 @@
           },
           "affected_customers": 17,
           "suburb": "CLONCURRY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13788",
+          "allocations": [
+            {
+              "lga_name": "Townsville City",
+              "lga_code": null,
+              "affected_customers": 75
+            }
+          ],
+          "details": {
+            "event": "26NQ13788",
+            "council": "Townsville City Council",
+            "suburb": "WULGURU",
+            "type": "UNPLANNED",
+            "startTime": "06/11/2026 19:32",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "75",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 75,
+          "suburb": "WULGURU",
           "street_name": ""
         },
         {
@@ -166,7 +166,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "35",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 35,
           "suburb": "CUNNAMULLA",
