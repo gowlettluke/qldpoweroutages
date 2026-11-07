@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T16:16:01Z",
+      "fetched_utc": "2026-11-07T16:31:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 2:00 AM",
-        "source_updated_utc": "2026-11-07T16:00:02Z",
-        "published_customers": 108,
-        "event_count": 3
+        "source_updated": "8 November 2026 2:30 AM",
+        "source_updated_utc": "2026-11-07T16:30:02Z",
+        "published_customers": 115,
+        "event_count": 4
       },
       "events": [
         {
@@ -40,6 +40,34 @@
           "affected_customers": 71,
           "suburb": "NORTH ARM, VERRIERDALE, YANDINA CREEK",
           "street_name": "ALLANDALE RD, DEAN RD, FIG TREE LANE, PRYOR RD, SUDHOLZ RD, VENNING RD, VERRIERDALE RD"
+        },
+        {
+          "event_id": "INCD-993948-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 7
+            }
+          ],
+          "details": {
+            "event": "INCD-993948-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4573",
+            "suburb": "COOLUM BEACH",
+            "customersAffected": "7",
+            "restoreTime": "2026-11-08T03:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "YANDINA-COOLUM RD"
+            ]
+          },
+          "affected_customers": 7,
+          "suburb": "COOLUM BEACH",
+          "street_name": "YANDINA-COOLUM RD"
         },
         {
           "event_id": "INCD-993966-g",
@@ -86,7 +114,7 @@
             "postcode": "4051",
             "suburb": "GRANGE",
             "customersAffected": "28",
-            "restoreTime": "2026-11-08T02:30:00+10:00",
+            "restoreTime": "2026-11-08T03:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -102,11 +130,11 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T16:16:04Z",
+      "fetched_utc": "2026-11-07T16:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T16:10:00Z",
+        "source_updated_utc": "2026-11-07T16:30:00Z",
         "published_customers": 658,
         "event_count": 16
       },
