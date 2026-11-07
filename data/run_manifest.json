@@ -1,48 +1,45 @@
 {
-  "generated_utc": "2026-11-07T12:16:02Z",
-  "generated_aest": "2026-11-07T22:16:02+10:00",
+  "generated_utc": "2026-11-07T12:31:05Z",
+  "generated_aest": "2026-11-07T22:31:05+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 27,
+  "current_outage_records": 29,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 534,
-  "current_records_after_outage_type_filter": 29,
+  "current_records_before_outage_type_filter": 536,
+  "current_records_after_outage_type_filter": 31,
   "current_records_dropped_planned_or_unknown": 505,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {
-    "Ergon": "Update delayed; using verified provider data from 2026-11-07T12:00:01Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "7 November 2026 10:00 PM",
-      "source_updated_utc": "2026-11-07T12:00:06Z",
+      "source_updated": "7 November 2026 10:15 PM",
+      "source_updated_utc": "2026-11-07T12:15:02Z",
       "published_customers": 1068,
       "event_count": 7,
-      "fetched_utc": "2026-11-07T12:16:08Z"
+      "fetched_utc": "2026-11-07T12:31:11Z"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-07T12:00:01Z",
-      "published_customers": 1432,
-      "event_count": 20,
-      "fetched_utc": "2026-11-07T12:01:12Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "source_updated_utc": "2026-11-07T12:30:39Z",
+      "published_customers": 1505,
+      "event_count": 22,
+      "fetched_utc": "2026-11-07T12:31:16Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-07T12:16:02Z",
+    "snapshot_utc": "2026-11-07T12:31:05Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-07T12:16:08Z",
+      "fetched_utc": "2026-11-07T12:31:11Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-07T12:00:06Z",
+      "source_updated_utc": "2026-11-07T12:15:02Z",
       "retained": false,
       "total_customers": 1068,
       "rows": [
@@ -66,13 +63,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-07T12:01:12Z",
+      "fetched_utc": "2026-11-07T12:31:16Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-07T12:00:01Z",
-      "retained": true,
-      "total_customers": 1432,
+      "source_updated_utc": "2026-11-07T12:30:39Z",
+      "retained": false,
+      "total_customers": 1505,
       "rows": [
         {
           "lga_name": "Banana Shire",
@@ -115,34 +112,38 @@
           "affected_customers": 13
         },
         {
+          "lga_name": "Somerset Regional",
+          "affected_customers": 2
+        },
+        {
           "lga_name": "South Burnett Regional",
           "affected_customers": 104
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 13
+          "affected_customers": 50
         },
         {
           "lga_name": "Western Downs Regional",
-          "affected_customers": 1
+          "affected_customers": 35
         }
       ]
     }
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 7,
-  "current_ergon_records": 20,
+  "current_ergon_records": 22,
   "current_essential_records_fetched": 3,
   "current_energex_records_fetched": 154,
-  "current_ergon_records_fetched": 377,
+  "current_ergon_records_fetched": 379,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 2,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 1936,
-  "lga_totals_rows_48h": 3558,
-  "lga_totals_latest_rows": 34,
-  "lga_cumulative_rows": 86,
+  "snapshot_rows_48h": 1952,
+  "lga_totals_rows_48h": 3573,
+  "lga_totals_latest_rows": 35,
+  "lga_cumulative_rows": 87,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
     "outage_snapshots_48h_csv": "data/outage_snapshots_48h.csv",

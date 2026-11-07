@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T12:16:08Z",
+      "fetched_utc": "2026-11-07T12:31:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 10:00 PM",
-        "source_updated_utc": "2026-11-07T12:00:06Z",
+        "source_updated": "7 November 2026 10:15 PM",
+        "source_updated_utc": "2026-11-07T12:15:02Z",
         "published_customers": 1068,
         "event_count": 7
       },
@@ -247,13 +247,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T12:01:12Z",
+      "fetched_utc": "2026-11-07T12:31:16Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T12:00:01Z",
-        "published_customers": 1432,
-        "event_count": 20
+        "source_updated_utc": "2026-11-07T12:30:39Z",
+        "published_customers": 1505,
+        "event_count": 22
       },
       "events": [
         {
@@ -571,6 +571,59 @@
           },
           "affected_customers": 93,
           "suburb": "AUGATHELLA, BEILBA, INJUNE, MITCHELL",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14403",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 37
+            },
+            {
+              "lga_name": "Somerset Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26SW14403",
+            "council": "Somerset Regional Council",
+            "suburb": "ANDURAMBA",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 22:12",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 39,
+          "suburb": "ANDURAMBA, CROWS NEST, NUKINENDA, PIERCES CREEK",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14404",
+          "allocations": [
+            {
+              "lga_name": "Western Downs Regional",
+              "lga_code": null,
+              "affected_customers": 34
+            }
+          ],
+          "details": {
+            "event": "26SW14404",
+            "council": "Western Downs Regional Council",
+            "suburb": "BUNGABAN, ROCHE CREEK, WANDOAN",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 17:36",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "34",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 34,
+          "suburb": "BUNGABAN, ROCHE CREEK, WANDOAN",
           "street_name": ""
         },
         {
