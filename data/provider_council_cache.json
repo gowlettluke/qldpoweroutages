@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T15:46:08Z",
+      "fetched_utc": "2026-11-07T16:01:36Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 1:30 AM",
-        "source_updated_utc": "2026-11-07T15:30:02Z",
-        "published_customers": 165,
-        "event_count": 5
+        "source_updated": "8 November 2026 2:00 AM",
+        "source_updated_utc": "2026-11-07T16:00:02Z",
+        "published_customers": 108,
+        "event_count": 3
       },
       "events": [
         {
@@ -70,36 +70,6 @@
           "street_name": "WINSTON RD S"
         },
         {
-          "event_id": "INCD-993972-g",
-          "allocations": [
-            {
-              "lga_name": "Gold Coast City",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "INCD-993972-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Gold Coast City",
-            "postcode": "4209",
-            "suburb": "PIMPAMA",
-            "customersAffected": "3",
-            "restoreTime": "2026-11-08T02:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "PACIFIC HWY",
-              "RIFLE RANGE RD",
-              "THE HEIGHTS BVD"
-            ]
-          },
-          "affected_customers": 3,
-          "suburb": "PIMPAMA",
-          "street_name": "PACIFIC HWY, RIFLE RANGE RD, THE HEIGHTS BVD"
-        },
-        {
           "event_id": "INCD-993982-g",
           "allocations": [
             {
@@ -116,7 +86,7 @@
             "postcode": "4051",
             "suburb": "GRANGE",
             "customersAffected": "28",
-            "restoreTime": "2026-11-08T02:00:00+10:00",
+            "restoreTime": "2026-11-08T02:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -128,46 +98,15 @@
           "affected_customers": 28,
           "suburb": "GRANGE",
           "street_name": "DAISY ST, DAYS RD, THOMAS ST"
-        },
-        {
-          "event_id": "INCD-993984-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 54
-            }
-          ],
-          "details": {
-            "event": "INCD-993984-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4007",
-            "suburb": "ASCOT",
-            "customersAffected": "54",
-            "restoreTime": "2026-11-08T02:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ANTHONY ST",
-              "SYKES ST",
-              "TOWERS ST",
-              "UPPER LANCASTER RD"
-            ]
-          },
-          "affected_customers": 54,
-          "suburb": "ASCOT",
-          "street_name": "ANTHONY ST, SYKES ST, TOWERS ST, UPPER LANCASTER RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T15:46:12Z",
+      "fetched_utc": "2026-11-07T16:01:41Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T15:45:00Z",
+        "source_updated_utc": "2026-11-07T16:00:18Z",
         "published_customers": 658,
         "event_count": 16
       },
