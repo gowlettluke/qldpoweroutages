@@ -2,16 +2,46 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T06:46:04Z",
+      "fetched_utc": "2026-11-07T07:01:29Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 4:30 PM",
-        "source_updated_utc": "2026-11-07T06:30:02Z",
-        "published_customers": 0,
-        "event_count": 0
+        "source_updated": "7 November 2026 5:00 PM",
+        "source_updated_utc": "2026-11-07T07:00:02Z",
+        "published_customers": 71,
+        "event_count": 1
       },
-      "events": []
+      "events": [
+        {
+          "event_id": "INCD-993911-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 71
+            }
+          ],
+          "details": {
+            "event": "INCD-993911-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4561",
+            "suburb": "NORTH ARM",
+            "customersAffected": "10",
+            "restoreTime": "2026-11-07T19:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALLANDALE RD",
+              "FIG TREE LANE"
+            ]
+          },
+          "affected_customers": 71,
+          "suburb": "NORTH ARM, VERRIERDALE, YANDINA CREEK",
+          "street_name": "ALLANDALE RD, DEAN RD, FIG TREE LANE, PRYOR RD, SUDHOLZ RD, VENNING RD, VERRIERDALE RD"
+        }
+      ]
     },
     "Ergon": {
       "fetched_utc": "2026-11-07T06:46:06Z",
