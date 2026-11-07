@@ -2,44 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T14:01:08Z",
+      "fetched_utc": "2026-11-07T14:16:12Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 11:45 PM",
-        "source_updated_utc": "2026-11-07T13:45:06Z",
-        "published_customers": 239,
-        "event_count": 7
+        "source_updated": "8 November 2026 12:00 AM",
+        "source_updated_utc": "2026-11-07T14:00:02Z",
+        "published_customers": 114,
+        "event_count": 5
       },
       "events": [
-        {
-          "event_id": "INCD-993906-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 14
-            }
-          ],
-          "details": {
-            "event": "INCD-993906-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4574",
-            "suburb": "COOLABINE",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-08T01:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "DELICIA RD"
-            ]
-          },
-          "affected_customers": 14,
-          "suburb": "COOLABINE, OBI OBI",
-          "street_name": "DELICIA RD"
-        },
         {
           "event_id": "INCD-993911-g",
           "allocations": [
@@ -86,7 +58,7 @@
             "postcode": "4313",
             "suburb": "FULHAM",
             "customersAffected": "2",
-            "restoreTime": "2026-11-08T00:00:00+10:00",
+            "restoreTime": "2026-11-08T00:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -96,35 +68,6 @@
           "affected_customers": 2,
           "suburb": "FULHAM",
           "street_name": "FULHAM RD"
-        },
-        {
-          "event_id": "INCD-993945-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 111
-            }
-          ],
-          "details": {
-            "event": "INCD-993945-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Brisbane City",
-            "postcode": "4077",
-            "suburb": "RICHLANDS",
-            "customersAffected": "111",
-            "restoreTime": "2026-11-08T01:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "JEMMA ST",
-              "KATHLEEN ST"
-            ]
-          },
-          "affected_customers": 111,
-          "suburb": "RICHLANDS",
-          "street_name": "JEMMA ST, KATHLEEN ST"
         },
         {
           "event_id": "INCD-993966-g",
@@ -143,7 +86,7 @@
             "postcode": "4555",
             "suburb": "PALMWOODS",
             "customersAffected": "9",
-            "restoreTime": "2026-11-08T00:00:00+10:00",
+            "restoreTime": "2026-11-08T00:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -201,7 +144,7 @@
             "postcode": "4209",
             "suburb": "PIMPAMA",
             "customersAffected": "3",
-            "restoreTime": "2026-11-08T00:30:00+10:00",
+            "restoreTime": "2026-11-08T02:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -217,13 +160,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T14:01:11Z",
+      "fetched_utc": "2026-11-07T14:16:15Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T13:55:00Z",
-        "published_customers": 1464,
-        "event_count": 19
+        "source_updated_utc": "2026-11-07T14:15:33Z",
+        "published_customers": 1468,
+        "event_count": 20
       },
       "events": [
         {
@@ -416,6 +359,30 @@
           },
           "affected_customers": 14,
           "suburb": "MONTO",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13205",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 4
+            }
+          ],
+          "details": {
+            "event": "26CA13205",
+            "council": "Livingstone Shire Council",
+            "suburb": "MILMAN, THE CAVES, WATTLEBANK",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 21:52",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "4",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 4,
+          "suburb": "MILMAN, THE CAVES, WATTLEBANK",
           "street_name": ""
         },
         {
