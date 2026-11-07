@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T01:16:12Z",
+      "fetched_utc": "2026-11-07T01:31:17Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 11:00 AM",
-        "source_updated_utc": "2026-11-07T01:00:02Z",
+        "source_updated": "7 November 2026 11:30 AM",
+        "source_updated_utc": "2026-11-07T01:30:02Z",
         "published_customers": 12,
         "event_count": 1
       },
@@ -43,13 +43,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T01:16:15Z",
+      "fetched_utc": "2026-11-07T01:31:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T01:10:00Z",
-        "published_customers": 458,
-        "event_count": 11
+        "source_updated_utc": "2026-11-07T01:25:01Z",
+        "published_customers": 584,
+        "event_count": 13
       },
       "events": [
         {
@@ -269,6 +269,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26SW14356",
+          "allocations": [
+            {
+              "lga_name": "Western Downs Regional",
+              "lga_code": null,
+              "affected_customers": 15
+            }
+          ],
+          "details": {
+            "event": "26SW14356",
+            "council": "Western Downs Regional Council",
+            "suburb": "DIAMONDY, JANDOWAE",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 11:14",
+            "restoreTime": "07/11/2026 16:00",
+            "customersAffected": "15",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 15,
+          "suburb": "DIAMONDY, JANDOWAE",
+          "street_name": ""
+        },
+        {
           "event_id": "26WB10713",
           "allocations": [
             {
@@ -286,10 +310,34 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "47",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 47,
           "suburb": "GRANVILLE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10714",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 111
+            }
+          ],
+          "details": {
+            "event": "26WB10714",
+            "council": "Bundaberg Regional Council",
+            "suburb": "ALLOWAY, ELLIOTT, KENSINGTON",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 11:19",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "111",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 111,
+          "suburb": "ALLOWAY, ELLIOTT, KENSINGTON",
           "street_name": ""
         },
         {
