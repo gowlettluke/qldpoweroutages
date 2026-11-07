@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T03:01:15Z",
+      "fetched_utc": "2026-11-07T03:16:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 12:45 PM",
-        "source_updated_utc": "2026-11-07T02:45:02Z",
+        "source_updated": "7 November 2026 1:15 PM",
+        "source_updated_utc": "2026-11-07T03:15:02Z",
         "published_customers": 12,
         "event_count": 1
       },
@@ -43,13 +43,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T02:31:22Z",
+      "fetched_utc": "2026-11-07T03:16:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T02:25:00Z",
-        "published_customers": 1245,
-        "event_count": 14
+        "source_updated_utc": "2026-11-07T03:10:00Z",
+        "published_customers": 1343,
+        "event_count": 12
       },
       "events": [
         {
@@ -154,6 +154,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26FN11031",
+          "allocations": [
+            {
+              "lga_name": "Mornington Shire",
+              "lga_code": null,
+              "affected_customers": 170
+            }
+          ],
+          "details": {
+            "event": "26FN11031",
+            "council": "Mornington Shire Council",
+            "suburb": "GUNUNA, WELLESLEY ISLAND",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 12:34",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "170",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 170,
+          "suburb": "GUNUNA, WELLESLEY ISLAND",
+          "street_name": ""
+        },
+        {
           "event_id": "26NQ13685",
           "allocations": [
             {
@@ -178,30 +202,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ13770",
-          "allocations": [
-            {
-              "lga_name": "Cloncurry Shire",
-              "lga_code": null,
-              "affected_customers": 17
-            }
-          ],
-          "details": {
-            "event": "26NQ13770",
-            "council": "Cloncurry Shire Council",
-            "suburb": "CLONCURRY",
-            "type": "UNPLANNED",
-            "startTime": "06/11/2026 13:09",
-            "restoreTime": "07/11/2026 18:00",
-            "customersAffected": "17",
-            "cause": "The loss of supply is due to a pole fire.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 17,
-          "suburb": "CLONCURRY",
-          "street_name": ""
-        },
-        {
           "event_id": "26NQ13799",
           "allocations": [
             {
@@ -219,7 +219,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "15",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 15,
           "suburb": "MAXWELTON, RICHMOND, WINTON",
@@ -240,7 +240,7 @@
             "suburb": "MOUNT FOX",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 12:10",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "07/11/2026 14:30",
             "customersAffected": "16",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
@@ -271,54 +271,6 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14351",
-          "allocations": [
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 40
-            }
-          ],
-          "details": {
-            "event": "26SW14351",
-            "council": "Western Downs Regional Council",
-            "suburb": "TARA",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 09:30",
-            "restoreTime": "07/11/2026 13:30",
-            "customersAffected": "40",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 40,
-          "suburb": "TARA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14356",
-          "allocations": [
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 15
-            }
-          ],
-          "details": {
-            "event": "26SW14356",
-            "council": "Western Downs Regional Council",
-            "suburb": "DIAMONDY, JANDOWAE",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 11:14",
-            "restoreTime": "07/11/2026 16:00",
-            "customersAffected": "15",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 15,
-          "suburb": "DIAMONDY, JANDOWAE",
           "street_name": ""
         },
         {
@@ -363,7 +315,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "111",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 111,
           "suburb": "ALLOWAY, ELLIOTT, KENSINGTON",
