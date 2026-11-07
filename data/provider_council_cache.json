@@ -2,25 +2,54 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T23:31:12Z",
+      "fetched_utc": "2026-11-07T23:46:01Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 9:15 AM",
-        "source_updated_utc": "2026-11-07T23:15:02Z",
-        "published_customers": 0,
-        "event_count": 0
+        "source_updated": "8 November 2026 9:30 AM",
+        "source_updated_utc": "2026-11-07T23:30:02Z",
+        "published_customers": 2,
+        "event_count": 1
       },
-      "events": []
+      "events": [
+        {
+          "event_id": "INCD-994024-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "INCD-994024-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Brisbane City",
+            "postcode": "4061",
+            "suburb": "THE GAP",
+            "customersAffected": "2",
+            "restoreTime": "2026-11-08T12:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "PAYNE RD"
+            ]
+          },
+          "affected_customers": 2,
+          "suburb": "THE GAP",
+          "street_name": "PAYNE RD"
+        }
+      ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T23:01:34Z",
+      "fetched_utc": "2026-11-07T23:46:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T22:55:00Z",
-        "published_customers": 599,
-        "event_count": 21
+        "source_updated_utc": "2026-11-07T23:45:01Z",
+        "published_customers": 833,
+        "event_count": 22
       },
       "events": [
         {
@@ -29,7 +58,7 @@
             {
               "lga_name": "Rockhampton Regional",
               "lga_code": null,
-              "affected_customers": 13
+              "affected_customers": 10
             }
           ],
           "details": {
@@ -39,11 +68,11 @@
             "type": "UNPLANNED",
             "startTime": "07/11/2026 10:51",
             "restoreTime": "08/11/2026 15:00",
-            "customersAffected": "13",
+            "customersAffected": "10",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
-          "affected_customers": 13,
+          "affected_customers": 10,
           "suburb": "MARLBOROUGH, MORINISH",
           "street_name": ""
         },
@@ -137,10 +166,58 @@
             "restoreTime": "08/11/2026 11:00",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage caused by external influences, such as birds or animals.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 3,
           "suburb": "MONTO",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13191",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 234
+            }
+          ],
+          "details": {
+            "event": "26CA13191",
+            "council": "Banana Shire Council",
+            "suburb": "BANANA, BILOELA, KIANGA, MOURA, THEODORE",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 21:09",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "234",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 234,
+          "suburb": "BANANA, BILOELA, KIANGA, MOURA, THEODORE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13209",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 8
+            }
+          ],
+          "details": {
+            "event": "26CA13209",
+            "council": "Livingstone Shire Council",
+            "suburb": "BUNGUNDARRA",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 21:56",
+            "restoreTime": "08/11/2026 12:00",
+            "customersAffected": "8",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 8,
+          "suburb": "BUNGUNDARRA",
           "street_name": ""
         },
         {
@@ -286,7 +363,7 @@
             "restoreTime": "08/11/2026 15:00",
             "customersAffected": "89",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 93,
           "suburb": "AUGATHELLA, BEILBA, INJUNE, MITCHELL",
@@ -476,30 +553,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26WB10807",
-          "allocations": [
-            {
-              "lga_name": "North Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 5
-            }
-          ],
-          "details": {
-            "event": "26WB10807",
-            "council": "North Burnett Regional Council",
-            "suburb": "BIGGENDEN",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 05:52",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "5",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 5,
-          "suburb": "BIGGENDEN",
-          "street_name": ""
-        },
-        {
           "event_id": "26WB10808",
           "allocations": [
             {
@@ -517,7 +570,7 @@
             "restoreTime": "08/11/2026 11:00",
             "customersAffected": "37",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 37,
           "suburb": "AVONDALE, INVICTA",
