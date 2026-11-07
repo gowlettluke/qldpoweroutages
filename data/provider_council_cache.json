@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T09:15:55Z",
+      "fetched_utc": "2026-11-07T09:31:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 7:00 PM",
-        "source_updated_utc": "2026-11-07T09:00:02Z",
-        "published_customers": 158,
-        "event_count": 4
+        "source_updated": "7 November 2026 7:30 PM",
+        "source_updated_utc": "2026-11-07T09:30:03Z",
+        "published_customers": 271,
+        "event_count": 6
       },
       "events": [
         {
@@ -57,7 +57,7 @@
             "postcode": "4561",
             "suburb": "NORTH ARM",
             "customersAffected": "10",
-            "restoreTime": "2026-11-07T19:30:00+10:00",
+            "restoreTime": "2026-11-07T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -86,7 +86,7 @@
             "postcode": "4560",
             "suburb": "BURNSIDE",
             "customersAffected": "19",
-            "restoreTime": "2026-11-07T20:00:00+10:00",
+            "restoreTime": "2026-11-07T20:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -114,7 +114,7 @@
             "postcode": "4152",
             "suburb": "CARINDALE",
             "customersAffected": "52",
-            "restoreTime": "2026-11-07T20:00:00+10:00",
+            "restoreTime": "2026-11-07T20:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -124,6 +124,63 @@
           "affected_customers": 52,
           "suburb": "CARINDALE",
           "street_name": "WRIGHT ST"
+        },
+        {
+          "event_id": "INCD-993943-g",
+          "allocations": [
+            {
+              "lga_name": "Somerset Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "INCD-993943-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Somerset Regional",
+            "postcode": "4313",
+            "suburb": "FULHAM",
+            "customersAffected": "2",
+            "restoreTime": "2026-11-07T21:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "FULHAM RD"
+            ]
+          },
+          "affected_customers": 2,
+          "suburb": "FULHAM",
+          "street_name": "FULHAM RD"
+        },
+        {
+          "event_id": "INCD-993945-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 111
+            }
+          ],
+          "details": {
+            "event": "INCD-993945-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Brisbane City",
+            "postcode": "4077",
+            "suburb": "RICHLANDS",
+            "customersAffected": "111",
+            "restoreTime": "2026-11-07T22:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "JEMMA ST",
+              "KATHLEEN ST"
+            ]
+          },
+          "affected_customers": 111,
+          "suburb": "RICHLANDS",
+          "street_name": "JEMMA ST, KATHLEEN ST"
         }
       ]
     },
