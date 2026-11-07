@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T01:01:11Z",
+      "fetched_utc": "2026-11-07T01:16:12Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 10:45 AM",
-        "source_updated_utc": "2026-11-07T00:45:02Z",
+        "source_updated": "7 November 2026 11:00 AM",
+        "source_updated_utc": "2026-11-07T01:00:02Z",
         "published_customers": 12,
         "event_count": 1
       },
@@ -29,7 +29,7 @@
             "postcode": "4009",
             "suburb": "EAGLE FARM",
             "customersAffected": "12",
-            "restoreTime": "2026-11-07T11:30:00+10:00",
+            "restoreTime": "2026-11-07T13:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -43,37 +43,37 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T01:01:14Z",
+      "fetched_utc": "2026-11-07T01:16:15Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T01:00:08Z",
-        "published_customers": 404,
-        "event_count": 10
+        "source_updated_utc": "2026-11-07T01:10:00Z",
+        "published_customers": 458,
+        "event_count": 11
       },
       "events": [
         {
-          "event_id": "26CA13104",
+          "event_id": "26CA13131",
           "allocations": [
             {
-              "lga_name": "Central Highlands Regional",
+              "lga_name": "Rockhampton Regional",
               "lga_code": null,
-              "affected_customers": 6
+              "affected_customers": 13
             }
           ],
           "details": {
-            "event": "26CA13104",
-            "council": "Central Highlands Regional Council",
-            "suburb": "SPRINGSURE",
+            "event": "26CA13131",
+            "council": "Rockhampton Regional Council",
+            "suburb": "MARLBOROUGH, MORINISH",
             "type": "UNPLANNED",
-            "startTime": "06/11/2026 15:20",
-            "restoreTime": "07/11/2026 12:00",
-            "customersAffected": "6",
-            "cause": "The loss of supply is due to a pole fire.",
-            "status": "Crews working on-site"
+            "startTime": "07/11/2026 10:51",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "13",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
           },
-          "affected_customers": 6,
-          "suburb": "SPRINGSURE",
+          "affected_customers": 13,
+          "suburb": "MARLBOROUGH, MORINISH",
           "street_name": ""
         },
         {
@@ -266,6 +266,30 @@
           },
           "affected_customers": 40,
           "suburb": "TARA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10713",
+          "allocations": [
+            {
+              "lga_name": "Fraser Coast Regional",
+              "lga_code": null,
+              "affected_customers": 47
+            }
+          ],
+          "details": {
+            "event": "26WB10713",
+            "council": "Fraser Coast Regional Council",
+            "suburb": "GRANVILLE",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 10:36",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "47",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 47,
+          "suburb": "GRANVILLE",
           "street_name": ""
         },
         {
