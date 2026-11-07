@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T09:01:29Z",
+      "fetched_utc": "2026-11-07T09:15:55Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -128,13 +128,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T09:01:32Z",
+      "fetched_utc": "2026-11-07T09:15:58Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T09:00:02Z",
-        "published_customers": 1903,
-        "event_count": 18
+        "source_updated_utc": "2026-11-07T09:10:00Z",
+        "published_customers": 1743,
+        "event_count": 19
       },
       "events": [
         {
@@ -239,7 +239,7 @@
             {
               "lga_name": "Banana Shire",
               "lga_code": null,
-              "affected_customers": 3
+              "affected_customers": 5
             }
           ],
           "details": {
@@ -249,12 +249,36 @@
             "type": "UNPLANNED",
             "startTime": "07/11/2026 17:02",
             "restoreTime": "Under Investigation",
-            "customersAffected": "3",
+            "customersAffected": "5",
             "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Crews on route"
           },
-          "affected_customers": 3,
+          "affected_customers": 5,
           "suburb": "BARALABA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13175",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26CA13175",
+            "council": "Banana Shire Council",
+            "suburb": "LONESOME CREEK",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 16:51",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 3,
+          "suburb": "LONESOME CREEK",
           "street_name": ""
         },
         {
@@ -303,6 +327,30 @@
           },
           "affected_customers": 19,
           "suburb": "NORMANTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11044",
+          "allocations": [
+            {
+              "lga_name": "Yarrabah Aboriginal Shire",
+              "lga_code": null,
+              "affected_customers": 18
+            }
+          ],
+          "details": {
+            "event": "26FN11044",
+            "council": "Yarrabah Aboriginal Shire Council",
+            "suburb": "YARRABAH",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 18:58",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "18",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 18,
+          "suburb": "YARRABAH",
           "street_name": ""
         },
         {
@@ -380,30 +428,6 @@
           },
           "affected_customers": 105,
           "suburb": "BOONDOOMA, DARR CREEK, DURONG, DURONG SOUTH",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10731",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 183
-            }
-          ],
-          "details": {
-            "event": "26WB10731",
-            "council": "Bundaberg Regional Council",
-            "suburb": "GIN GIN, MAROONDAN, MCILWRAITH",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 15:51",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "183",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 183,
-          "suburb": "GIN GIN, MAROONDAN, MCILWRAITH",
           "street_name": ""
         },
         {
