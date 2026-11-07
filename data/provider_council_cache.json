@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T10:16:13Z",
+      "fetched_utc": "2026-11-07T10:31:17Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 8:00 PM",
-        "source_updated_utc": "2026-11-07T10:00:02Z",
+        "source_updated": "7 November 2026 8:30 PM",
+        "source_updated_utc": "2026-11-07T10:30:04Z",
         "published_customers": 290,
         "event_count": 7
       },
@@ -86,7 +86,7 @@
             "postcode": "4560",
             "suburb": "BURNSIDE",
             "customersAffected": "19",
-            "restoreTime": "2026-11-07T20:30:00+10:00",
+            "restoreTime": "2026-11-07T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -114,7 +114,7 @@
             "postcode": "4152",
             "suburb": "CARINDALE",
             "customersAffected": "52",
-            "restoreTime": "2026-11-07T20:30:00+10:00",
+            "restoreTime": "2026-11-07T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -142,7 +142,7 @@
             "postcode": "4313",
             "suburb": "FULHAM",
             "customersAffected": "2",
-            "restoreTime": "2026-11-07T21:00:00+10:00",
+            "restoreTime": "2026-11-07T22:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -213,13 +213,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T10:01:31Z",
+      "fetched_utc": "2026-11-07T10:31:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T10:00:00Z",
-        "published_customers": 5631,
-        "event_count": 22
+        "source_updated_utc": "2026-11-07T10:25:00Z",
+        "published_customers": 5296,
+        "event_count": 21
       },
       "events": [
         {
@@ -288,7 +288,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "24",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 24,
           "suburb": "DIXALEA, DULULU, WOWAN",
@@ -336,7 +336,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "12",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 12,
           "suburb": "CRACOW, THEODORE",
@@ -367,51 +367,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26CA13180",
+          "event_id": "26CA13182",
           "allocations": [
             {
-              "lga_name": "North Burnett Regional",
+              "lga_name": "Banana Shire",
               "lga_code": null,
-              "affected_customers": 15
+              "affected_customers": 3
             }
           ],
           "details": {
-            "event": "26CA13180",
-            "council": "North Burnett Regional Council",
-            "suburb": "BANCROFT, MONTO",
+            "event": "26CA13182",
+            "council": "Banana Shire Council",
+            "suburb": "THEODORE",
             "type": "UNPLANNED",
-            "startTime": "07/11/2026 18:56",
+            "startTime": "07/11/2026 19:59",
             "restoreTime": "Under Investigation",
-            "customersAffected": "15",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Work delayed - crews unable to continue"
           },
-          "affected_customers": 15,
-          "suburb": "BANCROFT, MONTO",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN11031",
-          "allocations": [
-            {
-              "lga_name": "Mornington Shire",
-              "lga_code": null,
-              "affected_customers": 170
-            }
-          ],
-          "details": {
-            "event": "26FN11031",
-            "council": "Mornington Shire Council",
-            "suburb": "GUNUNA, WELLESLEY ISLAND",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 12:34",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "170",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 170,
-          "suburb": "GUNUNA, WELLESLEY ISLAND",
+          "affected_customers": 3,
+          "suburb": "THEODORE",
           "street_name": ""
         },
         {
@@ -511,6 +487,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26SW14400",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26SW14400",
+            "council": "Toowoomba Regional Council",
+            "suburb": "EMU CREEK",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 17:56",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 2,
+          "suburb": "EMU CREEK",
+          "street_name": ""
+        },
+        {
           "event_id": "26WB10730",
           "allocations": [
             {
@@ -557,34 +557,10 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "270",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 270,
           "suburb": "AVONDALE, BUCCA, INVICTA, MEADOWVALE, MOORLAND, YANDARAN",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10744",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 155
-            }
-          ],
-          "details": {
-            "event": "26WB10744",
-            "council": "Bundaberg Regional Council",
-            "suburb": "AVENELL HEIGHTS",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 16:37",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "155",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 155,
-          "suburb": "AVENELL HEIGHTS",
           "street_name": ""
         },
         {
@@ -716,7 +692,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "13",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 13,
           "suburb": "BUNDABERG",
