@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T07:45:53Z",
+      "fetched_utc": "2026-11-07T08:01:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 5:30 PM",
-        "source_updated_utc": "2026-11-07T07:30:03Z",
-        "published_customers": 1218,
-        "event_count": 4
+        "source_updated": "7 November 2026 5:45 PM",
+        "source_updated_utc": "2026-11-07T07:45:03Z",
+        "published_customers": 988,
+        "event_count": 3
       },
       "events": [
         {
@@ -96,46 +96,17 @@
           "affected_customers": 896,
           "suburb": "MARCUS BEACH, PEREGIAN BEACH",
           "street_name": "ALBATROSS CT, AVOCET PDE, BURSARIA ST, BUSTARD ST, CALLIANDRA GR, CORDIA CL, CURRAWONG CRES, DAVID LOW WAY, EGRET ST, GOULDIAN CT, JUNIPER CT, KESTREL CRES, LANCEWOOD AVE, LORILET ST, LOWAN CRES, LOWRY ST, LYREBIRD CT, MARTIN ST, MIMOSA ST, PALDAO RISE, PARAKEET CRES, PAVONIA ST, PEREGIAN ESP, PERSIMMON DR, PODARGUS PDE, SPOONBILL ST, TEAL ST, TECOMA CL, WAGTAIL DR"
-        },
-        {
-          "event_id": "INCD-993920-g",
-          "allocations": [
-            {
-              "lga_name": "Somerset Regional",
-              "lga_code": null,
-              "affected_customers": 230
-            }
-          ],
-          "details": {
-            "event": "INCD-993920-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Somerset Regional",
-            "postcode": "4313",
-            "suburb": "BRAEMORE",
-            "customersAffected": "24",
-            "restoreTime": "2026-11-07T20:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BRAEMORE LANE",
-              "BRISBANE VALLEY HWY"
-            ]
-          },
-          "affected_customers": 230,
-          "suburb": "BRAEMORE, COLINTON, GREGORS CREEK, HARLIN, MOORE, TOOGOOLAWAH, WOOLMAR, YIMBUN",
-          "street_name": "APPLE TREE CREEK RD, ARABABY CREEK RD, ARMSTRONGS LANE, BRAEMORE LANE, BRISBANE VALLEY HWY, CAMBROOK RD, D&apos;AGUILAR HWY, DRYDEN GULLY RD, FOGGS RD, FUNKNERS LANE, GAULTS LANE, GREGORS CREEK RD, HOLLAND RD, IVORY CREEK RD, JOSEY RD, KANGAROO CREEK RD, MANY VIEWS RD, MARGARET ST, MCPHERSON RD, NURINDA RD, O&apos;LEARYS LANE, POHLMANS RANGE RD, POHLMANS RD, RICHTER RD, RUCKERS LANE, SAWPIT RD, SHALLCROSS RD, SINNAMONS LANE, SPRING CREEK RD, STAGHURST RD, TOM ST, TURTLE CREEK RD, UNNAMED RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T07:45:56Z",
+      "fetched_utc": "2026-11-07T08:01:17Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T07:40:03Z",
-        "published_customers": 3153,
-        "event_count": 14
+        "source_updated_utc": "2026-11-07T08:00:01Z",
+        "published_customers": 2556,
+        "event_count": 15
       },
       "events": [
         {
@@ -211,6 +182,54 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13160",
+          "allocations": [
+            {
+              "lga_name": "Rockhampton Regional",
+              "lga_code": null,
+              "affected_customers": 73
+            }
+          ],
+          "details": {
+            "event": "26CA13160",
+            "council": "Rockhampton Regional Council",
+            "suburb": "BAJOOL",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 17:50",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "73",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 73,
+          "suburb": "BAJOOL",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13164",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 24
+            }
+          ],
+          "details": {
+            "event": "26CA13164",
+            "council": "Banana Shire Council",
+            "suburb": "DIXALEA, DULULU, WOWAN",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 17:20",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "24",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 24,
+          "suburb": "DIXALEA, DULULU, WOWAN",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11031",
           "allocations": [
             {
@@ -259,51 +278,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW14395",
+          "event_id": "26SW14397",
           "allocations": [
             {
-              "lga_name": "Toowoomba Regional",
+              "lga_name": "Southern Downs Regional",
               "lga_code": null,
-              "affected_customers": 4
+              "affected_customers": 2
             }
           ],
           "details": {
-            "event": "26SW14395",
-            "council": "Toowoomba Regional Council",
-            "suburb": "CAMBOOYA",
+            "event": "26SW14397",
+            "council": "Southern Downs Regional Council",
+            "suburb": "CANNON CREEK",
             "type": "UNPLANNED",
-            "startTime": "07/11/2026 16:44",
+            "startTime": "07/11/2026 16:12",
             "restoreTime": "Under Investigation",
-            "customersAffected": "4",
+            "customersAffected": "2",
             "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Crews on route"
           },
-          "affected_customers": 4,
-          "suburb": "CAMBOOYA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14396",
-          "allocations": [
-            {
-              "lga_name": "Banana Shire",
-              "lga_code": null,
-              "affected_customers": 5
-            }
-          ],
-          "details": {
-            "event": "26SW14396",
-            "council": "Banana Shire Council",
-            "suburb": "TAROOM",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 14:50",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "5",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 5,
-          "suburb": "TAROOM",
+          "affected_customers": 2,
+          "suburb": "CANNON CREEK",
           "street_name": ""
         },
         {
@@ -341,22 +336,22 @@
             {
               "lga_name": "Bundaberg Regional",
               "lga_code": null,
-              "affected_customers": 870
+              "affected_customers": 183
             }
           ],
           "details": {
             "event": "26WB10731",
             "council": "Bundaberg Regional Council",
-            "suburb": "DALYSFORD, GIN GIN, MAROONDAN, MCILWRAITH, MOOLBOOLAMAN, TIRROAN",
+            "suburb": "GIN GIN, MAROONDAN, MCILWRAITH",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 15:51",
-            "restoreTime": "07/11/2026 18:00",
-            "customersAffected": "870",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "183",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 870,
-          "suburb": "DALYSFORD, GIN GIN, MAROONDAN, MCILWRAITH, MOOLBOOLAMAN, TIRROAN",
+          "affected_customers": 183,
+          "suburb": "GIN GIN, MAROONDAN, MCILWRAITH",
           "street_name": ""
         },
         {
