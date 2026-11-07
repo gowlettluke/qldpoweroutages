@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T02:01:19Z",
+      "fetched_utc": "2026-11-07T02:15:53Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -43,12 +43,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T01:31:20Z",
+      "fetched_utc": "2026-11-07T02:15:58Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T01:25:01Z",
-        "published_customers": 584,
+        "source_updated_utc": "2026-11-07T02:05:00Z",
+        "published_customers": 649,
         "event_count": 13
       },
       "events": [
@@ -77,6 +77,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13132",
+          "allocations": [
+            {
+              "lga_name": "Rockhampton Regional",
+              "lga_code": null,
+              "affected_customers": 93
+            }
+          ],
+          "details": {
+            "event": "26CA13132",
+            "council": "Rockhampton Regional Council",
+            "suburb": "KAWANA, PARK AVENUE",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 10:55",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "93",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 93,
+          "suburb": "KAWANA, PARK AVENUE",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11024",
           "allocations": [
             {
@@ -98,30 +122,6 @@
           },
           "affected_customers": 6,
           "suburb": "BESSIE POINT, EAST TRINITY, SECOND BEACH, YARRABAH",
-          "street_name": ""
-        },
-        {
-          "event_id": "26MK7077",
-          "allocations": [
-            {
-              "lga_name": "Isaac Regional",
-              "lga_code": null,
-              "affected_customers": 9
-            }
-          ],
-          "details": {
-            "event": "26MK7077",
-            "council": "Isaac Regional Council",
-            "suburb": "MORANBAH",
-            "type": "UNPLANNED",
-            "startTime": "06/11/2026 22:32",
-            "restoreTime": "07/11/2026 12:00",
-            "customersAffected": "9",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 9,
-          "suburb": "MORANBAH",
           "street_name": ""
         },
         {
@@ -197,6 +197,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26NQ13800",
+          "allocations": [
+            {
+              "lga_name": "Hinchinbrook Shire",
+              "lga_code": null,
+              "affected_customers": 16
+            }
+          ],
+          "details": {
+            "event": "26NQ13800",
+            "council": "Hinchinbrook Shire Council",
+            "suburb": "MOUNT FOX",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 12:10",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "16",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 16,
+          "suburb": "MOUNT FOX",
+          "street_name": ""
+        },
+        {
           "event_id": "26SW14224",
           "allocations": [
             {
@@ -218,30 +242,6 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14339",
-          "allocations": [
-            {
-              "lga_name": "Paroo Shire",
-              "lga_code": null,
-              "affected_customers": 35
-            }
-          ],
-          "details": {
-            "event": "26SW14339",
-            "council": "Paroo Shire Council",
-            "suburb": "CUNNAMULLA",
-            "type": "UNPLANNED",
-            "startTime": "06/11/2026 18:57",
-            "restoreTime": "07/11/2026 12:00",
-            "customersAffected": "35",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 35,
-          "suburb": "CUNNAMULLA",
           "street_name": ""
         },
         {
@@ -310,7 +310,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "47",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 47,
           "suburb": "GRANVILLE",
@@ -334,7 +334,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "111",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 111,
           "suburb": "ALLOWAY, ELLIOTT, KENSINGTON",
