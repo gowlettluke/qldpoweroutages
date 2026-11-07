@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T15:01:29Z",
+      "fetched_utc": "2026-11-07T15:16:04Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -191,13 +191,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T15:01:34Z",
+      "fetched_utc": "2026-11-07T15:16:08Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T15:00:01Z",
-        "published_customers": 1447,
-        "event_count": 20
+        "source_updated_utc": "2026-11-07T15:15:32Z",
+        "published_customers": 1399,
+        "event_count": 18
       },
       "events": [
         {
@@ -266,7 +266,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "24",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 24,
           "suburb": "DIXALEA, DULULU, WOWAN",
@@ -294,30 +294,6 @@
           },
           "affected_customers": 5,
           "suburb": "BARALABA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13179",
-          "allocations": [
-            {
-              "lga_name": "Banana Shire",
-              "lga_code": null,
-              "affected_customers": 460
-            }
-          ],
-          "details": {
-            "event": "26CA13179",
-            "council": "Banana Shire Council",
-            "suburb": "ARGOON, BILOELA, DIXALEA, DULULU, GOOVIGEN, GREYCLIFFE, JAMBIN, ORANGE CREEK, WOWAN",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 19:33",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "460",
-            "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 460,
-          "suburb": "ARGOON, BILOELA, DIXALEA, DULULU, GOOVIGEN, GREYCLIFFE, JAMBIN, ORANGE CREEK, WOWAN",
           "street_name": ""
         },
         {
@@ -390,30 +366,6 @@
           },
           "affected_customers": 14,
           "suburb": "MONTO",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13205",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 4
-            }
-          ],
-          "details": {
-            "event": "26CA13205",
-            "council": "Livingstone Shire Council",
-            "suburb": "MILMAN, THE CAVES, WATTLEBANK",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 21:52",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "4",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 4,
-          "suburb": "MILMAN, THE CAVES, WATTLEBANK",
           "street_name": ""
         },
         {
@@ -535,7 +487,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "89",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews on route"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 93,
           "suburb": "AUGATHELLA, BEILBA, INJUNE, MITCHELL",
@@ -600,22 +552,27 @@
             {
               "lga_name": "Bundaberg Regional",
               "lga_code": null,
-              "affected_customers": 62
+              "affected_customers": 255
+            },
+            {
+              "lga_name": "Gladstone Regional",
+              "lga_code": null,
+              "affected_customers": 223
             }
           ],
           "details": {
             "event": "26WB10742",
             "council": "Bundaberg Regional Council",
-            "suburb": "AVONDALE, BUCCA, INVICTA",
+            "suburb": "AVONDALE, BUCCA, INVICTA, WATALGAN, WATERLOO, WINFIELD, YANDARAN",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 16:29",
             "restoreTime": "08/11/2026 02:00",
-            "customersAffected": "62",
+            "customersAffected": "255",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 62,
-          "suburb": "AVONDALE, BUCCA, INVICTA",
+          "affected_customers": 478,
+          "suburb": "AVONDALE, BERAJONDO, BUCCA, INVICTA, MOUNT WATALGAN, ROSEDALE, WATALGAN, WATERLOO, WINFIELD, YANDARAN",
           "street_name": ""
         },
         {
