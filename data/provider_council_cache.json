@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T20:31:04Z",
+      "fetched_utc": "2026-11-07T20:46:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 6:15 AM",
-        "source_updated_utc": "2026-11-07T20:15:02Z",
+        "source_updated": "8 November 2026 6:30 AM",
+        "source_updated_utc": "2026-11-07T20:30:02Z",
         "published_customers": 101,
         "event_count": 2
       },
@@ -29,7 +29,7 @@
             "postcode": "4551",
             "suburb": "LITTLE MOUNTAIN",
             "customersAffected": "31",
-            "restoreTime": "2026-11-08T06:30:00+10:00",
+            "restoreTime": "2026-11-08T07:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -78,13 +78,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T19:46:15Z",
+      "fetched_utc": "2026-11-07T20:46:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T19:45:01Z",
-        "published_customers": 487,
-        "event_count": 17
+        "source_updated_utc": "2026-11-07T20:45:01Z",
+        "published_customers": 593,
+        "event_count": 18
       },
       "events": [
         {
@@ -222,10 +222,10 @@
             "suburb": "MONTO",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 17:45",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "08/11/2026 08:00",
             "customersAffected": "14",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 14,
           "suburb": "MONTO",
@@ -347,10 +347,10 @@
             "suburb": "BEILBA, INJUNE, MITCHELL",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 21:03",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "08/11/2026 15:00",
             "customersAffected": "89",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Outage reported"
           },
           "affected_customers": 93,
           "suburb": "AUGATHELLA, BEILBA, INJUNE, MITCHELL",
@@ -489,6 +489,30 @@
           },
           "affected_customers": 6,
           "suburb": "BUCCA, BULLYARD",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10804",
+          "allocations": [
+            {
+              "lga_name": "Gympie Regional",
+              "lga_code": null,
+              "affected_customers": 106
+            }
+          ],
+          "details": {
+            "event": "26WB10804",
+            "council": "Gympie Regional Council",
+            "suburb": "BOONARA, GOOMERI",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 06:02",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "106",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 106,
+          "suburb": "BOONARA, GOOMERI",
           "street_name": ""
         },
         {
