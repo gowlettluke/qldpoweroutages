@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T08:45:57Z",
+      "fetched_utc": "2026-11-07T09:01:29Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 6:30 PM",
-        "source_updated_utc": "2026-11-07T08:30:02Z",
+        "source_updated": "7 November 2026 7:00 PM",
+        "source_updated_utc": "2026-11-07T09:00:02Z",
         "published_customers": 158,
         "event_count": 4
       },
@@ -86,7 +86,7 @@
             "postcode": "4560",
             "suburb": "BURNSIDE",
             "customersAffected": "19",
-            "restoreTime": "2026-11-07T19:00:00+10:00",
+            "restoreTime": "2026-11-07T20:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -114,7 +114,7 @@
             "postcode": "4152",
             "suburb": "CARINDALE",
             "customersAffected": "52",
-            "restoreTime": "2026-11-07T19:00:00+10:00",
+            "restoreTime": "2026-11-07T20:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -128,13 +128,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T08:31:09Z",
+      "fetched_utc": "2026-11-07T09:01:32Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T08:30:23Z",
-        "published_customers": 2785,
-        "event_count": 16
+        "source_updated_utc": "2026-11-07T09:00:02Z",
+        "published_customers": 1903,
+        "event_count": 18
       },
       "events": [
         {
@@ -234,6 +234,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13172",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26CA13172",
+            "council": "Banana Shire Council",
+            "suburb": "BARALABA",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 17:02",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 3,
+          "suburb": "BARALABA",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11031",
           "allocations": [
             {
@@ -255,6 +279,30 @@
           },
           "affected_customers": 170,
           "suburb": "GUNUNA, WELLESLEY ISLAND",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11043",
+          "allocations": [
+            {
+              "lga_name": "Carpentaria Shire",
+              "lga_code": null,
+              "affected_customers": 19
+            }
+          ],
+          "details": {
+            "event": "26FN11043",
+            "council": "Carpentaria Shire Council",
+            "suburb": "NORMANTON",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 18:26",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "19",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 19,
+          "suburb": "NORMANTON",
           "street_name": ""
         },
         {
@@ -282,27 +330,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW14397",
+          "event_id": "26SW14399",
           "allocations": [
             {
-              "lga_name": "Southern Downs Regional",
+              "lga_name": "Toowoomba Regional",
               "lga_code": null,
-              "affected_customers": 2
+              "affected_customers": 10
             }
           ],
           "details": {
-            "event": "26SW14397",
-            "council": "Southern Downs Regional Council",
-            "suburb": "CANNON CREEK",
+            "event": "26SW14399",
+            "council": "Toowoomba Regional Council",
+            "suburb": "MACLAGAN, PERANGA",
             "type": "UNPLANNED",
-            "startTime": "07/11/2026 16:12",
+            "startTime": "07/11/2026 16:58",
             "restoreTime": "Under Investigation",
-            "customersAffected": "2",
+            "customersAffected": "10",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
+            "status": "Outage reported"
           },
-          "affected_customers": 2,
-          "suburb": "CANNON CREEK",
+          "affected_customers": 10,
+          "suburb": "MACLAGAN, PERANGA",
           "street_name": ""
         },
         {
@@ -388,22 +436,22 @@
             {
               "lga_name": "Bundaberg Regional",
               "lga_code": null,
-              "affected_customers": 1067
+              "affected_customers": 155
             }
           ],
           "details": {
             "event": "26WB10744",
             "council": "Bundaberg Regional Council",
-            "suburb": "AVENELL HEIGHTS, BUNDABERG, BUNDABERG SOUTH, KEPNOCK, THABEBAN",
+            "suburb": "AVENELL HEIGHTS",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 16:37",
             "restoreTime": "Under Investigation",
-            "customersAffected": "1067",
+            "customersAffected": "155",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 1067,
-          "suburb": "AVENELL HEIGHTS, BUNDABERG, BUNDABERG SOUTH, KEPNOCK, THABEBAN",
+          "affected_customers": 155,
+          "suburb": "AVENELL HEIGHTS",
           "street_name": ""
         },
         {
@@ -424,7 +472,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "5",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 5,
           "suburb": "GIN GIN, MAROONDAN",
@@ -482,7 +530,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "7",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 7,
           "suburb": "BULLYARD",
