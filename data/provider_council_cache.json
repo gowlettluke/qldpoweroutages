@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T07:16:10Z",
+      "fetched_utc": "2026-11-07T07:31:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 5:00 PM",
-        "source_updated_utc": "2026-11-07T07:00:02Z",
-        "published_customers": 71,
-        "event_count": 1
+        "source_updated": "7 November 2026 5:30 PM",
+        "source_updated_utc": "2026-11-07T07:30:03Z",
+        "published_customers": 1218,
+        "event_count": 4
       },
       "events": [
         {
@@ -40,17 +40,102 @@
           "affected_customers": 71,
           "suburb": "NORTH ARM, VERRIERDALE, YANDINA CREEK",
           "street_name": "ALLANDALE RD, DEAN RD, FIG TREE LANE, PRYOR RD, SUDHOLZ RD, VENNING RD, VERRIERDALE RD"
+        },
+        {
+          "event_id": "INCD-993912-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 21
+            }
+          ],
+          "details": {
+            "event": "INCD-993912-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4560",
+            "suburb": "BURNSIDE",
+            "customersAffected": "19",
+            "restoreTime": "2026-11-07T18:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "NAMBOUR MAPLETON RD"
+            ]
+          },
+          "affected_customers": 21,
+          "suburb": "BURNSIDE, HIGHWORTH",
+          "street_name": "NAMBOUR MAPLETON RD"
+        },
+        {
+          "event_id": "INCD-993919-g",
+          "allocations": [
+            {
+              "lga_name": "Noosa Shire",
+              "lga_code": null,
+              "affected_customers": 896
+            }
+          ],
+          "details": {
+            "event": "INCD-993919-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Noosa",
+            "postcode": "4573",
+            "suburb": "MARCUS BEACH",
+            "customersAffected": "2",
+            "restoreTime": "2026-11-07T20:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "PERSIMMON DR"
+            ]
+          },
+          "affected_customers": 896,
+          "suburb": "MARCUS BEACH, PEREGIAN BEACH",
+          "street_name": "ALBATROSS CT, AVOCET PDE, BURSARIA ST, BUSTARD ST, CALLIANDRA GR, CORDIA CL, CURRAWONG CRES, DAVID LOW WAY, EGRET ST, GOULDIAN CT, JUNIPER CT, KESTREL CRES, LANCEWOOD AVE, LORILET ST, LOWAN CRES, LOWRY ST, LYREBIRD CT, MARTIN ST, MIMOSA ST, PALDAO RISE, PARAKEET CRES, PAVONIA ST, PEREGIAN ESP, PERSIMMON DR, PODARGUS PDE, SPOONBILL ST, TEAL ST, TECOMA CL, WAGTAIL DR"
+        },
+        {
+          "event_id": "INCD-993920-g",
+          "allocations": [
+            {
+              "lga_name": "Somerset Regional",
+              "lga_code": null,
+              "affected_customers": 230
+            }
+          ],
+          "details": {
+            "event": "INCD-993920-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Somerset Regional",
+            "postcode": "4313",
+            "suburb": "BRAEMORE",
+            "customersAffected": "24",
+            "restoreTime": "2026-11-07T20:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BRAEMORE LANE",
+              "BRISBANE VALLEY HWY"
+            ]
+          },
+          "affected_customers": 230,
+          "suburb": "BRAEMORE, COLINTON, GREGORS CREEK, HARLIN, MOORE, TOOGOOLAWAH, WOOLMAR, YIMBUN",
+          "street_name": "APPLE TREE CREEK RD, ARABABY CREEK RD, ARMSTRONGS LANE, BRAEMORE LANE, BRISBANE VALLEY HWY, CAMBROOK RD, D&apos;AGUILAR HWY, DRYDEN GULLY RD, FOGGS RD, FUNKNERS LANE, GAULTS LANE, GREGORS CREEK RD, HOLLAND RD, IVORY CREEK RD, JOSEY RD, KANGAROO CREEK RD, MANY VIEWS RD, MARGARET ST, MCPHERSON RD, NURINDA RD, O&apos;LEARYS LANE, POHLMANS RANGE RD, POHLMANS RD, RICHTER RD, RUCKERS LANE, SAWPIT RD, SHALLCROSS RD, SINNAMONS LANE, SPRING CREEK RD, STAGHURST RD, TOM ST, TURTLE CREEK RD, UNNAMED RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T07:16:13Z",
+      "fetched_utc": "2026-11-07T07:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T07:15:01Z",
-        "published_customers": 3028,
-        "event_count": 12
+        "source_updated_utc": "2026-11-07T07:30:00Z",
+        "published_customers": 3032,
+        "event_count": 13
       },
       "events": [
         {
@@ -71,7 +156,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "13",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 13,
           "suburb": "MARLBOROUGH, MORINISH",
@@ -195,6 +280,30 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14395",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 4
+            }
+          ],
+          "details": {
+            "event": "26SW14395",
+            "council": "Toowoomba Regional Council",
+            "suburb": "CAMBOOYA",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 16:44",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "4",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 4,
+          "suburb": "CAMBOOYA",
           "street_name": ""
         },
         {
