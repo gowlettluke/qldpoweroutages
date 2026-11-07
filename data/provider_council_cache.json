@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T07:01:29Z",
+      "fetched_utc": "2026-11-07T07:16:10Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -44,13 +44,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T06:46:06Z",
+      "fetched_utc": "2026-11-07T07:16:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T06:40:00Z",
-        "published_customers": 2961,
-        "event_count": 10
+        "source_updated_utc": "2026-11-07T07:15:01Z",
+        "published_customers": 3028,
+        "event_count": 12
       },
       "events": [
         {
@@ -75,6 +75,54 @@
           },
           "affected_customers": 13,
           "suburb": "MARLBOROUGH, MORINISH",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13151",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 36
+            }
+          ],
+          "details": {
+            "event": "26CA13151",
+            "council": "Banana Shire Council",
+            "suburb": "BARALABA",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 16:11",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "36",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 36,
+          "suburb": "BARALABA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13152",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 483
+            }
+          ],
+          "details": {
+            "event": "26CA13152",
+            "council": "Central Highlands Regional Council",
+            "suburb": "CAPELLA, EMERALD, GORDONSTONE",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 17:10",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "483",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 483,
+          "suburb": "CAPELLA, EMERALD, GORDONSTONE",
           "street_name": ""
         },
         {
@@ -116,7 +164,7 @@
             "suburb": "GIRU",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 10:43",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "07/11/2026 18:00",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Outage reported"
@@ -147,30 +195,6 @@
           },
           "affected_customers": 3,
           "suburb": "HAMPTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14391",
-          "allocations": [
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 100
-            }
-          ],
-          "details": {
-            "event": "26SW14391",
-            "council": "Western Downs Regional Council",
-            "suburb": "DALBY, JIMBOUR, MACALISTER, PIRRINUAN, YARALLA",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 15:28",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "100",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 100,
-          "suburb": "DALBY, JIMBOUR, MACALISTER, PIRRINUAN, YARALLA",
           "street_name": ""
         },
         {
@@ -220,7 +244,7 @@
             "restoreTime": "07/11/2026 18:00",
             "customersAffected": "870",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 870,
           "suburb": "DALYSFORD, GIN GIN, MAROONDAN, MCILWRAITH, MOOLBOOLAMAN, TIRROAN",
@@ -232,27 +256,22 @@
             {
               "lga_name": "Bundaberg Regional",
               "lga_code": null,
-              "affected_customers": 404
-            },
-            {
-              "lga_name": "Gladstone Regional",
-              "lga_code": null,
-              "affected_customers": 223
+              "affected_customers": 270
             }
           ],
           "details": {
             "event": "26WB10742",
             "council": "Bundaberg Regional Council",
-            "suburb": "AVONDALE, BUCCA, INVICTA, MEADOWVALE, MOORLAND, WATALGAN, WATERLOO, WINFIELD, YANDARAN",
+            "suburb": "AVONDALE, BUCCA, INVICTA, MEADOWVALE, MOORLAND, YANDARAN",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 16:29",
             "restoreTime": "Under Investigation",
-            "customersAffected": "404",
+            "customersAffected": "270",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Outage reported"
           },
-          "affected_customers": 627,
-          "suburb": "AVONDALE, BERAJONDO, BUCCA, INVICTA, MEADOWVALE, MOORLAND, MOUNT WATALGAN, ROSEDALE, WATALGAN, WATERLOO, WINFIELD, YANDARAN",
+          "affected_customers": 270,
+          "suburb": "AVONDALE, BUCCA, INVICTA, MEADOWVALE, MOORLAND, YANDARAN",
           "street_name": ""
         },
         {
@@ -277,6 +296,30 @@
           },
           "affected_customers": 1067,
           "suburb": "AVENELL HEIGHTS, BUNDABERG, BUNDABERG SOUTH, KEPNOCK, THABEBAN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10748",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 5
+            }
+          ],
+          "details": {
+            "event": "26WB10748",
+            "council": "Bundaberg Regional Council",
+            "suburb": "GIN GIN, MAROONDAN",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 16:28",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "5",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 5,
+          "suburb": "GIN GIN, MAROONDAN",
           "street_name": ""
         },
         {
