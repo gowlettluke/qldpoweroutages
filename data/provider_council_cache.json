@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T04:31:21Z",
+      "fetched_utc": "2026-11-07T04:46:07Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -14,39 +14,15 @@
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T03:45:58Z",
+      "fetched_utc": "2026-11-07T04:46:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T03:40:00Z",
-        "published_customers": 1258,
-        "event_count": 13
+        "source_updated_utc": "2026-11-07T04:45:00Z",
+        "published_customers": 938,
+        "event_count": 9
       },
       "events": [
-        {
-          "event_id": "26CA13082",
-          "allocations": [
-            {
-              "lga_name": "Barcaldine Regional",
-              "lga_code": null,
-              "affected_customers": 4
-            }
-          ],
-          "details": {
-            "event": "26CA13082",
-            "council": "Barcaldine Regional Council",
-            "suburb": "MUTTABURRA",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 13:00",
-            "restoreTime": "07/11/2026 14:00",
-            "customersAffected": "4",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 4,
-          "suburb": "MUTTABURRA",
-          "street_name": ""
-        },
         {
           "event_id": "26CA13131",
           "allocations": [
@@ -173,78 +149,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ13685",
-          "allocations": [
-            {
-              "lga_name": "Charters Towers Regional",
-              "lga_code": null,
-              "affected_customers": 270
-            }
-          ],
-          "details": {
-            "event": "26NQ13685",
-            "council": "Charters Towers Regional Council",
-            "suburb": "BALFES CREEK, BASALT, GREENVALE, HOMESTEAD, PENTLAND",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 10:21",
-            "restoreTime": "07/11/2026 14:00",
-            "customersAffected": "270",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 270,
-          "suburb": "BALFES CREEK, BASALT, GREENVALE, HOMESTEAD, PENTLAND",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13799",
-          "allocations": [
-            {
-              "lga_name": "Richmond Shire",
-              "lga_code": null,
-              "affected_customers": 15
-            }
-          ],
-          "details": {
-            "event": "26NQ13799",
-            "council": "Richmond Shire Council",
-            "suburb": "MAXWELTON, RICHMOND, WINTON",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 09:41",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "15",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 15,
-          "suburb": "MAXWELTON, RICHMOND, WINTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13800",
-          "allocations": [
-            {
-              "lga_name": "Hinchinbrook Shire",
-              "lga_code": null,
-              "affected_customers": 16
-            }
-          ],
-          "details": {
-            "event": "26NQ13800",
-            "council": "Hinchinbrook Shire Council",
-            "suburb": "MOUNT FOX",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 12:10",
-            "restoreTime": "07/11/2026 14:30",
-            "customersAffected": "16",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 16,
-          "suburb": "MOUNT FOX",
-          "street_name": ""
-        },
-        {
           "event_id": "26SW14224",
           "allocations": [
             {
@@ -293,27 +197,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26WB10714",
+          "event_id": "26WB10716",
           "allocations": [
             {
               "lga_name": "Bundaberg Regional",
               "lga_code": null,
-              "affected_customers": 22
+              "affected_customers": 7
             }
           ],
           "details": {
-            "event": "26WB10714",
+            "event": "26WB10716",
             "council": "Bundaberg Regional Council",
-            "suburb": "ALLOWAY, KENSINGTON",
+            "suburb": "BUNDABERG WEST",
             "type": "UNPLANNED",
-            "startTime": "07/11/2026 11:19",
+            "startTime": "07/11/2026 14:16",
             "restoreTime": "Under Investigation",
-            "customersAffected": "22",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "customersAffected": "7",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 22,
-          "suburb": "ALLOWAY, KENSINGTON",
+          "affected_customers": 7,
+          "suburb": "BUNDABERG WEST",
           "street_name": ""
         },
         {
