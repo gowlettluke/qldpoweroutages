@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T03:16:20Z",
+      "fetched_utc": "2026-11-07T03:31:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 1:15 PM",
-        "source_updated_utc": "2026-11-07T03:15:02Z",
+        "source_updated": "7 November 2026 1:30 PM",
+        "source_updated_utc": "2026-11-07T03:30:02Z",
         "published_customers": 12,
         "event_count": 1
       },
@@ -43,15 +43,39 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T03:16:22Z",
+      "fetched_utc": "2026-11-07T03:31:28Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T03:10:00Z",
-        "published_customers": 1343,
-        "event_count": 12
+        "source_updated_utc": "2026-11-07T03:30:17Z",
+        "published_customers": 1347,
+        "event_count": 13
       },
       "events": [
+        {
+          "event_id": "26CA13082",
+          "allocations": [
+            {
+              "lga_name": "Barcaldine Regional",
+              "lga_code": null,
+              "affected_customers": 4
+            }
+          ],
+          "details": {
+            "event": "26CA13082",
+            "council": "Barcaldine Regional Council",
+            "suburb": "MUTTABURRA",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 13:00",
+            "restoreTime": "07/11/2026 14:00",
+            "customersAffected": "4",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 4,
+          "suburb": "MUTTABURRA",
+          "street_name": ""
+        },
         {
           "event_id": "26CA13131",
           "allocations": [
@@ -70,7 +94,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "13",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 13,
           "suburb": "MARLBOROUGH, MORINISH",
@@ -171,7 +195,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "170",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 170,
           "suburb": "GUNUNA, WELLESLEY ISLAND",
