@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T14:16:12Z",
+      "fetched_utc": "2026-11-07T14:31:16Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 12:00 AM",
-        "source_updated_utc": "2026-11-07T14:00:02Z",
-        "published_customers": 114,
-        "event_count": 5
+        "source_updated": "8 November 2026 12:30 AM",
+        "source_updated_utc": "2026-11-07T14:30:02Z",
+        "published_customers": 168,
+        "event_count": 6
       },
       "events": [
         {
@@ -58,7 +58,7 @@
             "postcode": "4313",
             "suburb": "FULHAM",
             "customersAffected": "2",
-            "restoreTime": "2026-11-08T00:30:00+10:00",
+            "restoreTime": "2026-11-08T01:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -86,7 +86,7 @@
             "postcode": "4555",
             "suburb": "PALMWOODS",
             "customersAffected": "9",
-            "restoreTime": "2026-11-08T00:30:00+10:00",
+            "restoreTime": "2026-11-08T01:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -156,15 +156,46 @@
           "affected_customers": 3,
           "suburb": "PIMPAMA",
           "street_name": "PACIFIC HWY, RIFLE RANGE RD, THE HEIGHTS BVD"
+        },
+        {
+          "event_id": "INCD-993984-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 54
+            }
+          ],
+          "details": {
+            "event": "INCD-993984-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4007",
+            "suburb": "ASCOT",
+            "customersAffected": "54",
+            "restoreTime": "2026-11-08T01:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ANTHONY ST",
+              "SYKES ST",
+              "TOWERS ST",
+              "UPPER LANCASTER RD"
+            ]
+          },
+          "affected_customers": 54,
+          "suburb": "ASCOT",
+          "street_name": "ANTHONY ST, SYKES ST, TOWERS ST, UPPER LANCASTER RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T14:16:15Z",
+      "fetched_utc": "2026-11-07T14:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T14:15:33Z",
+        "source_updated_utc": "2026-11-07T14:30:02Z",
         "published_customers": 1468,
         "event_count": 20
       },
@@ -503,7 +534,7 @@
             "startTime": "07/11/2026 21:03",
             "restoreTime": "Under Investigation",
             "customersAffected": "89",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews on route"
           },
           "affected_customers": 93,
