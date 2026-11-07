@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T22:01:25Z",
+      "fetched_utc": "2026-11-07T22:16:02Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -44,13 +44,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T22:01:28Z",
+      "fetched_utc": "2026-11-07T22:16:08Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T22:00:29Z",
-        "published_customers": 566,
-        "event_count": 18
+        "source_updated_utc": "2026-11-07T22:15:17Z",
+        "published_customers": 595,
+        "event_count": 19
       },
       "events": [
         {
@@ -263,7 +263,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "3",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 3,
           "suburb": "TAROOM",
@@ -304,22 +304,22 @@
             {
               "lga_name": "Western Downs Regional",
               "lga_code": null,
-              "affected_customers": 16
+              "affected_customers": 8
             }
           ],
           "details": {
             "event": "26SW14404",
             "council": "Western Downs Regional Council",
-            "suburb": "BUNGABAN, WANDOAN",
+            "suburb": "ROCHE CREEK, WANDOAN",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 17:36",
             "restoreTime": "Under Investigation",
-            "customersAffected": "16",
+            "customersAffected": "8",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Work delayed - crews unable to continue"
           },
-          "affected_customers": 16,
-          "suburb": "BUNGABAN, WANDOAN",
+          "affected_customers": 8,
+          "suburb": "ROCHE CREEK, WANDOAN",
           "street_name": ""
         },
         {
@@ -479,6 +479,30 @@
           },
           "affected_customers": 5,
           "suburb": "BIGGENDEN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10808",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 37
+            }
+          ],
+          "details": {
+            "event": "26WB10808",
+            "council": "Bundaberg Regional Council",
+            "suburb": "AVONDALE, INVICTA",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 06:41",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "37",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 37,
+          "suburb": "AVONDALE, INVICTA",
           "street_name": ""
         },
         {
