@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T09:45:56Z",
+      "fetched_utc": "2026-11-07T10:01:28Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 7:30 PM",
-        "source_updated_utc": "2026-11-07T09:30:03Z",
-        "published_customers": 271,
-        "event_count": 6
+        "source_updated": "7 November 2026 8:00 PM",
+        "source_updated_utc": "2026-11-07T10:00:02Z",
+        "published_customers": 290,
+        "event_count": 7
       },
       "events": [
         {
@@ -181,17 +181,45 @@
           "affected_customers": 111,
           "suburb": "RICHLANDS",
           "street_name": "JEMMA ST, KATHLEEN ST"
+        },
+        {
+          "event_id": "INCD-993952-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 19
+            }
+          ],
+          "details": {
+            "event": "INCD-993952-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4207",
+            "suburb": "BEENLEIGH",
+            "customersAffected": "19",
+            "restoreTime": "2026-11-07T23:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALAMEIN ST"
+            ]
+          },
+          "affected_customers": 19,
+          "suburb": "BEENLEIGH",
+          "street_name": "ALAMEIN ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T09:46:03Z",
+      "fetched_utc": "2026-11-07T10:01:31Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T09:40:00Z",
-        "published_customers": 1745,
-        "event_count": 18
+        "source_updated_utc": "2026-11-07T10:00:00Z",
+        "published_customers": 5631,
+        "event_count": 22
       },
       "events": [
         {
@@ -240,30 +268,6 @@
           },
           "affected_customers": 483,
           "suburb": "CAPELLA, EMERALD, GORDONSTONE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13160",
-          "allocations": [
-            {
-              "lga_name": "Rockhampton Regional",
-              "lga_code": null,
-              "affected_customers": 73
-            }
-          ],
-          "details": {
-            "event": "26CA13160",
-            "council": "Rockhampton Regional Council",
-            "suburb": "BAJOOL",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 17:50",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "73",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 73,
-          "suburb": "BAJOOL",
           "street_name": ""
         },
         {
@@ -336,6 +340,54 @@
           },
           "affected_customers": 12,
           "suburb": "CRACOW, THEODORE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13179",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 436
+            }
+          ],
+          "details": {
+            "event": "26CA13179",
+            "council": "Banana Shire Council",
+            "suburb": "ARGOON, BILOELA, DIXALEA, DULULU, GOOVIGEN, GREYCLIFFE, JAMBIN, ORANGE CREEK, WOWAN",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 19:33",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "436",
+            "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 436,
+          "suburb": "ARGOON, BILOELA, DIXALEA, DULULU, GOOVIGEN, GREYCLIFFE, JAMBIN, ORANGE CREEK, WOWAN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13180",
+          "allocations": [
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 15
+            }
+          ],
+          "details": {
+            "event": "26CA13180",
+            "council": "North Burnett Regional Council",
+            "suburb": "BANCROFT, MONTO",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 18:56",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "15",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 15,
+          "suburb": "BANCROFT, MONTO",
           "street_name": ""
         },
         {
@@ -536,30 +588,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26WB10748",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 5
-            }
-          ],
-          "details": {
-            "event": "26WB10748",
-            "council": "Bundaberg Regional Council",
-            "suburb": "GIN GIN, MAROONDAN",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 16:28",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "5",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 5,
-          "suburb": "GIN GIN, MAROONDAN",
-          "street_name": ""
-        },
-        {
           "event_id": "26WB10751",
           "allocations": [
             {
@@ -610,11 +638,112 @@
             "startTime": "07/11/2026 18:26",
             "restoreTime": "Under Investigation",
             "customersAffected": "258",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews working on-site"
           },
           "affected_customers": 258,
           "suburb": "BUCCA, BULLYARD, INVICTA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10775",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 467
+            }
+          ],
+          "details": {
+            "event": "26WB10775",
+            "council": "Bundaberg Regional Council",
+            "suburb": "BUCCA, BULLYARD, BUNGADOO, DELAN, DRINAN, GIN GIN, MAROONDAN, SOUTH KOLAN, WALLAVILLE",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 19:48",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "467",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 467,
+          "suburb": "BUCCA, BULLYARD, BUNGADOO, DELAN, DRINAN, GIN GIN, MAROONDAN, SOUTH KOLAN, WALLAVILLE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10776",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 2632
+            },
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 388
+            }
+          ],
+          "details": {
+            "event": "26WB10776",
+            "council": "Bundaberg Regional Council",
+            "suburb": "BOOLBOONDA, BOOYAL, BULLYARD, BUNGADOO, CHILDERS, DALYSFORD, DAMASCUS, DELAN, DRINAN, DUINGAL, EUREKA, GILLENS SIDING, GIN GIN, GOOD NIGHT, HORSE CAMP, ISIS CENTRAL, KOLONGA, MAROONDAN, MCILWRAITH, MONDURAN, MOOLBOOLAMAN, MORGANVILLE, MOUNT PERRY, NEW MOONTA, PINE CREEK, REDHILL FARMS, TAKILBERAN, TIRROAN, WALLAVILLE, WATERLOO, WONBAH, YANDARAN",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 19:48",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2632",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 3020,
+          "suburb": "BOOLBOONDA, BOOYAL, BULLYARD, BUNGADOO, CHILDERS, CORINGA, DALYSFORD, DAMASCUS, DELAN, DRINAN, DUINGAL, EUREKA, GILLENS SIDING, GIN GIN, GOOD NIGHT, HORSE CAMP, ISIS CENTRAL, KOLONGA, MAROONDAN, MCILWRAITH, MONDURAN, MOOLBOOLAMAN, MORGANVILLE, MOUNT PERRY, NEW MOONTA, PINE CREEK, REDHILL FARMS, TAKILBERAN, TIRROAN, WALLAVILLE, WATERLOO, WONBAH, YANDARAN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10777",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 13
+            }
+          ],
+          "details": {
+            "event": "26WB10777",
+            "council": "Bundaberg Regional Council",
+            "suburb": "BUNDABERG",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 19:21",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "13",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 13,
+          "suburb": "BUNDABERG",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10778",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 13
+            }
+          ],
+          "details": {
+            "event": "26WB10778",
+            "council": "Bundaberg Regional Council",
+            "suburb": "MOORE PARK BEACH",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 19:16",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "13",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 13,
+          "suburb": "MOORE PARK BEACH",
           "street_name": ""
         },
         {
