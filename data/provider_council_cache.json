@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T06:31:20Z",
+      "fetched_utc": "2026-11-07T06:46:04Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -14,13 +14,13 @@
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T06:31:23Z",
+      "fetched_utc": "2026-11-07T06:46:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T06:30:01Z",
-        "published_customers": 1267,
-        "event_count": 8
+        "source_updated_utc": "2026-11-07T06:40:00Z",
+        "published_customers": 2961,
+        "event_count": 10
       },
       "events": [
         {
@@ -194,6 +194,59 @@
           },
           "affected_customers": 870,
           "suburb": "DALYSFORD, GIN GIN, MAROONDAN, MCILWRAITH, MOOLBOOLAMAN, TIRROAN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10742",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 404
+            },
+            {
+              "lga_name": "Gladstone Regional",
+              "lga_code": null,
+              "affected_customers": 223
+            }
+          ],
+          "details": {
+            "event": "26WB10742",
+            "council": "Bundaberg Regional Council",
+            "suburb": "AVONDALE, BUCCA, INVICTA, MEADOWVALE, MOORLAND, WATALGAN, WATERLOO, WINFIELD, YANDARAN",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 16:29",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "404",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 627,
+          "suburb": "AVONDALE, BERAJONDO, BUCCA, INVICTA, MEADOWVALE, MOORLAND, MOUNT WATALGAN, ROSEDALE, WATALGAN, WATERLOO, WINFIELD, YANDARAN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10744",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 1067
+            }
+          ],
+          "details": {
+            "event": "26WB10744",
+            "council": "Bundaberg Regional Council",
+            "suburb": "AVENELL HEIGHTS, BUNDABERG, BUNDABERG SOUTH, KEPNOCK, THABEBAN",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 16:37",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "1067",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 1067,
+          "suburb": "AVENELL HEIGHTS, BUNDABERG, BUNDABERG SOUTH, KEPNOCK, THABEBAN",
           "street_name": ""
         },
         {
