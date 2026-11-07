@@ -2,55 +2,58 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T19:16:03Z",
+      "fetched_utc": "2026-11-07T19:31:03Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 5:00 AM",
-        "source_updated_utc": "2026-11-07T19:00:05Z",
-        "published_customers": 44,
+        "source_updated": "8 November 2026 5:15 AM",
+        "source_updated_utc": "2026-11-07T19:15:02Z",
+        "published_customers": 70,
         "event_count": 1
       },
       "events": [
         {
-          "event_id": "INCD-993982-g",
+          "event_id": "INCD-993994-g",
           "allocations": [
             {
-              "lga_name": "Brisbane City",
+              "lga_name": "Moreton Bay City",
               "lga_code": null,
-              "affected_customers": 44
+              "affected_customers": 70
             }
           ],
           "details": {
-            "event": "INCD-993982-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Brisbane City",
-            "postcode": "4051",
-            "suburb": "GRANGE",
-            "customersAffected": "44",
-            "restoreTime": "2026-11-08T06:00:00+10:00",
+            "event": "INCD-993994-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4504",
+            "suburb": "NARANGBA",
+            "customersAffected": "70",
+            "restoreTime": "2026-11-08T07:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "DAISY ST",
-              "DAYS RD",
-              "GRANGE RD",
-              "THOMAS ST"
+              "KRYPTON ST",
+              "MAGNESIUM ST",
+              "NEON ST",
+              "POTASSIUM ST",
+              "RADON RD",
+              "SILICON ST",
+              "SULPHUR ST"
             ]
           },
-          "affected_customers": 44,
-          "suburb": "GRANGE",
-          "street_name": "DAISY ST, DAYS RD, GRANGE RD, THOMAS ST"
+          "affected_customers": 70,
+          "suburb": "NARANGBA",
+          "street_name": "KRYPTON ST, MAGNESIUM ST, NEON ST, POTASSIUM ST, RADON RD, SILICON ST, SULPHUR ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T18:45:58Z",
+      "fetched_utc": "2026-11-07T19:31:07Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T18:40:00Z",
+        "source_updated_utc": "2026-11-07T19:25:00Z",
         "published_customers": 481,
         "event_count": 16
       },
