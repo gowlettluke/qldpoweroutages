@@ -2,16 +2,45 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T19:31:03Z",
+      "fetched_utc": "2026-11-07T19:46:12Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 5:15 AM",
-        "source_updated_utc": "2026-11-07T19:15:02Z",
-        "published_customers": 70,
-        "event_count": 1
+        "source_updated": "8 November 2026 5:30 AM",
+        "source_updated_utc": "2026-11-07T19:30:02Z",
+        "published_customers": 101,
+        "event_count": 2
       },
       "events": [
+        {
+          "event_id": "INCD-993991-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 31
+            }
+          ],
+          "details": {
+            "event": "INCD-993991-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4551",
+            "suburb": "LITTLE MOUNTAIN",
+            "customersAffected": "31",
+            "restoreTime": "2026-11-08T06:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BLUEGRASS ST",
+              "CASUARINA DR"
+            ]
+          },
+          "affected_customers": 31,
+          "suburb": "LITTLE MOUNTAIN",
+          "street_name": "BLUEGRASS ST, CASUARINA DR"
+        },
         {
           "event_id": "INCD-993994-g",
           "allocations": [
@@ -49,13 +78,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T19:31:07Z",
+      "fetched_utc": "2026-11-07T19:46:15Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T19:25:00Z",
-        "published_customers": 481,
-        "event_count": 16
+        "source_updated_utc": "2026-11-07T19:45:01Z",
+        "published_customers": 487,
+        "event_count": 17
       },
       "events": [
         {
@@ -435,6 +464,30 @@
             "status": "Crews working on-site"
           },
           "affected_customers": 30,
+          "suburb": "BUCCA, BULLYARD",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10803",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 6
+            }
+          ],
+          "details": {
+            "event": "26WB10803",
+            "council": "Bundaberg Regional Council",
+            "suburb": "BUCCA, BULLYARD",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 18:26",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "6",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 6,
           "suburb": "BUCCA, BULLYARD",
           "street_name": ""
         },
