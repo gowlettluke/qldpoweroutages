@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T15:16:04Z",
+      "fetched_utc": "2026-11-07T15:31:17Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 1:00 AM",
-        "source_updated_utc": "2026-11-07T15:00:02Z",
-        "published_customers": 167,
-        "event_count": 6
+        "source_updated": "8 November 2026 1:30 AM",
+        "source_updated_utc": "2026-11-07T15:30:02Z",
+        "published_customers": 165,
+        "event_count": 5
       },
       "events": [
         {
@@ -42,34 +42,6 @@
           "street_name": "ALLANDALE RD, DEAN RD, FIG TREE LANE, PRYOR RD, SUDHOLZ RD, VENNING RD, VERRIERDALE RD"
         },
         {
-          "event_id": "INCD-993943-g",
-          "allocations": [
-            {
-              "lga_name": "Somerset Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "INCD-993943-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Somerset Regional",
-            "postcode": "4313",
-            "suburb": "FULHAM",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-08T01:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "FULHAM RD"
-            ]
-          },
-          "affected_customers": 2,
-          "suburb": "FULHAM",
-          "street_name": "FULHAM RD"
-        },
-        {
           "event_id": "INCD-993966-g",
           "allocations": [
             {
@@ -80,15 +52,15 @@
           ],
           "details": {
             "event": "INCD-993966-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
+            "cause": "Emergency repairs in-progress",
+            "status": "Emergency Repairs",
             "council": "Sunshine Coast",
             "postcode": "4555",
             "suburb": "PALMWOODS",
             "customersAffected": "9",
-            "restoreTime": "2026-11-08T01:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
+            "restoreTime": "2026-11-08T03:00:00+10:00",
+            "etrFlag": "RB",
+            "etrFlagBool": "Y",
             "streets": [
               "WINSTON RD S"
             ]
@@ -174,7 +146,7 @@
             "postcode": "4007",
             "suburb": "ASCOT",
             "customersAffected": "54",
-            "restoreTime": "2026-11-08T02:00:00+10:00",
+            "restoreTime": "2026-11-08T02:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
