@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T16:46:07Z",
+      "fetched_utc": "2026-11-07T17:01:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 2:30 AM",
-        "source_updated_utc": "2026-11-07T16:30:02Z",
+        "source_updated": "8 November 2026 3:00 AM",
+        "source_updated_utc": "2026-11-07T17:00:05Z",
         "published_customers": 115,
-        "event_count": 4
+        "event_count": 2
       },
       "events": [
         {
@@ -42,90 +42,35 @@
           "street_name": "ALLANDALE RD, DEAN RD, FIG TREE LANE, PRYOR RD, SUDHOLZ RD, VENNING RD, VERRIERDALE RD"
         },
         {
-          "event_id": "INCD-993948-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 7
-            }
-          ],
-          "details": {
-            "event": "INCD-993948-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4573",
-            "suburb": "COOLUM BEACH",
-            "customersAffected": "7",
-            "restoreTime": "2026-11-08T03:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "YANDINA-COOLUM RD"
-            ]
-          },
-          "affected_customers": 7,
-          "suburb": "COOLUM BEACH",
-          "street_name": "YANDINA-COOLUM RD"
-        },
-        {
-          "event_id": "INCD-993966-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 9
-            }
-          ],
-          "details": {
-            "event": "INCD-993966-g",
-            "cause": "Emergency repairs in-progress",
-            "status": "Emergency Repairs",
-            "council": "Sunshine Coast",
-            "postcode": "4555",
-            "suburb": "PALMWOODS",
-            "customersAffected": "9",
-            "restoreTime": "2026-11-08T03:00:00+10:00",
-            "etrFlag": "RB",
-            "etrFlagBool": "Y",
-            "streets": [
-              "WINSTON RD S"
-            ]
-          },
-          "affected_customers": 9,
-          "suburb": "PALMWOODS",
-          "street_name": "WINSTON RD S"
-        },
-        {
           "event_id": "INCD-993982-g",
           "allocations": [
             {
               "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 28
+              "affected_customers": 44
             }
           ],
           "details": {
             "event": "INCD-993982-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
             "council": "Brisbane City",
             "postcode": "4051",
             "suburb": "GRANGE",
-            "customersAffected": "28",
+            "customersAffected": "44",
             "restoreTime": "2026-11-08T03:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "DAISY ST",
               "DAYS RD",
+              "GRANGE RD",
               "THOMAS ST"
             ]
           },
-          "affected_customers": 28,
+          "affected_customers": 44,
           "suburb": "GRANGE",
-          "street_name": "DAISY ST, DAYS RD, THOMAS ST"
+          "street_name": "DAISY ST, DAYS RD, GRANGE RD, THOMAS ST"
         }
       ]
     },
