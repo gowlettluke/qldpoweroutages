@@ -2,45 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T00:16:03Z",
+      "fetched_utc": "2026-11-07T00:31:05Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "7 November 2026 10:00 AM",
-        "source_updated_utc": "2026-11-07T00:00:02Z",
-        "published_customers": 17,
-        "event_count": 2
+        "source_updated": "7 November 2026 10:15 AM",
+        "source_updated_utc": "2026-11-07T00:15:06Z",
+        "published_customers": 12,
+        "event_count": 1
       },
       "events": [
-        {
-          "event_id": "INCD-993828-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 5
-            }
-          ],
-          "details": {
-            "event": "INCD-993828-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Scenic Rim Regional",
-            "postcode": "4310",
-            "suburb": "MAROON",
-            "customersAffected": "5",
-            "restoreTime": "2026-11-07T11:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BOONAH-RATHDOWNEY RD",
-              "NEWMAN RD"
-            ]
-          },
-          "affected_customers": 5,
-          "suburb": "MAROON",
-          "street_name": "BOONAH-RATHDOWNEY RD, NEWMAN RD"
-        },
         {
           "event_id": "INCD-993837-g",
           "allocations": [
@@ -72,13 +43,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-07T00:16:06Z",
+      "fetched_utc": "2026-11-07T00:31:08Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-07T00:10:00Z",
-        "published_customers": 125,
-        "event_count": 8
+        "source_updated_utc": "2026-11-07T00:30:19Z",
+        "published_customers": 395,
+        "event_count": 9
       },
       "events": [
         {
@@ -127,6 +98,30 @@
           },
           "affected_customers": 6,
           "suburb": "BESSIE POINT, EAST TRINITY, SECOND BEACH, YARRABAH",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13685",
+          "allocations": [
+            {
+              "lga_name": "Charters Towers Regional",
+              "lga_code": null,
+              "affected_customers": 270
+            }
+          ],
+          "details": {
+            "event": "26NQ13685",
+            "council": "Charters Towers Regional Council",
+            "suburb": "BALFES CREEK, BASALT, GREENVALE, HOMESTEAD, PENTLAND",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 10:21",
+            "restoreTime": "07/11/2026 13:30",
+            "customersAffected": "270",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 270,
+          "suburb": "BALFES CREEK, BASALT, GREENVALE, HOMESTEAD, PENTLAND",
           "street_name": ""
         },
         {
