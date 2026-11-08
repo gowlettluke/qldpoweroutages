@@ -2,25 +2,25 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T19:46:01Z",
+      "fetched_utc": "2026-11-08T20:01:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 5:30 AM",
-        "source_updated_utc": "2026-11-08T19:30:02Z",
+        "source_updated": "9 November 2026 5:45 AM",
+        "source_updated_utc": "2026-11-08T19:45:02Z",
         "published_customers": 0,
         "event_count": 0
       },
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T19:01:32Z",
+      "fetched_utc": "2026-11-08T20:01:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T19:00:28Z",
-        "published_customers": 3664,
-        "event_count": 14
+        "source_updated_utc": "2026-11-08T20:00:17Z",
+        "published_customers": 3967,
+        "event_count": 15
       },
       "events": [
         {
@@ -271,6 +271,30 @@
           },
           "affected_customers": 1210,
           "suburb": "BOWEN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13831",
+          "allocations": [
+            {
+              "lga_name": "Burdekin Shire",
+              "lga_code": null,
+              "affected_customers": 303
+            }
+          ],
+          "details": {
+            "event": "26NQ13831",
+            "council": "Burdekin Shire Council",
+            "suburb": "GIRU, HORSESHOE LAGOON",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 05:59",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "303",
+            "cause": "The loss of supply is due to public safety concerns.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 303,
+          "suburb": "GIRU, HORSESHOE LAGOON",
           "street_name": ""
         },
         {
