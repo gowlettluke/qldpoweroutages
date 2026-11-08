@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T10:31:02Z",
+      "fetched_utc": "2026-11-08T10:46:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 8:15 PM",
-        "source_updated_utc": "2026-11-08T10:15:02Z",
+        "source_updated": "8 November 2026 8:30 PM",
+        "source_updated_utc": "2026-11-08T10:30:02Z",
         "published_customers": 19,
         "event_count": 3
       },
@@ -57,7 +57,7 @@
             "postcode": "4562",
             "suburb": "EUMUNDI",
             "customersAffected": "11",
-            "restoreTime": "2026-11-08T20:30:00+10:00",
+            "restoreTime": "2026-11-08T21:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -86,7 +86,7 @@
             "postcode": "4500",
             "suburb": "BRENDALE",
             "customersAffected": "1",
-            "restoreTime": "2026-11-08T21:30:00+10:00",
+            "restoreTime": "2026-11-08T21:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -100,13 +100,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T10:31:05Z",
+      "fetched_utc": "2026-11-08T10:46:14Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T10:25:00Z",
-        "published_customers": 2954,
-        "event_count": 19
+        "source_updated_utc": "2026-11-08T10:45:00Z",
+        "published_customers": 2637,
+        "event_count": 18
       },
       "events": [
         {
@@ -127,7 +127,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "9",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 9,
           "suburb": "THEODORE",
@@ -232,6 +232,30 @@
           },
           "affected_customers": 13,
           "suburb": "COOWONGA, TUNGAMULL",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13289",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26CA13289",
+            "council": "Livingstone Shire Council",
+            "suburb": "ETNA CREEK",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 18:19",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 3,
+          "suburb": "ETNA CREEK",
           "street_name": ""
         },
         {
@@ -408,35 +432,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26MK7102",
-          "allocations": [
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 303
-            },
-            {
-              "lga_name": "Isaac Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26MK7102",
-            "council": "Isaac Regional Council",
-            "suburb": "ILBILBIE",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 19:02",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 305,
-          "suburb": "ILBILBIE, KOUMALA, MOUNT CHRISTIAN",
-          "street_name": ""
-        },
-        {
           "event_id": "26MK7103",
           "allocations": [
             {
@@ -463,30 +458,6 @@
           },
           "affected_customers": 1119,
           "suburb": "CARMILA, CARMILA BEACH, CLAIRVIEW, GREENHILL, ILBILBIE, KOUMALA, MOUNT CHRISTIAN, ORKABIE, SARINA, WEST HILL",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13825",
-          "allocations": [
-            {
-              "lga_name": "Charters Towers Regional",
-              "lga_code": null,
-              "affected_customers": 15
-            }
-          ],
-          "details": {
-            "event": "26NQ13825",
-            "council": "Charters Towers Regional Council",
-            "suburb": "BLUEWATER SPRINGS, CHARTERS TOWERS, CLARKE RIVER, GREENVALE",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 14:42",
-            "restoreTime": "08/11/2026 21:00",
-            "customersAffected": "15",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 15,
-          "suburb": "BLUEWATER SPRINGS, CHARTERS TOWERS, CLARKE RIVER, GREENVALE",
           "street_name": ""
         },
         {
