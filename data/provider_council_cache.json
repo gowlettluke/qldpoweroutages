@@ -2,27 +2,51 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T20:46:06Z",
+      "fetched_utc": "2026-11-08T21:01:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 6:30 AM",
-        "source_updated_utc": "2026-11-08T20:30:06Z",
+        "source_updated": "9 November 2026 7:00 AM",
+        "source_updated_utc": "2026-11-08T21:00:02Z",
         "published_customers": 0,
         "event_count": 0
       },
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T20:01:13Z",
+      "fetched_utc": "2026-11-08T21:01:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T20:00:17Z",
-        "published_customers": 3967,
-        "event_count": 15
+        "source_updated_utc": "2026-11-08T21:00:01Z",
+        "published_customers": 3977,
+        "event_count": 18
       },
       "events": [
+        {
+          "event_id": "26CA13283",
+          "allocations": [
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 12
+            }
+          ],
+          "details": {
+            "event": "26CA13283",
+            "council": "North Burnett Regional Council",
+            "suburb": "MONTO",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 16:12",
+            "restoreTime": "09/11/2026 09:00",
+            "customersAffected": "12",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 12,
+          "suburb": "MONTO",
+          "street_name": ""
+        },
         {
           "event_id": "26CA13289",
           "allocations": [
@@ -255,7 +279,7 @@
             {
               "lga_name": "Whitsunday Regional",
               "lga_code": null,
-              "affected_customers": 1210
+              "affected_customers": 1123
             }
           ],
           "details": {
@@ -265,11 +289,11 @@
             "type": "UNPLANNED",
             "startTime": "09/11/2026 03:22",
             "restoreTime": "Under Investigation",
-            "customersAffected": "1210",
+            "customersAffected": "1123",
             "cause": "The loss of supply is due to the operating of protective equipment.",
             "status": "Outage reported"
           },
-          "affected_customers": 1210,
+          "affected_customers": 1123,
           "suburb": "BOWEN",
           "street_name": ""
         },
@@ -295,6 +319,30 @@
           },
           "affected_customers": 303,
           "suburb": "GIRU, HORSESHOE LAGOON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13833",
+          "allocations": [
+            {
+              "lga_name": "Cloncurry Shire",
+              "lga_code": null,
+              "affected_customers": 83
+            }
+          ],
+          "details": {
+            "event": "26NQ13833",
+            "council": "Cloncurry Shire Council",
+            "suburb": "CLONCURRY",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 06:23",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "83",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 83,
+          "suburb": "CLONCURRY",
           "street_name": ""
         },
         {
@@ -343,6 +391,30 @@
           },
           "affected_customers": 2,
           "suburb": "PERANGA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14429",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26SW14429",
+            "council": "Banana Shire Council",
+            "suburb": "TAROOM",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 06:29",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 2,
+          "suburb": "TAROOM",
           "street_name": ""
         },
         {
