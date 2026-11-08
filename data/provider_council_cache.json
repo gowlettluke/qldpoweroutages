@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T10:16:15Z",
+      "fetched_utc": "2026-11-08T10:31:02Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 8:00 PM",
-        "source_updated_utc": "2026-11-08T10:00:06Z",
+        "source_updated": "8 November 2026 8:15 PM",
+        "source_updated_utc": "2026-11-08T10:15:02Z",
         "published_customers": 19,
         "event_count": 3
       },
@@ -86,7 +86,7 @@
             "postcode": "4500",
             "suburb": "BRENDALE",
             "customersAffected": "1",
-            "restoreTime": "2026-11-08T21:00:00+10:00",
+            "restoreTime": "2026-11-08T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -100,13 +100,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T10:16:18Z",
+      "fetched_utc": "2026-11-08T10:31:05Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T10:15:03Z",
-        "published_customers": 3070,
-        "event_count": 20
+        "source_updated_utc": "2026-11-08T10:25:00Z",
+        "published_customers": 2954,
+        "event_count": 19
       },
       "events": [
         {
@@ -160,35 +160,6 @@
           },
           "affected_customers": 30,
           "suburb": "COMET, YAMALA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13266",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 69
-            },
-            {
-              "lga_name": "Rockhampton Regional",
-              "lga_code": null,
-              "affected_customers": 47
-            }
-          ],
-          "details": {
-            "event": "26CA13266",
-            "council": "Livingstone Shire Council",
-            "suburb": "IRONPOT, LIMESTONE CREEK, NORTH ROCKHAMPTON",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 16:59",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "69",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 116,
-          "suburb": "IRONPOT, LIMESTONE CREEK, NORTH ROCKHAMPTON",
           "street_name": ""
         },
         {
@@ -429,7 +400,7 @@
             "startTime": "08/11/2026 18:52",
             "restoreTime": "Under Investigation",
             "customersAffected": "553",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "cause": "The loss of supply is due to fallen power lines.",
             "status": "Outage reported"
           },
           "affected_customers": 553,
