@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T22:01:26Z",
+      "fetched_utc": "2026-11-08T22:15:51Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -14,39 +14,15 @@
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T22:01:29Z",
+      "fetched_utc": "2026-11-08T22:15:57Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T22:00:04Z",
-        "published_customers": 3689,
-        "event_count": 19
+        "source_updated_utc": "2026-11-08T22:10:00Z",
+        "published_customers": 3198,
+        "event_count": 17
       },
       "events": [
-        {
-          "event_id": "26CA13283",
-          "allocations": [
-            {
-              "lga_name": "North Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 12
-            }
-          ],
-          "details": {
-            "event": "26CA13283",
-            "council": "North Burnett Regional Council",
-            "suburb": "MONTO",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 16:12",
-            "restoreTime": "09/11/2026 09:00",
-            "customersAffected": "12",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 12,
-          "suburb": "MONTO",
-          "street_name": ""
-        },
         {
           "event_id": "26CA13289",
           "allocations": [
@@ -88,7 +64,7 @@
             "startTime": "09/11/2026 00:50",
             "restoreTime": "Under Investigation",
             "customersAffected": "55",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Outage reported"
           },
           "affected_customers": 55,
@@ -327,7 +303,7 @@
             {
               "lga_name": "Whitsunday Regional",
               "lga_code": null,
-              "affected_customers": 1124
+              "affected_customers": 728
             }
           ],
           "details": {
@@ -337,36 +313,12 @@
             "type": "UNPLANNED",
             "startTime": "09/11/2026 03:22",
             "restoreTime": "Under Investigation",
-            "customersAffected": "1124",
-            "cause": "The loss of supply is due to the operating of protective equipment.",
+            "customersAffected": "728",
+            "cause": "The loss of supply is due to fallen power lines.",
             "status": "Outage reported"
           },
-          "affected_customers": 1124,
+          "affected_customers": 728,
           "suburb": "BOWEN",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13833",
-          "allocations": [
-            {
-              "lga_name": "Cloncurry Shire",
-              "lga_code": null,
-              "affected_customers": 83
-            }
-          ],
-          "details": {
-            "event": "26NQ13833",
-            "council": "Cloncurry Shire Council",
-            "suburb": "CLONCURRY",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 06:23",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "83",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 83,
-          "suburb": "CLONCURRY",
           "street_name": ""
         },
         {
