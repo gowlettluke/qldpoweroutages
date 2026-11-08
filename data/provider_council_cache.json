@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T09:31:03Z",
+      "fetched_utc": "2026-11-08T09:46:12Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 7:15 PM",
-        "source_updated_utc": "2026-11-08T09:15:02Z",
-        "published_customers": 18,
-        "event_count": 2
+        "source_updated": "8 November 2026 7:30 PM",
+        "source_updated_utc": "2026-11-08T09:30:02Z",
+        "published_customers": 19,
+        "event_count": 3
       },
       "events": [
         {
@@ -68,6 +68,34 @@
           "affected_customers": 11,
           "suburb": "EUMUNDI",
           "street_name": "EUMUNDI RANGE RD, OMEGA LANE"
+        },
+        {
+          "event_id": "INCD-994126-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-994126-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4500",
+            "suburb": "BRENDALE",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-08T21:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "KREMZOW RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "BRENDALE",
+          "street_name": "KREMZOW RD"
         }
       ]
     },
