@@ -2,25 +2,54 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T22:46:04Z",
+      "fetched_utc": "2026-11-08T23:01:30Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 8:30 AM",
-        "source_updated_utc": "2026-11-08T22:30:02Z",
-        "published_customers": 0,
-        "event_count": 0
+        "source_updated": "9 November 2026 9:00 AM",
+        "source_updated_utc": "2026-11-08T23:00:07Z",
+        "published_customers": 67,
+        "event_count": 1
       },
-      "events": []
+      "events": [
+        {
+          "event_id": "INCD-994185-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 67
+            }
+          ],
+          "details": {
+            "event": "INCD-994185-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4520",
+            "suburb": "SAMFORD VALLEY",
+            "customersAffected": "8",
+            "restoreTime": "2026-11-09T10:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "MT GLORIOUS RD"
+            ]
+          },
+          "affected_customers": 67,
+          "suburb": "SAMFORD VALLEY, SAMFORD VILLAGE",
+          "street_name": "CORBETT ST, MAIN ST, MARY RING DR, MT GLORIOUS RD, TRENTHAM PL"
+        }
+      ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T22:15:57Z",
+      "fetched_utc": "2026-11-08T23:01:33Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T22:10:00Z",
-        "published_customers": 3198,
-        "event_count": 17
+        "source_updated_utc": "2026-11-08T23:00:00Z",
+        "published_customers": 2790,
+        "event_count": 16
       },
       "events": [
         {
@@ -45,30 +74,6 @@
           },
           "affected_customers": 3,
           "suburb": "ETNA CREEK",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13300",
-          "allocations": [
-            {
-              "lga_name": "Rockhampton Regional",
-              "lga_code": null,
-              "affected_customers": 55
-            }
-          ],
-          "details": {
-            "event": "26CA13300",
-            "council": "Rockhampton Regional Council",
-            "suburb": "ALLENSTOWN, ROCKHAMPTON, THE RANGE",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 00:50",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "55",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 55,
-          "suburb": "ALLENSTOWN, ROCKHAMPTON, THE RANGE",
           "street_name": ""
         },
         {
@@ -101,22 +106,22 @@
             {
               "lga_name": "Cassowary Coast Regional",
               "lga_code": null,
-              "affected_customers": 11
+              "affected_customers": 68
             }
           ],
           "details": {
             "event": "26FN11060",
             "council": "Cassowary Coast Regional Council",
-            "suburb": "EURAMO, TULLY",
+            "suburb": "DINGO POCKET, EURAMO, MUNRO PLAINS, RIVERSDALE, TULLY",
             "type": "UNPLANNED",
             "startTime": "09/11/2026 07:03",
             "restoreTime": "Under Investigation",
-            "customersAffected": "11",
+            "customersAffected": "68",
             "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 11,
-          "suburb": "EURAMO, TULLY",
+          "affected_customers": 68,
+          "suburb": "DINGO POCKET, EURAMO, MUNRO PLAINS, RIVERSDALE, TULLY",
           "street_name": ""
         },
         {
@@ -303,7 +308,7 @@
             {
               "lga_name": "Whitsunday Regional",
               "lga_code": null,
-              "affected_customers": 728
+              "affected_customers": 318
             }
           ],
           "details": {
@@ -313,11 +318,11 @@
             "type": "UNPLANNED",
             "startTime": "09/11/2026 03:22",
             "restoreTime": "Under Investigation",
-            "customersAffected": "728",
+            "customersAffected": "318",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
-          "affected_customers": 728,
+          "affected_customers": 318,
           "suburb": "BOWEN",
           "street_name": ""
         },
@@ -408,7 +413,7 @@
             "suburb": "SEXTON",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 21:08",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "09/11/2026 12:30",
             "customersAffected": "34",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
