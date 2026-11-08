@@ -2,25 +2,25 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T18:46:04Z",
+      "fetched_utc": "2026-11-08T19:01:27Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 4:30 AM",
-        "source_updated_utc": "2026-11-08T18:30:02Z",
+        "source_updated": "9 November 2026 5:00 AM",
+        "source_updated_utc": "2026-11-08T19:00:02Z",
         "published_customers": 0,
         "event_count": 0
       },
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T17:16:12Z",
+      "fetched_utc": "2026-11-08T19:01:32Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T17:15:01Z",
-        "published_customers": 2454,
-        "event_count": 13
+        "source_updated_utc": "2026-11-08T19:00:28Z",
+        "published_customers": 3664,
+        "event_count": 14
       },
       "events": [
         {
@@ -247,6 +247,30 @@
           },
           "affected_customers": 35,
           "suburb": "CLONCURRY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13830",
+          "allocations": [
+            {
+              "lga_name": "Whitsunday Regional",
+              "lga_code": null,
+              "affected_customers": 1210
+            }
+          ],
+          "details": {
+            "event": "26NQ13830",
+            "council": "Whitsunday Regional Council",
+            "suburb": "BOWEN",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 03:22",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "1210",
+            "cause": "The loss of supply is due to the operating of protective equipment.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 1210,
+          "suburb": "BOWEN",
           "street_name": ""
         },
         {
