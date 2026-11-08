@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T21:01:19Z",
+      "fetched_utc": "2026-11-08T21:16:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -14,13 +14,13 @@
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T21:01:25Z",
+      "fetched_utc": "2026-11-08T21:16:15Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T21:00:01Z",
-        "published_customers": 3977,
-        "event_count": 18
+        "source_updated_utc": "2026-11-08T21:15:00Z",
+        "published_customers": 3681,
+        "event_count": 19
       },
       "events": [
         {
@@ -93,6 +93,54 @@
           },
           "affected_customers": 55,
           "suburb": "ALLENSTOWN, ROCKHAMPTON, THE RANGE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13301",
+          "allocations": [
+            {
+              "lga_name": "Rockhampton Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26CA13301",
+            "council": "Rockhampton Regional Council",
+            "suburb": "LIMESTONE CREEK",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 05:45",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 3,
+          "suburb": "LIMESTONE CREEK",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13302",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26CA13302",
+            "council": "Livingstone Shire Council",
+            "suburb": "ETNA CREEK",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 18:19",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 3,
+          "suburb": "ETNA CREEK",
           "street_name": ""
         },
         {
@@ -279,7 +327,7 @@
             {
               "lga_name": "Whitsunday Regional",
               "lga_code": null,
-              "affected_customers": 1123
+              "affected_customers": 1124
             }
           ],
           "details": {
@@ -289,36 +337,12 @@
             "type": "UNPLANNED",
             "startTime": "09/11/2026 03:22",
             "restoreTime": "Under Investigation",
-            "customersAffected": "1123",
+            "customersAffected": "1124",
             "cause": "The loss of supply is due to the operating of protective equipment.",
             "status": "Outage reported"
           },
-          "affected_customers": 1123,
+          "affected_customers": 1124,
           "suburb": "BOWEN",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13831",
-          "allocations": [
-            {
-              "lga_name": "Burdekin Shire",
-              "lga_code": null,
-              "affected_customers": 303
-            }
-          ],
-          "details": {
-            "event": "26NQ13831",
-            "council": "Burdekin Shire Council",
-            "suburb": "GIRU, HORSESHOE LAGOON",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 05:59",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "303",
-            "cause": "The loss of supply is due to public safety concerns.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 303,
-          "suburb": "GIRU, HORSESHOE LAGOON",
           "street_name": ""
         },
         {
