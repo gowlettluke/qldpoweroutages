@@ -2,46 +2,71 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T05:16:05Z",
+      "fetched_utc": "2026-11-08T05:31:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 3:00 PM",
-        "source_updated_utc": "2026-11-08T05:00:05Z",
-        "published_customers": 40,
-        "event_count": 1
+        "source_updated": "8 November 2026 3:30 PM",
+        "source_updated_utc": "2026-11-08T05:30:02Z",
+        "published_customers": 16,
+        "event_count": 2
       },
       "events": [
         {
-          "event_id": "INCD-994027-g",
+          "event_id": "INCD-994085-g",
           "allocations": [
             {
               "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 40
+              "affected_customers": 5
             }
           ],
           "details": {
-            "event": "INCD-994027-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
+            "event": "INCD-994085-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
             "council": "Brisbane City",
-            "postcode": "4109",
-            "suburb": "SUNNYBANK HILLS",
-            "customersAffected": "40",
-            "restoreTime": "2026-11-08T13:30:00+10:00",
+            "postcode": "4069",
+            "suburb": "UPPER BROOKFIELD",
+            "customersAffected": "5",
+            "restoreTime": "2026-11-08T16:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "HASELER CRES",
-              "HELLAWELL RD",
-              "KINGMAN ST",
-              "SIGNATA ST"
+              "GILLIES RD"
             ]
           },
-          "affected_customers": 40,
-          "suburb": "SUNNYBANK HILLS",
-          "street_name": "HASELER CRES, HELLAWELL RD, KINGMAN ST, SIGNATA ST"
+          "affected_customers": 5,
+          "suburb": "UPPER BROOKFIELD",
+          "street_name": "GILLIES RD"
+        },
+        {
+          "event_id": "INCD-994087-g",
+          "allocations": [
+            {
+              "lga_name": "Gold Coast City",
+              "lga_code": null,
+              "affected_customers": 11
+            }
+          ],
+          "details": {
+            "event": "INCD-994087-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Gold Coast City",
+            "postcode": "4223",
+            "suburb": "CURRUMBIN VALLEY",
+            "customersAffected": "9",
+            "restoreTime": "2026-11-08T18:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "PIGGABEEN RD"
+            ]
+          },
+          "affected_customers": 11,
+          "suburb": "CURRUMBIN VALLEY, CURRUMBIN WATERS",
+          "street_name": "PIGGABEEN RD"
         }
       ]
     },
