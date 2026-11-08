@@ -1,43 +1,45 @@
 {
-  "generated_utc": "2026-11-08T09:01:27Z",
-  "generated_aest": "2026-11-08T19:01:27+10:00",
+  "generated_utc": "2026-11-08T09:16:11Z",
+  "generated_aest": "2026-11-08T19:16:11+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 22,
+  "current_outage_records": 24,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 602,
-  "current_records_after_outage_type_filter": 26,
+  "current_records_before_outage_type_filter": 604,
+  "current_records_after_outage_type_filter": 28,
   "current_records_dropped_planned_or_unknown": 576,
-  "provider_fetch_errors": {
-    "Ergon": "Council allocation fallback to map estimates: RuntimeError: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
-  },
-  "provider_fetch_error_count": 1,
+  "provider_fetch_errors": {},
+  "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "8 November 2026 7:00 PM",
-      "source_updated_utc": "2026-11-08T09:00:03Z",
+      "source_updated": "8 November 2026 7:15 PM",
+      "source_updated_utc": "2026-11-08T09:15:02Z",
       "published_customers": 18,
       "event_count": 2,
-      "fetched_utc": "2026-11-08T09:01:38Z"
+      "fetched_utc": "2026-11-08T09:16:18Z"
     },
     "Ergon": {
-      "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: RuntimeError: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "status": "provider",
+      "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+      "source_updated_utc": "2026-11-08T09:15:14Z",
+      "published_customers": 3728,
+      "event_count": 22,
+      "fetched_utc": "2026-11-08T09:16:23Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-08T09:01:27Z",
+    "snapshot_utc": "2026-11-08T09:16:11Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-08T09:01:38Z",
+      "fetched_utc": "2026-11-08T09:16:18Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-08T09:00:03Z",
+      "source_updated_utc": "2026-11-08T09:15:02Z",
       "retained": false,
       "total_customers": 18,
       "rows": [
@@ -46,29 +48,80 @@
           "affected_customers": 7
         },
         {
-          "lga_name": "Gold Coast City",
+          "lga_name": "Sunshine Coast Regional",
           "affected_customers": 11
         }
       ]
     },
     "ergon": {
-      "status": "error",
-      "fetched_utc": "2026-11-08T09:01:41Z",
-      "error": "Council allocation fallback to map estimates: RuntimeError: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "status": "ok",
+      "fetched_utc": "2026-11-08T09:16:23Z",
+      "scope": "all_councils",
+      "outage_type": "unplanned",
+      "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+      "source_updated_utc": "2026-11-08T09:15:14Z",
+      "retained": false,
+      "total_customers": 3728,
+      "rows": [
+        {
+          "lga_name": "Banana Shire",
+          "affected_customers": 9
+        },
+        {
+          "lga_name": "Central Highlands Regional",
+          "affected_customers": 27
+        },
+        {
+          "lga_name": "Charters Towers Regional",
+          "affected_customers": 15
+        },
+        {
+          "lga_name": "Cloncurry Shire",
+          "affected_customers": 35
+        },
+        {
+          "lga_name": "Fraser Coast Regional",
+          "affected_customers": 3
+        },
+        {
+          "lga_name": "Isaac Regional",
+          "affected_customers": 694
+        },
+        {
+          "lga_name": "Livingstone Shire",
+          "affected_customers": 279
+        },
+        {
+          "lga_name": "Mackay Regional",
+          "affected_customers": 1946
+        },
+        {
+          "lga_name": "Rockhampton Regional",
+          "affected_customers": 84
+        },
+        {
+          "lga_name": "Tablelands Regional",
+          "affected_customers": 631
+        },
+        {
+          "lga_name": "Toowoomba Regional",
+          "affected_customers": 5
+        }
+      ]
     }
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 2,
-  "current_ergon_records": 20,
+  "current_ergon_records": 22,
   "current_essential_records_fetched": 5,
   "current_energex_records_fetched": 169,
-  "current_ergon_records_fetched": 428,
+  "current_ergon_records_fetched": 430,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 4,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 2829,
-  "lga_totals_rows_48h": 4300,
+  "snapshot_rows_48h": 2846,
+  "lga_totals_rows_48h": 4312,
   "lga_totals_latest_rows": 26,
   "lga_cumulative_rows": 85,
   "outputs": {

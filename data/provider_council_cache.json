@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T09:01:38Z",
+      "fetched_utc": "2026-11-08T09:16:18Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 7:00 PM",
-        "source_updated_utc": "2026-11-08T09:00:03Z",
+        "source_updated": "8 November 2026 7:15 PM",
+        "source_updated_utc": "2026-11-08T09:15:02Z",
         "published_customers": 18,
         "event_count": 2
       },
@@ -41,163 +41,294 @@
           "street_name": "GILLIES RD"
         },
         {
-          "event_id": "INCD-994087-g",
+          "event_id": "INCD-994122-g",
           "allocations": [
             {
-              "lga_name": "Gold Coast City",
+              "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
               "affected_customers": 11
             }
           ],
           "details": {
-            "event": "INCD-994087-g",
+            "event": "INCD-994122-g",
             "cause": "Under Investigation",
             "status": "Under Investigation",
-            "council": "Gold Coast City",
-            "postcode": "4223",
-            "suburb": "CURRUMBIN VALLEY",
-            "customersAffected": "9",
-            "restoreTime": "2026-11-08T19:30:00+10:00",
+            "council": "Sunshine Coast",
+            "postcode": "4562",
+            "suburb": "EUMUNDI",
+            "customersAffected": "11",
+            "restoreTime": "2026-11-08T20:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "PIGGABEEN RD"
+              "EUMUNDI RANGE RD",
+              "OMEGA LANE"
             ]
           },
           "affected_customers": 11,
-          "suburb": "CURRUMBIN VALLEY, CURRUMBIN WATERS",
-          "street_name": "PIGGABEEN RD"
+          "suburb": "EUMUNDI",
+          "street_name": "EUMUNDI RANGE RD, OMEGA LANE"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T03:31:24Z",
+      "fetched_utc": "2026-11-08T09:16:23Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T03:30:00Z",
-        "published_customers": 231,
-        "event_count": 14
+        "source_updated_utc": "2026-11-08T09:15:14Z",
+        "published_customers": 3728,
+        "event_count": 22
       },
       "events": [
         {
-          "event_id": "26CA13164",
+          "event_id": "26CA13243",
           "allocations": [
             {
               "lga_name": "Banana Shire",
               "lga_code": null,
-              "affected_customers": 6
+              "affected_customers": 9
             }
           ],
           "details": {
-            "event": "26CA13164",
+            "event": "26CA13243",
             "council": "Banana Shire Council",
-            "suburb": "DIXALEA, DULULU, WOWAN",
+            "suburb": "THEODORE",
             "type": "UNPLANNED",
-            "startTime": "07/11/2026 17:20",
-            "restoreTime": "08/11/2026 16:30",
-            "customersAffected": "6",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 6,
-          "suburb": "DIXALEA, DULULU, WOWAN",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13172",
-          "allocations": [
-            {
-              "lga_name": "Banana Shire",
-              "lga_code": null,
-              "affected_customers": 5
-            }
-          ],
-          "details": {
-            "event": "26CA13172",
-            "council": "Banana Shire Council",
-            "suburb": "BARALABA",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 17:02",
-            "restoreTime": "08/11/2026 14:00",
-            "customersAffected": "5",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 5,
-          "suburb": "BARALABA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13221",
-          "allocations": [
-            {
-              "lga_name": "Banana Shire",
-              "lga_code": null,
-              "affected_customers": 22
-            }
-          ],
-          "details": {
-            "event": "26CA13221",
-            "council": "Banana Shire Council",
-            "suburb": "BARALABA",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 06:03",
+            "startTime": "08/11/2026 13:02",
             "restoreTime": "Under Investigation",
-            "customersAffected": "22",
+            "customersAffected": "9",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
-          "affected_customers": 22,
-          "suburb": "BARALABA",
+          "affected_customers": 9,
+          "suburb": "THEODORE",
           "street_name": ""
         },
         {
-          "event_id": "26CA13240",
+          "event_id": "26CA13244",
           "allocations": [
             {
               "lga_name": "Central Highlands Regional",
               "lga_code": null,
-              "affected_customers": 5
-            }
-          ],
-          "details": {
-            "event": "26CA13240",
-            "council": "Central Highlands Regional Council",
-            "suburb": "BINGEGANG",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 11:12",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "5",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 5,
-          "suburb": "BINGEGANG",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN11043",
-          "allocations": [
+              "affected_customers": 27
+            },
             {
-              "lga_name": "Carpentaria Shire",
+              "lga_name": "Isaac Regional",
               "lga_code": null,
-              "affected_customers": 11
+              "affected_customers": 3
             }
           ],
           "details": {
-            "event": "26FN11043",
-            "council": "Carpentaria Shire Council",
-            "suburb": "NORMANTON",
+            "event": "26CA13244",
+            "council": "Central Highlands Regional Council",
+            "suburb": "COMET, YAMALA",
             "type": "UNPLANNED",
-            "startTime": "07/11/2026 18:26",
+            "startTime": "08/11/2026 14:26",
             "restoreTime": "Under Investigation",
-            "customersAffected": "11",
+            "customersAffected": "27",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 11,
-          "suburb": "NORMANTON",
+          "affected_customers": 30,
+          "suburb": "COMET, YAMALA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13266",
+          "allocations": [
+            {
+              "lga_name": "Rockhampton Regional",
+              "lga_code": null,
+              "affected_customers": 84
+            },
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 73
+            }
+          ],
+          "details": {
+            "event": "26CA13266",
+            "council": "Livingstone Shire Council",
+            "suburb": "IRONPOT, LIMESTONE CREEK, NORTH ROCKHAMPTON, PARKHURST, ROCKYVIEW",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 16:59",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "73",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 157,
+          "suburb": "IRONPOT, LIMESTONE CREEK, NORMAN GARDENS, NORTH ROCKHAMPTON, PARKHURST, ROCKYVIEW",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13268",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 17
+            }
+          ],
+          "details": {
+            "event": "26CA13268",
+            "council": "Livingstone Shire Council",
+            "suburb": "IRONPOT, PARKHURST, ROCKYVIEW, SANDRINGHAM",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 17:10",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "17",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 17,
+          "suburb": "IRONPOT, PARKHURST, ROCKYVIEW, SANDRINGHAM",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13273",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 53
+            }
+          ],
+          "details": {
+            "event": "26CA13273",
+            "council": "Livingstone Shire Council",
+            "suburb": "BUNGUNDARRA",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 17:22",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "53",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 53,
+          "suburb": "BUNGUNDARRA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13278",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 20
+            }
+          ],
+          "details": {
+            "event": "26CA13278",
+            "council": "Livingstone Shire Council",
+            "suburb": "MOUNT CHALMERS, TUNGAMULL",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 17:50",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "20",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 20,
+          "suburb": "MOUNT CHALMERS, TUNGAMULL",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13279",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 73
+            }
+          ],
+          "details": {
+            "event": "26CA13279",
+            "council": "Livingstone Shire Council",
+            "suburb": "CAWARRAL, MOUNT CHALMERS",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 17:46",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "73",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 73,
+          "suburb": "CAWARRAL, MOUNT CHALMERS",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13281",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 43
+            }
+          ],
+          "details": {
+            "event": "26CA13281",
+            "council": "Livingstone Shire Council",
+            "suburb": "BUNGUNDARRA",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 17:54",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "43",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 43,
+          "suburb": "BUNGUNDARRA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11056",
+          "allocations": [
+            {
+              "lga_name": "Tablelands Regional",
+              "lga_code": null,
+              "affected_customers": 631
+            }
+          ],
+          "details": {
+            "event": "26FN11056",
+            "council": "Tablelands Regional Council",
+            "suburb": "ATHERTON, INNOT HOT SPRINGS, MILLSTREAM, RAVENSHOE",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 16:37",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "631",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 631,
+          "suburb": "ATHERTON, INNOT HOT SPRINGS, MILLSTREAM, RAVENSHOE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26MK7087",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 8
+            }
+          ],
+          "details": {
+            "event": "26MK7087",
+            "council": "Mackay Regional Council",
+            "suburb": "ETON, HOMEBUSH",
+            "type": "UNPLANNED",
+            "startTime": "07/11/2026 19:10",
+            "restoreTime": "08/11/2026 23:00",
+            "customersAffected": "8",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 8,
+          "suburb": "ETON, HOMEBUSH",
           "street_name": ""
         },
         {
@@ -206,46 +337,229 @@
             {
               "lga_name": "Isaac Regional",
               "lga_code": null,
-              "affected_customers": 21
+              "affected_customers": 11
             }
           ],
           "details": {
             "event": "26MK7088",
             "council": "Isaac Regional Council",
-            "suburb": "BURTON, COPPABELLA, GLENDEN, MORANBAH, NEBO, SUTTOR",
+            "suburb": "COPPABELLA, GLENDEN, NEBO, SUTTOR",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 10:11",
             "restoreTime": "Under Investigation",
-            "customersAffected": "21",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "customersAffected": "11",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Crews working on-site"
           },
-          "affected_customers": 21,
-          "suburb": "BURTON, COPPABELLA, GLENDEN, MORANBAH, NEBO, SUTTOR",
+          "affected_customers": 11,
+          "suburb": "COPPABELLA, GLENDEN, NEBO, SUTTOR",
           "street_name": ""
         },
         {
-          "event_id": "26MK7091",
+          "event_id": "26MK7096",
           "allocations": [
             {
-              "lga_name": "Whitsunday Regional",
+              "lga_name": "Isaac Regional",
               "lga_code": null,
-              "affected_customers": 3
+              "affected_customers": 51
+            },
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 1
             }
           ],
           "details": {
-            "event": "26MK7091",
-            "council": "Whitsunday Regional Council",
-            "suburb": "KELSEY CREEK",
+            "event": "26MK7096",
+            "council": "Isaac Regional Council",
+            "suburb": "BLUE MOUNTAIN, COLSTON PARK, NEBO",
             "type": "UNPLANNED",
-            "startTime": "08/11/2026 11:59",
+            "startTime": "08/11/2026 18:18",
             "restoreTime": "Under Investigation",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "customersAffected": "51",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 52,
+          "suburb": "BLUE MOUNTAIN, COLSTON PARK, NEBO",
+          "street_name": ""
+        },
+        {
+          "event_id": "26MK7099",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 154
+            }
+          ],
+          "details": {
+            "event": "26MK7099",
+            "council": "Mackay Regional Council",
+            "suburb": "KOUMALA, SARINA",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 18:50",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "154",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Outage reported"
           },
-          "affected_customers": 3,
-          "suburb": "KELSEY CREEK",
+          "affected_customers": 154,
+          "suburb": "KOUMALA, SARINA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26MK7100",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 435
+            }
+          ],
+          "details": {
+            "event": "26MK7100",
+            "council": "Mackay Regional Council",
+            "suburb": "COLSTON PARK, KOUMALA, SARINA, SARINA RANGE",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 18:50",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "435",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 435,
+          "suburb": "COLSTON PARK, KOUMALA, SARINA, SARINA RANGE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26MK7101",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 553
+            }
+          ],
+          "details": {
+            "event": "26MK7101",
+            "council": "Mackay Regional Council",
+            "suburb": "ARMSTRONG BEACH, FRESHWATER POINT, SARINA",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 18:52",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "553",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 553,
+          "suburb": "ARMSTRONG BEACH, FRESHWATER POINT, SARINA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26MK7102",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 303
+            },
+            {
+              "lga_name": "Isaac Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26MK7102",
+            "council": "Isaac Regional Council",
+            "suburb": "ILBILBIE",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 19:02",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 305,
+          "suburb": "ILBILBIE, KOUMALA, MOUNT CHRISTIAN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26MK7103",
+          "allocations": [
+            {
+              "lga_name": "Isaac Regional",
+              "lga_code": null,
+              "affected_customers": 627
+            },
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 492
+            }
+          ],
+          "details": {
+            "event": "26MK7103",
+            "council": "Isaac Regional Council",
+            "suburb": "CARMILA, CARMILA BEACH, CLAIRVIEW, GREENHILL, ILBILBIE, ORKABIE, WEST HILL",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 18:53",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "627",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 1119,
+          "suburb": "CARMILA, CARMILA BEACH, CLAIRVIEW, GREENHILL, ILBILBIE, KOUMALA, MOUNT CHRISTIAN, ORKABIE, SARINA, WEST HILL",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13825",
+          "allocations": [
+            {
+              "lga_name": "Charters Towers Regional",
+              "lga_code": null,
+              "affected_customers": 15
+            }
+          ],
+          "details": {
+            "event": "26NQ13825",
+            "council": "Charters Towers Regional Council",
+            "suburb": "BLUEWATER SPRINGS, CHARTERS TOWERS, CLARKE RIVER, GREENVALE",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 14:42",
+            "restoreTime": "08/11/2026 21:00",
+            "customersAffected": "15",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 15,
+          "suburb": "BLUEWATER SPRINGS, CHARTERS TOWERS, CLARKE RIVER, GREENVALE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13826",
+          "allocations": [
+            {
+              "lga_name": "Cloncurry Shire",
+              "lga_code": null,
+              "affected_customers": 35
+            }
+          ],
+          "details": {
+            "event": "26NQ13826",
+            "council": "Cloncurry Shire Council",
+            "suburb": "CLONCURRY",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 16:23",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "35",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 35,
+          "suburb": "CLONCURRY",
           "street_name": ""
         },
         {
@@ -278,123 +592,22 @@
             {
               "lga_name": "Toowoomba Regional",
               "lga_code": null,
-              "affected_customers": 10
+              "affected_customers": 2
             }
           ],
           "details": {
             "event": "26SW14399",
             "council": "Toowoomba Regional Council",
-            "suburb": "MACLAGAN, PERANGA",
+            "suburb": "PERANGA",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 16:58",
             "restoreTime": "Under Investigation",
-            "customersAffected": "10",
+            "customersAffected": "2",
             "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Work delayed - crews unable to continue"
           },
-          "affected_customers": 10,
-          "suburb": "MACLAGAN, PERANGA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10730",
-          "allocations": [
-            {
-              "lga_name": "South Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 104
-            },
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "26WB10730",
-            "council": "South Burnett Regional Council",
-            "suburb": "BOONDOOMA, DARR CREEK, DURONG, DURONG SOUTH",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 15:46",
-            "restoreTime": "08/11/2026 17:00",
-            "customersAffected": "104",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 105,
-          "suburb": "BOONDOOMA, DARR CREEK, DURONG, DURONG SOUTH",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10761",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 30
-            }
-          ],
-          "details": {
-            "event": "26WB10761",
-            "council": "Bundaberg Regional Council",
-            "suburb": "BUCCA, BULLYARD",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 18:26",
-            "restoreTime": "08/11/2026 14:00",
-            "customersAffected": "30",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 30,
-          "suburb": "BUCCA, BULLYARD",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10804",
-          "allocations": [
-            {
-              "lga_name": "Gympie Regional",
-              "lga_code": null,
-              "affected_customers": 5
-            }
-          ],
-          "details": {
-            "event": "26WB10804",
-            "council": "Gympie Regional Council",
-            "suburb": "BOONARA, GOOMERI",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 06:02",
-            "restoreTime": "08/11/2026 15:00",
-            "customersAffected": "5",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 5,
-          "suburb": "BOONARA, GOOMERI",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10821",
-          "allocations": [
-            {
-              "lga_name": "South Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26WB10821",
-            "council": "South Burnett Regional Council",
-            "suburb": "BOONDOOMA",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 12:46",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
           "affected_customers": 2,
-          "suburb": "BOONDOOMA",
+          "suburb": "PERANGA",
           "street_name": ""
         },
         {
