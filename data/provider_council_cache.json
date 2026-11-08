@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T10:46:11Z",
+      "fetched_utc": "2026-11-08T11:01:29Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 8:30 PM",
-        "source_updated_utc": "2026-11-08T10:30:02Z",
-        "published_customers": 19,
-        "event_count": 3
+        "source_updated": "8 November 2026 9:00 PM",
+        "source_updated_utc": "2026-11-08T11:00:02Z",
+        "published_customers": 8,
+        "event_count": 2
       },
       "events": [
         {
@@ -41,35 +41,6 @@
           "street_name": "GILLIES RD"
         },
         {
-          "event_id": "INCD-994122-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 11
-            }
-          ],
-          "details": {
-            "event": "INCD-994122-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4562",
-            "suburb": "EUMUNDI",
-            "customersAffected": "11",
-            "restoreTime": "2026-11-08T21:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "EUMUNDI RANGE RD",
-              "OMEGA LANE"
-            ]
-          },
-          "affected_customers": 11,
-          "suburb": "EUMUNDI",
-          "street_name": "EUMUNDI RANGE RD, OMEGA LANE"
-        },
-        {
           "event_id": "INCD-994126-g",
           "allocations": [
             {
@@ -80,13 +51,13 @@
           ],
           "details": {
             "event": "INCD-994126-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
             "council": "Moreton Bay Regional",
             "postcode": "4500",
             "suburb": "BRENDALE",
             "customersAffected": "1",
-            "restoreTime": "2026-11-08T21:00:00+10:00",
+            "restoreTime": "2026-11-08T22:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -100,12 +71,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T10:46:14Z",
+      "fetched_utc": "2026-11-08T11:01:32Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T10:45:00Z",
-        "published_customers": 2637,
+        "source_updated_utc": "2026-11-08T11:00:16Z",
+        "published_customers": 2673,
         "event_count": 18
       },
       "events": [
@@ -283,51 +254,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26MK7087",
-          "allocations": [
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 8
-            }
-          ],
-          "details": {
-            "event": "26MK7087",
-            "council": "Mackay Regional Council",
-            "suburb": "ETON, HOMEBUSH",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 19:10",
-            "restoreTime": "08/11/2026 23:00",
-            "customersAffected": "8",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 8,
-          "suburb": "ETON, HOMEBUSH",
-          "street_name": ""
-        },
-        {
           "event_id": "26MK7088",
           "allocations": [
             {
               "lga_name": "Isaac Regional",
               "lga_code": null,
-              "affected_customers": 11
+              "affected_customers": 6
             }
           ],
           "details": {
             "event": "26MK7088",
             "council": "Isaac Regional Council",
-            "suburb": "COPPABELLA, GLENDEN, NEBO, SUTTOR",
+            "suburb": "GLENDEN, SUTTOR",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 10:11",
             "restoreTime": "Under Investigation",
-            "customersAffected": "11",
+            "customersAffected": "6",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 11,
-          "suburb": "COPPABELLA, GLENDEN, NEBO, SUTTOR",
+          "affected_customers": 6,
+          "suburb": "GLENDEN, SUTTOR",
           "street_name": ""
         },
         {
@@ -477,8 +424,8 @@
             "startTime": "08/11/2026 16:23",
             "restoreTime": "Under Investigation",
             "customersAffected": "35",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "cause": "The loss of supply is due to a bush fire.",
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 35,
           "suburb": "CLONCURRY",
@@ -530,6 +477,30 @@
           },
           "affected_customers": 2,
           "suburb": "PERANGA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10841",
+          "allocations": [
+            {
+              "lga_name": "South Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 49
+            }
+          ],
+          "details": {
+            "event": "26WB10841",
+            "council": "South Burnett Regional Council",
+            "suburb": "MOFFATDALE, MURGON, REDGATE",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 19:46",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "49",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 49,
+          "suburb": "MOFFATDALE, MURGON, REDGATE",
           "street_name": ""
         },
         {
