@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T12:16:09Z",
+      "fetched_utc": "2026-11-08T12:31:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 10:00 PM",
-        "source_updated_utc": "2026-11-08T12:00:02Z",
-        "published_customers": 7,
-        "event_count": 1
+        "source_updated": "8 November 2026 10:30 PM",
+        "source_updated_utc": "2026-11-08T12:30:02Z",
+        "published_customers": 767,
+        "event_count": 4
       },
       "events": [
         {
@@ -39,6 +39,118 @@
           "affected_customers": 7,
           "suburb": "UPPER BROOKFIELD",
           "street_name": "GILLIES RD"
+        },
+        {
+          "event_id": "INCD-994097-g",
+          "allocations": [
+            {
+              "lga_name": "Gold Coast City",
+              "lga_code": null,
+              "affected_customers": 18
+            }
+          ],
+          "details": {
+            "event": "INCD-994097-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Gold Coast City",
+            "postcode": "4226",
+            "suburb": "MERRIMAC",
+            "customersAffected": "18",
+            "restoreTime": "2026-11-09T02:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "GOODING DR"
+            ]
+          },
+          "affected_customers": 18,
+          "suburb": "MERRIMAC",
+          "street_name": "GOODING DR"
+        },
+        {
+          "event_id": "INCD-994140-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 707
+            }
+          ],
+          "details": {
+            "event": "INCD-994140-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4122",
+            "suburb": "MT GRAVATT EAST",
+            "customersAffected": "707",
+            "restoreTime": "2026-11-09T00:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALLINGA ST",
+              "AMEGA ST",
+              "BALLARAT ST",
+              "BESLEY ST",
+              "BROADWATER RD",
+              "BURCOTE ST",
+              "CARY ST",
+              "CAVENDISH RD",
+              "CHRYSLER ST",
+              "CORTIS ST",
+              "CREEK RD",
+              "DALGETY ST",
+              "DURANT ST",
+              "DYKES ST",
+              "FAIRLAND ST",
+              "HATHWAY ST",
+              "KENTISH ST",
+              "MARLENE ST",
+              "MORLAND ST",
+              "NEWNHAM RD",
+              "PETTIGREW ST",
+              "ROTHWELL ST",
+              "SPENCE ST",
+              "STELLMAN ST",
+              "WEDMORE ST",
+              "WHITLEY ST"
+            ]
+          },
+          "affected_customers": 707,
+          "suburb": "MT GRAVATT EAST",
+          "street_name": "ALLINGA ST, AMEGA ST, BALLARAT ST, BESLEY ST, BROADWATER RD, BURCOTE ST, CARY ST, CAVENDISH RD, CHRYSLER ST, CORTIS ST, CREEK RD, DALGETY ST, DURANT ST, DYKES ST, FAIRLAND ST, HATHWAY ST, KENTISH ST, MARLENE ST, MORLAND ST, NEWNHAM RD, PETTIGREW ST, ROTHWELL ST, SPENCE ST, STELLMAN ST, WEDMORE ST, WHITLEY ST"
+        },
+        {
+          "event_id": "INCD-994141-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 35
+            }
+          ],
+          "details": {
+            "event": "INCD-994141-g",
+            "cause": "Emergency repairs in-progress",
+            "status": "Emergency Repairs",
+            "council": "Brisbane City",
+            "postcode": "4121",
+            "suburb": "HOLLAND PARK",
+            "customersAffected": "35",
+            "restoreTime": "2026-11-09T00:30:00+10:00",
+            "etrFlag": "RB",
+            "etrFlagBool": "Y",
+            "streets": [
+              "CAVENDISH RD",
+              "GLENALWYN ST",
+              "STONYFELL CT",
+              "WYNCROFT ST"
+            ]
+          },
+          "affected_customers": 35,
+          "suburb": "HOLLAND PARK",
+          "street_name": "CAVENDISH RD, GLENALWYN ST, STONYFELL CT, WYNCROFT ST"
         }
       ]
     },
