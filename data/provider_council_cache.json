@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T12:46:16Z",
+      "fetched_utc": "2026-11-08T13:01:26Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 10:30 PM",
-        "source_updated_utc": "2026-11-08T12:30:02Z",
+        "source_updated": "8 November 2026 11:00 PM",
+        "source_updated_utc": "2026-11-08T13:00:02Z",
         "published_customers": 767,
         "event_count": 4
       },
@@ -155,63 +155,15 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T11:46:10Z",
+      "fetched_utc": "2026-11-08T13:01:31Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T11:45:01Z",
-        "published_customers": 2446,
-        "event_count": 14
+        "source_updated_utc": "2026-11-08T13:00:01Z",
+        "published_customers": 2448,
+        "event_count": 13
       },
       "events": [
-        {
-          "event_id": "26CA13243",
-          "allocations": [
-            {
-              "lga_name": "Banana Shire",
-              "lga_code": null,
-              "affected_customers": 9
-            }
-          ],
-          "details": {
-            "event": "26CA13243",
-            "council": "Banana Shire Council",
-            "suburb": "THEODORE",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 13:02",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "9",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 9,
-          "suburb": "THEODORE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13281",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 23
-            }
-          ],
-          "details": {
-            "event": "26CA13281",
-            "council": "Livingstone Shire Council",
-            "suburb": "BUNGUNDARRA",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 17:54",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "23",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 23,
-          "suburb": "BUNGUNDARRA",
-          "street_name": ""
-        },
         {
           "event_id": "26CA13289",
           "allocations": [
@@ -283,7 +235,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "51",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 52,
           "suburb": "BLUE MOUNTAIN, COLSTON PARK, NEBO",
@@ -306,7 +258,7 @@
             "startTime": "08/11/2026 18:50",
             "restoreTime": "Under Investigation",
             "customersAffected": "154",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "cause": "The loss of supply is due to fallen power lines.",
             "status": "Outage reported"
           },
           "affected_customers": 154,
@@ -383,7 +335,7 @@
             "startTime": "08/11/2026 18:53",
             "restoreTime": "Under Investigation",
             "customersAffected": "627",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "cause": "The loss of supply is due to fallen power lines.",
             "status": "Outage reported"
           },
           "affected_customers": 1119,
@@ -477,13 +429,37 @@
             "suburb": "MOFFATDALE, MURGON, REDGATE",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 19:46",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "08/11/2026 23:30",
             "customersAffected": "49",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Crews working on-site"
           },
           "affected_customers": 49,
           "suburb": "MOFFATDALE, MURGON, REDGATE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10845",
+          "allocations": [
+            {
+              "lga_name": "Gympie Regional",
+              "lga_code": null,
+              "affected_customers": 34
+            }
+          ],
+          "details": {
+            "event": "26WB10845",
+            "council": "Gympie Regional Council",
+            "suburb": "SEXTON",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 21:08",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "34",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 34,
+          "suburb": "SEXTON",
           "street_name": ""
         },
         {
