@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T03:16:09Z",
+      "fetched_utc": "2026-11-08T03:31:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 1:00 PM",
-        "source_updated_utc": "2026-11-08T03:00:02Z",
+        "source_updated": "8 November 2026 1:30 PM",
+        "source_updated_utc": "2026-11-08T03:30:02Z",
         "published_customers": 40,
         "event_count": 1
       },
@@ -46,12 +46,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T03:16:12Z",
+      "fetched_utc": "2026-11-08T03:31:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T03:15:01Z",
-        "published_customers": 246,
+        "source_updated_utc": "2026-11-08T03:30:00Z",
+        "published_customers": 231,
         "event_count": 14
       },
       "events": [
@@ -128,12 +128,36 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13240",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 5
+            }
+          ],
+          "details": {
+            "event": "26CA13240",
+            "council": "Central Highlands Regional Council",
+            "suburb": "BINGEGANG",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 11:12",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "5",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 5,
+          "suburb": "BINGEGANG",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11043",
           "allocations": [
             {
               "lga_name": "Carpentaria Shire",
               "lga_code": null,
-              "affected_customers": 19
+              "affected_customers": 11
             }
           ],
           "details": {
@@ -143,11 +167,11 @@
             "type": "UNPLANNED",
             "startTime": "07/11/2026 18:26",
             "restoreTime": "Under Investigation",
-            "customersAffected": "19",
+            "customersAffected": "11",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 19,
+          "affected_customers": 11,
           "suburb": "NORMANTON",
           "street_name": ""
         },
@@ -173,6 +197,30 @@
           },
           "affected_customers": 21,
           "suburb": "BURTON, COPPABELLA, GLENDEN, MORANBAH, NEBO, SUTTOR",
+          "street_name": ""
+        },
+        {
+          "event_id": "26MK7091",
+          "allocations": [
+            {
+              "lga_name": "Whitsunday Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26MK7091",
+            "council": "Whitsunday Regional Council",
+            "suburb": "KELSEY CREEK",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 11:59",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 3,
+          "suburb": "KELSEY CREEK",
           "street_name": ""
         },
         {
@@ -221,30 +269,6 @@
           },
           "affected_customers": 10,
           "suburb": "MACLAGAN, PERANGA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14411",
-          "allocations": [
-            {
-              "lga_name": "Maranoa Regional",
-              "lga_code": null,
-              "affected_customers": 9
-            }
-          ],
-          "details": {
-            "event": "26SW14411",
-            "council": "Maranoa Regional Council",
-            "suburb": "ROMA",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 08:30",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "9",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 9,
-          "suburb": "ROMA",
           "street_name": ""
         },
         {
@@ -297,30 +321,6 @@
             "status": "Crews working on-site"
           },
           "affected_customers": 30,
-          "suburb": "BUCCA, BULLYARD",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10803",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 6
-            }
-          ],
-          "details": {
-            "event": "26WB10803",
-            "council": "Bundaberg Regional Council",
-            "suburb": "BUCCA, BULLYARD",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 18:26",
-            "restoreTime": "08/11/2026 16:00",
-            "customersAffected": "6",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 6,
           "suburb": "BUCCA, BULLYARD",
           "street_name": ""
         },
