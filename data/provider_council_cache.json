@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T11:31:26Z",
+      "fetched_utc": "2026-11-08T11:46:05Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -71,13 +71,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T11:01:32Z",
+      "fetched_utc": "2026-11-08T11:46:10Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T11:00:16Z",
-        "published_customers": 2673,
-        "event_count": 18
+        "source_updated_utc": "2026-11-08T11:45:01Z",
+        "published_customers": 2446,
+        "event_count": 14
       },
       "events": [
         {
@@ -105,65 +105,12 @@
           "street_name": ""
         },
         {
-          "event_id": "26CA13244",
-          "allocations": [
-            {
-              "lga_name": "Central Highlands Regional",
-              "lga_code": null,
-              "affected_customers": 27
-            },
-            {
-              "lga_name": "Isaac Regional",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26CA13244",
-            "council": "Central Highlands Regional Council",
-            "suburb": "COMET, YAMALA",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 14:26",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "27",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 30,
-          "suburb": "COMET, YAMALA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13278",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 20
-            }
-          ],
-          "details": {
-            "event": "26CA13278",
-            "council": "Livingstone Shire Council",
-            "suburb": "MOUNT CHALMERS, TUNGAMULL",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 17:50",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "20",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 20,
-          "suburb": "MOUNT CHALMERS, TUNGAMULL",
-          "street_name": ""
-        },
-        {
           "event_id": "26CA13281",
           "allocations": [
             {
               "lga_name": "Livingstone Shire",
               "lga_code": null,
-              "affected_customers": 43
+              "affected_customers": 23
             }
           ],
           "details": {
@@ -173,36 +120,12 @@
             "type": "UNPLANNED",
             "startTime": "08/11/2026 17:54",
             "restoreTime": "Under Investigation",
-            "customersAffected": "43",
+            "customersAffected": "23",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
-          "affected_customers": 43,
+          "affected_customers": 23,
           "suburb": "BUNGUNDARRA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13285",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 13
-            }
-          ],
-          "details": {
-            "event": "26CA13285",
-            "council": "Livingstone Shire Council",
-            "suburb": "COOWONGA, TUNGAMULL",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 18:56",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "13",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 13,
-          "suburb": "COOWONGA, TUNGAMULL",
           "street_name": ""
         },
         {
@@ -230,30 +153,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26FN11056",
-          "allocations": [
-            {
-              "lga_name": "Tablelands Regional",
-              "lga_code": null,
-              "affected_customers": 144
-            }
-          ],
-          "details": {
-            "event": "26FN11056",
-            "council": "Tablelands Regional Council",
-            "suburb": "MILLSTREAM, RAVENSHOE",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 16:37",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "144",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 144,
-          "suburb": "MILLSTREAM, RAVENSHOE",
-          "street_name": ""
-        },
-        {
           "event_id": "26MK7088",
           "allocations": [
             {
@@ -271,7 +170,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "6",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 6,
           "suburb": "GLENDEN, SUTTOR",
@@ -497,7 +396,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "49",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 49,
           "suburb": "MOFFATDALE, MURGON, REDGATE",
