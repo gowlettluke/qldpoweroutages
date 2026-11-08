@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T09:46:12Z",
+      "fetched_utc": "2026-11-08T10:01:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 7:30 PM",
-        "source_updated_utc": "2026-11-08T09:30:02Z",
+        "source_updated": "8 November 2026 8:00 PM",
+        "source_updated_utc": "2026-11-08T10:00:06Z",
         "published_customers": 19,
         "event_count": 3
       },
@@ -100,13 +100,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T09:16:23Z",
+      "fetched_utc": "2026-11-08T10:01:23Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T09:15:14Z",
-        "published_customers": 3728,
-        "event_count": 22
+        "source_updated_utc": "2026-11-08T10:00:01Z",
+        "published_customers": 3143,
+        "event_count": 21
       },
       "events": [
         {
@@ -166,77 +166,29 @@
           "event_id": "26CA13266",
           "allocations": [
             {
-              "lga_name": "Rockhampton Regional",
-              "lga_code": null,
-              "affected_customers": 84
-            },
-            {
               "lga_name": "Livingstone Shire",
               "lga_code": null,
-              "affected_customers": 73
+              "affected_customers": 69
+            },
+            {
+              "lga_name": "Rockhampton Regional",
+              "lga_code": null,
+              "affected_customers": 47
             }
           ],
           "details": {
             "event": "26CA13266",
             "council": "Livingstone Shire Council",
-            "suburb": "IRONPOT, LIMESTONE CREEK, NORTH ROCKHAMPTON, PARKHURST, ROCKYVIEW",
+            "suburb": "IRONPOT, LIMESTONE CREEK, NORTH ROCKHAMPTON",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 16:59",
             "restoreTime": "Under Investigation",
-            "customersAffected": "73",
+            "customersAffected": "69",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 157,
-          "suburb": "IRONPOT, LIMESTONE CREEK, NORMAN GARDENS, NORTH ROCKHAMPTON, PARKHURST, ROCKYVIEW",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13268",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 17
-            }
-          ],
-          "details": {
-            "event": "26CA13268",
-            "council": "Livingstone Shire Council",
-            "suburb": "IRONPOT, PARKHURST, ROCKYVIEW, SANDRINGHAM",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 17:10",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "17",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 17,
-          "suburb": "IRONPOT, PARKHURST, ROCKYVIEW, SANDRINGHAM",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13273",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 53
-            }
-          ],
-          "details": {
-            "event": "26CA13273",
-            "council": "Livingstone Shire Council",
-            "suburb": "BUNGUNDARRA",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 17:22",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "53",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 53,
-          "suburb": "BUNGUNDARRA",
+          "affected_customers": 116,
+          "suburb": "IRONPOT, LIMESTONE CREEK, NORTH ROCKHAMPTON",
           "street_name": ""
         },
         {
@@ -312,27 +264,51 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13285",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 13
+            }
+          ],
+          "details": {
+            "event": "26CA13285",
+            "council": "Livingstone Shire Council",
+            "suburb": "COOWONGA, TUNGAMULL",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 18:56",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "13",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 13,
+          "suburb": "COOWONGA, TUNGAMULL",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11056",
           "allocations": [
             {
               "lga_name": "Tablelands Regional",
               "lga_code": null,
-              "affected_customers": 631
+              "affected_customers": 144
             }
           ],
           "details": {
             "event": "26FN11056",
             "council": "Tablelands Regional Council",
-            "suburb": "ATHERTON, INNOT HOT SPRINGS, MILLSTREAM, RAVENSHOE",
+            "suburb": "MILLSTREAM, RAVENSHOE",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 16:37",
             "restoreTime": "Under Investigation",
-            "customersAffected": "631",
+            "customersAffected": "144",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Outage reported"
           },
-          "affected_customers": 631,
-          "suburb": "ATHERTON, INNOT HOT SPRINGS, MILLSTREAM, RAVENSHOE",
+          "affected_customers": 144,
+          "suburb": "MILLSTREAM, RAVENSHOE",
           "street_name": ""
         },
         {
