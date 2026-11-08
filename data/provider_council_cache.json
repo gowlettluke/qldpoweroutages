@@ -2,43 +2,45 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-07T23:46:01Z",
+      "fetched_utc": "2026-11-08T00:01:30Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 9:30 AM",
-        "source_updated_utc": "2026-11-07T23:30:02Z",
-        "published_customers": 2,
+        "source_updated": "8 November 2026 10:00 AM",
+        "source_updated_utc": "2026-11-08T00:00:02Z",
+        "published_customers": 39,
         "event_count": 1
       },
       "events": [
         {
-          "event_id": "INCD-994024-g",
+          "event_id": "INCD-994027-g",
           "allocations": [
             {
               "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 2
+              "affected_customers": 39
             }
           ],
           "details": {
-            "event": "INCD-994024-g",
+            "event": "INCD-994027-g",
             "cause": "Emergency Repairs",
             "status": "Emergency Repairs",
             "council": "Brisbane City",
-            "postcode": "4061",
-            "suburb": "THE GAP",
-            "customersAffected": "2",
+            "postcode": "4109",
+            "suburb": "SUNNYBANK HILLS",
+            "customersAffected": "39",
             "restoreTime": "2026-11-08T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "PAYNE RD"
+              "HASELER CRES",
+              "KINGMAN ST",
+              "SIGNATA ST"
             ]
           },
-          "affected_customers": 2,
-          "suburb": "THE GAP",
-          "street_name": "PAYNE RD"
+          "affected_customers": 39,
+          "suburb": "SUNNYBANK HILLS",
+          "street_name": "HASELER CRES, KINGMAN ST, SIGNATA ST"
         }
       ]
     },
