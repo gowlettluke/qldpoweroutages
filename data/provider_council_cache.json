@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T11:46:05Z",
+      "fetched_utc": "2026-11-08T12:01:27Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 9:30 PM",
-        "source_updated_utc": "2026-11-08T11:30:02Z",
-        "published_customers": 8,
-        "event_count": 2
+        "source_updated": "8 November 2026 10:00 PM",
+        "source_updated_utc": "2026-11-08T12:00:02Z",
+        "published_customers": 7,
+        "event_count": 1
       },
       "events": [
         {
@@ -39,34 +39,6 @@
           "affected_customers": 7,
           "suburb": "UPPER BROOKFIELD",
           "street_name": "GILLIES RD"
-        },
-        {
-          "event_id": "INCD-994126-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-994126-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Moreton Bay Regional",
-            "postcode": "4500",
-            "suburb": "BRENDALE",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-08T22:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "KREMZOW RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "BRENDALE",
-          "street_name": "KREMZOW RD"
         }
       ]
     },
