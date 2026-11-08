@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T01:46:09Z",
+      "fetched_utc": "2026-11-08T02:01:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "8 November 2026 11:30 AM",
-        "source_updated_utc": "2026-11-08T01:30:02Z",
+        "source_updated": "8 November 2026 12:00 PM",
+        "source_updated_utc": "2026-11-08T02:00:02Z",
         "published_customers": 39,
         "event_count": 1
       },
@@ -45,39 +45,15 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T01:01:39Z",
+      "fetched_utc": "2026-11-08T02:01:30Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T01:00:01Z",
-        "published_customers": 388,
-        "event_count": 19
+        "source_updated_utc": "2026-11-08T02:00:00Z",
+        "published_customers": 425,
+        "event_count": 18
       },
       "events": [
-        {
-          "event_id": "26CA13131",
-          "allocations": [
-            {
-              "lga_name": "Rockhampton Regional",
-              "lga_code": null,
-              "affected_customers": 10
-            }
-          ],
-          "details": {
-            "event": "26CA13131",
-            "council": "Rockhampton Regional Council",
-            "suburb": "MARLBOROUGH, MORINISH",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 10:51",
-            "restoreTime": "08/11/2026 15:00",
-            "customersAffected": "10",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 10,
-          "suburb": "MARLBOROUGH, MORINISH",
-          "street_name": ""
-        },
         {
           "event_id": "26CA13164",
           "allocations": [
@@ -93,7 +69,7 @@
             "suburb": "DIXALEA, DULULU, WOWAN",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 17:20",
-            "restoreTime": "08/11/2026 14:30",
+            "restoreTime": "08/11/2026 16:30",
             "customersAffected": "6",
             "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Crews working on-site"
@@ -151,30 +127,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26CA13219",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 13
-            }
-          ],
-          "details": {
-            "event": "26CA13219",
-            "council": "Livingstone Shire Council",
-            "suburb": "DUARINGA, MARLBOROUGH",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 05:37",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "13",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 13,
-          "suburb": "DUARINGA, MARLBOROUGH",
-          "street_name": ""
-        },
-        {
           "event_id": "26CA13221",
           "allocations": [
             {
@@ -196,6 +148,30 @@
           },
           "affected_customers": 22,
           "suburb": "BARALABA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13230",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26CA13230",
+            "council": "Livingstone Shire Council",
+            "suburb": "MARLBOROUGH, PRINCHESTER",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 11:26",
+            "restoreTime": "08/11/2026 14:00",
+            "customersAffected": "2",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 2,
+          "suburb": "MARLBOROUGH, PRINCHESTER",
           "street_name": ""
         },
         {
@@ -237,7 +213,7 @@
             "suburb": "HOMEBUSH",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 19:10",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "08/11/2026 13:00",
             "customersAffected": "2",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Outage reported"
@@ -268,6 +244,30 @@
           },
           "affected_customers": 21,
           "suburb": "BURTON, COPPABELLA, GLENDEN, MORANBAH, NEBO, SUTTOR",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13821",
+          "allocations": [
+            {
+              "lga_name": "Burdekin Shire",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26NQ13821",
+            "council": "Burdekin Shire Council",
+            "suburb": "BRANDON",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 09:45",
+            "restoreTime": "08/11/2026 15:00",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 3,
+          "suburb": "BRANDON",
           "street_name": ""
         },
         {
@@ -316,30 +316,6 @@
           },
           "affected_customers": 10,
           "suburb": "MACLAGAN, PERANGA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14401",
-          "allocations": [
-            {
-              "lga_name": "Banana Shire",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26SW14401",
-            "council": "Banana Shire Council",
-            "suburb": "TAROOM",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 18:09",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 3,
-          "suburb": "TAROOM",
           "street_name": ""
         },
         {
@@ -415,7 +391,7 @@
             "suburb": "BOONDOOMA, DARR CREEK, DURONG, DURONG SOUTH",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 15:46",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "08/11/2026 14:00",
             "customersAffected": "104",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
@@ -442,7 +418,7 @@
             "restoreTime": "08/11/2026 14:00",
             "customersAffected": "30",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 30,
           "suburb": "BUCCA, BULLYARD",
@@ -478,7 +454,7 @@
             {
               "lga_name": "Gympie Regional",
               "lga_code": null,
-              "affected_customers": 25
+              "affected_customers": 83
             }
           ],
           "details": {
@@ -487,12 +463,12 @@
             "suburb": "BOONARA, GOOMERI",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 06:02",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "25",
+            "restoreTime": "08/11/2026 15:00",
+            "customersAffected": "83",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
-          "affected_customers": 25,
+          "affected_customers": 83,
           "suburb": "BOONARA, GOOMERI",
           "street_name": ""
         },
