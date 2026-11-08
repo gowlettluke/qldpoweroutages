@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T03:01:36Z",
+      "fetched_utc": "2026-11-08T03:16:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -46,13 +46,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T02:01:30Z",
+      "fetched_utc": "2026-11-08T03:16:12Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T02:00:00Z",
-        "published_customers": 425,
-        "event_count": 18
+        "source_updated_utc": "2026-11-08T03:15:01Z",
+        "published_customers": 246,
+        "event_count": 14
       },
       "events": [
         {
@@ -104,30 +104,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26CA13182",
-          "allocations": [
-            {
-              "lga_name": "Banana Shire",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26CA13182",
-            "council": "Banana Shire Council",
-            "suburb": "THEODORE",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 19:59",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Work delayed - crews unable to continue"
-          },
-          "affected_customers": 3,
-          "suburb": "THEODORE",
-          "street_name": ""
-        },
-        {
           "event_id": "26CA13221",
           "allocations": [
             {
@@ -152,30 +128,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26CA13230",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26CA13230",
-            "council": "Livingstone Shire Council",
-            "suburb": "MARLBOROUGH, PRINCHESTER",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 11:26",
-            "restoreTime": "08/11/2026 14:00",
-            "customersAffected": "2",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 2,
-          "suburb": "MARLBOROUGH, PRINCHESTER",
-          "street_name": ""
-        },
-        {
           "event_id": "26FN11043",
           "allocations": [
             {
@@ -193,34 +145,10 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "19",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 19,
           "suburb": "NORMANTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26MK7087",
-          "allocations": [
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26MK7087",
-            "council": "Mackay Regional Council",
-            "suburb": "HOMEBUSH",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 19:10",
-            "restoreTime": "08/11/2026 13:00",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 2,
-          "suburb": "HOMEBUSH",
           "street_name": ""
         },
         {
@@ -245,30 +173,6 @@
           },
           "affected_customers": 21,
           "suburb": "BURTON, COPPABELLA, GLENDEN, MORANBAH, NEBO, SUTTOR",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13821",
-          "allocations": [
-            {
-              "lga_name": "Burdekin Shire",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26NQ13821",
-            "council": "Burdekin Shire Council",
-            "suburb": "BRANDON",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 09:45",
-            "restoreTime": "08/11/2026 15:00",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 3,
-          "suburb": "BRANDON",
           "street_name": ""
         },
         {
@@ -320,35 +224,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW14402",
-          "allocations": [
-            {
-              "lga_name": "Maranoa Regional",
-              "lga_code": null,
-              "affected_customers": 89
-            },
-            {
-              "lga_name": "Murweh Shire",
-              "lga_code": null,
-              "affected_customers": 4
-            }
-          ],
-          "details": {
-            "event": "26SW14402",
-            "council": "Maranoa Regional Council",
-            "suburb": "BEILBA, INJUNE, MITCHELL",
-            "type": "UNPLANNED",
-            "startTime": "07/11/2026 21:03",
-            "restoreTime": "08/11/2026 15:00",
-            "customersAffected": "89",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 93,
-          "suburb": "AUGATHELLA, BEILBA, INJUNE, MITCHELL",
-          "street_name": ""
-        },
-        {
           "event_id": "26SW14411",
           "allocations": [
             {
@@ -392,7 +267,7 @@
             "suburb": "BOONDOOMA, DARR CREEK, DURONG, DURONG SOUTH",
             "type": "UNPLANNED",
             "startTime": "07/11/2026 15:46",
-            "restoreTime": "08/11/2026 14:00",
+            "restoreTime": "08/11/2026 17:00",
             "customersAffected": "104",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
@@ -455,7 +330,7 @@
             {
               "lga_name": "Gympie Regional",
               "lga_code": null,
-              "affected_customers": 83
+              "affected_customers": 5
             }
           ],
           "details": {
@@ -465,12 +340,36 @@
             "type": "UNPLANNED",
             "startTime": "08/11/2026 06:02",
             "restoreTime": "08/11/2026 15:00",
-            "customersAffected": "83",
+            "customersAffected": "5",
             "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 83,
+          "affected_customers": 5,
           "suburb": "BOONARA, GOOMERI",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10821",
+          "allocations": [
+            {
+              "lga_name": "South Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26WB10821",
+            "council": "South Burnett Regional Council",
+            "suburb": "BOONDOOMA",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 12:46",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 2,
+          "suburb": "BOONDOOMA",
           "street_name": ""
         },
         {
