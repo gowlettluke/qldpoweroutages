@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-08T23:31:22Z",
+      "fetched_utc": "2026-11-08T23:46:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -75,13 +75,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T23:31:27Z",
+      "fetched_utc": "2026-11-08T23:46:17Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T23:30:37Z",
-        "published_customers": 2793,
-        "event_count": 17
+        "source_updated_utc": "2026-11-08T23:45:01Z",
+        "published_customers": 2798,
+        "event_count": 18
       },
       "events": [
         {
@@ -102,7 +102,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 3,
           "suburb": "ETNA CREEK",
@@ -452,6 +452,30 @@
           },
           "affected_customers": 2,
           "suburb": "TAROOM",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14431",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 5
+            }
+          ],
+          "details": {
+            "event": "26SW14431",
+            "council": "Toowoomba Regional Council",
+            "suburb": "CHARLTON",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 08:13",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "5",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 5,
+          "suburb": "CHARLTON",
           "street_name": ""
         },
         {
