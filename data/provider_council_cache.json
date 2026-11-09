@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T03:46:11Z",
+      "fetched_utc": "2026-11-09T04:01:14Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 1:30 PM",
-        "source_updated_utc": "2026-11-09T03:30:05Z",
-        "published_customers": 168,
-        "event_count": 3
+        "source_updated": "9 November 2026 1:45 PM",
+        "source_updated_utc": "2026-11-09T03:45:02Z",
+        "published_customers": 176,
+        "event_count": 4
       },
       "events": [
         {
@@ -103,6 +103,35 @@
           "affected_customers": 28,
           "suburb": "UPPER COOMERA",
           "street_name": "PROMINENT CRES, ROE ST"
+        },
+        {
+          "event_id": "INCD-994275-g",
+          "allocations": [
+            {
+              "lga_name": "Noosa Shire",
+              "lga_code": null,
+              "affected_customers": 8
+            }
+          ],
+          "details": {
+            "event": "INCD-994275-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Noosa",
+            "postcode": "4565",
+            "suburb": "COOTHARABA",
+            "customersAffected": "8",
+            "restoreTime": "2026-11-09T15:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "KINMOND CREEK RD",
+              "WALLACE RD"
+            ]
+          },
+          "affected_customers": 8,
+          "suburb": "COOTHARABA",
+          "street_name": "KINMOND CREEK RD, WALLACE RD"
         }
       ]
     },
