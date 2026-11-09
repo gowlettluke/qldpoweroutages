@@ -2,16 +2,44 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T23:16:13Z",
+      "fetched_utc": "2026-11-09T23:31:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 9:00 AM",
-        "source_updated_utc": "2026-11-09T23:00:02Z",
-        "published_customers": 1,
-        "event_count": 1
+        "source_updated": "10 November 2026 9:15 AM",
+        "source_updated_utc": "2026-11-09T23:15:02Z",
+        "published_customers": 2,
+        "event_count": 2
       },
       "events": [
+        {
+          "event_id": "INCD-993262-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-993262-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Sunshine Coast",
+            "postcode": "4558",
+            "suburb": "MAROOCHYDORE",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-06T18:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "HORTON PDE"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "MAROOCHYDORE",
+          "street_name": "HORTON PDE"
+        },
         {
           "event_id": "INCD-994502-g",
           "allocations": [
