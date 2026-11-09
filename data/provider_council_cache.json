@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T05:01:33Z",
+      "fetched_utc": "2026-11-09T05:16:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -137,15 +137,39 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T04:45:58Z",
+      "fetched_utc": "2026-11-09T05:16:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T04:40:01Z",
-        "published_customers": 2602,
-        "event_count": 14
+        "source_updated_utc": "2026-11-09T05:15:01Z",
+        "published_customers": 2819,
+        "event_count": 18
       },
       "events": [
+        {
+          "event_id": "26CA13327",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 199
+            }
+          ],
+          "details": {
+            "event": "26CA13327",
+            "council": "Central Highlands Regional Council",
+            "suburb": "EMERALD",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 15:02",
+            "restoreTime": "09/11/2026 17:00",
+            "customersAffected": "199",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 199,
+          "suburb": "EMERALD",
+          "street_name": ""
+        },
         {
           "event_id": "26CA13339",
           "allocations": [
@@ -195,6 +219,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26FN11088",
+          "allocations": [
+            {
+              "lga_name": "Douglas Shire",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26FN11088",
+            "council": "Douglas Shire Council",
+            "suburb": "DAGMAR, LOWER DAINTREE",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 14:39",
+            "restoreTime": "09/11/2026 16:30",
+            "customersAffected": "2",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 2,
+          "suburb": "DAGMAR, LOWER DAINTREE",
+          "street_name": ""
+        },
+        {
           "event_id": "26MK7088",
           "allocations": [
             {
@@ -212,7 +260,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "6",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews on route"
           },
           "affected_customers": 6,
           "suburb": "GLENDEN, SUTTOR",
@@ -240,8 +288,8 @@
             "startTime": "08/11/2026 18:18",
             "restoreTime": "Under Investigation",
             "customersAffected": "51",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Work delayed - crews unable to continue"
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Crews on route"
           },
           "affected_customers": 52,
           "suburb": "BLUE MOUNTAIN, COLSTON PARK, NEBO",
@@ -288,7 +336,7 @@
             "startTime": "08/11/2026 18:50",
             "restoreTime": "Under Investigation",
             "customersAffected": "435",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
           "affected_customers": 435,
@@ -373,6 +421,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26MK7136",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 9
+            }
+          ],
+          "details": {
+            "event": "26MK7136",
+            "council": "Mackay Regional Council",
+            "suburb": "MACKAY HARBOUR",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 14:48",
+            "restoreTime": "09/11/2026 17:00",
+            "customersAffected": "9",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 9,
+          "suburb": "MACKAY HARBOUR",
+          "street_name": ""
+        },
+        {
           "event_id": "26NQ13826",
           "allocations": [
             {
@@ -394,6 +466,30 @@
           },
           "affected_customers": 35,
           "suburb": "CLONCURRY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13864",
+          "allocations": [
+            {
+              "lga_name": "Townsville City",
+              "lga_code": null,
+              "affected_customers": 7
+            }
+          ],
+          "details": {
+            "event": "26NQ13864",
+            "council": "Townsville City Council",
+            "suburb": "JULAGO",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 12:48",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "7",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 7,
+          "suburb": "JULAGO",
           "street_name": ""
         },
         {
@@ -438,7 +534,7 @@
             "restoreTime": "09/11/2026 17:00",
             "customersAffected": "33",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 33,
           "suburb": "EAST TOOWOOMBA, TOOWOOMBA",
