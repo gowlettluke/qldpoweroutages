@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T02:01:22Z",
+      "fetched_utc": "2026-11-09T02:16:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -102,13 +102,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T01:31:07Z",
+      "fetched_utc": "2026-11-09T02:16:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T01:25:00Z",
-        "published_customers": 3054,
-        "event_count": 19
+        "source_updated_utc": "2026-11-09T02:15:01Z",
+        "published_customers": 2660,
+        "event_count": 21
       },
       "events": [
         {
@@ -133,30 +133,6 @@
           },
           "affected_customers": 3,
           "suburb": "ETNA CREEK",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13301",
-          "allocations": [
-            {
-              "lga_name": "Rockhampton Regional",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26CA13301",
-            "council": "Rockhampton Regional Council",
-            "suburb": "LIMESTONE CREEK",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 05:45",
-            "restoreTime": "09/11/2026 14:00",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 3,
-          "suburb": "LIMESTONE CREEK",
           "street_name": ""
         },
         {
@@ -189,7 +165,7 @@
             {
               "lga_name": "Cairns Regional",
               "lga_code": null,
-              "affected_customers": 318
+              "affected_customers": 151
             }
           ],
           "details": {
@@ -198,12 +174,12 @@
             "suburb": "CAIRNS, CAIRNS CITY",
             "type": "UNPLANNED",
             "startTime": "09/11/2026 10:06",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "318",
+            "restoreTime": "16/11/2026 11:11",
+            "customersAffected": "151",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Outage reported"
           },
-          "affected_customers": 318,
+          "affected_customers": 151,
           "suburb": "CAIRNS, CAIRNS CITY",
           "street_name": ""
         },
@@ -379,7 +355,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "4",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 4,
           "suburb": "SARINA",
@@ -400,37 +376,13 @@
             "suburb": "CLONCURRY",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 16:23",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "09/11/2026 20:00",
             "customersAffected": "35",
             "cause": "The loss of supply is due to a bush fire.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 35,
           "suburb": "CLONCURRY",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13830",
-          "allocations": [
-            {
-              "lga_name": "Whitsunday Regional",
-              "lga_code": null,
-              "affected_customers": 318
-            }
-          ],
-          "details": {
-            "event": "26NQ13830",
-            "council": "Whitsunday Regional Council",
-            "suburb": "BOWEN",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 03:22",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "318",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 318,
-          "suburb": "BOWEN",
           "street_name": ""
         },
         {
@@ -499,7 +451,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "2",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 2,
           "suburb": "TAROOM",
@@ -511,7 +463,7 @@
             {
               "lga_name": "Toowoomba Regional",
               "lga_code": null,
-              "affected_customers": 11
+              "affected_customers": 2
             }
           ],
           "details": {
@@ -521,11 +473,11 @@
             "type": "UNPLANNED",
             "startTime": "09/11/2026 08:13",
             "restoreTime": "Under Investigation",
-            "customersAffected": "11",
+            "customersAffected": "2",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 11,
+          "affected_customers": 2,
           "suburb": "CHARLTON",
           "street_name": ""
         },
@@ -544,13 +496,109 @@
             "suburb": "SEXTON",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 21:08",
-            "restoreTime": "09/11/2026 12:30",
+            "restoreTime": "09/11/2026 14:30",
             "customersAffected": "34",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
           "affected_customers": 34,
           "suburb": "SEXTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10866",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 21
+            }
+          ],
+          "details": {
+            "event": "26WB10866",
+            "council": "Toowoomba Regional Council",
+            "suburb": "COOYAR, EMU CREEK, MOUNT BINGA",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 11:52",
+            "restoreTime": "09/11/2026 13:30",
+            "customersAffected": "21",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 21,
+          "suburb": "COOYAR, EMU CREEK, MOUNT BINGA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10870",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26WB10870",
+            "council": "Bundaberg Regional Council",
+            "suburb": "WALLAVILLE",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 07:12",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 2,
+          "suburb": "WALLAVILLE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10871",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 8
+            }
+          ],
+          "details": {
+            "event": "26WB10871",
+            "council": "Bundaberg Regional Council",
+            "suburb": "BOOYAL",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 09:31",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "8",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 8,
+          "suburb": "BOOYAL",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10872",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 72
+            }
+          ],
+          "details": {
+            "event": "26WB10872",
+            "council": "Bundaberg Regional Council",
+            "suburb": "WOODGATE, WOODGATE BEACH",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 11:45",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "72",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 72,
+          "suburb": "WOODGATE, WOODGATE BEACH",
           "street_name": ""
         },
         {
