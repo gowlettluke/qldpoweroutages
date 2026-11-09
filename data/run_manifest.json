@@ -1,54 +1,51 @@
 {
-  "generated_utc": "2026-11-09T00:45:48Z",
-  "generated_aest": "2026-11-09T10:45:48+10:00",
+  "generated_utc": "2026-11-09T01:01:14Z",
+  "generated_aest": "2026-11-09T11:01:14+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 22,
+  "current_outage_records": 25,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 615,
-  "current_records_after_outage_type_filter": 28,
-  "current_records_dropped_planned_or_unknown": 587,
+  "current_records_before_outage_type_filter": 616,
+  "current_records_after_outage_type_filter": 31,
+  "current_records_dropped_planned_or_unknown": 585,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {
-    "Ergon": "Update delayed; using verified provider data from 2026-11-09T00:30:26Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "9 November 2026 10:30 AM",
-      "source_updated_utc": "2026-11-09T00:30:02Z",
-      "published_customers": 171,
-      "event_count": 3,
-      "fetched_utc": "2026-11-09T00:45:55Z"
+      "source_updated": "9 November 2026 11:00 AM",
+      "source_updated_utc": "2026-11-09T01:00:02Z",
+      "published_customers": 132,
+      "event_count": 4,
+      "fetched_utc": "2026-11-09T01:01:22Z"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-09T00:30:26Z",
-      "published_customers": 3122,
-      "event_count": 19,
-      "fetched_utc": "2026-11-09T00:31:28Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "source_updated_utc": "2026-11-09T00:55:00Z",
+      "published_customers": 3124,
+      "event_count": 21,
+      "fetched_utc": "2026-11-09T01:01:26Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-09T00:45:48Z",
+    "snapshot_utc": "2026-11-09T01:01:14Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-09T00:45:55Z",
+      "fetched_utc": "2026-11-09T01:01:22Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-09T00:30:02Z",
+      "source_updated_utc": "2026-11-09T01:00:02Z",
       "retained": false,
-      "total_customers": 171,
+      "total_customers": 132,
       "rows": [
         {
           "lga_name": "Gold Coast City",
-          "affected_customers": 80
+          "affected_customers": 41
         },
         {
           "lga_name": "Ipswich City",
@@ -62,13 +59,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-09T00:31:28Z",
+      "fetched_utc": "2026-11-09T01:01:26Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-09T00:30:26Z",
-      "retained": true,
-      "total_customers": 3122,
+      "source_updated_utc": "2026-11-09T00:55:00Z",
+      "retained": false,
+      "total_customers": 3124,
       "rows": [
         {
           "lga_name": "Banana Shire",
@@ -100,7 +97,7 @@
         },
         {
           "lga_name": "Isaac Regional",
-          "affected_customers": 684
+          "affected_customers": 686
         },
         {
           "lga_name": "Livingstone Shire",
@@ -126,17 +123,17 @@
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 3,
-  "current_ergon_records": 19,
-  "current_essential_records_fetched": 31,
+  "current_energex_records": 4,
+  "current_ergon_records": 21,
+  "current_essential_records_fetched": 30,
   "current_energex_records_fetched": 170,
   "current_ergon_records_fetched": 416,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3451,
-  "lga_totals_rows_48h": 4730,
+  "snapshot_rows_48h": 3454,
+  "lga_totals_rows_48h": 4718,
   "lga_totals_latest_rows": 32,
   "lga_cumulative_rows": 83,
   "outputs": {

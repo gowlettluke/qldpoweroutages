@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T00:45:55Z",
+      "fetched_utc": "2026-11-09T01:01:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 10:30 AM",
-        "source_updated_utc": "2026-11-09T00:30:02Z",
-        "published_customers": 171,
-        "event_count": 3
+        "source_updated": "9 November 2026 11:00 AM",
+        "source_updated_utc": "2026-11-09T01:00:02Z",
+        "published_customers": 132,
+        "event_count": 4
       },
       "events": [
         {
@@ -46,31 +46,29 @@
             {
               "lga_name": "Gold Coast City",
               "lga_code": null,
-              "affected_customers": 80
+              "affected_customers": 13
             }
           ],
           "details": {
             "event": "INCD-994212-g",
             "cause": "Damage to our equipment",
-            "status": "Under Investigation",
+            "status": "Emergency Repairs",
             "council": "Gold Coast City",
             "postcode": "4220",
             "suburb": "BURLEIGH WATERS",
-            "customersAffected": "80",
+            "customersAffected": "13",
             "restoreTime": "2026-11-09T11:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "ANTHONY DR",
               "CORONET CRES",
-              "FALCON CT",
-              "HONEYEATER DR",
-              "MANAKIN AVE"
+              "FALCON CT"
             ]
           },
-          "affected_customers": 80,
+          "affected_customers": 13,
           "suburb": "BURLEIGH WATERS",
-          "street_name": "ANTHONY DR, CORONET CRES, FALCON CT, HONEYEATER DR, MANAKIN AVE"
+          "street_name": "ANTHONY DR, CORONET CRES, FALCON CT"
         },
         {
           "event_id": "INCD-994239-g",
@@ -99,17 +97,46 @@
           "affected_customers": 24,
           "suburb": "REDBANK PLAINS",
           "street_name": "CAROL ST"
+        },
+        {
+          "event_id": "INCD-994246-g",
+          "allocations": [
+            {
+              "lga_name": "Gold Coast City",
+              "lga_code": null,
+              "affected_customers": 28
+            }
+          ],
+          "details": {
+            "event": "INCD-994246-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Gold Coast City",
+            "postcode": "4209",
+            "suburb": "UPPER COOMERA",
+            "customersAffected": "28",
+            "restoreTime": "2026-11-09T12:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "PROMINENT CRES",
+              "ROE ST"
+            ]
+          },
+          "affected_customers": 28,
+          "suburb": "UPPER COOMERA",
+          "street_name": "PROMINENT CRES, ROE ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T00:31:28Z",
+      "fetched_utc": "2026-11-09T01:01:26Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T00:30:26Z",
-        "published_customers": 3122,
-        "event_count": 19
+        "source_updated_utc": "2026-11-09T00:55:00Z",
+        "published_customers": 3124,
+        "event_count": 21
       },
       "events": [
         {
@@ -127,7 +154,7 @@
             "suburb": "ETNA CREEK",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 18:19",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "09/11/2026 15:00",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Outage reported"
@@ -151,7 +178,7 @@
             "suburb": "LIMESTONE CREEK",
             "type": "UNPLANNED",
             "startTime": "09/11/2026 05:45",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "09/11/2026 14:00",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Outage reported"
@@ -185,6 +212,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13319",
+          "allocations": [
+            {
+              "lga_name": "Isaac Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26CA13319",
+            "council": "Isaac Regional Council",
+            "suburb": "DYSART",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 08:46",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 2,
+          "suburb": "DYSART",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11060",
           "allocations": [
             {
@@ -199,7 +250,7 @@
             "suburb": "DINGO POCKET, EURAMO, MUNRO PLAINS, RIVERSDALE, TULLY",
             "type": "UNPLANNED",
             "startTime": "09/11/2026 07:03",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "09/11/2026 15:00",
             "customersAffected": "68",
             "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
             "status": "Crews working on-site"
@@ -339,7 +390,7 @@
             {
               "lga_name": "Mackay Regional",
               "lga_code": null,
-              "affected_customers": 553
+              "affected_customers": 549
             }
           ],
           "details": {
@@ -349,11 +400,11 @@
             "type": "UNPLANNED",
             "startTime": "08/11/2026 18:52",
             "restoreTime": "Under Investigation",
-            "customersAffected": "553",
+            "customersAffected": "549",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Outage reported"
           },
-          "affected_customers": 553,
+          "affected_customers": 549,
           "suburb": "ARMSTRONG BEACH, FRESHWATER POINT, SARINA",
           "street_name": ""
         },
@@ -384,6 +435,30 @@
           },
           "affected_customers": 1119,
           "suburb": "CARMILA, CARMILA BEACH, CLAIRVIEW, GREENHILL, ILBILBIE, KOUMALA, MOUNT CHRISTIAN, ORKABIE, SARINA, WEST HILL",
+          "street_name": ""
+        },
+        {
+          "event_id": "26MK7117",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 4
+            }
+          ],
+          "details": {
+            "event": "26MK7117",
+            "council": "Mackay Regional Council",
+            "suburb": "SARINA",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 18:52",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "4",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 4,
+          "suburb": "SARINA",
           "street_name": ""
         },
         {
