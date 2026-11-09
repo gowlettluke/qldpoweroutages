@@ -2,58 +2,25 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T19:16:06Z",
+      "fetched_utc": "2026-11-09T19:31:17Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 5:00 AM",
-        "source_updated_utc": "2026-11-09T19:00:02Z",
-        "published_customers": 91,
-        "event_count": 1
+        "source_updated": "10 November 2026 5:30 AM",
+        "source_updated_utc": "2026-11-09T19:30:02Z",
+        "published_customers": 0,
+        "event_count": 0
       },
-      "events": [
-        {
-          "event_id": "INCD-994392-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 91
-            }
-          ],
-          "details": {
-            "event": "INCD-994392-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Brisbane City",
-            "postcode": "4075",
-            "suburb": "CORINDA",
-            "customersAffected": "91",
-            "restoreTime": "2026-11-10T04:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ALLAN TCE",
-              "GLENRICH ST",
-              "HUGHES LANE",
-              "OXLEY RD",
-              "SWIFT ST"
-            ]
-          },
-          "affected_customers": 91,
-          "suburb": "CORINDA",
-          "street_name": "ALLAN TCE, GLENRICH ST, HUGHES LANE, OXLEY RD, SWIFT ST"
-        }
-      ]
+      "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T18:32:23Z",
+      "fetched_utc": "2026-11-09T19:31:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T18:30:00Z",
-        "published_customers": 2134,
-        "event_count": 14
+        "source_updated_utc": "2026-11-09T19:30:04Z",
+        "published_customers": 2017,
+        "event_count": 13
       },
       "events": [
         {
@@ -275,30 +242,6 @@
           },
           "affected_customers": 35,
           "suburb": "CLONCURRY",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13874",
-          "allocations": [
-            {
-              "lga_name": "Townsville City",
-              "lga_code": null,
-              "affected_customers": 117
-            }
-          ],
-          "details": {
-            "event": "26NQ13874",
-            "council": "Townsville City Council",
-            "suburb": "DOUGLAS",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 23:34",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "117",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 117,
-          "suburb": "DOUGLAS",
           "street_name": ""
         },
         {
