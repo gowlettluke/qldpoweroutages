@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T16:16:12Z",
+      "fetched_utc": "2026-11-09T16:31:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 2:00 AM",
-        "source_updated_utc": "2026-11-09T16:00:02Z",
+        "source_updated": "10 November 2026 2:15 AM",
+        "source_updated_utc": "2026-11-09T16:15:02Z",
         "published_customers": 167,
         "event_count": 2
       },
@@ -78,15 +78,39 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T16:16:16Z",
+      "fetched_utc": "2026-11-09T16:31:15Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T16:15:00Z",
-        "published_customers": 1955,
-        "event_count": 13
+        "source_updated_utc": "2026-11-09T16:30:00Z",
+        "published_customers": 2019,
+        "event_count": 14
       },
       "events": [
+        {
+          "event_id": "26CA13377",
+          "allocations": [
+            {
+              "lga_name": "Gladstone Regional",
+              "lga_code": null,
+              "affected_customers": 64
+            }
+          ],
+          "details": {
+            "event": "26CA13377",
+            "council": "Gladstone Regional Council",
+            "suburb": "CLINTON",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 02:25",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "64",
+            "cause": "The loss of supply is due to public safety concerns.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 64,
+          "suburb": "CLINTON",
+          "street_name": ""
+        },
         {
           "event_id": "26FN11079",
           "allocations": [
@@ -302,7 +326,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "2",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 2,
           "suburb": "DOUGLAS",
