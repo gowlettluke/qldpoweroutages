@@ -2,50 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T12:31:09Z",
+      "fetched_utc": "2026-11-09T12:46:02Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 10:15 PM",
-        "source_updated_utc": "2026-11-09T12:15:02Z",
-        "published_customers": 297,
-        "event_count": 4
+        "source_updated": "9 November 2026 10:30 PM",
+        "source_updated_utc": "2026-11-09T12:30:02Z",
+        "published_customers": 142,
+        "event_count": 2
       },
       "events": [
-        {
-          "event_id": "INCD-994369-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 154
-            }
-          ],
-          "details": {
-            "event": "INCD-994369-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Brisbane City",
-            "postcode": "4101",
-            "suburb": "WEST END",
-            "customersAffected": "154",
-            "restoreTime": "2026-11-10T00:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BOUNDARY ST",
-              "CAMBRIDGE ST",
-              "CORBETT ST",
-              "EXETER ST",
-              "GRANVILLE ST",
-              "PRINCHESTER ST",
-              "VULTURE ST"
-            ]
-          },
-          "affected_customers": 154,
-          "suburb": "WEST END",
-          "street_name": "BOUNDARY ST, CAMBRIDGE ST, CORBETT ST, EXETER ST, GRANVILLE ST, PRINCHESTER ST, VULTURE ST"
-        },
         {
           "event_id": "INCD-994372-g",
           "allocations": [
@@ -108,44 +74,16 @@
           "affected_customers": 91,
           "suburb": "CORINDA",
           "street_name": "ALLAN TCE, GLENRICH ST, HUGHES LANE, OXLEY RD, SWIFT ST"
-        },
-        {
-          "event_id": "INCD-994395-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-994395-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Moreton Bay Regional",
-            "postcode": "4507",
-            "suburb": "BELLARA",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-10T00:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "SYLVAN BEACH ESP"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "BELLARA",
-          "street_name": "SYLVAN BEACH ESP"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T12:01:27Z",
+      "fetched_utc": "2026-11-09T12:46:08Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T11:55:00Z",
-        "published_customers": 1946,
+        "source_updated_utc": "2026-11-09T12:45:00Z",
+        "published_customers": 1731,
         "event_count": 14
       },
       "events": [
@@ -340,7 +278,7 @@
             "restoreTime": "10/11/2026 15:00",
             "customersAffected": "35",
             "cause": "The loss of supply is due to a bush fire.",
-            "status": "Crews working on-site"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 35,
           "suburb": "CLONCURRY",
@@ -388,7 +326,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "45",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 45,
           "suburb": "BELGIAN GARDENS",
@@ -448,22 +386,22 @@
             {
               "lga_name": "Fraser Coast Regional",
               "lga_code": null,
-              "affected_customers": 283
+              "affected_customers": 68
             }
           ],
           "details": {
             "event": "26WB10895",
             "council": "Fraser Coast Regional Council",
-            "suburb": "BAUPLE, GOOTCHIE",
+            "suburb": "BAUPLE",
             "type": "UNPLANNED",
             "startTime": "09/11/2026 17:33",
             "restoreTime": "Under Investigation",
-            "customersAffected": "283",
+            "customersAffected": "68",
             "cause": "The loss of supply is due to damage caused by external influences, such as birds or animals.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
-          "affected_customers": 283,
-          "suburb": "BAUPLE, GOOTCHIE",
+          "affected_customers": 68,
+          "suburb": "BAUPLE",
           "street_name": ""
         },
         {
