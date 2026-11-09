@@ -2,46 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T11:46:05Z",
+      "fetched_utc": "2026-11-09T12:01:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 9:30 PM",
-        "source_updated_utc": "2026-11-09T11:30:02Z",
-        "published_customers": 306,
+        "source_updated": "9 November 2026 10:00 PM",
+        "source_updated_utc": "2026-11-09T12:00:03Z",
+        "published_customers": 297,
         "event_count": 4
       },
       "events": [
-        {
-          "event_id": "INCD-994292-g",
-          "allocations": [
-            {
-              "lga_name": "Gympie Regional",
-              "lga_code": null,
-              "affected_customers": 10
-            }
-          ],
-          "details": {
-            "event": "INCD-994292-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Gympie Regional",
-            "postcode": "4570",
-            "suburb": "GLANMIRE",
-            "customersAffected": "10",
-            "restoreTime": "2026-11-09T22:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "DENNIS LITTLE DR",
-              "DRUMMOND DR",
-              "SMITH ST"
-            ]
-          },
-          "affected_customers": 10,
-          "suburb": "GLANMIRE",
-          "street_name": "DENNIS LITTLE DR, DRUMMOND DR, SMITH ST"
-        },
         {
           "event_id": "INCD-994369-g",
           "allocations": [
@@ -59,7 +29,7 @@
             "postcode": "4101",
             "suburb": "WEST END",
             "customersAffected": "154",
-            "restoreTime": "2026-11-09T22:30:00+10:00",
+            "restoreTime": "2026-11-10T00:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -93,7 +63,7 @@
             "postcode": "4101",
             "suburb": "WEST END",
             "customersAffected": "51",
-            "restoreTime": "2026-11-09T22:30:00+10:00",
+            "restoreTime": "2026-11-10T00:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -138,15 +108,43 @@
           "affected_customers": 91,
           "suburb": "CORINDA",
           "street_name": "ALLAN TCE, GLENRICH ST, HUGHES LANE, OXLEY RD, SWIFT ST"
+        },
+        {
+          "event_id": "INCD-994395-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-994395-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Moreton Bay Regional",
+            "postcode": "4507",
+            "suburb": "BELLARA",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-10T00:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "SYLVAN BEACH ESP"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "BELLARA",
+          "street_name": "SYLVAN BEACH ESP"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T11:46:10Z",
+      "fetched_utc": "2026-11-09T12:01:27Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T11:45:00Z",
+        "source_updated_utc": "2026-11-09T11:55:00Z",
         "published_customers": 1946,
         "event_count": 14
       },
