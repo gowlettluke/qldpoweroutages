@@ -2,49 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T07:46:09Z",
+      "fetched_utc": "2026-11-09T08:01:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 5:30 PM",
-        "source_updated_utc": "2026-11-09T07:30:02Z",
-        "published_customers": 165,
-        "event_count": 3
+        "source_updated": "9 November 2026 5:45 PM",
+        "source_updated_utc": "2026-11-09T07:45:02Z",
+        "published_customers": 1085,
+        "event_count": 4
       },
       "events": [
-        {
-          "event_id": "INCD-994239-g",
-          "allocations": [
-            {
-              "lga_name": "Ipswich City",
-              "lga_code": null,
-              "affected_customers": 127
-            }
-          ],
-          "details": {
-            "event": "INCD-994239-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Ipswich City",
-            "postcode": "4301",
-            "suburb": "REDBANK PLAINS",
-            "customersAffected": "127",
-            "restoreTime": "2026-11-09T19:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "CAROL ST",
-              "CEDAR RD",
-              "JANE ST",
-              "KENTUCKY ST",
-              "SUSAN ST",
-              "VICKI ST"
-            ]
-          },
-          "affected_customers": 127,
-          "suburb": "REDBANK PLAINS",
-          "street_name": "CAROL ST, CEDAR RD, JANE ST, KENTUCKY ST, SUSAN ST, VICKI ST"
-        },
         {
           "event_id": "INCD-994246-g",
           "allocations": [
@@ -75,6 +42,36 @@
           "street_name": "PROMINENT CRES, ROE ST"
         },
         {
+          "event_id": "INCD-994256-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 11
+            }
+          ],
+          "details": {
+            "event": "INCD-994256-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4552",
+            "suburb": "WITTA",
+            "customersAffected": "11",
+            "restoreTime": "2026-11-09T18:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "COX RD",
+              "MALENY-KENILWORTH RD",
+              "WITTA RD"
+            ]
+          },
+          "affected_customers": 11,
+          "suburb": "WITTA",
+          "street_name": "COX RD, MALENY-KENILWORTH RD, WITTA RD"
+        },
+        {
           "event_id": "INCD-994292-g",
           "allocations": [
             {
@@ -103,6 +100,37 @@
           "affected_customers": 10,
           "suburb": "GLANMIRE",
           "street_name": "DENNIS LITTLE DR, DRUMMOND DR, SMITH ST"
+        },
+        {
+          "event_id": "INCD-994361-g",
+          "allocations": [
+            {
+              "lga_name": "Lockyer Valley Regional",
+              "lga_code": null,
+              "affected_customers": 1036
+            }
+          ],
+          "details": {
+            "event": "INCD-994361-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Lockyer Valley Regional",
+            "postcode": "4342",
+            "suburb": "GLENORE GROVE",
+            "customersAffected": "85",
+            "restoreTime": "2026-11-09T20:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BRIGHTVIEW RD",
+              "FOREST AVE",
+              "GEHRKE RD",
+              "OTTO RD"
+            ]
+          },
+          "affected_customers": 1036,
+          "suburb": "GLENORE GROVE, HATTON VALE, PLAINLAND, REGENCY DOWNS, SUMMERHOLM",
+          "street_name": "ACACIA CT, BALONNE ST, BARCOO DR, BARWON ST, BELLVE CT, BOOMI ST, BRIGHTVIEW RD, BURDEKIN ST, CAROL ANNE CT, CEMETERY RD, CLARENCE PL, CONDAMINE WAY, CRANE RD, CULGOA DR, DAINTREE ST, DARLING CCT, DERWENT ST, DIAMANTINA ST, DONALDSON RD, ECHIDNA PL, EDGERTON DR, ENDEAVOUR WAY, FAITH AVE, FLINDERS CT, FOREST AVE, GASCOYNE ST, GAVIN RD, GEHRKE RD, GEORGINA ST, GOULBURN ST, GREVILLEA ST, HAKEA CT, HASTINGS AVE, HELEN CT, HOOPER DR, HOVEA WAY, HOWARD CT, HUGHES RD, ISAAC CT, JOYCE RD, LAIDLEY-PLAINLAND RD, LAVERTON CL, LOGAN CT, MAHOGANY DR, MALLEE CT, MAROSKE RD, MERIVALE CT, MITCHELL CT, MOUNTAIN VIEW DR, NATHAN CT, OLD LAIDLEY-PLAINLAND RD, OTTO RD, PAROO ST, RICHMOND TCE, RONS RD, SASSAFRAS CT, SAXBY DR, SHOALHAVEN ST, STIELER DR, VICTOR CT, WARREGO HWY, WEIER RD, WOOLSHED CREEK RD, YARRA PL, ZISCHKE RD"
         }
       ]
     },
