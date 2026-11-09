@@ -2,25 +2,25 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T19:46:11Z",
+      "fetched_utc": "2026-11-09T20:01:33Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 5:30 AM",
-        "source_updated_utc": "2026-11-09T19:30:02Z",
+        "source_updated": "10 November 2026 6:00 AM",
+        "source_updated_utc": "2026-11-09T20:00:02Z",
         "published_customers": 0,
         "event_count": 0
       },
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T19:31:21Z",
+      "fetched_utc": "2026-11-09T20:01:38Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T19:30:04Z",
-        "published_customers": 2017,
-        "event_count": 13
+        "source_updated_utc": "2026-11-09T20:00:01Z",
+        "published_customers": 898,
+        "event_count": 12
       },
       "events": [
         {
@@ -93,35 +93,6 @@
           },
           "affected_customers": 153,
           "suburb": "KOUMALA, SARINA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26MK7103",
-          "allocations": [
-            {
-              "lga_name": "Isaac Regional",
-              "lga_code": null,
-              "affected_customers": 627
-            },
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 492
-            }
-          ],
-          "details": {
-            "event": "26MK7103",
-            "council": "Isaac Regional Council",
-            "suburb": "CARMILA, CARMILA BEACH, CLAIRVIEW, GREENHILL, ILBILBIE, ORKABIE, WEST HILL",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 18:53",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "627",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 1119,
-          "suburb": "CARMILA, CARMILA BEACH, CLAIRVIEW, GREENHILL, ILBILBIE, KOUMALA, MOUNT CHRISTIAN, ORKABIE, SARINA, WEST HILL",
           "street_name": ""
         },
         {
@@ -291,7 +262,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "31",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 399,
           "suburb": "AUGATHELLA, CHARLEVILLE, MORVEN, NIVE, TAMBO",
