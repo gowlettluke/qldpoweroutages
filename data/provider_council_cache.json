@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T16:31:09Z",
+      "fetched_utc": "2026-11-09T16:46:18Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 2:15 AM",
-        "source_updated_utc": "2026-11-09T16:15:02Z",
-        "published_customers": 167,
-        "event_count": 2
+        "source_updated": "10 November 2026 2:45 AM",
+        "source_updated_utc": "2026-11-09T16:45:02Z",
+        "published_customers": 91,
+        "event_count": 1
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4075",
             "suburb": "CORINDA",
             "customersAffected": "91",
-            "restoreTime": "2026-11-10T03:00:00+10:00",
+            "restoreTime": "2026-11-10T04:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -43,37 +43,6 @@
           "affected_customers": 91,
           "suburb": "CORINDA",
           "street_name": "ALLAN TCE, GLENRICH ST, HUGHES LANE, OXLEY RD, SWIFT ST"
-        },
-        {
-          "event_id": "INCD-994404-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 76
-            }
-          ],
-          "details": {
-            "event": "INCD-994404-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Moreton Bay Regional",
-            "postcode": "4021",
-            "suburb": "KIPPA-RING",
-            "customersAffected": "76",
-            "restoreTime": "2026-11-10T02:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "CLARET CT",
-              "DRAMBUIE CT",
-              "MCCOSKER ST",
-              "MCPHERSON ST"
-            ]
-          },
-          "affected_customers": 76,
-          "suburb": "KIPPA-RING",
-          "street_name": "CLARET CT, DRAMBUIE CT, MCCOSKER ST, MCPHERSON ST"
         }
       ]
     },
