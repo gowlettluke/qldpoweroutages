@@ -1,18 +1,16 @@
 {
-  "generated_utc": "2026-11-09T11:01:25Z",
-  "generated_aest": "2026-11-09T21:01:25+10:00",
+  "generated_utc": "2026-11-09T11:15:54Z",
+  "generated_aest": "2026-11-09T21:15:54+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 17,
+  "current_outage_records": 18,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 547,
-  "current_records_after_outage_type_filter": 18,
+  "current_records_before_outage_type_filter": 548,
+  "current_records_after_outage_type_filter": 19,
   "current_records_dropped_planned_or_unknown": 529,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {
-    "Ergon": "Update delayed; using verified provider data from 2026-11-09T10:45:00Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "provider",
@@ -21,24 +19,23 @@
       "source_updated_utc": "2026-11-09T11:00:02Z",
       "published_customers": 215,
       "event_count": 3,
-      "fetched_utc": "2026-11-09T11:01:32Z"
+      "fetched_utc": "2026-11-09T11:15:59Z"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-09T10:45:00Z",
-      "published_customers": 1911,
-      "event_count": 14,
-      "fetched_utc": "2026-11-09T10:46:08Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "source_updated_utc": "2026-11-09T11:10:16Z",
+      "published_customers": 1956,
+      "event_count": 15,
+      "fetched_utc": "2026-11-09T11:16:05Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-09T11:01:25Z",
+    "snapshot_utc": "2026-11-09T11:15:54Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-09T11:01:32Z",
+      "fetched_utc": "2026-11-09T11:15:59Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -58,13 +55,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-09T10:46:08Z",
+      "fetched_utc": "2026-11-09T11:16:05Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-09T10:45:00Z",
-      "retained": true,
-      "total_customers": 1911,
+      "source_updated_utc": "2026-11-09T11:10:16Z",
+      "retained": false,
+      "total_customers": 1956,
       "rows": [
         {
           "lga_name": "Cairns Regional",
@@ -92,23 +89,23 @@
         },
         {
           "lga_name": "Townsville City",
-          "affected_customers": 103
+          "affected_customers": 148
         }
       ]
     }
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 3,
-  "current_ergon_records": 14,
+  "current_ergon_records": 15,
   "current_essential_records_fetched": 4,
   "current_energex_records_fetched": 169,
-  "current_ergon_records_fetched": 374,
+  "current_ergon_records_fetched": 375,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 1,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3644,
-  "lga_totals_rows_48h": 4774,
+  "snapshot_rows_48h": 3662,
+  "lga_totals_rows_48h": 4792,
   "lga_totals_latest_rows": 18,
   "lga_cumulative_rows": 82,
   "outputs": {
