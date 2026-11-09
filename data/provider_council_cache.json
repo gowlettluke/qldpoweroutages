@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T05:16:06Z",
+      "fetched_utc": "2026-11-09T05:31:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 3:00 PM",
-        "source_updated_utc": "2026-11-09T05:00:02Z",
-        "published_customers": 178,
-        "event_count": 4
+        "source_updated": "9 November 2026 3:30 PM",
+        "source_updated_utc": "2026-11-09T05:30:02Z",
+        "published_customers": 235,
+        "event_count": 5
       },
       "events": [
         {
@@ -92,7 +92,7 @@
             "postcode": "4209",
             "suburb": "UPPER COOMERA",
             "customersAffected": "28",
-            "restoreTime": "2026-11-09T15:00:00+10:00",
+            "restoreTime": "2026-11-09T16:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -121,7 +121,7 @@
             "postcode": "4570",
             "suburb": "GLANMIRE",
             "customersAffected": "10",
-            "restoreTime": "2026-11-09T15:30:00+10:00",
+            "restoreTime": "2026-11-09T17:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -133,17 +133,46 @@
           "affected_customers": 10,
           "suburb": "GLANMIRE",
           "street_name": "DENNIS LITTLE DR, DRUMMOND DR, SMITH ST"
+        },
+        {
+          "event_id": "INCD-994322-g",
+          "allocations": [
+            {
+              "lga_name": "Scenic Rim Regional",
+              "lga_code": null,
+              "affected_customers": 57
+            }
+          ],
+          "details": {
+            "event": "INCD-994322-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Scenic Rim Regional",
+            "postcode": "4285",
+            "suburb": "BEAUDESERT",
+            "customersAffected": "57",
+            "restoreTime": "2026-11-09T16:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "HART ST",
+              "TUBBER ST"
+            ]
+          },
+          "affected_customers": 57,
+          "suburb": "BEAUDESERT",
+          "street_name": "HART ST, TUBBER ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T05:16:09Z",
+      "fetched_utc": "2026-11-09T05:31:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T05:15:01Z",
-        "published_customers": 2819,
-        "event_count": 18
+        "source_updated_utc": "2026-11-09T05:30:01Z",
+        "published_customers": 2769,
+        "event_count": 15
       },
       "events": [
         {
@@ -421,30 +450,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26MK7136",
-          "allocations": [
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 9
-            }
-          ],
-          "details": {
-            "event": "26MK7136",
-            "council": "Mackay Regional Council",
-            "suburb": "MACKAY HARBOUR",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 14:48",
-            "restoreTime": "09/11/2026 17:00",
-            "customersAffected": "9",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 9,
-          "suburb": "MACKAY HARBOUR",
-          "street_name": ""
-        },
-        {
           "event_id": "26NQ13826",
           "allocations": [
             {
@@ -514,54 +519,6 @@
           },
           "affected_customers": 2,
           "suburb": "PERANGA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14450",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 33
-            }
-          ],
-          "details": {
-            "event": "26SW14450",
-            "council": "Toowoomba Regional Council",
-            "suburb": "EAST TOOWOOMBA, TOOWOOMBA",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 13:46",
-            "restoreTime": "09/11/2026 17:00",
-            "customersAffected": "33",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 33,
-          "suburb": "EAST TOOWOOMBA, TOOWOOMBA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10871",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 8
-            }
-          ],
-          "details": {
-            "event": "26WB10871",
-            "council": "Bundaberg Regional Council",
-            "suburb": "BOOYAL",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 09:31",
-            "restoreTime": "09/11/2026 16:30",
-            "customersAffected": "8",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 8,
-          "suburb": "BOOYAL",
           "street_name": ""
         },
         {
