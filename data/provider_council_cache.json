@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T00:16:01Z",
+      "fetched_utc": "2026-11-09T00:31:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 10:00 AM",
-        "source_updated_utc": "2026-11-09T00:00:01Z",
-        "published_customers": 147,
-        "event_count": 2
+        "source_updated": "9 November 2026 10:30 AM",
+        "source_updated_utc": "2026-11-09T00:30:02Z",
+        "published_customers": 171,
+        "event_count": 3
       },
       "events": [
         {
@@ -23,13 +23,13 @@
           ],
           "details": {
             "event": "INCD-994185-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
             "council": "Moreton Bay Regional",
             "postcode": "4520",
             "suburb": "SAMFORD VALLEY",
             "customersAffected": "8",
-            "restoreTime": "2026-11-09T10:00:00+10:00",
+            "restoreTime": "2026-11-09T12:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -71,17 +71,45 @@
           "affected_customers": 80,
           "suburb": "BURLEIGH WATERS",
           "street_name": "ANTHONY DR, CORONET CRES, FALCON CT, HONEYEATER DR, MANAKIN AVE"
+        },
+        {
+          "event_id": "INCD-994239-g",
+          "allocations": [
+            {
+              "lga_name": "Ipswich City",
+              "lga_code": null,
+              "affected_customers": 24
+            }
+          ],
+          "details": {
+            "event": "INCD-994239-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Ipswich City",
+            "postcode": "4301",
+            "suburb": "REDBANK PLAINS",
+            "customersAffected": "24",
+            "restoreTime": "2026-11-09T13:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "CAROL ST"
+            ]
+          },
+          "affected_customers": 24,
+          "suburb": "REDBANK PLAINS",
+          "street_name": "CAROL ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-08T23:46:17Z",
+      "fetched_utc": "2026-11-09T00:31:28Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-08T23:45:01Z",
-        "published_customers": 2798,
-        "event_count": 18
+        "source_updated_utc": "2026-11-09T00:30:26Z",
+        "published_customers": 3122,
+        "event_count": 19
       },
       "events": [
         {
@@ -102,7 +130,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
+            "status": "Outage reported"
           },
           "affected_customers": 3,
           "suburb": "ETNA CREEK",
@@ -178,6 +206,30 @@
           },
           "affected_customers": 68,
           "suburb": "DINGO POCKET, EURAMO, MUNRO PLAINS, RIVERSDALE, TULLY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11079",
+          "allocations": [
+            {
+              "lga_name": "Cairns Regional",
+              "lga_code": null,
+              "affected_customers": 318
+            }
+          ],
+          "details": {
+            "event": "26FN11079",
+            "council": "Cairns Regional Council",
+            "suburb": "CAIRNS, CAIRNS CITY",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 10:06",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "318",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 318,
+          "suburb": "CAIRNS, CAIRNS CITY",
           "street_name": ""
         },
         {
@@ -460,7 +512,7 @@
             {
               "lga_name": "Toowoomba Regional",
               "lga_code": null,
-              "affected_customers": 5
+              "affected_customers": 11
             }
           ],
           "details": {
@@ -470,11 +522,11 @@
             "type": "UNPLANNED",
             "startTime": "09/11/2026 08:13",
             "restoreTime": "Under Investigation",
-            "customersAffected": "5",
+            "customersAffected": "11",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 5,
+          "affected_customers": 11,
           "suburb": "CHARLTON",
           "street_name": ""
         },
