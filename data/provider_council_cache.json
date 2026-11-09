@@ -2,45 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T09:31:22Z",
+      "fetched_utc": "2026-11-09T09:46:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 7:30 PM",
-        "source_updated_utc": "2026-11-09T09:30:02Z",
-        "published_customers": 245,
-        "event_count": 5
+        "source_updated": "9 November 2026 7:45 PM",
+        "source_updated_utc": "2026-11-09T09:45:02Z",
+        "published_customers": 217,
+        "event_count": 4
       },
       "events": [
-        {
-          "event_id": "INCD-994246-g",
-          "allocations": [
-            {
-              "lga_name": "Gold Coast City",
-              "lga_code": null,
-              "affected_customers": 28
-            }
-          ],
-          "details": {
-            "event": "INCD-994246-g",
-            "cause": "Damage to our equipment",
-            "status": "Emergency Repairs",
-            "council": "Gold Coast City",
-            "postcode": "4209",
-            "suburb": "UPPER COOMERA",
-            "customersAffected": "28",
-            "restoreTime": "2026-11-09T23:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "PROMINENT CRES",
-              "ROE ST"
-            ]
-          },
-          "affected_customers": 28,
-          "suburb": "UPPER COOMERA",
-          "street_name": "PROMINENT CRES, ROE ST"
-        },
         {
           "event_id": "INCD-994292-g",
           "allocations": [
@@ -167,13 +138,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T08:46:16Z",
+      "fetched_utc": "2026-11-09T09:46:26Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T08:45:00Z",
-        "published_customers": 2356,
-        "event_count": 13
+        "source_updated_utc": "2026-11-09T09:45:01Z",
+        "published_customers": 2389,
+        "event_count": 15
       },
       "events": [
         {
@@ -223,7 +194,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "51",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 52,
           "suburb": "BLUE MOUNTAIN, COLSTON PARK, NEBO",
@@ -259,7 +230,7 @@
             {
               "lga_name": "Mackay Regional",
               "lga_code": null,
-              "affected_customers": 435
+              "affected_customers": 391
             }
           ],
           "details": {
@@ -269,11 +240,11 @@
             "type": "UNPLANNED",
             "startTime": "08/11/2026 18:50",
             "restoreTime": "Under Investigation",
-            "customersAffected": "435",
+            "customersAffected": "391",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 435,
+          "affected_customers": 391,
           "suburb": "COLSTON PARK, KOUMALA, SARINA, SARINA RANGE",
           "street_name": ""
         },
@@ -379,6 +350,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26MK7150",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26MK7150",
+            "council": "Mackay Regional Council",
+            "suburb": "FRESHWATER POINT",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 18:22",
+            "restoreTime": "10/11/2026 18:00",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 3,
+          "suburb": "FRESHWATER POINT",
+          "street_name": ""
+        },
+        {
           "event_id": "26NQ13826",
           "allocations": [
             {
@@ -448,6 +443,30 @@
           },
           "affected_customers": 2,
           "suburb": "PERANGA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14455",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 74
+            }
+          ],
+          "details": {
+            "event": "26SW14455",
+            "council": "Toowoomba Regional Council",
+            "suburb": "PITTSWORTH",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 18:33",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "74",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 74,
+          "suburb": "PITTSWORTH",
           "street_name": ""
         },
         {
