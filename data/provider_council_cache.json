@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T10:15:57Z",
+      "fetched_utc": "2026-11-09T10:31:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 8:00 PM",
-        "source_updated_utc": "2026-11-09T10:00:02Z",
-        "published_customers": 217,
-        "event_count": 4
+        "source_updated": "9 November 2026 8:15 PM",
+        "source_updated_utc": "2026-11-09T10:15:02Z",
+        "published_customers": 1337,
+        "event_count": 5
       },
       "events": [
         {
@@ -134,17 +134,45 @@
           "affected_customers": 51,
           "suburb": "WEST END",
           "street_name": "BOUNDARY ST, CORBETT ST, EXETER ST, GRANVILLE ST"
+        },
+        {
+          "event_id": "INCD-994385-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 1120
+            }
+          ],
+          "details": {
+            "event": "INCD-994385-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4054",
+            "suburb": "KEPERRA",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-09T22:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "SETTLEMENT RD"
+            ]
+          },
+          "affected_customers": 1120,
+          "suburb": "KEPERRA, THE GAP",
+          "street_name": "ALUTHA RD, BENTON CL, BOGUNDA ST, BOTTLETREE PL, BROMAR ST, BROMWICH ST, CHAPROWE RD, CRAIGMORE ST, DALPURA ST, DEBBIE ST, DESBET ST, DONEGAL PL, DUNGORY ST, ELIZA CL, ERANGA ST, GILLOWAY CT, GLENEDEN CT, GRANTON PL, GREGSUE CT, HARWARD ST, HIGHGROVE CT, HILDER RD, HILLSIDE PL, INWOOD PL, JAN ST, KALOMA RD, KATOA ST, KEVPAT CL, KIANDRA CL, KILBOWIE ST, KILCOLMAN ST, KIMRUSKA PL, LOLITA ST, MADDISON PL, MALGOA ST, MICHAELA CRES, MONTROSE PL, PARTERRE CT, PETMAR ST, PILTON PL, PIRRIE ST, POPPY PL, RICHWILL ST, RONRUTH ST, SCHOOL RD, SETTLEMENT RD, SHALDON ST, TALINGA ST, TEROMA ST, TILQUIN ST, TINGWARD ST, VIRAE ST, WARRUGA ST, WATERWORKS RD, WATTLETREE PL, WOORAMA RD, YARRABEE RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T10:16:00Z",
+      "fetched_utc": "2026-11-09T10:31:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T10:10:00Z",
-        "published_customers": 2292,
-        "event_count": 14
+        "source_updated_utc": "2026-11-09T10:30:15Z",
+        "published_customers": 1951,
+        "event_count": 15
       },
       "events": [
         {
@@ -201,22 +229,22 @@
             {
               "lga_name": "Mackay Regional",
               "lga_code": null,
-              "affected_customers": 391
+              "affected_customers": 40
             }
           ],
           "details": {
             "event": "26MK7100",
             "council": "Mackay Regional Council",
-            "suburb": "COLSTON PARK, KOUMALA, SARINA, SARINA RANGE",
+            "suburb": "SARINA",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 18:50",
             "restoreTime": "Under Investigation",
-            "customersAffected": "391",
+            "customersAffected": "40",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 391,
-          "suburb": "COLSTON PARK, KOUMALA, SARINA, SARINA RANGE",
+          "affected_customers": 40,
+          "suburb": "SARINA",
           "street_name": ""
         },
         {
@@ -345,6 +373,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26MK7151",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 10
+            }
+          ],
+          "details": {
+            "event": "26MK7151",
+            "council": "Mackay Regional Council",
+            "suburb": "SARINA",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 18:44",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "10",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 10,
+          "suburb": "SARINA",
+          "street_name": ""
+        },
+        {
           "event_id": "26NQ13826",
           "allocations": [
             {
@@ -434,7 +486,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "29",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 29,
           "suburb": "CLIFTON, ELLANGOWAN, FELTON SOUTH",
