@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T10:31:09Z",
+      "fetched_utc": "2026-11-09T10:46:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 8:15 PM",
-        "source_updated_utc": "2026-11-09T10:15:02Z",
-        "published_customers": 1337,
-        "event_count": 5
+        "source_updated": "9 November 2026 8:30 PM",
+        "source_updated_utc": "2026-11-09T10:30:02Z",
+        "published_customers": 215,
+        "event_count": 3
       },
       "events": [
         {
@@ -43,34 +43,6 @@
           "street_name": "DENNIS LITTLE DR, DRUMMOND DR, SMITH ST"
         },
         {
-          "event_id": "INCD-994361-g",
-          "allocations": [
-            {
-              "lga_name": "Lockyer Valley Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "INCD-994361-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Lockyer Valley Regional",
-            "postcode": "4342",
-            "suburb": "GLENORE GROVE",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-09T22:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BRIGHTVIEW RD"
-            ]
-          },
-          "affected_customers": 2,
-          "suburb": "GLENORE GROVE",
-          "street_name": "BRIGHTVIEW RD"
-        },
-        {
           "event_id": "INCD-994369-g",
           "allocations": [
             {
@@ -87,7 +59,7 @@
             "postcode": "4101",
             "suburb": "WEST END",
             "customersAffected": "154",
-            "restoreTime": "2026-11-09T21:00:00+10:00",
+            "restoreTime": "2026-11-09T22:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -121,7 +93,7 @@
             "postcode": "4101",
             "suburb": "WEST END",
             "customersAffected": "51",
-            "restoreTime": "2026-11-09T21:00:00+10:00",
+            "restoreTime": "2026-11-09T22:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -134,45 +106,17 @@
           "affected_customers": 51,
           "suburb": "WEST END",
           "street_name": "BOUNDARY ST, CORBETT ST, EXETER ST, GRANVILLE ST"
-        },
-        {
-          "event_id": "INCD-994385-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 1120
-            }
-          ],
-          "details": {
-            "event": "INCD-994385-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4054",
-            "suburb": "KEPERRA",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-09T22:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "SETTLEMENT RD"
-            ]
-          },
-          "affected_customers": 1120,
-          "suburb": "KEPERRA, THE GAP",
-          "street_name": "ALUTHA RD, BENTON CL, BOGUNDA ST, BOTTLETREE PL, BROMAR ST, BROMWICH ST, CHAPROWE RD, CRAIGMORE ST, DALPURA ST, DEBBIE ST, DESBET ST, DONEGAL PL, DUNGORY ST, ELIZA CL, ERANGA ST, GILLOWAY CT, GLENEDEN CT, GRANTON PL, GREGSUE CT, HARWARD ST, HIGHGROVE CT, HILDER RD, HILLSIDE PL, INWOOD PL, JAN ST, KALOMA RD, KATOA ST, KEVPAT CL, KIANDRA CL, KILBOWIE ST, KILCOLMAN ST, KIMRUSKA PL, LOLITA ST, MADDISON PL, MALGOA ST, MICHAELA CRES, MONTROSE PL, PARTERRE CT, PETMAR ST, PILTON PL, PIRRIE ST, POPPY PL, RICHWILL ST, RONRUTH ST, SCHOOL RD, SETTLEMENT RD, SHALDON ST, TALINGA ST, TEROMA ST, TILQUIN ST, TINGWARD ST, VIRAE ST, WARRUGA ST, WATERWORKS RD, WATTLETREE PL, WOORAMA RD, YARRABEE RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T10:31:13Z",
+      "fetched_utc": "2026-11-09T10:46:08Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T10:30:15Z",
-        "published_customers": 1951,
-        "event_count": 15
+        "source_updated_utc": "2026-11-09T10:45:00Z",
+        "published_customers": 1911,
+        "event_count": 14
       },
       "events": [
         {
@@ -221,30 +165,6 @@
           },
           "affected_customers": 153,
           "suburb": "KOUMALA, SARINA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26MK7100",
-          "allocations": [
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 40
-            }
-          ],
-          "details": {
-            "event": "26MK7100",
-            "council": "Mackay Regional Council",
-            "suburb": "SARINA",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 18:50",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "40",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 40,
-          "suburb": "SARINA",
           "street_name": ""
         },
         {
