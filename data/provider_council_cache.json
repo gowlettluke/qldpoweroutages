@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T01:16:19Z",
+      "fetched_utc": "2026-11-09T01:31:02Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -130,13 +130,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T01:16:22Z",
+      "fetched_utc": "2026-11-09T01:31:07Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T01:15:00Z",
-        "published_customers": 3056,
-        "event_count": 20
+        "source_updated_utc": "2026-11-09T01:25:00Z",
+        "published_customers": 3054,
+        "event_count": 19
       },
       "events": [
         {
@@ -205,34 +205,10 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 3,
           "suburb": "DUARINGA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13319",
-          "allocations": [
-            {
-              "lga_name": "Isaac Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26CA13319",
-            "council": "Isaac Regional Council",
-            "suburb": "DYSART",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 08:46",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 2,
-          "suburb": "DYSART",
           "street_name": ""
         },
         {
