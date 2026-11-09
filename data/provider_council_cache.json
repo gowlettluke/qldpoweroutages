@@ -2,47 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T14:16:12Z",
+      "fetched_utc": "2026-11-09T14:31:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 12:00 AM",
-        "source_updated_utc": "2026-11-09T14:00:05Z",
-        "published_customers": 142,
-        "event_count": 2
+        "source_updated": "10 November 2026 12:30 AM",
+        "source_updated_utc": "2026-11-09T14:30:02Z",
+        "published_customers": 91,
+        "event_count": 1
       },
       "events": [
-        {
-          "event_id": "INCD-994372-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 51
-            }
-          ],
-          "details": {
-            "event": "INCD-994372-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Brisbane City",
-            "postcode": "4101",
-            "suburb": "WEST END",
-            "customersAffected": "51",
-            "restoreTime": "2026-11-10T01:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BOUNDARY ST",
-              "CORBETT ST",
-              "EXETER ST",
-              "GRANVILLE ST"
-            ]
-          },
-          "affected_customers": 51,
-          "suburb": "WEST END",
-          "street_name": "BOUNDARY ST, CORBETT ST, EXETER ST, GRANVILLE ST"
-        },
         {
           "event_id": "INCD-994392-g",
           "allocations": [
@@ -78,13 +47,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T13:01:35Z",
+      "fetched_utc": "2026-11-09T14:31:31Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T13:00:00Z",
-        "published_customers": 1688,
-        "event_count": 14
+        "source_updated_utc": "2026-11-09T14:30:08Z",
+        "published_customers": 2056,
+        "event_count": 13
       },
       "events": [
         {
@@ -109,30 +78,6 @@
           },
           "affected_customers": 151,
           "suburb": "CAIRNS, CAIRNS CITY",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN11111",
-          "allocations": [
-            {
-              "lga_name": "Douglas Shire",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26FN11111",
-            "council": "Douglas Shire Council",
-            "suburb": "MOWBRAY",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 22:27",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 2,
-          "suburb": "MOWBRAY",
           "street_name": ""
         },
         {
@@ -323,7 +268,7 @@
             "suburb": "KIRWAN, THURINGOWA",
             "type": "UNPLANNED",
             "startTime": "09/11/2026 17:39",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "10/11/2026 02:00",
             "customersAffected": "103",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Crews working on-site"
@@ -357,27 +302,32 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW14457",
+          "event_id": "26SW14460",
           "allocations": [
             {
-              "lga_name": "Toowoomba Regional",
+              "lga_name": "Murweh Shire",
               "lga_code": null,
-              "affected_customers": 29
+              "affected_customers": 368
+            },
+            {
+              "lga_name": "Blackall Tambo Regional",
+              "lga_code": null,
+              "affected_customers": 31
             }
           ],
           "details": {
-            "event": "26SW14457",
-            "council": "Toowoomba Regional Council",
-            "suburb": "CLIFTON, ELLANGOWAN, FELTON SOUTH",
+            "event": "26SW14460",
+            "council": "Blackall Tambo Regional Council",
+            "suburb": "CHARLEVILLE, TAMBO",
             "type": "UNPLANNED",
-            "startTime": "09/11/2026 19:44",
+            "startTime": "09/11/2026 23:25",
             "restoreTime": "Under Investigation",
-            "customersAffected": "29",
+            "customersAffected": "31",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Work delayed - crews unable to continue"
           },
-          "affected_customers": 29,
-          "suburb": "CLIFTON, ELLANGOWAN, FELTON SOUTH",
+          "affected_customers": 399,
+          "suburb": "AUGATHELLA, CHARLEVILLE, MORVEN, NIVE, TAMBO",
           "street_name": ""
         },
         {
