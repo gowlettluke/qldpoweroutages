@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T08:16:15Z",
+      "fetched_utc": "2026-11-09T08:31:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 6:00 PM",
-        "source_updated_utc": "2026-11-09T08:00:02Z",
-        "published_customers": 1092,
+        "source_updated": "9 November 2026 6:30 PM",
+        "source_updated_utc": "2026-11-09T08:30:02Z",
+        "published_customers": 1235,
         "event_count": 5
       },
       "events": [
@@ -42,36 +42,6 @@
           "street_name": "PROMINENT CRES, ROE ST"
         },
         {
-          "event_id": "INCD-994256-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 11
-            }
-          ],
-          "details": {
-            "event": "INCD-994256-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4552",
-            "suburb": "WITTA",
-            "customersAffected": "11",
-            "restoreTime": "2026-11-09T18:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "COX RD",
-              "MALENY-KENILWORTH RD",
-              "WITTA RD"
-            ]
-          },
-          "affected_customers": 11,
-          "suburb": "WITTA",
-          "street_name": "COX RD, MALENY-KENILWORTH RD, WITTA RD"
-        },
-        {
           "event_id": "INCD-994292-g",
           "allocations": [
             {
@@ -88,7 +58,7 @@
             "postcode": "4570",
             "suburb": "GLANMIRE",
             "customersAffected": "10",
-            "restoreTime": "2026-11-09T18:30:00+10:00",
+            "restoreTime": "2026-11-09T20:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -143,13 +113,13 @@
           ],
           "details": {
             "event": "INCD-994362-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
             "council": "Gold Coast City",
             "postcode": "4210",
             "suburb": "WONGAWALLAN",
             "customersAffected": "7",
-            "restoreTime": "2026-11-09T21:00:00+10:00",
+            "restoreTime": "2026-11-09T20:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -159,6 +129,40 @@
           "affected_customers": 7,
           "suburb": "WONGAWALLAN",
           "street_name": "TAMBORINE OXENFORD RD"
+        },
+        {
+          "event_id": "INCD-994369-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 154
+            }
+          ],
+          "details": {
+            "event": "INCD-994369-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4101",
+            "suburb": "WEST END",
+            "customersAffected": "154",
+            "restoreTime": "2026-11-09T21:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BOUNDARY ST",
+              "CAMBRIDGE ST",
+              "CORBETT ST",
+              "EXETER ST",
+              "GRANVILLE ST",
+              "PRINCHESTER ST",
+              "VULTURE ST"
+            ]
+          },
+          "affected_customers": 154,
+          "suburb": "WEST END",
+          "street_name": "BOUNDARY ST, CAMBRIDGE ST, CORBETT ST, EXETER ST, GRANVILLE ST, PRINCHESTER ST, VULTURE ST"
         }
       ]
     },
