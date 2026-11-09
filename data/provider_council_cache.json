@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T08:31:21Z",
+      "fetched_utc": "2026-11-09T08:46:10Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -167,63 +167,15 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T06:16:01Z",
+      "fetched_utc": "2026-11-09T08:46:16Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T06:10:01Z",
-        "published_customers": 2722,
-        "event_count": 15
+        "source_updated_utc": "2026-11-09T08:45:00Z",
+        "published_customers": 2356,
+        "event_count": 13
       },
       "events": [
-        {
-          "event_id": "26CA13327",
-          "allocations": [
-            {
-              "lga_name": "Central Highlands Regional",
-              "lga_code": null,
-              "affected_customers": 199
-            }
-          ],
-          "details": {
-            "event": "26CA13327",
-            "council": "Central Highlands Regional Council",
-            "suburb": "EMERALD",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 15:02",
-            "restoreTime": "09/11/2026 17:00",
-            "customersAffected": "199",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 199,
-          "suburb": "EMERALD",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13344",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 4
-            }
-          ],
-          "details": {
-            "event": "26CA13344",
-            "council": "Livingstone Shire Council",
-            "suburb": "HIDDEN VALLEY",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 15:35",
-            "restoreTime": "09/11/2026 16:33",
-            "customersAffected": "4",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 4,
-          "suburb": "HIDDEN VALLEY",
-          "street_name": ""
-        },
         {
           "event_id": "26FN11079",
           "allocations": [
@@ -246,54 +198,6 @@
           },
           "affected_customers": 151,
           "suburb": "CAIRNS, CAIRNS CITY",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN11088",
-          "allocations": [
-            {
-              "lga_name": "Douglas Shire",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26FN11088",
-            "council": "Douglas Shire Council",
-            "suburb": "DAGMAR, LOWER DAINTREE",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 14:39",
-            "restoreTime": "09/11/2026 16:30",
-            "customersAffected": "2",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 2,
-          "suburb": "DAGMAR, LOWER DAINTREE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26MK7088",
-          "allocations": [
-            {
-              "lga_name": "Isaac Regional",
-              "lga_code": null,
-              "affected_customers": 6
-            }
-          ],
-          "details": {
-            "event": "26MK7088",
-            "council": "Isaac Regional Council",
-            "suburb": "GLENDEN, SUTTOR",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 10:11",
-            "restoreTime": "09/11/2026 20:00",
-            "customersAffected": "6",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 6,
-          "suburb": "GLENDEN, SUTTOR",
           "street_name": ""
         },
         {
@@ -331,7 +235,7 @@
             {
               "lga_name": "Mackay Regional",
               "lga_code": null,
-              "affected_customers": 154
+              "affected_customers": 153
             }
           ],
           "details": {
@@ -341,11 +245,11 @@
             "type": "UNPLANNED",
             "startTime": "08/11/2026 18:50",
             "restoreTime": "Under Investigation",
-            "customersAffected": "154",
+            "customersAffected": "153",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 154,
+          "affected_customers": 153,
           "suburb": "KOUMALA, SARINA",
           "street_name": ""
         },
@@ -371,30 +275,6 @@
           },
           "affected_customers": 435,
           "suburb": "COLSTON PARK, KOUMALA, SARINA, SARINA RANGE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26MK7101",
-          "allocations": [
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 549
-            }
-          ],
-          "details": {
-            "event": "26MK7101",
-            "council": "Mackay Regional Council",
-            "suburb": "ARMSTRONG BEACH, FRESHWATER POINT, SARINA",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 18:52",
-            "restoreTime": "09/11/2026 19:00",
-            "customersAffected": "549",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 549,
-          "suburb": "ARMSTRONG BEACH, FRESHWATER POINT, SARINA",
           "street_name": ""
         },
         {
@@ -441,12 +321,60 @@
             "suburb": "SARINA",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 18:52",
-            "restoreTime": "09/11/2026 18:00",
+            "restoreTime": "10/11/2026 18:00",
             "customersAffected": "4",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 4,
+          "suburb": "SARINA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26MK7142",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 13
+            }
+          ],
+          "details": {
+            "event": "26MK7142",
+            "council": "Mackay Regional Council",
+            "suburb": "KOUMALA",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 16:17",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "13",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 13,
+          "suburb": "KOUMALA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26MK7147",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26MK7147",
+            "council": "Mackay Regional Council",
+            "suburb": "SARINA",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 18:09",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 3,
           "suburb": "SARINA",
           "street_name": ""
         },
@@ -475,27 +403,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ13864",
+          "event_id": "26NQ13871",
           "allocations": [
             {
               "lga_name": "Townsville City",
               "lga_code": null,
-              "affected_customers": 7
+              "affected_customers": 103
             }
           ],
           "details": {
-            "event": "26NQ13864",
+            "event": "26NQ13871",
             "council": "Townsville City Council",
-            "suburb": "JULAGO",
+            "suburb": "KIRWAN, THURINGOWA",
             "type": "UNPLANNED",
-            "startTime": "09/11/2026 12:48",
+            "startTime": "09/11/2026 17:39",
             "restoreTime": "Under Investigation",
-            "customersAffected": "7",
+            "customersAffected": "103",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
-          "affected_customers": 7,
-          "suburb": "JULAGO",
+          "affected_customers": 103,
+          "suburb": "KIRWAN, THURINGOWA",
           "street_name": ""
         },
         {
@@ -520,6 +448,30 @@
           },
           "affected_customers": 2,
           "suburb": "PERANGA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10895",
+          "allocations": [
+            {
+              "lga_name": "Fraser Coast Regional",
+              "lga_code": null,
+              "affected_customers": 283
+            }
+          ],
+          "details": {
+            "event": "26WB10895",
+            "council": "Fraser Coast Regional Council",
+            "suburb": "BAUPLE, GOOTCHIE",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 17:33",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "283",
+            "cause": "The loss of supply is due to damage caused by external influences, such as birds or animals.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 283,
+          "suburb": "BAUPLE, GOOTCHIE",
           "street_name": ""
         },
         {
