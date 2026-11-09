@@ -2,16 +2,45 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T22:46:11Z",
+      "fetched_utc": "2026-11-09T23:01:33Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 8:30 AM",
-        "source_updated_utc": "2026-11-09T22:30:03Z",
-        "published_customers": 0,
-        "event_count": 0
+        "source_updated": "10 November 2026 9:00 AM",
+        "source_updated_utc": "2026-11-09T23:00:02Z",
+        "published_customers": 1,
+        "event_count": 1
       },
-      "events": []
+      "events": [
+        {
+          "event_id": "INCD-994502-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-994502-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4516",
+            "suburb": "ELIMBAH",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-10T11:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "WILLIAMS RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "ELIMBAH",
+          "street_name": "WILLIAMS RD"
+        }
+      ]
     },
     "Ergon": {
       "fetched_utc": "2026-11-09T22:31:07Z",
