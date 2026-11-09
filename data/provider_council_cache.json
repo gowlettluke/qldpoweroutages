@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T04:31:06Z",
+      "fetched_utc": "2026-11-09T04:45:54Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 2:15 PM",
-        "source_updated_utc": "2026-11-09T04:15:02Z",
-        "published_customers": 186,
-        "event_count": 5
+        "source_updated": "9 November 2026 2:30 PM",
+        "source_updated_utc": "2026-11-09T04:30:02Z",
+        "published_customers": 178,
+        "event_count": 4
       },
       "events": [
         {
@@ -59,7 +59,7 @@
             "postcode": "4301",
             "suburb": "REDBANK PLAINS",
             "customersAffected": "127",
-            "restoreTime": "2026-11-09T15:00:00+10:00",
+            "restoreTime": "2026-11-09T17:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -105,35 +105,6 @@
           "street_name": "PROMINENT CRES, ROE ST"
         },
         {
-          "event_id": "INCD-994275-g",
-          "allocations": [
-            {
-              "lga_name": "Noosa Shire",
-              "lga_code": null,
-              "affected_customers": 8
-            }
-          ],
-          "details": {
-            "event": "INCD-994275-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Noosa",
-            "postcode": "4565",
-            "suburb": "COOTHARABA",
-            "customersAffected": "8",
-            "restoreTime": "2026-11-09T15:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "KINMOND CREEK RD",
-              "WALLACE RD"
-            ]
-          },
-          "affected_customers": 8,
-          "suburb": "COOTHARABA",
-          "street_name": "KINMOND CREEK RD, WALLACE RD"
-        },
-        {
           "event_id": "INCD-994292-g",
           "allocations": [
             {
@@ -166,85 +137,37 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T03:01:20Z",
+      "fetched_utc": "2026-11-09T04:45:58Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T03:00:01Z",
-        "published_customers": 3305,
-        "event_count": 21
+        "source_updated_utc": "2026-11-09T04:40:01Z",
+        "published_customers": 2602,
+        "event_count": 14
       },
       "events": [
-        {
-          "event_id": "26CA13289",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26CA13289",
-            "council": "Livingstone Shire Council",
-            "suburb": "ETNA CREEK",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 18:19",
-            "restoreTime": "09/11/2026 15:00",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 3,
-          "suburb": "ETNA CREEK",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13309",
-          "allocations": [
-            {
-              "lga_name": "Central Highlands Regional",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26CA13309",
-            "council": "Central Highlands Regional Council",
-            "suburb": "DUARINGA",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 08:24",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 3,
-          "suburb": "DUARINGA",
-          "street_name": ""
-        },
         {
           "event_id": "26CA13339",
           "allocations": [
             {
               "lga_name": "Livingstone Shire",
               "lga_code": null,
-              "affected_customers": 4
+              "affected_customers": 51
             }
           ],
           "details": {
             "event": "26CA13339",
             "council": "Livingstone Shire Council",
-            "suburb": "JOSKELEIGH, TUNGAMULL",
+            "suburb": "JOSKELEIGH, KEPPEL SANDS, TUNGAMULL",
             "type": "UNPLANNED",
             "startTime": "09/11/2026 07:27",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "4",
+            "restoreTime": "09/11/2026 16:00",
+            "customersAffected": "51",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Outage reported"
           },
-          "affected_customers": 4,
-          "suburb": "JOSKELEIGH, TUNGAMULL",
+          "affected_customers": 51,
+          "suburb": "JOSKELEIGH, KEPPEL SANDS, TUNGAMULL",
           "street_name": ""
         },
         {
@@ -387,10 +310,10 @@
             "suburb": "ARMSTRONG BEACH, FRESHWATER POINT, SARINA",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 18:52",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "09/11/2026 19:00",
             "customersAffected": "549",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 549,
           "suburb": "ARMSTRONG BEACH, FRESHWATER POINT, SARINA",
@@ -426,6 +349,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26MK7117",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 4
+            }
+          ],
+          "details": {
+            "event": "26MK7117",
+            "council": "Mackay Regional Council",
+            "suburb": "SARINA",
+            "type": "UNPLANNED",
+            "startTime": "08/11/2026 18:52",
+            "restoreTime": "09/11/2026 18:00",
+            "customersAffected": "4",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 4,
+          "suburb": "SARINA",
+          "street_name": ""
+        },
+        {
           "event_id": "26NQ13826",
           "allocations": [
             {
@@ -447,54 +394,6 @@
           },
           "affected_customers": 35,
           "suburb": "CLONCURRY",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13851",
-          "allocations": [
-            {
-              "lga_name": "Townsville City",
-              "lga_code": null,
-              "affected_customers": 666
-            }
-          ],
-          "details": {
-            "event": "26NQ13851",
-            "council": "Townsville City Council",
-            "suburb": "JULAGO, NOME",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 12:53",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "666",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 666,
-          "suburb": "JULAGO, NOME",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14224",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26SW14224",
-            "council": "Toowoomba Regional Council",
-            "suburb": "HAMPTON",
-            "type": "UNPLANNED",
-            "startTime": "04/11/2026 22:23",
-            "restoreTime": "13/11/2026 12:00",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Work delayed - crews unable to continue"
-          },
-          "affected_customers": 3,
-          "suburb": "HAMPTON",
           "street_name": ""
         },
         {
@@ -522,99 +421,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW14429",
-          "allocations": [
-            {
-              "lga_name": "Banana Shire",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26SW14429",
-            "council": "Banana Shire Council",
-            "suburb": "TAROOM",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 06:29",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 2,
-          "suburb": "TAROOM",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14431",
+          "event_id": "26SW14450",
           "allocations": [
             {
               "lga_name": "Toowoomba Regional",
               "lga_code": null,
-              "affected_customers": 2
+              "affected_customers": 33
             }
           ],
           "details": {
-            "event": "26SW14431",
+            "event": "26SW14450",
             "council": "Toowoomba Regional Council",
-            "suburb": "CHARLTON",
+            "suburb": "EAST TOOWOOMBA, TOOWOOMBA",
             "type": "UNPLANNED",
-            "startTime": "09/11/2026 08:13",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "2",
+            "startTime": "09/11/2026 13:46",
+            "restoreTime": "09/11/2026 17:00",
+            "customersAffected": "33",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
+            "status": "Outage reported"
           },
-          "affected_customers": 2,
-          "suburb": "CHARLTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10845",
-          "allocations": [
-            {
-              "lga_name": "Gympie Regional",
-              "lga_code": null,
-              "affected_customers": 34
-            }
-          ],
-          "details": {
-            "event": "26WB10845",
-            "council": "Gympie Regional Council",
-            "suburb": "SEXTON",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 21:08",
-            "restoreTime": "09/11/2026 14:30",
-            "customersAffected": "34",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 34,
-          "suburb": "SEXTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10870",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26WB10870",
-            "council": "Bundaberg Regional Council",
-            "suburb": "WALLAVILLE",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 07:12",
-            "restoreTime": "09/11/2026 14:30",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 2,
-          "suburb": "WALLAVILLE",
+          "affected_customers": 33,
+          "suburb": "EAST TOOWOOMBA, TOOWOOMBA",
           "street_name": ""
         },
         {
@@ -639,30 +466,6 @@
           },
           "affected_customers": 8,
           "suburb": "BOOYAL",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10872",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 72
-            }
-          ],
-          "details": {
-            "event": "26WB10872",
-            "council": "Bundaberg Regional Council",
-            "suburb": "WOODGATE, WOODGATE BEACH",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 11:45",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "72",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 72,
-          "suburb": "WOODGATE, WOODGATE BEACH",
           "street_name": ""
         },
         {
