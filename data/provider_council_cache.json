@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T15:01:33Z",
+      "fetched_utc": "2026-11-09T15:16:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -78,13 +78,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T14:31:31Z",
+      "fetched_utc": "2026-11-09T15:16:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T14:30:08Z",
-        "published_customers": 2056,
-        "event_count": 13
+        "source_updated_utc": "2026-11-09T15:15:00Z",
+        "published_customers": 2058,
+        "event_count": 14
       },
       "events": [
         {
@@ -306,6 +306,30 @@
           },
           "affected_customers": 103,
           "suburb": "KIRWAN, THURINGOWA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13874",
+          "allocations": [
+            {
+              "lga_name": "Townsville City",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26NQ13874",
+            "council": "Townsville City Council",
+            "suburb": "DOUGLAS",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 23:34",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 2,
+          "suburb": "DOUGLAS",
           "street_name": ""
         },
         {
