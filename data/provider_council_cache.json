@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T06:46:08Z",
+      "fetched_utc": "2026-11-09T07:01:23Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 4:30 PM",
-        "source_updated_utc": "2026-11-09T06:30:02Z",
-        "published_customers": 226,
-        "event_count": 5
+        "source_updated": "9 November 2026 5:00 PM",
+        "source_updated_utc": "2026-11-09T07:00:02Z",
+        "published_customers": 169,
+        "event_count": 4
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4552",
             "suburb": "BALD KNOB",
             "customersAffected": "4",
-            "restoreTime": "2026-11-09T17:00:00+10:00",
+            "restoreTime": "2026-11-09T17:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -85,13 +85,13 @@
           ],
           "details": {
             "event": "INCD-994246-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
+            "cause": "Damage to our equipment",
+            "status": "Emergency Repairs",
             "council": "Gold Coast City",
             "postcode": "4209",
             "suburb": "UPPER COOMERA",
             "customersAffected": "28",
-            "restoreTime": "2026-11-09T17:00:00+10:00",
+            "restoreTime": "2026-11-09T23:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -132,35 +132,6 @@
           "affected_customers": 10,
           "suburb": "GLANMIRE",
           "street_name": "DENNIS LITTLE DR, DRUMMOND DR, SMITH ST"
-        },
-        {
-          "event_id": "INCD-994322-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 57
-            }
-          ],
-          "details": {
-            "event": "INCD-994322-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Scenic Rim Regional",
-            "postcode": "4285",
-            "suburb": "BEAUDESERT",
-            "customersAffected": "57",
-            "restoreTime": "2026-11-09T22:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "HART ST",
-              "TUBBER ST"
-            ]
-          },
-          "affected_customers": 57,
-          "suburb": "BEAUDESERT",
-          "street_name": "HART ST, TUBBER ST"
         }
       ]
     },
