@@ -2,16 +2,45 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T06:15:56Z",
+      "fetched_utc": "2026-11-09T06:46:08Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "9 November 2026 4:00 PM",
-        "source_updated_utc": "2026-11-09T06:00:02Z",
-        "published_customers": 222,
-        "event_count": 4
+        "source_updated": "9 November 2026 4:30 PM",
+        "source_updated_utc": "2026-11-09T06:30:02Z",
+        "published_customers": 226,
+        "event_count": 5
       },
       "events": [
+        {
+          "event_id": "INCD-994190-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 4
+            }
+          ],
+          "details": {
+            "event": "INCD-994190-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4552",
+            "suburb": "BALD KNOB",
+            "customersAffected": "4",
+            "restoreTime": "2026-11-09T17:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BALD KNOB RD",
+              "LANDSBOROUGH-MALENY RD"
+            ]
+          },
+          "affected_customers": 4,
+          "suburb": "BALD KNOB",
+          "street_name": "BALD KNOB RD, LANDSBOROUGH-MALENY RD"
+        },
         {
           "event_id": "INCD-994239-g",
           "allocations": [
@@ -29,7 +58,7 @@
             "postcode": "4301",
             "suburb": "REDBANK PLAINS",
             "customersAffected": "127",
-            "restoreTime": "2026-11-09T17:00:00+10:00",
+            "restoreTime": "2026-11-09T19:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -62,7 +91,7 @@
             "postcode": "4209",
             "suburb": "UPPER COOMERA",
             "customersAffected": "28",
-            "restoreTime": "2026-11-09T16:30:00+10:00",
+            "restoreTime": "2026-11-09T17:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -91,7 +120,7 @@
             "postcode": "4570",
             "suburb": "GLANMIRE",
             "customersAffected": "10",
-            "restoreTime": "2026-11-09T17:00:00+10:00",
+            "restoreTime": "2026-11-09T18:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -115,13 +144,13 @@
           ],
           "details": {
             "event": "INCD-994322-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
             "council": "Scenic Rim Regional",
             "postcode": "4285",
             "suburb": "BEAUDESERT",
             "customersAffected": "57",
-            "restoreTime": "2026-11-09T16:30:00+10:00",
+            "restoreTime": "2026-11-09T22:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
