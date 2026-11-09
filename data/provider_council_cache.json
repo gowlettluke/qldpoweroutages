@@ -2,82 +2,25 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-09T23:31:06Z",
+      "fetched_utc": "2026-11-09T23:46:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 9:15 AM",
-        "source_updated_utc": "2026-11-09T23:15:02Z",
-        "published_customers": 2,
-        "event_count": 2
+        "source_updated": "10 November 2026 9:30 AM",
+        "source_updated_utc": "2026-11-09T23:30:02Z",
+        "published_customers": 0,
+        "event_count": 0
       },
-      "events": [
-        {
-          "event_id": "INCD-993262-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-993262-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Sunshine Coast",
-            "postcode": "4558",
-            "suburb": "MAROOCHYDORE",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-06T18:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "HORTON PDE"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "MAROOCHYDORE",
-          "street_name": "HORTON PDE"
-        },
-        {
-          "event_id": "INCD-994502-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-994502-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Moreton Bay Regional",
-            "postcode": "4516",
-            "suburb": "ELIMBAH",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-10T11:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "WILLIAMS RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "ELIMBAH",
-          "street_name": "WILLIAMS RD"
-        }
-      ]
+      "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T22:31:07Z",
+      "fetched_utc": "2026-11-09T23:46:14Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T22:30:00Z",
-        "published_customers": 828,
-        "event_count": 11
+        "source_updated_utc": "2026-11-09T23:45:04Z",
+        "published_customers": 587,
+        "event_count": 12
       },
       "events": [
         {
@@ -110,7 +53,7 @@
             {
               "lga_name": "Mackay Regional",
               "lga_code": null,
-              "affected_customers": 153
+              "affected_customers": 152
             }
           ],
           "details": {
@@ -120,11 +63,11 @@
             "type": "UNPLANNED",
             "startTime": "08/11/2026 18:50",
             "restoreTime": "Under Investigation",
-            "customersAffected": "153",
+            "customersAffected": "152",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 153,
+          "affected_customers": 152,
           "suburb": "KOUMALA, SARINA",
           "street_name": ""
         },
@@ -249,6 +192,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26NQ13889",
+          "allocations": [
+            {
+              "lga_name": "Charters Towers Regional",
+              "lga_code": null,
+              "affected_customers": 26
+            }
+          ],
+          "details": {
+            "event": "26NQ13889",
+            "council": "Charters Towers Regional Council",
+            "suburb": "BASALT, BLUEWATER SPRINGS",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 09:41",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "26",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 26,
+          "suburb": "BASALT, BLUEWATER SPRINGS",
+          "street_name": ""
+        },
+        {
           "event_id": "26SW14399",
           "allocations": [
             {
@@ -278,7 +245,7 @@
             {
               "lga_name": "Murweh Shire",
               "lga_code": null,
-              "affected_customers": 362
+              "affected_customers": 96
             },
             {
               "lga_name": "Blackall Tambo Regional",
@@ -297,8 +264,8 @@
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 393,
-          "suburb": "AUGATHELLA, CHARLEVILLE, MORVEN, NIVE, TAMBO",
+          "affected_customers": 127,
+          "suburb": "AUGATHELLA, CHARLEVILLE, NIVE, TAMBO",
           "street_name": ""
         },
         {
@@ -319,7 +286,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "68",
             "cause": "The loss of supply is due to damage caused by external influences, such as birds or animals.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 68,
           "suburb": "BAUPLE",
