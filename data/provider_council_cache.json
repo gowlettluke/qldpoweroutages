@@ -2,16 +2,45 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T02:01:20Z",
+      "fetched_utc": "2026-11-10T02:17:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 12:00 PM",
-        "source_updated_utc": "2026-11-10T02:00:02Z",
-        "published_customers": 0,
-        "event_count": 0
+        "source_updated": "10 November 2026 12:15 PM",
+        "source_updated_utc": "2026-11-10T02:15:02Z",
+        "published_customers": 157,
+        "event_count": 1
       },
-      "events": []
+      "events": [
+        {
+          "event_id": "INCD-994562-g",
+          "allocations": [
+            {
+              "lga_name": "Scenic Rim Regional",
+              "lga_code": null,
+              "affected_customers": 157
+            }
+          ],
+          "details": {
+            "event": "INCD-994562-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Scenic Rim Regional",
+            "postcode": "4310",
+            "suburb": "BURNETT CREEK",
+            "customersAffected": "2",
+            "restoreTime": "2026-11-10T15:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BURNETT CREEK RD"
+            ]
+          },
+          "affected_customers": 157,
+          "suburb": "BURNETT CREEK, CARNEYS CREEK, COOCHIN, CROFTBY, MAROON, MOOGERAH",
+          "street_name": "BOONAH-RATHDOWNEY RD, BRENNAN RD, BURNETT CREEK RD, CARNEYS CREEK RD, CHALK RD, CROFTBY CHURCH RD, CROFTBY RD, HEAD RD, J BELL RD, LUCY LANE, MINTO RD, SAWATZKI RD, STENZEL RD, WARWICK RD, WATSON RD"
+        }
+      ]
     },
     "Ergon": {
       "fetched_utc": "2026-11-10T01:46:16Z",
