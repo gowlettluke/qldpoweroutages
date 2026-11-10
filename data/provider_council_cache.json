@@ -2,44 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T09:15:59Z",
+      "fetched_utc": "2026-11-10T09:31:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 7:00 PM",
-        "source_updated_utc": "2026-11-10T09:00:02Z",
-        "published_customers": 105,
-        "event_count": 2
+        "source_updated": "10 November 2026 7:15 PM",
+        "source_updated_utc": "2026-11-10T09:15:02Z",
+        "published_customers": 2,
+        "event_count": 1
       },
       "events": [
-        {
-          "event_id": "INCD-994562-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 103
-            }
-          ],
-          "details": {
-            "event": "INCD-994562-g",
-            "cause": "Trees on powerlines",
-            "status": "Under Investigation",
-            "council": "Scenic Rim Regional",
-            "postcode": "4310",
-            "suburb": "BURNETT CREEK",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-10T20:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BURNETT CREEK RD"
-            ]
-          },
-          "affected_customers": 103,
-          "suburb": "BURNETT CREEK, CARNEYS CREEK, CROFTBY, MOOGERAH",
-          "street_name": "BRENNAN RD, BURNETT CREEK RD, CARNEYS CREEK RD, CHALK RD, CROFTBY CHURCH RD, CROFTBY RD, HEAD RD, LUCY LANE, MINTO RD, SAWATZKI RD, WATSON RD"
-        },
         {
           "event_id": "INCD-994673-g",
           "allocations": [
@@ -72,11 +44,11 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T09:01:31Z",
+      "fetched_utc": "2026-11-10T09:31:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T09:00:01Z",
+        "source_updated_utc": "2026-11-10T09:30:00Z",
         "published_customers": 791,
         "event_count": 14
       },
