@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T04:01:21Z",
+      "fetched_utc": "2026-11-10T04:16:18Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 2:00 PM",
-        "source_updated_utc": "2026-11-10T04:00:02Z",
-        "published_customers": 164,
-        "event_count": 2
+        "source_updated": "10 November 2026 2:15 PM",
+        "source_updated_utc": "2026-11-10T04:15:02Z",
+        "published_customers": 121,
+        "event_count": 3
       },
       "events": [
         {
@@ -18,27 +18,27 @@
             {
               "lga_name": "Scenic Rim Regional",
               "lga_code": null,
-              "affected_customers": 157
+              "affected_customers": 103
             }
           ],
           "details": {
             "event": "INCD-994562-g",
-            "cause": "Under Investigation",
+            "cause": "Trees on powerlines",
             "status": "Under Investigation",
             "council": "Scenic Rim Regional",
             "postcode": "4310",
             "suburb": "BURNETT CREEK",
             "customersAffected": "2",
-            "restoreTime": "2026-11-10T14:30:00+10:00",
+            "restoreTime": "2026-11-10T16:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "BURNETT CREEK RD"
             ]
           },
-          "affected_customers": 157,
-          "suburb": "BURNETT CREEK, CARNEYS CREEK, COOCHIN, CROFTBY, MAROON, MOOGERAH",
-          "street_name": "BOONAH-RATHDOWNEY RD, BRENNAN RD, BURNETT CREEK RD, CARNEYS CREEK RD, CHALK RD, CROFTBY CHURCH RD, CROFTBY RD, HEAD RD, J BELL RD, LUCY LANE, MINTO RD, SAWATZKI RD, STENZEL RD, WARWICK RD, WATSON RD"
+          "affected_customers": 103,
+          "suburb": "BURNETT CREEK, CARNEYS CREEK, CROFTBY, MOOGERAH",
+          "street_name": "BRENNAN RD, BURNETT CREEK RD, CARNEYS CREEK RD, CHALK RD, CROFTBY CHURCH RD, CROFTBY RD, HEAD RD, LUCY LANE, MINTO RD, SAWATZKI RD, WATSON RD"
         },
         {
           "event_id": "INCD-994588-g",
@@ -68,6 +68,34 @@
           "affected_customers": 7,
           "suburb": "GILSTON",
           "street_name": "GILSTON RD, HINDE RD"
+        },
+        {
+          "event_id": "INCD-994608-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 11
+            }
+          ],
+          "details": {
+            "event": "INCD-994608-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4556",
+            "suburb": "MONS",
+            "customersAffected": "11",
+            "restoreTime": "2026-11-10T16:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "TWIN RIDGES RD"
+            ]
+          },
+          "affected_customers": 11,
+          "suburb": "MONS",
+          "street_name": "TWIN RIDGES RD"
         }
       ]
     },
