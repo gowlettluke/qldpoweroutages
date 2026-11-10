@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T10:46:19Z",
+      "fetched_utc": "2026-11-10T11:01:33Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 8:45 PM",
-        "source_updated_utc": "2026-11-10T10:45:02Z",
+        "source_updated": "10 November 2026 9:00 PM",
+        "source_updated_utc": "2026-11-10T11:00:02Z",
         "published_customers": 2,
         "event_count": 1
       },
@@ -29,7 +29,7 @@
             "postcode": "4575",
             "suburb": "BIRTINYA",
             "customersAffected": "2",
-            "restoreTime": "2026-11-10T21:30:00+10:00",
+            "restoreTime": "2026-11-10T23:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -44,12 +44,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T10:16:23Z",
+      "fetched_utc": "2026-11-10T11:01:36Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T10:15:16Z",
-        "published_customers": 754,
+        "source_updated_utc": "2026-11-10T11:00:00Z",
+        "published_customers": 2274,
         "event_count": 13
       },
       "events": [
@@ -133,54 +133,6 @@
           },
           "affected_customers": 367,
           "suburb": "COOKTOWN, HOPE VALE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN11160",
-          "allocations": [
-            {
-              "lga_name": "Hope Vale Aboriginal Shire",
-              "lga_code": null,
-              "affected_customers": 24
-            }
-          ],
-          "details": {
-            "event": "26FN11160",
-            "council": "Hope Vale Aboriginal Shire Council",
-            "suburb": "HOPE VALE",
-            "type": "UNPLANNED",
-            "startTime": "10/11/2026 19:38",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "24",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 24,
-          "suburb": "HOPE VALE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26MK7099",
-          "allocations": [
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 9
-            }
-          ],
-          "details": {
-            "event": "26MK7099",
-            "council": "Mackay Regional Council",
-            "suburb": "SARINA",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 18:50",
-            "restoreTime": "10/11/2026 21:00",
-            "customersAffected": "9",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 9,
-          "suburb": "SARINA",
           "street_name": ""
         },
         {
@@ -294,7 +246,7 @@
             "suburb": "BASALT, BLUEWATER SPRINGS",
             "type": "UNPLANNED",
             "startTime": "10/11/2026 09:41",
-            "restoreTime": "10/11/2026 20:00",
+            "restoreTime": "10/11/2026 22:00",
             "customersAffected": "11",
             "cause": "The loss of supply is due to a bush fire.",
             "status": "Crews working on-site"
@@ -349,6 +301,59 @@
           },
           "affected_customers": 83,
           "suburb": "TARA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14525",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 1526
+            },
+            {
+              "lga_name": "Lockyer Valley Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "26SW14525",
+            "council": "Lockyer Valley Regional Council",
+            "suburb": "TOOWOOMBA",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 20:45",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "1",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 1527,
+          "suburb": "BLUE MOUNTAIN HEIGHT, HARLAXTON, MOUNT KYNOCH, MOUNT LOFTY, NORTH TOOWOOMBA, TOOWOOMBA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14527",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 26
+            }
+          ],
+          "details": {
+            "event": "26SW14527",
+            "council": "Toowoomba Regional Council",
+            "suburb": "BIRNAM, CRANLEY, MOUNT KYNOCH, TOOWOOMBA, WETALLA",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 20:45",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "26",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 26,
+          "suburb": "BIRNAM, CRANLEY, MOUNT KYNOCH, TOOWOOMBA, WETALLA",
           "street_name": ""
         },
         {
