@@ -1,17 +1,15 @@
 {
-  "generated_utc": "2026-11-10T02:31:23Z",
-  "generated_aest": "2026-11-10T12:31:23+10:00",
+  "generated_utc": "2026-11-10T02:46:06Z",
+  "generated_aest": "2026-11-10T12:46:06+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 18,
+  "current_outage_records": 19,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 527,
-  "current_records_after_outage_type_filter": 23,
-  "current_records_dropped_planned_or_unknown": 504,
-  "provider_fetch_errors": {
-    "Ergon": "Council allocation fallback to map estimates: RuntimeError: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
-  },
-  "provider_fetch_error_count": 1,
+  "current_records_before_outage_type_filter": 525,
+  "current_records_after_outage_type_filter": 24,
+  "current_records_dropped_planned_or_unknown": 501,
+  "provider_fetch_errors": {},
+  "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
@@ -21,19 +19,23 @@
       "source_updated_utc": "2026-11-10T02:30:02Z",
       "published_customers": 157,
       "event_count": 1,
-      "fetched_utc": "2026-11-10T02:31:30Z"
+      "fetched_utc": "2026-11-10T02:46:13Z"
     },
     "Ergon": {
-      "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: RuntimeError: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "status": "provider",
+      "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+      "source_updated_utc": "2026-11-10T02:45:00Z",
+      "published_customers": 513,
+      "event_count": 18,
+      "fetched_utc": "2026-11-10T02:46:19Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-10T02:31:23Z",
+    "snapshot_utc": "2026-11-10T02:46:06Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-10T02:31:30Z",
+      "fetched_utc": "2026-11-10T02:46:13Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -48,23 +50,70 @@
       ]
     },
     "ergon": {
-      "status": "error",
-      "fetched_utc": "2026-11-10T02:31:33Z",
-      "error": "Council allocation fallback to map estimates: RuntimeError: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "status": "ok",
+      "fetched_utc": "2026-11-10T02:46:19Z",
+      "scope": "all_councils",
+      "outage_type": "unplanned",
+      "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+      "source_updated_utc": "2026-11-10T02:45:00Z",
+      "retained": false,
+      "total_customers": 513,
+      "rows": [
+        {
+          "lga_name": "Bundaberg Regional",
+          "affected_customers": 2
+        },
+        {
+          "lga_name": "Cairns Regional",
+          "affected_customers": 151
+        },
+        {
+          "lga_name": "Cassowary Coast Regional",
+          "affected_customers": 47
+        },
+        {
+          "lga_name": "Charters Towers Regional",
+          "affected_customers": 26
+        },
+        {
+          "lga_name": "Cloncurry Shire",
+          "affected_customers": 37
+        },
+        {
+          "lga_name": "Fraser Coast Regional",
+          "affected_customers": 71
+        },
+        {
+          "lga_name": "Livingstone Shire",
+          "affected_customers": 5
+        },
+        {
+          "lga_name": "Mackay Regional",
+          "affected_customers": 151
+        },
+        {
+          "lga_name": "Rockhampton Regional",
+          "affected_customers": 21
+        },
+        {
+          "lga_name": "Toowoomba Regional",
+          "affected_customers": 2
+        }
+      ]
     }
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 1,
-  "current_ergon_records": 17,
-  "current_essential_records_fetched": 42,
+  "current_ergon_records": 18,
+  "current_essential_records_fetched": 39,
   "current_energex_records_fetched": 154,
   "current_ergon_records_fetched": 331,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 5,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3179,
-  "lga_totals_rows_48h": 4058,
+  "snapshot_rows_48h": 3180,
+  "lga_totals_rows_48h": 4056,
   "lga_totals_latest_rows": 22,
   "lga_cumulative_rows": 77,
   "outputs": {

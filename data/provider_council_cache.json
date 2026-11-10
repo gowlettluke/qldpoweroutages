@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T02:31:30Z",
+      "fetched_utc": "2026-11-10T02:46:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -43,13 +43,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T01:46:16Z",
+      "fetched_utc": "2026-11-10T02:46:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T01:45:00Z",
-        "published_customers": 583,
-        "event_count": 16
+        "source_updated_utc": "2026-11-10T02:45:00Z",
+        "published_customers": 513,
+        "event_count": 18
       },
       "events": [
         {
@@ -77,6 +77,54 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13411",
+          "allocations": [
+            {
+              "lga_name": "Rockhampton Regional",
+              "lga_code": null,
+              "affected_customers": 21
+            }
+          ],
+          "details": {
+            "event": "26CA13411",
+            "council": "Rockhampton Regional Council",
+            "suburb": "BERSERKER",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 10:41",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "21",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 21,
+          "suburb": "BERSERKER",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13417",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26CA13417",
+            "council": "Livingstone Shire Council",
+            "suburb": "WOODBURY",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 09:11",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage caused by accidental contact with powerlines by a third party.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 2,
+          "suburb": "WOODBURY",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11079",
           "allocations": [
             {
@@ -101,30 +149,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26FN11122",
-          "allocations": [
-            {
-              "lga_name": "Tablelands Regional",
-              "lga_code": null,
-              "affected_customers": 6
-            }
-          ],
-          "details": {
-            "event": "26FN11122",
-            "council": "Tablelands Regional Council",
-            "suburb": "MOUNT GARNET",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 23:33",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "6",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 6,
-          "suburb": "MOUNT GARNET",
-          "street_name": ""
-        },
-        {
           "event_id": "26FN11126",
           "allocations": [
             {
@@ -139,9 +163,9 @@
             "suburb": "CAMP CREEK, MENA CREEK",
             "type": "UNPLANNED",
             "startTime": "10/11/2026 10:32",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "11/11/2026 00:09",
             "customersAffected": "47",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Crews working on-site"
           },
           "affected_customers": 47,
@@ -154,22 +178,22 @@
             {
               "lga_name": "Mackay Regional",
               "lga_code": null,
-              "affected_customers": 152
+              "affected_customers": 63
             }
           ],
           "details": {
             "event": "26MK7099",
             "council": "Mackay Regional Council",
-            "suburb": "KOUMALA, SARINA",
+            "suburb": "SARINA",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 18:50",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "152",
+            "restoreTime": "10/11/2026 11:42",
+            "customersAffected": "63",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 152,
-          "suburb": "KOUMALA, SARINA",
+          "affected_customers": 63,
+          "suburb": "SARINA",
           "street_name": ""
         },
         {
@@ -410,6 +434,30 @@
           },
           "affected_customers": 68,
           "suburb": "BAUPLE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10920",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26WB10920",
+            "council": "Bundaberg Regional Council",
+            "suburb": "MEADOWVALE, MOORLAND",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 09:36",
+            "restoreTime": "10/11/2026 18:00",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 2,
+          "suburb": "MEADOWVALE, MOORLAND",
           "street_name": ""
         },
         {
