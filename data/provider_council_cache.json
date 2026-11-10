@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T06:01:32Z",
+      "fetched_utc": "2026-11-10T06:16:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 4:00 PM",
-        "source_updated_utc": "2026-11-10T06:00:02Z",
-        "published_customers": 114,
-        "event_count": 2
+        "source_updated": "10 November 2026 4:15 PM",
+        "source_updated_utc": "2026-11-10T06:15:02Z",
+        "published_customers": 156,
+        "event_count": 3
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4310",
             "suburb": "BURNETT CREEK",
             "customersAffected": "2",
-            "restoreTime": "2026-11-10T16:30:00+10:00",
+            "restoreTime": "2026-11-10T18:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -67,17 +67,46 @@
           "affected_customers": 11,
           "suburb": "MONS",
           "street_name": "TWIN RIDGES RD"
+        },
+        {
+          "event_id": "INCD-994645-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 42
+            }
+          ],
+          "details": {
+            "event": "INCD-994645-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4510",
+            "suburb": "CABOOLTURE SOUTH",
+            "customersAffected": "21",
+            "restoreTime": "2026-11-10T17:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "GRANT RD",
+              "MAMRE CT"
+            ]
+          },
+          "affected_customers": 42,
+          "suburb": "CABOOLTURE SOUTH, MORAYFIELD",
+          "street_name": "GRANT RD, MAMRE CT, MICHAEL AVE"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T06:01:37Z",
+      "fetched_utc": "2026-11-10T06:16:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T06:00:00Z",
-        "published_customers": 577,
-        "event_count": 11
+        "source_updated_utc": "2026-11-10T06:15:00Z",
+        "published_customers": 420,
+        "event_count": 10
       },
       "events": [
         {
@@ -134,7 +163,7 @@
             {
               "lga_name": "Mareeba Shire",
               "lga_code": null,
-              "affected_customers": 22
+              "affected_customers": 51
             },
             {
               "lga_name": "Tablelands Regional",
@@ -149,11 +178,11 @@
             "type": "UNPLANNED",
             "startTime": "10/11/2026 13:55",
             "restoreTime": "Under Investigation",
-            "customersAffected": "22",
+            "customersAffected": "51",
             "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
             "status": "Outage reported"
           },
-          "affected_customers": 33,
+          "affected_customers": 62,
           "suburb": "CHEWKO, MAREEBA, WALKAMIN",
           "street_name": ""
         },
@@ -299,30 +328,6 @@
           },
           "affected_customers": 11,
           "suburb": "BASALT, BLUEWATER SPRINGS",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10927",
-          "allocations": [
-            {
-              "lga_name": "Fraser Coast Regional",
-              "lga_code": null,
-              "affected_customers": 186
-            }
-          ],
-          "details": {
-            "event": "26WB10927",
-            "council": "Fraser Coast Regional Council",
-            "suburb": "TORQUAY",
-            "type": "UNPLANNED",
-            "startTime": "10/11/2026 14:40",
-            "restoreTime": "10/11/2026 16:15",
-            "customersAffected": "186",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 186,
-          "suburb": "TORQUAY",
           "street_name": ""
         },
         {
