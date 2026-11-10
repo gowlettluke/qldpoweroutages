@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-10T07:46:00Z",
-  "generated_aest": "2026-11-10T17:46:00+10:00",
+  "generated_utc": "2026-11-10T08:01:13Z",
+  "generated_aest": "2026-11-10T18:01:13+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 14,
@@ -10,39 +10,36 @@
   "current_records_dropped_planned_or_unknown": 421,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {
-    "Ergon": "Update delayed; using verified provider data from 2026-11-10T07:30:00Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "10 November 2026 5:30 PM",
-      "source_updated_utc": "2026-11-10T07:30:02Z",
+      "source_updated": "10 November 2026 6:00 PM",
+      "source_updated_utc": "2026-11-10T08:00:02Z",
       "published_customers": 105,
       "event_count": 2,
-      "fetched_utc": "2026-11-10T07:46:05Z"
+      "fetched_utc": "2026-11-10T08:01:20Z"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-10T07:30:00Z",
-      "published_customers": 1638,
+      "source_updated_utc": "2026-11-10T08:00:00Z",
+      "published_customers": 387,
       "event_count": 12,
-      "fetched_utc": "2026-11-10T07:31:12Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "fetched_utc": "2026-11-10T08:01:23Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-10T07:46:00Z",
+    "snapshot_utc": "2026-11-10T08:01:13Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-10T07:46:05Z",
+      "fetched_utc": "2026-11-10T08:01:20Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-10T07:30:02Z",
+      "source_updated_utc": "2026-11-10T08:00:02Z",
       "retained": false,
       "total_customers": 105,
       "rows": [
@@ -58,13 +55,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-10T07:31:12Z",
+      "fetched_utc": "2026-11-10T08:01:23Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-10T07:30:00Z",
-      "retained": true,
-      "total_customers": 1638,
+      "source_updated_utc": "2026-11-10T08:00:00Z",
+      "retained": false,
+      "total_customers": 387,
       "rows": [
         {
           "lga_name": "Burke Shire",
@@ -79,32 +76,28 @@
           "affected_customers": 50
         },
         {
+          "lga_name": "Central Highlands Regional",
+          "affected_customers": 4
+        },
+        {
           "lga_name": "Charters Towers Regional",
           "affected_customers": 11
         },
         {
           "lga_name": "Cloncurry Shire",
-          "affected_customers": 35
+          "affected_customers": 17
         },
         {
           "lga_name": "Fraser Coast Regional",
           "affected_customers": 3
         },
         {
-          "lga_name": "Gladstone Regional",
-          "affected_customers": 1199
+          "lga_name": "Hope Vale Aboriginal Shire",
+          "affected_customers": 24
         },
         {
           "lga_name": "Mackay Regional",
           "affected_customers": 71
-        },
-        {
-          "lga_name": "Mareeba Shire",
-          "affected_customers": 51
-        },
-        {
-          "lga_name": "Tablelands Regional",
-          "affected_customers": 11
         },
         {
           "lga_name": "Townsville City",
@@ -118,15 +111,15 @@
   "current_ergon_records": 12,
   "current_essential_records_fetched": 6,
   "current_energex_records_fetched": 155,
-  "current_ergon_records_fetched": 277,
+  "current_ergon_records_fetched": 278,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 4,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3206,
-  "lga_totals_rows_48h": 4050,
-  "lga_totals_latest_rows": 26,
-  "lga_cumulative_rows": 79,
+  "snapshot_rows_48h": 3220,
+  "lga_totals_rows_48h": 4074,
+  "lga_totals_latest_rows": 24,
+  "lga_cumulative_rows": 81,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
     "outage_snapshots_48h_csv": "data/outage_snapshots_48h.csv",
