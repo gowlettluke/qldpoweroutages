@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T22:31:05Z",
+      "fetched_utc": "2026-11-10T22:46:14Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 8:15 AM",
-        "source_updated_utc": "2026-11-10T22:15:02Z",
+        "source_updated": "11 November 2026 8:30 AM",
+        "source_updated_utc": "2026-11-10T22:30:02Z",
         "published_customers": 232,
         "event_count": 4
       },
@@ -115,7 +115,7 @@
             "postcode": "4313",
             "suburb": "BIARRA",
             "customersAffected": "84",
-            "restoreTime": "2026-11-11T11:00:00+10:00",
+            "restoreTime": "2026-11-11T10:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -134,13 +134,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T22:31:07Z",
+      "fetched_utc": "2026-11-10T22:46:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T22:25:00Z",
-        "published_customers": 570,
-        "event_count": 11
+        "source_updated_utc": "2026-11-10T22:45:01Z",
+        "published_customers": 563,
+        "event_count": 10
       },
       "events": [
         {
@@ -221,7 +221,7 @@
           "street_name": ""
         },
         {
-          "event_id": "26FN11169",
+          "event_id": "26FN11170",
           "allocations": [
             {
               "lga_name": "Tablelands Regional",
@@ -230,15 +230,15 @@
             }
           ],
           "details": {
-            "event": "26FN11169",
+            "event": "26FN11170",
             "council": "Tablelands Regional Council",
             "suburb": "KAIRI, TINAROO",
             "type": "UNPLANNED",
             "startTime": "11/11/2026 08:19",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "11/11/2026 13:00",
             "customersAffected": "301",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "cause": "The loss of supply is due to public safety concerns.",
+            "status": "Crews working on-site"
           },
           "affected_customers": 301,
           "suburb": "KAIRI, TINAROO",
@@ -362,30 +362,6 @@
           },
           "affected_customers": 25,
           "suburb": "WINTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ13945",
-          "allocations": [
-            {
-              "lga_name": "Hinchinbrook Shire",
-              "lga_code": null,
-              "affected_customers": 7
-            }
-          ],
-          "details": {
-            "event": "26NQ13945",
-            "council": "Hinchinbrook Shire Council",
-            "suburb": "ALLINGHAM, FORREST BEACH",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 06:30",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "7",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 7,
-          "suburb": "ALLINGHAM, FORREST BEACH",
           "street_name": ""
         },
         {
