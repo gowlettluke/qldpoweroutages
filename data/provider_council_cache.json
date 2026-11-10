@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T10:01:20Z",
+      "fetched_utc": "2026-11-10T10:16:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 8:00 PM",
-        "source_updated_utc": "2026-11-10T10:00:02Z",
+        "source_updated": "10 November 2026 8:15 PM",
+        "source_updated_utc": "2026-11-10T10:15:02Z",
         "published_customers": 2,
         "event_count": 1
       },
@@ -44,39 +44,15 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T09:46:03Z",
+      "fetched_utc": "2026-11-10T10:16:23Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T09:40:00Z",
-        "published_customers": 788,
+        "source_updated_utc": "2026-11-10T10:15:16Z",
+        "published_customers": 754,
         "event_count": 13
       },
       "events": [
-        {
-          "event_id": "26CA13449",
-          "allocations": [
-            {
-              "lga_name": "Central Highlands Regional",
-              "lga_code": null,
-              "affected_customers": 4
-            }
-          ],
-          "details": {
-            "event": "26CA13449",
-            "council": "Central Highlands Regional Council",
-            "suburb": "MOURA",
-            "type": "UNPLANNED",
-            "startTime": "10/11/2026 17:54",
-            "restoreTime": "10/11/2026 20:30",
-            "customersAffected": "4",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 4,
-          "suburb": "MOURA",
-          "street_name": ""
-        },
         {
           "event_id": "26FN11079",
           "allocations": [
@@ -160,12 +136,36 @@
           "street_name": ""
         },
         {
+          "event_id": "26FN11160",
+          "allocations": [
+            {
+              "lga_name": "Hope Vale Aboriginal Shire",
+              "lga_code": null,
+              "affected_customers": 24
+            }
+          ],
+          "details": {
+            "event": "26FN11160",
+            "council": "Hope Vale Aboriginal Shire Council",
+            "suburb": "HOPE VALE",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 19:38",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "24",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 24,
+          "suburb": "HOPE VALE",
+          "street_name": ""
+        },
+        {
           "event_id": "26MK7099",
           "allocations": [
             {
               "lga_name": "Mackay Regional",
               "lga_code": null,
-              "affected_customers": 63
+              "affected_customers": 9
             }
           ],
           "details": {
@@ -174,12 +174,12 @@
             "suburb": "SARINA",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 18:50",
-            "restoreTime": "10/11/2026 20:00",
-            "customersAffected": "63",
+            "restoreTime": "10/11/2026 21:00",
+            "customersAffected": "9",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 63,
+          "affected_customers": 9,
           "suburb": "SARINA",
           "street_name": ""
         },
