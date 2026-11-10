@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T23:31:07Z",
+      "fetched_utc": "2026-11-10T23:46:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 9:15 AM",
-        "source_updated_utc": "2026-11-10T23:15:02Z",
-        "published_customers": 1159,
-        "event_count": 7
+        "source_updated": "11 November 2026 9:30 AM",
+        "source_updated_utc": "2026-11-10T23:30:02Z",
+        "published_customers": 1128,
+        "event_count": 5
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4575",
             "suburb": "BIRTINYA",
             "customersAffected": "2",
-            "restoreTime": "2026-11-11T10:00:00+10:00",
+            "restoreTime": "2026-11-11T11:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -69,34 +69,6 @@
           "affected_customers": 71,
           "suburb": "NORTH ARM, VERRIERDALE, YANDINA CREEK",
           "street_name": "ALLANDALE RD, DEAN RD, FIG TREE LANE, PRYOR RD, SUDHOLZ RD, VENNING RD, VERRIERDALE RD"
-        },
-        {
-          "event_id": "INCD-994729-g",
-          "allocations": [
-            {
-              "lga_name": "Noosa Shire",
-              "lga_code": null,
-              "affected_customers": 10
-            }
-          ],
-          "details": {
-            "event": "INCD-994729-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Noosa",
-            "postcode": "4562",
-            "suburb": "DOONAN",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-11T10:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "SUNRISE RD"
-            ]
-          },
-          "affected_customers": 10,
-          "suburb": "DOONAN, TINBEERWAH",
-          "street_name": "BRUSHTAIL LANE, SUNRISE RD"
         },
         {
           "event_id": "INCD-994757-g",
@@ -230,45 +202,17 @@
           "affected_customers": 890,
           "suburb": "CABOOLTURE, ELIMBAH",
           "street_name": "ALTOMO PL, BALKEE DR, BIGMOR DR, BLUNT ST, BRUCE HWY, CASTLE CT, CHRISTOPHER CT, COCKATOO CT, DOT NEWMAN CT, ELOF RD, FAZEY CL, FENTON CT, FLOWERS RD, FRENEY CT, GRANGER ST, HARRIER CT, HEATH CT, HERD ST, HOOK CT, JAN CT, JEITA CCT, JORDAN CT, KAPYONG RD, KEAST ST, KEMP ST, KERSWELL ST, KILTO CT, KINGMA CRES, KITE CT, LARKIN CT, LASEK CT, LEAHY RD, LINWOOD CT, LONG TAN DR, LOTUSBIRD CT, MALE RD, OLD TOORBUL POINT RD, OSPREY CT, PETREL CT, PUMICESTONE RD, RICCARDO ST, SCHOFIELD CCT, TIFFANY CT, TILLEY CT, TODD CT, VAN BEELEN ST, WODHAMS RD"
-        },
-        {
-          "event_id": "INCD-994778-g",
-          "allocations": [
-            {
-              "lga_name": "Gold Coast City",
-              "lga_code": null,
-              "affected_customers": 21
-            }
-          ],
-          "details": {
-            "event": "INCD-994778-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Gold Coast City",
-            "postcode": "4217",
-            "suburb": "SURFERS PARADISE",
-            "customersAffected": "21",
-            "restoreTime": "2026-11-11T12:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "NORTHCLIFFE TCE"
-            ]
-          },
-          "affected_customers": 21,
-          "suburb": "SURFERS PARADISE",
-          "street_name": "NORTHCLIFFE TCE"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T23:31:10Z",
+      "fetched_utc": "2026-11-10T23:46:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T23:30:26Z",
-        "published_customers": 572,
-        "event_count": 11
+        "source_updated_utc": "2026-11-10T23:45:00Z",
+        "published_customers": 563,
+        "event_count": 10
       },
       "events": [
         {
@@ -293,30 +237,6 @@
           },
           "affected_customers": 2,
           "suburb": "MULGILDIE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13473",
-          "allocations": [
-            {
-              "lga_name": "Central Highlands Regional",
-              "lga_code": null,
-              "affected_customers": 9
-            }
-          ],
-          "details": {
-            "event": "26CA13473",
-            "council": "Central Highlands Regional Council",
-            "suburb": "EMERALD",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 08:44",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "9",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 9,
-          "suburb": "EMERALD",
           "street_name": ""
         },
         {
