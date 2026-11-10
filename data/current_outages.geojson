@@ -8,61 +8,67 @@
         "coordinates": [
           [
             [
-              152.564838777741,
-              -25.3203956456306
+              153.120673512648,
+              -26.7356627696576
             ],
             [
-              152.565273355238,
-              -25.3196787221708
+              153.121372579666,
+              -26.7355460845225
             ],
             [
-              152.566034791769,
-              -25.3197313159622
+              153.121502536648,
+              -26.7361737713736
             ],
             [
-              152.566398947402,
-              -25.3204425551307
+              153.120398909848,
+              -26.737617244898
             ],
             [
-              152.566045648469,
-              -25.3208887221873
+              153.119699829164,
+              -26.7377339252461
             ],
             [
-              152.565246916838,
-              -25.3208944065792
+              153.119569880261,
+              -26.737106236854
             ],
             [
-              152.564838777741,
-              -25.3203956456306
+              153.120673512648,
+              -26.7356627696576
             ]
           ]
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T14:16:09Z",
-        "snapshot_aest": "2026-11-11T00:16:09+10:00",
-        "provider_code": "au.qld.ergon",
-        "provider_name": "Ergon Energy",
-        "outage_key": "au.qld.ergon|unplanned|26WB9727",
-        "outage_id": "26WB9727",
+        "snapshot_utc": "2026-11-10T14:31:26Z",
+        "snapshot_aest": "2026-11-11T00:31:26+10:00",
+        "provider_code": "au.qld.energex",
+        "provider_name": "Energex",
+        "outage_key": "au.qld.energex|unplanned|INCD-994673-g",
+        "outage_id": "INCD-994673-g",
         "outage_type": "unplanned",
-        "status": "Work delayed - crews unable to continue",
-        "reason": "The loss of supply is there are supply problems resulting in fluctuating voltage conditions. It is advisable to disconnect sensitive electrical appliances.",
-        "affected_customers": 3,
+        "status": "Emergency Repairs",
+        "reason": "Emergency Repairs",
+        "affected_customers": 2,
         "affected_customers_known": true,
-        "suburb": "HOWARD",
-        "street_name": "KING ST, STELEY ST",
-        "start_utc": "2026-10-20T04:55:30Z",
-        "etr_utc": "2026-11-30T02:30:00Z",
-        "centroid_lon": 152.5656374472235,
-        "centroid_lat": -25.320316007557075,
-        "lga_name": "Fraser Coast Regional",
-        "lga_code": "3220",
-        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
-        "lga_allocations": null,
-        "lga_assignment_source": "geometry_fallback",
-        "council_source_url": null,
-        "provider_data_as_of_utc": null
+        "suburb": "BIRTINYA",
+        "street_name": "CAPITAL PL, KAWANA WAY",
+        "start_utc": "2026-11-10T07:24:02Z",
+        "etr_utc": "2026-11-10T16:00:00Z",
+        "centroid_lon": 153.1205274103634,
+        "centroid_lat": -26.736638472379905,
+        "lga_name": "Sunshine Coast Regional",
+        "lga_code": "6720",
+        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0",
+        "lga_allocations": [
+          {
+            "lga_name": "Sunshine Coast Regional",
+            "lga_code": "6720",
+            "affected_customers": 2
+          }
+        ],
+        "lga_assignment_source": "provider",
+        "council_source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+        "provider_data_as_of_utc": "2026-11-10T14:30:03Z"
       }
     },
     {
@@ -159,8 +165,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T14:16:09Z",
-        "snapshot_aest": "2026-11-11T00:16:09+10:00",
+        "snapshot_utc": "2026-11-10T14:31:26Z",
+        "snapshot_aest": "2026-11-11T00:31:26+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26FN11079",
@@ -172,17 +178,212 @@
         "affected_customers_known": true,
         "suburb": "CAIRNS, CAIRNS CITY",
         "street_name": "APLIN ST, FLORENCE ST, GRAFTON ST",
-        "start_utc": "2026-11-09T00:06:34Z",
+        "start_utc": "2026-11-09T00:06:00Z",
         "etr_utc": "2026-11-16T01:11:00Z",
         "centroid_lon": 145.7723977784192,
         "centroid_lat": -16.91986732110498,
         "lga_name": "Cairns Regional",
         "lga_code": "2080",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
-        "lga_allocations": null,
-        "lga_assignment_source": "geometry_fallback",
-        "council_source_url": null,
-        "provider_data_as_of_utc": null
+        "lga_allocations": [
+          {
+            "lga_name": "Cairns Regional",
+            "lga_code": "2080",
+            "affected_customers": 151
+          }
+        ],
+        "lga_assignment_source": "provider",
+        "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "provider_data_as_of_utc": "2026-11-10T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              139.576742123757,
+              -18.9815011680289
+            ],
+            [
+              139.576320332893,
+              -18.9809799332438
+            ],
+            [
+              139.755602522889,
+              -17.9572796925344
+            ],
+            [
+              139.756162938424,
+              -17.9569141925941
+            ],
+            [
+              140.893725595205,
+              -18.1860867618296
+            ],
+            [
+              140.893895191889,
+              -18.1861556514297
+            ],
+            [
+              141.270146010123,
+              -18.4310545302971
+            ],
+            [
+              141.270351546996,
+              -18.4314020229555
+            ],
+            [
+              141.277709200833,
+              -18.5604509304889
+            ],
+            [
+              141.277699406089,
+              -18.5605696697323
+            ],
+            [
+              141.207629657462,
+              -18.8711702148905
+            ],
+            [
+              141.207238432766,
+              -18.8715202323665
+            ],
+            [
+              140.535430774126,
+              -18.966949476689
+            ],
+            [
+              140.535395460553,
+              -18.9669531377129
+            ],
+            [
+              139.895560218953,
+              -19.0090423677581
+            ],
+            [
+              139.895486296929,
+              -19.0090415754553
+            ],
+            [
+              139.576742123757,
+              -18.9815011680289
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-11-10T14:31:26Z",
+        "snapshot_aest": "2026-11-11T00:31:26+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|26FN11158",
+        "outage_id": "26FN11158",
+        "outage_type": "unplanned",
+        "status": "Work delayed - crews unable to continue",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 56,
+        "affected_customers_known": true,
+        "suburb": "NORMANTON",
+        "street_name": "BURKE DEVELOPMENT RD, BURKETOWN RD, IFFLEY RD, NEU MAYER VALLEY STATION, UNKNOWN ST",
+        "start_utc": "2026-11-10T06:38:00Z",
+        "etr_utc": null,
+        "centroid_lon": 140.37115926170537,
+        "centroid_lat": -18.540419454603956,
+        "lga_name": "Carpentaria Shire",
+        "lga_code": "2250",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
+        "lga_allocations": [
+          {
+            "lga_name": "Carpentaria Shire",
+            "lga_code": "2250",
+            "affected_customers": 50
+          },
+          {
+            "lga_name": "Burke Shire",
+            "lga_code": "1950",
+            "affected_customers": 6
+          }
+        ],
+        "lga_assignment_source": "provider",
+        "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "provider_data_as_of_utc": "2026-11-10T14:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.220404998785,
+              -21.448546396994
+            ],
+            [
+              149.220119391515,
+              -21.4480633363829
+            ],
+            [
+              149.220546679479,
+              -21.4476827796269
+            ],
+            [
+              149.223751435807,
+              -21.4473740286163
+            ],
+            [
+              149.224239494708,
+              -21.448010598759
+            ],
+            [
+              149.223586383935,
+              -21.4493499912916
+            ],
+            [
+              149.222956656812,
+              -21.4495770376942
+            ],
+            [
+              149.220404998785,
+              -21.448546396994
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-11-10T14:31:26Z",
+        "snapshot_aest": "2026-11-11T00:31:26+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|26MK7147",
+        "outage_id": "26MK7147",
+        "outage_type": "unplanned",
+        "status": "Work delayed - crews unable to continue",
+        "reason": "The loss of supply is due to fallen power lines.",
+        "affected_customers": 3,
+        "affected_customers_known": true,
+        "suburb": "SARINA",
+        "street_name": "BRUCE HWY",
+        "start_utc": "2026-11-09T08:09:00Z",
+        "etr_utc": null,
+        "centroid_lon": 149.2223754088108,
+        "centroid_lat": -21.448346485745763,
+        "lga_name": "Mackay Regional",
+        "lga_code": "4770",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
+        "lga_allocations": [
+          {
+            "lga_name": "Mackay Regional",
+            "lga_code": "4770",
+            "affected_customers": 3
+          }
+        ],
+        "lga_assignment_source": "provider",
+        "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "provider_data_as_of_utc": "2026-11-10T14:30:00Z"
       }
     },
     {
@@ -231,8 +432,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T14:16:09Z",
-        "snapshot_aest": "2026-11-11T00:16:09+10:00",
+        "snapshot_utc": "2026-11-10T14:31:26Z",
+        "snapshot_aest": "2026-11-11T00:31:26+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26MK7150",
@@ -251,10 +452,16 @@
         "lga_name": "Mackay Regional",
         "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
-        "lga_allocations": null,
-        "lga_assignment_source": "geometry_fallback",
-        "council_source_url": null,
-        "provider_data_as_of_utc": null
+        "lga_allocations": [
+          {
+            "lga_name": "Mackay Regional",
+            "lga_code": "4770",
+            "affected_customers": 3
+          }
+        ],
+        "lga_assignment_source": "provider",
+        "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "provider_data_as_of_utc": "2026-11-10T14:30:00Z"
       }
     },
     {
@@ -264,65 +471,67 @@
         "coordinates": [
           [
             [
-              149.220404998785,
-              -21.448546396994
+              149.103048597187,
+              -21.5550111559954
             ],
             [
-              149.220119391515,
-              -21.4480633363829
+              149.102954472394,
+              -21.5556435558082
             ],
             [
-              149.220546679479,
-              -21.4476827796269
+              149.102278458637,
+              -21.5555555019717
             ],
             [
-              149.223751435807,
-              -21.4473740286163
+              149.101374645937,
+              -21.5544364445915
             ],
             [
-              149.224239494708,
-              -21.448010598759
+              149.101468777375,
+              -21.553804045093
             ],
             [
-              149.223586383935,
-              -21.4493499912916
+              149.102144782725,
+              -21.5538921029335
             ],
             [
-              149.222956656812,
-              -21.4495770376942
-            ],
-            [
-              149.220404998785,
-              -21.448546396994
+              149.103048597187,
+              -21.5550111559954
             ]
           ]
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T14:16:09Z",
-        "snapshot_aest": "2026-11-11T00:16:09+10:00",
+        "snapshot_utc": "2026-11-10T14:31:26Z",
+        "snapshot_aest": "2026-11-11T00:31:26+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
-        "outage_key": "au.qld.ergon|unplanned|26MK7147",
-        "outage_id": "26MK7147",
+        "outage_key": "au.qld.ergon|unplanned|26MK7207",
+        "outage_id": "26MK7207",
         "outage_type": "unplanned",
         "status": "Work delayed - crews unable to continue",
-        "reason": "The loss of supply is due to fallen power lines.",
-        "affected_customers": 3,
+        "reason": "The loss of supply is due to damage requiring emergency repairs.",
+        "affected_customers": 2,
         "affected_customers_known": true,
-        "suburb": "SARINA",
-        "street_name": "BRUCE HWY",
-        "start_utc": "2026-11-09T08:09:00Z",
+        "suburb": "COLSTON PARK",
+        "street_name": "LAWRIES RD",
+        "start_utc": "2026-11-10T03:39:00Z",
         "etr_utc": null,
-        "centroid_lon": 149.2223754088108,
-        "centroid_lat": -21.448346485745763,
+        "centroid_lon": 149.10221221043113,
+        "centroid_lat": -21.554723887379986,
         "lga_name": "Mackay Regional",
         "lga_code": "4770",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
-        "lga_allocations": null,
-        "lga_assignment_source": "geometry_fallback",
-        "council_source_url": null,
-        "provider_data_as_of_utc": null
+        "lga_allocations": [
+          {
+            "lga_name": "Mackay Regional",
+            "lga_code": "4770",
+            "affected_customers": 2
+          }
+        ],
+        "lga_assignment_source": "provider",
+        "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "provider_data_as_of_utc": "2026-11-10T14:30:00Z"
       }
     },
     {
@@ -411,8 +620,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T14:16:09Z",
-        "snapshot_aest": "2026-11-11T00:16:09+10:00",
+        "snapshot_utc": "2026-11-10T14:31:26Z",
+        "snapshot_aest": "2026-11-11T00:31:26+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26NQ13826",
@@ -424,185 +633,23 @@
         "affected_customers_known": true,
         "suburb": "CLONCURRY",
         "street_name": "BRIGHTLANDS STATION, DEVONCOURT STATION, FARLEY STATION, MALBON BORE, MALBON RD, MALBON SDNG, SELWYN RD, Y-AUST BORE",
-        "start_utc": "2026-11-08T06:23:54Z",
+        "start_utc": "2026-11-08T06:23:00Z",
         "etr_utc": "2026-11-11T09:00:00Z",
         "centroid_lon": 140.34133565840187,
         "centroid_lat": -21.224385593071272,
         "lga_name": "Cloncurry Shire",
         "lga_code": "2450",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
-        "lga_allocations": null,
-        "lga_assignment_source": "geometry_fallback",
-        "council_source_url": null,
-        "provider_data_as_of_utc": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              139.576742123757,
-              -18.9815011680289
-            ],
-            [
-              139.576320332893,
-              -18.9809799332438
-            ],
-            [
-              139.755602522889,
-              -17.9572796925344
-            ],
-            [
-              139.756162938424,
-              -17.9569141925941
-            ],
-            [
-              140.893725595205,
-              -18.1860867618296
-            ],
-            [
-              140.893895191889,
-              -18.1861556514297
-            ],
-            [
-              141.270146010123,
-              -18.4310545302971
-            ],
-            [
-              141.270351546996,
-              -18.4314020229555
-            ],
-            [
-              141.277709200833,
-              -18.5604509304889
-            ],
-            [
-              141.277699406089,
-              -18.5605696697323
-            ],
-            [
-              141.207629657462,
-              -18.8711702148905
-            ],
-            [
-              141.207238432766,
-              -18.8715202323665
-            ],
-            [
-              140.535430774126,
-              -18.966949476689
-            ],
-            [
-              140.535395460553,
-              -18.9669531377129
-            ],
-            [
-              139.895560218953,
-              -19.0090423677581
-            ],
-            [
-              139.895486296929,
-              -19.0090415754553
-            ],
-            [
-              139.576742123757,
-              -18.9815011680289
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "snapshot_utc": "2026-11-10T14:16:09Z",
-        "snapshot_aest": "2026-11-11T00:16:09+10:00",
-        "provider_code": "au.qld.ergon",
-        "provider_name": "Ergon Energy",
-        "outage_key": "au.qld.ergon|unplanned|26FN11158",
-        "outage_id": "26FN11158",
-        "outage_type": "unplanned",
-        "status": "Work delayed - crews unable to continue",
-        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-        "affected_customers": 56,
-        "affected_customers_known": true,
-        "suburb": "NORMANTON",
-        "street_name": "BURKE DEVELOPMENT RD, BURKETOWN RD, IFFLEY RD, NEU MAYER VALLEY STATION, UNKNOWN ST",
-        "start_utc": "2026-11-10T06:38:36Z",
-        "etr_utc": null,
-        "centroid_lon": 140.37115926170537,
-        "centroid_lat": -18.540419454603956,
-        "lga_name": "Carpentaria Shire",
-        "lga_code": "2250",
-        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
-        "lga_allocations": null,
-        "lga_assignment_source": "geometry_fallback",
-        "council_source_url": null,
-        "provider_data_as_of_utc": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              149.103048597187,
-              -21.5550111559954
-            ],
-            [
-              149.102954472394,
-              -21.5556435558082
-            ],
-            [
-              149.102278458637,
-              -21.5555555019717
-            ],
-            [
-              149.101374645937,
-              -21.5544364445915
-            ],
-            [
-              149.101468777375,
-              -21.553804045093
-            ],
-            [
-              149.102144782725,
-              -21.5538921029335
-            ],
-            [
-              149.103048597187,
-              -21.5550111559954
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "snapshot_utc": "2026-11-10T14:16:09Z",
-        "snapshot_aest": "2026-11-11T00:16:09+10:00",
-        "provider_code": "au.qld.ergon",
-        "provider_name": "Ergon Energy",
-        "outage_key": "au.qld.ergon|unplanned|26MK7207",
-        "outage_id": "26MK7207",
-        "outage_type": "unplanned",
-        "status": "Work delayed - crews unable to continue",
-        "reason": "The loss of supply is due to damage requiring emergency repairs.",
-        "affected_customers": 2,
-        "affected_customers_known": true,
-        "suburb": "COLSTON PARK",
-        "street_name": "LAWRIES RD",
-        "start_utc": "2026-11-10T03:39:31Z",
-        "etr_utc": null,
-        "centroid_lon": 149.10221221043113,
-        "centroid_lat": -21.554723887379986,
-        "lga_name": "Mackay Regional",
-        "lga_code": "4770",
-        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
-        "lga_allocations": null,
-        "lga_assignment_source": "geometry_fallback",
-        "council_source_url": null,
-        "provider_data_as_of_utc": null
+        "lga_allocations": [
+          {
+            "lga_name": "Cloncurry Shire",
+            "lga_code": "2450",
+            "affected_customers": 17
+          }
+        ],
+        "lga_assignment_source": "provider",
+        "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "provider_data_as_of_utc": "2026-11-10T14:30:00Z"
       }
     },
     {
@@ -691,8 +738,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T14:16:09Z",
-        "snapshot_aest": "2026-11-11T00:16:09+10:00",
+        "snapshot_utc": "2026-11-10T14:31:26Z",
+        "snapshot_aest": "2026-11-11T00:31:26+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26NQ13935",
@@ -711,10 +758,16 @@
         "lga_name": "Winton Shire",
         "lga_code": "7400",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
-        "lga_allocations": null,
-        "lga_assignment_source": "geometry_fallback",
-        "council_source_url": null,
-        "provider_data_as_of_utc": null
+        "lga_allocations": [
+          {
+            "lga_name": "Winton Shire",
+            "lga_code": "7400",
+            "affected_customers": 25
+          }
+        ],
+        "lga_assignment_source": "provider",
+        "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "provider_data_as_of_utc": "2026-11-10T14:30:00Z"
       }
     },
     {
@@ -787,8 +840,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T14:16:09Z",
-        "snapshot_aest": "2026-11-11T00:16:09+10:00",
+        "snapshot_utc": "2026-11-10T14:31:26Z",
+        "snapshot_aest": "2026-11-11T00:31:26+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26SW14527",
@@ -807,10 +860,16 @@
         "lga_name": "Toowoomba Regional",
         "lga_code": "6910",
         "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
-        "lga_allocations": null,
-        "lga_assignment_source": "geometry_fallback",
-        "council_source_url": null,
-        "provider_data_as_of_utc": null
+        "lga_allocations": [
+          {
+            "lga_name": "Toowoomba Regional",
+            "lga_code": "6910",
+            "affected_customers": 26
+          }
+        ],
+        "lga_assignment_source": "provider",
+        "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "provider_data_as_of_utc": "2026-11-10T14:30:00Z"
       }
     },
     {
@@ -820,67 +879,67 @@
         "coordinates": [
           [
             [
-              153.120673512648,
-              -26.7356627696576
+              152.564838777741,
+              -25.3203956456306
             ],
             [
-              153.121372579666,
-              -26.7355460845225
+              152.565273355238,
+              -25.3196787221708
             ],
             [
-              153.121502536648,
-              -26.7361737713736
+              152.566034791769,
+              -25.3197313159622
             ],
             [
-              153.120398909848,
-              -26.737617244898
+              152.566398947402,
+              -25.3204425551307
             ],
             [
-              153.119699829164,
-              -26.7377339252461
+              152.566045648469,
+              -25.3208887221873
             ],
             [
-              153.119569880261,
-              -26.737106236854
+              152.565246916838,
+              -25.3208944065792
             ],
             [
-              153.120673512648,
-              -26.7356627696576
+              152.564838777741,
+              -25.3203956456306
             ]
           ]
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T14:16:09Z",
-        "snapshot_aest": "2026-11-11T00:16:09+10:00",
-        "provider_code": "au.qld.energex",
-        "provider_name": "Energex",
-        "outage_key": "au.qld.energex|unplanned|INCD-994673-g",
-        "outage_id": "INCD-994673-g",
+        "snapshot_utc": "2026-11-10T14:31:26Z",
+        "snapshot_aest": "2026-11-11T00:31:26+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|26WB9727",
+        "outage_id": "26WB9727",
         "outage_type": "unplanned",
-        "status": "Emergency Repairs",
-        "reason": "Emergency Repairs",
-        "affected_customers": 2,
+        "status": "Work delayed - crews unable to continue",
+        "reason": "The loss of supply is there are supply problems resulting in fluctuating voltage conditions. It is advisable to disconnect sensitive electrical appliances.",
+        "affected_customers": 3,
         "affected_customers_known": true,
-        "suburb": "BIRTINYA",
-        "street_name": "CAPITAL PL, KAWANA WAY",
-        "start_utc": "2026-11-10T07:24:02Z",
-        "etr_utc": "2026-11-10T16:00:00Z",
-        "centroid_lon": 153.1205274103634,
-        "centroid_lat": -26.736638472379905,
-        "lga_name": "Sunshine Coast Regional",
-        "lga_code": "6720",
-        "source_url": "https://services.arcgis.com/bfVzktoY0OhzQCDj/ArcGIS/rest/services/VwEnergexOutages/FeatureServer/0",
+        "suburb": "HOWARD",
+        "street_name": "KING ST, STELEY ST",
+        "start_utc": "2026-10-20T04:55:00Z",
+        "etr_utc": "2026-11-30T02:30:00Z",
+        "centroid_lon": 152.5656374472235,
+        "centroid_lat": -25.320316007557075,
+        "lga_name": "Fraser Coast Regional",
+        "lga_code": "3220",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
         "lga_allocations": [
           {
-            "lga_name": "Sunshine Coast Regional",
-            "lga_code": "6720",
-            "affected_customers": 2
+            "lga_name": "Fraser Coast Regional",
+            "lga_code": "3220",
+            "affected_customers": 3
           }
         ],
         "lga_assignment_source": "provider",
-        "council_source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "provider_data_as_of_utc": "2026-11-10T14:15:02Z"
+        "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "provider_data_as_of_utc": "2026-11-10T14:30:00Z"
       }
     }
   ]
