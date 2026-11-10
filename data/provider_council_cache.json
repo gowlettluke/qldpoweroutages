@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T08:01:20Z",
+      "fetched_utc": "2026-11-10T08:16:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -72,12 +72,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T08:01:23Z",
+      "fetched_utc": "2026-11-10T08:16:15Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T08:00:00Z",
-        "published_customers": 387,
+        "source_updated_utc": "2026-11-10T08:15:00Z",
+        "published_customers": 730,
         "event_count": 12
       },
       "events": [
@@ -152,7 +152,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "6",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 56,
           "suburb": "NORMANTON",
@@ -164,22 +164,27 @@
             {
               "lga_name": "Hope Vale Aboriginal Shire",
               "lga_code": null,
-              "affected_customers": 24
+              "affected_customers": 366
+            },
+            {
+              "lga_name": "Cook Shire",
+              "lga_code": null,
+              "affected_customers": 1
             }
           ],
           "details": {
             "event": "26FN11159",
-            "council": "Hope Vale Aboriginal Shire Council",
-            "suburb": "HOPE VALE",
+            "council": "Cook Shire Council",
+            "suburb": "COOKTOWN",
             "type": "UNPLANNED",
             "startTime": "10/11/2026 17:51",
             "restoreTime": "Under Investigation",
-            "customersAffected": "24",
+            "customersAffected": "1",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Outage reported"
           },
-          "affected_customers": 24,
-          "suburb": "HOPE VALE",
+          "affected_customers": 367,
+          "suburb": "COOKTOWN, HOPE VALE",
           "street_name": ""
         },
         {
@@ -293,10 +298,10 @@
             "suburb": "CLONCURRY",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 16:23",
-            "restoreTime": "10/11/2026 19:00",
+            "restoreTime": "11/11/2026 19:00",
             "customersAffected": "17",
             "cause": "The loss of supply is due to a bush fire.",
-            "status": "Crews working on-site"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 17,
           "suburb": "CLONCURRY",
