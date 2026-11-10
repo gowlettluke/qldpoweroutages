@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T13:31:31Z",
+      "fetched_utc": "2026-11-10T13:46:27Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 11:30 PM",
-        "source_updated_utc": "2026-11-10T13:30:02Z",
-        "published_customers": 2,
-        "event_count": 1
+        "source_updated": "10 November 2026 11:45 PM",
+        "source_updated_utc": "2026-11-10T13:45:02Z",
+        "published_customers": 18,
+        "event_count": 2
       },
       "events": [
         {
@@ -40,6 +40,35 @@
           "affected_customers": 2,
           "suburb": "BIRTINYA",
           "street_name": "CAPITAL PL, KAWANA WAY"
+        },
+        {
+          "event_id": "INCD-994710-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 16
+            }
+          ],
+          "details": {
+            "event": "INCD-994710-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4124",
+            "suburb": "GREENBANK",
+            "customersAffected": "16",
+            "restoreTime": "2026-11-11T00:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "LYNDALE RD",
+              "PAKENHAM RD"
+            ]
+          },
+          "affected_customers": 16,
+          "suburb": "GREENBANK",
+          "street_name": "LYNDALE RD, PAKENHAM RD"
         }
       ]
     },
