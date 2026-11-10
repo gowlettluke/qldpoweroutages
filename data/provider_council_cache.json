@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T00:01:23Z",
+      "fetched_utc": "2026-11-10T00:16:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -14,12 +14,12 @@
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-09T23:46:14Z",
+      "fetched_utc": "2026-11-10T00:16:12Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-09T23:45:04Z",
-        "published_customers": 587,
+        "source_updated_utc": "2026-11-10T00:10:31Z",
+        "published_customers": 466,
         "event_count": 12
       },
       "events": [
@@ -45,6 +45,30 @@
           },
           "affected_customers": 151,
           "suburb": "CAIRNS, CAIRNS CITY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11122",
+          "allocations": [
+            {
+              "lga_name": "Tablelands Regional",
+              "lga_code": null,
+              "affected_customers": 6
+            }
+          ],
+          "details": {
+            "event": "26FN11122",
+            "council": "Tablelands Regional Council",
+            "suburb": "MOUNT GARNET",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 23:33",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "6",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 6,
+          "suburb": "MOUNT GARNET",
           "street_name": ""
         },
         {
@@ -237,35 +261,6 @@
           },
           "affected_customers": 2,
           "suburb": "PERANGA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14460",
-          "allocations": [
-            {
-              "lga_name": "Murweh Shire",
-              "lga_code": null,
-              "affected_customers": 96
-            },
-            {
-              "lga_name": "Blackall Tambo Regional",
-              "lga_code": null,
-              "affected_customers": 31
-            }
-          ],
-          "details": {
-            "event": "26SW14460",
-            "council": "Blackall Tambo Regional Council",
-            "suburb": "CHARLEVILLE, TAMBO",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 23:25",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "31",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 127,
-          "suburb": "AUGATHELLA, CHARLEVILLE, NIVE, TAMBO",
           "street_name": ""
         },
         {
