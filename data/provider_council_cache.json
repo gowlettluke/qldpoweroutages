@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T22:01:22Z",
+      "fetched_utc": "2026-11-10T22:16:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 8:00 AM",
-        "source_updated_utc": "2026-11-10T22:00:02Z",
-        "published_customers": 86,
-        "event_count": 3
+        "source_updated": "11 November 2026 8:15 AM",
+        "source_updated_utc": "2026-11-10T22:15:02Z",
+        "published_customers": 232,
+        "event_count": 4
       },
       "events": [
         {
@@ -87,7 +87,7 @@
             "postcode": "4562",
             "suburb": "DOONAN",
             "customersAffected": "1",
-            "restoreTime": "2026-11-11T09:00:00+10:00",
+            "restoreTime": "2026-11-11T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -97,19 +97,76 @@
           "affected_customers": 10,
           "suburb": "DOONAN, TINBEERWAH",
           "street_name": "BRUSHTAIL LANE, SUNRISE RD"
+        },
+        {
+          "event_id": "INCD-994757-g",
+          "allocations": [
+            {
+              "lga_name": "Somerset Regional",
+              "lga_code": null,
+              "affected_customers": 146
+            }
+          ],
+          "details": {
+            "event": "INCD-994757-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Somerset Regional",
+            "postcode": "4313",
+            "suburb": "BIARRA",
+            "customersAffected": "84",
+            "restoreTime": "2026-11-11T11:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BEAUMONT RD",
+              "BRISBANE VALLEY HWY",
+              "CALCITE RD",
+              "ESK-CROWS NEST RD",
+              "FRANCIS RD",
+              "KIPPER CREEK RD"
+            ]
+          },
+          "affected_customers": 146,
+          "suburb": "BIARRA, COAL CREEK, ESK, MURRUMBA, OTTABA",
+          "street_name": "BEAUMONT RD, BELZ RD, BOWDENS LANE, BRISBANE VALLEY HWY, CALCITE RD, COAL CREEK RD, ESK KILCOY RD, ESK-CROWS NEST RD, FALLS RD, FRANCIS RD, FRANCIS TCE, KIPPER CREEK RD, LINKES LANE, MURRUMBA RD, STEGEMAN RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T22:01:24Z",
+      "fetched_utc": "2026-11-10T22:16:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T22:00:01Z",
-        "published_customers": 267,
-        "event_count": 9
+        "source_updated_utc": "2026-11-10T22:15:00Z",
+        "published_customers": 269,
+        "event_count": 10
       },
       "events": [
+        {
+          "event_id": "26CA13447",
+          "allocations": [
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26CA13447",
+            "council": "North Burnett Regional Council",
+            "suburb": "MULGILDIE",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 08:40",
+            "restoreTime": "11/11/2026 14:30",
+            "customersAffected": "2",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 2,
+          "suburb": "MULGILDIE",
+          "street_name": ""
+        },
         {
           "event_id": "26FN11079",
           "allocations": [
