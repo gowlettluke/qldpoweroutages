@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T04:31:08Z",
+      "fetched_utc": "2026-11-10T04:46:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 2:15 PM",
-        "source_updated_utc": "2026-11-10T04:15:02Z",
+        "source_updated": "10 November 2026 2:30 PM",
+        "source_updated_utc": "2026-11-10T04:30:03Z",
         "published_customers": 121,
         "event_count": 3
       },
@@ -100,39 +100,15 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T04:31:13Z",
+      "fetched_utc": "2026-11-10T04:46:17Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T04:30:01Z",
-        "published_customers": 1832,
-        "event_count": 14
+        "source_updated_utc": "2026-11-10T04:45:01Z",
+        "published_customers": 1811,
+        "event_count": 13
       },
       "events": [
-        {
-          "event_id": "26CA13411",
-          "allocations": [
-            {
-              "lga_name": "Rockhampton Regional",
-              "lga_code": null,
-              "affected_customers": 21
-            }
-          ],
-          "details": {
-            "event": "26CA13411",
-            "council": "Rockhampton Regional Council",
-            "suburb": "BERSERKER",
-            "type": "UNPLANNED",
-            "startTime": "10/11/2026 10:41",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "21",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 21,
-          "suburb": "BERSERKER",
-          "street_name": ""
-        },
         {
           "event_id": "26CA13419",
           "allocations": [
@@ -340,10 +316,10 @@
             "suburb": "CLONCURRY",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 16:23",
-            "restoreTime": "10/11/2026 15:00",
+            "restoreTime": "10/11/2026 19:00",
             "customersAffected": "35",
             "cause": "The loss of supply is due to a bush fire.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 35,
           "suburb": "CLONCURRY",
