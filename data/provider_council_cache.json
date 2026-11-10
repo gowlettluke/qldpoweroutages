@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T08:46:03Z",
+      "fetched_utc": "2026-11-10T09:01:27Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 6:30 PM",
-        "source_updated_utc": "2026-11-10T08:30:02Z",
+        "source_updated": "10 November 2026 7:00 PM",
+        "source_updated_utc": "2026-11-10T09:00:02Z",
         "published_customers": 105,
         "event_count": 2
       },
@@ -72,13 +72,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T08:46:06Z",
+      "fetched_utc": "2026-11-10T09:01:31Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T08:40:00Z",
-        "published_customers": 813,
-        "event_count": 13
+        "source_updated_utc": "2026-11-10T09:00:01Z",
+        "published_customers": 791,
+        "event_count": 14
       },
       "events": [
         {
@@ -103,6 +103,30 @@
           },
           "affected_customers": 4,
           "suburb": "MOURA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13462",
+          "allocations": [
+            {
+              "lga_name": "Isaac Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26CA13462",
+            "council": "Isaac Regional Council",
+            "suburb": "DYSART",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 16:47",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 3,
+          "suburb": "DYSART",
           "street_name": ""
         },
         {
@@ -250,7 +274,7 @@
             "suburb": "FRESHWATER POINT",
             "type": "UNPLANNED",
             "startTime": "09/11/2026 18:22",
-            "restoreTime": "10/11/2026 18:00",
+            "restoreTime": "11/11/2026 18:00",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Work delayed - crews unable to continue"
@@ -332,27 +356,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ13919",
+          "event_id": "26NQ13935",
           "allocations": [
             {
-              "lga_name": "Townsville City",
+              "lga_name": "Winton Shire",
               "lga_code": null,
-              "affected_customers": 50
+              "affected_customers": 25
             }
           ],
           "details": {
-            "event": "26NQ13919",
-            "council": "Townsville City Council",
-            "suburb": "BURDELL",
+            "event": "26NQ13935",
+            "council": "Winton Shire Council",
+            "suburb": "WINTON",
             "type": "UNPLANNED",
-            "startTime": "10/11/2026 17:00",
+            "startTime": "10/11/2026 18:43",
             "restoreTime": "Under Investigation",
-            "customersAffected": "50",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
+            "customersAffected": "25",
+            "cause": "The loss of supply is due to public safety concerns.",
+            "status": "Work delayed. Crew unable to continue."
           },
-          "affected_customers": 50,
-          "suburb": "BURDELL",
+          "affected_customers": 25,
+          "suburb": "WINTON",
           "street_name": ""
         },
         {
