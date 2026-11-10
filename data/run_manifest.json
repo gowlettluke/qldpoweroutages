@@ -1,49 +1,67 @@
 {
-  "generated_utc": "2026-11-10T20:31:01Z",
-  "generated_aest": "2026-11-11T06:31:01+10:00",
+  "generated_utc": "2026-11-10T20:46:07Z",
+  "generated_aest": "2026-11-11T06:46:07+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 11,
+  "current_outage_records": 12,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 402,
-  "current_records_after_outage_type_filter": 16,
+  "current_records_before_outage_type_filter": 404,
+  "current_records_after_outage_type_filter": 18,
   "current_records_dropped_planned_or_unknown": 386,
-  "provider_fetch_errors": {
-    "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
-  },
-  "provider_fetch_error_count": 1,
+  "provider_fetch_errors": {},
+  "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
-      "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "status": "provider",
+      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+      "source_updated": "11 November 2026 6:45 AM",
+      "source_updated_utc": "2026-11-10T20:45:02Z",
+      "published_customers": 83,
+      "event_count": 3,
+      "fetched_utc": "2026-11-10T20:46:18Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-10T20:30:00Z",
-      "published_customers": 694,
+      "source_updated_utc": "2026-11-10T20:45:00Z",
+      "published_customers": 266,
       "event_count": 9,
-      "fetched_utc": "2026-11-10T20:31:19Z"
+      "fetched_utc": "2026-11-10T20:46:21Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-10T20:31:01Z",
+    "snapshot_utc": "2026-11-10T20:46:07Z",
     "energex": {
-      "status": "error",
-      "fetched_utc": "2026-11-10T20:31:19Z",
-      "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "status": "ok",
+      "fetched_utc": "2026-11-10T20:46:18Z",
+      "scope": "all_councils",
+      "outage_type": "unplanned",
+      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+      "source_updated_utc": "2026-11-10T20:45:02Z",
+      "retained": false,
+      "total_customers": 83,
+      "rows": [
+        {
+          "lga_name": "Noosa Shire",
+          "affected_customers": 10
+        },
+        {
+          "lga_name": "Sunshine Coast Regional",
+          "affected_customers": 73
+        }
+      ]
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-10T20:31:19Z",
+      "fetched_utc": "2026-11-10T20:46:21Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-10T20:30:00Z",
+      "source_updated_utc": "2026-11-10T20:45:00Z",
       "retained": false,
-      "total_customers": 694,
+      "total_customers": 266,
       "rows": [
         {
           "lga_name": "Burke Shire",
@@ -70,8 +88,8 @@
           "affected_customers": 8
         },
         {
-          "lga_name": "South Burnett Regional",
-          "affected_customers": 434
+          "lga_name": "Mareeba Shire",
+          "affected_customers": 6
         },
         {
           "lga_name": "Winton Shire",
@@ -81,18 +99,18 @@
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 2,
+  "current_energex_records": 3,
   "current_ergon_records": 9,
-  "current_essential_records_fetched": 7,
-  "current_energex_records_fetched": 123,
+  "current_essential_records_fetched": 8,
+  "current_energex_records_fetched": 124,
   "current_ergon_records_fetched": 272,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 5,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 2990,
-  "lga_totals_rows_48h": 4088,
-  "lga_totals_latest_rows": 18,
+  "snapshot_rows_48h": 2968,
+  "lga_totals_rows_48h": 4064,
+  "lga_totals_latest_rows": 20,
   "lga_cumulative_rows": 88,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",

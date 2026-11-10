@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T19:31:17Z",
+      "fetched_utc": "2026-11-10T20:46:18Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 5:30 AM",
-        "source_updated_utc": "2026-11-10T19:30:02Z",
-        "published_customers": 93,
-        "event_count": 4
+        "source_updated": "11 November 2026 6:45 AM",
+        "source_updated_utc": "2026-11-10T20:45:02Z",
+        "published_customers": 83,
+        "event_count": 3
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4575",
             "suburb": "BIRTINYA",
             "customersAffected": "2",
-            "restoreTime": "2026-11-11T06:30:00+10:00",
+            "restoreTime": "2026-11-11T08:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -42,62 +42,6 @@
           "street_name": "CAPITAL PL, KAWANA WAY"
         },
         {
-          "event_id": "INCD-994720-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 7
-            }
-          ],
-          "details": {
-            "event": "INCD-994720-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4561",
-            "suburb": "NORTH ARM",
-            "customersAffected": "7",
-            "restoreTime": "2026-11-11T07:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ALLANDALE RD"
-            ]
-          },
-          "affected_customers": 7,
-          "suburb": "NORTH ARM",
-          "street_name": "ALLANDALE RD"
-        },
-        {
-          "event_id": "INCD-994725-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 13
-            }
-          ],
-          "details": {
-            "event": "INCD-994725-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4562",
-            "suburb": "VERRIERDALE",
-            "customersAffected": "13",
-            "restoreTime": "2026-11-11T07:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "PRYOR RD"
-            ]
-          },
-          "affected_customers": 13,
-          "suburb": "VERRIERDALE",
-          "street_name": "PRYOR RD"
-        },
-        {
           "event_id": "INCD-994727-g",
           "allocations": [
             {
@@ -108,15 +52,15 @@
           ],
           "details": {
             "event": "INCD-994727-g",
-            "cause": "Emergency Repairs",
+            "cause": "Emergency repairs in-progress",
             "status": "Emergency Repairs",
             "council": "Sunshine Coast",
             "postcode": "4561",
             "suburb": "NORTH ARM",
             "customersAffected": "10",
-            "restoreTime": "2026-11-11T08:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
+            "restoreTime": "2026-11-11T11:00:00+10:00",
+            "etrFlag": "RB",
+            "etrFlagBool": "Y",
             "streets": [
               "ALLANDALE RD",
               "FIG TREE LANE"
@@ -125,16 +69,44 @@
           "affected_customers": 71,
           "suburb": "NORTH ARM, VERRIERDALE, YANDINA CREEK",
           "street_name": "ALLANDALE RD, DEAN RD, FIG TREE LANE, PRYOR RD, SUDHOLZ RD, VENNING RD, VERRIERDALE RD"
+        },
+        {
+          "event_id": "INCD-994729-g",
+          "allocations": [
+            {
+              "lga_name": "Noosa Shire",
+              "lga_code": null,
+              "affected_customers": 10
+            }
+          ],
+          "details": {
+            "event": "INCD-994729-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Noosa",
+            "postcode": "4562",
+            "suburb": "DOONAN",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-11T08:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "SUNRISE RD"
+            ]
+          },
+          "affected_customers": 10,
+          "suburb": "DOONAN, TINBEERWAH",
+          "street_name": "BRUSHTAIL LANE, SUNRISE RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T20:31:19Z",
+      "fetched_utc": "2026-11-10T20:46:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T20:30:00Z",
-        "published_customers": 694,
+        "source_updated_utc": "2026-11-10T20:45:00Z",
+        "published_customers": 266,
         "event_count": 9
       },
       "events": [
@@ -189,6 +161,30 @@
           },
           "affected_customers": 56,
           "suburb": "NORMANTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11164",
+          "allocations": [
+            {
+              "lga_name": "Mareeba Shire",
+              "lga_code": null,
+              "affected_customers": 6
+            }
+          ],
+          "details": {
+            "event": "26FN11164",
+            "council": "Mareeba Shire Council",
+            "suburb": "EMERALD CREEK",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 05:54",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "6",
+            "cause": "The loss of supply is due to damage caused by external influences, such as birds or animals.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 6,
+          "suburb": "EMERALD CREEK",
           "street_name": ""
         },
         {
@@ -309,30 +305,6 @@
           },
           "affected_customers": 25,
           "suburb": "WINTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10938",
-          "allocations": [
-            {
-              "lga_name": "South Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 434
-            }
-          ],
-          "details": {
-            "event": "26WB10938",
-            "council": "South Burnett Regional Council",
-            "suburb": "KINGAROY",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 03:51",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "434",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 434,
-          "suburb": "KINGAROY",
           "street_name": ""
         },
         {
