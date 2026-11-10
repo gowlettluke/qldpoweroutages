@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T03:01:38Z",
+      "fetched_utc": "2026-11-10T03:16:04Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -43,39 +43,15 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T03:01:44Z",
+      "fetched_utc": "2026-11-10T03:16:07Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T03:00:00Z",
-        "published_customers": 1902,
-        "event_count": 19
+        "source_updated_utc": "2026-11-10T03:15:00Z",
+        "published_customers": 1897,
+        "event_count": 17
       },
       "events": [
-        {
-          "event_id": "26CA13401",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26CA13401",
-            "council": "Livingstone Shire Council",
-            "suburb": "THE CAVES",
-            "type": "UNPLANNED",
-            "startTime": "10/11/2026 11:20",
-            "restoreTime": "10/11/2026 14:00",
-            "customersAffected": "3",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 3,
-          "suburb": "THE CAVES",
-          "street_name": ""
-        },
         {
           "event_id": "26CA13411",
           "allocations": [
@@ -142,7 +118,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "192",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 192,
           "suburb": "BAFFLE CREEK, BERAJONDO, COLOSSEUM, LOWMEAD, MIRIAM VALE, ROSEDALE, TAUNTON",
@@ -405,7 +381,7 @@
             "startTime": "10/11/2026 09:41",
             "restoreTime": "Under Investigation",
             "customersAffected": "26",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "cause": "The loss of supply is due to a bush fire.",
             "status": "Outage reported"
           },
           "affected_customers": 26,
@@ -458,30 +434,6 @@
           },
           "affected_customers": 68,
           "suburb": "BAUPLE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB10920",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26WB10920",
-            "council": "Bundaberg Regional Council",
-            "suburb": "MEADOWVALE, MOORLAND",
-            "type": "UNPLANNED",
-            "startTime": "10/11/2026 09:36",
-            "restoreTime": "10/11/2026 18:00",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 2,
-          "suburb": "MEADOWVALE, MOORLAND",
           "street_name": ""
         },
         {
