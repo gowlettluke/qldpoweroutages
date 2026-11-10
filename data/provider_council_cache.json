@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T13:16:07Z",
+      "fetched_utc": "2026-11-10T13:31:31Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 11:00 PM",
-        "source_updated_utc": "2026-11-10T13:00:03Z",
-        "published_customers": 1510,
-        "event_count": 3
+        "source_updated": "10 November 2026 11:30 PM",
+        "source_updated_utc": "2026-11-10T13:30:02Z",
+        "published_customers": 2,
+        "event_count": 1
       },
       "events": [
         {
@@ -40,73 +40,15 @@
           "affected_customers": 2,
           "suburb": "BIRTINYA",
           "street_name": "CAPITAL PL, KAWANA WAY"
-        },
-        {
-          "event_id": "INCD-994703-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 1466
-            }
-          ],
-          "details": {
-            "event": "INCD-994703-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Moreton Bay Regional",
-            "postcode": "4503",
-            "suburb": "DAKABIN",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-11T00:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "THOMPSON RD"
-            ]
-          },
-          "affected_customers": 1466,
-          "suburb": "DAKABIN, KALLANGUR, KURWONGBAH, PETRIE",
-          "street_name": "ADAM CT, ANN ST, ANZAC AVE, APPLEWOOD CT, ASHLEY CT, BIRCHGROVE CRES, CAITLIN CT, CAMRYN CT, CASTLE CT, CATHY WAY, CLAUDIA CCT, COOPER RD, COTTERELL RD, CREST ST, CRESTWOOD CT, EUCUMBENE DR, FACTORY ST, FERNWOOD CT, FERRIER ST, FISHER RD, FLORENCE ST, GABRIELLE CT, GAIL ST, GLENMORE ST, GUMNUT ST, HANLON RD, HIGHGROVE CT, HIGHLAND CT, HILLCREST CT, KATHLEEN ST, KEDRON RD, KYAH CL, LAKESIDE RD, LEROSE AVE, LILLYPILLY CT, LYONS RD, MACS LANE, MAGREE ST, MELINDA CT, MELINDA ST, MIA ST, MONTREE CCT, NARANGBA RD, NICHOLSON RD, NUNDAH RD, OLD GYMPIE RD, OUTLOOK CT, PAUL ST, PETA ST, PINE CREST DR, RODGERS LANE, RUE MONTAIGNE, SCHOOL RD, SHIELD ST, SYLVAN CT, SYLVESTER DR, THOMPSON RD, TORRENS RD, TYLAH ST, VERONICA CT, WATTLE ST, WOOD CT"
-        },
-        {
-          "event_id": "INCD-994711-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 42
-            }
-          ],
-          "details": {
-            "event": "INCD-994711-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4560",
-            "suburb": "NAMBOUR",
-            "customersAffected": "42",
-            "restoreTime": "2026-11-11T00:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BLACKALL TCE",
-              "HOSPITAL RD",
-              "NAMBOUR-MAPLETON RD"
-            ]
-          },
-          "affected_customers": 42,
-          "suburb": "NAMBOUR",
-          "street_name": "BLACKALL TCE, HOSPITAL RD, NAMBOUR-MAPLETON RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T13:16:12Z",
+      "fetched_utc": "2026-11-10T13:31:38Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T13:15:20Z",
+        "source_updated_utc": "2026-11-10T13:30:01Z",
         "published_customers": 674,
         "event_count": 10
       },
