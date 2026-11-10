@@ -1,64 +1,47 @@
 {
-  "generated_utc": "2026-11-10T19:46:05Z",
-  "generated_aest": "2026-11-11T05:46:05+10:00",
+  "generated_utc": "2026-11-10T20:01:24Z",
+  "generated_aest": "2026-11-11T06:01:24+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 13,
+  "current_outage_records": 11,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 403,
-  "current_records_after_outage_type_filter": 17,
+  "current_records_before_outage_type_filter": 401,
+  "current_records_after_outage_type_filter": 15,
   "current_records_dropped_planned_or_unknown": 386,
-  "provider_fetch_errors": {},
-  "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {
-    "Energex": "Update delayed; using verified provider data from 2026-11-10T19:30:02Z. Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+  "provider_fetch_errors": {
+    "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
   },
+  "provider_fetch_error_count": 1,
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
-      "status": "provider_cache",
-      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "11 November 2026 5:30 AM",
-      "source_updated_utc": "2026-11-10T19:30:02Z",
-      "published_customers": 93,
-      "event_count": 4,
-      "fetched_utc": "2026-11-10T19:31:17Z",
-      "collection_error": "Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "status": "geometry_fallback",
+      "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-10T19:45:00Z",
+      "source_updated_utc": "2026-11-10T20:00:01Z",
       "published_customers": 476,
       "event_count": 9,
-      "fetched_utc": "2026-11-10T19:46:19Z"
+      "fetched_utc": "2026-11-10T20:01:38Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-10T19:46:05Z",
+    "snapshot_utc": "2026-11-10T20:01:24Z",
     "energex": {
-      "status": "ok",
-      "fetched_utc": "2026-11-10T19:31:17Z",
-      "scope": "all_councils",
-      "outage_type": "unplanned",
-      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-10T19:30:02Z",
-      "retained": true,
-      "total_customers": 93,
-      "rows": [
-        {
-          "lga_name": "Sunshine Coast Regional",
-          "affected_customers": 93
-        }
-      ]
+      "status": "error",
+      "fetched_utc": "2026-11-10T20:01:39Z",
+      "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-10T19:46:19Z",
+      "fetched_utc": "2026-11-10T20:01:38Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-10T19:45:00Z",
+      "source_updated_utc": "2026-11-10T20:00:01Z",
       "retained": false,
       "total_customers": 476,
       "rows": [
@@ -98,7 +81,7 @@
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 4,
+  "current_energex_records": 2,
   "current_ergon_records": 9,
   "current_essential_records_fetched": 6,
   "current_energex_records_fetched": 123,
@@ -107,8 +90,8 @@
   "current_essential_records_dropped_by_qld_polygon_prefilter": 4,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 2987,
-  "lga_totals_rows_48h": 4074,
+  "snapshot_rows_48h": 2983,
+  "lga_totals_rows_48h": 4072,
   "lga_totals_latest_rows": 18,
   "lga_cumulative_rows": 88,
   "outputs": {
