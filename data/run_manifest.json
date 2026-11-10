@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-10T22:46:08Z",
-  "generated_aest": "2026-11-11T08:46:08+10:00",
+  "generated_utc": "2026-11-10T23:01:28Z",
+  "generated_aest": "2026-11-11T09:01:28+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 14,
+  "current_outage_records": 17,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 455,
-  "current_records_after_outage_type_filter": 19,
-  "current_records_dropped_planned_or_unknown": 436,
+  "current_records_before_outage_type_filter": 462,
+  "current_records_after_outage_type_filter": 22,
+  "current_records_dropped_planned_or_unknown": 440,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
@@ -15,41 +15,45 @@
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "11 November 2026 8:30 AM",
-      "source_updated_utc": "2026-11-10T22:30:02Z",
-      "published_customers": 232,
-      "event_count": 4,
-      "fetched_utc": "2026-11-10T22:46:14Z"
+      "source_updated": "11 November 2026 9:00 AM",
+      "source_updated_utc": "2026-11-10T23:00:02Z",
+      "published_customers": 1141,
+      "event_count": 6,
+      "fetched_utc": "2026-11-10T23:01:36Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-10T22:45:01Z",
-      "published_customers": 563,
-      "event_count": 10,
-      "fetched_utc": "2026-11-10T22:46:20Z"
+      "source_updated_utc": "2026-11-10T23:00:39Z",
+      "published_customers": 572,
+      "event_count": 11,
+      "fetched_utc": "2026-11-10T23:01:39Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-10T22:46:08Z",
+    "snapshot_utc": "2026-11-10T23:01:28Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-10T22:46:14Z",
+      "fetched_utc": "2026-11-10T23:01:36Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-10T22:30:02Z",
+      "source_updated_utc": "2026-11-10T23:00:02Z",
       "retained": false,
-      "total_customers": 232,
+      "total_customers": 1141,
       "rows": [
+        {
+          "lga_name": "Moreton Bay City",
+          "affected_customers": 969
+        },
         {
           "lga_name": "Noosa Shire",
           "affected_customers": 10
         },
         {
           "lga_name": "Somerset Regional",
-          "affected_customers": 146
+          "affected_customers": 86
         },
         {
           "lga_name": "Sunshine Coast Regional",
@@ -59,13 +63,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-10T22:46:20Z",
+      "fetched_utc": "2026-11-10T23:01:39Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-10T22:45:01Z",
+      "source_updated_utc": "2026-11-10T23:00:39Z",
       "retained": false,
-      "total_customers": 563,
+      "total_customers": 572,
       "rows": [
         {
           "lga_name": "Burke Shire",
@@ -78,6 +82,10 @@
         {
           "lga_name": "Carpentaria Shire",
           "affected_customers": 50
+        },
+        {
+          "lga_name": "Central Highlands Regional",
+          "affected_customers": 9
         },
         {
           "lga_name": "Cloncurry Shire",
@@ -107,18 +115,18 @@
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 4,
-  "current_ergon_records": 10,
-  "current_essential_records_fetched": 60,
-  "current_energex_records_fetched": 141,
-  "current_ergon_records_fetched": 255,
+  "current_energex_records": 6,
+  "current_ergon_records": 11,
+  "current_essential_records_fetched": 59,
+  "current_energex_records_fetched": 143,
+  "current_ergon_records_fetched": 260,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 5,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
   "snapshot_rows_48h": 2926,
-  "lga_totals_rows_48h": 4052,
-  "lga_totals_latest_rows": 24,
+  "lga_totals_rows_48h": 4056,
+  "lga_totals_latest_rows": 28,
   "lga_cumulative_rows": 90,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
