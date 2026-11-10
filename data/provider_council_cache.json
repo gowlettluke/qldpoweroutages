@@ -2,25 +2,25 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T00:45:55Z",
+      "fetched_utc": "2026-11-10T01:01:29Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 10:30 AM",
-        "source_updated_utc": "2026-11-10T00:30:02Z",
+        "source_updated": "10 November 2026 11:00 AM",
+        "source_updated_utc": "2026-11-10T01:00:02Z",
         "published_customers": 0,
         "event_count": 0
       },
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T00:16:12Z",
+      "fetched_utc": "2026-11-10T01:01:35Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T00:10:31Z",
-        "published_customers": 466,
-        "event_count": 12
+        "source_updated_utc": "2026-11-10T01:00:16Z",
+        "published_customers": 580,
+        "event_count": 15
       },
       "events": [
         {
@@ -65,10 +65,34 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "6",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 6,
           "suburb": "MOUNT GARNET",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11126",
+          "allocations": [
+            {
+              "lga_name": "Cassowary Coast Regional",
+              "lga_code": null,
+              "affected_customers": 47
+            }
+          ],
+          "details": {
+            "event": "26FN11126",
+            "council": "Cassowary Coast Regional Council",
+            "suburb": "CAMP CREEK, MENA CREEK",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 10:32",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "47",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 47,
+          "suburb": "CAMP CREEK, MENA CREEK",
           "street_name": ""
         },
         {
@@ -192,6 +216,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26MK7162",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 65
+            }
+          ],
+          "details": {
+            "event": "26MK7162",
+            "council": "Mackay Regional Council",
+            "suburb": "SARINA",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 10:40",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "65",
+            "cause": "The loss of supply is due to public safety concerns.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 65,
+          "suburb": "SARINA",
+          "street_name": ""
+        },
+        {
           "event_id": "26NQ13826",
           "allocations": [
             {
@@ -237,6 +285,30 @@
           },
           "affected_customers": 26,
           "suburb": "BASALT, BLUEWATER SPRINGS",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13892",
+          "allocations": [
+            {
+              "lga_name": "Cloncurry Shire",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26NQ13892",
+            "council": "Cloncurry Shire Council",
+            "suburb": "CLONCURRY",
+            "type": "UNPLANNED",
+            "startTime": "09/11/2026 19:41",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to a pole fire.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 2,
+          "suburb": "CLONCURRY",
           "street_name": ""
         },
         {
