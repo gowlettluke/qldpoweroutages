@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T08:31:27Z",
+      "fetched_utc": "2026-11-10T08:46:03Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -72,13 +72,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T08:16:15Z",
+      "fetched_utc": "2026-11-10T08:46:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T08:15:00Z",
-        "published_customers": 730,
-        "event_count": 12
+        "source_updated_utc": "2026-11-10T08:40:00Z",
+        "published_customers": 813,
+        "event_count": 13
       },
       "events": [
         {
@@ -96,7 +96,7 @@
             "suburb": "MOURA",
             "type": "UNPLANNED",
             "startTime": "10/11/2026 17:54",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "10/11/2026 20:30",
             "customersAffected": "4",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
@@ -353,6 +353,30 @@
           },
           "affected_customers": 50,
           "suburb": "BURDELL",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14520",
+          "allocations": [
+            {
+              "lga_name": "Western Downs Regional",
+              "lga_code": null,
+              "affected_customers": 83
+            }
+          ],
+          "details": {
+            "event": "26SW14520",
+            "council": "Western Downs Regional Council",
+            "suburb": "TARA",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 18:13",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "83",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 83,
+          "suburb": "TARA",
           "street_name": ""
         },
         {
