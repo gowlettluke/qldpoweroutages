@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T12:15:58Z",
+      "fetched_utc": "2026-11-10T12:31:32Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 10:00 PM",
-        "source_updated_utc": "2026-11-10T12:00:02Z",
-        "published_customers": 1467,
-        "event_count": 2
+        "source_updated": "10 November 2026 10:30 PM",
+        "source_updated_utc": "2026-11-10T12:30:02Z",
+        "published_customers": 1510,
+        "event_count": 3
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4575",
             "suburb": "BIRTINYA",
             "customersAffected": "2",
-            "restoreTime": "2026-11-10T23:00:00+10:00",
+            "restoreTime": "2026-11-11T00:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -47,7 +47,7 @@
             {
               "lga_name": "Moreton Bay City",
               "lga_code": null,
-              "affected_customers": 1465
+              "affected_customers": 1466
             }
           ],
           "details": {
@@ -58,26 +58,56 @@
             "postcode": "4503",
             "suburb": "DAKABIN",
             "customersAffected": "1",
-            "restoreTime": "2026-11-11T00:00:00+10:00",
+            "restoreTime": "2026-11-11T00:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "THOMPSON RD"
             ]
           },
-          "affected_customers": 1465,
+          "affected_customers": 1466,
           "suburb": "DAKABIN, KALLANGUR, KURWONGBAH, PETRIE",
           "street_name": "ADAM CT, ANN ST, ANZAC AVE, APPLEWOOD CT, ASHLEY CT, BIRCHGROVE CRES, CAITLIN CT, CAMRYN CT, CASTLE CT, CATHY WAY, CLAUDIA CCT, COOPER RD, COTTERELL RD, CREST ST, CRESTWOOD CT, EUCUMBENE DR, FACTORY ST, FERNWOOD CT, FERRIER ST, FISHER RD, FLORENCE ST, GABRIELLE CT, GAIL ST, GLENMORE ST, GUMNUT ST, HANLON RD, HIGHGROVE CT, HIGHLAND CT, HILLCREST CT, KATHLEEN ST, KEDRON RD, KYAH CL, LAKESIDE RD, LEROSE AVE, LILLYPILLY CT, LYONS RD, MACS LANE, MAGREE ST, MELINDA CT, MELINDA ST, MIA ST, MONTREE CCT, NARANGBA RD, NICHOLSON RD, NUNDAH RD, OLD GYMPIE RD, OUTLOOK CT, PAUL ST, PETA ST, PINE CREST DR, RODGERS LANE, RUE MONTAIGNE, SCHOOL RD, SHIELD ST, SYLVAN CT, SYLVESTER DR, THOMPSON RD, TORRENS RD, TYLAH ST, VERONICA CT, WATTLE ST, WOOD CT"
+        },
+        {
+          "event_id": "INCD-994711-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 42
+            }
+          ],
+          "details": {
+            "event": "INCD-994711-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4560",
+            "suburb": "NAMBOUR",
+            "customersAffected": "42",
+            "restoreTime": "2026-11-11T00:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BLACKALL TCE",
+              "HOSPITAL RD",
+              "NAMBOUR-MAPLETON RD"
+            ]
+          },
+          "affected_customers": 42,
+          "suburb": "NAMBOUR",
+          "street_name": "BLACKALL TCE, HOSPITAL RD, NAMBOUR-MAPLETON RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T11:46:06Z",
+      "fetched_utc": "2026-11-10T12:31:35Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T11:40:00Z",
-        "published_customers": 2263,
+        "source_updated_utc": "2026-11-10T12:30:00Z",
+        "published_customers": 1969,
         "event_count": 12
       },
       "events": [
@@ -132,35 +162,6 @@
           },
           "affected_customers": 56,
           "suburb": "NORMANTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN11159",
-          "allocations": [
-            {
-              "lga_name": "Hope Vale Aboriginal Shire",
-              "lga_code": null,
-              "affected_customers": 366
-            },
-            {
-              "lga_name": "Cook Shire",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "26FN11159",
-            "council": "Cook Shire Council",
-            "suburb": "COOKTOWN",
-            "type": "UNPLANNED",
-            "startTime": "10/11/2026 17:51",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "1",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 367,
-          "suburb": "COOKTOWN, HOPE VALE",
           "street_name": ""
         },
         {
@@ -301,7 +302,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "83",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 83,
           "suburb": "TARA",
@@ -358,6 +359,30 @@
           },
           "affected_customers": 26,
           "suburb": "BIRNAM, CRANLEY, MOUNT KYNOCH, TOOWOOMBA, WETALLA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14528",
+          "allocations": [
+            {
+              "lga_name": "Southern Downs Regional",
+              "lga_code": null,
+              "affected_customers": 73
+            }
+          ],
+          "details": {
+            "event": "26SW14528",
+            "council": "Southern Downs Regional Council",
+            "suburb": "STANTHORPE",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 22:07",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "73",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 73,
+          "suburb": "STANTHORPE",
           "street_name": ""
         },
         {
