@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T05:46:19Z",
+      "fetched_utc": "2026-11-10T06:01:32Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 3:45 PM",
-        "source_updated_utc": "2026-11-10T05:45:02Z",
-        "published_customers": 121,
-        "event_count": 3
+        "source_updated": "10 November 2026 4:00 PM",
+        "source_updated_utc": "2026-11-10T06:00:02Z",
+        "published_customers": 114,
+        "event_count": 2
       },
       "events": [
         {
@@ -39,35 +39,6 @@
           "affected_customers": 103,
           "suburb": "BURNETT CREEK, CARNEYS CREEK, CROFTBY, MOOGERAH",
           "street_name": "BRENNAN RD, BURNETT CREEK RD, CARNEYS CREEK RD, CHALK RD, CROFTBY CHURCH RD, CROFTBY RD, HEAD RD, LUCY LANE, MINTO RD, SAWATZKI RD, WATSON RD"
-        },
-        {
-          "event_id": "INCD-994588-g",
-          "allocations": [
-            {
-              "lga_name": "Gold Coast City",
-              "lga_code": null,
-              "affected_customers": 7
-            }
-          ],
-          "details": {
-            "event": "INCD-994588-g",
-            "cause": "A vehicle damaging our equipment",
-            "status": "Emergency Repairs",
-            "council": "Gold Coast City",
-            "postcode": "4211",
-            "suburb": "GILSTON",
-            "customersAffected": "7",
-            "restoreTime": "2026-11-10T17:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "GILSTON RD",
-              "HINDE RD"
-            ]
-          },
-          "affected_customers": 7,
-          "suburb": "GILSTON",
-          "street_name": "GILSTON RD, HINDE RD"
         },
         {
           "event_id": "INCD-994608-g",
@@ -100,13 +71,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T05:46:21Z",
+      "fetched_utc": "2026-11-10T06:01:37Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T05:45:00Z",
-        "published_customers": 1727,
-        "event_count": 12
+        "source_updated_utc": "2026-11-10T06:00:00Z",
+        "published_customers": 577,
+        "event_count": 11
       },
       "events": [
         {
@@ -115,22 +86,22 @@
             {
               "lga_name": "Gladstone Regional",
               "lga_code": null,
-              "affected_customers": 101
+              "affected_customers": 24
             }
           ],
           "details": {
             "event": "26CA13419",
             "council": "Gladstone Regional Council",
-            "suburb": "COLOSSEUM, MIRIAM VALE, MOUNT TOM",
+            "suburb": "COLOSSEUM, MIRIAM VALE",
             "type": "UNPLANNED",
             "startTime": "10/11/2026 12:47",
             "restoreTime": "Under Investigation",
-            "customersAffected": "101",
+            "customersAffected": "24",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Outage reported"
           },
-          "affected_customers": 101,
-          "suburb": "COLOSSEUM, MIRIAM VALE, MOUNT TOM",
+          "affected_customers": 24,
+          "suburb": "COLOSSEUM, MIRIAM VALE",
           "street_name": ""
         },
         {
@@ -158,6 +129,35 @@
           "street_name": ""
         },
         {
+          "event_id": "26FN11156",
+          "allocations": [
+            {
+              "lga_name": "Mareeba Shire",
+              "lga_code": null,
+              "affected_customers": 22
+            },
+            {
+              "lga_name": "Tablelands Regional",
+              "lga_code": null,
+              "affected_customers": 11
+            }
+          ],
+          "details": {
+            "event": "26FN11156",
+            "council": "Mareeba Shire Council",
+            "suburb": "CHEWKO, MAREEBA",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 13:55",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "22",
+            "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 33,
+          "suburb": "CHEWKO, MAREEBA, WALKAMIN",
+          "street_name": ""
+        },
+        {
           "event_id": "26MK7099",
           "allocations": [
             {
@@ -178,30 +178,6 @@
             "status": "Crews working on-site"
           },
           "affected_customers": 63,
-          "suburb": "SARINA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26MK7117",
-          "allocations": [
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 4
-            }
-          ],
-          "details": {
-            "event": "26MK7117",
-            "council": "Mackay Regional Council",
-            "suburb": "SARINA",
-            "type": "UNPLANNED",
-            "startTime": "08/11/2026 18:52",
-            "restoreTime": "10/11/2026 18:00",
-            "customersAffected": "4",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Work delayed - crews unable to continue"
-          },
-          "affected_customers": 4,
           "suburb": "SARINA",
           "street_name": ""
         },
@@ -326,30 +302,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ13916",
-          "allocations": [
-            {
-              "lga_name": "Mount Isa City",
-              "lga_code": null,
-              "affected_customers": 1102
-            }
-          ],
-          "details": {
-            "event": "26NQ13916",
-            "council": "Mount Isa City Council",
-            "suburb": "HAPPY VALLEY, HEALY, KALKADOON, LANSKEY, MILES END, MORNINGTON, MOUNT ISA, MOUNT ISA CITY, PARKSIDE, SOLDIERS HILL, SPREADBOROUGH",
-            "type": "UNPLANNED",
-            "startTime": "10/11/2026 15:20",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "1102",
-            "cause": "The loss of supply is due to public safety concerns as directed by emergency services.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 1102,
-          "suburb": "HAPPY VALLEY, HEALY, KALKADOON, LANSKEY, MILES END, MORNINGTON, MOUNT ISA, MOUNT ISA CITY, PARKSIDE, SOLDIERS HILL, SPREADBOROUGH",
-          "street_name": ""
-        },
-        {
           "event_id": "26WB10927",
           "allocations": [
             {
@@ -364,7 +316,7 @@
             "suburb": "TORQUAY",
             "type": "UNPLANNED",
             "startTime": "10/11/2026 14:40",
-            "restoreTime": "10/11/2026 16:00",
+            "restoreTime": "10/11/2026 16:15",
             "customersAffected": "186",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
