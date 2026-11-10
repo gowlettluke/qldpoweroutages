@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T21:46:09Z",
+      "fetched_utc": "2026-11-10T22:01:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 7:30 AM",
-        "source_updated_utc": "2026-11-10T21:30:02Z",
-        "published_customers": 83,
+        "source_updated": "11 November 2026 8:00 AM",
+        "source_updated_utc": "2026-11-10T22:00:02Z",
+        "published_customers": 86,
         "event_count": 3
       },
       "events": [
@@ -47,7 +47,7 @@
             {
               "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
-              "affected_customers": 71
+              "affected_customers": 74
             }
           ],
           "details": {
@@ -66,7 +66,7 @@
               "FIG TREE LANE"
             ]
           },
-          "affected_customers": 71,
+          "affected_customers": 74,
           "suburb": "NORTH ARM, VERRIERDALE, YANDINA CREEK",
           "street_name": "ALLANDALE RD, DEAN RD, FIG TREE LANE, PRYOR RD, SUDHOLZ RD, VENNING RD, VERRIERDALE RD"
         },
@@ -101,13 +101,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T21:46:12Z",
+      "fetched_utc": "2026-11-10T22:01:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T21:45:01Z",
-        "published_customers": 260,
-        "event_count": 8
+        "source_updated_utc": "2026-11-10T22:00:01Z",
+        "published_customers": 267,
+        "event_count": 9
       },
       "events": [
         {
@@ -281,6 +281,30 @@
           },
           "affected_customers": 25,
           "suburb": "WINTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13945",
+          "allocations": [
+            {
+              "lga_name": "Hinchinbrook Shire",
+              "lga_code": null,
+              "affected_customers": 7
+            }
+          ],
+          "details": {
+            "event": "26NQ13945",
+            "council": "Hinchinbrook Shire Council",
+            "suburb": "ALLINGHAM, FORREST BEACH",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 06:30",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "7",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 7,
+          "suburb": "ALLINGHAM, FORREST BEACH",
           "street_name": ""
         },
         {
