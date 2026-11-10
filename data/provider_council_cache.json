@@ -2,27 +2,51 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T01:01:29Z",
+      "fetched_utc": "2026-11-10T01:17:51Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 11:00 AM",
-        "source_updated_utc": "2026-11-10T01:00:02Z",
+        "source_updated": "10 November 2026 11:15 AM",
+        "source_updated_utc": "2026-11-10T01:15:02Z",
         "published_customers": 0,
         "event_count": 0
       },
       "events": []
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T01:01:35Z",
+      "fetched_utc": "2026-11-10T01:17:57Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T01:00:16Z",
-        "published_customers": 580,
-        "event_count": 15
+        "source_updated_utc": "2026-11-10T01:15:17Z",
+        "published_customers": 583,
+        "event_count": 16
       },
       "events": [
+        {
+          "event_id": "26CA13401",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26CA13401",
+            "council": "Livingstone Shire Council",
+            "suburb": "THE CAVES",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 11:20",
+            "restoreTime": "10/11/2026 14:00",
+            "customersAffected": "3",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 3,
+          "suburb": "THE CAVES",
+          "street_name": ""
+        },
         {
           "event_id": "26FN11079",
           "allocations": [
@@ -89,7 +113,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "47",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 47,
           "suburb": "CAMP CREEK, MENA CREEK",

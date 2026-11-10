@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-10T01:01:23Z",
-  "generated_aest": "2026-11-10T11:01:23+10:00",
+  "generated_utc": "2026-11-10T01:17:45Z",
+  "generated_aest": "2026-11-10T11:17:45+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 15,
+  "current_outage_records": 16,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 561,
+  "current_records_before_outage_type_filter": 554,
   "current_records_after_outage_type_filter": 21,
-  "current_records_dropped_planned_or_unknown": 540,
+  "current_records_dropped_planned_or_unknown": 533,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
@@ -15,44 +15,44 @@
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "10 November 2026 11:00 AM",
-      "source_updated_utc": "2026-11-10T01:00:02Z",
+      "source_updated": "10 November 2026 11:15 AM",
+      "source_updated_utc": "2026-11-10T01:15:02Z",
       "published_customers": 0,
       "event_count": 0,
-      "fetched_utc": "2026-11-10T01:01:29Z"
+      "fetched_utc": "2026-11-10T01:17:51Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-10T01:00:16Z",
-      "published_customers": 580,
-      "event_count": 15,
-      "fetched_utc": "2026-11-10T01:01:35Z"
+      "source_updated_utc": "2026-11-10T01:15:17Z",
+      "published_customers": 583,
+      "event_count": 16,
+      "fetched_utc": "2026-11-10T01:17:57Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-10T01:01:23Z",
+    "snapshot_utc": "2026-11-10T01:17:45Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-10T01:01:29Z",
+      "fetched_utc": "2026-11-10T01:17:51Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-10T01:00:02Z",
+      "source_updated_utc": "2026-11-10T01:15:02Z",
       "retained": false,
       "total_customers": 0,
       "rows": []
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-10T01:01:35Z",
+      "fetched_utc": "2026-11-10T01:17:57Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-10T01:00:16Z",
+      "source_updated_utc": "2026-11-10T01:15:17Z",
       "retained": false,
-      "total_customers": 580,
+      "total_customers": 583,
       "rows": [
         {
           "lga_name": "Cairns Regional",
@@ -75,6 +75,10 @@
           "affected_customers": 71
         },
         {
+          "lga_name": "Livingstone Shire",
+          "affected_customers": 3
+        },
+        {
           "lga_name": "Mackay Regional",
           "affected_customers": 240
         },
@@ -91,17 +95,17 @@
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 0,
-  "current_ergon_records": 15,
-  "current_essential_records_fetched": 63,
-  "current_energex_records_fetched": 154,
-  "current_ergon_records_fetched": 344,
+  "current_ergon_records": 16,
+  "current_essential_records_fetched": 58,
+  "current_energex_records_fetched": 153,
+  "current_ergon_records_fetched": 343,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 5,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3217,
-  "lga_totals_rows_48h": 4150,
-  "lga_totals_latest_rows": 16,
+  "snapshot_rows_48h": 3193,
+  "lga_totals_rows_48h": 4108,
+  "lga_totals_latest_rows": 18,
   "lga_cumulative_rows": 77,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
