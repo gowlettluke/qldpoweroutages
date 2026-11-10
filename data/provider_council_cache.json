@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T19:16:16Z",
+      "fetched_utc": "2026-11-10T19:31:17Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 5:15 AM",
-        "source_updated_utc": "2026-11-10T19:15:02Z",
-        "published_customers": 9,
-        "event_count": 2
+        "source_updated": "11 November 2026 5:30 AM",
+        "source_updated_utc": "2026-11-10T19:30:02Z",
+        "published_customers": 93,
+        "event_count": 4
       },
       "events": [
         {
@@ -68,15 +68,72 @@
           "affected_customers": 7,
           "suburb": "NORTH ARM",
           "street_name": "ALLANDALE RD"
+        },
+        {
+          "event_id": "INCD-994725-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 13
+            }
+          ],
+          "details": {
+            "event": "INCD-994725-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4562",
+            "suburb": "VERRIERDALE",
+            "customersAffected": "13",
+            "restoreTime": "2026-11-11T07:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "PRYOR RD"
+            ]
+          },
+          "affected_customers": 13,
+          "suburb": "VERRIERDALE",
+          "street_name": "PRYOR RD"
+        },
+        {
+          "event_id": "INCD-994727-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 71
+            }
+          ],
+          "details": {
+            "event": "INCD-994727-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Sunshine Coast",
+            "postcode": "4561",
+            "suburb": "NORTH ARM",
+            "customersAffected": "10",
+            "restoreTime": "2026-11-11T08:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALLANDALE RD",
+              "FIG TREE LANE"
+            ]
+          },
+          "affected_customers": 71,
+          "suburb": "NORTH ARM, VERRIERDALE, YANDINA CREEK",
+          "street_name": "ALLANDALE RD, DEAN RD, FIG TREE LANE, PRYOR RD, SUDHOLZ RD, VENNING RD, VERRIERDALE RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T19:16:21Z",
+      "fetched_utc": "2026-11-10T19:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T19:15:19Z",
+        "source_updated_utc": "2026-11-10T19:30:18Z",
         "published_customers": 476,
         "event_count": 9
       },
@@ -272,7 +329,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "216",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 216,
           "suburb": "KINGAROY",
