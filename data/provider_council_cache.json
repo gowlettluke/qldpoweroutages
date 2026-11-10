@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T07:16:08Z",
+      "fetched_utc": "2026-11-10T07:31:05Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 5:00 PM",
-        "source_updated_utc": "2026-11-10T07:00:02Z",
+        "source_updated": "10 November 2026 5:15 PM",
+        "source_updated_utc": "2026-11-10T07:15:02Z",
         "published_customers": 145,
         "event_count": 2
       },
@@ -72,15 +72,39 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T07:16:13Z",
+      "fetched_utc": "2026-11-10T07:31:12Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T07:15:12Z",
-        "published_customers": 439,
-        "event_count": 11
+        "source_updated_utc": "2026-11-10T07:30:00Z",
+        "published_customers": 1638,
+        "event_count": 12
       },
       "events": [
+        {
+          "event_id": "26CA13419",
+          "allocations": [
+            {
+              "lga_name": "Gladstone Regional",
+              "lga_code": null,
+              "affected_customers": 1199
+            }
+          ],
+          "details": {
+            "event": "26CA13419",
+            "council": "Gladstone Regional Council",
+            "suburb": "BENARABY, BOROREN, COLOSSEUM, FORESHORES, IVERAGH, MIRIAM VALE, MOUNT TOM, NAGOORIN, RODDS BAY, TURKEY BEACH",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 12:47",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "1199",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 1199,
+          "suburb": "BENARABY, BOROREN, COLOSSEUM, FORESHORES, IVERAGH, MIRIAM VALE, MOUNT TOM, NAGOORIN, RODDS BAY, TURKEY BEACH",
+          "street_name": ""
+        },
         {
           "event_id": "26FN11079",
           "allocations": [
@@ -157,7 +181,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "6",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 56,
           "suburb": "NORMANTON",
@@ -178,7 +202,7 @@
             "suburb": "SARINA",
             "type": "UNPLANNED",
             "startTime": "08/11/2026 18:50",
-            "restoreTime": "10/11/2026 17:00",
+            "restoreTime": "10/11/2026 20:00",
             "customersAffected": "63",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
