@@ -79,8 +79,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.energex",
         "provider_name": "Energex",
         "outage_key": "au.qld.energex|unplanned|INCD-994562-g",
@@ -108,7 +108,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "provider_data_as_of_utc": "2026-11-10T02:30:02Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:02Z"
       }
     },
     {
@@ -149,8 +149,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26CA13401",
@@ -178,7 +178,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -223,8 +223,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26CA13411",
@@ -252,33 +252,67 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.69625341849,
+              -23.0442462083471
+            ],
+            [
+              150.696864709599,
+              -23.043952057115
+            ],
+            [
+              150.697182556694,
+              -23.0445177784729
+            ],
+            [
+              150.696519032739,
+              -23.0464620793871
+            ],
+            [
+              150.695907730132,
+              -23.0467562307745
+            ],
+            [
+              150.695589881302,
+              -23.0461905069625
+            ],
+            [
+              150.69625341849,
+              -23.0442462083471
+            ]
+          ]
+        ]
+      },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26CA13417",
         "outage_id": "26CA13417",
         "outage_type": "unplanned",
-        "status": "Crews on route",
+        "status": "Crews working on-site",
         "reason": "The loss of supply is due to damage caused by accidental contact with powerlines by a third party.",
         "affected_customers": 2,
         "affected_customers_known": true,
         "suburb": "WOODBURY",
-        "street_name": "",
+        "street_name": "WOODBURY RD",
         "start_utc": "2026-11-09T23:11:00Z",
-        "etr_utc": null,
-        "centroid_lon": null,
-        "centroid_lat": null,
+        "etr_utc": "2026-11-10T06:00:00Z",
+        "centroid_lon": 150.69637849183545,
+        "centroid_lat": -23.04535296531095,
         "lga_name": "Livingstone Shire",
         "lga_code": "4530",
-        "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
         "lga_allocations": [
           {
             "lga_name": "Livingstone Shire",
@@ -288,7 +322,291 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.593144982796,
+              -24.5003852226891
+            ],
+            [
+              151.593183096766,
+              -24.500127724732
+            ],
+            [
+              151.639603353653,
+              -24.4067744586639
+            ],
+            [
+              151.640144186104,
+              -24.4065187900672
+            ],
+            [
+              151.795233828025,
+              -24.4338389715956
+            ],
+            [
+              151.795518943515,
+              -24.4339928461384
+            ],
+            [
+              151.817905747416,
+              -24.458568596048
+            ],
+            [
+              151.817915724935,
+              -24.4585799125281
+            ],
+            [
+              151.880881337969,
+              -24.5323393397059
+            ],
+            [
+              151.880911075273,
+              -24.5323782026176
+            ],
+            [
+              151.897318394442,
+              -24.5564182452201
+            ],
+            [
+              151.89735816083,
+              -24.5564900943007
+            ],
+            [
+              151.900368133403,
+              -24.5634011703547
+            ],
+            [
+              151.900381567825,
+              -24.5636994219422
+            ],
+            [
+              151.858230221192,
+              -24.6896816979589
+            ],
+            [
+              151.858224995831,
+              -24.6896963969732
+            ],
+            [
+              151.841477841025,
+              -24.7341794210395
+            ],
+            [
+              151.840831993924,
+              -24.7344522478352
+            ],
+            [
+              151.62044360268,
+              -24.6554438572777
+            ],
+            [
+              151.620137385939,
+              -24.6550958075085
+            ],
+            [
+              151.593144982796,
+              -24.5003852226891
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|26CA13418",
+        "outage_id": "26CA13418",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 192,
+        "affected_customers_known": true,
+        "suburb": "BAFFLE CREEK, BERAJONDO, COLOSSEUM, LOWMEAD, MIRIAM VALE, ROSEDALE, TAUNTON",
+        "street_name": "BERAJONDO-LOWMEAD RD, BRAUERS RD, BRUCE HWY, BUNDABERG - LOWMEAD RD, BUNDABERG-LOWMEAD RD, CATTLE STATION RD, CHARNWOOD RD, CLARKES RD, CLAYTONS RD, CROSS RD, DAWSONS RD, DIAMOND HILL RD, FORESTRY RD, GAY ST, GORGE RD, HILLS RD, JOHN CLIFFORD WAY, KORENAN RD, LOGAN RD, LOWMEAD RD, OFF BRUCE HWY, OFF DAWSONS RD, OFF GAY ST, OLD TOWERAN RD, ROWS RD, SEEDS RD, SHEAHAN RD, SULLIVAN RD, SUNLIGHT HILL RD, TABLELAND RD, TABLELANDS RD, TURNER RD, UNKNOWN ST",
+        "start_utc": "2026-11-10T02:47:00Z",
+        "etr_utc": null,
+        "centroid_lon": 151.7419232444131,
+        "centroid_lat": -24.56461104076647,
+        "lga_name": "Gladstone Regional",
+        "lga_code": "3360",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
+        "lga_allocations": [
+          {
+            "lga_name": "Gladstone Regional",
+            "lga_code": "3360",
+            "affected_customers": 192
+          }
+        ],
+        "lga_assignment_source": "provider",
+        "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.324904652204,
+              -24.2461101068604
+            ],
+            [
+              151.324792890963,
+              -24.2457325305881
+            ],
+            [
+              151.362855483715,
+              -24.0581814043495
+            ],
+            [
+              151.363138595472,
+              -24.0578521674625
+            ],
+            [
+              151.379301746063,
+              -24.0512563020774
+            ],
+            [
+              151.379544091716,
+              -24.051219213505
+            ],
+            [
+              151.615582317916,
+              -24.0701467836232
+            ],
+            [
+              151.615595901887,
+              -24.0701480371557
+            ],
+            [
+              151.650600710596,
+              -24.0738265512286
+            ],
+            [
+              151.650760532845,
+              -24.0738694446942
+            ],
+            [
+              151.651899671045,
+              -24.0743810536715
+            ],
+            [
+              151.652129773653,
+              -24.0745974162839
+            ],
+            [
+              151.653255179984,
+              -24.0768438417243
+            ],
+            [
+              151.653259177325,
+              -24.0768520347598
+            ],
+            [
+              151.65341203978,
+              -24.0771739047094
+            ],
+            [
+              151.653426503205,
+              -24.0772080960971
+            ],
+            [
+              151.771577196085,
+              -24.3931534546147
+            ],
+            [
+              151.771370129309,
+              -24.3936831410107
+            ],
+            [
+              151.764413483553,
+              -24.3976084730616
+            ],
+            [
+              151.764373841082,
+              -24.3976285931562
+            ],
+            [
+              151.604141962207,
+              -24.4702047609662
+            ],
+            [
+              151.604035438942,
+              -24.4702396528221
+            ],
+            [
+              151.597277351353,
+              -24.4716777093817
+            ],
+            [
+              151.597015265912,
+              -24.4716677774752
+            ],
+            [
+              151.51708295951,
+              -24.4481116715836
+            ],
+            [
+              151.51686607548,
+              -24.4479821399716
+            ],
+            [
+              151.486117664623,
+              -24.4162900779873
+            ],
+            [
+              151.486114212853,
+              -24.4162864805565
+            ],
+            [
+              151.324904652204,
+              -24.2461101068604
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
+        "provider_code": "au.qld.ergon",
+        "provider_name": "Ergon Energy",
+        "outage_key": "au.qld.ergon|unplanned|26CA13419",
+        "outage_id": "26CA13419",
+        "outage_type": "unplanned",
+        "status": "Outage reported",
+        "reason": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+        "affected_customers": 1199,
+        "affected_customers_known": true,
+        "suburb": "BENARABY, BOROREN, COLOSSEUM, FORESHORES, IVERAGH, MIRIAM VALE, MOUNT TOM, NAGOORIN, RODDS BAY, TURKEY BEACH",
+        "street_name": "ANDERSON LANE, ANDERSON ST, BARIVELOE RD, BARRAMUNDI ST, BATES RD, BATES ST, BELL ST, BELLS RD, BINDAREE RD, BLACKMAN GAP RD, BLACKNEY ST, BLOMFIELD ST, BLOOMFIELD ST, BOWTON ST, BRENNAN ST, BRUCE HWY, BURGESS RD, CAMERON RD, CAWTHRAY RD, CHAPMAN ST, CHERRYVALE RD, CHRISTENSEN RD, CLARKS RD, CLAUDE WHARTON DR, CORAL ST, DAHLS RD, DAISY DELL RD, DALGLEISH RD, DANGAR ST, DANIELS ST, DEACON ST, DONALDSON RD, DOUGALL ST, DOVEDALE RD, DUDE RANCH RD, EDINBURGH CT, FINGERBOARD RD, FORESHORES RD, FORESTRY RD, GRETEL ST, GWYNNE RANGE RD, HAKEA CT, HALLORANS RD, HANCOCK CL, HANCOCK ST, HARBOUR DR, HENDERSON ST, HICKMAN ST, INNES ST, INTREPID DR, JEFFERY RD, JINKS ST, JULIA ST, KELLOW ST, KELLYS RD, KENT ST, KESSELL ST, KIORA RD, KOORAWATHA DR, LARSON ST, LAVENDER RD, LESTERS RD, LOWMEAD RD, MACDONALD ST, MARSHALL ST, MARTIN ST, MARY ST, MCCLURE RD, MENZIES ST, MESSMATE DR, MICHAEL ST, MOSSMAN RD, MOSSMANS RD, MUGUL RD, NETHERLEIGH RD, NORTH ST, NORTON RD, NOVELTIE ST, OFF BINDAREE RD, OFF BRUCE HWY, OFF DOUGALL ST, OFF HICKMAN ST, OTTO RD, PAGES RD, RANDLES RD, RED HILL RD, REEDBED RD, REEF CL, REX ST, RODDS BAY RD, ROE ST, SADOCK RD, SCOINES ST, SCOTTS RD, SEA CLOSE ST, SHANVALE RD, SHILLING ST, SHORT ST, SMALLCOMBE RD, SOUTH ST, STRINGYBARK CT, THE ESPLANADE, THORNES RD, THREE MILE RD, THWAITES RD, TURKEY BEACH RD, TURKEY RD, VANDERWOLF RD, WADELEIGH RD, WADELEIGH ST, WALDEN CT, WARD'S RD, WATTLE CT, WILDMAN RD, WOODSIDE RD, WORTHINGTON RD",
+        "start_utc": "2026-11-10T02:47:00Z",
+        "etr_utc": null,
+        "centroid_lon": 151.54351223282563,
+        "centroid_lat": -24.250830351645423,
+        "lga_name": "Gladstone Regional",
+        "lga_code": "3360",
+        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
+        "lga_allocations": [
+          {
+            "lga_name": "Gladstone Regional",
+            "lga_code": "3360",
+            "affected_customers": 1199
+          }
+        ],
+        "lga_assignment_source": "provider",
+        "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -385,8 +703,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26FN11079",
@@ -414,7 +732,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -503,8 +821,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26FN11126",
@@ -532,7 +850,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -629,8 +947,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26MK7099",
@@ -643,7 +961,7 @@
         "suburb": "SARINA",
         "street_name": "BRUCE HWY, COURTNEY GAP RD, GURNETT RD, KIPPEN RD, L PITCHER RD, OONOOIE RD, RIFLE RANGE RD",
         "start_utc": "2026-11-08T08:50:00Z",
-        "etr_utc": "2026-11-10T01:42:00Z",
+        "etr_utc": "2026-11-10T07:00:00Z",
         "centroid_lon": 149.2188144835915,
         "centroid_lat": -21.463634952385043,
         "lga_name": "Mackay Regional",
@@ -658,7 +976,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -711,8 +1029,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26MK7117",
@@ -740,7 +1058,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -809,8 +1127,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26MK7142",
@@ -838,7 +1156,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -883,8 +1201,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26MK7147",
@@ -912,7 +1230,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -961,8 +1279,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26MK7150",
@@ -990,7 +1308,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -1063,8 +1381,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26MK7162",
@@ -1092,7 +1410,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -1205,8 +1523,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26NQ13826",
@@ -1234,7 +1552,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -1315,8 +1633,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26NQ13889",
@@ -1344,77 +1662,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              140.582143680027,
-              -19.7215331195332
-            ],
-            [
-              140.5828020422,
-              -19.7214102326711
-            ],
-            [
-              140.582931812793,
-              -19.7220336794045
-            ],
-            [
-              140.511015493679,
-              -19.8234737616311
-            ],
-            [
-              140.510356710382,
-              -19.823596247196
-            ],
-            [
-              140.5102272828,
-              -19.822972806153
-            ],
-            [
-              140.582143680027,
-              -19.7215331195332
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
-        "provider_code": "au.qld.ergon",
-        "provider_name": "Ergon Energy",
-        "outage_key": "au.qld.ergon|unplanned|26NQ13892",
-        "outage_id": "26NQ13892",
-        "outage_type": "unplanned",
-        "status": "Crews working on-site",
-        "reason": "The loss of supply is due to a pole fire.",
-        "affected_customers": 2,
-        "affected_customers_known": true,
-        "suburb": "CLONCURRY",
-        "street_name": "ALCALA STATION, NOBBIES STATION",
-        "start_utc": "2026-11-09T09:41:00Z",
-        "etr_utc": null,
-        "centroid_lon": 140.5465776131701,
-        "centroid_lat": -19.772506011479457,
-        "lga_name": "Cloncurry Shire",
-        "lga_code": "2450",
-        "source_url": "https://services.arcgis.com/33eHbTVqo7gtiCE8/arcgis/rest/services/VwErgonOutages/FeatureServer/0",
-        "lga_allocations": [
-          {
-            "lga_name": "Cloncurry Shire",
-            "lga_code": "2450",
-            "affected_customers": 2
-          }
-        ],
-        "lga_assignment_source": "provider",
-        "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -1447,8 +1695,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26SW14399",
@@ -1476,7 +1724,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -1573,8 +1821,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26WB10895",
@@ -1602,7 +1850,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -1643,8 +1891,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26WB10920",
@@ -1672,7 +1920,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     },
     {
@@ -1713,8 +1961,8 @@
         ]
       },
       "properties": {
-        "snapshot_utc": "2026-11-10T02:46:06Z",
-        "snapshot_aest": "2026-11-10T12:46:06+10:00",
+        "snapshot_utc": "2026-11-10T03:01:31Z",
+        "snapshot_aest": "2026-11-10T13:01:31+10:00",
         "provider_code": "au.qld.ergon",
         "provider_name": "Ergon Energy",
         "outage_key": "au.qld.ergon|unplanned|26WB9727",
@@ -1742,7 +1990,7 @@
         ],
         "lga_assignment_source": "provider",
         "council_source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "provider_data_as_of_utc": "2026-11-10T02:45:00Z"
+        "provider_data_as_of_utc": "2026-11-10T03:00:00Z"
       }
     }
   ]
