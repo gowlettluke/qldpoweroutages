@@ -1,52 +1,49 @@
 {
-  "generated_utc": "2026-11-10T20:16:08Z",
-  "generated_aest": "2026-11-11T06:16:08+10:00",
+  "generated_utc": "2026-11-10T20:31:01Z",
+  "generated_aest": "2026-11-11T06:31:01+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 11,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 403,
-  "current_records_after_outage_type_filter": 17,
+  "current_records_before_outage_type_filter": 402,
+  "current_records_after_outage_type_filter": 16,
   "current_records_dropped_planned_or_unknown": 386,
   "provider_fetch_errors": {
     "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
   },
   "provider_fetch_error_count": 1,
-  "provider_fetch_warnings": {
-    "Ergon": "Update delayed; using verified provider data from 2026-11-10T20:00:01Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "geometry_fallback",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-10T20:00:01Z",
-      "published_customers": 476,
+      "source_updated_utc": "2026-11-10T20:30:00Z",
+      "published_customers": 694,
       "event_count": 9,
-      "fetched_utc": "2026-11-10T20:01:38Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "fetched_utc": "2026-11-10T20:31:19Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-10T20:16:08Z",
+    "snapshot_utc": "2026-11-10T20:31:01Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-10T20:16:24Z",
+      "fetched_utc": "2026-11-10T20:31:19Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-10T20:01:38Z",
+      "fetched_utc": "2026-11-10T20:31:19Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-10T20:00:01Z",
-      "retained": true,
-      "total_customers": 476,
+      "source_updated_utc": "2026-11-10T20:30:00Z",
+      "retained": false,
+      "total_customers": 694,
       "rows": [
         {
           "lga_name": "Burke Shire",
@@ -74,7 +71,7 @@
         },
         {
           "lga_name": "South Burnett Regional",
-          "affected_customers": 216
+          "affected_customers": 434
         },
         {
           "lga_name": "Winton Shire",
@@ -86,15 +83,15 @@
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 2,
   "current_ergon_records": 9,
-  "current_essential_records_fetched": 8,
+  "current_essential_records_fetched": 7,
   "current_energex_records_fetched": 123,
   "current_ergon_records_fetched": 272,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 5,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 2979,
-  "lga_totals_rows_48h": 4070,
+  "snapshot_rows_48h": 2990,
+  "lga_totals_rows_48h": 4088,
   "lga_totals_latest_rows": 18,
   "lga_cumulative_rows": 88,
   "outputs": {
