@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T03:16:04Z",
+      "fetched_utc": "2026-11-10T03:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "10 November 2026 1:00 PM",
-        "source_updated_utc": "2026-11-10T03:00:02Z",
-        "published_customers": 157,
-        "event_count": 1
+        "source_updated": "10 November 2026 1:30 PM",
+        "source_updated_utc": "2026-11-10T03:30:02Z",
+        "published_customers": 164,
+        "event_count": 2
       },
       "events": [
         {
@@ -39,16 +39,45 @@
           "affected_customers": 157,
           "suburb": "BURNETT CREEK, CARNEYS CREEK, COOCHIN, CROFTBY, MAROON, MOOGERAH",
           "street_name": "BOONAH-RATHDOWNEY RD, BRENNAN RD, BURNETT CREEK RD, CARNEYS CREEK RD, CHALK RD, CROFTBY CHURCH RD, CROFTBY RD, HEAD RD, J BELL RD, LUCY LANE, MINTO RD, SAWATZKI RD, STENZEL RD, WARWICK RD, WATSON RD"
+        },
+        {
+          "event_id": "INCD-994588-g",
+          "allocations": [
+            {
+              "lga_name": "Gold Coast City",
+              "lga_code": null,
+              "affected_customers": 7
+            }
+          ],
+          "details": {
+            "event": "INCD-994588-g",
+            "cause": "A vehicle damaging our equipment",
+            "status": "Emergency Repairs",
+            "council": "Gold Coast City",
+            "postcode": "4211",
+            "suburb": "GILSTON",
+            "customersAffected": "7",
+            "restoreTime": "2026-11-10T15:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "GILSTON RD",
+              "HINDE RD"
+            ]
+          },
+          "affected_customers": 7,
+          "suburb": "GILSTON",
+          "street_name": "GILSTON RD, HINDE RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T03:16:07Z",
+      "fetched_utc": "2026-11-10T03:31:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T03:15:00Z",
-        "published_customers": 1897,
+        "source_updated_utc": "2026-11-10T03:30:00Z",
+        "published_customers": 1855,
         "event_count": 17
       },
       "events": [
@@ -70,7 +99,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "21",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 21,
           "suburb": "BERSERKER",
@@ -173,27 +202,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26FN11126",
+          "event_id": "26FN11143",
           "allocations": [
             {
-              "lga_name": "Cassowary Coast Regional",
+              "lga_name": "Tablelands Regional",
               "lga_code": null,
-              "affected_customers": 47
+              "affected_customers": 5
             }
           ],
           "details": {
-            "event": "26FN11126",
-            "council": "Cassowary Coast Regional Council",
-            "suburb": "CAMP CREEK, MENA CREEK",
+            "event": "26FN11143",
+            "council": "Tablelands Regional Council",
+            "suburb": "MOUNT GARNET",
             "type": "UNPLANNED",
-            "startTime": "10/11/2026 10:32",
-            "restoreTime": "11/11/2026 00:09",
-            "customersAffected": "47",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
+            "startTime": "10/11/2026 09:55",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "5",
+            "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
+            "status": "Outage reported"
           },
-          "affected_customers": 47,
-          "suburb": "CAMP CREEK, MENA CREEK",
+          "affected_customers": 5,
+          "suburb": "MOUNT GARNET",
           "street_name": ""
         },
         {
