@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T07:01:30Z",
+      "fetched_utc": "2026-11-10T07:16:08Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -72,39 +72,15 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T06:16:25Z",
+      "fetched_utc": "2026-11-10T07:16:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T06:15:00Z",
-        "published_customers": 420,
-        "event_count": 10
+        "source_updated_utc": "2026-11-10T07:15:12Z",
+        "published_customers": 439,
+        "event_count": 11
       },
       "events": [
-        {
-          "event_id": "26CA13419",
-          "allocations": [
-            {
-              "lga_name": "Gladstone Regional",
-              "lga_code": null,
-              "affected_customers": 24
-            }
-          ],
-          "details": {
-            "event": "26CA13419",
-            "council": "Gladstone Regional Council",
-            "suburb": "COLOSSEUM, MIRIAM VALE",
-            "type": "UNPLANNED",
-            "startTime": "10/11/2026 12:47",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "24",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 24,
-          "suburb": "COLOSSEUM, MIRIAM VALE",
-          "street_name": ""
-        },
         {
           "event_id": "26FN11079",
           "allocations": [
@@ -149,13 +125,42 @@
             "suburb": "CHEWKO, MAREEBA",
             "type": "UNPLANNED",
             "startTime": "10/11/2026 13:55",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "10/11/2026 18:30",
             "customersAffected": "51",
             "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
             "status": "Outage reported"
           },
           "affected_customers": 62,
           "suburb": "CHEWKO, MAREEBA, WALKAMIN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11158",
+          "allocations": [
+            {
+              "lga_name": "Carpentaria Shire",
+              "lga_code": null,
+              "affected_customers": 50
+            },
+            {
+              "lga_name": "Burke Shire",
+              "lga_code": null,
+              "affected_customers": 6
+            }
+          ],
+          "details": {
+            "event": "26FN11158",
+            "council": "Burke Shire Council",
+            "suburb": "NORMANTON",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 16:38",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "6",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 56,
+          "suburb": "NORMANTON",
           "street_name": ""
         },
         {
@@ -231,27 +236,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26MK7162",
+          "event_id": "26MK7207",
           "allocations": [
             {
               "lga_name": "Mackay Regional",
               "lga_code": null,
-              "affected_customers": 65
+              "affected_customers": 2
             }
           ],
           "details": {
-            "event": "26MK7162",
+            "event": "26MK7207",
             "council": "Mackay Regional Council",
-            "suburb": "SARINA",
+            "suburb": "COLSTON PARK",
             "type": "UNPLANNED",
-            "startTime": "10/11/2026 10:40",
+            "startTime": "10/11/2026 13:39",
             "restoreTime": "Under Investigation",
-            "customersAffected": "65",
-            "cause": "The loss of supply is due to public safety concerns.",
-            "status": "Crews working on-site"
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Work delayed - crews unable to continue"
           },
-          "affected_customers": 65,
-          "suburb": "SARINA",
+          "affected_customers": 2,
+          "suburb": "COLSTON PARK",
           "street_name": ""
         },
         {
@@ -300,6 +305,30 @@
           },
           "affected_customers": 11,
           "suburb": "BASALT, BLUEWATER SPRINGS",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13919",
+          "allocations": [
+            {
+              "lga_name": "Townsville City",
+              "lga_code": null,
+              "affected_customers": 50
+            }
+          ],
+          "details": {
+            "event": "26NQ13919",
+            "council": "Townsville City Council",
+            "suburb": "BURDELL",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 17:00",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "50",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 50,
+          "suburb": "BURDELL",
           "street_name": ""
         },
         {

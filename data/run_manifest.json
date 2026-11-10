@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-10T07:01:24Z",
-  "generated_aest": "2026-11-10T17:01:24+10:00",
+  "generated_utc": "2026-11-10T07:16:02Z",
+  "generated_aest": "2026-11-10T17:16:02+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 13,
@@ -8,10 +8,8 @@
   "current_records_before_outage_type_filter": 437,
   "current_records_after_outage_type_filter": 16,
   "current_records_dropped_planned_or_unknown": 421,
-  "provider_fetch_errors": {
-    "Ergon": "Council allocation fallback to map estimates: RuntimeError: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
-  },
-  "provider_fetch_error_count": 1,
+  "provider_fetch_errors": {},
+  "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
@@ -21,19 +19,23 @@
       "source_updated_utc": "2026-11-10T07:00:02Z",
       "published_customers": 145,
       "event_count": 2,
-      "fetched_utc": "2026-11-10T07:01:30Z"
+      "fetched_utc": "2026-11-10T07:16:08Z"
     },
     "Ergon": {
-      "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: RuntimeError: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "status": "provider",
+      "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+      "source_updated_utc": "2026-11-10T07:15:12Z",
+      "published_customers": 439,
+      "event_count": 11,
+      "fetched_utc": "2026-11-10T07:16:13Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-10T07:01:24Z",
+    "snapshot_utc": "2026-11-10T07:16:02Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-10T07:01:30Z",
+      "fetched_utc": "2026-11-10T07:16:08Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -52,9 +54,56 @@
       ]
     },
     "ergon": {
-      "status": "error",
-      "fetched_utc": "2026-11-10T07:01:33Z",
-      "error": "Council allocation fallback to map estimates: RuntimeError: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "status": "ok",
+      "fetched_utc": "2026-11-10T07:16:13Z",
+      "scope": "all_councils",
+      "outage_type": "unplanned",
+      "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+      "source_updated_utc": "2026-11-10T07:15:12Z",
+      "retained": false,
+      "total_customers": 439,
+      "rows": [
+        {
+          "lga_name": "Burke Shire",
+          "affected_customers": 6
+        },
+        {
+          "lga_name": "Cairns Regional",
+          "affected_customers": 151
+        },
+        {
+          "lga_name": "Carpentaria Shire",
+          "affected_customers": 50
+        },
+        {
+          "lga_name": "Charters Towers Regional",
+          "affected_customers": 11
+        },
+        {
+          "lga_name": "Cloncurry Shire",
+          "affected_customers": 35
+        },
+        {
+          "lga_name": "Fraser Coast Regional",
+          "affected_customers": 3
+        },
+        {
+          "lga_name": "Mackay Regional",
+          "affected_customers": 71
+        },
+        {
+          "lga_name": "Mareeba Shire",
+          "affected_customers": 51
+        },
+        {
+          "lga_name": "Tablelands Regional",
+          "affected_customers": 11
+        },
+        {
+          "lga_name": "Townsville City",
+          "affected_customers": 50
+        }
+      ]
     }
   },
   "legacy_council_snapshot_rows": 0,
@@ -67,10 +116,10 @@
   "current_essential_records_dropped_by_qld_polygon_prefilter": 3,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3208,
-  "lga_totals_rows_48h": 4052,
-  "lga_totals_latest_rows": 20,
-  "lga_cumulative_rows": 77,
+  "snapshot_rows_48h": 3221,
+  "lga_totals_rows_48h": 4076,
+  "lga_totals_latest_rows": 24,
+  "lga_cumulative_rows": 79,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
     "outage_snapshots_48h_csv": "data/outage_snapshots_48h.csv",
