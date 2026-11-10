@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T04:16:18Z",
+      "fetched_utc": "2026-11-10T04:31:08Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -100,13 +100,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T04:01:24Z",
+      "fetched_utc": "2026-11-10T04:31:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T04:00:00Z",
-        "published_customers": 1661,
-        "event_count": 15
+        "source_updated_utc": "2026-11-10T04:30:01Z",
+        "published_customers": 1832,
+        "event_count": 14
       },
       "events": [
         {
@@ -131,30 +131,6 @@
           },
           "affected_customers": 21,
           "suburb": "BERSERKER",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13417",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26CA13417",
-            "council": "Livingstone Shire Council",
-            "suburb": "WOODBURY",
-            "type": "UNPLANNED",
-            "startTime": "10/11/2026 09:11",
-            "restoreTime": "10/11/2026 16:00",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage caused by accidental contact with powerlines by a third party.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 2,
-          "suburb": "WOODBURY",
           "street_name": ""
         },
         {
@@ -278,30 +254,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26MK7142",
-          "allocations": [
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 13
-            }
-          ],
-          "details": {
-            "event": "26MK7142",
-            "council": "Mackay Regional Council",
-            "suburb": "KOUMALA",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 16:17",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "13",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 13,
-          "suburb": "KOUMALA",
-          "street_name": ""
-        },
-        {
           "event_id": "26MK7147",
           "allocations": [
             {
@@ -415,7 +367,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "26",
             "cause": "The loss of supply is due to a bush fire.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 26,
           "suburb": "BASALT, BLUEWATER SPRINGS",
@@ -443,6 +395,30 @@
           },
           "affected_customers": 68,
           "suburb": "BAUPLE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10927",
+          "allocations": [
+            {
+              "lga_name": "Fraser Coast Regional",
+              "lga_code": null,
+              "affected_customers": 186
+            }
+          ],
+          "details": {
+            "event": "26WB10927",
+            "council": "Fraser Coast Regional Council",
+            "suburb": "TORQUAY",
+            "type": "UNPLANNED",
+            "startTime": "10/11/2026 14:27",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "186",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 186,
+          "suburb": "TORQUAY",
           "street_name": ""
         },
         {
