@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T22:16:21Z",
+      "fetched_utc": "2026-11-10T22:31:05Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -134,13 +134,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T22:16:24Z",
+      "fetched_utc": "2026-11-10T22:31:07Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T22:15:00Z",
-        "published_customers": 269,
-        "event_count": 10
+        "source_updated_utc": "2026-11-10T22:25:00Z",
+        "published_customers": 570,
+        "event_count": 11
       },
       "events": [
         {
@@ -157,7 +157,7 @@
             "council": "North Burnett Regional Council",
             "suburb": "MULGILDIE",
             "type": "UNPLANNED",
-            "startTime": "11/11/2026 08:40",
+            "startTime": "11/11/2026 08:14",
             "restoreTime": "11/11/2026 14:30",
             "customersAffected": "2",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
@@ -218,6 +218,30 @@
           },
           "affected_customers": 56,
           "suburb": "NORMANTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11169",
+          "allocations": [
+            {
+              "lga_name": "Tablelands Regional",
+              "lga_code": null,
+              "affected_customers": 301
+            }
+          ],
+          "details": {
+            "event": "26FN11169",
+            "council": "Tablelands Regional Council",
+            "suburb": "KAIRI, TINAROO",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 08:19",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "301",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 301,
+          "suburb": "KAIRI, TINAROO",
           "street_name": ""
         },
         {
