@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-10T17:46:17Z",
+      "fetched_utc": "2026-11-10T18:01:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 3:45 AM",
-        "source_updated_utc": "2026-11-10T17:45:02Z",
+        "source_updated": "11 November 2026 4:00 AM",
+        "source_updated_utc": "2026-11-10T18:00:02Z",
         "published_customers": 9,
         "event_count": 2
       },
@@ -72,13 +72,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-10T17:31:32Z",
+      "fetched_utc": "2026-11-10T18:01:28Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-10T17:30:20Z",
-        "published_customers": 260,
-        "event_count": 8
+        "source_updated_utc": "2026-11-10T18:00:19Z",
+        "published_customers": 317,
+        "event_count": 9
       },
       "events": [
         {
@@ -252,6 +252,30 @@
           },
           "affected_customers": 25,
           "suburb": "WINTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10938",
+          "allocations": [
+            {
+              "lga_name": "South Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 57
+            }
+          ],
+          "details": {
+            "event": "26WB10938",
+            "council": "South Burnett Regional Council",
+            "suburb": "KINGAROY",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 03:51",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "57",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 57,
+          "suburb": "KINGAROY",
           "street_name": ""
         },
         {
