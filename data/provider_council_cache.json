@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T22:46:23Z",
+      "fetched_utc": "2026-11-11T23:01:41Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 8:45 AM",
-        "source_updated_utc": "2026-11-11T22:45:04Z",
-        "published_customers": 50851,
-        "event_count": 58
+        "source_updated": "12 November 2026 9:00 AM",
+        "source_updated_utc": "2026-11-11T23:00:04Z",
+        "published_customers": 50834,
+        "event_count": 59
       },
       "events": [
         {
@@ -1247,7 +1247,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 1803
+              "affected_customers": 1785
             }
           ],
           "details": {
@@ -1325,9 +1325,9 @@
               "ZENNOR RD"
             ]
           },
-          "affected_customers": 1803,
+          "affected_customers": 1785,
           "suburb": "BORONIA HEIGHTS, BROWNS PLAINS, HILLCREST, REGENTS PARK",
-          "street_name": "ALISON ST, ALLOA CT, ANGELA ST, ANNA CT, ANZAC AVE, AQUA CT, BARRY ST, BELFORD ST, BIXBY CT, BLESSING PL, BLUEBERRY ASH CT, BORONIA CL, BRODIE CT, BUSHMILLS CT, CAMBRIDGE ST, CHANDON CT, COLBURN CT, COMLEY CT, CONLAN ST, CORONATION RD, CORPORATE PL, DORNOCK DR, DUNBLANE DR, ERIC CT, EUGENE ST, FEDRICK ST, FLINDERS CRES, GISELLE ST, HADLEY CT, HARGRILL CT, HELEN ST, HILL END AVE, HOBSON PL, HYSTEN ST, IRVINE PL, JADE GARDEN DR, KADLUNGA CT, LAMBRETTA ST, LANENA CT, LYNDON CT, MACAULEY DR, MACK CT, MACKELLAR DR, MACLEAN CT, MACLEAN DR, MACTIER DR, MAGGIOLO ST, MANFRED ST, MEGAN CT, MICHELLE CT, MIDDLE RD, MORETON ST, MORTLAKE CRES, MT LINDESAY HWY, ORR CT, PARKLANDS DR, PIPER CT, RICK CT, SAMANTHA ST, SCRIBBLY GUM CT, SELKIRK DR, SERENE CT, SHIVANAND AVE, SHORT ST, SIMONE ST, ST JOHNS WAY, STRATHALLEN DR, THURSO CT, TITAN CT, TOWN CT, TRADELINK RD, VALUNIU PL, WADE CT, WILTON CRES, WINEGLASS DR, YEOMAN CT, YVONNE DR, ZACHARY CT, ZENNOR RD, ZOE PL"
+          "street_name": "ALISON ST, ALLOA CT, ANGELA ST, ANNA CT, ANZAC AVE, AQUA CT, BARRY ST, BELFORD ST, BIXBY CT, BLESSING PL, BLUEBERRY ASH CT, BORONIA CL, BRODIE CT, BUSHMILLS CT, CAMBRIDGE ST, CHANDON CT, COLBURN CT, COMLEY CT, CONLAN ST, CORONATION RD, CORPORATE PL, DORNOCK DR, DUNBLANE DR, ERIC CT, EUGENE ST, FEDRICK ST, FLINDERS CRES, GISELLE ST, HADLEY CT, HARGRILL CT, HELEN ST, HILL END AVE, HOBSON PL, HYSTEN ST, IRVINE PL, JADE GARDEN DR, KADLUNGA CT, LAMBRETTA ST, LANENA CT, LYNDON CT, MACAULEY DR, MACK CT, MACKELLAR DR, MACLEAN CT, MACLEAN DR, MACTIER DR, MAGGIOLO ST, MANFRED ST, MEGAN CT, MICHELLE CT, MIDDLE RD, MORETON ST, MORTLAKE CRES, MT LINDESAY HWY, ORR CT, PARKLANDS DR, PIPER CT, RICK CT, SAMANTHA ST, SCRIBBLY GUM CT, SELKIRK DR, SERENE CT, SHIVANAND AVE, SHORT ST, SIMONE ST, ST JOHNS WAY, STRATHALLEN DR, THURSO CT, TITAN CT, TOWN CT, TRADELINK RD, VALUNIU PL, WADE CT, WILTON CRES, YEOMAN CT, YVONNE DR, ZACHARY CT, ZENNOR RD, ZOE PL"
         },
         {
           "event_id": "INCD-995515-g",
@@ -2290,7 +2290,7 @@
             "postcode": "4570",
             "suburb": "CANINA",
             "customersAffected": "3",
-            "restoreTime": "2026-11-12T09:00:00+10:00",
+            "restoreTime": "2026-11-12T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -2318,7 +2318,7 @@
             "postcode": "4570",
             "suburb": "NORTH DEEP CREEK",
             "customersAffected": "4",
-            "restoreTime": "2026-11-12T09:00:00+10:00",
+            "restoreTime": "2026-11-12T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -2418,17 +2418,45 @@
           "affected_customers": 50,
           "suburb": "BEAUDESERT, BIRNAM, BOYLAND, MUNDOOLUN, TABRAGALBA",
           "street_name": "BEAUDESERT-BEENLEIGH RD, BEAUDESERT-NERANG RD, BOYLAND RD, FOUR MILE LANE"
+        },
+        {
+          "event_id": "INCD-996340-g",
+          "allocations": [
+            {
+              "lga_name": "Scenic Rim Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-996340-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Scenic Rim Regional",
+            "postcode": "4285",
+            "suburb": "KERRY",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-12T12:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "KERRY RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "KERRY",
+          "street_name": "KERRY RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T22:46:26Z",
+      "fetched_utc": "2026-11-11T23:01:46Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T22:45:01Z",
-        "published_customers": 681,
-        "event_count": 25
+        "source_updated_utc": "2026-11-11T23:00:01Z",
+        "published_customers": 944,
+        "event_count": 26
       },
       "events": [
         {
@@ -2865,6 +2893,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26SW14665",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 263
+            }
+          ],
+          "details": {
+            "event": "26SW14665",
+            "council": "Toowoomba Regional Council",
+            "suburb": "PITTSWORTH",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 03:48",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "263",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 263,
+          "suburb": "PITTSWORTH",
+          "street_name": ""
+        },
+        {
           "event_id": "26WB11012",
           "allocations": [
             {
@@ -2903,7 +2955,7 @@
             "suburb": "BUNDABERG, CHILDERS, LOGGING CREEK, NORTH GREGORY",
             "type": "UNPLANNED",
             "startTime": "11/11/2026 23:33",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "12/11/2026 11:30",
             "customersAffected": "99",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
