@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T22:01:31Z",
+      "fetched_utc": "2026-11-11T22:16:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 8:00 AM",
-        "source_updated_utc": "2026-11-11T22:00:03Z",
-        "published_customers": 52006,
-        "event_count": 59
+        "source_updated": "12 November 2026 8:15 AM",
+        "source_updated_utc": "2026-11-11T22:15:03Z",
+        "published_customers": 52036,
+        "event_count": 60
       },
       "events": [
         {
@@ -2455,6 +2455,35 @@
           "street_name": "VELORUM DR"
         },
         {
+          "event_id": "INCD-996274-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 30
+            }
+          ],
+          "details": {
+            "event": "INCD-996274-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4127",
+            "suburb": "SLACKS CREEK",
+            "customersAffected": "30",
+            "restoreTime": "2026-11-12T15:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALLGAS ST",
+              "MOSS ST"
+            ]
+          },
+          "affected_customers": 30,
+          "suburb": "SLACKS CREEK",
+          "street_name": "ALLGAS ST, MOSS ST"
+        },
+        {
           "event_id": "INCD-996276-g",
           "allocations": [
             {
@@ -2490,13 +2519,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T22:01:34Z",
+      "fetched_utc": "2026-11-11T22:16:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T22:00:04Z",
-        "published_customers": 674,
-        "event_count": 25
+        "source_updated_utc": "2026-11-11T22:15:18Z",
+        "published_customers": 685,
+        "event_count": 26
       },
       "events": [
         {
@@ -2902,7 +2931,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "26",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 26,
           "suburb": "CHARLEVILLE, COOLADDI",
@@ -2923,7 +2952,7 @@
             "suburb": "FORESTVALE, MITCHELL",
             "type": "UNPLANNED",
             "startTime": "11/11/2026 17:52",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "12/11/2026 16:00",
             "customersAffected": "25",
             "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Crews on route"
@@ -3075,7 +3104,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "15",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 44,
           "suburb": "CALGOA, GLEN ECHO, MIVA, MUNNA CREEK, WOOLOOGA",
@@ -3099,10 +3128,34 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "6",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 6,
           "suburb": "NANANGO, SOUTH NANANGO",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB11079",
+          "allocations": [
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 11
+            }
+          ],
+          "details": {
+            "event": "26WB11079",
+            "council": "North Burnett Regional Council",
+            "suburb": "BON ACCORD, GAYNDAH",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 07:06",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "11",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 11,
+          "suburb": "BON ACCORD, GAYNDAH",
           "street_name": ""
         },
         {
