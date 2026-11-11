@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T17:31:30Z",
+      "fetched_utc": "2026-11-11T18:16:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 3:30 AM",
-        "source_updated_utc": "2026-11-11T17:30:03Z",
-        "published_customers": 65895,
-        "event_count": 61
+        "source_updated": "12 November 2026 4:15 AM",
+        "source_updated_utc": "2026-11-11T18:15:03Z",
+        "published_customers": 63555,
+        "event_count": 58
       },
       "events": [
         {
@@ -1835,8 +1835,8 @@
           ],
           "details": {
             "event": "INCD-995788-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
             "council": "Gympie Regional",
             "postcode": "4570",
             "suburb": "JONES HILL",
@@ -2273,7 +2273,7 @@
             {
               "lga_name": "Moreton Bay City",
               "lga_code": null,
-              "affected_customers": 398
+              "affected_customers": 150
             }
           ],
           "details": {
@@ -2282,20 +2282,28 @@
             "status": "Under Investigation",
             "council": "Moreton Bay Regional",
             "postcode": "4521",
-            "suburb": "CAMPBELLS POCKET",
-            "customersAffected": "27",
+            "suburb": "MOUNT MEE",
+            "customersAffected": "125",
             "restoreTime": "2026-11-12T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "BASS RD",
+              "AUSTIN RD",
+              "BRODIE RD",
               "CAMPBELLS POCKET RD",
-              "DAWES RD"
+              "DUNCAN RD",
+              "GANNON ST",
+              "LEWINGTON RD",
+              "MT MEE RD",
+              "MURRAY RD",
+              "ROBINSON RD",
+              "SELLIN RD",
+              "SPICER CRES"
             ]
           },
-          "affected_customers": 398,
-          "suburb": "CAMPBELLS POCKET, MOUNT MEE, MT PLEASANT, OCEAN VIEW",
-          "street_name": "AUSTIN RD, BASS RD, BROCKHURST RD, BRODIE RD, CAMPBELLS POCKET RD, CLARK RD, CRYSTAL CT, DAWES RD, DEAN DR, DUNCAN RD, FREDS RD, GANNON ST, HIGHCREST ST, LEWINGTON RD, MAY RD, MIERS RD, MT MEE RD, MURRAY RD, ROBINSON RD, ROBINSON RD S, SEAVIEW CT, SELLIN RD, SPICER CRES, SUNRISE DR"
+          "affected_customers": 150,
+          "suburb": "MOUNT MEE, MT PLEASANT, OCEAN VIEW",
+          "street_name": "AUSTIN RD, BROCKHURST RD, BRODIE RD, CAMPBELLS POCKET RD, DUNCAN RD, GANNON ST, LEWINGTON RD, MT MEE RD, MURRAY RD, ROBINSON RD, SELLIN RD, SPICER CRES"
         },
         {
           "event_id": "INCD-995976-g",
@@ -2459,105 +2467,15 @@
           "affected_customers": 410,
           "suburb": "NAMBOUR, ROSEMOUNT",
           "street_name": "ANDREASENS RD, COOLWATER PL, CORMIE PL, HOWARD ST, KERADA RD, KOALA HILL DR, LEMON GROVE PL, PANORAMA DR, PAYNTERS CREEK RD, PETRIE CREEK RD, ROSEMOUNT CL, SEYMOUR CL, SUGAR VIEW LANE, UPPER ROSEMOUNT RD, WOODCHESTER CL"
-        },
-        {
-          "event_id": "INCD-996109-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 74
-            }
-          ],
-          "details": {
-            "event": "INCD-996109-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4067",
-            "suburb": "ST LUCIA",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-12T04:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "GAILEY RD"
-            ]
-          },
-          "affected_customers": 74,
-          "suburb": "ST LUCIA, TOOWONG",
-          "street_name": "ASTON ST, BRISBANE ST, GAILEY RD, HERBERT ST, HOLMES ST, JOSLING ST, MAYNE ST"
-        },
-        {
-          "event_id": "INCD-996153-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 133
-            }
-          ],
-          "details": {
-            "event": "INCD-996153-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4558",
-            "suburb": "MAROOCHYDORE",
-            "customersAffected": "133",
-            "restoreTime": "2026-11-12T04:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BLACKWOOD ST",
-              "DULIN ST",
-              "ERLEA ST",
-              "LAKE CT",
-              "MAROOCHY BVD",
-              "WATERBIRD ST"
-            ]
-          },
-          "affected_customers": 133,
-          "suburb": "MAROOCHYDORE",
-          "street_name": "BLACKWOOD ST, DULIN ST, ERLEA ST, LAKE CT, MAROOCHY BVD, WATERBIRD ST"
-        },
-        {
-          "event_id": "INCD-996175-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 1885
-            }
-          ],
-          "details": {
-            "event": "INCD-996175-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Brisbane City",
-            "postcode": "4067",
-            "suburb": "ST LUCIA",
-            "customersAffected": "60",
-            "restoreTime": "2026-11-12T06:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "GAILEY RD",
-              "SANDFORD ST"
-            ]
-          },
-          "affected_customers": 1885,
-          "suburb": "ST LUCIA, TARINGA, TOOWONG",
-          "street_name": "ADA ST, ALPHA ST, ARCHER ST, ASTON ST, BEATRICE ST, BELLEVUE PDE, BENSON ST, BRASTED ST, BRISBANE ST, BURNS RD, CAMPBELL ST, CORONATION DR, CUNNINGHAM ST, CURLEW ST, ELLERSLIE CRES, ESKMOUNT DR, GAILEY RD, GLEN RD, GLENNY ST, HERBERT ST, HEROES AVE, INDOOROOPILLY RD, JOSLING ST, LUCINDA ST, MACDONNELL ST, MAYNE ST, OXFORD TCE, PIKE AVE, SANDFORD ST, SUNDRIDGE ST, WELLS LANE, WESTERHAM ST, WHITMORE ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T18:01:34Z",
+      "fetched_utc": "2026-11-11T18:16:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T18:00:31Z",
+        "source_updated_utc": "2026-11-11T18:15:01Z",
         "published_customers": 2062,
         "event_count": 19
       },
