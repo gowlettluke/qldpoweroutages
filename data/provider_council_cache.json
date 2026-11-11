@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T21:01:42Z",
+      "fetched_utc": "2026-11-11T21:16:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -2409,12 +2409,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T21:01:45Z",
+      "fetched_utc": "2026-11-11T21:16:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T20:55:00Z",
-        "published_customers": 1116,
+        "source_updated_utc": "2026-11-11T21:15:01Z",
+        "published_customers": 716,
         "event_count": 22
       },
       "events": [
@@ -2520,6 +2520,54 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13538",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 16
+            }
+          ],
+          "details": {
+            "event": "26CA13538",
+            "council": "Banana Shire Council",
+            "suburb": "CASTLE CREEK, THEODORE",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 01:53",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "16",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 16,
+          "suburb": "CASTLE CREEK, THEODORE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13539",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 31
+            }
+          ],
+          "details": {
+            "event": "26CA13539",
+            "council": "Banana Shire Council",
+            "suburb": "CASTLE CREEK, LONESOME CREEK, THEODORE",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 04:58",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "31",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 31,
+          "suburb": "CASTLE CREEK, LONESOME CREEK, THEODORE",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11079",
           "allocations": [
             {
@@ -2590,7 +2638,7 @@
             "restoreTime": "12/11/2026 19:00",
             "customersAffected": "17",
             "cause": "The loss of supply is due to a bush fire.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 17,
           "suburb": "CLONCURRY",
@@ -2749,7 +2797,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "2",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 27,
           "suburb": "JULIA CREEK, MCKINLAY",
@@ -2833,27 +2881,27 @@
             {
               "lga_name": "Gympie Regional",
               "lga_code": null,
-              "affected_customers": 445
+              "affected_customers": 64
             },
             {
               "lga_name": "Fraser Coast Regional",
               "lga_code": null,
-              "affected_customers": 99
+              "affected_customers": 50
             }
           ],
           "details": {
             "event": "26WB11012",
             "council": "Fraser Coast Regional Council",
-            "suburb": "CALGOA, GLENWOOD, WOOLOOGA",
+            "suburb": "BROOWEENA, CALGOA, GLENBAR, GUNDIAH, MIVA, MOUNT URAH, MUNNA CREEK, PATERSON, WOOLOOGA",
             "type": "UNPLANNED",
             "startTime": "11/11/2026 18:59",
             "restoreTime": "Under Investigation",
-            "customersAffected": "99",
+            "customersAffected": "50",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 544,
-          "suburb": "CALGOA, CURRA, GLEN ECHO, GLENWOOD, GUNALDA, KADINA, KANIGAN, KANYAN, MARYBOROUGH, MIVA, MUNNA CREEK, THEEBINE, WOOLOOGA",
+          "affected_customers": 114,
+          "suburb": "BROOWEENA, CALGOA, GLEN ECHO, GLENBAR, GUNALDA, GUNDIAH, MIVA, MOUNT URAH, MUNNA CREEK, PATERSON, SEXTON, THEEBINE, WOOLOOGA",
           "street_name": ""
         },
         {
@@ -2878,54 +2926,6 @@
           },
           "affected_customers": 100,
           "suburb": "BUNDABERG, CHILDERS, LOGGING CREEK, NORTH GREGORY",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB11062",
-          "allocations": [
-            {
-              "lga_name": "Gympie Regional",
-              "lga_code": null,
-              "affected_customers": 15
-            }
-          ],
-          "details": {
-            "event": "26WB11062",
-            "council": "Gympie Regional Council",
-            "suburb": "GOOMERI",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 21:09",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "15",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 15,
-          "suburb": "GOOMERI",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB11065",
-          "allocations": [
-            {
-              "lga_name": "North Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26WB11065",
-            "council": "North Burnett Regional Council",
-            "suburb": "GAYNDAH",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 20:27",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 2,
-          "suburb": "GAYNDAH",
           "street_name": ""
         },
         {
