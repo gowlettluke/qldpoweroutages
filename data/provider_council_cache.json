@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T01:46:14Z",
+      "fetched_utc": "2026-11-11T02:01:26Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 11:30 AM",
-        "source_updated_utc": "2026-11-11T01:30:02Z",
-        "published_customers": 180,
-        "event_count": 5
+        "source_updated": "11 November 2026 12:00 PM",
+        "source_updated_utc": "2026-11-11T02:00:02Z",
+        "published_customers": 103,
+        "event_count": 4
       },
       "events": [
         {
@@ -42,42 +42,12 @@
           "street_name": "CAPITAL PL, KAWANA WAY"
         },
         {
-          "event_id": "INCD-994757-g",
-          "allocations": [
-            {
-              "lga_name": "Somerset Regional",
-              "lga_code": null,
-              "affected_customers": 9
-            }
-          ],
-          "details": {
-            "event": "INCD-994757-g",
-            "cause": "Powerlines down",
-            "status": "Under Investigation",
-            "council": "Somerset Regional",
-            "postcode": "4312",
-            "suburb": "ESK",
-            "customersAffected": "9",
-            "restoreTime": "2026-11-11T13:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BRISBANE VALLEY HWY",
-              "FALLS RD",
-              "FRANCIS TCE"
-            ]
-          },
-          "affected_customers": 9,
-          "suburb": "ESK",
-          "street_name": "BRISBANE VALLEY HWY, FALLS RD, FRANCIS TCE"
-        },
-        {
           "event_id": "INCD-994766-g",
           "allocations": [
             {
               "lga_name": "Moreton Bay City",
               "lga_code": null,
-              "affected_customers": 79
+              "affected_customers": 11
             }
           ],
           "details": {
@@ -96,9 +66,9 @@
               "PUMICESTONE RD"
             ]
           },
-          "affected_customers": 79,
-          "suburb": "CABOOLTURE, DONNYBROOK, MELDALE, TOORBUL",
-          "street_name": "DONNYBROOK RD, MELDALE RD, OLD TOORBUL POINT RD, PUMICESTONE RD"
+          "affected_customers": 11,
+          "suburb": "CABOOLTURE, TOORBUL",
+          "street_name": "OLD TOORBUL POINT RD, PUMICESTONE RD"
         },
         {
           "event_id": "INCD-994789-g",
@@ -149,7 +119,7 @@
             "postcode": "4115",
             "suburb": "PARKINSON",
             "customersAffected": "43",
-            "restoreTime": "2026-11-11T12:30:00+10:00",
+            "restoreTime": "2026-11-11T13:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -166,12 +136,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T01:46:19Z",
+      "fetched_utc": "2026-11-11T02:01:29Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T01:45:01Z",
-        "published_customers": 639,
+        "source_updated_utc": "2026-11-11T02:00:01Z",
+        "published_customers": 668,
         "event_count": 15
       },
       "events": [
@@ -493,27 +463,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26WB10952",
+          "event_id": "26WB10968",
           "allocations": [
             {
               "lga_name": "Bundaberg Regional",
               "lga_code": null,
-              "affected_customers": 3
+              "affected_customers": 32
             }
           ],
           "details": {
-            "event": "26WB10952",
+            "event": "26WB10968",
             "council": "Bundaberg Regional Council",
-            "suburb": "FARNSFIELD",
+            "suburb": "BUXTON",
             "type": "UNPLANNED",
-            "startTime": "11/11/2026 10:48",
-            "restoreTime": "11/11/2026 12:30",
-            "customersAffected": "3",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
+            "startTime": "11/11/2026 11:35",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "32",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
           },
-          "affected_customers": 3,
-          "suburb": "FARNSFIELD",
+          "affected_customers": 32,
+          "suburb": "BUXTON",
           "street_name": ""
         },
         {
