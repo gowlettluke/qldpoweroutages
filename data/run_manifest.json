@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-11T14:31:19Z",
-  "generated_aest": "2026-11-12T00:31:19+10:00",
+  "generated_utc": "2026-11-11T14:46:10Z",
+  "generated_aest": "2026-11-12T00:46:10+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 83,
@@ -15,37 +15,37 @@
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "12 November 2026 12:30 AM",
-      "source_updated_utc": "2026-11-11T14:30:03Z",
-      "published_customers": 76253,
+      "source_updated": "12 November 2026 12:45 AM",
+      "source_updated_utc": "2026-11-11T14:45:04Z",
+      "published_customers": 76086,
       "event_count": 65,
-      "fetched_utc": "2026-11-11T14:31:27Z"
+      "fetched_utc": "2026-11-11T14:46:21Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T14:25:00Z",
-      "published_customers": 1245,
+      "source_updated_utc": "2026-11-11T14:45:01Z",
+      "published_customers": 1221,
       "event_count": 18,
-      "fetched_utc": "2026-11-11T14:31:31Z"
+      "fetched_utc": "2026-11-11T14:46:24Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-11T14:31:19Z",
+    "snapshot_utc": "2026-11-11T14:46:10Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-11T14:31:27Z",
+      "fetched_utc": "2026-11-11T14:46:21Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-11T14:30:03Z",
+      "source_updated_utc": "2026-11-11T14:45:04Z",
       "retained": false,
-      "total_customers": 76253,
+      "total_customers": 76086,
       "rows": [
         {
           "lga_name": "Brisbane City",
-          "affected_customers": 1847
+          "affected_customers": 1845
         },
         {
           "lga_name": "Gold Coast City",
@@ -53,15 +53,15 @@
         },
         {
           "lga_name": "Gympie Regional",
-          "affected_customers": 933
+          "affected_customers": 843
         },
         {
           "lga_name": "Logan City",
-          "affected_customers": 53331
+          "affected_customers": 53298
         },
         {
           "lga_name": "Moreton Bay City",
-          "affected_customers": 1394
+          "affected_customers": 1355
         },
         {
           "lga_name": "Redland City",
@@ -69,7 +69,7 @@
         },
         {
           "lga_name": "Scenic Rim Regional",
-          "affected_customers": 8919
+          "affected_customers": 8916
         },
         {
           "lga_name": "Somerset Regional",
@@ -83,17 +83,17 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-11T14:31:31Z",
+      "fetched_utc": "2026-11-11T14:46:24Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T14:25:00Z",
+      "source_updated_utc": "2026-11-11T14:45:01Z",
       "retained": false,
-      "total_customers": 1245,
+      "total_customers": 1221,
       "rows": [
         {
           "lga_name": "Banana Shire",
-          "affected_customers": 39
+          "affected_customers": 15
         },
         {
           "lga_name": "Blackall Tambo Regional",
@@ -154,14 +154,14 @@
   "current_energex_records": 65,
   "current_ergon_records": 18,
   "current_essential_records_fetched": 19,
-  "current_energex_records_fetched": 166,
+  "current_energex_records_fetched": 167,
   "current_ergon_records_fetched": 216,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 17,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5091,
-  "lga_totals_rows_48h": 5155,
+  "snapshot_rows_48h": 5146,
+  "lga_totals_rows_48h": 5160,
   "lga_totals_latest_rows": 45,
   "lga_cumulative_rows": 112,
   "outputs": {
