@@ -1,49 +1,95 @@
 {
-  "generated_utc": "2026-11-11T16:31:17Z",
-  "generated_aest": "2026-11-12T02:31:17+10:00",
+  "generated_utc": "2026-11-11T16:45:53Z",
+  "generated_aest": "2026-11-12T02:45:53+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 78,
+  "current_outage_records": 79,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 399,
-  "current_records_after_outage_type_filter": 97,
+  "current_records_before_outage_type_filter": 400,
+  "current_records_after_outage_type_filter": 98,
   "current_records_dropped_planned_or_unknown": 302,
-  "provider_fetch_errors": {
-    "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
-  },
-  "provider_fetch_error_count": 1,
+  "provider_fetch_errors": {},
+  "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
-      "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "status": "provider",
+      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+      "source_updated": "12 November 2026 2:30 AM",
+      "source_updated_utc": "2026-11-11T16:30:04Z",
+      "published_customers": 66493,
+      "event_count": 61,
+      "fetched_utc": "2026-11-11T16:46:00Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T16:25:00Z",
-      "published_customers": 936,
+      "source_updated_utc": "2026-11-11T16:40:00Z",
+      "published_customers": 721,
       "event_count": 18,
-      "fetched_utc": "2026-11-11T16:31:33Z"
+      "fetched_utc": "2026-11-11T16:46:04Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-11T16:31:17Z",
+    "snapshot_utc": "2026-11-11T16:45:53Z",
     "energex": {
-      "status": "error",
-      "fetched_utc": "2026-11-11T16:31:35Z",
-      "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "status": "ok",
+      "fetched_utc": "2026-11-11T16:46:00Z",
+      "scope": "all_councils",
+      "outage_type": "unplanned",
+      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+      "source_updated_utc": "2026-11-11T16:30:04Z",
+      "retained": false,
+      "total_customers": 66493,
+      "rows": [
+        {
+          "lga_name": "Brisbane City",
+          "affected_customers": 1797
+        },
+        {
+          "lga_name": "Gold Coast City",
+          "affected_customers": 36
+        },
+        {
+          "lga_name": "Gympie Regional",
+          "affected_customers": 252
+        },
+        {
+          "lga_name": "Logan City",
+          "affected_customers": 52473
+        },
+        {
+          "lga_name": "Moreton Bay City",
+          "affected_customers": 966
+        },
+        {
+          "lga_name": "Redland City",
+          "affected_customers": 25
+        },
+        {
+          "lga_name": "Scenic Rim Regional",
+          "affected_customers": 8892
+        },
+        {
+          "lga_name": "Somerset Regional",
+          "affected_customers": 18
+        },
+        {
+          "lga_name": "Sunshine Coast Regional",
+          "affected_customers": 2034
+        }
+      ]
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-11T16:31:33Z",
+      "fetched_utc": "2026-11-11T16:46:04Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T16:25:00Z",
+      "source_updated_utc": "2026-11-11T16:40:00Z",
       "retained": false,
-      "total_customers": 936,
+      "total_customers": 721,
       "rows": [
         {
           "lga_name": "Banana Shire",
@@ -79,11 +125,11 @@
         },
         {
           "lga_name": "Fraser Coast Regional",
-          "affected_customers": 156
+          "affected_customers": 72
         },
         {
           "lga_name": "Gympie Regional",
-          "affected_customers": 309
+          "affected_customers": 178
         },
         {
           "lga_name": "Maranoa Regional",
@@ -105,7 +151,7 @@
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 60,
+  "current_energex_records": 61,
   "current_ergon_records": 18,
   "current_essential_records_fetched": 21,
   "current_energex_records_fetched": 162,
@@ -114,8 +160,8 @@
   "current_essential_records_dropped_by_qld_polygon_prefilter": 19,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5606,
-  "lga_totals_rows_48h": 5323,
+  "snapshot_rows_48h": 5685,
+  "lga_totals_rows_48h": 5368,
   "lga_totals_latest_rows": 45,
   "lga_cumulative_rows": 112,
   "outputs": {
