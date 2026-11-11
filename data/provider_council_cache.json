@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T01:15:56Z",
+      "fetched_utc": "2026-11-11T01:31:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 11:00 AM",
-        "source_updated_utc": "2026-11-11T01:00:02Z",
+        "source_updated": "11 November 2026 11:30 AM",
+        "source_updated_utc": "2026-11-11T01:30:02Z",
         "published_customers": 180,
         "event_count": 5
       },
@@ -88,7 +88,7 @@
             "postcode": "4510",
             "suburb": "CABOOLTURE",
             "customersAffected": "9",
-            "restoreTime": "2026-11-11T13:30:00+10:00",
+            "restoreTime": "2026-11-11T16:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -149,7 +149,7 @@
             "postcode": "4115",
             "suburb": "PARKINSON",
             "customersAffected": "43",
-            "restoreTime": "2026-11-11T12:00:00+10:00",
+            "restoreTime": "2026-11-11T12:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -166,13 +166,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T01:01:29Z",
+      "fetched_utc": "2026-11-11T01:31:28Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T01:00:01Z",
-        "published_customers": 618,
-        "event_count": 14
+        "source_updated_utc": "2026-11-11T01:30:31Z",
+        "published_customers": 647,
+        "event_count": 15
       },
       "events": [
         {
@@ -342,7 +342,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "2",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 2,
           "suburb": "COLSTON PARK",
@@ -390,10 +390,34 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "25",
             "cause": "The loss of supply is due to public safety concerns.",
-            "status": "Work delayed. Crew unable to continue."
+            "status": "Crews working on-site"
           },
           "affected_customers": 25,
           "suburb": "WINTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13958",
+          "allocations": [
+            {
+              "lga_name": "Townsville City",
+              "lga_code": null,
+              "affected_customers": 29
+            }
+          ],
+          "details": {
+            "event": "26NQ13958",
+            "council": "Townsville City Council",
+            "suburb": "OONOONBA",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 10:18",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "29",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 29,
+          "suburb": "OONOONBA",
           "street_name": ""
         },
         {
@@ -435,7 +459,7 @@
             "suburb": "COALBANK, DJUAN, HADEN",
             "type": "UNPLANNED",
             "startTime": "11/11/2026 10:04",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "11/11/2026 13:30",
             "customersAffected": "27",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
