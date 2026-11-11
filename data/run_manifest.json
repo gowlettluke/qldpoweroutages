@@ -1,49 +1,99 @@
 {
-  "generated_utc": "2026-11-11T09:16:08Z",
-  "generated_aest": "2026-11-11T19:16:08+10:00",
+  "generated_utc": "2026-11-11T09:31:01Z",
+  "generated_aest": "2026-11-11T19:31:01+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 86,
+  "current_outage_records": 88,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 446,
-  "current_records_after_outage_type_filter": 110,
+  "current_records_before_outage_type_filter": 450,
+  "current_records_after_outage_type_filter": 114,
   "current_records_dropped_planned_or_unknown": 336,
-  "provider_fetch_errors": {
-    "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
-  },
-  "provider_fetch_error_count": 1,
+  "provider_fetch_errors": {},
+  "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
-      "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "status": "provider",
+      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+      "source_updated": "11 November 2026 7:15 PM",
+      "source_updated_utc": "2026-11-11T09:15:04Z",
+      "published_customers": 82033,
+      "event_count": 66,
+      "fetched_utc": "2026-11-11T09:31:08Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T09:15:15Z",
-      "published_customers": 12577,
-      "event_count": 20,
-      "fetched_utc": "2026-11-11T09:16:27Z"
+      "source_updated_utc": "2026-11-11T09:30:01Z",
+      "published_customers": 12585,
+      "event_count": 22,
+      "fetched_utc": "2026-11-11T09:31:11Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-11T09:16:08Z",
+    "snapshot_utc": "2026-11-11T09:31:01Z",
     "energex": {
-      "status": "error",
-      "fetched_utc": "2026-11-11T09:16:29Z",
-      "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "status": "ok",
+      "fetched_utc": "2026-11-11T09:31:08Z",
+      "scope": "all_councils",
+      "outage_type": "unplanned",
+      "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
+      "source_updated_utc": "2026-11-11T09:15:04Z",
+      "retained": false,
+      "total_customers": 82033,
+      "rows": [
+        {
+          "lga_name": "Brisbane City",
+          "affected_customers": 5638
+        },
+        {
+          "lga_name": "Gold Coast City",
+          "affected_customers": 17
+        },
+        {
+          "lga_name": "Gympie Regional",
+          "affected_customers": 5326
+        },
+        {
+          "lga_name": "Ipswich City",
+          "affected_customers": 66
+        },
+        {
+          "lga_name": "Logan City",
+          "affected_customers": 58103
+        },
+        {
+          "lga_name": "Moreton Bay City",
+          "affected_customers": 3046
+        },
+        {
+          "lga_name": "Noosa Shire",
+          "affected_customers": 50
+        },
+        {
+          "lga_name": "Redland City",
+          "affected_customers": 25
+        },
+        {
+          "lga_name": "Scenic Rim Regional",
+          "affected_customers": 8940
+        },
+        {
+          "lga_name": "Sunshine Coast Regional",
+          "affected_customers": 822
+        }
+      ]
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-11T09:16:27Z",
+      "fetched_utc": "2026-11-11T09:31:11Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T09:15:15Z",
+      "source_updated_utc": "2026-11-11T09:30:01Z",
       "retained": false,
-      "total_customers": 12577,
+      "total_customers": 12585,
       "rows": [
         {
           "lga_name": "Boulia Shire",
@@ -82,6 +132,10 @@
           "affected_customers": 3568
         },
         {
+          "lga_name": "Hinchinbrook Shire",
+          "affected_customers": 4
+        },
+        {
           "lga_name": "Mackay Regional",
           "affected_customers": 3
         },
@@ -111,7 +165,7 @@
         },
         {
           "lga_name": "South Burnett Regional",
-          "affected_customers": 6248
+          "affected_customers": 6252
         },
         {
           "lga_name": "Toowoomba Regional",
@@ -130,17 +184,17 @@
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 66,
-  "current_ergon_records": 20,
-  "current_essential_records_fetched": 26,
-  "current_energex_records_fetched": 202,
-  "current_ergon_records_fetched": 220,
+  "current_ergon_records": 22,
+  "current_essential_records_fetched": 28,
+  "current_energex_records_fetched": 201,
+  "current_ergon_records_fetched": 219,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 24,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 26,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3570,
-  "lga_totals_rows_48h": 4524,
-  "lga_totals_latest_rows": 57,
+  "snapshot_rows_48h": 3658,
+  "lga_totals_rows_48h": 4585,
+  "lga_totals_latest_rows": 61,
   "lga_cumulative_rows": 113,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
