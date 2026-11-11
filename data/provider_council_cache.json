@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T12:16:22Z",
+      "fetched_utc": "2026-11-11T12:31:16Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -2946,12 +2946,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T12:16:25Z",
+      "fetched_utc": "2026-11-11T12:31:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T12:15:20Z",
-        "published_customers": 5866,
+        "source_updated_utc": "2026-11-11T12:30:17Z",
+        "published_customers": 4139,
         "event_count": 20
       },
       "events": [
@@ -3026,10 +3026,34 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "7",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 22,
           "suburb": "CHARLEVILLE, LANGLO",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13531",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 39
+            }
+          ],
+          "details": {
+            "event": "26CA13531",
+            "council": "Banana Shire Council",
+            "suburb": "BANANA, KIANGA, MOURA, THEODORE",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 22:16",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "39",
+            "cause": "The loss of supply is due to the operating of protective equipment.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 39,
+          "suburb": "BANANA, KIANGA, MOURA, THEODORE",
           "street_name": ""
         },
         {
@@ -3083,30 +3107,6 @@
           },
           "affected_customers": 16,
           "suburb": "NORMANTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26MK7256",
-          "allocations": [
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 35
-            }
-          ],
-          "details": {
-            "event": "26MK7256",
-            "council": "Mackay Regional Council",
-            "suburb": "WEST MACKAY",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 19:36",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "35",
-            "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 35,
-          "suburb": "WEST MACKAY",
           "street_name": ""
         },
         {
@@ -3389,27 +3389,22 @@
             {
               "lga_name": "Gympie Regional",
               "lga_code": null,
-              "affected_customers": 2072
-            },
-            {
-              "lga_name": "Fraser Coast Regional",
-              "lga_code": null,
-              "affected_customers": 1725
+              "affected_customers": 2066
             }
           ],
           "details": {
             "event": "26WB11013",
-            "council": "Fraser Coast Regional Council",
-            "suburb": "BAUPLE, GLENWOOD, GOOTCHIE, GUNALDA, GUNDIAH, KANIGAN, KANYAN, MOUNT URAH, MUNNA CREEK, NETHERBY, PATERSON, ROSSENDALE, ST MARY, THEEBINE, TIARO",
+            "council": "Gympie Regional Council",
+            "suburb": "BELLS BRIDGE, BOOWOOGUM, BROOYAR, CORELLA, CURRA, GLASTONBURY, GUNALDA, GYMPIE, HARVEY SIDING, KILKIVAN, LOWER WONGA, MIVA, OAKVIEW, SCOTCHY POCKET, SEXTON, UPPER WONGA, WIDGEE, WOOLOOGA",
             "type": "UNPLANNED",
             "startTime": "11/11/2026 18:59",
             "restoreTime": "Under Investigation",
-            "customersAffected": "1725",
+            "customersAffected": "2066",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews on route"
           },
-          "affected_customers": 3797,
-          "suburb": "BAUPLE, BELLS BRIDGE, BOOWOOGUM, BROOYAR, CORELLA, CURRA, GLASTONBURY, GLENWOOD, GOOTCHIE, GUNALDA, GUNDIAH, GYMPIE, HARVEY SIDING, KANIGAN, KANYAN, KILKIVAN, LOWER WONGA, MIVA, MOUNT URAH, MUNNA CREEK, NETHERBY, OAKVIEW, PATERSON, ROSSENDALE, SCOTCHY POCKET, SEXTON, ST MARY, THEEBINE, TIARO, UPPER WONGA, WIDGEE, WOOLOOGA",
+          "affected_customers": 2066,
+          "suburb": "BELLS BRIDGE, BOOWOOGUM, BROOYAR, CORELLA, CURRA, GLASTONBURY, GUNALDA, GYMPIE, HARVEY SIDING, KILKIVAN, LOWER WONGA, MIVA, OAKVIEW, SCOTCHY POCKET, SEXTON, UPPER WONGA, WIDGEE, WOOLOOGA",
           "street_name": ""
         },
         {
