@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T07:16:34Z",
+      "fetched_utc": "2026-11-11T07:46:03Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 5:15 PM",
-        "source_updated_utc": "2026-11-11T07:15:04Z",
-        "published_customers": 72818,
-        "event_count": 54
+        "source_updated": "11 November 2026 5:30 PM",
+        "source_updated_utc": "2026-11-11T07:30:04Z",
+        "published_customers": 76541,
+        "event_count": 61
       },
       "events": [
         {
@@ -1840,7 +1840,7 @@
             "postcode": "4570",
             "suburb": "JONES HILL",
             "customersAffected": "7",
-            "restoreTime": "2026-11-11T19:30:00+10:00",
+            "restoreTime": "2026-11-11T20:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -1871,7 +1871,7 @@
             "postcode": "4570",
             "suburb": "ARALUEN",
             "customersAffected": "15",
-            "restoreTime": "2026-11-11T19:30:00+10:00",
+            "restoreTime": "2026-11-11T20:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -1972,6 +1972,38 @@
           "affected_customers": 1804,
           "suburb": "BORONIA HEIGHTS, BROWNS PLAINS, HILLCREST, REGENTS PARK",
           "street_name": "ALISON ST, ALLOA CT, ANGELA ST, ANNA CT, ANZAC AVE, AQUA CT, BARRY ST, BELFORD ST, BIXBY CT, BLESSING PL, BLUEBERRY ASH CT, BORONIA CL, BRODIE CT, BUSHMILLS CT, CAMBRIDGE ST, CHANDON CT, COLBURN CT, COMLEY CT, CONLAN ST, CORONATION RD, CORPORATE PL, DORNOCK DR, DUNBLANE DR, ERIC CT, EUGENE ST, FEDRICK ST, FLINDERS CRES, GISELLE ST, HADLEY CT, HARGRILL CT, HELEN ST, HILL END AVE, HOBSON PL, HYSTEN ST, IRVINE PL, JADE GARDEN DR, KADLUNGA CT, LAMBRETTA ST, LANENA CT, LYNDON CT, MACAULEY DR, MACK CT, MACKELLAR DR, MACLEAN CT, MACLEAN DR, MACTIER DR, MAGGIOLO ST, MANFRED ST, MEGAN CT, MICHELLE CT, MIDDLE RD, MORETON ST, MORTLAKE CRES, MT LINDESAY HWY, ORR CT, PARKLANDS DR, PIPER CT, PONDEROSA ST, RICK CT, SAMANTHA ST, SCRIBBLY GUM CT, SELKIRK DR, SERENE CT, SHIVANAND AVE, SHORT ST, SIMONE ST, ST JOHNS WAY, STRATHALLEN DR, THURSO CT, TITAN CT, TOWN CT, TRADELINK RD, VALUNIU PL, WADE CT, WILTON CRES, WINEGLASS DR, YEOMAN CT, YVONNE DR, ZACHARY CT, ZENNOR RD, ZOE PL"
+        },
+        {
+          "event_id": "INCD-995515-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 92
+            }
+          ],
+          "details": {
+            "event": "INCD-995515-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4133",
+            "suburb": "WATERFORD WEST",
+            "customersAffected": "92",
+            "restoreTime": "2026-11-12T00:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BOWMAN LANE",
+              "BUROW RD",
+              "FRANCESCA ST",
+              "KATRINA CRES",
+              "LOUISE ST"
+            ]
+          },
+          "affected_customers": 92,
+          "suburb": "WATERFORD WEST",
+          "street_name": "BOWMAN LANE, BUROW RD, FRANCESCA ST, KATRINA CRES, LOUISE ST"
         },
         {
           "event_id": "INCD-995519-g",
@@ -2224,7 +2256,7 @@
             "postcode": "4570",
             "suburb": "GYMPIE",
             "customersAffected": "431",
-            "restoreTime": "2026-11-11T20:00:00+10:00",
+            "restoreTime": "2026-11-11T19:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -2262,43 +2294,272 @@
           "affected_customers": 431,
           "suburb": "GYMPIE",
           "street_name": "ALEXANDER PL, BLIGH ST, CALTON CIR, CALTON TCE, CHURCH ST, COCKBURN LANE, DAVIES LANE, ELGIN ST, EXCELSIOR RD, FOX ST, HALL LANE, HILTON LANE, HILTON RD, JOHN ST, KITTS LANE, MARY ST, MONKLAND ST, MT PLEASANT RD, NELSON LANE, NEW ZEALAND ST, PERSEVERANCE ST, REEF ST, RIVER RD, SCHUMANN LANE, STANLEY ST, STUART ST, TWEED LANE, WITHAM WAY, YOUNG ST"
+        },
+        {
+          "event_id": "INCD-995583-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 928
+            }
+          ],
+          "details": {
+            "event": "INCD-995583-g",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
+            "council": "Logan City",
+            "postcode": "4207",
+            "suburb": "BUCCAN",
+            "customersAffected": "4",
+            "restoreTime": "2026-11-12T02:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "SUNBURY ST"
+            ]
+          },
+          "affected_customers": 928,
+          "suburb": "BUCCAN, LOGANLEA, WATERFORD, WATERFORD WEST",
+          "street_name": "ABELIA DR, ALFORD ST, ARLINE ST, BENTINCK ST, BEUTEL ST, BOWMAN LANE, BUROW RD, CLARENCE ST, DEER LANE, FRANCESCA ST, HINDE ST, KATRINA CRES, KINGSTON RD, LAGOON RD, LEXHAM ST, LIMOUSIN PL, LOUISE ST, LYALL ST, MALLING ST, ORDE ST, ORSETT ST, PRESCOT ST, REMARO ST, STRAND CT, SUNBURY ST, SWAN ST, TORRENS ST, TYGUM RD, VALIS ST, WATERFORD TAMBORINE RD"
+        },
+        {
+          "event_id": "INCD-995593-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 540
+            }
+          ],
+          "details": {
+            "event": "INCD-995593-g",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
+            "council": "Brisbane City",
+            "postcode": "4171",
+            "suburb": "BALMORAL",
+            "customersAffected": "540",
+            "restoreTime": "2026-11-11T20:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALOOMBA ST",
+              "BARTON RD",
+              "BEXLEY AVE",
+              "BYRNE PDE",
+              "CECILE ST",
+              "COLLINGS ST",
+              "DILKERA ST",
+              "FIFTH AVE",
+              "FISHERMANS BEND",
+              "GRANT ST",
+              "KURANDA ST",
+              "LYTTON RD",
+              "MAIN AVE",
+              "MCILWRAITH AVE",
+              "OLIVE GR",
+              "POLLOCK ST",
+              "RIDING RD",
+              "RYAN AVE",
+              "SPHINX ST",
+              "SUVLA ST",
+              "TAYLOR ST",
+              "TUGULAWA ST",
+              "VICTORIA ST",
+              "WALKERS DR",
+              "WALLARA ST",
+              "WENTWORTH PDE",
+              "WRIGHT ST",
+              "YONGA ST"
+            ]
+          },
+          "affected_customers": 540,
+          "suburb": "BALMORAL",
+          "street_name": "ALOOMBA ST, BARTON RD, BEXLEY AVE, BYRNE PDE, CECILE ST, COLLINGS ST, DILKERA ST, FIFTH AVE, FISHERMANS BEND, GRANT ST, KURANDA ST, LYTTON RD, MAIN AVE, MCILWRAITH AVE, OLIVE GR, POLLOCK ST, RIDING RD, RYAN AVE, SPHINX ST, SUVLA ST, TAYLOR ST, TUGULAWA ST, VICTORIA ST, WALKERS DR, WALLARA ST, WENTWORTH PDE, WRIGHT ST, YONGA ST"
+        },
+        {
+          "event_id": "INCD-995595-g",
+          "allocations": [
+            {
+              "lga_name": "Gympie Regional",
+              "lga_code": null,
+              "affected_customers": 254
+            }
+          ],
+          "details": {
+            "event": "INCD-995595-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Gympie Regional",
+            "postcode": "4570",
+            "suburb": "CANINA",
+            "customersAffected": "107",
+            "restoreTime": "2026-11-11T20:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ASH RD",
+              "GATE RD",
+              "GRIMLEY RD",
+              "HAY RD",
+              "KIN KIN RD",
+              "KINEN LANE",
+              "KWALT RD",
+              "LESHAAN RD",
+              "MORLEY RD",
+              "OLD COACH LANE",
+              "STEELE RD",
+              "TIN CAN BAY RD",
+              "WEST BREAK RD",
+              "WINDOW RD"
+            ]
+          },
+          "affected_customers": 254,
+          "suburb": "CANINA, GOOMBOORIAN, GREENS CREEK, GYMPIE, NORTH DEEP CREEK, ROSS CREEK, VETERAN, WOLVI",
+          "street_name": "ARTHUR PORTAS DR, ASH RD, BATH RD, DIPPER RD, ENTERPRISE RD, GARDNER RD, GATE RD, GRIMLEY RD, HAY RD, HOOD RD, KIN KIN RD, KINEN LANE, KWALT RD, LANGLEY RD, LAUREL RD, LESHAAN RD, MACPHERSON RD, MEREDITH RD, MORLEY RD, NORTH DEEP CREEK RD, OLD COACH LANE, OLD GOOMBOORIAN RD, PHILLIPS RD, SANDY CREEK RD, STEELE RD, THOMPSON RD, TIN CAN BAY RD, WATTLE LANE, WEST BREAK RD, WILTON RD, WINDOW RD"
+        },
+        {
+          "event_id": "INCD-995604-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 368
+            }
+          ],
+          "details": {
+            "event": "INCD-995604-g",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
+            "council": "Logan City",
+            "postcode": "4125",
+            "suburb": "MUNRUBEN",
+            "customersAffected": "367",
+            "restoreTime": "2026-11-12T02:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BASCOMBE CT",
+              "BELLENDEN CL",
+              "CARDWELL CL",
+              "CARTER RD",
+              "CHLOE DR",
+              "COALSTOUN CT",
+              "CONWAY CT",
+              "EACHAM CT",
+              "EILDON CL",
+              "KOORINGAL RD",
+              "KYEEMA CT",
+              "LEEUWIN CT",
+              "MT LINDESAY HWY",
+              "NORRIS CREEK RD",
+              "PALMERSTON CT",
+              "SHERBROOKE CT",
+              "TARA CT",
+              "TEMPEST CT",
+              "TERESA DR"
+            ]
+          },
+          "affected_customers": 368,
+          "suburb": "MUNRUBEN, PARK RIDGE SOUTH",
+          "street_name": "BASCOMBE CT, BELLENDEN CL, CARDWELL CL, CARTER RD, CHLOE DR, COALSTOUN CT, CONWAY CT, EACHAM CT, EILDON CL, GRANGER RD, KOORINGAL RD, KYEEMA CT, LEEUWIN CT, MT LINDESAY HWY, NORRIS CREEK RD, PALMERSTON CT, SHERBROOKE CT, TARA CT, TEMPEST CT, TERESA DR"
+        },
+        {
+          "event_id": "INCD-995608-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 752
+            }
+          ],
+          "details": {
+            "event": "INCD-995608-g",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
+            "council": "Logan City",
+            "postcode": "4114",
+            "suburb": "WOODRIDGE",
+            "customersAffected": "752",
+            "restoreTime": "2026-11-12T02:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BALLADONIA ST",
+              "BASS ST",
+              "BLAXLAND ST",
+              "BURKE ST",
+              "DOROTHY ST",
+              "EWING RD",
+              "EYRE ST",
+              "FLEUR ST",
+              "FLOYD ST",
+              "HENTY ST",
+              "KAREN ST",
+              "LAWSON ST",
+              "MACQUARIE ST",
+              "MADISON ST",
+              "MARLOW ST",
+              "MINOA ST",
+              "MONASH ST",
+              "MULLEN ST",
+              "NATASHA CT",
+              "OMAR ST",
+              "SCHODEL ST",
+              "SMITH RD",
+              "STUART ST",
+              "TAMALYN CT",
+              "WENTWORTH ST",
+              "WILLS ST"
+            ]
+          },
+          "affected_customers": 752,
+          "suburb": "WOODRIDGE",
+          "street_name": "BALLADONIA ST, BASS ST, BLAXLAND ST, BURKE ST, DOROTHY ST, EWING RD, EYRE ST, FLEUR ST, FLOYD ST, HENTY ST, KAREN ST, LAWSON ST, MACQUARIE ST, MADISON ST, MARLOW ST, MINOA ST, MONASH ST, MULLEN ST, NATASHA CT, OMAR ST, SCHODEL ST, SMITH RD, STUART ST, TAMALYN CT, WENTWORTH ST, WILLS ST"
+        },
+        {
+          "event_id": "INCD-995615-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 789
+            }
+          ],
+          "details": {
+            "event": "INCD-995615-g",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
+            "council": "Logan City",
+            "postcode": "4127",
+            "suburb": "DAISY HILL",
+            "customersAffected": "98",
+            "restoreTime": "2026-11-12T02:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "CHATSWOOD RD",
+              "EFYMIA CT",
+              "OLD CHATSWOOD RD"
+            ]
+          },
+          "affected_customers": 789,
+          "suburb": "DAISY HILL, SLACKS CREEK, SPRINGWOOD",
+          "street_name": "ACHILLES DR, BANGALLA DR, BARBARALLA DR, BENBOW CT, CHATSWOOD RD, COLEMAN CRES, DRAKE RD, EFYMIA CT, FROBISHER ST, GAMENYA DR, GRENVILLE ST, HAWKINS ST, HIBBERTIA CT, IKARA DR, JAMBEROO ST, JEMALONG CT, JENDI CT, JILBARD DR, LANDRA CT, MAGELLAN RD, MANEROO CT, MORGAN CT, NARENA ST, NELSON CT, OLD CHATSWOOD RD, PACIFIC HWY, PARADISE RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T07:31:32Z",
+      "fetched_utc": "2026-11-11T07:46:06Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T07:30:17Z",
-        "published_customers": 362,
-        "event_count": 12
+        "source_updated_utc": "2026-11-11T07:45:01Z",
+        "published_customers": 422,
+        "event_count": 13
       },
       "events": [
-        {
-          "event_id": "26CA13513",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 52
-            }
-          ],
-          "details": {
-            "event": "26CA13513",
-            "council": "Livingstone Shire Council",
-            "suburb": "MILMAN, THE CAVES, WATTLEBANK, YAAMBA",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 15:17",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "52",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 52,
-          "suburb": "MILMAN, THE CAVES, WATTLEBANK, YAAMBA",
-          "street_name": ""
-        },
         {
           "event_id": "26FN11079",
           "allocations": [
@@ -2526,6 +2787,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26SW14610",
+          "allocations": [
+            {
+              "lga_name": "Western Downs Regional",
+              "lga_code": null,
+              "affected_customers": 23
+            }
+          ],
+          "details": {
+            "event": "26SW14610",
+            "council": "Western Downs Regional Council",
+            "suburb": "DALBY, MACALISTER",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 16:35",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "23",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 23,
+          "suburb": "DALBY, MACALISTER",
+          "street_name": ""
+        },
+        {
           "event_id": "26WB10949",
           "allocations": [
             {
@@ -2547,6 +2832,30 @@
           },
           "affected_customers": 6,
           "suburb": "MOUNT PERRY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10988",
+          "allocations": [
+            {
+              "lga_name": "South Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 89
+            }
+          ],
+          "details": {
+            "event": "26WB10988",
+            "council": "South Burnett Regional Council",
+            "suburb": "BLACKBUTT, TAROMEO, TEELAH",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 17:35",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "89",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 89,
+          "suburb": "BLACKBUTT, TAROMEO, TEELAH",
           "street_name": ""
         },
         {
