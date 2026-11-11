@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T10:46:20Z",
+      "fetched_utc": "2026-11-11T11:01:27Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 8:45 PM",
-        "source_updated_utc": "2026-11-11T10:45:04Z",
-        "published_customers": 79042,
+        "source_updated": "11 November 2026 9:00 PM",
+        "source_updated_utc": "2026-11-11T11:00:04Z",
+        "published_customers": 78040,
         "event_count": 71
       },
       "events": [
@@ -1992,7 +1992,7 @@
             {
               "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 1060
+              "affected_customers": 1054
             }
           ],
           "details": {
@@ -2011,9 +2011,9 @@
               "ILLAWEENA ST"
             ]
           },
-          "affected_customers": 1060,
+          "affected_customers": 1054,
           "suburb": "KARAWATHA, KURABY, RUNCORN, STRETTON",
-          "street_name": "ABERCORN ST, BEENLEIGH RD, BONEMILL RD, CINDY CT, CLIFFORD CL, COMPTON RD, CRANE CRES, GATES PL, GUMTREE ST, HOCKEY ST, ILLAWEENA ST, LAKEFIELD PL, LANCASTER CCT, LEE CL, LIVINGSTONE PL, MAJESTIC PL, MALLAN PL, MARTIN PL, MAYFAIR PL, NEMIES RD, NURSERY AVE, OXFORD PL, PADDINGTON CRES, PERSSE RD, REGENCY PL, RUSHTON ST, SAUERBERG CL, SESTER PL, SHEEHY ST, SUE CT, TRAFALGAR CL, VICTOR ST, WELLINGTON PL, YORKSHIRE PL, YOUNG PL"
+          "street_name": "BEENLEIGH RD, CINDY CT, CLIFFORD CL, COMPTON RD, CRANE CRES, GATES PL, GUMTREE ST, HOCKEY ST, ILLAWEENA ST, LAKEFIELD PL, LANCASTER CCT, LEE CL, LIVINGSTONE PL, MAJESTIC PL, MALLAN PL, MARTIN PL, MAYFAIR PL, NEMIES RD, NURSERY AVE, OXFORD PL, PADDINGTON CRES, PERSSE RD, REGENCY PL, RUSHTON ST, SAUERBERG CL, SESTER PL, SHEEHY ST, SUE CT, TRAFALGAR CL, VICTOR ST, WELLINGTON PL, YORKSHIRE PL, YOUNG PL"
         },
         {
           "event_id": "INCD-995583-g",
@@ -2470,34 +2470,6 @@
           "street_name": "FACILES RD, ZIPFS RD"
         },
         {
-          "event_id": "INCD-995780-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 1002
-            }
-          ],
-          "details": {
-            "event": "INCD-995780-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Moreton Bay Regional",
-            "postcode": "4508",
-            "suburb": "DECEPTION BAY",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-12T08:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ANTIGUA CRES"
-            ]
-          },
-          "affected_customers": 1002,
-          "suburb": "DECEPTION BAY, ROTHWELL",
-          "street_name": "ABBEY CT, ANCORA ST, ANTIGUA CRES, BADCOE CT, BANKSIA CT, BLANCHE CT, BLOODWOOD CT, BRADFORD CT, BRISTOL CT, CALLISTEMON CT, CAMBRIDGE ST, CASHMERE ST, CASUARINA CT, DECEPTION BAY RD, DOBELL ST, DRYSDALE ST, EDGEWATER AVE, ETON ST, GLANVILLE ST, GREVILLEA CT, GREYGUM CT, GYNTHER RD, HAROLD CT, HART CT, HODDLE CT, JACKA CT, KELLIHER ST, LINDSAY ST, LYNANDA CT, MANGROVE CT, MARIA CT, MELALEUCA CRES, MIRAPOOL ST, MORRIS RD, OXFORD ST, PAPERBARK ST, PICASSO CT, PROMENADE CCT, RENOIR CT, SAWREY ST, SIMPSON CT, STREETON CT, TEAK ST, WHEATLEY CT"
-        },
-        {
           "event_id": "INCD-995787-g",
           "allocations": [
             {
@@ -2722,7 +2694,7 @@
             "postcode": "4510",
             "suburb": "CABOOLTURE",
             "customersAffected": "1",
-            "restoreTime": "2026-11-11T23:00:00+10:00",
+            "restoreTime": "2026-11-11T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -2888,17 +2860,45 @@
           "affected_customers": 53,
           "suburb": "CHAMBERS FLAT",
           "street_name": "ANDREWS CT, GREY GUM RD, HOLLOWAY RD, SUNGOLD RD"
+        },
+        {
+          "event_id": "INCD-995940-g",
+          "allocations": [
+            {
+              "lga_name": "Noosa Shire",
+              "lga_code": null,
+              "affected_customers": 6
+            }
+          ],
+          "details": {
+            "event": "INCD-995940-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Noosa",
+            "postcode": "4568",
+            "suburb": "POMONA",
+            "customersAffected": "6",
+            "restoreTime": "2026-11-11T22:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "FERGUSON RD"
+            ]
+          },
+          "affected_customers": 6,
+          "suburb": "POMONA",
+          "street_name": "FERGUSON RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T10:46:23Z",
+      "fetched_utc": "2026-11-11T11:01:30Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T10:45:00Z",
-        "published_customers": 8094,
-        "event_count": 21
+        "source_updated_utc": "2026-11-11T11:00:15Z",
+        "published_customers": 8244,
+        "event_count": 20
       },
       "events": [
         {
@@ -2969,10 +2969,10 @@
             "suburb": "NORMANTON",
             "type": "UNPLANNED",
             "startTime": "10/11/2026 16:38",
-            "restoreTime": "11/11/2026 23:00",
+            "restoreTime": "12/11/2026 15:00",
             "customersAffected": "6",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
+            "cause": "The loss of supply is due to the operating of protective equipment.",
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 16,
           "suburb": "NORMANTON",
@@ -3224,30 +3224,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW14655",
-          "allocations": [
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 15
-            }
-          ],
-          "details": {
-            "event": "26SW14655",
-            "council": "Western Downs Regional Council",
-            "suburb": "MILES, MYALL PARK, NORTH MILES",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 20:05",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "15",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 15,
-          "suburb": "MILES, MYALL PARK, NORTH MILES",
-          "street_name": ""
-        },
-        {
           "event_id": "26WB10988",
           "allocations": [
             {
@@ -3269,40 +3245,6 @@
           },
           "affected_customers": 89,
           "suburb": "BLACKBUTT, TAROMEO, TEELAH",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB11004",
-          "allocations": [
-            {
-              "lga_name": "South Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 1008
-            },
-            {
-              "lga_name": "North Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 1
-            },
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "26WB11004",
-            "council": "North Burnett Regional Council",
-            "suburb": "WIGTON",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 18:29",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "1",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 1010,
-          "suburb": "ABBEYWOOD, BOONDOOMA, BOONDOOMA WEST, BRIGOODA, CHELMSFORD, COVERTY, DARR CREEK, DURONG, DURONG SOUTH, HIVESVILLE, KAWL KAWL, KEYSLAND, KINLEYMORE, LEAFDALE, MARSHLANDS, MELROSE, MONDURE, MOUNT MCEUEN, PROSTON, SILVERLEAF, SPEEDWELL, STALWORTH, STONELANDS, WIGTON",
           "street_name": ""
         },
         {
@@ -3414,6 +3356,35 @@
           },
           "affected_customers": 5,
           "suburb": "EAST NANANGO, NANANGO",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB11040",
+          "allocations": [
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 926
+            },
+            {
+              "lga_name": "Fraser Coast Regional",
+              "lga_code": null,
+              "affected_customers": 249
+            }
+          ],
+          "details": {
+            "event": "26WB11040",
+            "council": "Fraser Coast Regional Council",
+            "suburb": "ARAMARA, BIGGENDEN, BOOMPA, BROOWEENA, DOONGUL, ELIOTT, GIGOOMGAN, NORTH ARAMARA, TEEBAR, WOOCOO, WOOLOOGA",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 20:47",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "249",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 1175,
+          "suburb": "ARAMARA, BIGGENDEN, BOOMPA, BROOWEENA, CORINGA, DALLARNIL, DEGILBO, DOONGUL, ELIOTT, GIGOOMGAN, LAKESIDE, NORTH ARAMARA, TEEBAR, WOOCOO, WOOLOOGA, WOOWOONGA",
           "street_name": ""
         },
         {
