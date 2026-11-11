@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T00:16:14Z",
+      "fetched_utc": "2026-11-11T00:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 10:00 AM",
-        "source_updated_utc": "2026-11-11T00:00:02Z",
-        "published_customers": 1027,
-        "event_count": 5
+        "source_updated": "11 November 2026 10:30 AM",
+        "source_updated_utc": "2026-11-11T00:30:02Z",
+        "published_customers": 1070,
+        "event_count": 6
       },
       "events": [
         {
@@ -190,7 +190,7 @@
             "postcode": "4075",
             "suburb": "CORINDA",
             "customersAffected": "46",
-            "restoreTime": "2026-11-11T11:00:00+10:00",
+            "restoreTime": "2026-11-11T13:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -204,17 +204,48 @@
           "affected_customers": 47,
           "suburb": "CORINDA, OXLEY",
           "street_name": "ALLAMBI CT, BLACKHEATH RD, CLIVEDEN AVE, EDDYSTONE RD, STANFELL ST"
+        },
+        {
+          "event_id": "INCD-994818-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 43
+            }
+          ],
+          "details": {
+            "event": "INCD-994818-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4115",
+            "suburb": "PARKINSON",
+            "customersAffected": "43",
+            "restoreTime": "2026-11-11T11:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "DAYDREAM ST",
+              "HAYMAN ST",
+              "ORPHEUS ST",
+              "WHITSUNDAY ST"
+            ]
+          },
+          "affected_customers": 43,
+          "suburb": "PARKINSON",
+          "street_name": "DAYDREAM ST, HAYMAN ST, ORPHEUS ST, WHITSUNDAY ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T00:16:17Z",
+      "fetched_utc": "2026-11-11T00:31:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T00:15:15Z",
-        "published_customers": 590,
-        "event_count": 11
+        "source_updated_utc": "2026-11-11T00:30:01Z",
+        "published_customers": 615,
+        "event_count": 13
       },
       "events": [
         {
@@ -439,6 +470,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26SW14536",
+          "allocations": [
+            {
+              "lga_name": "Paroo Shire",
+              "lga_code": null,
+              "affected_customers": 5
+            }
+          ],
+          "details": {
+            "event": "26SW14536",
+            "council": "Paroo Shire Council",
+            "suburb": "CUNNAMULLA",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 10:27",
+            "restoreTime": "11/11/2026 13:00",
+            "customersAffected": "5",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 5,
+          "suburb": "CUNNAMULLA",
+          "street_name": ""
+        },
+        {
           "event_id": "26SW14544",
           "allocations": [
             {
@@ -460,6 +515,30 @@
           },
           "affected_customers": 27,
           "suburb": "COALBANK, DJUAN, HADEN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10949",
+          "allocations": [
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 20
+            }
+          ],
+          "details": {
+            "event": "26WB10949",
+            "council": "North Burnett Regional Council",
+            "suburb": "MOUNT PERRY",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 10:24",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "20",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 20,
+          "suburb": "MOUNT PERRY",
           "street_name": ""
         },
         {
