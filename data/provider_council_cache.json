@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T19:31:26Z",
+      "fetched_utc": "2026-11-11T19:46:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 5:30 AM",
-        "source_updated_utc": "2026-11-11T19:30:03Z",
+        "source_updated": "12 November 2026 5:45 AM",
+        "source_updated_utc": "2026-11-11T19:45:03Z",
         "published_customers": 54464,
         "event_count": 56
       },
@@ -2402,13 +2402,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T19:31:30Z",
+      "fetched_utc": "2026-11-11T19:46:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T19:30:00Z",
-        "published_customers": 2067,
-        "event_count": 21
+        "source_updated_utc": "2026-11-11T19:45:01Z",
+        "published_customers": 2069,
+        "event_count": 22
       },
       "events": [
         {
@@ -2914,6 +2914,30 @@
           },
           "affected_customers": 3,
           "suburb": "PATERSON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB11059",
+          "allocations": [
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26WB11059",
+            "council": "North Burnett Regional Council",
+            "suburb": "GAYNDAH",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 05:30",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 2,
+          "suburb": "GAYNDAH",
           "street_name": ""
         },
         {
