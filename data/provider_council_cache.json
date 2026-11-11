@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T23:31:33Z",
+      "fetched_utc": "2026-11-11T23:46:07Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -2442,13 +2442,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T23:16:13Z",
+      "fetched_utc": "2026-11-11T23:46:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T23:15:00Z",
-        "published_customers": 893,
-        "event_count": 24
+        "source_updated_utc": "2026-11-11T23:40:17Z",
+        "published_customers": 935,
+        "event_count": 26
       },
       "events": [
         {
@@ -2519,10 +2519,10 @@
             "suburb": "BANANA, THEODORE",
             "type": "UNPLANNED",
             "startTime": "11/11/2026 22:16",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "12/11/2026 13:00",
             "customersAffected": "15",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 15,
           "suburb": "BANANA, THEODORE",
@@ -2547,6 +2547,30 @@
             "customersAffected": "31",
             "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Outage reported"
+          },
+          "affected_customers": 31,
+          "suburb": "CASTLE CREEK, LONESOME CREEK, THEODORE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13547",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 31
+            }
+          ],
+          "details": {
+            "event": "26CA13547",
+            "council": "Banana Shire Council",
+            "suburb": "CASTLE CREEK, LONESOME CREEK, THEODORE",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 06:51",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "31",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Crews on route"
           },
           "affected_customers": 31,
           "suburb": "CASTLE CREEK, LONESOME CREEK, THEODORE",
@@ -2724,7 +2748,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "6",
             "cause": "The loss of supply is due to the operating of protective equipment.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 6,
           "suburb": "HUGHENDEN",
@@ -2830,7 +2854,7 @@
             "restoreTime": "12/11/2026 16:00",
             "customersAffected": "31",
             "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
           "affected_customers": 31,
           "suburb": "CHARLEVILLE, MORVEN",
@@ -2909,12 +2933,36 @@
           "street_name": ""
         },
         {
+          "event_id": "26SW14686",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 10
+            }
+          ],
+          "details": {
+            "event": "26SW14686",
+            "council": "Banana Shire Council",
+            "suburb": "TAROOM",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 20:25",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "10",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 10,
+          "suburb": "TAROOM",
+          "street_name": ""
+        },
+        {
           "event_id": "26WB11012",
           "allocations": [
             {
               "lga_name": "Gympie Regional",
               "lga_code": null,
-              "affected_customers": 34
+              "affected_customers": 35
             }
           ],
           "details": {
@@ -2924,11 +2972,11 @@
             "type": "UNPLANNED",
             "startTime": "11/11/2026 18:59",
             "restoreTime": "Under Investigation",
-            "customersAffected": "34",
+            "customersAffected": "35",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 34,
+          "affected_customers": 35,
           "suburb": "GUNALDA, MIVA, SEXTON, THEEBINE",
           "street_name": ""
         },
