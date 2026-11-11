@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T09:46:21Z",
+      "fetched_utc": "2026-11-11T10:01:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 7:45 PM",
-        "source_updated_utc": "2026-11-11T09:45:04Z",
-        "published_customers": 81369,
-        "event_count": 68
+        "source_updated": "11 November 2026 8:00 PM",
+        "source_updated_utc": "2026-11-11T10:00:04Z",
+        "published_customers": 81058,
+        "event_count": 69
       },
       "events": [
         {
@@ -81,7 +81,7 @@
             {
               "lga_name": "Gympie Regional",
               "lga_code": null,
-              "affected_customers": 524
+              "affected_customers": 212
             }
           ],
           "details": {
@@ -100,9 +100,9 @@
               "LITTLE BELLA CREEK RD"
             ]
           },
-          "affected_customers": 524,
+          "affected_customers": 212,
           "suburb": "BELLA CREEK, BROOLOO, IMBIL, LAKE BORUMBA",
-          "street_name": "ALBION ST, ALICE ST, AURA PL, BALLARD RD, BELLA CREEK RD, BREEZE PL, BUNDY RD, BUTLERS CORNER RD, CRABBET LANE, DERRIER RD, DIGGINGS RD, DWYER RD, EDWARD ST, ELIZABETH ST, GEORGE ST, HORIZON DR, IMBIL ISLAND RD, IMBIL-BROOLOO RD, KEVIN RD, LITTLE BELLA CREEK RD, LUTTON LANE, MARSDEN ST, MARY VALLEY RD, MATHIAS ST, MELINDA RD, MEYERS ST, MITCHELL CREEK RD, PARKVIEW RDGE, ROZYNSKI RD, RUSH RD, SELWYN ST, SUNLIGHT DR, TINCKNELL RD, TUNNEL RD, TUNNELL RD, UNNAMED RD, WALLADER RD, WESTERN CREEK RD, WILLIAM ST, WIRIN CT, YABBA CREEK RD, YABBA RD, YORK ST"
+          "street_name": "BELLA CREEK RD, BUTLERS CORNER RD, CRABBET LANE, DERRIER RD, DIGGINGS RD, DWYER RD, EDWARD ST, GEORGE ST, IMBIL ISLAND RD, IMBIL-BROOLOO RD, LITTLE BELLA CREEK RD, MARY VALLEY RD, MITCHELL CREEK RD, PARKVIEW RDGE, ROZYNSKI RD, RUSH RD, SELWYN ST, TINCKNELL RD, UNNAMED RD, WESTERN CREEK RD, WILLIAM ST, WIRIN CT, YABBA CREEK RD, YABBA RD"
         },
         {
           "event_id": "INCD-994999-g",
@@ -2232,7 +2232,7 @@
             "postcode": "4570",
             "suburb": "CANINA",
             "customersAffected": "107",
-            "restoreTime": "2026-11-11T20:30:00+10:00",
+            "restoreTime": "2026-11-11T23:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -2402,7 +2402,7 @@
             "postcode": "4160",
             "suburb": "ORMISTON",
             "customersAffected": "25",
-            "restoreTime": "2026-11-11T20:00:00+10:00",
+            "restoreTime": "2026-11-11T21:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -2660,7 +2660,7 @@
             "postcode": "4570",
             "suburb": "JONES HILL",
             "customersAffected": "20",
-            "restoreTime": "2026-11-11T20:30:00+10:00",
+            "restoreTime": "2026-11-11T22:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -2780,7 +2780,7 @@
             "postcode": "4312",
             "suburb": "ESK",
             "customersAffected": "24",
-            "restoreTime": "2026-11-11T22:00:00+10:00",
+            "restoreTime": "2026-11-11T22:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -2791,19 +2791,71 @@
           "affected_customers": 76,
           "suburb": "ESK, REDBANK CREEK",
           "street_name": "ESK FOREST RD, ESK HAMPTON RD, GRAVES RD, HAMPTON RD, MACKENZIE LANE, O&apos;GRADY RD, REGENT RD, SLAUGHTER RD"
+        },
+        {
+          "event_id": "INCD-995887-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-995887-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4510",
+            "suburb": "CABOOLTURE",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-11T23:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BRIBIE ISLAND RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "CABOOLTURE",
+          "street_name": "BRIBIE ISLAND RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T09:46:24Z",
+      "fetched_utc": "2026-11-11T10:01:27Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T09:45:01Z",
-        "published_customers": 12582,
-        "event_count": 21
+        "source_updated_utc": "2026-11-11T10:00:01Z",
+        "published_customers": 12588,
+        "event_count": 22
       },
       "events": [
+        {
+          "event_id": "26CA13519",
+          "allocations": [
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26CA13519",
+            "council": "North Burnett Regional Council",
+            "suburb": "MULGILDIE",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 18:07",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 2,
+          "suburb": "MULGILDIE",
+          "street_name": ""
+        },
         {
           "event_id": "26FN11079",
           "allocations": [
@@ -2855,6 +2907,30 @@
           },
           "affected_customers": 16,
           "suburb": "NORMANTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26MK7256",
+          "allocations": [
+            {
+              "lga_name": "Mackay Regional",
+              "lga_code": null,
+              "affected_customers": 35
+            }
+          ],
+          "details": {
+            "event": "26MK7256",
+            "council": "Mackay Regional Council",
+            "suburb": "WEST MACKAY",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 19:36",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "35",
+            "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 35,
+          "suburb": "WEST MACKAY",
           "street_name": ""
         },
         {
@@ -3003,27 +3079,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ13990",
+          "event_id": "26NQ13991",
           "allocations": [
             {
-              "lga_name": "Hinchinbrook Shire",
+              "lga_name": "Cloncurry Shire",
               "lga_code": null,
-              "affected_customers": 4
+              "affected_customers": 13
             }
           ],
           "details": {
-            "event": "26NQ13990",
-            "council": "Hinchinbrook Shire Council",
-            "suburb": "FORREST BEACH",
+            "event": "26NQ13991",
+            "council": "Cloncurry Shire Council",
+            "suburb": "CLONCURRY",
             "type": "UNPLANNED",
-            "startTime": "11/11/2026 20:19",
+            "startTime": "11/11/2026 19:42",
             "restoreTime": "Under Investigation",
-            "customersAffected": "4",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
+            "customersAffected": "13",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
           },
-          "affected_customers": 4,
-          "suburb": "FORREST BEACH",
+          "affected_customers": 13,
+          "suburb": "CLONCURRY",
           "street_name": ""
         },
         {
@@ -3096,30 +3172,6 @@
           },
           "affected_customers": 25,
           "suburb": "FORESTVALE, MITCHELL",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14618",
-          "allocations": [
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 40
-            }
-          ],
-          "details": {
-            "event": "26SW14618",
-            "council": "Western Downs Regional Council",
-            "suburb": "MILES, MYALL PARK, NORTH MILES",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 17:56",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "40",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 40,
-          "suburb": "MILES, MYALL PARK, NORTH MILES",
           "street_name": ""
         },
         {
@@ -3300,7 +3352,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "153",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 641,
           "suburb": "BROOWEENA, CALGOA, CURRA, GLEN ECHO, GLENBAR, GLENWOOD, GUNALDA, GUNDIAH, KADINA, KANIGAN, KANYAN, MARYBOROUGH, MIVA, MOUNT URAH, MUNNA CREEK, PATERSON, SEXTON, THEEBINE, WOOLOOGA",
@@ -3353,7 +3405,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "4",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 4,
           "suburb": "NANANGO",
