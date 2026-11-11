@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T21:31:24Z",
+      "fetched_utc": "2026-11-11T21:46:08Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -2487,13 +2487,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T21:31:26Z",
+      "fetched_utc": "2026-11-11T21:46:12Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T21:25:00Z",
-        "published_customers": 716,
-        "event_count": 23
+        "source_updated_utc": "2026-11-11T21:45:01Z",
+        "published_customers": 668,
+        "event_count": 24
       },
       "events": [
         {
@@ -2514,7 +2514,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "2",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 2,
           "suburb": "MULGILDIE",
@@ -2571,30 +2571,6 @@
           },
           "affected_customers": 15,
           "suburb": "BANANA, THEODORE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13537",
-          "allocations": [
-            {
-              "lga_name": "Gladstone Regional",
-              "lga_code": null,
-              "affected_customers": 51
-            }
-          ],
-          "details": {
-            "event": "26CA13537",
-            "council": "Gladstone Regional Council",
-            "suburb": "AGNES WATER",
-            "type": "UNPLANNED",
-            "startTime": "12/11/2026 05:29",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "51",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 51,
-          "suburb": "AGNES WATER",
           "street_name": ""
         },
         {
@@ -2947,7 +2923,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "25",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 25,
           "suburb": "FORESTVALE, MITCHELL",
@@ -2959,27 +2935,22 @@
             {
               "lga_name": "Gympie Regional",
               "lga_code": null,
-              "affected_customers": 64
-            },
-            {
-              "lga_name": "Fraser Coast Regional",
-              "lga_code": null,
-              "affected_customers": 50
+              "affected_customers": 35
             }
           ],
           "details": {
             "event": "26WB11012",
-            "council": "Fraser Coast Regional Council",
-            "suburb": "BROOWEENA, CALGOA, GLENBAR, GUNDIAH, MIVA, MOUNT URAH, MUNNA CREEK, PATERSON, WOOLOOGA",
+            "council": "Gympie Regional Council",
+            "suburb": "GUNALDA, MIVA, SEXTON, THEEBINE",
             "type": "UNPLANNED",
             "startTime": "11/11/2026 18:59",
             "restoreTime": "Under Investigation",
-            "customersAffected": "50",
+            "customersAffected": "35",
             "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 114,
-          "suburb": "BROOWEENA, CALGOA, GLEN ECHO, GLENBAR, GUNALDA, GUNDIAH, MIVA, MOUNT URAH, MUNNA CREEK, PATERSON, SEXTON, THEEBINE, WOOLOOGA",
+          "affected_customers": 35,
+          "suburb": "GUNALDA, MIVA, SEXTON, THEEBINE",
           "street_name": ""
         },
         {
@@ -2988,7 +2959,7 @@
             {
               "lga_name": "Bundaberg Regional",
               "lga_code": null,
-              "affected_customers": 100
+              "affected_customers": 99
             }
           ],
           "details": {
@@ -2998,11 +2969,11 @@
             "type": "UNPLANNED",
             "startTime": "11/11/2026 23:33",
             "restoreTime": "Under Investigation",
-            "customersAffected": "100",
+            "customersAffected": "99",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 100,
+          "affected_customers": 99,
           "suburb": "BUNDABERG, CHILDERS, LOGGING CREEK, NORTH GREGORY",
           "street_name": ""
         },
@@ -3052,6 +3023,59 @@
           },
           "affected_customers": 4,
           "suburb": "WHEATLANDS",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB11070",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 39
+            }
+          ],
+          "details": {
+            "event": "26WB11070",
+            "council": "Bundaberg Regional Council",
+            "suburb": "AVENELL HEIGHTS",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 05:57",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "39",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 39,
+          "suburb": "AVENELL HEIGHTS",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB11072",
+          "allocations": [
+            {
+              "lga_name": "Gympie Regional",
+              "lga_code": null,
+              "affected_customers": 29
+            },
+            {
+              "lga_name": "Fraser Coast Regional",
+              "lga_code": null,
+              "affected_customers": 15
+            }
+          ],
+          "details": {
+            "event": "26WB11072",
+            "council": "Fraser Coast Regional Council",
+            "suburb": "CALGOA, WOOLOOGA",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 18:59",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "15",
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 44,
+          "suburb": "CALGOA, GLEN ECHO, MIVA, MUNNA CREEK, WOOLOOGA",
           "street_name": ""
         },
         {
