@@ -1,38 +1,43 @@
 {
-  "generated_utc": "2026-11-11T08:16:06Z",
-  "generated_aest": "2026-11-11T18:16:06+10:00",
+  "generated_utc": "2026-11-11T08:31:08Z",
+  "generated_aest": "2026-11-11T18:31:08+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 79,
+  "current_outage_records": 81,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 440,
-  "current_records_after_outage_type_filter": 104,
-  "current_records_dropped_planned_or_unknown": 336,
-  "provider_fetch_errors": {},
-  "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {},
+  "current_records_before_outage_type_filter": 415,
+  "current_records_after_outage_type_filter": 81,
+  "current_records_dropped_planned_or_unknown": 334,
+  "provider_fetch_errors": {
+    "Essential Energy": "HTTPError: 404 Client Error: Not Found for url: https://www.essentialenergy.com.au/Assets/kmz/current.kml?dFdLgoAP"
+  },
+  "provider_fetch_error_count": 1,
+  "provider_fetch_warnings": {
+    "Energex": "Update delayed; using verified provider data from 2026-11-11T08:00:05Z. Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+  },
   "council_allocation_status": {
     "Energex": {
-      "status": "provider",
+      "status": "provider_cache",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
       "source_updated": "11 November 2026 6:00 PM",
       "source_updated_utc": "2026-11-11T08:00:05Z",
       "published_customers": 78178,
       "event_count": 62,
-      "fetched_utc": "2026-11-11T08:16:14Z"
+      "fetched_utc": "2026-11-11T08:16:14Z",
+      "collection_error": "Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T08:15:28Z",
-      "published_customers": 722,
-      "event_count": 17,
-      "fetched_utc": "2026-11-11T08:16:17Z"
+      "source_updated_utc": "2026-11-11T08:25:00Z",
+      "published_customers": 726,
+      "event_count": 19,
+      "fetched_utc": "2026-11-11T08:31:32Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-11T08:16:06Z",
+    "snapshot_utc": "2026-11-11T08:31:08Z",
     "energex": {
       "status": "ok",
       "fetched_utc": "2026-11-11T08:16:14Z",
@@ -40,7 +45,7 @@
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
       "source_updated_utc": "2026-11-11T08:00:05Z",
-      "retained": false,
+      "retained": true,
       "total_customers": 78178,
       "rows": [
         {
@@ -83,13 +88,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-11T08:16:17Z",
+      "fetched_utc": "2026-11-11T08:31:32Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T08:15:28Z",
+      "source_updated_utc": "2026-11-11T08:25:00Z",
       "retained": false,
-      "total_customers": 722,
+      "total_customers": 726,
       "rows": [
         {
           "lga_name": "Boulia Shire",
@@ -129,7 +134,7 @@
         },
         {
           "lga_name": "Murweh Shire",
-          "affected_customers": 57
+          "affected_customers": 59
         },
         {
           "lga_name": "North Burnett Regional",
@@ -145,7 +150,7 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 9
+          "affected_customers": 11
         },
         {
           "lga_name": "Western Downs Regional",
@@ -160,16 +165,16 @@
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 62,
-  "current_ergon_records": 17,
-  "current_essential_records_fetched": 27,
+  "current_ergon_records": 19,
+  "current_essential_records_fetched": 0,
   "current_energex_records_fetched": 199,
-  "current_ergon_records_fetched": 213,
+  "current_ergon_records_fetched": 217,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 25,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 0,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3320,
-  "lga_totals_rows_48h": 4418,
+  "snapshot_rows_48h": 3382,
+  "lga_totals_rows_48h": 4446,
   "lga_totals_latest_rows": 50,
   "lga_cumulative_rows": 107,
   "outputs": {
