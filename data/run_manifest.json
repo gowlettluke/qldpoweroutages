@@ -1,52 +1,49 @@
 {
-  "generated_utc": "2026-11-11T06:01:23Z",
-  "generated_aest": "2026-11-11T16:01:23+10:00",
+  "generated_utc": "2026-11-11T06:16:08Z",
+  "generated_aest": "2026-11-11T16:16:08+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 42,
+  "current_outage_records": 46,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 403,
-  "current_records_after_outage_type_filter": 56,
-  "current_records_dropped_planned_or_unknown": 347,
+  "current_records_before_outage_type_filter": 411,
+  "current_records_after_outage_type_filter": 66,
+  "current_records_dropped_planned_or_unknown": 345,
   "provider_fetch_errors": {
     "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
   },
   "provider_fetch_error_count": 1,
-  "provider_fetch_warnings": {
-    "Ergon": "Update delayed; using verified provider data from 2026-11-11T05:45:01Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "geometry_fallback",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T05:45:01Z",
-      "published_customers": 739,
-      "event_count": 10,
-      "fetched_utc": "2026-11-11T05:46:20Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "source_updated_utc": "2026-11-11T06:15:01Z",
+      "published_customers": 491,
+      "event_count": 14,
+      "fetched_utc": "2026-11-11T06:16:22Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-11T06:01:23Z",
+    "snapshot_utc": "2026-11-11T06:16:08Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-11T06:01:41Z",
+      "fetched_utc": "2026-11-11T06:16:23Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-11T05:46:20Z",
+      "fetched_utc": "2026-11-11T06:16:22Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T05:45:01Z",
-      "retained": true,
-      "total_customers": 739,
+      "source_updated_utc": "2026-11-11T06:15:01Z",
+      "retained": false,
+      "total_customers": 491,
       "rows": [
         {
           "lga_name": "Balonne Shire",
@@ -70,23 +67,35 @@
         },
         {
           "lga_name": "Cloncurry Shire",
-          "affected_customers": 17
+          "affected_customers": 18
         },
         {
           "lga_name": "Fraser Coast Regional",
           "affected_customers": 3
         },
         {
+          "lga_name": "Livingstone Shire",
+          "affected_customers": 52
+        },
+        {
+          "lga_name": "McKinlay Shire",
+          "affected_customers": 21
+        },
+        {
           "lga_name": "Murweh Shire",
-          "affected_customers": 31
+          "affected_customers": 57
         },
         {
           "lga_name": "North Burnett Regional",
           "affected_customers": 6
         },
         {
-          "lga_name": "Palm Island Aboriginal Shire",
-          "affected_customers": 477
+          "lga_name": "Southern Downs Regional",
+          "affected_customers": 120
+        },
+        {
+          "lga_name": "Toowoomba Regional",
+          "affected_customers": 9
         },
         {
           "lga_name": "Winton Shire",
@@ -97,18 +106,18 @@
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 32,
-  "current_ergon_records": 10,
-  "current_essential_records_fetched": 18,
+  "current_ergon_records": 14,
+  "current_essential_records_fetched": 23,
   "current_energex_records_fetched": 168,
-  "current_ergon_records_fetched": 216,
+  "current_ergon_records_fetched": 215,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 14,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 20,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 2917,
-  "lga_totals_rows_48h": 4254,
-  "lga_totals_latest_rows": 38,
-  "lga_cumulative_rows": 97,
+  "snapshot_rows_48h": 2925,
+  "lga_totals_rows_48h": 4242,
+  "lga_totals_latest_rows": 44,
+  "lga_cumulative_rows": 99,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
     "outage_snapshots_48h_csv": "data/outage_snapshots_48h.csv",
