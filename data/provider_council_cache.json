@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T02:31:21Z",
+      "fetched_utc": "2026-11-11T02:46:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -165,13 +165,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T02:16:03Z",
+      "fetched_utc": "2026-11-11T02:46:16Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T02:10:00Z",
-        "published_customers": 668,
-        "event_count": 15
+        "source_updated_utc": "2026-11-11T02:45:00Z",
+        "published_customers": 897,
+        "event_count": 16
       },
       "events": [
         {
@@ -228,7 +228,7 @@
             {
               "lga_name": "Carpentaria Shire",
               "lga_code": null,
-              "affected_customers": 50
+              "affected_customers": 10
             },
             {
               "lga_name": "Burke Shire",
@@ -242,12 +242,12 @@
             "suburb": "NORMANTON",
             "type": "UNPLANNED",
             "startTime": "10/11/2026 16:38",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "11/11/2026 19:00",
             "customersAffected": "6",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
-          "affected_customers": 56,
+          "affected_customers": 16,
           "suburb": "NORMANTON",
           "street_name": ""
         },
@@ -297,30 +297,6 @@
           },
           "affected_customers": 3,
           "suburb": "SARINA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26MK7150",
-          "allocations": [
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26MK7150",
-            "council": "Mackay Regional Council",
-            "suburb": "FRESHWATER POINT",
-            "type": "UNPLANNED",
-            "startTime": "09/11/2026 18:22",
-            "restoreTime": "11/11/2026 18:00",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 3,
-          "suburb": "FRESHWATER POINT",
           "street_name": ""
         },
         {
@@ -401,7 +377,7 @@
             {
               "lga_name": "Townsville City",
               "lga_code": null,
-              "affected_customers": 29
+              "affected_customers": 212
             }
           ],
           "details": {
@@ -411,12 +387,36 @@
             "type": "UNPLANNED",
             "startTime": "11/11/2026 10:18",
             "restoreTime": "Under Investigation",
-            "customersAffected": "29",
+            "customersAffected": "212",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
-          "affected_customers": 29,
+          "affected_customers": 212,
           "suburb": "OONOONBA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ13961",
+          "allocations": [
+            {
+              "lga_name": "Townsville City",
+              "lga_code": null,
+              "affected_customers": 73
+            }
+          ],
+          "details": {
+            "event": "26NQ13961",
+            "council": "Townsville City Council",
+            "suburb": "RASMUSSEN",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 11:36",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "73",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 73,
+          "suburb": "RASMUSSEN",
           "street_name": ""
         },
         {
@@ -465,6 +465,30 @@
           },
           "affected_customers": 27,
           "suburb": "COALBANK, DJUAN, HADEN",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14550",
+          "allocations": [
+            {
+              "lga_name": "Balonne Shire",
+              "lga_code": null,
+              "affected_customers": 16
+            }
+          ],
+          "details": {
+            "event": "26SW14550",
+            "council": "Balonne Shire Council",
+            "suburb": "BOLLON, DIRRANBANDI",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 12:16",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "16",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 16,
+          "suburb": "BOLLON, DIRRANBANDI",
           "street_name": ""
         },
         {
