@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T02:46:13Z",
+      "fetched_utc": "2026-11-11T03:01:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 12:30 PM",
-        "source_updated_utc": "2026-11-11T02:30:02Z",
-        "published_customers": 116,
-        "event_count": 5
+        "source_updated": "11 November 2026 1:00 PM",
+        "source_updated_utc": "2026-11-11T03:00:02Z",
+        "published_customers": 323,
+        "event_count": 6
       },
       "events": [
         {
@@ -119,7 +119,7 @@
             "postcode": "4115",
             "suburb": "PARKINSON",
             "customersAffected": "43",
-            "restoreTime": "2026-11-11T13:30:00+10:00",
+            "restoreTime": "2026-11-11T14:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -139,7 +139,7 @@
             {
               "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
-              "affected_customers": 13
+              "affected_customers": 7
             }
           ],
           "details": {
@@ -149,7 +149,7 @@
             "council": "Sunshine Coast",
             "postcode": "4550",
             "suburb": "LANDSBOROUGH",
-            "customersAffected": "13",
+            "customersAffected": "7",
             "restoreTime": "2026-11-11T14:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
@@ -158,9 +158,48 @@
               "STEVE IRWIN WAY"
             ]
           },
-          "affected_customers": 13,
+          "affected_customers": 7,
           "suburb": "LANDSBOROUGH",
           "street_name": "CALOUNDRA ST, STEVE IRWIN WAY"
+        },
+        {
+          "event_id": "INCD-994916-g",
+          "allocations": [
+            {
+              "lga_name": "Gold Coast City",
+              "lga_code": null,
+              "affected_customers": 213
+            }
+          ],
+          "details": {
+            "event": "INCD-994916-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Gold Coast City",
+            "postcode": "4207",
+            "suburb": "YATALA",
+            "customersAffected": "213",
+            "restoreTime": "2026-11-11T15:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ANT RD",
+              "BUSINESS ST",
+              "COMPUTER RD",
+              "DARLINGTON DR",
+              "FREIGHT ST",
+              "GASSMAN DR",
+              "LINK DR",
+              "LOGISTICS ST",
+              "PEARSON RD",
+              "STANMORE RD",
+              "TURNER AVE",
+              "UNION CCT"
+            ]
+          },
+          "affected_customers": 213,
+          "suburb": "YATALA",
+          "street_name": "ANT RD, BUSINESS ST, COMPUTER RD, DARLINGTON DR, FREIGHT ST, GASSMAN DR, LINK DR, LOGISTICS ST, PEARSON RD, STANMORE RD, TURNER AVE, UNION CCT"
         }
       ]
     },
