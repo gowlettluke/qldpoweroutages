@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-11T01:31:19Z",
-  "generated_aest": "2026-11-11T11:31:19+10:00",
+  "generated_utc": "2026-11-11T01:46:07Z",
+  "generated_aest": "2026-11-11T11:46:07+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 20,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 449,
+  "current_records_before_outage_type_filter": 447,
   "current_records_after_outage_type_filter": 23,
-  "current_records_dropped_planned_or_unknown": 426,
+  "current_records_dropped_planned_or_unknown": 424,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
@@ -19,23 +19,23 @@
       "source_updated_utc": "2026-11-11T01:30:02Z",
       "published_customers": 180,
       "event_count": 5,
-      "fetched_utc": "2026-11-11T01:31:25Z"
+      "fetched_utc": "2026-11-11T01:46:14Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T01:30:31Z",
-      "published_customers": 647,
+      "source_updated_utc": "2026-11-11T01:45:01Z",
+      "published_customers": 639,
       "event_count": 15,
-      "fetched_utc": "2026-11-11T01:31:28Z"
+      "fetched_utc": "2026-11-11T01:46:19Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-11T01:31:19Z",
+    "snapshot_utc": "2026-11-11T01:46:07Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-11T01:31:25Z",
+      "fetched_utc": "2026-11-11T01:46:14Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -63,13 +63,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-11T01:31:28Z",
+      "fetched_utc": "2026-11-11T01:46:19Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T01:30:31Z",
+      "source_updated_utc": "2026-11-11T01:45:01Z",
       "retained": false,
-      "total_customers": 647,
+      "total_customers": 639,
       "rows": [
         {
           "lga_name": "Bundaberg Regional",
@@ -121,7 +121,7 @@
         },
         {
           "lga_name": "Winton Shire",
-          "affected_customers": 25
+          "affected_customers": 17
         }
       ]
     }
@@ -129,15 +129,15 @@
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 5,
   "current_ergon_records": 15,
-  "current_essential_records_fetched": 51,
+  "current_essential_records_fetched": 50,
   "current_energex_records_fetched": 142,
   "current_ergon_records_fetched": 255,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 3,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 2891,
-  "lga_totals_rows_48h": 4058,
+  "snapshot_rows_48h": 2888,
+  "lga_totals_rows_48h": 4062,
   "lga_totals_latest_rows": 34,
   "lga_cumulative_rows": 92,
   "outputs": {
