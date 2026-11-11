@@ -2,16 +2,48 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T13:16:06Z",
+      "fetched_utc": "2026-11-11T13:31:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 11:00 PM",
-        "source_updated_utc": "2026-11-11T13:00:04Z",
-        "published_customers": 72918,
+        "source_updated": "11 November 2026 11:30 PM",
+        "source_updated_utc": "2026-11-11T13:30:03Z",
+        "published_customers": 70626,
         "event_count": 68
       },
       "events": [
+        {
+          "event_id": "INCD-10092-h",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 62
+            }
+          ],
+          "details": {
+            "event": "INCD-10092-h",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
+            "council": "Logan City",
+            "postcode": "4118",
+            "suburb": "BROWNS PLAINS",
+            "customersAffected": "62",
+            "restoreTime": "2026-11-12T08:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "FORESTGLEN CRES",
+              "HARMONY CT",
+              "PINE CRES",
+              "STRAIGHT DR",
+              "TIMBERTOP AVE"
+            ]
+          },
+          "affected_customers": 62,
+          "suburb": "BROWNS PLAINS",
+          "street_name": "FORESTGLEN CRES, HARMONY CT, PINE CRES, STRAIGHT DR, TIMBERTOP AVE"
+        },
         {
           "event_id": "INCD-994970-g",
           "allocations": [
@@ -68,7 +100,7 @@
             "postcode": "4067",
             "suburb": "ST LUCIA",
             "customersAffected": "1",
-            "restoreTime": "2026-11-12T00:00:00+10:00",
+            "restoreTime": "2026-11-12T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -415,7 +447,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 2246
+              "affected_customers": 2227
             }
           ],
           "details": {
@@ -433,9 +465,9 @@
               "CHAMBERS FLAT RD"
             ]
           },
-          "affected_customers": 2246,
-          "suburb": "CHAMBERS FLAT, CRESTMEAD, LOGAN RESERVE, PARK RIDGE",
-          "street_name": "ALEXIS PL, ALMANDIN ST, ANNETTE ST, AZURITE CL, BASSWOOD CCT, BERTHA RD, BLUESTONE DR, BLY ST, BUMSTEAD RD, CANTER ST, CARRINGTON CCT, CHAMBERS FLAT RD, CHATHAM CT, CHIKAMEENA ST, CLARKE RD, COBBLESTONE AVE, COPAL DR, CREEK PL, DAINTREE CT, DOMINIC DR, DOOMBEN WAY, DORCHESTER DR, DUNADEN ST, EALHAM LANE, ELSIE ST, FREDERICK PL, GLEN RD, IRMA CCT, JACKSON CH, JAMEKA ST, JOSH ST, JUNCTION RD, KILLARA BVD, LAMINGTON DR, LILLY LANE, LINDENTHAL RD, LIVINGSTONE ST, LOGAN RESERVE RD, MAGNESIUM DR, MALACHITE DR, MIKAELLA WAY, MONTANA CCT, MOORABOOL ST, MUCHOW CT, NIELS CRES, NORRIS ST, NORTHERLY ST, NOTLEY LANE, OLAF LOOP, PACER ST, PARK RIDGE RD, PELHAM ST, POLO ST, PRIORESS PL, RABOKI CRES, RADIUM ST, RALSTON ST, RANDWICK AVE, REUBEN BVD, RIPARIAN CCT, RIVERVIEW RD, RONA ST, ROSE ST, SAGO RD, SAINTLY RD, SCHOOL RD, SEIDLER ST, SHALLOAK ST, SILKWOOD CCT, SNOWY ST, STONELEIGH RESERVE BVD, SUNDEW PL, SUNSTONE CT, TANZANITE AVE, TITUS ST, TOURMALINE RD, TRAVERTINE AVE, TULLOCH ST, WEEDBROOK ST"
+          "affected_customers": 2227,
+          "suburb": "CHAMBERS FLAT, LOGAN RESERVE, PARK RIDGE",
+          "street_name": "ALEXIS PL, ALMANDIN ST, ANNETTE ST, AZURITE CL, BASSWOOD CCT, BERTHA RD, BLUESTONE DR, BLY ST, BUMSTEAD RD, CANTER ST, CARRINGTON CCT, CHAMBERS FLAT RD, CHATHAM CT, CHIKAMEENA ST, CLARKE RD, COBBLESTONE AVE, COPAL DR, CREEK PL, DAINTREE CT, DOMINIC DR, DOOMBEN WAY, DORCHESTER DR, DUNADEN ST, EALHAM LANE, ELSIE ST, FREDERICK PL, GLEN RD, IRMA CCT, JACKSON CH, JAMEKA ST, JOSH ST, JUNCTION RD, KILLARA BVD, LAMINGTON DR, LILLY LANE, LINDENTHAL RD, LIVINGSTONE ST, LOGAN RESERVE RD, MALACHITE DR, MIKAELLA WAY, MONTANA CCT, MOORABOOL ST, MUCHOW CT, NIELS CRES, NORRIS ST, NORTHERLY ST, NOTLEY LANE, OLAF LOOP, PACER ST, PARK RIDGE RD, PELHAM ST, POLO ST, PRIORESS PL, RABOKI CRES, RALSTON ST, RANDWICK AVE, REUBEN BVD, RIPARIAN CCT, RIVERVIEW RD, RONA ST, ROSE ST, SAGO RD, SAINTLY RD, SCHOOL RD, SEIDLER ST, SHALLOAK ST, SILKWOOD CCT, SNOWY ST, STONELEIGH RESERVE BVD, SUNDEW PL, SUNSTONE CT, TANZANITE AVE, TITUS ST, TOURMALINE RD, TRAVERTINE AVE, TULLOCH ST, WEEDBROOK ST"
         },
         {
           "event_id": "INCD-995044-g",
@@ -751,40 +783,12 @@
           "street_name": "ANDREW PL, ARI ST, AVALON CT, AWOONGA ST, BALONNE CCT, BEANO ST, BIRCH ST, BLACKBEAN ST, BLUE-GUM DR, BORUMBA CT, BRANDON ST, BREMER ST, BRIGALOW ST, BROWNS PLAINS RD, BULLOO RD, BUNYA ST, BURRINJUCK ST, CALLIDE CT, CANIA CT, CARA CT, CATHERINE ST, CEDAR ST, CHAFFEY ST, CHASBET ST, CHIETI CT, CINDY ST, COOLMUNDA ST, COPETON ST, CORELLA CT, COVE ST, CRISCI ST, CYPRESS DR, DANIELLA DR, DAVISON CT, DAYANA ST, DEHLIA ST, DESLEY ST, EMERALD ST, FAIRBAIRN ST, FERNY ST, FIRST AVE, GALAHAD ST, GERRY CT, GLENLYON ST, HICKORY ST, HOMESTEAD ST, INDUS ST, JULIUS CT, KEEPIT ST, KERRY ST, KIKORI CT, KINCHANT ST, KRISTY ST, MACARTHY RD, MACINTYRE ST, MAROON CT, MELODY ST, MING ST, MONDURAN ST, MOXEY ST, MULGRAVE RD, NEWHAVEN ST, OASIS CT, ORM CT, PALUMA CT, PARINLEA CT, PEDDER ST, PESCARA ST, RETHAN CT, ROBUR ST, SALLY DR, SEAGULL CT, SECOND AVE, SHIVVAN CT, SUMMERHILL CT, TAREE ST, THERESE ST, THIRD AVE, TIMBERLEE DR, TOMBILDAN CT, TRACEY ST, VIVIENNE WAY, WAHEED ST, WATTLE ST, WIVENHOE CT, YALE ST"
         },
         {
-          "event_id": "INCD-995071-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 10
-            }
-          ],
-          "details": {
-            "event": "INCD-995071-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Moreton Bay Regional",
-            "postcode": "4514",
-            "suburb": "MOUNT DELANEY",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-12T12:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "NINE V RD"
-            ]
-          },
-          "affected_customers": 10,
-          "suburb": "MOUNT DELANEY, MOUNT MEE",
-          "street_name": "HAUSMANN RD, NINE V RD, WOODS RD"
-        },
-        {
           "event_id": "INCD-995074-g",
           "allocations": [
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 3979
+              "affected_customers": 3740
             }
           ],
           "details": {
@@ -804,9 +808,9 @@
               "WAYNE GOSS DR"
             ]
           },
-          "affected_customers": 3979,
+          "affected_customers": 3740,
           "suburb": "BERRINBA, BROWNS PLAINS, CHAMBERS FLAT, CRESTMEAD, HERITAGE PARK, LOGAN RESERVE, MARSDEN, PARK RIDGE",
-          "street_name": "ALLERTON PARK DR, ANGUS CT, ANNE ST, ARIF PL, ARTON ST, AUSTIN WAY, BARK ST, BARLEY ST, BARNYARD DR, BAYLISS RD, BECK ST, BELVEDERE DR, BLACK CHERRY ST, BROWNS PLAINS RD, BRUNNER DR, BUMSTEAD RD, BURNLEY RD, CADELL CL, CALCIUM CT, CALE ST, CALFORD CT, CARDINAL ST, CARNABY WAY, CHALK RD, CHAMBERS FLAT RD, CHAMBERS RIDGE BVD, CHELSEA CT, CHEROKEE PL, CHIPPENDALE RD, CLANDON ST, CLARKE RD, COCKATOO CT, COLOMBARD PL, COTTEE CCT, COUNTRY CT, COURTNEY CL, CREAGHE ST, CRENTON CT, CUMBERLAND CRES, DERBY RD, DROSERA CL, DUKE RD, DURHAM CT, EADIE ST, EARLS CT, EAST BEAUMONT RD, ELITE ST, EMBLETON RD, EUCALYPT PL, EXALT PL, EXCELSA PL, FANTAIL CT, FERNGROVE CT, FLANNERY TCE, FLORDABELLE PL, FLORDAGOLD PL, FORMOSA ST, FRANKLIN AVE, FRASER ST, GREEN RD, GRIER DR, HAMPSHIRE CL, HARPER DR, HARTNELL DR, HASS PL, HAWTHORN ST, HAYSTACK CL, HEATH TCE, HENCHAR PL, HENNA PL, HERITAGE BVD, HINKLER WAY, HOUSTON DR, IDYLLIC ST, ISABELLA CT, ISLA ST, JACKEY ST, JESSICA CT, JOAN ST, JUNEE CT, KELLAR ST, KENTISH CT, KEW PL, KIMRIDGE DR, KOPLICK RD, LAMBERTH RD E, LANI ST, LEICESTERSHIRE CL, LINDEMAN ST, LINDENTHAL RD, LLOYD CT, LOCKHART CT, LOMANDRA CT, MADDOX ST, MAGNESIUM DR, MAPLETREE DR, MCKENZIE CT, MCLEOD RD, MELASTOMA PL, MERCY CCT, MERINO ST, MILLWOOD ST, MONTGOMERY CT, MOUNT ARCHER RD, MOUNT BALLOW ST, MOUNT BARNEY CRES, MOUNT BOWEN ST, MOUNT COOROORA ST, MOUNT CROSBY ST, MOUNT EDWARDS ST, MOUNT EMERALD ST, MOUNT FRENCH ST, MOUNT GLORIOUS ST, MOUNT GREVILLE WAY, MOUNT HUNTLEY ST, MOUNT MEE ST, MOUNT MITCHELL ST, MOUNT NEBO ST, MOUNT PETRIE LANE, MOUNT ROBERTS ST, MOUNT WHEELER ST, MT PLEASANT ST, MULBERRY ST, MUSCAT CT, NEVADA RD, NIGHTINGALE PL, NINA CT, PAIJE PL, PARK RIDGE RD, POWELL ST, PROSPECT PL, REMICK CT, RINCON ST, ROUPELL ST, ROYAL ST, RUNDELL ST, RURAL ST, RUTLAND ST, RUTYNA CRES, RYEDALE ST, SEEANA CT, SELWYN AVE, SHARNI CT, SHEEPDOG RD, SKELBROOK RD, SOHO WAY, SOMERVILLE CCT, SPENCER WAY, ST JAMES CCT, ST MARKS ST, STOCKYARD LANE, SUGAR MAPLE PL, TARRANGO PL, TAWNY ST, TAYLOR ST, TERETI ST, TOKAY CL, TORRESIAN PL, TULIP TREE ST, VEDDERS DR, VENTURE ST, VOLSTEAD RD, WALTHAM ST, WANG ST, WAYNE GOSS DR, WHISTLER CL, WHITE ASH WAY, WICKER RD, WILKINSON DR, WILTSHIRE ST, WORSLEY LANE, YORKSHIRE RD, ZAIN ST, ZARA WAY"
+          "street_name": "ALLERTON PARK DR, ANGUS CT, ANNE ST, ARIF PL, ARTON ST, AUSTIN WAY, BARK ST, BARLEY ST, BARNYARD DR, BAYLISS RD, BECK ST, BELVEDERE DR, BLACK CHERRY ST, BROWNS PLAINS RD, BRUNNER DR, BURNLEY RD, CADELL CL, CALE ST, CALFORD CT, CARDINAL ST, CARNABY WAY, CHALK RD, CHAMBERS FLAT RD, CHAMBERS RIDGE BVD, CHELSEA CT, CHEROKEE PL, CHIPPENDALE RD, CLANDON ST, CLARKE RD, COCKATOO CT, COLOMBARD PL, COTTEE CCT, COUNTRY CT, COURTNEY CL, CREAGHE ST, CRENTON CT, CUMBERLAND CRES, DERBY RD, DROSERA CL, DUKE RD, DURHAM CT, EADIE ST, EARLS CT, EAST BEAUMONT RD, ELITE ST, EMBLETON RD, EUCALYPT PL, EXALT PL, EXCELSA PL, FANTAIL CT, FERNGROVE CT, FLANNERY TCE, FLORDABELLE PL, FLORDAGOLD PL, FORMOSA ST, FRANKLIN AVE, FRASER ST, GREEN RD, GRIER DR, HAMPSHIRE CL, HARPER DR, HARTNELL DR, HASS PL, HAWTHORN ST, HAYSTACK CL, HEATH TCE, HENCHAR PL, HENNA PL, HERITAGE BVD, HINKLER WAY, IDYLLIC ST, ISABELLA CT, ISLA ST, JACKEY ST, JESSICA CT, JOAN ST, JUNEE CT, KELLAR ST, KENTISH CT, KEW PL, KIMRIDGE DR, KOPLICK RD, LAMBERTH RD E, LANI ST, LEICESTERSHIRE CL, LINDEMAN ST, LINDENTHAL RD, LLOYD CT, LOCKHART CT, LOMANDRA CT, MADDOX ST, MAGNESIUM DR, MCLEOD RD, MELASTOMA PL, MERCY CCT, MERINO ST, MILLWOOD ST, MONTGOMERY CT, MOUNT ARCHER RD, MOUNT BALLOW ST, MOUNT BARNEY CRES, MOUNT BOWEN ST, MOUNT COOROORA ST, MOUNT CROSBY ST, MOUNT EDWARDS ST, MOUNT EMERALD ST, MOUNT FRENCH ST, MOUNT GLORIOUS ST, MOUNT GREVILLE WAY, MOUNT HUNTLEY ST, MOUNT MEE ST, MOUNT MITCHELL ST, MOUNT NEBO ST, MOUNT PETRIE LANE, MOUNT ROBERTS ST, MOUNT WHEELER ST, MT PLEASANT ST, MULBERRY ST, MUSCAT CT, NEVADA RD, NIGHTINGALE PL, PAIJE PL, PARK RIDGE RD, POWELL ST, PROSPECT PL, REMICK CT, RINCON ST, ROUPELL ST, RURAL ST, RUTLAND ST, RYEDALE ST, SEEANA CT, SELWYN AVE, SHARNI CT, SHEEPDOG RD, SKELBROOK RD, SOHO WAY, SOMERVILLE CCT, SPENCER WAY, ST JAMES CCT, ST MARKS ST, STOCKYARD LANE, SUGAR MAPLE PL, TARRANGO PL, TAWNY ST, TAYLOR ST, TERETI ST, TOKAY CL, TORRESIAN PL, TULIP TREE ST, VEDDERS DR, VOLSTEAD RD, WALTHAM ST, WANG ST, WAYNE GOSS DR, WHISTLER CL, WHITE ASH WAY, WICKER RD, WILTSHIRE ST, WORSLEY LANE, YORKSHIRE RD, ZAIN ST, ZARA WAY"
         },
         {
           "event_id": "INCD-995075-g",
@@ -1119,40 +1123,12 @@
           "street_name": "AUBURN CT, BARRINE CT, BATAVIA CT, BELAIR CL, BOTANY CT, CHESTERFIELD RD, CLANCY RD, DALKEITH CT, DURHAM CT, GARDENIA CT, GRANGER RD, MACKUNDA CT, MERLUNA RD, MT LINDESAY HWY, POLLEN CT, SAXBY CT, SOLANDRA RD, SYLVAN RD, THYLUNGRA RD"
         },
         {
-          "event_id": "INCD-995333-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 1186
-            }
-          ],
-          "details": {
-            "event": "INCD-995333-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4153",
-            "suburb": "BELMONT",
-            "customersAffected": "4",
-            "restoreTime": "2026-11-12T12:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "OLD CLEVELAND RD"
-            ]
-          },
-          "affected_customers": 1186,
-          "suburb": "BELMONT, BURBANK, CHANDLER, MACKENZIE, ROCHEDALE",
-          "street_name": "ALPERTON RD, AZALEA ST, BACTON RD, BLACKWOOD ST, BLOSSOM PL, BOORALIE ST, BOTTLEBRUSH ST, BRIGHTVIEW ST, BUNYIP ST, CHERBON ST, COCKATOO PL, COOEE ST, DAYMAR ST, DUNNE RD, EAGLE PDE, FINCH PDE, FRANGIPANI ST, GARDNER RD, GOODTOWN ST, GRIEVE RD, HONEYEATER PL, JASMINE PL, KANGAROO CT, KESTREL ST, KOOKABURRA CCT, LILLIUM ST, LORISCH WAY, MAJOR DR, MARAWAH ST, MCDERMOTT PDE, MOXON RD, MT COTTON RD, MT GRAVATT-CAPALABA RD, MT PETRIE RD, MYRTLE ST, OAK PL, OAKRIDGE ST, OLD CLEVELAND RD, OSPREY LANE, PARKLANDS CCT, PILLINGER RD, PLATYPUS CCT, PLUM PL, PREBBLE ST, PROUT RD, ROCHEDALE RD, SATINWOOD ST, SCARLET PL, TULIP ST, UPFIELD ST, VIVALDI PL, WALLABY PDE, WALNUT ST, WALTISBUHL WAY, WILDSOET ST, WILLOW WAY, WOMBAT CRES"
-        },
-        {
           "event_id": "INCD-995344-g",
           "allocations": [
             {
               "lga_name": "Gympie Regional",
               "lga_code": null,
-              "affected_customers": 38
+              "affected_customers": 22
             }
           ],
           "details": {
@@ -1162,7 +1138,7 @@
             "council": "Gympie Regional",
             "postcode": "4570",
             "suburb": "KYBONG",
-            "customersAffected": "28",
+            "customersAffected": "14",
             "restoreTime": "2026-11-12T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
@@ -1170,14 +1146,12 @@
               "BRUCE HWY",
               "BURRIDGE RD",
               "GRESHAM RD",
-              "MULLALY RD",
-              "OLD BRUCE HWY",
               "WOONDUM RD"
             ]
           },
-          "affected_customers": 38,
+          "affected_customers": 22,
           "suburb": "KYBONG, TANDUR, WOONDUM",
-          "street_name": "BRUCE HWY, BURRIDGE RD, GRESHAM RD, MULLALY RD, OLD BRUCE HWY, SCRUB RD, WOONDUM RD"
+          "street_name": "BRUCE HWY, BURRIDGE RD, GRESHAM RD, SCRUB RD, WOONDUM RD"
         },
         {
           "event_id": "INCD-995417-g",
@@ -1388,7 +1362,7 @@
             {
               "lga_name": "Gympie Regional",
               "lga_code": null,
-              "affected_customers": 187
+              "affected_customers": 61
             }
           ],
           "details": {
@@ -1397,19 +1371,18 @@
             "status": "Under Investigation",
             "council": "Gympie Regional",
             "postcode": "4570",
-            "suburb": "JONES HILL",
-            "customersAffected": "2",
+            "suburb": "KYBONG",
+            "customersAffected": "1",
             "restoreTime": "2026-11-12T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "FITZPATRICK RD",
-              "SULLIVAN RD"
+              "MULLALY RD"
             ]
           },
-          "affected_customers": 187,
-          "suburb": "JONES HILL, KYBONG, LONG FLAT, THE DAWN",
-          "street_name": "ANNITA WAY, BROOMLANDS LANE, CLAFFEY RD, DAWN CONNECTION RD, DAWN RD, FITZPATRICK RD, GRENVILLE RD, HENDERSON RD, HOLDING RD, MARY VALLEY RD, MULLALY RD, OLD DAWN RD, PALMER CT, RIANNA RD, STACY LANE, SULLIVAN RD, SUNRISE CIR, TROUT RD, TURNER RD, WAKEHAM RD, WITHAM RD"
+          "affected_customers": 61,
+          "suburb": "KYBONG, THE DAWN",
+          "street_name": "CLAFFEY RD, DAWN RD, HOLDING RD, MULLALY RD, PALMER CT, STACY LANE, TURNER RD, WITHAM RD"
         },
         {
           "event_id": "INCD-995492-g",
@@ -1646,7 +1619,7 @@
             {
               "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 1054
+              "affected_customers": 228
             }
           ],
           "details": {
@@ -1665,9 +1638,9 @@
               "ILLAWEENA ST"
             ]
           },
-          "affected_customers": 1054,
+          "affected_customers": 228,
           "suburb": "KARAWATHA, KURABY, RUNCORN, STRETTON",
-          "street_name": "BEENLEIGH RD, CINDY CT, CLIFFORD CL, COMPTON RD, CRANE CRES, GATES PL, GUMTREE ST, HOCKEY ST, ILLAWEENA ST, LAKEFIELD PL, LANCASTER CCT, LEE CL, LIVINGSTONE PL, MAJESTIC PL, MALLAN PL, MARTIN PL, MAYFAIR PL, NEMIES RD, NURSERY AVE, OXFORD PL, PADDINGTON CRES, PERSSE RD, REGENCY PL, RUSHTON ST, SAUERBERG CL, SESTER PL, SHEEHY ST, SUE CT, TRAFALGAR CL, VICTOR ST, WELLINGTON PL, YORKSHIRE PL, YOUNG PL"
+          "street_name": "COMPTON RD, ILLAWEENA ST, LANCASTER CCT, MAYFAIR PL, OXFORD PL, PADDINGTON CRES, PERSSE RD, REGENCY PL, TRAFALGAR CL, YORKSHIRE PL"
         },
         {
           "event_id": "INCD-995583-g",
@@ -1937,7 +1910,7 @@
             "postcode": "4160",
             "suburb": "ORMISTON",
             "customersAffected": "25",
-            "restoreTime": "2026-11-11T23:30:00+10:00",
+            "restoreTime": "2026-11-12T00:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -2166,7 +2139,7 @@
             "postcode": "4570",
             "suburb": "JONES HILL",
             "customersAffected": "20",
-            "restoreTime": "2026-11-12T00:00:00+10:00",
+            "restoreTime": "2026-11-12T01:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -2687,7 +2660,7 @@
             {
               "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 23
+              "affected_customers": 2
             }
           ],
           "details": {
@@ -2697,18 +2670,17 @@
             "council": "Brisbane City",
             "postcode": "4069",
             "suburb": "BROOKFIELD",
-            "customersAffected": "22",
+            "customersAffected": "2",
             "restoreTime": "2026-11-12T00:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "PERONNE PL",
-              "UPPER BROOKFIELD RD"
+              "PERONNE PL"
             ]
           },
-          "affected_customers": 23,
-          "suburb": "BROOKFIELD, UPPER BROOKFIELD",
-          "street_name": "PERONNE PL, UPPER BROOKFIELD RD"
+          "affected_customers": 2,
+          "suburb": "BROOKFIELD",
+          "street_name": "PERONNE PL"
         },
         {
           "event_id": "INCD-995988-g",
@@ -2767,7 +2739,7 @@
             "postcode": "4280",
             "suburb": "JIMBOOMBA",
             "customersAffected": "794",
-            "restoreTime": "2026-11-12T02:00:00+10:00",
+            "restoreTime": "2026-11-12T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -2814,15 +2786,48 @@
           "affected_customers": 1192,
           "suburb": "JIMBOOMBA, MUNDOOLUN",
           "street_name": "ALLURING CT, ANDERS ST, ANNA BERTHA CT, ANNE COLLINS CRES, ARABIAN CT, AUSTIN CT, BAUER DR, BLUNT PL, BORROWDALE CT, BOTTLEBRUSH DR, BREDALBANE ST, BRISBANE ST, BULLUM CT, CANDY PL, CARVER PL, CLYDESDALE RD, COMPIGNE ST, CREMELLO CT, DEEKE PL, DWYER PL, EARLY PL, EUPHEMIA ST, FRIENDSHIP CT, GOLDEN GROVE CT, HILLMAN ST, JOHN COLLINS DR, JURD PL, KURRAJONG RD, LADY PENRHYN CT, LAVERS ST, MANNING ST, MARKWELL CCT, MERTON ST, MILEY PL, MILLSTREAM RD, MONMOUTH CT, MUNDOOLUN RD, MYRTLE RD, NAVERENO CT, PANITZ DR, PAUL CT, PEPPERTREE DR, PORTSMOUTH CT, PRENTICE PL, PRINCE OF WALES CT, SALES ST, SCARBOROUGH CT, SEILS DR, SHORT ST, SPRING ST, STRUSS CT, SUNDAY DR, SUPPLY CT, TAMBORINE ST, WEATHERLY DR, WILLIAM HUMPHREYS DR"
+        },
+        {
+          "event_id": "INCD-996014-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 89
+            }
+          ],
+          "details": {
+            "event": "INCD-996014-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4101",
+            "suburb": "WEST END",
+            "customersAffected": "89",
+            "restoreTime": "2026-11-12T00:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BOND ST",
+              "GRANVILLE ST",
+              "HARDGRAVE RD",
+              "PARIS ST",
+              "TURIN ST",
+              "VULTURE ST"
+            ]
+          },
+          "affected_customers": 89,
+          "suburb": "WEST END",
+          "street_name": "BOND ST, GRANVILLE ST, HARDGRAVE RD, PARIS ST, TURIN ST, VULTURE ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T13:16:09Z",
+      "fetched_utc": "2026-11-11T13:31:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T13:15:22Z",
+        "source_updated_utc": "2026-11-11T13:25:00Z",
         "published_customers": 4139,
         "event_count": 20
       },
@@ -3297,7 +3302,7 @@
             "restoreTime": "12/11/2026 15:00",
             "customersAffected": "106",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 106,
           "suburb": "BOONARA, GOOMERI",
