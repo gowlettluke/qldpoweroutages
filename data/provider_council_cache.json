@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T00:01:33Z",
+      "fetched_utc": "2026-11-11T00:16:14Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -208,13 +208,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T00:01:37Z",
+      "fetched_utc": "2026-11-11T00:16:17Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T00:00:01Z",
-        "published_customers": 563,
-        "event_count": 10
+        "source_updated_utc": "2026-11-11T00:15:15Z",
+        "published_customers": 590,
+        "event_count": 11
       },
       "events": [
         {
@@ -436,6 +436,30 @@
           },
           "affected_customers": 25,
           "suburb": "WINTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14544",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 27
+            }
+          ],
+          "details": {
+            "event": "26SW14544",
+            "council": "Toowoomba Regional Council",
+            "suburb": "COALBANK, DJUAN, HADEN",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 10:04",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "27",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 27,
+          "suburb": "COALBANK, DJUAN, HADEN",
           "street_name": ""
         },
         {
