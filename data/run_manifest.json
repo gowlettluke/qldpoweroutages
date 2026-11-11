@@ -1,12 +1,12 @@
 {
-  "generated_utc": "2026-11-11T08:46:09Z",
-  "generated_aest": "2026-11-11T18:46:09+10:00",
+  "generated_utc": "2026-11-11T09:01:18Z",
+  "generated_aest": "2026-11-11T19:01:18+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 88,
+  "current_outage_records": 86,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 448,
-  "current_records_after_outage_type_filter": 112,
+  "current_records_before_outage_type_filter": 445,
+  "current_records_after_outage_type_filter": 109,
   "current_records_dropped_planned_or_unknown": 336,
   "provider_fetch_errors": {
     "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
@@ -21,33 +21,33 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T08:45:00Z",
-      "published_customers": 2336,
-      "event_count": 22,
-      "fetched_utc": "2026-11-11T08:46:26Z"
+      "source_updated_utc": "2026-11-11T09:00:03Z",
+      "published_customers": 8745,
+      "event_count": 20,
+      "fetched_utc": "2026-11-11T09:01:43Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-11T08:46:09Z",
+    "snapshot_utc": "2026-11-11T09:01:18Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-11T08:46:27Z",
+      "fetched_utc": "2026-11-11T09:01:43Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-11T08:46:26Z",
+      "fetched_utc": "2026-11-11T09:01:43Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T08:45:00Z",
+      "source_updated_utc": "2026-11-11T09:00:03Z",
       "retained": false,
-      "total_customers": 2336,
+      "total_customers": 8745,
       "rows": [
         {
           "lga_name": "Boulia Shire",
-          "affected_customers": 4
+          "affected_customers": 2
         },
         {
           "lga_name": "Burke Shire",
@@ -62,8 +62,12 @@
           "affected_customers": 10
         },
         {
+          "lga_name": "Cherbourg Aboriginal Shire",
+          "affected_customers": 378
+        },
+        {
           "lga_name": "Cloncurry Shire",
-          "affected_customers": 49
+          "affected_customers": 45
         },
         {
           "lga_name": "Flinders Shire",
@@ -72,6 +76,10 @@
         {
           "lga_name": "Fraser Coast Regional",
           "affected_customers": 3
+        },
+        {
+          "lga_name": "Gympie Regional",
+          "affected_customers": 1008
         },
         {
           "lga_name": "Mackay Regional",
@@ -83,23 +91,27 @@
         },
         {
           "lga_name": "McKinlay Shire",
-          "affected_customers": 249
+          "affected_customers": 135
         },
         {
           "lga_name": "Murweh Shire",
-          "affected_customers": 59
+          "affected_customers": 57
         },
         {
           "lga_name": "North Burnett Regional",
-          "affected_customers": 28
+          "affected_customers": 29
         },
         {
           "lga_name": "Richmond Shire",
-          "affected_customers": 12
+          "affected_customers": 6
+        },
+        {
+          "lga_name": "Somerset Regional",
+          "affected_customers": 2
         },
         {
           "lga_name": "South Burnett Regional",
-          "affected_customers": 1646
+          "affected_customers": 6797
         },
         {
           "lga_name": "Toowoomba Regional",
@@ -107,29 +119,29 @@
         },
         {
           "lga_name": "Western Downs Regional",
-          "affected_customers": 70
+          "affected_customers": 69
         },
         {
           "lga_name": "Winton Shire",
-          "affected_customers": 4
+          "affected_customers": 2
         }
       ]
     }
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 66,
-  "current_ergon_records": 22,
-  "current_essential_records_fetched": 26,
+  "current_ergon_records": 20,
+  "current_essential_records_fetched": 25,
   "current_energex_records_fetched": 202,
-  "current_ergon_records_fetched": 217,
+  "current_ergon_records_fetched": 218,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 24,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 23,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 3434,
-  "lga_totals_rows_48h": 4454,
-  "lga_totals_latest_rows": 52,
-  "lga_cumulative_rows": 109,
+  "snapshot_rows_48h": 3520,
+  "lga_totals_rows_48h": 4511,
+  "lga_totals_latest_rows": 57,
+  "lga_cumulative_rows": 113,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
     "outage_snapshots_48h_csv": "data/outage_snapshots_48h.csv",
