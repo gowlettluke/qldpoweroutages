@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T00:45:56Z",
+      "fetched_utc": "2026-11-11T01:01:23Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "11 November 2026 10:30 AM",
-        "source_updated_utc": "2026-11-11T00:30:02Z",
-        "published_customers": 1070,
-        "event_count": 6
+        "source_updated": "11 November 2026 11:00 AM",
+        "source_updated_utc": "2026-11-11T01:00:02Z",
+        "published_customers": 180,
+        "event_count": 5
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4575",
             "suburb": "BIRTINYA",
             "customersAffected": "2",
-            "restoreTime": "2026-11-11T11:30:00+10:00",
+            "restoreTime": "2026-11-11T13:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -58,7 +58,7 @@
             "postcode": "4312",
             "suburb": "ESK",
             "customersAffected": "9",
-            "restoreTime": "2026-11-11T10:30:00+10:00",
+            "restoreTime": "2026-11-11T13:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -88,7 +88,7 @@
             "postcode": "4510",
             "suburb": "CABOOLTURE",
             "customersAffected": "9",
-            "restoreTime": "2026-11-11T11:30:00+10:00",
+            "restoreTime": "2026-11-11T13:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -99,79 +99,6 @@
           "affected_customers": 79,
           "suburb": "CABOOLTURE, DONNYBROOK, MELDALE, TOORBUL",
           "street_name": "DONNYBROOK RD, MELDALE RD, OLD TOORBUL POINT RD, PUMICESTONE RD"
-        },
-        {
-          "event_id": "INCD-994767-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 890
-            }
-          ],
-          "details": {
-            "event": "INCD-994767-g",
-            "cause": "A vehicle damaging our equipment",
-            "status": "Under Investigation",
-            "council": "Moreton Bay Regional",
-            "postcode": "4510",
-            "suburb": "CABOOLTURE",
-            "customersAffected": "889",
-            "restoreTime": "2026-11-11T11:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ALTOMO PL",
-              "BALKEE DR",
-              "BLUNT ST",
-              "BRUCE HWY",
-              "CASTLE CT",
-              "CHRISTOPHER CT",
-              "COCKATOO CT",
-              "DOT NEWMAN CT",
-              "ELOF RD",
-              "FAZEY CL",
-              "FENTON CT",
-              "FLOWERS RD",
-              "FRENEY CT",
-              "GRANGER ST",
-              "HARRIER CT",
-              "HEATH CT",
-              "HERD ST",
-              "HOOK CT",
-              "JAN CT",
-              "JEITA CCT",
-              "JORDAN CT",
-              "KAPYONG RD",
-              "KEAST ST",
-              "KEMP ST",
-              "KERSWELL ST",
-              "KILTO CT",
-              "KINGMA CRES",
-              "KITE CT",
-              "LARKIN CT",
-              "LASEK CT",
-              "LEAHY RD",
-              "LINWOOD CT",
-              "LONG TAN DR",
-              "LOTUSBIRD CT",
-              "MALE RD",
-              "OLD TOORBUL POINT RD",
-              "OSPREY CT",
-              "PETREL CT",
-              "PUMICESTONE RD",
-              "RICCARDO ST",
-              "SCHOFIELD CCT",
-              "TIFFANY CT",
-              "TILLEY CT",
-              "TODD CT",
-              "VAN BEELEN ST",
-              "WODHAMS RD"
-            ]
-          },
-          "affected_customers": 890,
-          "suburb": "CABOOLTURE, ELIMBAH",
-          "street_name": "ALTOMO PL, BALKEE DR, BIGMOR DR, BLUNT ST, BRUCE HWY, CASTLE CT, CHRISTOPHER CT, COCKATOO CT, DOT NEWMAN CT, ELOF RD, FAZEY CL, FENTON CT, FLOWERS RD, FRENEY CT, GRANGER ST, HARRIER CT, HEATH CT, HERD ST, HOOK CT, JAN CT, JEITA CCT, JORDAN CT, KAPYONG RD, KEAST ST, KEMP ST, KERSWELL ST, KILTO CT, KINGMA CRES, KITE CT, LARKIN CT, LASEK CT, LEAHY RD, LINWOOD CT, LONG TAN DR, LOTUSBIRD CT, MALE RD, OLD TOORBUL POINT RD, OSPREY CT, PETREL CT, PUMICESTONE RD, RICCARDO ST, SCHOFIELD CCT, TIFFANY CT, TILLEY CT, TODD CT, VAN BEELEN ST, WODHAMS RD"
         },
         {
           "event_id": "INCD-994789-g",
@@ -222,7 +149,7 @@
             "postcode": "4115",
             "suburb": "PARKINSON",
             "customersAffected": "43",
-            "restoreTime": "2026-11-11T11:30:00+10:00",
+            "restoreTime": "2026-11-11T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -239,13 +166,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T00:46:01Z",
+      "fetched_utc": "2026-11-11T01:01:29Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T00:40:30Z",
-        "published_customers": 615,
-        "event_count": 13
+        "source_updated_utc": "2026-11-11T01:00:01Z",
+        "published_customers": 618,
+        "event_count": 14
       },
       "events": [
         {
@@ -539,6 +466,30 @@
           },
           "affected_customers": 20,
           "suburb": "MOUNT PERRY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB10952",
+          "allocations": [
+            {
+              "lga_name": "Bundaberg Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26WB10952",
+            "council": "Bundaberg Regional Council",
+            "suburb": "FARNSFIELD",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 10:48",
+            "restoreTime": "11/11/2026 12:30",
+            "customersAffected": "3",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 3,
+          "suburb": "FARNSFIELD",
           "street_name": ""
         },
         {
