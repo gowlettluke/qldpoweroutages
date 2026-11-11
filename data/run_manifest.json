@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-11T05:01:16Z",
-  "generated_aest": "2026-11-11T15:01:16+10:00",
+  "generated_utc": "2026-11-11T05:15:48Z",
+  "generated_aest": "2026-11-11T15:15:48+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 21,
+  "current_outage_records": 19,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 391,
-  "current_records_after_outage_type_filter": 34,
-  "current_records_dropped_planned_or_unknown": 357,
+  "current_records_before_outage_type_filter": 386,
+  "current_records_after_outage_type_filter": 33,
+  "current_records_dropped_planned_or_unknown": 353,
   "provider_fetch_errors": {
     "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
   },
@@ -21,33 +21,33 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T05:00:02Z",
-      "published_customers": 767,
-      "event_count": 11,
-      "fetched_utc": "2026-11-11T05:01:29Z"
+      "source_updated_utc": "2026-11-11T05:15:01Z",
+      "published_customers": 285,
+      "event_count": 10,
+      "fetched_utc": "2026-11-11T05:16:07Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-11T05:01:16Z",
+    "snapshot_utc": "2026-11-11T05:15:48Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-11T05:01:30Z",
+      "fetched_utc": "2026-11-11T05:16:08Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-11T05:01:29Z",
+      "fetched_utc": "2026-11-11T05:16:07Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-11T05:00:02Z",
+      "source_updated_utc": "2026-11-11T05:15:01Z",
       "retained": false,
-      "total_customers": 767,
+      "total_customers": 285,
       "rows": [
         {
           "lga_name": "Balonne Shire",
-          "affected_customers": 485
+          "affected_customers": 3
         },
         {
           "lga_name": "Bundaberg Regional",
@@ -89,17 +89,17 @@
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 10,
-  "current_ergon_records": 11,
-  "current_essential_records_fetched": 17,
-  "current_energex_records_fetched": 146,
-  "current_ergon_records_fetched": 229,
+  "current_energex_records": 9,
+  "current_ergon_records": 10,
+  "current_essential_records_fetched": 18,
+  "current_energex_records_fetched": 145,
+  "current_ergon_records_fetched": 223,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 13,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 14,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 2886,
-  "lga_totals_rows_48h": 4216,
+  "snapshot_rows_48h": 2887,
+  "lga_totals_rows_48h": 4226,
   "lga_totals_latest_rows": 32,
   "lga_cumulative_rows": 95,
   "outputs": {
