@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-11T20:01:38Z",
+      "fetched_utc": "2026-11-11T20:16:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 6:00 AM",
-        "source_updated_utc": "2026-11-11T20:00:03Z",
-        "published_customers": 54464,
-        "event_count": 56
+        "source_updated": "12 November 2026 6:15 AM",
+        "source_updated_utc": "2026-11-11T20:15:03Z",
+        "published_customers": 56372,
+        "event_count": 58
       },
       "events": [
         {
@@ -2398,16 +2398,122 @@
           "affected_customers": 410,
           "suburb": "NAMBOUR, ROSEMOUNT",
           "street_name": "ANDREASENS RD, COOLWATER PL, CORMIE PL, HOWARD ST, KERADA RD, KOALA HILL DR, LEMON GROVE PL, PANORAMA DR, PAYNTERS CREEK RD, PETRIE CREEK RD, ROSEMOUNT CL, SEYMOUR CL, SUGAR VIEW LANE, UPPER ROSEMOUNT RD, WOODCHESTER CL"
+        },
+        {
+          "event_id": "INCD-996221-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 1844
+            }
+          ],
+          "details": {
+            "event": "INCD-996221-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4519",
+            "suburb": "BEERWAH",
+            "customersAffected": "1137",
+            "restoreTime": "2026-11-12T08:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ARCADIA DR",
+              "AVILKA PL",
+              "BARBARA CT",
+              "BEERWAH PDE",
+              "BELTON CT",
+              "BIONDI CRES",
+              "BUNNEY RD",
+              "CHANTILLY CRES",
+              "CLARKES RD",
+              "COASTAL AVE",
+              "FLINDERS AVE",
+              "FOLEY RD",
+              "FRASER RD",
+              "GREBER RD",
+              "GREENVIEW AVE",
+              "HARRY PL",
+              "HEIGHTS RD",
+              "IRWIN RD",
+              "JAMES CT",
+              "JOLLY CRES",
+              "KATHERINE ST",
+              "KURRAJONG CT",
+              "LITCHIE ST",
+              "LYNDIE CT",
+              "MANGROVE ST",
+              "MATTHEW ST",
+              "MCDONALD CT",
+              "MELLUMVIEW DR",
+              "MILLER ST",
+              "MONTROSE ST",
+              "NEWELLS RD",
+              "NEWTON DR",
+              "NORTH ST",
+              "OLD GYMPIE RD",
+              "OLD LANDSBOROUGH RD",
+              "PACIFIC PL",
+              "PARKSIDE DR",
+              "PEACHESTER RD",
+              "PETERLYN CT",
+              "PINE CAMP RD",
+              "PINELANDS DR",
+              "ROYS RD",
+              "SIDNEY DR",
+              "SIMPSON ST",
+              "STEPHENSON CT",
+              "STEVE IRWIN WAY",
+              "STRAWBERRY RD",
+              "TALLAWONG CL",
+              "THOMPSON RD",
+              "TUDOR CT",
+              "USHER BVD"
+            ]
+          },
+          "affected_customers": 1844,
+          "suburb": "BEERWAH, LANDSBOROUGH, MOUNT MELLUM",
+          "street_name": "ARCADIA DR, AVILKA PL, BARBARA CT, BEERBURRUM ST, BEERWAH PDE, BEERWAH ST, BELTON CT, BIONDI CRES, BLUEGUM ST, BOWERBIRD PL, BUNNEY RD, CALOUNDRA ST, CEDARWOOD PL, CHANTILLY CRES, CLARKES RD, COASTAL AVE, COTTONWOOD CT, CRIBB ST, EARL CT, EDWIN DR, EUDLO ST, FARMHOUSE LANE, FIRTH CT, FLINDERS AVE, FOLEY RD, FORESTDALE RD, FRASER RD, GOWEN DR, GRAHAM DR, GREBER RD, GREENVIEW AVE, GWEN CT, HARDWOOD RD, HARRY PL, HEIGHTS RD, IDRIS CT, IRWIN RD, ISAMBERT RD, JAMES CT, JOLLY CRES, KATHERINE ST, KURRAJONG CT, LAYT CT, LITCHIE ST, LYNDIE CT, MALENY ST, MANGROVE ST, MATTHEW ST, MCDONALD CT, MELLUM ST, MELLUMVIEW DR, MILL ST, MILLER ST, MONTROSE ST, MULBERRY PL, NEWELLS RD, NEWTON DR, NORTH ST, OLD GYMPIE RD, OLD LANDSBOROUGH RD, PACIFIC PL, PAPERBARK LANE, PARKSIDE DR, PEACHESTER RD, PETERLYN CT, PINE CAMP RD, PINE EDGE DR, PINELANDS DR, PLANTATION CCT, PLOVER DR, RAILWAY ST, REDWOOD CT, ROSEWOOD CT, ROYS RD, SIDNEY DR, SILVERBIRCH CT, SIMPSON ST, STEPHENS ST, STEPHENSON CT, STEVE IRWIN WAY, STRAWBERRY RD, TALLAWONG CL, THOMPSON RD, TOORBUL ST, TUDOR CT, TUTT CT, USHER BVD, WAGTAIL CT, WATTLEBIRD PL, WHITE GUMS ST, WINSTON CT, WOODWOOD RD"
+        },
+        {
+          "event_id": "INCD-996222-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 64
+            }
+          ],
+          "details": {
+            "event": "INCD-996222-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4553",
+            "suburb": "GLENVIEW",
+            "customersAffected": "10",
+            "restoreTime": "2026-11-12T08:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "OLD CALOUNDRA RD"
+            ]
+          },
+          "affected_customers": 64,
+          "suburb": "GLENVIEW, LANDSBOROUGH, MERIDAN PLAINS, PALMVIEW",
+          "street_name": "AMIGH RD, BRUCE HWY, FORESTRY RD, HAPGOOD RD, OLD CALOUNDRA RD, PIERCE AVE, STEVE IRWIN WAY"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-11T20:01:41Z",
+      "fetched_utc": "2026-11-11T20:16:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-11T20:00:01Z",
-        "published_customers": 645,
+        "source_updated_utc": "2026-11-11T20:15:00Z",
+        "published_customers": 554,
         "event_count": 20
       },
       "events": [
@@ -2821,30 +2927,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26WB11044",
-          "allocations": [
-            {
-              "lga_name": "Gympie Regional",
-              "lga_code": null,
-              "affected_customers": 106
-            }
-          ],
-          "details": {
-            "event": "26WB11044",
-            "council": "Gympie Regional Council",
-            "suburb": "BOONARA, GOOMERI",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 20:45",
-            "restoreTime": "12/11/2026 15:00",
-            "customersAffected": "106",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Work delayed - crews unable to continue"
-          },
-          "affected_customers": 106,
-          "suburb": "BOONARA, GOOMERI",
-          "street_name": ""
-        },
-        {
           "event_id": "26WB11054",
           "allocations": [
             {
@@ -2890,6 +2972,30 @@
           },
           "affected_customers": 3,
           "suburb": "PATERSON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB11062",
+          "allocations": [
+            {
+              "lga_name": "Gympie Regional",
+              "lga_code": null,
+              "affected_customers": 15
+            }
+          ],
+          "details": {
+            "event": "26WB11062",
+            "council": "Gympie Regional Council",
+            "suburb": "GOOMERI",
+            "type": "UNPLANNED",
+            "startTime": "11/11/2026 21:09",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "15",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 15,
+          "suburb": "GOOMERI",
           "street_name": ""
         },
         {
