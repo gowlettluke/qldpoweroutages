@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T03:01:36Z",
+      "fetched_utc": "2026-11-12T03:16:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 1:00 PM",
-        "source_updated_utc": "2026-11-12T03:00:03Z",
-        "published_customers": 37696,
-        "event_count": 50
+        "source_updated": "12 November 2026 1:15 PM",
+        "source_updated_utc": "2026-11-12T03:15:03Z",
+        "published_customers": 36502,
+        "event_count": 52
       },
       "events": [
         {
@@ -425,32 +425,42 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 1516
-            },
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 2
+              "affected_customers": 482
             }
           ],
           "details": {
             "event": "INCD-995046-g",
             "cause": "Powerlines down",
             "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4115",
-            "suburb": "PARKINSON",
-            "customersAffected": "2",
+            "council": "Logan City",
+            "postcode": "4124",
+            "suburb": "BORONIA HEIGHTS",
+            "customersAffected": "354",
             "restoreTime": "2026-11-12T18:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "JOHNSON RD"
+              "AILSA ST",
+              "BARKER ST",
+              "DEVEREAUX RD",
+              "ELMWOOD CT",
+              "FEDRICK ST",
+              "FENWOOD CL",
+              "FLORENCE ST",
+              "FOXHALL ST",
+              "GUNNING ST",
+              "LUTTON CT",
+              "MACTIER DR",
+              "MT LINDESAY HWY",
+              "MYLES CT",
+              "SELLWOOD ST",
+              "SEYMORE CT",
+              "TENIELLE ST"
             ]
           },
-          "affected_customers": 1518,
-          "suburb": "BORONIA HEIGHTS, FORESTDALE, HILLCREST, PARK RIDGE, PARKINSON, REGENTS PARK",
-          "street_name": "ABBEY ST, ABBOTT ST, AILSA ST, ALLANADALE CT, ARCHERY ST, BARKER ST, BLYTH CT, BOYD CT, BROADSWORD CT, CENTRAL CT, CLABON ST, COORA CT, CRANNOCK CT, DEIRWOLD CT, DEVEREAUX RD, DUNDEE DR, ELLIOTT CT, ELMWOOD CT, EMERALD DR, FEATHER CL, FEDRICK ST, FENWOOD CL, FLORENCE ST, FOLIUM CT, FORESTDALE DR, FOXHALL ST, GISBOURNE ST, GREEN RD, GUNNING ST, HALDHAM CRES, HAMPTON CT, HOOD CT, HUNTINGDON ST, HUON PL, INDICA CRES, JOHNSON RD, KIRKLEES PL, LEARMONTH CT, LINCOLN GREEN DR, LIONHEART ST, LITSEA CT, LUTTON CT, MACADAMIA ST, MACTIER DR, MT LINDESAY HWY, MYLES CT, NEWBURN ST, NOTTINGHAM CT, PARINGA CT, PERSEA ST, PEVERELL ST, PLANTAGENET CT, PRIORY PL, RENFREW ST, SARACEN CT, SCRIBNER AVE, SELLWOOD ST, SEYMORE CT, SHERIFF ST, SIENKO ST, STAFF PL, TENIELLE ST, TRENT CT, WATKINSIA CT, WESTLAND CT, WESTWOOD DR, WINSLOW CT, WOODBINE ST"
+          "affected_customers": 482,
+          "suburb": "BORONIA HEIGHTS, PARK RIDGE, REGENTS PARK",
+          "street_name": "AILSA ST, BARKER ST, DEVEREAUX RD, ELMWOOD CT, EMERALD DR, FEDRICK ST, FENWOOD CL, FLORENCE ST, FOLIUM CT, FOXHALL ST, GREEN RD, GUNNING ST, HALDHAM CRES, INDICA CRES, LITSEA CT, LUTTON CT, MACTIER DR, MT LINDESAY HWY, MYLES CT, SELLWOOD ST, SEYMORE CT, TENIELLE ST, WATKINSIA CT"
         },
         {
           "event_id": "INCD-995048-g",
@@ -828,7 +838,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 848
+              "affected_customers": 266
             }
           ],
           "details": {
@@ -838,38 +848,20 @@
             "council": "Logan City",
             "postcode": "4124",
             "suburb": "GREENBANK",
-            "customersAffected": "739",
+            "customersAffected": "157",
             "restoreTime": "2026-11-12T18:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "ACHILLES ST",
-              "ANDREW RD",
-              "ANGELSEA ST",
-              "BARBETH RD",
-              "BARRATT DR",
               "BASALT RD",
-              "BIRDSVILLE ST",
-              "BRADBURY ST",
-              "COUTTS ST",
-              "FRENEY ST",
-              "HEPBURN ST",
-              "JOVINOV RD",
               "KASHMIR CCT",
-              "MANGIRI ST",
-              "MCEVOY ST",
-              "MILLS WAY",
               "MT LINDESAY HWY",
-              "PALMER RD",
-              "PROVENCE PL",
-              "SCHLANGER AVE",
-              "STRETKO ST",
-              "TAURIMA LANE"
+              "PROVENCE PL"
             ]
           },
-          "affected_customers": 848,
+          "affected_customers": 266,
           "suburb": "GREENBANK, PARK RIDGE, PARK RIDGE SOUTH",
-          "street_name": "ACHILLES ST, ANDREW RD, ANGELSEA ST, BARBETH RD, BARRATT DR, BASALT RD, BIRDSVILLE ST, BRADBURY ST, COMPAL RD, COUTTS ST, ENDEAVOUR CT, EXECUTIVE DR, FRENEY ST, HEPBURN ST, HILLCREST RD, JOVINOV RD, KASHMIR CCT, MANGIRI ST, MCEVOY ST, MILLS WAY, MT LINDESAY HWY, PALMER RD, PROVENCE PL, ROSIA RD, SCHLANGER AVE, STRETKO ST, TAURIMA LANE, WOODEND CT"
+          "street_name": "BASALT RD, COMPAL RD, ENDEAVOUR CT, EXECUTIVE DR, HILLCREST RD, KASHMIR CCT, MT LINDESAY HWY, PROVENCE PL, ROSIA RD, WOODEND CT"
         },
         {
           "event_id": "INCD-995268-g",
@@ -1088,7 +1080,7 @@
             {
               "lga_name": "Gympie Regional",
               "lga_code": null,
-              "affected_customers": 223
+              "affected_customers": 216
             }
           ],
           "details": {
@@ -1114,9 +1106,9 @@
               "TIN CAN BAY RD"
             ]
           },
-          "affected_customers": 223,
-          "suburb": "CANINA, CEDAR POCKET, EAST DEEP CREEK, GREENS CREEK, GYMPIE, MONKLAND, VETERAN, VICTORY HEIGHTS",
-          "street_name": "ANNIES LANE, ARLINGTON RD, ASCOT RD, BOLCARO RD, BROOKS RD, CANINA RD, CEDAR POCKET RD, COOLGARDIE CRES, COOTHARABA RD, DONALD RD, EAST DEEP CREEK RD, FERGUSON ST, GOLDHILL RD, GRECIAN BENDS RD, GYMPIE CONNECTION RD, HOSE RD, KATIES LANE, LEEANN RD, MCDONALD RD, MULBERRY LANE, OLD GOOMBOORIAN RD, PLOWMAN RD, RANDWICK RD, RICHARDSON RD, ROCKY RIDGE RD, SAMARA CRES, STEELE RD, TIN CAN BAY RD, WILLIAMS RD, WILTON RD, WINTERLEIGH WAY"
+          "affected_customers": 216,
+          "suburb": "CANINA, CEDAR POCKET, EAST DEEP CREEK, GREENS CREEK, GYMPIE, VETERAN, VICTORY HEIGHTS",
+          "street_name": "ANNIES LANE, ARLINGTON RD, ASCOT RD, BOLCARO RD, BROOKS RD, CANINA RD, CEDAR POCKET RD, COOLGARDIE CRES, DONALD RD, EAST DEEP CREEK RD, FERGUSON ST, GOLDHILL RD, GRECIAN BENDS RD, GYMPIE CONNECTION RD, HOSE RD, KATIES LANE, MCDONALD RD, MULBERRY LANE, OLD GOOMBOORIAN RD, PLOWMAN RD, RANDWICK RD, RICHARDSON RD, ROCKY RIDGE RD, SAMARA CRES, STEELE RD, TIN CAN BAY RD, WILLIAMS RD, WILTON RD, WINTERLEIGH WAY"
         },
         {
           "event_id": "INCD-995515-g",
@@ -1867,34 +1859,6 @@
           "street_name": "BEAUDESERT-BEENLEIGH RD, BEAUDESERT-NERANG RD, BOYLAND RD, FOUR MILE LANE"
         },
         {
-          "event_id": "INCD-996297-g",
-          "allocations": [
-            {
-              "lga_name": "Somerset Regional",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-996297-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Somerset Regional",
-            "postcode": "4312",
-            "suburb": "ESK",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-12T18:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ESK HAMPTON RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "ESK",
-          "street_name": "ESK HAMPTON RD"
-        },
-        {
           "event_id": "INCD-996344-g",
           "allocations": [
             {
@@ -1949,17 +1913,120 @@
           "affected_customers": 12,
           "suburb": "BEAUDESERT, KERRY",
           "street_name": "KERRY RD"
+        },
+        {
+          "event_id": "INCD-996589-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 39
+            }
+          ],
+          "details": {
+            "event": "INCD-996589-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4133",
+            "suburb": "WATERFORD WEST",
+            "customersAffected": "39",
+            "restoreTime": "2026-11-12T20:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BEUTEL ST",
+              "TYGUM RD"
+            ]
+          },
+          "affected_customers": 39,
+          "suburb": "WATERFORD WEST",
+          "street_name": "BEUTEL ST, TYGUM RD"
+        },
+        {
+          "event_id": "INCD-996601-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 366
+            },
+            {
+              "lga_name": "Redland City",
+              "lga_code": null,
+              "affected_customers": 8
+            }
+          ],
+          "details": {
+            "event": "INCD-996601-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4155",
+            "suburb": "CHANDLER",
+            "customersAffected": "329",
+            "restoreTime": "2026-11-12T16:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALDIS ST",
+              "ARCHER ST",
+              "BACTON RD",
+              "BOSTON RD",
+              "CAMROSE ST",
+              "CHARLETON ST",
+              "LONDON RD",
+              "NEW CLEVELAND RD",
+              "OLD CLEVELAND RD",
+              "SUNNYDENE RD",
+              "SWINTON ST",
+              "TORBAY RD",
+              "TORONTO RD",
+              "WARRIEWOOD ST"
+            ]
+          },
+          "affected_customers": 374,
+          "suburb": "CAPALABA, CHANDLER, GUMDALE, RANSOME",
+          "street_name": "ALDIS ST, ARCHER ST, BACTON RD, BOSTON RD, CAMROSE ST, CHADWELL ST, CHARLETON ST, CHELSEA RD, GRASSDALE RD, LONDON RD, NEW CLEVELAND RD, OLD CLEVELAND RD, SUNNYDENE RD, SWINTON ST, TORBAY RD, TORONTO RD, WARRIEWOOD ST"
+        },
+        {
+          "event_id": "INCD-996615-g",
+          "allocations": [
+            {
+              "lga_name": "Gympie Regional",
+              "lga_code": null,
+              "affected_customers": 19
+            }
+          ],
+          "details": {
+            "event": "INCD-996615-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Gympie Regional",
+            "postcode": "4563",
+            "suburb": "CARTERS RIDGE",
+            "customersAffected": "19",
+            "restoreTime": "2026-11-12T16:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "JUBILEE RD"
+            ]
+          },
+          "affected_customers": 19,
+          "suburb": "CARTERS RIDGE",
+          "street_name": "JUBILEE RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T03:01:39Z",
+      "fetched_utc": "2026-11-12T03:16:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T03:00:01Z",
-        "published_customers": 1371,
-        "event_count": 25
+        "source_updated_utc": "2026-11-12T03:15:00Z",
+        "published_customers": 1218,
+        "event_count": 24
       },
       "events": [
         {
@@ -2329,27 +2396,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ14027",
+          "event_id": "26NQ14029",
           "allocations": [
             {
-              "lga_name": "Townsville City",
+              "lga_name": "Burdekin Shire",
               "lga_code": null,
-              "affected_customers": 142
+              "affected_customers": 15
             }
           ],
           "details": {
-            "event": "26NQ14027",
-            "council": "Townsville City Council",
-            "suburb": "ALICE RIVER",
+            "event": "26NQ14029",
+            "council": "Burdekin Shire Council",
+            "suburb": "AIRVILLE, AYR",
             "type": "UNPLANNED",
-            "startTime": "12/11/2026 12:37",
+            "startTime": "12/11/2026 11:59",
             "restoreTime": "Under Investigation",
-            "customersAffected": "142",
-            "cause": "The loss of supply is due to public safety concerns.",
-            "status": "Crews working on-site"
+            "customersAffected": "15",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
           },
-          "affected_customers": 142,
-          "suburb": "ALICE RIVER",
+          "affected_customers": 15,
+          "suburb": "AIRVILLE, AYR",
           "street_name": ""
         },
         {
@@ -2374,30 +2441,6 @@
           },
           "affected_customers": 19,
           "suburb": "CHARLEVILLE, MORVEN",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14571",
-          "allocations": [
-            {
-              "lga_name": "Murweh Shire",
-              "lga_code": null,
-              "affected_customers": 26
-            }
-          ],
-          "details": {
-            "event": "26SW14571",
-            "council": "Murweh Shire Council",
-            "suburb": "CHARLEVILLE, COOLADDI",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 16:00",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "26",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 26,
-          "suburb": "CHARLEVILLE, COOLADDI",
           "street_name": ""
         },
         {
@@ -2442,7 +2485,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "7",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 7,
           "suburb": "TAROOM",
@@ -2524,7 +2567,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "44",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 44,
           "suburb": "COALBANK, CROWS NEST, EMU CREEK, EVERGREEN, THORNVILLE",
