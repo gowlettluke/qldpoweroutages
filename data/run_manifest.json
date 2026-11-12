@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-12T05:31:20Z",
-  "generated_aest": "2026-11-12T15:31:20+10:00",
+  "generated_utc": "2026-11-12T05:46:05Z",
+  "generated_aest": "2026-11-12T15:46:05+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 66,
+  "current_outage_records": 63,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 393,
-  "current_records_after_outage_type_filter": 79,
-  "current_records_dropped_planned_or_unknown": 314,
+  "current_records_before_outage_type_filter": 388,
+  "current_records_after_outage_type_filter": 77,
+  "current_records_dropped_planned_or_unknown": 311,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
@@ -19,23 +19,23 @@
       "source_updated_utc": "2026-11-12T05:30:02Z",
       "published_customers": 30837,
       "event_count": 44,
-      "fetched_utc": "2026-11-12T05:31:28Z"
+      "fetched_utc": "2026-11-12T05:46:13Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-12T05:30:29Z",
-      "published_customers": 1077,
-      "event_count": 22,
-      "fetched_utc": "2026-11-12T05:31:34Z"
+      "source_updated_utc": "2026-11-12T05:45:00Z",
+      "published_customers": 495,
+      "event_count": 19,
+      "fetched_utc": "2026-11-12T05:46:17Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-12T05:31:20Z",
+    "snapshot_utc": "2026-11-12T05:46:05Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-12T05:31:28Z",
+      "fetched_utc": "2026-11-12T05:46:13Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -75,17 +75,17 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-12T05:31:34Z",
+      "fetched_utc": "2026-11-12T05:46:17Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-12T05:30:29Z",
+      "source_updated_utc": "2026-11-12T05:45:00Z",
       "retained": false,
-      "total_customers": 1077,
+      "total_customers": 495,
       "rows": [
         {
           "lga_name": "Banana Shire",
-          "affected_customers": 17
+          "affected_customers": 7
         },
         {
           "lga_name": "Blackall Tambo Regional",
@@ -125,7 +125,7 @@
         },
         {
           "lga_name": "Gympie Regional",
-          "affected_customers": 64
+          "affected_customers": 29
         },
         {
           "lga_name": "Maranoa Regional",
@@ -149,28 +149,24 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 120
-        },
-        {
-          "lga_name": "Townsville City",
-          "affected_customers": 476
+          "affected_customers": 59
         }
       ]
     }
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 44,
-  "current_ergon_records": 22,
-  "current_essential_records_fetched": 19,
-  "current_energex_records_fetched": 151,
-  "current_ergon_records_fetched": 219,
+  "current_ergon_records": 19,
+  "current_essential_records_fetched": 18,
+  "current_energex_records_fetched": 150,
+  "current_ergon_records_fetched": 217,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 13,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 14,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 8776,
-  "lga_totals_rows_48h": 6711,
-  "lga_totals_latest_rows": 49,
+  "snapshot_rows_48h": 8839,
+  "lga_totals_rows_48h": 6758,
+  "lga_totals_latest_rows": 47,
   "lga_cumulative_rows": 110,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
