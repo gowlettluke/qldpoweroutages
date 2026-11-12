@@ -1,17 +1,18 @@
 {
-  "generated_utc": "2026-11-12T23:31:23Z",
-  "generated_aest": "2026-11-13T09:31:23+10:00",
+  "generated_utc": "2026-11-12T23:46:13Z",
+  "generated_aest": "2026-11-13T09:46:13+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 55,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 502,
-  "current_records_after_outage_type_filter": 62,
+  "current_records_before_outage_type_filter": 501,
+  "current_records_after_outage_type_filter": 61,
   "current_records_dropped_planned_or_unknown": 440,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {
-    "Energex": "Update delayed; using verified provider data from 2026-11-12T23:15:02Z. Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+    "Energex": "Update delayed; using verified provider data from 2026-11-12T23:15:02Z. Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m",
+    "Ergon": "Update delayed; using verified provider data from 2026-11-12T23:30:00Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
   },
   "council_allocation_status": {
     "Energex": {
@@ -25,17 +26,18 @@
       "collection_error": "Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
     },
     "Ergon": {
-      "status": "provider",
+      "status": "provider_cache",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
       "source_updated_utc": "2026-11-12T23:30:00Z",
       "published_customers": 1184,
       "event_count": 24,
-      "fetched_utc": "2026-11-12T23:31:43Z"
+      "fetched_utc": "2026-11-12T23:31:43Z",
+      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-12T23:31:23Z",
+    "snapshot_utc": "2026-11-12T23:46:13Z",
     "energex": {
       "status": "ok",
       "fetched_utc": "2026-11-12T23:16:27Z",
@@ -87,7 +89,7 @@
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
       "source_updated_utc": "2026-11-12T23:30:00Z",
-      "retained": false,
+      "retained": true,
       "total_customers": 1184,
       "rows": [
         {
@@ -160,15 +162,15 @@
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 31,
   "current_ergon_records": 24,
-  "current_essential_records_fetched": 60,
+  "current_essential_records_fetched": 59,
   "current_energex_records_fetched": 149,
   "current_ergon_records_fetched": 288,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 7,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 11722,
-  "lga_totals_rows_48h": 8309,
+  "snapshot_rows_48h": 11762,
+  "lga_totals_rows_48h": 8333,
   "lga_totals_latest_rows": 48,
   "lga_cumulative_rows": 110,
   "outputs": {
