@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T13:16:20Z",
+      "fetched_utc": "2026-11-12T13:31:35Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 11:15 PM",
-        "source_updated_utc": "2026-11-12T13:15:02Z",
-        "published_customers": 14501,
-        "event_count": 29
+        "source_updated": "12 November 2026 11:30 PM",
+        "source_updated_utc": "2026-11-12T13:30:02Z",
+        "published_customers": 14429,
+        "event_count": 28
       },
       "events": [
         {
@@ -776,69 +776,6 @@
           "street_name": "AMBER CRES, EDELSTEN RD"
         },
         {
-          "event_id": "INCD-996937-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "INCD-996937-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Scenic Rim Regional",
-            "postcode": "4310",
-            "suburb": "TEMPLIN",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-13T10:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "OERTEL RD"
-            ]
-          },
-          "affected_customers": 2,
-          "suburb": "TEMPLIN",
-          "street_name": "OERTEL RD"
-        },
-        {
-          "event_id": "INCD-996968-g",
-          "allocations": [
-            {
-              "lga_name": "Somerset Regional",
-              "lga_code": null,
-              "affected_customers": 62
-            },
-            {
-              "lga_name": "Lockyer Valley Regional",
-              "lga_code": null,
-              "affected_customers": 19
-            }
-          ],
-          "details": {
-            "event": "INCD-996968-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Lockyer Valley Regional",
-            "postcode": "4311",
-            "suburb": "CHURCHABLE",
-            "customersAffected": "19",
-            "restoreTime": "2026-11-13T12:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ATKINSON DAM RD",
-              "ATKINSONS DAM RD",
-              "GATTON-ESK RD"
-            ]
-          },
-          "affected_customers": 81,
-          "suburb": "ATKINSONS DAM, BUARABA, CHURCHABLE, CLARENDON",
-          "street_name": "ATKINSON DAM RD, ATKINSONS DAM RD, BISCHOFFS RD, BUARABA CREEK RD, GATTON-ESK RD, KAVANAGH RD, LEVER RD, SKEW GULLY RD, VERANDAH CREEK RD"
-        },
-        {
           "event_id": "INCD-996977-g",
           "allocations": [
             {
@@ -984,17 +921,45 @@
           "affected_customers": 71,
           "suburb": "CRESTMEAD",
           "street_name": "AUGUSTA ST, BURSARIA ST, HAKEA ST, MALLEE ST, WARATAH DR"
+        },
+        {
+          "event_id": "INCD-997244-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 11
+            }
+          ],
+          "details": {
+            "event": "INCD-997244-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4125",
+            "suburb": "PARK RIDGE",
+            "customersAffected": "11",
+            "restoreTime": "2026-11-13T12:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "PARK RIDGE RD"
+            ]
+          },
+          "affected_customers": 11,
+          "suburb": "PARK RIDGE",
+          "street_name": "PARK RIDGE RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T13:16:26Z",
+      "fetched_utc": "2026-11-12T13:31:37Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T13:15:20Z",
-        "published_customers": 835,
-        "event_count": 21
+        "source_updated_utc": "2026-11-12T13:30:29Z",
+        "published_customers": 1358,
+        "event_count": 22
       },
       "events": [
         {
@@ -1149,6 +1114,30 @@
           },
           "affected_customers": 3,
           "suburb": "CLONCURRY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ14062",
+          "allocations": [
+            {
+              "lga_name": "Burdekin Shire",
+              "lga_code": null,
+              "affected_customers": 523
+            }
+          ],
+          "details": {
+            "event": "26NQ14062",
+            "council": "Burdekin Shire Council",
+            "suburb": "AIRDMILLAN, ALVA, AYR, BRANDON",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 23:24",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "523",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 523,
+          "suburb": "AIRDMILLAN, ALVA, AYR, BRANDON",
           "street_name": ""
         },
         {
