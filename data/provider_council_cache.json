@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T15:31:30Z",
+      "fetched_utc": "2026-11-12T17:46:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 1:30 AM",
-        "source_updated_utc": "2026-11-12T15:30:02Z",
-        "published_customers": 10967,
-        "event_count": 28
+        "source_updated": "13 November 2026 3:45 AM",
+        "source_updated_utc": "2026-11-12T17:45:02Z",
+        "published_customers": 9189,
+        "event_count": 29
       },
       "events": [
         {
@@ -77,32 +77,33 @@
           "street_name": "BATEKE RD, BENOWA ST, PROSPECT ST, WILSON RD, YOUNG ST"
         },
         {
-          "event_id": "INCD-10095-h",
+          "event_id": "INCD-10096-h",
           "allocations": [
             {
-              "lga_name": "Moreton Bay City",
+              "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 24
+              "affected_customers": 5
             }
           ],
           "details": {
-            "event": "INCD-10095-h",
-            "cause": "Emergency Repairs",
+            "event": "INCD-10096-h",
+            "cause": "Damage due to severe weather",
             "status": "Emergency Repairs",
-            "council": "Moreton Bay Regional",
-            "postcode": "4521",
-            "suburb": "CAMPBELLS POCKET",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-13T03:30:00+10:00",
+            "council": "Logan City",
+            "postcode": "4207",
+            "suburb": "LOGAN VILLAGE",
+            "customersAffected": "5",
+            "restoreTime": "2026-11-13T08:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "DAWES RD"
+              "CAMP CABLE RD",
+              "TRAVIS RD"
             ]
           },
-          "affected_customers": 24,
-          "suburb": "CAMPBELLS POCKET, MOUNT MEE, OCEAN VIEW",
-          "street_name": "CLARK RD, DAWES RD, MIERS RD, ROBINSON RD, ROBINSON RD S"
+          "affected_customers": 5,
+          "suburb": "LOGAN VILLAGE",
+          "street_name": "CAMP CABLE RD, TRAVIS RD"
         },
         {
           "event_id": "INCD-995008-g",
@@ -138,12 +139,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 1406
-            },
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 83
+              "affected_customers": 1385
             }
           ],
           "details": {
@@ -161,9 +157,9 @@
               "MARKS RD"
             ]
           },
-          "affected_customers": 1489,
-          "suburb": "JIMBOOMBA, LOGAN VILLAGE, TAMBORINE, YARRABILBA",
-          "street_name": "ADLER CCT, BAILEY ST, BERNARD CCT, BOICE ST, CAMP CABLE RD, CAREW ST, CARPENTER ST, CHERNEY LANE, COMBS ST, DANIELS LANE, DARLINGTON DR, DARNELL ST, DOLLARBIRD DR, EDISON CRES, EUCALYPT RD, FOLLETT ST, FOXX CT, FRANKLIN ST, FULMER ST, GARRAGULL DR, GRAYSON ST, HANTLEMANN LANE, HERSHEY CL, HILLARD ST, HOWARD ST, HUGGINS AVE, JOBS CCT, JUBERA CL, KURGAN LANE, LATHAM ST, LELAND ST, LOWTHERS ST, MACNAB ST, MANGANO CT, MARKS RD, MASSEY ST, MAYNOR CT, NAYLOR DR, PEABODY LANE, SANDELL ST, SCHROEDER ST, SHAW ST, SIGWELL ST, SOMMER ST, TAPPEN ST, TASKER ST, TEAL CT, TIRREL ST, TOMLINSON ST, TRAVIS RD, TULLIS CL, VIRGINIA WAY, WALDRON ST, WATERFORD TAMBORINE RD, WATERFORD-TAMBORINE RD, WEDGE-TAIL CT, WINKLER CT, WONGAWALLAN DR, WOODWARD AVE, YARRABILBA DR"
+          "affected_customers": 1385,
+          "suburb": "JIMBOOMBA, LOGAN VILLAGE, YARRABILBA",
+          "street_name": "ADLER CCT, BAILEY ST, BERNARD CCT, BOICE ST, CAMP CABLE RD, CAREW ST, CARPENTER ST, CHERNEY LANE, COMBS ST, DANIELS LANE, DARLINGTON DR, DARNELL ST, EDISON CRES, EUCALYPT RD, FOLLETT ST, FOXX CT, FRANKLIN ST, FULMER ST, GARRAGULL DR, GRAYSON ST, HANTLEMANN LANE, HERSHEY CL, HILLARD ST, HOWARD ST, HUGGINS AVE, JOBS CCT, JUBERA CL, KURGAN LANE, LATHAM ST, LELAND ST, LOWTHERS ST, MACNAB ST, MANGANO CT, MARKS RD, MASSEY ST, MAYNOR CT, PEABODY LANE, SANDELL ST, SCHROEDER ST, SHAW ST, SIGWELL ST, SOMMER ST, TAPPEN ST, TASKER ST, TIRREL ST, TOMLINSON ST, TRAVIS RD, TULLIS CL, VIRGINIA WAY, WALDRON ST, WATERFORD TAMBORINE RD, WINKLER CT, WONGAWALLAN DR, WOODWARD AVE, YARRABILBA DR"
         },
         {
           "event_id": "INCD-995019-g",
@@ -353,7 +349,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 1749
+              "affected_customers": 44
             }
           ],
           "details": {
@@ -361,19 +357,22 @@
             "cause": "Powerlines down",
             "status": "Under Investigation",
             "council": "Logan City",
-            "postcode": "4133",
-            "suburb": "CHAMBERS FLAT",
-            "customersAffected": "1",
+            "postcode": "4125",
+            "suburb": "PARK RIDGE",
+            "customersAffected": "44",
             "restoreTime": "2026-11-13T06:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "CHAMBERS FLAT RD"
+              "BELVEDERE DR",
+              "CHAMBERS FLAT RD",
+              "CLARKE RD",
+              "COUNTRY CT"
             ]
           },
-          "affected_customers": 1749,
-          "suburb": "CHAMBERS FLAT, LOGAN RESERVE, PARK RIDGE",
-          "street_name": "ALLERTON PARK DR, ARTON ST, AUSTIN WAY, BECK ST, BELVEDERE DR, BLACK CHERRY ST, BRUNNER DR, BURNLEY RD, CADELL CL, CALE ST, CARNABY WAY, CHALK RD, CHAMBERS FLAT RD, CHAMBERS RIDGE BVD, CLARKE RD, COTTEE CCT, COUNTRY CT, CREAGHE ST, DERBY RD, DUKE RD, EAST BEAUMONT RD, ELITE ST, EMBLETON RD, EXALT PL, FLANNERY TCE, FORMOSA ST, FRANKLIN AVE, FRASER ST, HARPER DR, HARTNELL DR, HINKLER WAY, JACKEY ST, LANI ST, MADDOX ST, MERCY CCT, MOUNT ARCHER RD, MOUNT BALLOW ST, MOUNT BARNEY CRES, MOUNT BOWEN ST, MOUNT COOROORA ST, MOUNT CROSBY ST, MOUNT EDWARDS ST, MOUNT EMERALD ST, MOUNT FRENCH ST, MOUNT GLORIOUS ST, MOUNT GREVILLE WAY, MOUNT HUNTLEY ST, MOUNT MEE ST, MOUNT MITCHELL ST, MOUNT PETRIE LANE, MOUNT ROBERTS ST, MOUNT WHEELER ST, MT PLEASANT ST, MULBERRY ST, PARK RIDGE RD, ROUPELL ST, SKELBROOK RD, SOHO WAY, SOMERVILLE CCT, SPENCER WAY, ST MARKS ST, SUGAR MAPLE PL, TULIP TREE ST, WANG ST, WHITE ASH WAY, WICKER RD, WORSLEY LANE, YORKSHIRE RD"
+          "affected_customers": 44,
+          "suburb": "PARK RIDGE",
+          "street_name": "BELVEDERE DR, CHAMBERS FLAT RD, CLARKE RD, COUNTRY CT"
         },
         {
           "event_id": "INCD-995268-g",
@@ -477,7 +476,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 559
+              "affected_customers": 452
             }
           ],
           "details": {
@@ -487,7 +486,7 @@
             "council": "Logan City",
             "postcode": "4133",
             "suburb": "CHAMBERS FLAT",
-            "customersAffected": "247",
+            "customersAffected": "242",
             "restoreTime": "2026-11-13T18:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
@@ -512,9 +511,9 @@
               "VIRGIL RD"
             ]
           },
-          "affected_customers": 559,
+          "affected_customers": 452,
           "suburb": "CHAMBERS FLAT, LOGAN RESERVE, PARK RIDGE, PARK RIDGE SOUTH",
-          "street_name": "AIREN ST, ALEXANDER CT, ARCHER CT, BARBOSSA ST, BEAUMONT RD, BEECH ST, BELVEDERE CT, BIRCHWOOD ST, CARNARVON CT, CERATONIA ST, CHAMBERS FLAT RD, COOLAROO CT, DANDARAGA CT, EAST BEAUMONT RD, ELON ST, FLESSER RD, GARRICK ST, HANA ST, HIGHGROVE CL, HOLLOWAY RD, HUBNER RD, KOPLICK RD, LAKEFIELD CT, MCPHERSON RD, MERLOT CT, PINOT ST, ROSIA RD, ROSSMORE RD, RUNDALUA RD, SHEILS RD, SPRINGFIELDS RD, SYLVAN RD, SYRAH ST, VIRGIL RD"
+          "street_name": "ALEXANDER CT, ARCHER CT, BARBOSSA ST, BEAUMONT RD, BEECH ST, BELVEDERE CT, BIRCHWOOD ST, CARNARVON CT, CERATONIA ST, CHAMBERS FLAT RD, COOLAROO CT, DANDARAGA CT, EAST BEAUMONT RD, ELON ST, FLESSER RD, GARRICK ST, HANA ST, HIGHGROVE CL, HOLLOWAY RD, HUBNER RD, KOPLICK RD, LAKEFIELD CT, MCPHERSON RD, ROSIA RD, ROSSMORE RD, RUNDALUA RD, SHEILS RD, SPRINGFIELDS RD, SYLVAN RD, VIRGIL RD"
         },
         {
           "event_id": "INCD-995919-g",
@@ -552,7 +551,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 53
+              "affected_customers": 12
             }
           ],
           "details": {
@@ -562,20 +561,18 @@
             "council": "Logan City",
             "postcode": "4133",
             "suburb": "CHAMBERS FLAT",
-            "customersAffected": "53",
+            "customersAffected": "12",
             "restoreTime": "2026-11-13T18:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "ANDREWS CT",
-              "GREY GUM RD",
-              "HOLLOWAY RD",
               "SUNGOLD RD"
             ]
           },
-          "affected_customers": 53,
+          "affected_customers": 12,
           "suburb": "CHAMBERS FLAT",
-          "street_name": "ANDREWS CT, GREY GUM RD, HOLLOWAY RD, SUNGOLD RD"
+          "street_name": "ANDREWS CT, SUNGOLD RD"
         },
         {
           "event_id": "INCD-996252-g",
@@ -723,34 +720,6 @@
           "street_name": "INGA ST, KILBY ST, LYCORIS ST, MORROW ST"
         },
         {
-          "event_id": "INCD-997057-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "INCD-997057-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Moreton Bay Regional",
-            "postcode": "4510",
-            "suburb": "CABOOLTURE",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-13T10:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BRIBIE ISLAND RD"
-            ]
-          },
-          "affected_customers": 2,
-          "suburb": "CABOOLTURE",
-          "street_name": "BRIBIE ISLAND RD"
-        },
-        {
           "event_id": "INCD-997064-g",
           "allocations": [
             {
@@ -867,6 +836,37 @@
           "street_name": "PARK RIDGE RD"
         },
         {
+          "event_id": "INCD-997249-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 72
+            }
+          ],
+          "details": {
+            "event": "INCD-997249-g",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
+            "council": "Logan City",
+            "postcode": "4132",
+            "suburb": "MARSDEN",
+            "customersAffected": "72",
+            "restoreTime": "2026-11-13T04:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "CANIA CT",
+              "CHAFFEY ST",
+              "JULIUS CT",
+              "PEDDER ST"
+            ]
+          },
+          "affected_customers": 72,
+          "suburb": "MARSDEN",
+          "street_name": "CANIA CT, CHAFFEY ST, JULIUS CT, PEDDER ST"
+        },
+        {
           "event_id": "INCD-997266-g",
           "allocations": [
             {
@@ -883,7 +883,7 @@
             "postcode": "4311",
             "suburb": "CHURCHABLE",
             "customersAffected": "1",
-            "restoreTime": "2026-11-13T04:00:00+10:00",
+            "restoreTime": "2026-11-13T06:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -893,17 +893,45 @@
           "affected_customers": 1,
           "suburb": "CHURCHABLE",
           "street_name": "ATKINSON DAM RD"
+        },
+        {
+          "event_id": "INCD-997277-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 128
+            }
+          ],
+          "details": {
+            "event": "INCD-997277-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4151",
+            "suburb": "COORPAROO",
+            "customersAffected": "2",
+            "restoreTime": "2026-11-13T12:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "MARRIOTT ST"
+            ]
+          },
+          "affected_customers": 128,
+          "suburb": "COORPAROO, HOLLAND PARK",
+          "street_name": "LOVE ST, MARRIOTT ST, OXLEY DR, PERCIVAL TCE, RAFF AVE, SYLVIA ST, WYLMA ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T17:31:17Z",
+      "fetched_utc": "2026-11-12T17:46:23Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T17:30:21Z",
-        "published_customers": 677,
-        "event_count": 23
+        "source_updated_utc": "2026-11-12T17:45:00Z",
+        "published_customers": 2397,
+        "event_count": 24
       },
       "events": [
         {
@@ -1457,6 +1485,40 @@
           },
           "affected_customers": 4,
           "suburb": "MORGANVILLE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB11269",
+          "allocations": [
+            {
+              "lga_name": "South Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 1463
+            },
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 254
+            },
+            {
+              "lga_name": "Somerset Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26WB11269",
+            "council": "Somerset Regional Council",
+            "suburb": "BENARKIN",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 03:28",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 1720,
+          "suburb": "ANDURAMBA, BENARKIN, BENARKIN NORTH, BLACKBUTT, BLACKBUTT NORTH, BLACKBUTT SOUTH, GILLA, GOOGA CREEK, KOORALGIN, TAROMEO, TEELAH, YARRAMAN",
           "street_name": ""
         },
         {
