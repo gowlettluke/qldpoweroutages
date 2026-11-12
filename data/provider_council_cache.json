@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T08:31:27Z",
+      "fetched_utc": "2026-11-12T08:46:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -1406,15 +1406,39 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T08:31:30Z",
+      "fetched_utc": "2026-11-12T08:46:16Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T08:30:01Z",
-        "published_customers": 1521,
-        "event_count": 27
+        "source_updated_utc": "2026-11-12T08:45:00Z",
+        "published_customers": 1465,
+        "event_count": 28
       },
       "events": [
+        {
+          "event_id": "26CA13598",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 19
+            }
+          ],
+          "details": {
+            "event": "26CA13598",
+            "council": "Banana Shire Council",
+            "suburb": "THEODORE",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 16:46",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "19",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 19,
+          "suburb": "THEODORE",
+          "street_name": ""
+        },
         {
           "event_id": "26FN11079",
           "allocations": [
@@ -1531,7 +1555,7 @@
             "suburb": "ETTY BAY, MOURILYAN, MOURILYAN HARBOUR",
             "type": "UNPLANNED",
             "startTime": "12/11/2026 17:45",
-            "restoreTime": "12/11/2026 22:59",
+            "restoreTime": "Under Investigation",
             "customersAffected": "350",
             "cause": "The loss of supply is due to public safety concerns.",
             "status": "Crews working on-site"
@@ -1666,27 +1690,27 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ14041",
+          "event_id": "26NQ14056",
           "allocations": [
             {
-              "lga_name": "Cloncurry Shire",
+              "lga_name": "Townsville City",
               "lga_code": null,
-              "affected_customers": 23
+              "affected_customers": 3
             }
           ],
           "details": {
-            "event": "26NQ14041",
-            "council": "Cloncurry Shire Council",
-            "suburb": "CLONCURRY",
+            "event": "26NQ14056",
+            "council": "Townsville City Council",
+            "suburb": "ROSSLEA",
             "type": "UNPLANNED",
-            "startTime": "12/11/2026 16:12",
+            "startTime": "12/11/2026 16:59",
             "restoreTime": "Under Investigation",
-            "customersAffected": "23",
+            "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
+            "status": "Outage reported"
           },
-          "affected_customers": 23,
-          "suburb": "CLONCURRY",
+          "affected_customers": 3,
+          "suburb": "ROSSLEA",
           "street_name": ""
         },
         {
@@ -2022,46 +2046,46 @@
             {
               "lga_name": "South Burnett Regional",
               "lga_code": null,
-              "affected_customers": 179
+              "affected_customers": 116
             }
           ],
           "details": {
             "event": "26WB11216",
             "council": "South Burnett Regional Council",
-            "suburb": "CHARLESTOWN, CORNDALE, JOHNSTOWN, KINGAROY, MEMERAMBI, NANANGO, TINGOORA, WATTLE CAMP, WONDAI, WOOROOLIN",
+            "suburb": "CHARLESTOWN, CORNDALE, JOHNSTOWN, KINGAROY, MEMERAMBI, NANANGO, WATTLE CAMP, WOOROOLIN",
             "type": "UNPLANNED",
             "startTime": "12/11/2026 18:18",
             "restoreTime": "Under Investigation",
-            "customersAffected": "179",
+            "customersAffected": "116",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Outage reported"
           },
-          "affected_customers": 179,
-          "suburb": "CHARLESTOWN, CORNDALE, JOHNSTOWN, KINGAROY, MEMERAMBI, NANANGO, TINGOORA, WATTLE CAMP, WONDAI, WOOROOLIN",
+          "affected_customers": 116,
+          "suburb": "CHARLESTOWN, CORNDALE, JOHNSTOWN, KINGAROY, MEMERAMBI, NANANGO, WATTLE CAMP, WOOROOLIN",
           "street_name": ""
         },
         {
-          "event_id": "26WB11218",
+          "event_id": "26WB11225",
           "allocations": [
             {
-              "lga_name": "Gympie Regional",
+              "lga_name": "South Burnett Regional",
               "lga_code": null,
-              "affected_customers": 4
+              "affected_customers": 12
             }
           ],
           "details": {
-            "event": "26WB11218",
-            "council": "Gympie Regional Council",
-            "suburb": "GUNALDA, KANYAN",
+            "event": "26WB11225",
+            "council": "South Burnett Regional Council",
+            "suburb": "BOOIE, COOLABUNIA, NANANGO",
             "type": "UNPLANNED",
-            "startTime": "12/11/2026 16:04",
+            "startTime": "12/11/2026 18:27",
             "restoreTime": "Under Investigation",
-            "customersAffected": "4",
+            "customersAffected": "12",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
+            "status": "Outage reported"
           },
-          "affected_customers": 4,
-          "suburb": "GUNALDA, KANYAN",
+          "affected_customers": 12,
+          "suburb": "BOOIE, COOLABUNIA, NANANGO",
           "street_name": ""
         },
         {
