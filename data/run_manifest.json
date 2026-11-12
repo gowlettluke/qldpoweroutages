@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-12T02:46:09Z",
-  "generated_aest": "2026-11-12T12:46:09+10:00",
+  "generated_utc": "2026-11-12T03:01:30Z",
+  "generated_aest": "2026-11-12T13:01:30+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 76,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 475,
+  "current_records_before_outage_type_filter": 469,
   "current_records_after_outage_type_filter": 98,
-  "current_records_dropped_planned_or_unknown": 377,
+  "current_records_dropped_planned_or_unknown": 371,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
@@ -15,33 +15,33 @@
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "12 November 2026 12:45 PM",
-      "source_updated_utc": "2026-11-12T02:45:03Z",
-      "published_customers": 39626,
-      "event_count": 52,
-      "fetched_utc": "2026-11-12T02:46:23Z"
+      "source_updated": "12 November 2026 1:00 PM",
+      "source_updated_utc": "2026-11-12T03:00:03Z",
+      "published_customers": 37696,
+      "event_count": 50,
+      "fetched_utc": "2026-11-12T03:01:36Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-12T02:45:00Z",
-      "published_customers": 1002,
-      "event_count": 24,
-      "fetched_utc": "2026-11-12T02:46:25Z"
+      "source_updated_utc": "2026-11-12T03:00:01Z",
+      "published_customers": 1371,
+      "event_count": 25,
+      "fetched_utc": "2026-11-12T03:01:39Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-12T02:46:09Z",
+    "snapshot_utc": "2026-11-12T03:01:30Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-12T02:46:23Z",
+      "fetched_utc": "2026-11-12T03:01:36Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-12T02:45:03Z",
+      "source_updated_utc": "2026-11-12T03:00:03Z",
       "retained": false,
-      "total_customers": 39626,
+      "total_customers": 37696,
       "rows": [
         {
           "lga_name": "Brisbane City",
@@ -57,11 +57,11 @@
         },
         {
           "lga_name": "Logan City",
-          "affected_customers": 37081
+          "affected_customers": 35602
         },
         {
           "lga_name": "Moreton Bay City",
-          "affected_customers": 497
+          "affected_customers": 46
         },
         {
           "lga_name": "Scenic Rim Regional",
@@ -75,13 +75,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-12T02:46:25Z",
+      "fetched_utc": "2026-11-12T03:01:39Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-12T02:45:00Z",
+      "source_updated_utc": "2026-11-12T03:00:01Z",
       "retained": false,
-      "total_customers": 1002,
+      "total_customers": 1371,
       "rows": [
         {
           "lga_name": "Banana Shire",
@@ -101,7 +101,7 @@
         },
         {
           "lga_name": "Cairns Regional",
-          "affected_customers": 196
+          "affected_customers": 151
         },
         {
           "lga_name": "Carpentaria Shire",
@@ -141,11 +141,19 @@
         },
         {
           "lga_name": "Murweh Shire",
-          "affected_customers": 37
+          "affected_customers": 60
         },
         {
           "lga_name": "Quilpie Shire",
           "affected_customers": 6
+        },
+        {
+          "lga_name": "Southern Downs Regional",
+          "affected_customers": 245
+        },
+        {
+          "lga_name": "Toowoomba Regional",
+          "affected_customers": 146
         },
         {
           "lga_name": "Townsville City",
@@ -159,18 +167,18 @@
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 52,
-  "current_ergon_records": 24,
-  "current_essential_records_fetched": 59,
-  "current_energex_records_fetched": 159,
-  "current_ergon_records_fetched": 252,
-  "current_essential_records_after_qld_polygon_prefilter": 0,
+  "current_energex_records": 50,
+  "current_ergon_records": 25,
+  "current_essential_records_fetched": 58,
+  "current_energex_records_fetched": 157,
+  "current_ergon_records_fetched": 250,
+  "current_essential_records_after_qld_polygon_prefilter": 1,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 22,
-  "current_essential_records_included_qld": 0,
+  "current_essential_records_included_qld": 1,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 8174,
-  "lga_totals_rows_48h": 6388,
-  "lga_totals_latest_rows": 49,
+  "snapshot_rows_48h": 8250,
+  "lga_totals_rows_48h": 6443,
+  "lga_totals_latest_rows": 55,
   "lga_cumulative_rows": 110,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
