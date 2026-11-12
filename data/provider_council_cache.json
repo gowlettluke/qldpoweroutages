@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T20:16:03Z",
+      "fetched_utc": "2026-11-12T21:16:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 6:00 AM",
-        "source_updated_utc": "2026-11-12T20:00:02Z",
-        "published_customers": 9800,
-        "event_count": 28
+        "source_updated": "13 November 2026 7:15 AM",
+        "source_updated_utc": "2026-11-12T21:15:02Z",
+        "published_customers": 7519,
+        "event_count": 29
       },
       "events": [
         {
@@ -783,7 +783,7 @@
             "postcode": "4125",
             "suburb": "PARK RIDGE",
             "customersAffected": "33",
-            "restoreTime": "2026-11-13T06:30:00+10:00",
+            "restoreTime": "2026-11-13T18:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -859,7 +859,7 @@
             {
               "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
-              "affected_customers": 2337
+              "affected_customers": 55
             }
           ],
           "details": {
@@ -869,44 +869,59 @@
             "council": "Sunshine Coast",
             "postcode": "4573",
             "suburb": "COOLUM BEACH",
-            "customersAffected": "324",
+            "customersAffected": "55",
             "restoreTime": "2026-11-13T08:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "AUDREY CT",
-              "BLUE GUM CT",
-              "CAFFERY CT",
-              "ELLA-MARIE DR",
-              "ELLY CCT",
               "GREENOAKS DR",
-              "HUMMINGBIRD TCE",
-              "LEARG ST",
-              "MAGENTA DR",
               "SCHOOL RD",
-              "SCOTTLYND ST",
-              "SKYLARK ST",
               "SOUTH COOLUM RD",
-              "TURTLEDOVE CT",
-              "WANDAA CT",
-              "YANDINA-COOLUM RD",
-              "YARROCK ST"
+              "YANDINA-COOLUM RD"
             ]
           },
-          "affected_customers": 2337,
-          "suburb": "COOLUM BEACH, MARCOOLA, MOUNT COOLUM, MUDJIMBA",
-          "street_name": "AMITY CT, AUDREY CT, BANKSIA CRES, BAUHINIA CRES, BEACHWAY PDE, BEGONIA WAY, BLUE GUM CT, BOARDRIDER CRES, BOARDWALK BVD, BONDI CT, BORONIA CRES, BOTANY CT, BREAKERS PL, BREEZEWAY ST, BURREMAH CRES, CAFFERY CT, CLEMATIS CT, COORARA CT, CYCAS ST, DAVID LOW WAY, DHARALEE CT, EASTERN CT, ELLA-MARIE DR, ELLY CCT, FELIX LANE, FLINDERSIA ST, GREEN TURLE PL, GREEN TURTLE PL, GREENOAKS DR, HUMMINGBIRD TCE, JARNAHILL DR, JOANNE ST, KANIMBLA CT, KEITH ROYAL DR, KIATA CT, LAKEDRIVE CRES, LANCING CT, LEARG ST, LEXIE ST, LORRAINE AVE, LUMEAH DR, MAGENTA DR, MAGNOLIA ST, MARAKARI CRES, MARCOOLA ESP, MERCHANTS PDE, NAUTICA CCT, OCEAN KEYS CRES, OCEANCALL LANE, ORUNGAL CT, PEACOCK CT, PETRIE AVE, RAMONA ST, SABRAON CT, SALTWATER WAY, SCHOOL RD, SCOTTLYND ST, SEASHORE LANE, SEASHORE ST, SEASIDE BVD, SEAWARD LANE, SHORELINE ST, SKYLARK ST, SOUTH COOLUM RD, STACEY CT, SUNCOAST BEACH DR, SURFSIDE LANE, TAMARINDUS ST, TRISTANIA ST, TURTLEDOVE CT, WALES CT, WANDAA CT, WATERLINE CL, WAVE CRES, WAYNE AVE, WEST COOLUM RD, WILLOW CRES, WOODPECKER WAY, YANDINA-COOLUM RD, YARROCK ST"
+          "affected_customers": 55,
+          "suburb": "COOLUM BEACH",
+          "street_name": "GREENOAKS DR, SCHOOL RD, SOUTH COOLUM RD, YANDINA-COOLUM RD"
+        },
+        {
+          "event_id": "INCD-997326-g",
+          "allocations": [
+            {
+              "lga_name": "Somerset Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-997326-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Somerset Regional",
+            "postcode": "4311",
+            "suburb": "BUARABA",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-13T10:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "KAVANAGH RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "BUARABA",
+          "street_name": "KAVANAGH RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T20:46:31Z",
+      "fetched_utc": "2026-11-12T21:16:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T20:45:01Z",
-        "published_customers": 956,
-        "event_count": 27
+        "source_updated_utc": "2026-11-12T21:15:01Z",
+        "published_customers": 1520,
+        "event_count": 26
       },
       "events": [
         {
@@ -915,7 +930,7 @@
             {
               "lga_name": "North Burnett Regional",
               "lga_code": null,
-              "affected_customers": 36
+              "affected_customers": 21
             }
           ],
           "details": {
@@ -925,36 +940,12 @@
             "type": "UNPLANNED",
             "startTime": "12/11/2026 22:11",
             "restoreTime": "Under Investigation",
-            "customersAffected": "36",
+            "customersAffected": "21",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
-          "affected_customers": 36,
+          "affected_customers": 21,
           "suburb": "MULGILDIE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13613",
-          "allocations": [
-            {
-              "lga_name": "Longreach Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26CA13613",
-            "council": "Longreach Regional Council",
-            "suburb": "LONGREACH",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 05:39",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 2,
-          "suburb": "LONGREACH",
           "street_name": ""
         },
         {
@@ -1129,7 +1120,7 @@
             "restoreTime": "13/11/2026 16:00",
             "customersAffected": "44",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Outage reported"
           },
           "affected_customers": 44,
           "suburb": "COALBANK, CROWS NEST, EMU CREEK, EVERGREEN, THORNVILLE",
@@ -1177,7 +1168,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "23",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Outage reported"
           },
           "affected_customers": 23,
           "suburb": "JANDOWAE, JIMBOUR",
@@ -1312,7 +1303,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "11",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 24,
           "suburb": "BOOYAL, CORINGA, GOOD NIGHT",
@@ -1432,7 +1423,7 @@
             "restoreTime": "13/11/2026 15:00",
             "customersAffected": "7",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 7,
           "suburb": "KANIGAN",
@@ -1460,30 +1451,6 @@
           },
           "affected_customers": 116,
           "suburb": "CHARLESTOWN, CORNDALE, JOHNSTOWN, KINGAROY, MEMERAMBI, NANANGO, WATTLE CAMP, WOOROOLIN",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB11244",
-          "allocations": [
-            {
-              "lga_name": "North Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 14
-            }
-          ],
-          "details": {
-            "event": "26WB11244",
-            "council": "North Burnett Regional Council",
-            "suburb": "BINJOUR",
-            "type": "UNPLANNED",
-            "startTime": "12/11/2026 20:46",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "14",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Work delayed - crews unable to continue"
-          },
-          "affected_customers": 14,
-          "suburb": "BINJOUR",
           "street_name": ""
         },
         {
@@ -1556,11 +1523,35 @@
             "startTime": "13/11/2026 03:48",
             "restoreTime": "Under Investigation",
             "customersAffected": "35",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
           "affected_customers": 234,
           "suburb": "GOOMERI, MANYUNG, MOONDOONER, MURGON, TABLELANDS",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB11278",
+          "allocations": [
+            {
+              "lga_name": "Fraser Coast Regional",
+              "lga_code": null,
+              "affected_customers": 595
+            }
+          ],
+          "details": {
+            "event": "26WB11278",
+            "council": "Fraser Coast Regional Council",
+            "suburb": "CRAIGNISH, DUNDOWRAN, TOOGOOM, WALLIGAN",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 07:02",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "595",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 595,
+          "suburb": "CRAIGNISH, DUNDOWRAN, TOOGOOM, WALLIGAN",
           "street_name": ""
         },
         {
