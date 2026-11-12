@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T11:46:25Z",
+      "fetched_utc": "2026-11-12T12:01:35Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 9:45 PM",
-        "source_updated_utc": "2026-11-12T11:45:02Z",
-        "published_customers": 16936,
-        "event_count": 33
+        "source_updated": "12 November 2026 10:00 PM",
+        "source_updated_utc": "2026-11-12T12:00:02Z",
+        "published_customers": 16174,
+        "event_count": 34
       },
       "events": [
         {
@@ -299,7 +299,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 1966
+              "affected_customers": 1098
             }
           ],
           "details": {
@@ -309,7 +309,7 @@
             "council": "Logan City",
             "postcode": "4133",
             "suburb": "CHAMBERS FLAT",
-            "customersAffected": "3",
+            "customersAffected": "1",
             "restoreTime": "2026-11-13T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
@@ -317,9 +317,9 @@
               "CHAMBERS FLAT RD"
             ]
           },
-          "affected_customers": 1966,
+          "affected_customers": 1098,
           "suburb": "CHAMBERS FLAT, LOGAN RESERVE, PARK RIDGE",
-          "street_name": "ALEXIS PL, ALMANDIN ST, ANNETTE ST, AZURITE CL, BERTHA RD, BLUESTONE DR, BLY ST, BUMSTEAD RD, CANTER ST, CARRINGTON CCT, CHAMBERS FLAT RD, CHATHAM CT, CHIKAMEENA ST, COBBLESTONE AVE, COPAL DR, CREEK PL, DAINTREE CT, DOMINIC DR, DOOMBEN WAY, DORCHESTER DR, DUNADEN ST, EALHAM LANE, ELSIE ST, FREDERICK PL, GLEN RD, JACKSON CH, JAMEKA ST, JOSH ST, JUNCTION RD, KILLARA BVD, LAMINGTON DR, LILLY LANE, LIVINGSTONE ST, LOGAN RESERVE RD, MALACHITE DR, MIKAELLA WAY, MONTANA CCT, MOORABOOL ST, MUCHOW CT, NORRIS ST, NORTHERLY ST, NOTLEY LANE, PACER ST, PARK RIDGE RD, PELHAM ST, POLO ST, PRIORESS PL, RABOKI CRES, RALSTON ST, RANDWICK AVE, REUBEN BVD, RIPARIAN CCT, RIVERVIEW RD, RONA ST, ROSE ST, SAGO RD, SAINTLY RD, SCHOOL RD, SEIDLER ST, SHALLOAK ST, SILKWOOD CCT, SNOWY ST, STONELEIGH RESERVE BVD, SUNDEW PL, SUNSTONE CT, TANZANITE AVE, TITUS ST, TOURMALINE RD, TRAVERTINE AVE, TULLOCH ST"
+          "street_name": "ANNETTE ST, AZURITE CL, BERTHA RD, BLUESTONE DR, CANTER ST, CHAMBERS FLAT RD, CHIKAMEENA ST, COBBLESTONE AVE, COPAL DR, DOMINIC DR, ELSIE ST, GLEN RD, JACKSON CH, JOSH ST, LILLY LANE, LOGAN RESERVE RD, MALACHITE DR, MIKAELLA WAY, MONTANA CCT, MUCHOW CT, NORRIS ST, PACER ST, PARK RIDGE RD, PELHAM ST, RABOKI CRES, REUBEN BVD, RIPARIAN CCT, RIVERVIEW RD, RONA ST, ROSE ST, SCHOOL RD, SEIDLER ST, SNOWY ST, STONELEIGH RESERVE BVD, SUNDEW PL, SUNSTONE CT, TANZANITE AVE, TITUS ST, TOURMALINE RD, TRAVERTINE AVE"
         },
         {
           "event_id": "INCD-995068-g",
@@ -1132,6 +1132,39 @@
           "affected_customers": 45,
           "suburb": "BRIDGEMAN DOWNS",
           "street_name": "DESERTROSE CRES, HONEYSUCKLE CRES, PAPERBARK ST"
+        },
+        {
+          "event_id": "INCD-997234-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 106
+            }
+          ],
+          "details": {
+            "event": "INCD-997234-g",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
+            "council": "Logan City",
+            "postcode": "4132",
+            "suburb": "CRESTMEAD",
+            "customersAffected": "106",
+            "restoreTime": "2026-11-13T02:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "COFFEY ST",
+              "GRIX CT",
+              "HAKARI ST",
+              "LOVE ST",
+              "MORROW ST",
+              "PINNINGTON ST"
+            ]
+          },
+          "affected_customers": 106,
+          "suburb": "CRESTMEAD",
+          "street_name": "COFFEY ST, GRIX CT, HAKARI ST, LOVE ST, MORROW ST, PINNINGTON ST"
         }
       ]
     },
