@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T19:16:21Z",
+      "fetched_utc": "2026-11-12T19:31:40Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 5:15 AM",
-        "source_updated_utc": "2026-11-12T19:15:03Z",
-        "published_customers": 7502,
-        "event_count": 28
+        "source_updated": "13 November 2026 5:30 AM",
+        "source_updated_utc": "2026-11-12T19:30:02Z",
+        "published_customers": 7501,
+        "event_count": 27
       },
       "events": [
         {
@@ -799,34 +799,6 @@
           "street_name": "PARK RIDGE RD"
         },
         {
-          "event_id": "INCD-997266-g",
-          "allocations": [
-            {
-              "lga_name": "Lockyer Valley Regional",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-997266-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Lockyer Valley Regional",
-            "postcode": "4311",
-            "suburb": "CHURCHABLE",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-13T06:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ATKINSON DAM RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "CHURCHABLE",
-          "street_name": "ATKINSON DAM RD"
-        },
-        {
           "event_id": "INCD-997291-g",
           "allocations": [
             {
@@ -886,15 +858,39 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T19:16:24Z",
+      "fetched_utc": "2026-11-12T19:31:42Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T19:15:15Z",
-        "published_customers": 1400,
-        "event_count": 23
+        "source_updated_utc": "2026-11-12T19:30:01Z",
+        "published_customers": 1436,
+        "event_count": 24
       },
       "events": [
+        {
+          "event_id": "26CA13610",
+          "allocations": [
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 36
+            }
+          ],
+          "details": {
+            "event": "26CA13610",
+            "council": "North Burnett Regional Council",
+            "suburb": "MULGILDIE",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 22:11",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "36",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 36,
+          "suburb": "MULGILDIE",
+          "street_name": ""
+        },
         {
           "event_id": "26FN11079",
           "allocations": [
