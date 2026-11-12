@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T11:16:22Z",
+      "fetched_utc": "2026-11-12T11:31:26Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 9:15 PM",
-        "source_updated_utc": "2026-11-12T11:15:03Z",
+        "source_updated": "12 November 2026 9:30 PM",
+        "source_updated_utc": "2026-11-12T11:30:02Z",
         "published_customers": 16937,
         "event_count": 33
       },
@@ -1085,7 +1085,7 @@
             "postcode": "4170",
             "suburb": "NORMAN PARK",
             "customersAffected": "16",
-            "restoreTime": "2026-11-13T10:00:00+10:00",
+            "restoreTime": "2026-11-12T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -1134,13 +1134,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T11:16:25Z",
+      "fetched_utc": "2026-11-12T11:31:30Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T11:15:01Z",
-        "published_customers": 1461,
-        "event_count": 25
+        "source_updated_utc": "2026-11-12T11:30:17Z",
+        "published_customers": 1265,
+        "event_count": 23
       },
       "events": [
         {
@@ -1218,30 +1218,6 @@
           },
           "affected_customers": 5,
           "suburb": "COOKTOWN, HOPE VALE, LAURA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN11246",
-          "allocations": [
-            {
-              "lga_name": "Cassowary Coast Regional",
-              "lga_code": null,
-              "affected_customers": 7
-            }
-          ],
-          "details": {
-            "event": "26FN11246",
-            "council": "Cassowary Coast Regional Council",
-            "suburb": "MOURILYAN HARBOUR",
-            "type": "UNPLANNED",
-            "startTime": "12/11/2026 17:45",
-            "restoreTime": "12/11/2026 23:00",
-            "customersAffected": "7",
-            "cause": "The loss of supply is due to public safety concerns.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 7,
-          "suburb": "MOURILYAN HARBOUR",
           "street_name": ""
         },
         {
@@ -1391,30 +1367,6 @@
           },
           "affected_customers": 290,
           "suburb": "CUTELLA, GOWRIE JUNCTION, KINGS SIDING, KINGSTHORPE, WELLCAMP, YALANGUR",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14751",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 104
-            }
-          ],
-          "details": {
-            "event": "26SW14751",
-            "council": "Toowoomba Regional Council",
-            "suburb": "BIDDESTON, BROXBURN, LINTHORPE, MOUNT TYSON, PITTSWORTH, ROCKVIEW, ROSSVALE, SOUTHBROOK",
-            "type": "UNPLANNED",
-            "startTime": "12/11/2026 18:39",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "104",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 104,
-          "suburb": "BIDDESTON, BROXBURN, LINTHORPE, MOUNT TYSON, PITTSWORTH, ROCKVIEW, ROSSVALE, SOUTHBROOK",
           "street_name": ""
         },
         {
@@ -1582,27 +1534,22 @@
             {
               "lga_name": "Bundaberg Regional",
               "lga_code": null,
-              "affected_customers": 102
-            },
-            {
-              "lga_name": "North Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 6
+              "affected_customers": 23
             }
           ],
           "details": {
             "event": "26WB11191",
             "council": "Bundaberg Regional Council",
-            "suburb": "GOOD NIGHT, MORGANVILLE, WALLAVILLE",
+            "suburb": "GOOD NIGHT",
             "type": "UNPLANNED",
             "startTime": "12/11/2026 17:21",
             "restoreTime": "Under Investigation",
-            "customersAffected": "102",
+            "customersAffected": "23",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
+            "status": "Work delayed - crews unable to continue"
           },
-          "affected_customers": 108,
-          "suburb": "GOOD NIGHT, MORGANVILLE, WALLAVILLE",
+          "affected_customers": 23,
+          "suburb": "GOOD NIGHT",
           "street_name": ""
         },
         {
@@ -1695,7 +1642,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "116",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 116,
           "suburb": "CHARLESTOWN, CORNDALE, JOHNSTOWN, KINGAROY, MEMERAMBI, NANANGO, WATTLE CAMP, WOOROOLIN",
