@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T15:01:45Z",
+      "fetched_utc": "2026-11-12T15:16:18Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 1:00 AM",
-        "source_updated_utc": "2026-11-12T15:00:02Z",
-        "published_customers": 11107,
-        "event_count": 27
+        "source_updated": "13 November 2026 1:15 AM",
+        "source_updated_utc": "2026-11-12T15:15:02Z",
+        "published_customers": 11108,
+        "event_count": 28
       },
       "events": [
         {
@@ -865,6 +865,34 @@
           "affected_customers": 11,
           "suburb": "PARK RIDGE",
           "street_name": "PARK RIDGE RD"
+        },
+        {
+          "event_id": "INCD-997266-g",
+          "allocations": [
+            {
+              "lga_name": "Lockyer Valley Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-997266-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Lockyer Valley Regional",
+            "postcode": "4311",
+            "suburb": "CHURCHABLE",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-13T04:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ATKINSON DAM RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "CHURCHABLE",
+          "street_name": "ATKINSON DAM RD"
         }
       ]
     },
