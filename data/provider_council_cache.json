@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T01:01:26Z",
+      "fetched_utc": "2026-11-12T01:16:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 11:00 AM",
-        "source_updated_utc": "2026-11-12T01:00:03Z",
+        "source_updated": "12 November 2026 11:15 AM",
+        "source_updated_utc": "2026-11-12T01:15:03Z",
         "published_customers": 45800,
         "event_count": 55
       },
@@ -2308,13 +2308,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T01:01:28Z",
+      "fetched_utc": "2026-11-12T01:16:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T01:00:01Z",
-        "published_customers": 762,
-        "event_count": 22
+        "source_updated_utc": "2026-11-12T01:15:00Z",
+        "published_customers": 806,
+        "event_count": 23
       },
       "events": [
         {
@@ -2602,7 +2602,7 @@
             {
               "lga_name": "Cloncurry Shire",
               "lga_code": null,
-              "affected_customers": 13
+              "affected_customers": 3
             }
           ],
           "details": {
@@ -2611,12 +2611,12 @@
             "suburb": "CLONCURRY",
             "type": "UNPLANNED",
             "startTime": "11/11/2026 19:42",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "13",
+            "restoreTime": "14/11/2026 15:00",
+            "customersAffected": "3",
             "cause": "The loss of supply is due to the operating of protective equipment.",
             "status": "Work delayed - crews unable to continue"
           },
-          "affected_customers": 13,
+          "affected_customers": 3,
           "suburb": "CLONCURRY",
           "street_name": ""
         },
@@ -2652,6 +2652,30 @@
           },
           "affected_customers": 27,
           "suburb": "JULIA CREEK, MCKINLAY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ14017",
+          "allocations": [
+            {
+              "lga_name": "Burke Shire",
+              "lga_code": null,
+              "affected_customers": 54
+            }
+          ],
+          "details": {
+            "event": "26NQ14017",
+            "council": "Burke Shire Council",
+            "suburb": "BURKETOWN",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 10:48",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "54",
+            "cause": "The loss of supply is due to the operating of protective equipment.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 54,
+          "suburb": "BURKETOWN",
           "street_name": ""
         },
         {
