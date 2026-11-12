@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-12T22:01:33Z",
-  "generated_aest": "2026-11-13T08:01:33+10:00",
+  "generated_utc": "2026-11-12T22:16:02Z",
+  "generated_aest": "2026-11-13T08:16:02+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 48,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 406,
+  "current_records_before_outage_type_filter": 433,
   "current_records_after_outage_type_filter": 54,
-  "current_records_dropped_planned_or_unknown": 352,
+  "current_records_dropped_planned_or_unknown": 379,
   "provider_fetch_errors": {
     "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
   },
@@ -32,10 +32,10 @@
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-12T22:01:33Z",
+    "snapshot_utc": "2026-11-12T22:16:02Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-12T22:01:46Z",
+      "fetched_utc": "2026-11-12T22:16:18Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
@@ -110,15 +110,15 @@
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 23,
   "current_ergon_records": 25,
-  "current_essential_records_fetched": 22,
+  "current_essential_records_fetched": 49,
   "current_energex_records_fetched": 146,
   "current_ergon_records_fetched": 235,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 11547,
-  "lga_totals_rows_48h": 8245,
+  "snapshot_rows_48h": 11595,
+  "lga_totals_rows_48h": 8283,
   "lga_totals_latest_rows": 38,
   "lga_cumulative_rows": 110,
   "outputs": {
