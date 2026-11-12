@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T12:46:09Z",
+      "fetched_utc": "2026-11-12T13:01:36Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 10:30 PM",
-        "source_updated_utc": "2026-11-12T12:30:02Z",
-        "published_customers": 16314,
-        "event_count": 33
+        "source_updated": "12 November 2026 11:00 PM",
+        "source_updated_utc": "2026-11-12T13:00:02Z",
+        "published_customers": 14580,
+        "event_count": 30
       },
       "events": [
         {
@@ -327,7 +327,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 1098
+              "affected_customers": 1079
             }
           ],
           "details": {
@@ -336,105 +336,55 @@
             "status": "Under Investigation",
             "council": "Logan City",
             "postcode": "4133",
-            "suburb": "CHAMBERS FLAT",
-            "customersAffected": "1",
+            "suburb": "LOGAN RESERVE",
+            "customersAffected": "1078",
             "restoreTime": "2026-11-13T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "CHAMBERS FLAT RD"
+              "ANNETTE ST",
+              "AZURITE CL",
+              "BERTHA RD",
+              "BLUESTONE DR",
+              "CANTER ST",
+              "CHIKAMEENA ST",
+              "COBBLESTONE AVE",
+              "COPAL DR",
+              "DOMINIC DR",
+              "ELSIE ST",
+              "GLEN RD",
+              "JACKSON CH",
+              "JOSH ST",
+              "LILLY LANE",
+              "LOGAN RESERVE RD",
+              "MALACHITE DR",
+              "MIKAELLA WAY",
+              "MONTANA CCT",
+              "MUCHOW CT",
+              "NORRIS ST",
+              "PACER ST",
+              "PELHAM ST",
+              "RABOKI CRES",
+              "REUBEN BVD",
+              "RIPARIAN CCT",
+              "RIVERVIEW RD",
+              "RONA ST",
+              "ROSE ST",
+              "SCHOOL RD",
+              "SEIDLER ST",
+              "SNOWY ST",
+              "STONELEIGH RESERVE BVD",
+              "SUNDEW PL",
+              "SUNSTONE CT",
+              "TANZANITE AVE",
+              "TITUS ST",
+              "TOURMALINE RD",
+              "TRAVERTINE AVE"
             ]
           },
-          "affected_customers": 1098,
-          "suburb": "CHAMBERS FLAT, LOGAN RESERVE, PARK RIDGE",
-          "street_name": "ANNETTE ST, AZURITE CL, BERTHA RD, BLUESTONE DR, CANTER ST, CHAMBERS FLAT RD, CHIKAMEENA ST, COBBLESTONE AVE, COPAL DR, DOMINIC DR, ELSIE ST, GLEN RD, JACKSON CH, JOSH ST, LILLY LANE, LOGAN RESERVE RD, MALACHITE DR, MIKAELLA WAY, MONTANA CCT, MUCHOW CT, NORRIS ST, PACER ST, PARK RIDGE RD, PELHAM ST, RABOKI CRES, REUBEN BVD, RIPARIAN CCT, RIVERVIEW RD, RONA ST, ROSE ST, SCHOOL RD, SEIDLER ST, SNOWY ST, STONELEIGH RESERVE BVD, SUNDEW PL, SUNSTONE CT, TANZANITE AVE, TITUS ST, TOURMALINE RD, TRAVERTINE AVE"
-        },
-        {
-          "event_id": "INCD-995068-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 1504
-            }
-          ],
-          "details": {
-            "event": "INCD-995068-g",
-            "cause": "Powerlines down",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4132",
-            "suburb": "MARSDEN",
-            "customersAffected": "1504",
-            "restoreTime": "2026-11-13T06:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ANDREW PL",
-              "ARI ST",
-              "AWOONGA ST",
-              "BALONNE CCT",
-              "BEANO ST",
-              "BORUMBA CT",
-              "BRANDON ST",
-              "BREMER ST",
-              "BROWNS PLAINS RD",
-              "BULLOO RD",
-              "BURRINJUCK ST",
-              "CALLIDE CT",
-              "CANIA CT",
-              "CARA CT",
-              "CATHERINE ST",
-              "CHAFFEY ST",
-              "CHASBET ST",
-              "CHIETI CT",
-              "COOLMUNDA ST",
-              "COPETON ST",
-              "CORELLA CT",
-              "COVE ST",
-              "CRISCI ST",
-              "DANIELLA DR",
-              "DAVISON CT",
-              "FAIRBAIRN ST",
-              "GERRY CT",
-              "GLENLYON ST",
-              "JULIUS CT",
-              "KEEPIT ST",
-              "KERRY ST",
-              "KIKORI CT",
-              "KINCHANT ST",
-              "KRISTY ST",
-              "MACARTHY RD",
-              "MACINTYRE ST",
-              "MAROON CT",
-              "MELODY ST",
-              "MING ST",
-              "MONDURAN ST",
-              "MOXEY ST",
-              "MULGRAVE RD",
-              "NEWHAVEN ST",
-              "OASIS CT",
-              "ORM CT",
-              "PALUMA CT",
-              "PARINLEA CT",
-              "PEDDER ST",
-              "PESCARA ST",
-              "RETHAN CT",
-              "SALLY DR",
-              "SECOND AVE",
-              "SHIVVAN CT",
-              "SUMMERHILL CT",
-              "THIRD AVE",
-              "TOMBILDAN CT",
-              "TRACEY ST",
-              "VIVIENNE WAY",
-              "WAHEED ST",
-              "WIVENHOE CT"
-            ]
-          },
-          "affected_customers": 1504,
-          "suburb": "MARSDEN",
-          "street_name": "ANDREW PL, ARI ST, AWOONGA ST, BALONNE CCT, BEANO ST, BORUMBA CT, BRANDON ST, BREMER ST, BROWNS PLAINS RD, BULLOO RD, BURRINJUCK ST, CALLIDE CT, CANIA CT, CARA CT, CATHERINE ST, CHAFFEY ST, CHASBET ST, CHIETI CT, COOLMUNDA ST, COPETON ST, CORELLA CT, COVE ST, CRISCI ST, DANIELLA DR, DAVISON CT, FAIRBAIRN ST, GERRY CT, GLENLYON ST, JULIUS CT, KEEPIT ST, KERRY ST, KIKORI CT, KINCHANT ST, KRISTY ST, MACARTHY RD, MACINTYRE ST, MAROON CT, MELODY ST, MING ST, MONDURAN ST, MOXEY ST, MULGRAVE RD, NEWHAVEN ST, OASIS CT, ORM CT, PALUMA CT, PARINLEA CT, PEDDER ST, PESCARA ST, RETHAN CT, SALLY DR, SECOND AVE, SHIVVAN CT, SUMMERHILL CT, THIRD AVE, TOMBILDAN CT, TRACEY ST, VIVIENNE WAY, WAHEED ST, WIVENHOE CT"
+          "affected_customers": 1079,
+          "suburb": "LOGAN RESERVE, PARK RIDGE",
+          "street_name": "ANNETTE ST, AZURITE CL, BERTHA RD, BLUESTONE DR, CANTER ST, CHIKAMEENA ST, COBBLESTONE AVE, COPAL DR, DOMINIC DR, ELSIE ST, GLEN RD, JACKSON CH, JOSH ST, LILLY LANE, LOGAN RESERVE RD, MALACHITE DR, MIKAELLA WAY, MONTANA CCT, MUCHOW CT, NORRIS ST, PACER ST, PARK RIDGE RD, PELHAM ST, RABOKI CRES, REUBEN BVD, RIPARIAN CCT, RIVERVIEW RD, RONA ST, ROSE ST, SCHOOL RD, SEIDLER ST, SNOWY ST, STONELEIGH RESERVE BVD, SUNDEW PL, SUNSTONE CT, TANZANITE AVE, TITUS ST, TOURMALINE RD, TRAVERTINE AVE"
         },
         {
           "event_id": "INCD-995074-g",
@@ -1067,83 +1017,15 @@
           "affected_customers": 71,
           "suburb": "CRESTMEAD",
           "street_name": "AUGUSTA ST, BURSARIA ST, HAKEA ST, MALLEE ST, WARATAH DR"
-        },
-        {
-          "event_id": "INCD-997202-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 105
-            }
-          ],
-          "details": {
-            "event": "INCD-997202-g",
-            "cause": "Damage due to severe weather",
-            "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4132",
-            "suburb": "MARSDEN",
-            "customersAffected": "105",
-            "restoreTime": "2026-11-13T10:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "AVALON CT",
-              "BROWNS PLAINS RD",
-              "FIRST AVE",
-              "HICKORY ST",
-              "INDUS ST",
-              "ROBUR ST",
-              "TAREE ST",
-              "TIMBERLEE DR"
-            ]
-          },
-          "affected_customers": 105,
-          "suburb": "MARSDEN",
-          "street_name": "AVALON CT, BROWNS PLAINS RD, FIRST AVE, HICKORY ST, INDUS ST, ROBUR ST, TAREE ST, TIMBERLEE DR"
-        },
-        {
-          "event_id": "INCD-997234-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 106
-            }
-          ],
-          "details": {
-            "event": "INCD-997234-g",
-            "cause": "Damage due to severe weather",
-            "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4132",
-            "suburb": "CRESTMEAD",
-            "customersAffected": "106",
-            "restoreTime": "2026-11-13T02:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "COFFEY ST",
-              "GRIX CT",
-              "HAKARI ST",
-              "LOVE ST",
-              "MORROW ST",
-              "PINNINGTON ST"
-            ]
-          },
-          "affected_customers": 106,
-          "suburb": "CRESTMEAD",
-          "street_name": "COFFEY ST, GRIX CT, HAKARI ST, LOVE ST, MORROW ST, PINNINGTON ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T12:46:15Z",
+      "fetched_utc": "2026-11-12T13:01:39Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T12:45:00Z",
+        "source_updated_utc": "2026-11-12T13:00:01Z",
         "published_customers": 812,
         "event_count": 20
       },
