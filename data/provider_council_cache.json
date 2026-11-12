@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T10:46:18Z",
+      "fetched_utc": "2026-11-12T11:01:39Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 8:45 PM",
-        "source_updated_utc": "2026-11-12T10:45:02Z",
-        "published_customers": 18226,
-        "event_count": 34
+        "source_updated": "12 November 2026 9:00 PM",
+        "source_updated_utc": "2026-11-12T11:00:02Z",
+        "published_customers": 16937,
+        "event_count": 33
       },
       "events": [
         {
@@ -29,7 +29,7 @@
             "postcode": "4118",
             "suburb": "BROWNS PLAINS",
             "customersAffected": "62",
-            "restoreTime": "2026-11-12T22:30:00+10:00",
+            "restoreTime": "2026-11-13T10:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -61,7 +61,7 @@
             "postcode": "4272",
             "suburb": "TAMBORINE MOUNTAIN",
             "customersAffected": "93",
-            "restoreTime": "2026-11-12T22:30:00+10:00",
+            "restoreTime": "2026-11-13T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -453,7 +453,7 @@
             "postcode": "4114",
             "suburb": "WOODRIDGE",
             "customersAffected": "79",
-            "restoreTime": "2026-11-12T22:30:00+10:00",
+            "restoreTime": "2026-11-13T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -486,7 +486,7 @@
             "postcode": "4125",
             "suburb": "PARK RIDGE SOUTH",
             "customersAffected": "181",
-            "restoreTime": "2026-11-13T12:00:00+10:00",
+            "restoreTime": "2026-11-13T18:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -908,7 +908,7 @@
             "postcode": "4311",
             "suburb": "CHURCHABLE",
             "customersAffected": "19",
-            "restoreTime": "2026-11-13T00:00:00+10:00",
+            "restoreTime": "2026-11-13T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -1130,47 +1130,17 @@
           "affected_customers": 105,
           "suburb": "MARSDEN",
           "street_name": "AVALON CT, BROWNS PLAINS RD, FIRST AVE, HICKORY ST, INDUS ST, ROBUR ST, TAREE ST, TIMBERLEE DR"
-        },
-        {
-          "event_id": "INCD-997213-g",
-          "allocations": [
-            {
-              "lga_name": "Gympie Regional",
-              "lga_code": null,
-              "affected_customers": 1289
-            }
-          ],
-          "details": {
-            "event": "INCD-997213-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Gympie Regional",
-            "postcode": "4570",
-            "suburb": "ARALUEN",
-            "customersAffected": "6",
-            "restoreTime": "2026-11-12T23:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "CORELLA RD",
-              "HAMILTON RD",
-              "WADELL RD"
-            ]
-          },
-          "affected_customers": 1289,
-          "suburb": "ARALUEN, GYMPIE, TWO MILE",
-          "street_name": "ALBATROSS CT, ALENOLA ST, ALFRED ST, ASHGROVE WAY, ASPEN CT, BANKSIA DR, BEGONIA CL, BELLFLOWER PL, BIRDIE CRES, BONNICK RD, BOTTLEBRUSH PL, BRUCE HWY, BUGGY CT, CADDIE CT, CAMPHORLAUREL CT, CAMPUS CL, CARTWRIGHT RD, CASSIA CT, CEDAR CT, CENTENARY CL, CHALK CL, CHANNON ST, CHATSWORTH RD, CLEMATIS ST, CLUB DR, COOINDA ST, CORELLA CT, CORELLA RD, CRESTWOOD CT, CULLINANE ST, DOVETAIL CL, DUKE ST, EAGLEVIEW CL, FAIRWAY DR, GLEN EDEN DR, GOLF LINKS CIR, GRAYSTONE CT, HAMILTON RD, HENRY ST, HILLVIEW CT, IRON ST, IRONWOOD CL, JANE ST, JARDINE CT, KING ST, MAIDMENT CT, MALABAR DR, MARY ST, MONKLAND ST, MYALL ST, NASH ST, OAK ST, OUTLOOK CL, PINE ST, POPES RD, PRINGLE CT, RIDGEVIEW DR, RIVERSTONE CL, ROSELLA CL, SETTLERS CL, SHIELDS ST, ST ANDREWS CRES, STRUAN CRES, TEAL CL, WADELL RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T10:46:22Z",
+      "fetched_utc": "2026-11-12T11:01:45Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T10:45:00Z",
-        "published_customers": 1044,
-        "event_count": 24
+        "source_updated_utc": "2026-11-12T11:00:15Z",
+        "published_customers": 1149,
+        "event_count": 26
       },
       "events": [
         {
@@ -1496,6 +1466,54 @@
           "street_name": ""
         },
         {
+          "event_id": "26SW14762",
+          "allocations": [
+            {
+              "lga_name": "Western Downs Regional",
+              "lga_code": null,
+              "affected_customers": 46
+            }
+          ],
+          "details": {
+            "event": "26SW14762",
+            "council": "Western Downs Regional Council",
+            "suburb": "DAANDINE, DALBY, KUPUNN, NANDI, RANGES BRIDGE, ST RUTH",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 20:48",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "46",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 46,
+          "suburb": "DAANDINE, DALBY, KUPUNN, NANDI, RANGES BRIDGE, ST RUTH",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14763",
+          "allocations": [
+            {
+              "lga_name": "Western Downs Regional",
+              "lga_code": null,
+              "affected_customers": 59
+            }
+          ],
+          "details": {
+            "event": "26SW14763",
+            "council": "Western Downs Regional Council",
+            "suburb": "DALBY, LOUDOUN, NANDI, ST RUTH, TIPTON",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 20:48",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "59",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 59,
+          "suburb": "DALBY, LOUDOUN, NANDI, ST RUTH, TIPTON",
+          "street_name": ""
+        },
+        {
           "event_id": "26WB11072",
           "allocations": [
             {
@@ -1621,10 +1639,10 @@
             "suburb": "WIDGEE",
             "type": "UNPLANNED",
             "startTime": "12/11/2026 17:02",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "13/11/2026 15:00",
             "customersAffected": "2",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews on route"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 2,
           "suburb": "WIDGEE",
@@ -1645,10 +1663,10 @@
             "suburb": "CURRA",
             "type": "UNPLANNED",
             "startTime": "12/11/2026 17:39",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "13/11/2026 15:00",
             "customersAffected": "12",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 12,
           "suburb": "CURRA",
@@ -1720,7 +1738,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "12",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 12,
           "suburb": "BOOIE, COOLABUNIA, NANANGO",
