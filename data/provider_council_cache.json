@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T04:46:22Z",
+      "fetched_utc": "2026-11-12T05:01:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -1739,13 +1739,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T04:46:25Z",
+      "fetched_utc": "2026-11-12T05:01:14Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T04:45:00Z",
-        "published_customers": 908,
-        "event_count": 24
+        "source_updated_utc": "2026-11-12T05:00:15Z",
+        "published_customers": 619,
+        "event_count": 23
       },
       "events": [
         {
@@ -2067,30 +2067,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW14567",
-          "allocations": [
-            {
-              "lga_name": "Murweh Shire",
-              "lga_code": null,
-              "affected_customers": 19
-            }
-          ],
-          "details": {
-            "event": "26SW14567",
-            "council": "Murweh Shire Council",
-            "suburb": "CHARLEVILLE, MORVEN",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 15:12",
-            "restoreTime": "12/11/2026 16:00",
-            "customersAffected": "19",
-            "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 19,
-          "suburb": "CHARLEVILLE, MORVEN",
-          "street_name": ""
-        },
-        {
           "event_id": "26SW14612",
           "allocations": [
             {
@@ -2105,10 +2081,10 @@
             "suburb": "FORESTVALE, MITCHELL",
             "type": "UNPLANNED",
             "startTime": "11/11/2026 17:52",
-            "restoreTime": "12/11/2026 16:00",
+            "restoreTime": "12/11/2026 21:00",
             "customersAffected": "14",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
+            "status": "Outage reported"
           },
           "affected_customers": 14,
           "suburb": "FORESTVALE, MITCHELL",
@@ -2190,29 +2166,24 @@
           "event_id": "26SW14710",
           "allocations": [
             {
-              "lga_name": "Southern Downs Regional",
-              "lga_code": null,
-              "affected_customers": 245
-            },
-            {
               "lga_name": "Toowoomba Regional",
               "lga_code": null,
-              "affected_customers": 102
+              "affected_customers": 70
             }
           ],
           "details": {
             "event": "26SW14710",
-            "council": "Southern Downs Regional Council",
-            "suburb": "KARARA, LEYBURN",
+            "council": "Toowoomba Regional Council",
+            "suburb": "LEYBURN, MILLMERRAN, NORTH BRANCH, PAMPAS, TUMMAVILLE, YANDILLA",
             "type": "UNPLANNED",
             "startTime": "12/11/2026 12:51",
             "restoreTime": "Under Investigation",
-            "customersAffected": "245",
+            "customersAffected": "70",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
-          "affected_customers": 347,
-          "suburb": "KARARA, LEYBURN, MILLMERRAN, NORTH BRANCH, PAMPAS, TUMMAVILLE, YANDILLA",
+          "affected_customers": 70,
+          "suburb": "LEYBURN, MILLMERRAN, NORTH BRANCH, PAMPAS, TUMMAVILLE, YANDILLA",
           "street_name": ""
         },
         {
@@ -2293,30 +2264,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26WB11155",
-          "allocations": [
-            {
-              "lga_name": "South Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 8
-            }
-          ],
-          "details": {
-            "event": "26WB11155",
-            "council": "South Burnett Regional Council",
-            "suburb": "BOOIE, KINGAROY",
-            "type": "UNPLANNED",
-            "startTime": "12/11/2026 12:49",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "8",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 8,
-          "suburb": "BOOIE, KINGAROY",
-          "street_name": ""
-        },
-        {
           "event_id": "26WB11161",
           "allocations": [
             {
@@ -2338,6 +2285,30 @@
           },
           "affected_customers": 16,
           "suburb": "NANANGO",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB11164",
+          "allocations": [
+            {
+              "lga_name": "Gympie Regional",
+              "lga_code": null,
+              "affected_customers": 15
+            }
+          ],
+          "details": {
+            "event": "26WB11164",
+            "council": "Gympie Regional Council",
+            "suburb": "GOOMERI",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 15:00",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "15",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 15,
+          "suburb": "GOOMERI",
           "street_name": ""
         },
         {
