@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T19:01:30Z",
+      "fetched_utc": "2026-11-12T19:16:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 5:00 AM",
-        "source_updated_utc": "2026-11-12T19:00:03Z",
-        "published_customers": 7479,
-        "event_count": 26
+        "source_updated": "13 November 2026 5:15 AM",
+        "source_updated_utc": "2026-11-12T19:15:03Z",
+        "published_customers": 7502,
+        "event_count": 28
       },
       "events": [
         {
@@ -825,17 +825,74 @@
           "affected_customers": 1,
           "suburb": "CHURCHABLE",
           "street_name": "ATKINSON DAM RD"
+        },
+        {
+          "event_id": "INCD-997291-g",
+          "allocations": [
+            {
+              "lga_name": "Somerset Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-997291-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Somerset Regional",
+            "postcode": "4311",
+            "suburb": "BUARABA",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-13T08:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "LEVER RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "BUARABA",
+          "street_name": "LEVER RD"
+        },
+        {
+          "event_id": "INCD-997292-g",
+          "allocations": [
+            {
+              "lga_name": "Scenic Rim Regional",
+              "lga_code": null,
+              "affected_customers": 22
+            }
+          ],
+          "details": {
+            "event": "INCD-997292-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Scenic Rim Regional",
+            "postcode": "4270",
+            "suburb": "TAMBORINE",
+            "customersAffected": "22",
+            "restoreTime": "2026-11-13T08:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "CURLEW CT",
+              "WATERFORD-TAMBORINE RD"
+            ]
+          },
+          "affected_customers": 22,
+          "suburb": "TAMBORINE",
+          "street_name": "CURLEW CT, WATERFORD-TAMBORINE RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T19:01:35Z",
+      "fetched_utc": "2026-11-12T19:16:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T19:00:36Z",
-        "published_customers": 2858,
-        "event_count": 24
+        "source_updated_utc": "2026-11-12T19:15:15Z",
+        "published_customers": 1400,
+        "event_count": 23
       },
       "events": [
         {
@@ -1193,7 +1250,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "23",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Outage reported"
           },
           "affected_customers": 23,
           "suburb": "GOOD NIGHT",
@@ -1365,35 +1422,6 @@
           },
           "affected_customers": 4,
           "suburb": "MORGANVILLE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB11269",
-          "allocations": [
-            {
-              "lga_name": "South Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 1204
-            },
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 254
-            }
-          ],
-          "details": {
-            "event": "26WB11269",
-            "council": "South Burnett Regional Council",
-            "suburb": "BENARKIN, BENARKIN NORTH, BLACKBUTT, BLACKBUTT NORTH, BLACKBUTT SOUTH, GOOGA CREEK, TAROMEO, TEELAH",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 03:28",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "1204",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 1458,
-          "suburb": "ANDURAMBA, BENARKIN, BENARKIN NORTH, BLACKBUTT, BLACKBUTT NORTH, BLACKBUTT SOUTH, GILLA, GOOGA CREEK, KOORALGIN, TAROMEO, TEELAH, YARRAMAN",
           "street_name": ""
         },
         {
