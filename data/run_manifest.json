@@ -1,49 +1,49 @@
 {
-  "generated_utc": "2026-11-12T04:01:06Z",
-  "generated_aest": "2026-11-12T14:01:06+10:00",
+  "generated_utc": "2026-11-12T04:15:59Z",
+  "generated_aest": "2026-11-12T14:15:59+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 73,
+  "current_outage_records": 71,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 440,
-  "current_records_after_outage_type_filter": 92,
-  "current_records_dropped_planned_or_unknown": 348,
+  "current_records_before_outage_type_filter": 427,
+  "current_records_after_outage_type_filter": 89,
+  "current_records_dropped_planned_or_unknown": 338,
   "provider_fetch_errors": {
-    "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+    "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Energex publisher updated during council collection. Verified provider backup is older than 30 minutes"
   },
   "provider_fetch_error_count": 1,
   "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "geometry_fallback",
-      "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Energex publisher updated during council collection. Verified provider backup is older than 30 minutes"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-12T04:00:01Z",
-      "published_customers": 948,
+      "source_updated_utc": "2026-11-12T04:15:20Z",
+      "published_customers": 942,
       "event_count": 26,
-      "fetched_utc": "2026-11-12T04:01:25Z"
+      "fetched_utc": "2026-11-12T04:16:20Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-12T04:01:06Z",
+    "snapshot_utc": "2026-11-12T04:15:59Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-12T04:01:26Z",
-      "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
+      "fetched_utc": "2026-11-12T04:16:21Z",
+      "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Energex publisher updated during council collection. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-12T04:01:25Z",
+      "fetched_utc": "2026-11-12T04:16:20Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-12T04:00:01Z",
+      "source_updated_utc": "2026-11-12T04:15:20Z",
       "retained": false,
-      "total_customers": 948,
+      "total_customers": 942,
       "rows": [
         {
           "lga_name": "Banana Shire",
@@ -99,7 +99,7 @@
         },
         {
           "lga_name": "McKinlay Shire",
-          "affected_customers": 44
+          "affected_customers": 38
         },
         {
           "lga_name": "Murweh Shire",
@@ -129,17 +129,17 @@
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 47,
+  "current_energex_records": 45,
   "current_ergon_records": 26,
-  "current_essential_records_fetched": 41,
-  "current_energex_records_fetched": 157,
-  "current_ergon_records_fetched": 242,
+  "current_essential_records_fetched": 33,
+  "current_energex_records_fetched": 155,
+  "current_ergon_records_fetched": 239,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 19,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 18,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 8475,
-  "lga_totals_rows_48h": 6553,
+  "snapshot_rows_48h": 8529,
+  "lga_totals_rows_48h": 6582,
   "lga_totals_latest_rows": 51,
   "lga_cumulative_rows": 110,
   "outputs": {
