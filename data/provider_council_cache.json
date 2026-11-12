@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T12:31:09Z",
+      "fetched_utc": "2026-11-12T12:46:09Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 10:15 PM",
-        "source_updated_utc": "2026-11-12T12:15:02Z",
-        "published_customers": 16095,
-        "event_count": 32
+        "source_updated": "12 November 2026 10:30 PM",
+        "source_updated_utc": "2026-11-12T12:30:02Z",
+        "published_customers": 16314,
+        "event_count": 33
       },
       "events": [
         {
@@ -75,6 +75,34 @@
           "affected_customers": 93,
           "suburb": "TAMBORINE MOUNTAIN",
           "street_name": "BATEKE RD, BENOWA ST, PROSPECT ST, WILSON RD, YOUNG ST"
+        },
+        {
+          "event_id": "INCD-10095-h",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 219
+            }
+          ],
+          "details": {
+            "event": "INCD-10095-h",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4521",
+            "suburb": "CAMPBELLS POCKET",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-13T01:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "DAWES RD"
+            ]
+          },
+          "affected_customers": 219,
+          "suburb": "CAMPBELLS POCKET, MOUNT MEE, MT PLEASANT, OCEAN VIEW",
+          "street_name": "BROCKHURST RD, CLARK RD, CRYSTAL CT, DAWES RD, DEAN DR, FREDS RD, HIGHCREST ST, MAY RD, MIERS RD, MT MEE RD, ROBINSON RD, ROBINSON RD S, SEAVIEW CT, SUNRISE DR"
         },
         {
           "event_id": "INCD-995008-g",
@@ -1111,13 +1139,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T12:31:12Z",
+      "fetched_utc": "2026-11-12T12:46:15Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T12:30:01Z",
-        "published_customers": 1370,
-        "event_count": 23
+        "source_updated_utc": "2026-11-12T12:45:00Z",
+        "published_customers": 812,
+        "event_count": 20
       },
       "events": [
         {
@@ -1344,83 +1372,6 @@
           },
           "affected_customers": 290,
           "suburb": "CUTELLA, GOWRIE JUNCTION, KINGS SIDING, KINGSTHORPE, WELLCAMP, YALANGUR",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14762",
-          "allocations": [
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 46
-            }
-          ],
-          "details": {
-            "event": "26SW14762",
-            "council": "Western Downs Regional Council",
-            "suburb": "DAANDINE, DALBY, KUPUNN, NANDI, RANGES BRIDGE, ST RUTH",
-            "type": "UNPLANNED",
-            "startTime": "12/11/2026 20:48",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "46",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 46,
-          "suburb": "DAANDINE, DALBY, KUPUNN, NANDI, RANGES BRIDGE, ST RUTH",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14763",
-          "allocations": [
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 59
-            }
-          ],
-          "details": {
-            "event": "26SW14763",
-            "council": "Western Downs Regional Council",
-            "suburb": "DALBY, LOUDOUN, NANDI, ST RUTH, TIPTON",
-            "type": "UNPLANNED",
-            "startTime": "12/11/2026 20:48",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "59",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 59,
-          "suburb": "DALBY, LOUDOUN, NANDI, ST RUTH, TIPTON",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14764",
-          "allocations": [
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 450
-            },
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26SW14764",
-            "council": "Toowoomba Regional Council",
-            "suburb": "DALBY",
-            "type": "UNPLANNED",
-            "startTime": "12/11/2026 21:08",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 453,
-          "suburb": "DAANDINE, DALBY, DUCKLO, DULEEN, KOGAN, KUMBARILLA, KUPUNN, LOUDOUN, MACALISTER, NANDI, RANGES BRIDGE, ST RUTH, TIPTON, WERANGA",
           "street_name": ""
         },
         {
