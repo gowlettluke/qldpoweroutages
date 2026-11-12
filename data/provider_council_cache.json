@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-12T11:31:26Z",
+      "fetched_utc": "2026-11-12T11:46:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "12 November 2026 9:30 PM",
-        "source_updated_utc": "2026-11-12T11:30:02Z",
-        "published_customers": 16937,
+        "source_updated": "12 November 2026 9:45 PM",
+        "source_updated_utc": "2026-11-12T11:45:02Z",
+        "published_customers": 16936,
         "event_count": 33
       },
       "events": [
@@ -1069,34 +1069,6 @@
           "street_name": "AUGUSTA ST, BURSARIA ST, HAKEA ST, MALLEE ST, WARATAH DR"
         },
         {
-          "event_id": "INCD-997190-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 46
-            }
-          ],
-          "details": {
-            "event": "INCD-997190-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4170",
-            "suburb": "NORMAN PARK",
-            "customersAffected": "16",
-            "restoreTime": "2026-11-12T21:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "FERGUSON RD"
-            ]
-          },
-          "affected_customers": 46,
-          "suburb": "NORMAN PARK, SEVEN HILLS",
-          "street_name": "APPIA AVE, FERGUSON RD, ISIS CRES, MAJESTIC OTLK"
-        },
-        {
           "event_id": "INCD-997202-g",
           "allocations": [
             {
@@ -1130,6 +1102,36 @@
           "affected_customers": 105,
           "suburb": "MARSDEN",
           "street_name": "AVALON CT, BROWNS PLAINS RD, FIRST AVE, HICKORY ST, INDUS ST, ROBUR ST, TAREE ST, TIMBERLEE DR"
+        },
+        {
+          "event_id": "INCD-997230-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 45
+            }
+          ],
+          "details": {
+            "event": "INCD-997230-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Brisbane City",
+            "postcode": "4035",
+            "suburb": "BRIDGEMAN DOWNS",
+            "customersAffected": "45",
+            "restoreTime": "2026-11-13T00:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "DESERTROSE CRES",
+              "HONEYSUCKLE CRES",
+              "PAPERBARK ST"
+            ]
+          },
+          "affected_customers": 45,
+          "suburb": "BRIDGEMAN DOWNS",
+          "street_name": "DESERTROSE CRES, HONEYSUCKLE CRES, PAPERBARK ST"
         }
       ]
     },
