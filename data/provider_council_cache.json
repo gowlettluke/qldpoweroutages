@@ -968,15 +968,39 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-12T23:16:33Z",
+      "fetched_utc": "2026-11-12T23:31:43Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-12T23:15:01Z",
-        "published_customers": 1674,
+        "source_updated_utc": "2026-11-12T23:30:00Z",
+        "published_customers": 1184,
         "event_count": 24
       },
       "events": [
+        {
+          "event_id": "26CA13629",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 67
+            }
+          ],
+          "details": {
+            "event": "26CA13629",
+            "council": "Livingstone Shire Council",
+            "suburb": "MOUNT CHALMERS",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 09:05",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "67",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 67,
+          "suburb": "MOUNT CHALMERS",
+          "street_name": ""
+        },
         {
           "event_id": "26FN11079",
           "allocations": [
@@ -1289,29 +1313,29 @@
           "event_id": "26WB11185",
           "allocations": [
             {
-              "lga_name": "North Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 13
-            },
-            {
               "lga_name": "Bundaberg Regional",
               "lga_code": null,
-              "affected_customers": 11
+              "affected_customers": 3
+            },
+            {
+              "lga_name": "North Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 1
             }
           ],
           "details": {
             "event": "26WB11185",
             "council": "Bundaberg Regional Council",
-            "suburb": "BOOYAL, GOOD NIGHT",
+            "suburb": "GOOD NIGHT",
             "type": "UNPLANNED",
             "startTime": "12/11/2026 16:39",
             "restoreTime": "Under Investigation",
-            "customersAffected": "11",
+            "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 24,
-          "suburb": "BOOYAL, CORINGA, GOOD NIGHT",
+          "affected_customers": 4,
+          "suburb": "BOOYAL, GOOD NIGHT",
           "street_name": ""
         },
         {
@@ -1360,30 +1384,6 @@
           },
           "affected_customers": 23,
           "suburb": "GOOD NIGHT",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB11195",
-          "allocations": [
-            {
-              "lga_name": "Gympie Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26WB11195",
-            "council": "Gympie Regional Council",
-            "suburb": "WIDGEE",
-            "type": "UNPLANNED",
-            "startTime": "12/11/2026 17:02",
-            "restoreTime": "13/11/2026 15:00",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 2,
-          "suburb": "WIDGEE",
           "street_name": ""
         },
         {
@@ -1488,22 +1488,22 @@
             {
               "lga_name": "Fraser Coast Regional",
               "lga_code": null,
-              "affected_customers": 595
+              "affected_customers": 60
             }
           ],
           "details": {
             "event": "26WB11278",
             "council": "Fraser Coast Regional Council",
-            "suburb": "CRAIGNISH, DUNDOWRAN, TOOGOOM, WALLIGAN",
+            "suburb": "CRAIGNISH, TOOGOOM",
             "type": "UNPLANNED",
             "startTime": "13/11/2026 07:02",
             "restoreTime": "13/11/2026 11:00",
-            "customersAffected": "595",
+            "customersAffected": "60",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 595,
-          "suburb": "CRAIGNISH, DUNDOWRAN, TOOGOOM, WALLIGAN",
+          "affected_customers": 60,
+          "suburb": "CRAIGNISH, TOOGOOM",
           "street_name": ""
         },
         {
