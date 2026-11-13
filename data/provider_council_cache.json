@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T20:01:29Z",
+      "fetched_utc": "2026-11-13T20:16:01Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -398,13 +398,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T20:01:32Z",
+      "fetched_utc": "2026-11-13T20:16:04Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T20:00:32Z",
-        "published_customers": 1503,
-        "event_count": 26
+        "source_updated_utc": "2026-11-13T20:10:00Z",
+        "published_customers": 1480,
+        "event_count": 27
       },
       "events": [
         {
@@ -761,7 +761,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "13",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Outage reported"
           },
           "affected_customers": 13,
           "suburb": "HEADINGTON HILL",
@@ -879,22 +879,22 @@
             {
               "lga_name": "Maranoa Regional",
               "lga_code": null,
-              "affected_customers": 81
+              "affected_customers": 51
             }
           ],
           "details": {
             "event": "26SW15014",
             "council": "Maranoa Regional Council",
-            "suburb": "BYMOUNT, EUMAMURRIN, GUNNEWIN, INJUNE, ORALLO, ROMA",
+            "suburb": "EUMAMURRIN, INJUNE, ORALLO, ROMA",
             "type": "UNPLANNED",
             "startTime": "14/11/2026 02:52",
             "restoreTime": "Under Investigation",
-            "customersAffected": "81",
+            "customersAffected": "51",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Outage reported"
           },
-          "affected_customers": 81,
-          "suburb": "BYMOUNT, EUMAMURRIN, GUNNEWIN, INJUNE, ORALLO, ROMA",
+          "affected_customers": 51,
+          "suburb": "EUMAMURRIN, INJUNE, ORALLO, ROMA",
           "street_name": ""
         },
         {
@@ -924,6 +924,30 @@
           },
           "affected_customers": 228,
           "suburb": "CLIFTON, HEADINGTON HILL, NEVILTON, PILTON, SPRING CREEK, UPPER PILTON, UPPER SPRING CREEK",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW15022",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 7
+            }
+          ],
+          "details": {
+            "event": "26SW15022",
+            "council": "Toowoomba Regional Council",
+            "suburb": "CAMBOOYA",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 20:12",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "7",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 7,
+          "suburb": "CAMBOOYA",
           "street_name": ""
         },
         {
