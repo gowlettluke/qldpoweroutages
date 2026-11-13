@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T16:46:01Z",
+      "fetched_utc": "2026-11-13T17:01:33Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 2:30 AM",
-        "source_updated_utc": "2026-11-13T16:30:02Z",
-        "published_customers": 601,
-        "event_count": 13
+        "source_updated": "14 November 2026 3:00 AM",
+        "source_updated_utc": "2026-11-13T17:00:02Z",
+        "published_customers": 541,
+        "event_count": 10
       },
       "events": [
         {
@@ -40,38 +40,6 @@
           "affected_customers": 399,
           "suburb": "BUCCAN, LOGAN VILLAGE",
           "street_name": "BOOLONG CT, BUENA VISTA DR, BURDEKIN CT, CAMEL CT, CANAIPA CT, CHALLEN RD, CONDAMINE DR, COPLICK CRES, DAINTREE DR, DIAMENTINA DR, ELLEN CT, FRYAR RD, HAMILTON RD, HINCHCLIFFE RD, KENNEDY CT, LATIMER RD, LAVELLE DR, MILLER RD, MINEHAN RD, QUINZEH CREEK RD, SWANBOROUGH RD, TOMOHON HEIGHTS CL, TYSON CT"
-        },
-        {
-          "event_id": "INCD-995021-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 31
-            }
-          ],
-          "details": {
-            "event": "INCD-995021-g",
-            "cause": "Powerlines down",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4207",
-            "suburb": "LOGAN VILLAGE",
-            "customersAffected": "31",
-            "restoreTime": "2026-11-14T09:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BENJAMIN RD",
-              "JILLIAN CT",
-              "KATHERINE CT",
-              "PIONEER DR",
-              "RAILWAY PDE"
-            ]
-          },
-          "affected_customers": 31,
-          "suburb": "LOGAN VILLAGE",
-          "street_name": "BENJAMIN RD, JILLIAN CT, KATHERINE CT, PIONEER DR, RAILWAY PDE"
         },
         {
           "event_id": "INCD-995022-g",
@@ -250,34 +218,6 @@
           "street_name": "AMBER CRES, EDELSTEN RD"
         },
         {
-          "event_id": "INCD-997244-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 11
-            }
-          ],
-          "details": {
-            "event": "INCD-997244-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4125",
-            "suburb": "PARK RIDGE",
-            "customersAffected": "11",
-            "restoreTime": "2026-11-14T09:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "PARK RIDGE RD"
-            ]
-          },
-          "affected_customers": 11,
-          "suburb": "PARK RIDGE",
-          "street_name": "PARK RIDGE RD"
-        },
-        {
           "event_id": "INCD-997378-g",
           "allocations": [
             {
@@ -361,46 +301,17 @@
           "affected_customers": 12,
           "suburb": "LOGAN RESERVE",
           "street_name": "DERBY RD, LOGAN RESERVE RD"
-        },
-        {
-          "event_id": "INCD-997881-g",
-          "allocations": [
-            {
-              "lga_name": "Lockyer Valley Regional",
-              "lga_code": null,
-              "affected_customers": 18
-            }
-          ],
-          "details": {
-            "event": "INCD-997881-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Lockyer Valley Regional",
-            "postcode": "4342",
-            "suburb": "GLENORE GROVE",
-            "customersAffected": "18",
-            "restoreTime": "2026-11-14T09:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "JAHN DR",
-              "RAYMONT DR"
-            ]
-          },
-          "affected_customers": 18,
-          "suburb": "GLENORE GROVE",
-          "street_name": "JAHN DR, RAYMONT DR"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T16:46:05Z",
+      "fetched_utc": "2026-11-13T17:01:36Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T16:40:00Z",
-        "published_customers": 1152,
-        "event_count": 23
+        "source_updated_utc": "2026-11-13T17:00:01Z",
+        "published_customers": 1778,
+        "event_count": 24
       },
       "events": [
         {
@@ -843,6 +754,40 @@
           },
           "affected_customers": 5,
           "suburb": "CUNNAMULLA, THARGOMINDAH",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW15014",
+          "allocations": [
+            {
+              "lga_name": "Maranoa Regional",
+              "lga_code": null,
+              "affected_customers": 619
+            },
+            {
+              "lga_name": "Murweh Shire",
+              "lga_code": null,
+              "affected_customers": 4
+            },
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26SW15014",
+            "council": "Banana Shire Council",
+            "suburb": "INJUNE",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 02:52",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 626,
+          "suburb": "AUGATHELLA, BEILBA, BYMOUNT, EUMAMURRIN, GUNNEWIN, INJUNE, MITCHELL, ORALLO, ROMA",
           "street_name": ""
         },
         {
