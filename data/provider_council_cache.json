@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T02:31:19Z",
+      "fetched_utc": "2026-11-13T02:46:11Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -993,13 +993,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T02:31:24Z",
+      "fetched_utc": "2026-11-13T02:46:14Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T02:30:26Z",
-        "published_customers": 439,
-        "event_count": 18
+        "source_updated_utc": "2026-11-13T02:45:01Z",
+        "published_customers": 330,
+        "event_count": 19
       },
       "events": [
         {
@@ -1347,7 +1347,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "14",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 14,
           "suburb": "GOOMERI",
@@ -1407,22 +1407,46 @@
             {
               "lga_name": "South Burnett Regional",
               "lga_code": null,
-              "affected_customers": 116
+              "affected_customers": 5
             }
           ],
           "details": {
             "event": "26WB11342",
             "council": "South Burnett Regional Council",
-            "suburb": "CHARLESTOWN, CORNDALE, JOHNSTOWN, KINGAROY, MEMERAMBI, NANANGO, WATTLE CAMP, WOOROOLIN",
+            "suburb": "JOHNSTOWN, NANANGO",
             "type": "UNPLANNED",
             "startTime": "13/11/2026 11:24",
             "restoreTime": "Under Investigation",
-            "customersAffected": "116",
+            "customersAffected": "5",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Outage reported"
           },
-          "affected_customers": 116,
-          "suburb": "CHARLESTOWN, CORNDALE, JOHNSTOWN, KINGAROY, MEMERAMBI, NANANGO, WATTLE CAMP, WOOROOLIN",
+          "affected_customers": 5,
+          "suburb": "JOHNSTOWN, NANANGO",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB11346",
+          "allocations": [
+            {
+              "lga_name": "South Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "26WB11346",
+            "council": "South Burnett Regional Council",
+            "suburb": "MOFFATDALE",
+            "type": "UNPLANNED",
+            "startTime": "12/11/2026 18:45",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 2,
+          "suburb": "MOFFATDALE",
           "street_name": ""
         },
         {
