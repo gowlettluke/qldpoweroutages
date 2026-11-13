@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T12:01:37Z",
+      "fetched_utc": "2026-11-13T12:16:01Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -524,13 +524,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T12:01:40Z",
+      "fetched_utc": "2026-11-13T12:16:04Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T12:00:17Z",
-        "published_customers": 1419,
-        "event_count": 21
+        "source_updated_utc": "2026-11-13T12:10:00Z",
+        "published_customers": 1454,
+        "event_count": 22
       },
       "events": [
         {
@@ -606,6 +606,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26NQ14131",
+          "allocations": [
+            {
+              "lga_name": "McKinlay Shire",
+              "lga_code": null,
+              "affected_customers": 35
+            }
+          ],
+          "details": {
+            "event": "26NQ14131",
+            "council": "Mckinlay Shire Council",
+            "suburb": "JULIA CREEK",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 22:05",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "35",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 35,
+          "suburb": "JULIA CREEK",
+          "street_name": ""
+        },
+        {
           "event_id": "26SW14792",
           "allocations": [
             {
@@ -620,7 +644,7 @@
             "suburb": "DAANDINE, MACALISTER",
             "type": "UNPLANNED",
             "startTime": "13/11/2026 05:49",
-            "restoreTime": "13/11/2026 22:00",
+            "restoreTime": "13/11/2026 23:30",
             "customersAffected": "13",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
@@ -671,7 +695,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "12",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 12,
           "suburb": "DRILLHAM, DRILLHAM SOUTH",
