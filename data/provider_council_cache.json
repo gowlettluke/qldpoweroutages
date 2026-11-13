@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T02:01:27Z",
+      "fetched_utc": "2026-11-13T02:16:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 12:00 PM",
-        "source_updated_utc": "2026-11-13T02:00:02Z",
-        "published_customers": 5125,
-        "event_count": 30
+        "source_updated": "13 November 2026 12:15 PM",
+        "source_updated_utc": "2026-11-13T02:15:02Z",
+        "published_customers": 5102,
+        "event_count": 31
       },
       "events": [
         {
@@ -483,7 +483,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 100
+              "affected_customers": 69
             }
           ],
           "details": {
@@ -493,19 +493,17 @@
             "council": "Logan City",
             "postcode": "4133",
             "suburb": "CHAMBERS FLAT",
-            "customersAffected": "40",
+            "customersAffected": "12",
             "restoreTime": "2026-11-13T15:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "MATTHEW RD",
-              "REBECCA DR",
               "ROSSMORE RD"
             ]
           },
-          "affected_customers": 100,
+          "affected_customers": 69,
           "suburb": "CHAMBERS FLAT, LOGAN RESERVE",
-          "street_name": "HENDERSON RD, LOGANVIEW RD, MATTHEW RD, MEADOW RD, REBECCA DR, ROSSMORE RD"
+          "street_name": "HENDERSON RD, LOGANVIEW RD, MEADOW RD, ROSSMORE RD"
         },
         {
           "event_id": "INCD-995999-g",
@@ -666,7 +664,7 @@
             "postcode": "4304",
             "suburb": "BUNDAMBA",
             "customersAffected": "1",
-            "restoreTime": "2026-11-13T15:00:00+10:00",
+            "restoreTime": "2026-11-14T15:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -793,6 +791,35 @@
           "affected_customers": 55,
           "suburb": "COOLUM BEACH",
           "street_name": "GREENOAKS DR, SCHOOL RD, SOUTH COOLUM RD, YANDINA-COOLUM RD"
+        },
+        {
+          "event_id": "INCD-997331-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 8
+            }
+          ],
+          "details": {
+            "event": "INCD-997331-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4133",
+            "suburb": "LOGAN RESERVE",
+            "customersAffected": "3",
+            "restoreTime": "2026-11-13T15:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "KILLARA BVD",
+              "LIVINGSTONE ST"
+            ]
+          },
+          "affected_customers": 8,
+          "suburb": "LOGAN RESERVE, PARK RIDGE",
+          "street_name": "ALEXIS PL, BUMSTEAD RD, CHAMBERS FLAT RD, KILLARA BVD, LIVINGSTONE ST"
         },
         {
           "event_id": "INCD-997373-g",
