@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T13:31:15Z",
+      "fetched_utc": "2026-11-13T13:46:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 11:15 PM",
-        "source_updated_utc": "2026-11-13T13:15:02Z",
-        "published_customers": 844,
+        "source_updated": "13 November 2026 11:45 PM",
+        "source_updated_utc": "2026-11-13T13:45:02Z",
+        "published_customers": 836,
         "event_count": 16
       },
       "events": [
@@ -47,7 +47,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 168
+              "affected_customers": 160
             }
           ],
           "details": {
@@ -57,7 +57,7 @@
             "council": "Logan City",
             "postcode": "4207",
             "suburb": "LOGAN VILLAGE",
-            "customersAffected": "166",
+            "customersAffected": "160",
             "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
@@ -71,13 +71,12 @@
               "PIONEER DR",
               "RAILWAY PDE",
               "SARAH CT",
-              "STOCKLEIGH RD",
               "WENLOCK CT"
             ]
           },
-          "affected_customers": 168,
-          "suburb": "LOGAN VILLAGE, STOCKLEIGH",
-          "street_name": "BENJAMIN RD, CULGOA CRES, GEORGINA DR, JARDINE CT, JILLIAN CT, KATHERINE CT, PIONEER DR, RAILWAY PDE, SARAH CT, STOCKLEIGH RD, WENLOCK CT"
+          "affected_customers": 160,
+          "suburb": "LOGAN VILLAGE",
+          "street_name": "BENJAMIN RD, CULGOA CRES, GEORGINA DR, JARDINE CT, JILLIAN CT, KATHERINE CT, PIONEER DR, RAILWAY PDE, SARAH CT, WENLOCK CT"
         },
         {
           "event_id": "INCD-995022-g",
@@ -486,13 +485,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T13:31:18Z",
+      "fetched_utc": "2026-11-13T13:46:28Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T13:25:00Z",
-        "published_customers": 1135,
-        "event_count": 20
+        "source_updated_utc": "2026-11-13T13:45:00Z",
+        "published_customers": 1122,
+        "event_count": 19
       },
       "events": [
         {
@@ -589,30 +588,6 @@
           },
           "affected_customers": 5,
           "suburb": "GREENVALE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14792",
-          "allocations": [
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 13
-            }
-          ],
-          "details": {
-            "event": "26SW14792",
-            "council": "Western Downs Regional Council",
-            "suburb": "DAANDINE, MACALISTER",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 05:49",
-            "restoreTime": "14/11/2026 01:00",
-            "customersAffected": "13",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 13,
-          "suburb": "DAANDINE, MACALISTER",
           "street_name": ""
         },
         {
