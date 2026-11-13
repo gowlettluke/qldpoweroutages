@@ -2,7 +2,7 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T22:01:35Z",
+      "fetched_utc": "2026-11-13T22:15:58Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
@@ -370,12 +370,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T22:01:38Z",
+      "fetched_utc": "2026-11-13T22:16:04Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T22:00:28Z",
-        "published_customers": 3353,
+        "source_updated_utc": "2026-11-13T22:10:22Z",
+        "published_customers": 3592,
         "event_count": 33
       },
       "events": [
@@ -534,6 +534,35 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13697",
+          "allocations": [
+            {
+              "lga_name": "Blackall Tambo Regional",
+              "lga_code": null,
+              "affected_customers": 25
+            },
+            {
+              "lga_name": "Quilpie Shire",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "26CA13697",
+            "council": "Blackall Tambo Regional Council",
+            "suburb": "BLACKALL",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 00:00",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "25",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 26,
+          "suburb": "BLACKALL",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11079",
           "allocations": [
             {
@@ -575,7 +604,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "172",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 172,
           "suburb": "BALNAGOWAN, MARIAN, PLEYSTOWE",
@@ -976,30 +1005,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW15014",
-          "allocations": [
-            {
-              "lga_name": "Maranoa Regional",
-              "lga_code": null,
-              "affected_customers": 51
-            }
-          ],
-          "details": {
-            "event": "26SW15014",
-            "council": "Maranoa Regional Council",
-            "suburb": "EUMAMURRIN, INJUNE, ORALLO, ROMA",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 02:52",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "51",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 51,
-          "suburb": "EUMAMURRIN, INJUNE, ORALLO, ROMA",
-          "street_name": ""
-        },
-        {
           "event_id": "26SW15018",
           "allocations": [
             {
@@ -1159,27 +1164,32 @@
           "street_name": ""
         },
         {
-          "event_id": "26WB11401",
+          "event_id": "26WB11404",
           "allocations": [
             {
               "lga_name": "South Burnett Regional",
               "lga_code": null,
-              "affected_customers": 9
+              "affected_customers": 272
+            },
+            {
+              "lga_name": "Western Downs Regional",
+              "lga_code": null,
+              "affected_customers": 1
             }
           ],
           "details": {
-            "event": "26WB11401",
+            "event": "26WB11404",
             "council": "South Burnett Regional Council",
-            "suburb": "WONDAI",
+            "suburb": "BOONDOOMA, BOONDOOMA WEST, BRIGOODA, COVERTY, DARR CREEK, DURONG, DURONG SOUTH, PROSTON",
             "type": "UNPLANNED",
-            "startTime": "13/11/2026 23:03",
-            "restoreTime": "14/11/2026 16:00",
-            "customersAffected": "9",
+            "startTime": "14/11/2026 08:05",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "272",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Outage reported"
           },
-          "affected_customers": 9,
-          "suburb": "WONDAI",
+          "affected_customers": 273,
+          "suburb": "BOONDOOMA, BOONDOOMA WEST, BRIGOODA, COVERTY, DARR CREEK, DURONG, DURONG SOUTH, PROSTON",
           "street_name": ""
         },
         {
