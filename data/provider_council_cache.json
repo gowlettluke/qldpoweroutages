@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T17:16:19Z",
+      "fetched_utc": "2026-11-13T18:01:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 3:15 AM",
-        "source_updated_utc": "2026-11-13T17:15:02Z",
-        "published_customers": 541,
-        "event_count": 10
+        "source_updated": "14 November 2026 4:00 AM",
+        "source_updated_utc": "2026-11-13T18:00:03Z",
+        "published_customers": 506,
+        "event_count": 9
       },
       "events": [
         {
@@ -76,7 +76,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 48
+              "affected_customers": 20
             }
           ],
           "details": {
@@ -86,22 +86,19 @@
             "council": "Logan City",
             "postcode": "4207",
             "suburb": "LOGAN VILLAGE",
-            "customersAffected": "48",
+            "customersAffected": "20",
             "restoreTime": "2026-11-14T16:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "BOBERMIEN RD",
-              "FAHIM PL",
-              "FLORENCE CT",
-              "FROG HOLLOW CT",
               "HOTZ RD",
               "ROSE FARM LANE"
             ]
           },
-          "affected_customers": 48,
+          "affected_customers": 20,
           "suburb": "LOGAN VILLAGE",
-          "street_name": "BOBERMIEN RD, FAHIM PL, FLORENCE CT, FROG HOLLOW CT, HOTZ RD, ROSE FARM LANE"
+          "street_name": "BOBERMIEN RD, HOTZ RD, ROSE FARM LANE"
         },
         {
           "event_id": "INCD-995913-g",
@@ -218,34 +215,6 @@
           "street_name": "AMBER CRES, EDELSTEN RD"
         },
         {
-          "event_id": "INCD-997378-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 7
-            }
-          ],
-          "details": {
-            "event": "INCD-997378-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4125",
-            "suburb": "PARK RIDGE",
-            "customersAffected": "7",
-            "restoreTime": "2026-11-14T09:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "PARK RIDGE RD"
-            ]
-          },
-          "affected_customers": 7,
-          "suburb": "PARK RIDGE",
-          "street_name": "PARK RIDGE RD"
-        },
-        {
           "event_id": "INCD-997457-g",
           "allocations": [
             {
@@ -305,11 +274,11 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T17:46:29Z",
+      "fetched_utc": "2026-11-13T18:01:26Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T17:45:01Z",
+        "source_updated_utc": "2026-11-13T18:00:01Z",
         "published_customers": 2006,
         "event_count": 25
       },
