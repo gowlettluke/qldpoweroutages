@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T15:16:21Z",
+      "fetched_utc": "2026-11-13T15:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 1:15 AM",
-        "source_updated_utc": "2026-11-13T15:15:02Z",
+        "source_updated": "14 November 2026 1:30 AM",
+        "source_updated_utc": "2026-11-13T15:30:02Z",
         "published_customers": 601,
         "event_count": 13
       },
@@ -394,13 +394,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T15:16:24Z",
+      "fetched_utc": "2026-11-13T15:31:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T15:15:00Z",
-        "published_customers": 940,
-        "event_count": 18
+        "source_updated_utc": "2026-11-13T15:30:32Z",
+        "published_customers": 962,
+        "event_count": 20
       },
       "events": [
         {
@@ -740,6 +740,35 @@
           "street_name": ""
         },
         {
+          "event_id": "26SW15003",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 8
+            },
+            {
+              "lga_name": "Southern Downs Regional",
+              "lga_code": null,
+              "affected_customers": 5
+            }
+          ],
+          "details": {
+            "event": "26SW15003",
+            "council": "Southern Downs Regional Council",
+            "suburb": "TALGAI",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 16:00",
+            "restoreTime": "14/11/2026 16:00",
+            "customersAffected": "5",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 13,
+          "suburb": "CLIFTON, ELPHINSTONE, SANDY CAMP, TALGAI, TALGAI WEST",
+          "street_name": ""
+        },
+        {
           "event_id": "26WB11072",
           "allocations": [
             {
@@ -819,6 +848,30 @@
           },
           "affected_customers": 70,
           "suburb": "BALLOGIE, CHAHPINGAH, DURONG, DURONG SOUTH, KINGAROY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26WB11401",
+          "allocations": [
+            {
+              "lga_name": "South Burnett Regional",
+              "lga_code": null,
+              "affected_customers": 9
+            }
+          ],
+          "details": {
+            "event": "26WB11401",
+            "council": "South Burnett Regional Council",
+            "suburb": "WONDAI",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 23:03",
+            "restoreTime": "14/11/2026 16:00",
+            "customersAffected": "9",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 9,
+          "suburb": "WONDAI",
           "street_name": ""
         },
         {
