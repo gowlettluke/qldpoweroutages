@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T23:16:22Z",
+      "fetched_utc": "2026-11-13T23:45:58Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 9:15 AM",
-        "source_updated_utc": "2026-11-13T23:15:02Z",
-        "published_customers": 1341,
-        "event_count": 15
+        "source_updated": "14 November 2026 9:30 AM",
+        "source_updated_utc": "2026-11-13T23:30:02Z",
+        "published_customers": 1193,
+        "event_count": 14
       },
       "events": [
         {
@@ -109,7 +109,7 @@
           ],
           "details": {
             "event": "INCD-996738-g",
-            "cause": "Damage due to severe weather",
+            "cause": "Under Investigation",
             "status": "Under Investigation",
             "council": "Logan City",
             "postcode": "4280",
@@ -172,7 +172,7 @@
             "postcode": "4133",
             "suburb": "LOGAN RESERVE",
             "customersAffected": "12",
-            "restoreTime": "2026-11-14T09:30:00+10:00",
+            "restoreTime": "2026-11-14T10:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -201,7 +201,7 @@
             "postcode": "4116",
             "suburb": "CALAMVALE",
             "customersAffected": "46",
-            "restoreTime": "2026-11-14T09:30:00+10:00",
+            "restoreTime": "2026-11-14T10:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -250,7 +250,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 368
+              "affected_customers": 221
             }
           ],
           "details": {
@@ -260,7 +260,7 @@
             "council": "Logan City",
             "postcode": "4124",
             "suburb": "BORONIA HEIGHTS",
-            "customersAffected": "155",
+            "customersAffected": "153",
             "restoreTime": "2026-11-14T11:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
@@ -277,9 +277,9 @@
               "MIDDLE RD"
             ]
           },
-          "affected_customers": 368,
+          "affected_customers": 221,
           "suburb": "BORONIA HEIGHTS, BROWNS PLAINS, HILLCREST",
-          "street_name": "ADAB CL, AQUA CT, BARRY ST, BRODIE CT, CHANDON CT, CORONATION RD, DORNOCK DR, ERIC CT, EUGENE ST, GISELLE ST, HARGRILL CT, HILL END AVE, HYSTEN ST, IRVINE PL, LAMBRETTA ST, MACAULEY DR, MACK CT, MIDDLE RD, MT LINDESAY HWY, ORR CT, SHIVANAND AVE, ZACHARY CT, ZOE PL"
+          "street_name": "ADAB CL, BARRY ST, CHANDON CT, CORONATION RD, DORNOCK DR, EUGENE ST, HARGRILL CT, HYSTEN ST, IRVINE PL, MACAULEY DR, MACK CT, MIDDLE RD, MT LINDESAY HWY, ORR CT"
         },
         {
           "event_id": "INCD-997996-g",
@@ -308,34 +308,6 @@
           "affected_customers": 61,
           "suburb": "ALEXANDRA HEADLAND, MAROOCHYDORE",
           "street_name": "ALEXANDRA PDE, MAROUBRA ST, WIRRAWAY ST"
-        },
-        {
-          "event_id": "INCD-998032-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-998032-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4124",
-            "suburb": "NEW BEITH",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-14T10:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "NEW BEITH RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "NEW BEITH",
-          "street_name": "NEW BEITH RD"
         },
         {
           "event_id": "INCD-998061-g",
@@ -414,7 +386,7 @@
           ],
           "details": {
             "event": "INCD-998086-g",
-            "cause": "Damage due to severe weather",
+            "cause": "Under Investigation",
             "status": "Under Investigation",
             "council": "Logan City",
             "postcode": "4280",
@@ -463,13 +435,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T23:31:39Z",
+      "fetched_utc": "2026-11-13T23:46:02Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T23:30:00Z",
-        "published_customers": 1716,
-        "event_count": 27
+        "source_updated_utc": "2026-11-13T23:40:01Z",
+        "published_customers": 1703,
+        "event_count": 26
       },
       "events": [
         {
@@ -725,30 +697,6 @@
           },
           "affected_customers": 5,
           "suburb": "GREENVALE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ14136",
-          "allocations": [
-            {
-              "lga_name": "Charters Towers Regional",
-              "lga_code": null,
-              "affected_customers": 13
-            }
-          ],
-          "details": {
-            "event": "26NQ14136",
-            "council": "Charters Towers Regional Council",
-            "suburb": "BALFES CREEK, BASALT",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 02:33",
-            "restoreTime": "14/11/2026 09:20",
-            "customersAffected": "13",
-            "cause": "The loss of supply is due to the operating of protective equipment.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 13,
-          "suburb": "BALFES CREEK, BASALT",
           "street_name": ""
         },
         {

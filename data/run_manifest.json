@@ -1,50 +1,47 @@
 {
-  "generated_utc": "2026-11-13T23:31:24Z",
-  "generated_aest": "2026-11-14T09:31:24+10:00",
+  "generated_utc": "2026-11-13T23:45:52Z",
+  "generated_aest": "2026-11-14T09:45:52+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 45,
+  "current_outage_records": 43,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 494,
-  "current_records_after_outage_type_filter": 52,
+  "current_records_before_outage_type_filter": 490,
+  "current_records_after_outage_type_filter": 48,
   "current_records_dropped_planned_or_unknown": 442,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {
-    "Energex": "Update delayed; using verified provider data from 2026-11-13T23:15:02Z. Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "14 November 2026 9:15 AM",
-      "source_updated_utc": "2026-11-13T23:15:02Z",
-      "published_customers": 1341,
-      "event_count": 15,
-      "fetched_utc": "2026-11-13T23:16:22Z",
-      "collection_error": "Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "source_updated": "14 November 2026 9:30 AM",
+      "source_updated_utc": "2026-11-13T23:30:02Z",
+      "published_customers": 1193,
+      "event_count": 14,
+      "fetched_utc": "2026-11-13T23:45:58Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T23:30:00Z",
-      "published_customers": 1716,
-      "event_count": 27,
-      "fetched_utc": "2026-11-13T23:31:39Z"
+      "source_updated_utc": "2026-11-13T23:40:01Z",
+      "published_customers": 1703,
+      "event_count": 26,
+      "fetched_utc": "2026-11-13T23:46:02Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-13T23:31:24Z",
+    "snapshot_utc": "2026-11-13T23:45:52Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T23:16:22Z",
+      "fetched_utc": "2026-11-13T23:45:58Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-13T23:15:02Z",
-      "retained": true,
-      "total_customers": 1341,
+      "source_updated_utc": "2026-11-13T23:30:02Z",
+      "retained": false,
+      "total_customers": 1193,
       "rows": [
         {
           "lga_name": "Brisbane City",
@@ -52,7 +49,7 @@
         },
         {
           "lga_name": "Logan City",
-          "affected_customers": 1234
+          "affected_customers": 1086
         },
         {
           "lga_name": "Sunshine Coast Regional",
@@ -62,13 +59,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T23:31:39Z",
+      "fetched_utc": "2026-11-13T23:46:02Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T23:30:00Z",
+      "source_updated_utc": "2026-11-13T23:40:01Z",
       "retained": false,
-      "total_customers": 1716,
+      "total_customers": 1703,
       "rows": [
         {
           "lga_name": "Barcaldine Regional",
@@ -92,7 +89,7 @@
         },
         {
           "lga_name": "Charters Towers Regional",
-          "affected_customers": 18
+          "affected_customers": 5
         },
         {
           "lga_name": "Fraser Coast Regional",
@@ -138,17 +135,17 @@
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 15,
-  "current_ergon_records": 27,
-  "current_essential_records_fetched": 13,
-  "current_energex_records_fetched": 154,
-  "current_ergon_records_fetched": 326,
+  "current_energex_records": 14,
+  "current_ergon_records": 26,
+  "current_essential_records_fetched": 11,
+  "current_energex_records_fetched": 156,
+  "current_ergon_records_fetched": 325,
   "current_essential_records_after_qld_polygon_prefilter": 3,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 7,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 5,
   "current_essential_records_included_qld": 3,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 9799,
-  "lga_totals_rows_48h": 7767,
+  "snapshot_rows_48h": 9759,
+  "lga_totals_rows_48h": 7760,
   "lga_totals_latest_rows": 40,
   "lga_cumulative_rows": 98,
   "outputs": {
