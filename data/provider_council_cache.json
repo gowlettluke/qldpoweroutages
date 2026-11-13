@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T18:16:18Z",
+      "fetched_utc": "2026-11-13T18:31:31Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 4:15 AM",
-        "source_updated_utc": "2026-11-13T18:15:02Z",
-        "published_customers": 506,
+        "source_updated": "14 November 2026 4:30 AM",
+        "source_updated_utc": "2026-11-13T18:30:03Z",
+        "published_customers": 492,
         "event_count": 9
       },
       "events": [
@@ -76,7 +76,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 20
+              "affected_customers": 6
             }
           ],
           "details": {
@@ -86,19 +86,18 @@
             "council": "Logan City",
             "postcode": "4207",
             "suburb": "LOGAN VILLAGE",
-            "customersAffected": "20",
+            "customersAffected": "6",
             "restoreTime": "2026-11-14T16:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "BOBERMIEN RD",
-              "HOTZ RD",
-              "ROSE FARM LANE"
+              "HOTZ RD"
             ]
           },
-          "affected_customers": 20,
+          "affected_customers": 6,
           "suburb": "LOGAN VILLAGE",
-          "street_name": "BOBERMIEN RD, HOTZ RD, ROSE FARM LANE"
+          "street_name": "BOBERMIEN RD, HOTZ RD"
         },
         {
           "event_id": "INCD-995913-g",
@@ -274,12 +273,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T18:16:20Z",
+      "fetched_utc": "2026-11-13T18:31:36Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T18:15:00Z",
-        "published_customers": 2028,
+        "source_updated_utc": "2026-11-13T18:30:01Z",
+        "published_customers": 2006,
         "event_count": 25
       },
       "events": [
@@ -529,22 +528,22 @@
             {
               "lga_name": "Toowoomba Regional",
               "lga_code": null,
-              "affected_customers": 105
+              "affected_customers": 83
             }
           ],
           "details": {
             "event": "26SW14941",
             "council": "Toowoomba Regional Council",
-            "suburb": "BACK PLAINS, CLIFTON, FELTON, KINGS CREEK, MOUNT MOLAR, NEVILTON, NOBBY, WILLOW SPRINGS",
+            "suburb": "BACK PLAINS, CLIFTON, FELTON, KINGS CREEK, MOUNT MOLAR, NOBBY",
             "type": "UNPLANNED",
             "startTime": "13/11/2026 19:03",
             "restoreTime": "Under Investigation",
-            "customersAffected": "105",
+            "customersAffected": "83",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
+            "status": "Work delayed - crews unable to continue"
           },
-          "affected_customers": 105,
-          "suburb": "BACK PLAINS, CLIFTON, FELTON, KINGS CREEK, MOUNT MOLAR, NEVILTON, NOBBY, WILLOW SPRINGS",
+          "affected_customers": 83,
+          "suburb": "BACK PLAINS, CLIFTON, FELTON, KINGS CREEK, MOUNT MOLAR, NOBBY",
           "street_name": ""
         },
         {
