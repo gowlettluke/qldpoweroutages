@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T06:46:34Z",
+      "fetched_utc": "2026-11-13T07:01:34Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 4:45 PM",
-        "source_updated_utc": "2026-11-13T06:45:02Z",
-        "published_customers": 5573,
+        "source_updated": "13 November 2026 5:00 PM",
+        "source_updated_utc": "2026-11-13T07:00:02Z",
+        "published_customers": 3516,
         "event_count": 26
       },
       "events": [
@@ -46,7 +46,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 2244
+              "affected_customers": 187
             }
           ],
           "details": {
@@ -56,21 +56,18 @@
             "council": "Logan City",
             "postcode": "4207",
             "suburb": "LOGAN VILLAGE",
-            "customersAffected": "256",
+            "customersAffected": "185",
             "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "BENJAMIN RD",
               "CULGOA CRES",
-              "GAYLE CT",
               "GEORGINA DR",
-              "HOTZ RD",
               "JARDINE CT",
               "JILLIAN CT",
               "KATHERINE CT",
               "PIONEER DR",
-              "POSSUM CT",
               "RAILWAY PDE",
               "SARAH CT",
               "STOCKLEIGH RD",
@@ -78,9 +75,9 @@
               "WENLOCK CT"
             ]
           },
-          "affected_customers": 2244,
-          "suburb": "LOGAN VILLAGE, STOCKLEIGH, YARRABILBA",
-          "street_name": "ARCADIA CCT, ARCHES LANE, ARKOSE ST, AURORA LANE, AUTUMNFIELD AVE, BASALT DR, BENGAL ST, BENJAMIN RD, BIRON ST, BLOSSOM ST, BRECCIA ST, BRIGHT ST, BUXTON AVE, CAMBRIDGE CCT, CERULEAN PL, CHALK ST, COOLRIDGE CCT, CULGOA CRES, DARLINGTON DR, DARNELL ST, DARRAU AVE, DAYBREAK ST, DEW ST, DOMES LANE, DORADO ST, ELMER LANE, EVERGLADE ST, GAYLE CT, GEORGINA DR, GOLD AVE, GOSSAN CCT, GRASSLANDS ST, GREENSTONE ST, HARMONY ST, HIDDENVALE CCT, HIGHLANDS ST, HOTZ RD, JARDINE CT, JILLIAN CT, KATHERINE CT, LAMBENT ST, LARIMAR AVE, MASON ST, MCKINNON DR, MESA ST, MILBY ST, MORION ST, MYERS ST, OLIVINE CCT, ORB ST, PARADISE ST, PEAK LANE, PINEHILL ST, PIONEER DR, POSSUM CT, PUMICE LANE, RAILWAY PDE, RIDGEVIEW LANE, ROSEWOOD CCT, SAPPHIRE WAY, SARAH CT, SEAWEST ST, SEPIA ST, SHILIN ST, SIENNA CCT, SKYBLUE CCT, SPLENDOUR CCT, SPRINGRISE PL, STOCKLEIGH RD, STRATA CCT, SUMMERVIEW AVE, TALLWOODS CCT, TEMPERA PL, TREELINE CCT, TREETOPS ST, VANTAGE LANE, VERDI ST, WATERFORD TAMBORINE RD, WATERFORD-TAMBORINE RD, WENLOCK CT, WILDFLOWER ST, WILLOW CCT, WINDSOR AVE, WINTERPEAK CL, WOODWARD AVE, YARRABILBA DR"
+          "affected_customers": 187,
+          "suburb": "LOGAN VILLAGE, STOCKLEIGH",
+          "street_name": "BENJAMIN RD, CULGOA CRES, GEORGINA DR, JARDINE CT, JILLIAN CT, KATHERINE CT, PIONEER DR, RAILWAY PDE, SARAH CT, STOCKLEIGH RD, WATERFORD-TAMBORINE RD, WENLOCK CT"
         },
         {
           "event_id": "INCD-995022-g",
@@ -853,7 +850,7 @@
             "postcode": "4556",
             "suburb": "BUDERIM",
             "customersAffected": "76",
-            "restoreTime": "2026-11-13T18:30:00+10:00",
+            "restoreTime": "2026-11-13T18:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -872,39 +869,15 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T06:46:37Z",
+      "fetched_utc": "2026-11-13T07:01:38Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T06:45:00Z",
-        "published_customers": 342,
-        "event_count": 13
+        "source_updated_utc": "2026-11-13T06:55:00Z",
+        "published_customers": 276,
+        "event_count": 11
       },
       "events": [
-        {
-          "event_id": "26CA13631",
-          "allocations": [
-            {
-              "lga_name": "Central Highlands Regional",
-              "lga_code": null,
-              "affected_customers": 18
-            }
-          ],
-          "details": {
-            "event": "26CA13631",
-            "council": "Central Highlands Regional Council",
-            "suburb": "SPRINGSURE",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 10:01",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "18",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 18,
-          "suburb": "SPRINGSURE",
-          "street_name": ""
-        },
         {
           "event_id": "26FN11079",
           "allocations": [
@@ -1007,27 +980,22 @@
             {
               "lga_name": "Quilpie Shire",
               "lga_code": null,
-              "affected_customers": 47
-            },
-            {
-              "lga_name": "Bulloo Shire",
-              "lga_code": null,
-              "affected_customers": 2
+              "affected_customers": 5
             }
           ],
           "details": {
             "event": "26SW14826",
-            "council": "Bulloo Shire Council",
-            "suburb": "THARGOMINDAH",
+            "council": "Quilpie Shire Council",
+            "suburb": "QUILPIE",
             "type": "UNPLANNED",
             "startTime": "13/11/2026 13:54",
             "restoreTime": "Under Investigation",
-            "customersAffected": "2",
+            "customersAffected": "5",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 49,
-          "suburb": "CHEEPIE, CUNNAMULLA, QUILPIE, THARGOMINDAH, TOOMPINE, WYANDRA",
+          "affected_customers": 5,
+          "suburb": "QUILPIE",
           "street_name": ""
         },
         {
@@ -1129,35 +1097,6 @@
           },
           "affected_customers": 23,
           "suburb": "CALGOA, GLEN ECHO, MIVA, WOOLOOGA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB11185",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 3
-            },
-            {
-              "lga_name": "North Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "26WB11185",
-            "council": "Bundaberg Regional Council",
-            "suburb": "GOOD NIGHT",
-            "type": "UNPLANNED",
-            "startTime": "12/11/2026 16:39",
-            "restoreTime": "13/11/2026 17:00",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 4,
-          "suburb": "BOOYAL, GOOD NIGHT",
           "street_name": ""
         },
         {
