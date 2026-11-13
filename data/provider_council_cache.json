@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T22:31:20Z",
+      "fetched_utc": "2026-11-13T22:46:19Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 8:30 AM",
-        "source_updated_utc": "2026-11-13T22:30:03Z",
-        "published_customers": 1350,
-        "event_count": 14
+        "source_updated": "14 November 2026 8:45 AM",
+        "source_updated_utc": "2026-11-13T22:45:02Z",
+        "published_customers": 1329,
+        "event_count": 13
       },
       "events": [
         {
@@ -155,34 +155,6 @@
           "affected_customers": 2,
           "suburb": "MARSDEN",
           "street_name": "BROWNS PLAINS RD"
-        },
-        {
-          "event_id": "INCD-997772-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 21
-            }
-          ],
-          "details": {
-            "event": "INCD-997772-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4133",
-            "suburb": "CHAMBERS FLAT",
-            "customersAffected": "12",
-            "restoreTime": "2026-11-14T09:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ROSSMORE RD"
-            ]
-          },
-          "affected_customers": 21,
-          "suburb": "CHAMBERS FLAT, LOGAN RESERVE",
-          "street_name": "ROSSMORE RD"
         },
         {
           "event_id": "INCD-997861-g",
@@ -355,7 +327,7 @@
             "postcode": "4124",
             "suburb": "NEW BEITH",
             "customersAffected": "1",
-            "restoreTime": "2026-11-14T08:30:00+10:00",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -435,39 +407,15 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T22:31:23Z",
+      "fetched_utc": "2026-11-13T22:46:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T22:30:00Z",
-        "published_customers": 4001,
-        "event_count": 34
+        "source_updated_utc": "2026-11-13T22:45:01Z",
+        "published_customers": 3344,
+        "event_count": 30
       },
       "events": [
-        {
-          "event_id": "26CA12452",
-          "allocations": [
-            {
-              "lga_name": "Rockhampton Regional",
-              "lga_code": null,
-              "affected_customers": 30
-            }
-          ],
-          "details": {
-            "event": "26CA12452",
-            "council": "Rockhampton Regional Council",
-            "suburb": "ROCKHAMPTON, ROCKHAMPTON CITY",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 07:18",
-            "restoreTime": "14/11/2026 17:30",
-            "customersAffected": "30",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 30,
-          "suburb": "ROCKHAMPTON, ROCKHAMPTON CITY",
-          "street_name": ""
-        },
         {
           "event_id": "26CA13680",
           "allocations": [
@@ -509,7 +457,7 @@
             "startTime": "14/11/2026 06:20",
             "restoreTime": "Under Investigation",
             "customersAffected": "1047",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Outage reported"
           },
           "affected_customers": 1047,
@@ -645,7 +593,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "484",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 484,
           "suburb": "CAPELLA, EMERALD, GORDONSTONE",
@@ -673,30 +621,6 @@
           },
           "affected_customers": 151,
           "suburb": "CAIRNS, CAIRNS CITY",
-          "street_name": ""
-        },
-        {
-          "event_id": "26MK7309",
-          "allocations": [
-            {
-              "lga_name": "Mackay Regional",
-              "lga_code": null,
-              "affected_customers": 172
-            }
-          ],
-          "details": {
-            "event": "26MK7309",
-            "council": "Mackay Regional Council",
-            "suburb": "BALNAGOWAN, MARIAN, PLEYSTOWE",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 06:18",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "172",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 172,
-          "suburb": "BALNAGOWAN, MARIAN, PLEYSTOWE",
           "street_name": ""
         },
         {
@@ -1012,35 +936,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW15003",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 8
-            },
-            {
-              "lga_name": "Southern Downs Regional",
-              "lga_code": null,
-              "affected_customers": 5
-            }
-          ],
-          "details": {
-            "event": "26SW15003",
-            "council": "Southern Downs Regional Council",
-            "suburb": "TALGAI",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 16:00",
-            "restoreTime": "14/11/2026 16:00",
-            "customersAffected": "5",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 13,
-          "suburb": "CLIFTON, ELPHINSTONE, SANDY CAMP, TALGAI, TALGAI WEST",
-          "street_name": ""
-        },
-        {
           "event_id": "26SW15011",
           "allocations": [
             {
@@ -1197,35 +1092,6 @@
           },
           "affected_customers": 23,
           "suburb": "CALGOA, GLEN ECHO, MIVA, WOOLOOGA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB11391",
-          "allocations": [
-            {
-              "lga_name": "South Burnett Regional",
-              "lga_code": null,
-              "affected_customers": 429
-            },
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 13
-            }
-          ],
-          "details": {
-            "event": "26WB11391",
-            "council": "South Burnett Regional Council",
-            "suburb": "ALICE CREEK, BILBOA, BOYNESIDE, BROOKLANDS, ELLESMERE, HALY CREEK, IRONPOT, JARAIL CREEK, KINGAROY, KUMBIA, MANNUEM",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 21:08",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "429",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 442,
-          "suburb": "ALICE CREEK, BILBOA, BOYNESIDE, BROOKLANDS, ELLESMERE, HALY CREEK, IRONPOT, JARAIL CREEK, KINGAROY, KUMBIA, MANNUEM",
           "street_name": ""
         },
         {
