@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T06:31:29Z",
+      "fetched_utc": "2026-11-13T06:46:34Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 4:30 PM",
-        "source_updated_utc": "2026-11-13T06:30:02Z",
-        "published_customers": 5505,
-        "event_count": 25
+        "source_updated": "13 November 2026 4:45 PM",
+        "source_updated_utc": "2026-11-13T06:45:02Z",
+        "published_customers": 5573,
+        "event_count": 26
       },
       "events": [
         {
@@ -46,7 +46,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 2252
+              "affected_customers": 2244
             }
           ],
           "details": {
@@ -56,7 +56,7 @@
             "council": "Logan City",
             "postcode": "4207",
             "suburb": "LOGAN VILLAGE",
-            "customersAffected": "264",
+            "customersAffected": "256",
             "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
@@ -78,7 +78,7 @@
               "WENLOCK CT"
             ]
           },
-          "affected_customers": 2252,
+          "affected_customers": 2244,
           "suburb": "LOGAN VILLAGE, STOCKLEIGH, YARRABILBA",
           "street_name": "ARCADIA CCT, ARCHES LANE, ARKOSE ST, AURORA LANE, AUTUMNFIELD AVE, BASALT DR, BENGAL ST, BENJAMIN RD, BIRON ST, BLOSSOM ST, BRECCIA ST, BRIGHT ST, BUXTON AVE, CAMBRIDGE CCT, CERULEAN PL, CHALK ST, COOLRIDGE CCT, CULGOA CRES, DARLINGTON DR, DARNELL ST, DARRAU AVE, DAYBREAK ST, DEW ST, DOMES LANE, DORADO ST, ELMER LANE, EVERGLADE ST, GAYLE CT, GEORGINA DR, GOLD AVE, GOSSAN CCT, GRASSLANDS ST, GREENSTONE ST, HARMONY ST, HIDDENVALE CCT, HIGHLANDS ST, HOTZ RD, JARDINE CT, JILLIAN CT, KATHERINE CT, LAMBENT ST, LARIMAR AVE, MASON ST, MCKINNON DR, MESA ST, MILBY ST, MORION ST, MYERS ST, OLIVINE CCT, ORB ST, PARADISE ST, PEAK LANE, PINEHILL ST, PIONEER DR, POSSUM CT, PUMICE LANE, RAILWAY PDE, RIDGEVIEW LANE, ROSEWOOD CCT, SAPPHIRE WAY, SARAH CT, SEAWEST ST, SEPIA ST, SHILIN ST, SIENNA CCT, SKYBLUE CCT, SPLENDOUR CCT, SPRINGRISE PL, STOCKLEIGH RD, STRATA CCT, SUMMERVIEW AVE, TALLWOODS CCT, TEMPERA PL, TREELINE CCT, TREETOPS ST, VANTAGE LANE, VERDI ST, WATERFORD TAMBORINE RD, WATERFORD-TAMBORINE RD, WENLOCK CT, WILDFLOWER ST, WILLOW CCT, WINDSOR AVE, WINTERPEAK CL, WOODWARD AVE, YARRABILBA DR"
         },
@@ -835,17 +835,50 @@
           "affected_customers": 22,
           "suburb": "LOGAN VILLAGE",
           "street_name": "CAMP CABLE RD"
+        },
+        {
+          "event_id": "INCD-997690-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 76
+            }
+          ],
+          "details": {
+            "event": "INCD-997690-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4556",
+            "suburb": "BUDERIM",
+            "customersAffected": "76",
+            "restoreTime": "2026-11-13T18:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BRONZEWING AVE",
+              "ILIAD AVE",
+              "LYREBIRD ST",
+              "MOOLOOLABA RD",
+              "WAGTAIL CL",
+              "WREN CRES"
+            ]
+          },
+          "affected_customers": 76,
+          "suburb": "BUDERIM",
+          "street_name": "BRONZEWING AVE, ILIAD AVE, LYREBIRD ST, MOOLOOLABA RD, WAGTAIL CL, WREN CRES"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T06:31:33Z",
+      "fetched_utc": "2026-11-13T06:46:37Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T06:30:00Z",
-        "published_customers": 443,
-        "event_count": 12
+        "source_updated_utc": "2026-11-13T06:45:00Z",
+        "published_customers": 342,
+        "event_count": 13
       },
       "events": [
         {
@@ -870,30 +903,6 @@
           },
           "affected_customers": 18,
           "suburb": "SPRINGSURE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26CA13636",
-          "allocations": [
-            {
-              "lga_name": "Banana Shire",
-              "lga_code": null,
-              "affected_customers": 159
-            }
-          ],
-          "details": {
-            "event": "26CA13636",
-            "council": "Banana Shire Council",
-            "suburb": "CAMBOON, CRACOW, LONESOME CREEK, THANGOOL, THEODORE",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 11:35",
-            "restoreTime": "13/11/2026 18:00",
-            "customersAffected": "159",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 159,
-          "suburb": "CAMBOON, CRACOW, LONESOME CREEK, THANGOOL, THEODORE",
           "street_name": ""
         },
         {
@@ -1043,6 +1052,54 @@
           },
           "affected_customers": 14,
           "suburb": "CUNNAMULLA, EULO, WYANDRA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14880",
+          "allocations": [
+            {
+              "lga_name": "Southern Downs Regional",
+              "lga_code": null,
+              "affected_customers": 50
+            }
+          ],
+          "details": {
+            "event": "26SW14880",
+            "council": "Southern Downs Regional Council",
+            "suburb": "ALLORA",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 16:09",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "50",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 50,
+          "suburb": "ALLORA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14885",
+          "allocations": [
+            {
+              "lga_name": "Southern Downs Regional",
+              "lga_code": null,
+              "affected_customers": 8
+            }
+          ],
+          "details": {
+            "event": "26SW14885",
+            "council": "Southern Downs Regional Council",
+            "suburb": "EMU VALE",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 16:26",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "8",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 8,
+          "suburb": "EMU VALE",
           "street_name": ""
         },
         {
