@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T21:16:20Z",
+      "fetched_utc": "2026-11-13T21:31:33Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 7:15 AM",
-        "source_updated_utc": "2026-11-13T21:15:02Z",
+        "source_updated": "14 November 2026 7:30 AM",
+        "source_updated_utc": "2026-11-13T21:30:02Z",
         "published_customers": 980,
         "event_count": 12
       },
@@ -259,7 +259,7 @@
             "postcode": "4116",
             "suburb": "CALAMVALE",
             "customersAffected": "46",
-            "restoreTime": "2026-11-14T07:30:00+10:00",
+            "restoreTime": "2026-11-14T08:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -290,7 +290,7 @@
             "postcode": "4124",
             "suburb": "BORONIA HEIGHTS",
             "customersAffected": "155",
-            "restoreTime": "2026-11-14T08:00:00+10:00",
+            "restoreTime": "2026-11-14T11:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -327,7 +327,7 @@
             "postcode": "4558",
             "suburb": "MAROOCHYDORE",
             "customersAffected": "60",
-            "restoreTime": "2026-11-14T07:30:00+10:00",
+            "restoreTime": "2026-11-14T08:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -356,7 +356,7 @@
             "postcode": "4124",
             "suburb": "NEW BEITH",
             "customersAffected": "1",
-            "restoreTime": "2026-11-14T09:30:00+10:00",
+            "restoreTime": "2026-11-14T08:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -370,15 +370,39 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T21:16:24Z",
+      "fetched_utc": "2026-11-13T21:31:36Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T21:15:01Z",
-        "published_customers": 3686,
-        "event_count": 35
+        "source_updated_utc": "2026-11-13T21:30:26Z",
+        "published_customers": 3742,
+        "event_count": 37
       },
       "events": [
+        {
+          "event_id": "26CA12452",
+          "allocations": [
+            {
+              "lga_name": "Rockhampton Regional",
+              "lga_code": null,
+              "affected_customers": 30
+            }
+          ],
+          "details": {
+            "event": "26CA12452",
+            "council": "Rockhampton Regional Council",
+            "suburb": "ROCKHAMPTON, ROCKHAMPTON CITY",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 07:18",
+            "restoreTime": "14/11/2026 17:30",
+            "customersAffected": "30",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 30,
+          "suburb": "ROCKHAMPTON, ROCKHAMPTON CITY",
+          "street_name": ""
+        },
         {
           "event_id": "26CA13680",
           "allocations": [
@@ -502,6 +526,30 @@
           },
           "affected_customers": 41,
           "suburb": "BLACKWATER, CAPELLA, COMET, LILYVALE, MACKENZIE RIVER",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13693",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 4
+            }
+          ],
+          "details": {
+            "event": "26CA13693",
+            "council": "Central Highlands Regional Council",
+            "suburb": "SPRINGSURE",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 04:05",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "4",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 4,
+          "suburb": "SPRINGSURE",
           "street_name": ""
         },
         {
@@ -1024,30 +1072,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW15022",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 7
-            }
-          ],
-          "details": {
-            "event": "26SW15022",
-            "council": "Toowoomba Regional Council",
-            "suburb": "CAMBOOYA",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 20:12",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "7",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 7,
-          "suburb": "CAMBOOYA",
-          "street_name": ""
-        },
-        {
           "event_id": "26SW15023",
           "allocations": [
             {
@@ -1089,7 +1113,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "11",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 11,
           "suburb": "ALLORA",
@@ -1117,6 +1141,30 @@
           },
           "affected_customers": 7,
           "suburb": "DUCKLO",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW15027",
+          "allocations": [
+            {
+              "lga_name": "Western Downs Regional",
+              "lga_code": null,
+              "affected_customers": 29
+            }
+          ],
+          "details": {
+            "event": "26SW15027",
+            "council": "Western Downs Regional Council",
+            "suburb": "AUBURN, CHINCHILLA",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 06:22",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "29",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 29,
+          "suburb": "AUBURN, CHINCHILLA",
           "street_name": ""
         },
         {
