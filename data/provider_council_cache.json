@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T14:16:23Z",
+      "fetched_utc": "2026-11-13T14:31:33Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 12:15 AM",
-        "source_updated_utc": "2026-11-13T14:15:02Z",
-        "published_customers": 822,
+        "source_updated": "14 November 2026 12:30 AM",
+        "source_updated_utc": "2026-11-13T14:30:02Z",
+        "published_customers": 761,
         "event_count": 15
       },
       "events": [
@@ -113,7 +113,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 56
+              "affected_customers": 48
             }
           ],
           "details": {
@@ -121,19 +121,24 @@
             "cause": "Powerlines down",
             "status": "Under Investigation",
             "council": "Logan City",
-            "postcode": "4133",
-            "suburb": "CHAMBERS FLAT",
-            "customersAffected": "8",
+            "postcode": "4207",
+            "suburb": "LOGAN VILLAGE",
+            "customersAffected": "48",
             "restoreTime": "2026-11-14T16:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "CHAMBERS FLAT RD"
+              "BOBERMIEN RD",
+              "FAHIM PL",
+              "FLORENCE CT",
+              "FROG HOLLOW CT",
+              "HOTZ RD",
+              "ROSE FARM LANE"
             ]
           },
-          "affected_customers": 56,
-          "suburb": "CHAMBERS FLAT, LOGAN VILLAGE",
-          "street_name": "BOBERMIEN RD, CHAMBERS FLAT RD, FAHIM PL, FLORENCE CT, FROG HOLLOW CT, HOTZ RD, ROSE FARM LANE"
+          "affected_customers": 48,
+          "suburb": "LOGAN VILLAGE",
+          "street_name": "BOBERMIEN RD, FAHIM PL, FLORENCE CT, FROG HOLLOW CT, HOTZ RD, ROSE FARM LANE"
         },
         {
           "event_id": "INCD-995913-g",
@@ -339,7 +344,7 @@
             {
               "lga_name": "Lockyer Valley Regional",
               "lga_code": null,
-              "affected_customers": 64
+              "affected_customers": 11
             }
           ],
           "details": {
@@ -349,23 +354,19 @@
             "council": "Lockyer Valley Regional",
             "postcode": "4341",
             "suburb": "LAIDLEY SOUTH",
-            "customersAffected": "64",
+            "customersAffected": "11",
             "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "BEAMES DR",
-              "CRAMER AVE",
               "KITCHENER RD",
-              "MILNE ST",
               "MOONLIGHT PDE",
-              "O&apos;DWYER RD",
-              "ROSEWOOD LAIDLEY RD"
+              "O&apos;DWYER RD"
             ]
           },
-          "affected_customers": 64,
+          "affected_customers": 11,
           "suburb": "LAIDLEY SOUTH",
-          "street_name": "BEAMES DR, CRAMER AVE, KITCHENER RD, MILNE ST, MOONLIGHT PDE, O&apos;DWYER RD, ROSEWOOD LAIDLEY RD"
+          "street_name": "KITCHENER RD, MOONLIGHT PDE, O&apos;DWYER RD"
         },
         {
           "event_id": "INCD-997861-g",
@@ -456,13 +457,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T14:16:27Z",
+      "fetched_utc": "2026-11-13T14:31:37Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T14:15:23Z",
-        "published_customers": 1030,
-        "event_count": 19
+        "source_updated_utc": "2026-11-13T14:30:01Z",
+        "published_customers": 962,
+        "event_count": 18
       },
       "events": [
         {
@@ -703,30 +704,6 @@
           },
           "affected_customers": 105,
           "suburb": "BACK PLAINS, CLIFTON, FELTON, KINGS CREEK, MOUNT MOLAR, NEVILTON, NOBBY, WILLOW SPRINGS",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14946",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 68
-            }
-          ],
-          "details": {
-            "event": "26SW14946",
-            "council": "Toowoomba Regional Council",
-            "suburb": "FELTON EAST, GREENMOUNT, MOUNT KENT, NOBBY",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 19:13",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "68",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 68,
-          "suburb": "FELTON EAST, GREENMOUNT, MOUNT KENT, NOBBY",
           "street_name": ""
         },
         {
