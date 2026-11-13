@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T00:31:13Z",
+      "fetched_utc": "2026-11-13T02:01:27Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 10:15 AM",
-        "source_updated_utc": "2026-11-13T00:15:03Z",
-        "published_customers": 6377,
-        "event_count": 34
+        "source_updated": "13 November 2026 12:00 PM",
+        "source_updated_utc": "2026-11-13T02:00:02Z",
+        "published_customers": 5125,
+        "event_count": 30
       },
       "events": [
         {
@@ -75,35 +75,6 @@
           "affected_customers": 93,
           "suburb": "TAMBORINE MOUNTAIN",
           "street_name": "BATEKE RD, BENOWA ST, PROSPECT ST, WILSON RD, YOUNG ST"
-        },
-        {
-          "event_id": "INCD-10096-h",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 5
-            }
-          ],
-          "details": {
-            "event": "INCD-10096-h",
-            "cause": "Damage due to severe weather",
-            "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4207",
-            "suburb": "LOGAN VILLAGE",
-            "customersAffected": "5",
-            "restoreTime": "2026-11-13T15:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "CAMP CABLE RD",
-              "TRAVIS RD"
-            ]
-          },
-          "affected_customers": 5,
-          "suburb": "LOGAN VILLAGE",
-          "street_name": "CAMP CABLE RD, TRAVIS RD"
         },
         {
           "event_id": "INCD-995008-g",
@@ -237,7 +208,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 1685
+              "affected_customers": 456
             }
           ],
           "details": {
@@ -266,9 +237,9 @@
               "WANDEARAH RD"
             ]
           },
-          "affected_customers": 1685,
+          "affected_customers": 456,
           "suburb": "LOGAN VILLAGE, YARRABILBA",
-          "street_name": "ALLAWAH CT, AMORA RD, ANEMBO CT, BASALT DR, BLENCOE ST, BROCKWELL WAY, BULBURIN ST, BYFIELD PL, CARNARVON ST, COAL ST, CONIFER CT, COORONG ST, DANBULLA ST, DIAMOND DR, DIXON CCT, DOLOSTONE ST, DORRIGO ST, DRYANDER ST, EXPEDITION RD, FAIRMOUNT CCT, FLAXTON DR, FLETCHER ST, FLINDERS DR, FLINT ST, GALLAGHER ST, GIRRAMAY ST, GOSSAN CCT, GRAHAM CCT, GRAMPIANS CCT, GRANITE ST, HAYDENS ST, HEXHAM ST, HORSESHOE CCT, HYDE DR, INDUSTRIAL AVE, LIMESTONE CT, LITCHFIELD ST, LOCHERN ST, LOUISE CT, MALOO CT, MARANOA DR, MARL CRES, MAZEPPA ST, MCKENNY BVD, MCKINNON DR, MICA ST, MILL ST, MILLER RD, MORETON CRES, MUDLO ST, NAMBA CCT, NAPIER CRES, NEUMANN DR, PINEVIEW RD, PROSPECT CCT, QUINZEH CREEK RD, REGENTS CRES, ROYLEN CL, SCORIA ST, SLATE ST, SOAPSTONE CRES, SOUTHWOOD CCT, SPICERS CCT, SPRINGBROOK ST, STARCKE LANE, STEELE RD, TREGOLE ST, WALLAMAN DR, WANDEARAH RD, WELFORD CCT, WELLINGTON CCT, WENTLAND AVE, WESTCOTT DR, YARRABILBA DR, YELLOWSTONE CCT"
+          "street_name": "ALLAWAH CT, ANEMBO CT, BASALT DR, COAL ST, CONIFER CT, DOLOSTONE ST, FLINT ST, GOSSAN CCT, GRANITE ST, INDUSTRIAL AVE, LIMESTONE CT, LOUISE CT, MALOO CT, MARANOA DR, MARL CRES, MCKINNON DR, MICA ST, MILLER RD, PINEVIEW RD, QUINZEH CREEK RD, SCORIA ST, SLATE ST, SOAPSTONE CRES, STEELE RD, WANDEARAH RD, YARRABILBA DR"
         },
         {
           "event_id": "INCD-995026-g",
@@ -793,63 +764,6 @@
           "street_name": "EAST BEAUMONT RD, MOUNT HUNTLEY ST, MOUNT ROBERTS ST"
         },
         {
-          "event_id": "INCD-997291-g",
-          "allocations": [
-            {
-              "lga_name": "Somerset Regional",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-997291-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Somerset Regional",
-            "postcode": "4311",
-            "suburb": "BUARABA",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-13T15:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "LEVER RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "BUARABA",
-          "street_name": "LEVER RD"
-        },
-        {
-          "event_id": "INCD-997292-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 22
-            }
-          ],
-          "details": {
-            "event": "INCD-997292-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Scenic Rim Regional",
-            "postcode": "4270",
-            "suburb": "TAMBORINE",
-            "customersAffected": "22",
-            "restoreTime": "2026-11-13T15:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "CURLEW CT",
-              "WATERFORD-TAMBORINE RD"
-            ]
-          },
-          "affected_customers": 22,
-          "suburb": "TAMBORINE",
-          "street_name": "CURLEW CT, WATERFORD-TAMBORINE RD"
-        },
-        {
           "event_id": "INCD-997304-g",
           "allocations": [
             {
@@ -881,60 +795,33 @@
           "street_name": "GREENOAKS DR, SCHOOL RD, SOUTH COOLUM RD, YANDINA-COOLUM RD"
         },
         {
-          "event_id": "INCD-997326-g",
+          "event_id": "INCD-997373-g",
           "allocations": [
             {
               "lga_name": "Somerset Regional",
               "lga_code": null,
-              "affected_customers": 1
+              "affected_customers": 7
             }
           ],
           "details": {
-            "event": "INCD-997326-g",
+            "event": "INCD-997373-g",
             "cause": "Under Investigation",
             "status": "Under Investigation",
             "council": "Somerset Regional",
-            "postcode": "4311",
-            "suburb": "BUARABA",
-            "customersAffected": "1",
+            "postcode": "4312",
+            "suburb": "ESK",
+            "customersAffected": "7",
             "restoreTime": "2026-11-13T15:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "KAVANAGH RD"
+              "BURNSIDE CT",
+              "HIGHLAND ST"
             ]
           },
-          "affected_customers": 1,
-          "suburb": "BUARABA",
-          "street_name": "KAVANAGH RD"
-        },
-        {
-          "event_id": "INCD-997370-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "INCD-997370-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Moreton Bay Regional",
-            "postcode": "4510",
-            "suburb": "CABOOLTURE",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-13T15:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BARTEL RD"
-            ]
-          },
-          "affected_customers": 2,
-          "suburb": "CABOOLTURE",
-          "street_name": "BARTEL RD"
+          "affected_customers": 7,
+          "suburb": "ESK",
+          "street_name": "BURNSIDE CT, HIGHLAND ST"
         },
         {
           "event_id": "INCD-997378-g",
@@ -963,34 +850,6 @@
           "affected_customers": 7,
           "suburb": "PARK RIDGE",
           "street_name": "PARK RIDGE RD"
-        },
-        {
-          "event_id": "INCD-997388-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-997388-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Scenic Rim Regional",
-            "postcode": "4310",
-            "suburb": "DUGANDAN",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-13T15:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "OLD MT ALFORD RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "DUGANDAN",
-          "street_name": "OLD MT ALFORD RD"
         },
         {
           "event_id": "INCD-997389-g",
@@ -1047,16 +906,44 @@
           "affected_customers": 1,
           "suburb": "BERRINBA",
           "street_name": "DEMEIO RD"
+        },
+        {
+          "event_id": "INCD-997457-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "INCD-997457-g",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
+            "council": "Logan City",
+            "postcode": "4132",
+            "suburb": "MARSDEN",
+            "customersAffected": "2",
+            "restoreTime": "2026-11-13T15:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BROWNS PLAINS RD"
+            ]
+          },
+          "affected_customers": 2,
+          "suburb": "MARSDEN",
+          "street_name": "BROWNS PLAINS RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T01:31:44Z",
+      "fetched_utc": "2026-11-13T02:01:30Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T01:30:01Z",
-        "published_customers": 395,
+        "source_updated_utc": "2026-11-13T02:00:03Z",
+        "published_customers": 480,
         "event_count": 17
       },
       "events": [
@@ -1082,6 +969,30 @@
           },
           "affected_customers": 18,
           "suburb": "SPRINGSURE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13636",
+          "allocations": [
+            {
+              "lga_name": "Banana Shire",
+              "lga_code": null,
+              "affected_customers": 159
+            }
+          ],
+          "details": {
+            "event": "26CA13636",
+            "council": "Banana Shire Council",
+            "suburb": "CAMBOON, CRACOW, LONESOME CREEK, THANGOOL, THEODORE",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 11:35",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "159",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 159,
+          "suburb": "CAMBOON, CRACOW, LONESOME CREEK, THANGOOL, THEODORE",
           "street_name": ""
         },
         {
@@ -1239,22 +1150,22 @@
             {
               "lga_name": "Western Downs Regional",
               "lga_code": null,
-              "affected_customers": 79
+              "affected_customers": 13
             }
           ],
           "details": {
             "event": "26SW14792",
             "council": "Western Downs Regional Council",
-            "suburb": "DAANDINE, JIMBOUR, KOGAN, MACALISTER, WARRA",
+            "suburb": "DAANDINE, MACALISTER",
             "type": "UNPLANNED",
             "startTime": "13/11/2026 05:49",
             "restoreTime": "13/11/2026 16:00",
-            "customersAffected": "79",
+            "customersAffected": "13",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 79,
-          "suburb": "DAANDINE, JIMBOUR, KOGAN, MACALISTER, WARRA",
+          "affected_customers": 13,
+          "suburb": "DAANDINE, MACALISTER",
           "street_name": ""
         },
         {
@@ -1306,7 +1217,7 @@
             "suburb": "GOOD NIGHT",
             "type": "UNPLANNED",
             "startTime": "12/11/2026 16:39",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "13/11/2026 17:00",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
@@ -1364,30 +1275,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26WB11266",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 4
-            }
-          ],
-          "details": {
-            "event": "26WB11266",
-            "council": "Bundaberg Regional Council",
-            "suburb": "MORGANVILLE",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 00:12",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "4",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 4,
-          "suburb": "MORGANVILLE",
-          "street_name": ""
-        },
-        {
           "event_id": "26WB11302",
           "allocations": [
             {
@@ -1441,7 +1328,7 @@
             {
               "lga_name": "North Burnett Regional",
               "lga_code": null,
-              "affected_customers": 8
+              "affected_customers": 4
             }
           ],
           "details": {
@@ -1451,11 +1338,11 @@
             "type": "UNPLANNED",
             "startTime": "13/11/2026 06:36",
             "restoreTime": "Under Investigation",
-            "customersAffected": "8",
+            "customersAffected": "4",
             "cause": "The loss of supply is due to the operating of protective equipment.",
             "status": "Crews on route"
           },
-          "affected_customers": 8,
+          "affected_customers": 4,
           "suburb": "EIDSVOLD, MONTO",
           "street_name": ""
         },
