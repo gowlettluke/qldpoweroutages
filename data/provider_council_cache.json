@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T05:01:36Z",
+      "fetched_utc": "2026-11-13T05:31:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 3:00 PM",
-        "source_updated_utc": "2026-11-13T05:00:03Z",
-        "published_customers": 5745,
+        "source_updated": "13 November 2026 3:30 PM",
+        "source_updated_utc": "2026-11-13T05:30:02Z",
+        "published_customers": 5659,
         "event_count": 29
       },
       "events": [
@@ -46,7 +46,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 541
+              "affected_customers": 502
             }
           ],
           "details": {
@@ -64,9 +64,9 @@
               "COPLICK CRES"
             ]
           },
-          "affected_customers": 541,
+          "affected_customers": 502,
           "suburb": "BUCCAN, LOGAN VILLAGE",
-          "street_name": "BOOLONG CT, BUENA VISTA DR, BURDEKIN CT, CAMEL CT, CANAIPA CT, CHALLEN RD, CONDAMINE DR, COOINGIE VIEW RD, COPLICK CRES, DAINTREE DR, DIAMENTINA DR, DUKES CT, ELLEN CT, FORBES CT, FRYAR RD, HAMILTON RD, HINCHCLIFFE RD, INSPIRATION DR, KENNEDY CT, LATIMER RD, LAVELLE DR, LOG CREEK RD, MILLER RD, MINEHAN RD, MURRAY RD, QUINZEH CREEK RD, STANFORD CT, SWANBOROUGH RD, TOMOHON HEIGHTS CL, TYSON CT, WATERFORD-TAMBORINE RD"
+          "street_name": "BOOLONG CT, BUENA VISTA DR, BURDEKIN CT, CAMEL CT, CANAIPA CT, CHALLEN RD, CONDAMINE DR, COOINGIE VIEW RD, COPLICK CRES, DAINTREE DR, DIAMENTINA DR, DUKES CT, ELLEN CT, FORBES CT, FRYAR RD, HAMILTON RD, HINCHCLIFFE RD, INSPIRATION DR, KENNEDY CT, LATIMER RD, LAVELLE DR, MILLER RD, MINEHAN RD, MURRAY RD, QUINZEH CREEK RD, STANFORD CT, SWANBOROUGH RD, TOMOHON HEIGHTS CL, TYSON CT"
         },
         {
           "event_id": "INCD-995021-g",
@@ -218,7 +218,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 95
+              "affected_customers": 39
             }
           ],
           "details": {
@@ -228,24 +228,20 @@
             "council": "Logan City",
             "postcode": "4125",
             "suburb": "PARK RIDGE SOUTH",
-            "customersAffected": "95",
+            "customersAffected": "39",
             "restoreTime": "2026-11-13T18:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "BATAVIA CT",
-              "BOTANY CT",
-              "CLANCY RD",
               "GARDENIA CT",
               "GRANGER RD",
-              "MACKUNDA CT",
               "POLLEN CT",
               "SYLVAN RD"
             ]
           },
-          "affected_customers": 95,
+          "affected_customers": 39,
           "suburb": "PARK RIDGE SOUTH",
-          "street_name": "BATAVIA CT, BOTANY CT, CLANCY RD, GARDENIA CT, GRANGER RD, MACKUNDA CT, POLLEN CT, SYLVAN RD"
+          "street_name": "GARDENIA CT, GRANGER RD, POLLEN CT, SYLVAN RD"
         },
         {
           "event_id": "INCD-995615-g",
@@ -348,35 +344,6 @@
           "affected_customers": 452,
           "suburb": "CHAMBERS FLAT, LOGAN RESERVE, PARK RIDGE, PARK RIDGE SOUTH",
           "street_name": "ALEXANDER CT, ARCHER CT, BARBOSSA ST, BEAUMONT RD, BEECH ST, BELVEDERE CT, BIRCHWOOD ST, CARNARVON CT, CERATONIA ST, CHAMBERS FLAT RD, COOLAROO CT, DANDARAGA CT, EAST BEAUMONT RD, ELON ST, FLESSER RD, GARRICK ST, HANA ST, HIGHGROVE CL, HOLLOWAY RD, HUBNER RD, KOPLICK RD, LAKEFIELD CT, MCPHERSON RD, ROSIA RD, ROSSMORE RD, RUNDALUA RD, SHEILS RD, SPRINGFIELDS RD, SYLVAN RD, VIRGIL RD"
-        },
-        {
-          "event_id": "INCD-995919-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 11
-            }
-          ],
-          "details": {
-            "event": "INCD-995919-g",
-            "cause": "Powerlines down",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4133",
-            "suburb": "LOGAN RESERVE",
-            "customersAffected": "11",
-            "restoreTime": "2026-11-13T18:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "HENDERSON RD",
-              "LOGANVIEW RD"
-            ]
-          },
-          "affected_customers": 11,
-          "suburb": "LOGAN RESERVE",
-          "street_name": "HENDERSON RD, LOGANVIEW RD"
         },
         {
           "event_id": "INCD-995999-g",
@@ -957,6 +924,34 @@
           "affected_customers": 5,
           "suburb": "ESK, REDBANK CREEK",
           "street_name": "ESK HAMPTON RD, HAMPTON RD"
+        },
+        {
+          "event_id": "INCD-997637-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 20
+            }
+          ],
+          "details": {
+            "event": "INCD-997637-g",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
+            "council": "Logan City",
+            "postcode": "4133",
+            "suburb": "LOGAN RESERVE",
+            "customersAffected": "20",
+            "restoreTime": "2026-11-13T20:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "MEADOW RD"
+            ]
+          },
+          "affected_customers": 20,
+          "suburb": "LOGAN RESERVE",
+          "street_name": "MEADOW RD"
         }
       ]
     },
