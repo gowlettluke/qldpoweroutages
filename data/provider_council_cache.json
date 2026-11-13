@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T12:16:01Z",
+      "fetched_utc": "2026-11-13T12:31:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 10:00 PM",
-        "source_updated_utc": "2026-11-13T12:00:02Z",
-        "published_customers": 1010,
-        "event_count": 17
+        "source_updated": "13 November 2026 10:15 PM",
+        "source_updated_utc": "2026-11-13T12:15:02Z",
+        "published_customers": 1035,
+        "event_count": 19
       },
       "events": [
         {
@@ -340,6 +340,34 @@
           "street_name": "BROWNS PLAINS RD"
         },
         {
+          "event_id": "INCD-997494-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 7
+            }
+          ],
+          "details": {
+            "event": "INCD-997494-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4207",
+            "suburb": "BUCCAN",
+            "customersAffected": "6",
+            "restoreTime": "2026-11-13T22:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "STEGEMANN RD"
+            ]
+          },
+          "affected_customers": 7,
+          "suburb": "BUCCAN, LOGAN VILLAGE",
+          "street_name": "STEGEMANN RD"
+        },
+        {
           "event_id": "INCD-997780-g",
           "allocations": [
             {
@@ -520,15 +548,44 @@
           "affected_customers": 20,
           "suburb": "HATTON VALE, KENSINGTON GROVE, REGENCY DOWNS",
           "street_name": "THALLON RD"
+        },
+        {
+          "event_id": "INCD-997881-g",
+          "allocations": [
+            {
+              "lga_name": "Lockyer Valley Regional",
+              "lga_code": null,
+              "affected_customers": 18
+            }
+          ],
+          "details": {
+            "event": "INCD-997881-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Lockyer Valley Regional",
+            "postcode": "4342",
+            "suburb": "GLENORE GROVE",
+            "customersAffected": "18",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "JAHN DR",
+              "RAYMONT DR"
+            ]
+          },
+          "affected_customers": 18,
+          "suburb": "GLENORE GROVE",
+          "street_name": "JAHN DR, RAYMONT DR"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T12:16:04Z",
+      "fetched_utc": "2026-11-13T12:31:16Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T12:10:00Z",
+        "source_updated_utc": "2026-11-13T12:30:00Z",
         "published_customers": 1454,
         "event_count": 22
       },
@@ -623,7 +680,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "35",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 35,
           "suburb": "JULIA CREEK",
@@ -671,7 +728,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "5",
             "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 5,
           "suburb": "QUILPIE",
@@ -887,7 +944,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "23",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 23,
           "suburb": "JANDOWAE, JIMBOUR",
@@ -935,7 +992,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "13",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 13,
           "suburb": "HEADINGTON HILL",
@@ -956,10 +1013,10 @@
             "suburb": "NOBBY",
             "type": "UNPLANNED",
             "startTime": "13/11/2026 20:16",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "14/11/2026 16:00",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 3,
           "suburb": "NOBBY",
