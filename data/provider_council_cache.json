@@ -2,55 +2,23 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T02:46:11Z",
+      "fetched_utc": "2026-11-13T03:16:32Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 12:30 PM",
-        "source_updated_utc": "2026-11-13T02:30:02Z",
-        "published_customers": 5100,
-        "event_count": 32
+        "source_updated": "13 November 2026 1:15 PM",
+        "source_updated_utc": "2026-11-13T03:15:02Z",
+        "published_customers": 5209,
+        "event_count": 30
       },
       "events": [
-        {
-          "event_id": "INCD-10092-h",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 62
-            }
-          ],
-          "details": {
-            "event": "INCD-10092-h",
-            "cause": "Trees on powerlines",
-            "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4118",
-            "suburb": "BROWNS PLAINS",
-            "customersAffected": "62",
-            "restoreTime": "2026-11-13T15:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "FORESTGLEN CRES",
-              "HARMONY CT",
-              "PINE CRES",
-              "STRAIGHT DR",
-              "TIMBERTOP AVE"
-            ]
-          },
-          "affected_customers": 62,
-          "suburb": "BROWNS PLAINS",
-          "street_name": "FORESTGLEN CRES, HARMONY CT, PINE CRES, STRAIGHT DR, TIMBERTOP AVE"
-        },
         {
           "event_id": "INCD-10093-h",
           "allocations": [
             {
               "lga_name": "Scenic Rim Regional",
               "lga_code": null,
-              "affected_customers": 93
+              "affected_customers": 32
             }
           ],
           "details": {
@@ -60,21 +28,18 @@
             "council": "Scenic Rim Regional",
             "postcode": "4272",
             "suburb": "TAMBORINE MOUNTAIN",
-            "customersAffected": "93",
+            "customersAffected": "32",
             "restoreTime": "2026-11-13T15:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "BATEKE RD",
-              "BENOWA ST",
-              "PROSPECT ST",
-              "WILSON RD",
-              "YOUNG ST"
+              "PROSPECT ST"
             ]
           },
-          "affected_customers": 93,
+          "affected_customers": 32,
           "suburb": "TAMBORINE MOUNTAIN",
-          "street_name": "BATEKE RD, BENOWA ST, PROSPECT ST, WILSON RD, YOUNG ST"
+          "street_name": "BATEKE RD, PROSPECT ST"
         },
         {
           "event_id": "INCD-995008-g",
@@ -793,64 +758,6 @@
           "street_name": "GREENOAKS DR, SCHOOL RD, SOUTH COOLUM RD, YANDINA-COOLUM RD"
         },
         {
-          "event_id": "INCD-997331-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 8
-            }
-          ],
-          "details": {
-            "event": "INCD-997331-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4133",
-            "suburb": "LOGAN RESERVE",
-            "customersAffected": "3",
-            "restoreTime": "2026-11-13T15:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "KILLARA BVD",
-              "LIVINGSTONE ST"
-            ]
-          },
-          "affected_customers": 8,
-          "suburb": "LOGAN RESERVE, PARK RIDGE",
-          "street_name": "ALEXIS PL, BUMSTEAD RD, CHAMBERS FLAT RD, KILLARA BVD, LIVINGSTONE ST"
-        },
-        {
-          "event_id": "INCD-997373-g",
-          "allocations": [
-            {
-              "lga_name": "Somerset Regional",
-              "lga_code": null,
-              "affected_customers": 7
-            }
-          ],
-          "details": {
-            "event": "INCD-997373-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Somerset Regional",
-            "postcode": "4312",
-            "suburb": "ESK",
-            "customersAffected": "7",
-            "restoreTime": "2026-11-13T15:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BURNSIDE CT",
-              "HIGHLAND ST"
-            ]
-          },
-          "affected_customers": 7,
-          "suburb": "ESK",
-          "street_name": "BURNSIDE CT, HIGHLAND ST"
-        },
-        {
           "event_id": "INCD-997378-g",
           "allocations": [
             {
@@ -923,7 +830,7 @@
             "postcode": "4311",
             "suburb": "ATKINSONS DAM",
             "customersAffected": "1",
-            "restoreTime": "2026-11-13T14:30:00+10:00",
+            "restoreTime": "2026-11-13T15:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -989,16 +896,47 @@
           "affected_customers": 2,
           "suburb": "MARSDEN",
           "street_name": "BROWNS PLAINS RD"
+        },
+        {
+          "event_id": "INCD-997518-g",
+          "allocations": [
+            {
+              "lga_name": "Scenic Rim Regional",
+              "lga_code": null,
+              "affected_customers": 247
+            }
+          ],
+          "details": {
+            "event": "INCD-997518-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Scenic Rim Regional",
+            "postcode": "4310",
+            "suburb": "ANTHONY",
+            "customersAffected": "38",
+            "restoreTime": "2026-11-13T15:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ANTHONY RD",
+              "FERRAR RD",
+              "MILBONG RD",
+              "ROADVALE-HARRISVILLE RD"
+            ]
+          },
+          "affected_customers": 247,
+          "suburb": "ANTHONY, BLANTYRE, HARRISVILLE, LIMESTONE RIDGES, MILBONG, MILORA, PEAK CROSSING, ROADVALE, UNDULLAH, WASHPOOL, WOOLOOMAN",
+          "street_name": "ANTHONY RD, BECKWITH RD, CUMMINGS RD, FAULKNER RD, FERRAR RD, FORSYTHS RD, HANSEN RD, IPSWICH BOONAH RD, JOHNSON RD, KOWSKI RD, LE GRAND RD, LE GRANDE RD, LIMESTONE RIDGES RD, MILBONG RD, PROFKE RD, ROADVALE-HARRISVILLE RD, SCHOSSOW RD, WASHPOOL RD, WENZEL RD, WILEY RD, WOODFORTH RD, WOOLOOMAN RD, ZINGELMANN RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T03:01:43Z",
+      "fetched_utc": "2026-11-13T03:16:35Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T03:00:18Z",
-        "published_customers": 330,
+        "source_updated_utc": "2026-11-13T03:15:00Z",
+        "published_customers": 537,
         "event_count": 19
       },
       "events": [
@@ -1032,22 +970,22 @@
             {
               "lga_name": "Banana Shire",
               "lga_code": null,
-              "affected_customers": 2
+              "affected_customers": 159
             }
           ],
           "details": {
             "event": "26CA13636",
             "council": "Banana Shire Council",
-            "suburb": "LONESOME CREEK",
+            "suburb": "CAMBOON, CRACOW, LONESOME CREEK, THANGOOL, THEODORE",
             "type": "UNPLANNED",
             "startTime": "13/11/2026 11:35",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "2",
+            "restoreTime": "13/11/2026 16:00",
+            "customersAffected": "159",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 2,
-          "suburb": "LONESOME CREEK",
+          "affected_customers": 159,
+          "suburb": "CAMBOON, CRACOW, LONESOME CREEK, THANGOOL, THEODORE",
           "street_name": ""
         },
         {
@@ -1145,7 +1083,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "2",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 7,
           "suburb": "NORMANTON",
@@ -1197,6 +1135,30 @@
           },
           "affected_customers": 3,
           "suburb": "CLONCURRY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ14109",
+          "allocations": [
+            {
+              "lga_name": "Townsville City",
+              "lga_code": null,
+              "affected_customers": 55
+            }
+          ],
+          "details": {
+            "event": "26NQ14109",
+            "council": "Townsville City Council",
+            "suburb": "MYSTERTON, PIMLICO",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 11:47",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "55",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 55,
+          "suburb": "MYSTERTON, PIMLICO",
           "street_name": ""
         },
         {
@@ -1279,30 +1241,6 @@
           },
           "affected_customers": 4,
           "suburb": "BOOYAL, GOOD NIGHT",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB11190",
-          "allocations": [
-            {
-              "lga_name": "Fraser Coast Regional",
-              "lga_code": null,
-              "affected_customers": 5
-            }
-          ],
-          "details": {
-            "event": "26WB11190",
-            "council": "Fraser Coast Regional Council",
-            "suburb": "BOOMPA",
-            "type": "UNPLANNED",
-            "startTime": "12/11/2026 17:11",
-            "restoreTime": "13/11/2026 18:00",
-            "customersAffected": "5",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 5,
-          "suburb": "BOOMPA",
           "street_name": ""
         },
         {

@@ -1,50 +1,47 @@
 {
-  "generated_utc": "2026-11-13T03:01:24Z",
-  "generated_aest": "2026-11-13T13:01:24+10:00",
+  "generated_utc": "2026-11-13T03:16:13Z",
+  "generated_aest": "2026-11-13T13:16:13+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 51,
+  "current_outage_records": 49,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 441,
-  "current_records_after_outage_type_filter": 54,
-  "current_records_dropped_planned_or_unknown": 387,
+  "current_records_before_outage_type_filter": 434,
+  "current_records_after_outage_type_filter": 53,
+  "current_records_dropped_planned_or_unknown": 381,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {
-    "Energex": "Update delayed; using verified provider data from 2026-11-13T02:30:02Z. Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "13 November 2026 12:30 PM",
-      "source_updated_utc": "2026-11-13T02:30:02Z",
-      "published_customers": 5100,
-      "event_count": 32,
-      "fetched_utc": "2026-11-13T02:46:11Z",
-      "collection_error": "Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "source_updated": "13 November 2026 1:15 PM",
+      "source_updated_utc": "2026-11-13T03:15:02Z",
+      "published_customers": 5209,
+      "event_count": 30,
+      "fetched_utc": "2026-11-13T03:16:32Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T03:00:18Z",
-      "published_customers": 330,
+      "source_updated_utc": "2026-11-13T03:15:00Z",
+      "published_customers": 537,
       "event_count": 19,
-      "fetched_utc": "2026-11-13T03:01:43Z"
+      "fetched_utc": "2026-11-13T03:16:35Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-13T03:01:24Z",
+    "snapshot_utc": "2026-11-13T03:16:13Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T02:46:11Z",
+      "fetched_utc": "2026-11-13T03:16:32Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-13T02:30:02Z",
-      "retained": true,
-      "total_customers": 5100,
+      "source_updated_utc": "2026-11-13T03:15:02Z",
+      "retained": false,
+      "total_customers": 5209,
       "rows": [
         {
           "lga_name": "Brisbane City",
@@ -60,15 +57,15 @@
         },
         {
           "lga_name": "Logan City",
-          "affected_customers": 4887
+          "affected_customers": 4817
         },
         {
           "lga_name": "Scenic Rim Regional",
-          "affected_customers": 109
+          "affected_customers": 295
         },
         {
           "lga_name": "Somerset Regional",
-          "affected_customers": 8
+          "affected_customers": 1
         },
         {
           "lga_name": "Sunshine Coast Regional",
@@ -78,17 +75,17 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T03:01:43Z",
+      "fetched_utc": "2026-11-13T03:16:35Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T03:00:18Z",
+      "source_updated_utc": "2026-11-13T03:15:00Z",
       "retained": false,
-      "total_customers": 330,
+      "total_customers": 537,
       "rows": [
         {
           "lga_name": "Banana Shire",
-          "affected_customers": 2
+          "affected_customers": 159
         },
         {
           "lga_name": "Bundaberg Regional",
@@ -124,7 +121,7 @@
         },
         {
           "lga_name": "Fraser Coast Regional",
-          "affected_customers": 23
+          "affected_customers": 18
         },
         {
           "lga_name": "Gympie Regional",
@@ -143,6 +140,10 @@
           "affected_customers": 9
         },
         {
+          "lga_name": "Townsville City",
+          "affected_customers": 55
+        },
+        {
           "lga_name": "Western Downs Regional",
           "affected_customers": 13
         }
@@ -150,18 +151,18 @@
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 32,
+  "current_energex_records": 30,
   "current_ergon_records": 19,
-  "current_essential_records_fetched": 23,
-  "current_energex_records_fetched": 150,
-  "current_ergon_records_fetched": 261,
+  "current_essential_records_fetched": 19,
+  "current_energex_records_fetched": 149,
+  "current_ergon_records_fetched": 260,
   "current_essential_records_after_qld_polygon_prefilter": 0,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 3,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 4,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 12144,
-  "lga_totals_rows_48h": 8491,
-  "lga_totals_latest_rows": 44,
+  "snapshot_rows_48h": 12172,
+  "lga_totals_rows_48h": 8503,
+  "lga_totals_latest_rows": 46,
   "lga_cumulative_rows": 110,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
