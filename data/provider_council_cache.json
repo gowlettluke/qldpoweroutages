@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T21:31:33Z",
+      "fetched_utc": "2026-11-13T21:46:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 7:30 AM",
-        "source_updated_utc": "2026-11-13T21:30:02Z",
+        "source_updated": "14 November 2026 7:45 AM",
+        "source_updated_utc": "2026-11-13T21:45:02Z",
         "published_customers": 980,
         "event_count": 12
       },
@@ -202,7 +202,7 @@
             "postcode": "4133",
             "suburb": "CHAMBERS FLAT",
             "customersAffected": "12",
-            "restoreTime": "2026-11-14T08:00:00+10:00",
+            "restoreTime": "2026-11-14T08:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -370,13 +370,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T21:31:36Z",
+      "fetched_utc": "2026-11-13T21:46:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T21:30:26Z",
-        "published_customers": 3742,
-        "event_count": 37
+        "source_updated_utc": "2026-11-13T21:45:01Z",
+        "published_customers": 3756,
+        "event_count": 35
       },
       "events": [
         {
@@ -469,7 +469,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "484",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 484,
           "suburb": "CAPELLA, EMERALD, GORDONSTONE",
@@ -493,7 +493,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "615",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 615,
           "suburb": "EMERALD",
@@ -522,34 +522,39 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "32",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 41,
           "suburb": "BLACKWATER, CAPELLA, COMET, LILYVALE, MACKENZIE RIVER",
           "street_name": ""
         },
         {
-          "event_id": "26CA13693",
+          "event_id": "26CA13695",
           "allocations": [
             {
-              "lga_name": "Central Highlands Regional",
+              "lga_name": "Barcaldine Regional",
               "lga_code": null,
-              "affected_customers": 4
+              "affected_customers": 16
+            },
+            {
+              "lga_name": "Blackall Tambo Regional",
+              "lga_code": null,
+              "affected_customers": 5
             }
           ],
           "details": {
-            "event": "26CA13693",
-            "council": "Central Highlands Regional Council",
-            "suburb": "SPRINGSURE",
+            "event": "26CA13695",
+            "council": "Barcaldine Regional Council",
+            "suburb": "BARCALDINE",
             "type": "UNPLANNED",
-            "startTime": "14/11/2026 04:05",
+            "startTime": "14/11/2026 06:33",
             "restoreTime": "Under Investigation",
-            "customersAffected": "4",
+            "customersAffected": "16",
             "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Outage reported"
           },
-          "affected_customers": 4,
-          "suburb": "SPRINGSURE",
+          "affected_customers": 21,
+          "suburb": "BARCALDINE",
           "street_name": ""
         },
         {
@@ -574,30 +579,6 @@
           },
           "affected_customers": 151,
           "suburb": "CAIRNS, CAIRNS CITY",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN11290",
-          "allocations": [
-            {
-              "lga_name": "Cassowary Coast Regional",
-              "lga_code": null,
-              "affected_customers": 32
-            }
-          ],
-          "details": {
-            "event": "26FN11290",
-            "council": "Cassowary Coast Regional Council",
-            "suburb": "TULLY",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 06:07",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "32",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 32,
-          "suburb": "TULLY",
           "street_name": ""
         },
         {
@@ -1072,54 +1053,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW15023",
-          "allocations": [
-            {
-              "lga_name": "Southern Downs Regional",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "26SW15023",
-            "council": "Southern Downs Regional Council",
-            "suburb": "ALLORA",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 06:04",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "3",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 3,
-          "suburb": "ALLORA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW15024",
-          "allocations": [
-            {
-              "lga_name": "Southern Downs Regional",
-              "lga_code": null,
-              "affected_customers": 11
-            }
-          ],
-          "details": {
-            "event": "26SW15024",
-            "council": "Southern Downs Regional Council",
-            "suburb": "ALLORA",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 05:10",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "11",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 11,
-          "suburb": "ALLORA",
-          "street_name": ""
-        },
-        {
           "event_id": "26SW15025",
           "allocations": [
             {
@@ -1165,6 +1098,30 @@
           },
           "affected_customers": 29,
           "suburb": "AUBURN, CHINCHILLA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW15028",
+          "allocations": [
+            {
+              "lga_name": "Southern Downs Regional",
+              "lga_code": null,
+              "affected_customers": 43
+            }
+          ],
+          "details": {
+            "event": "26SW15028",
+            "council": "Southern Downs Regional Council",
+            "suburb": "ALLORA, TABLETOP",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 05:31",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "43",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 43,
+          "suburb": "ALLORA, TABLETOP",
           "street_name": ""
         },
         {
