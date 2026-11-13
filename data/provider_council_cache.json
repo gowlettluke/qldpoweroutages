@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T07:46:21Z",
+      "fetched_utc": "2026-11-13T08:16:02Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 5:45 PM",
-        "source_updated_utc": "2026-11-13T07:45:02Z",
-        "published_customers": 2033,
-        "event_count": 23
+        "source_updated": "13 November 2026 6:00 PM",
+        "source_updated_utc": "2026-11-13T08:00:03Z",
+        "published_customers": 2323,
+        "event_count": 24
       },
       "events": [
         {
@@ -18,7 +18,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 502
+              "affected_customers": 527
             }
           ],
           "details": {
@@ -28,15 +28,16 @@
             "council": "Logan City",
             "postcode": "4207",
             "suburb": "BUCCAN",
-            "customersAffected": "14",
+            "customersAffected": "15",
             "restoreTime": "2026-11-14T16:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "COPLICK CRES"
+              "COPLICK CRES",
+              "LATIMER RD"
             ]
           },
-          "affected_customers": 502,
+          "affected_customers": 527,
           "suburb": "BUCCAN, LOGAN VILLAGE",
           "street_name": "BOOLONG CT, BUENA VISTA DR, BURDEKIN CT, CAMEL CT, CANAIPA CT, CHALLEN RD, CONDAMINE DR, COOINGIE VIEW RD, COPLICK CRES, DAINTREE DR, DIAMENTINA DR, DUKES CT, ELLEN CT, FORBES CT, FRYAR RD, HAMILTON RD, HINCHCLIFFE RD, INSPIRATION DR, KENNEDY CT, LATIMER RD, LAVELLE DR, MILLER RD, MINEHAN RD, MURRAY RD, QUINZEH CREEK RD, STANFORD CT, SWANBOROUGH RD, TOMOHON HEIGHTS CL, TYSON CT"
         },
@@ -717,17 +718,53 @@
           "affected_customers": 22,
           "suburb": "FOREST GLEN",
           "street_name": "GARDENIA PL, NUNKERI CT, PARSONS RD"
+        },
+        {
+          "event_id": "INCD-997760-g",
+          "allocations": [
+            {
+              "lga_name": "Scenic Rim Regional",
+              "lga_code": null,
+              "affected_customers": 265
+            }
+          ],
+          "details": {
+            "event": "INCD-997760-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Scenic Rim Regional",
+            "postcode": "4309",
+            "suburb": "ARATULA",
+            "customersAffected": "158",
+            "restoreTime": "2026-11-13T20:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ADAM DR",
+              "CARTER RD",
+              "CUNNINGHAM HWY",
+              "DUNCAN DR",
+              "EAST STALLMAN RD",
+              "FRAZERVIEW RD",
+              "LUCA CT",
+              "TAROME RD",
+              "TOOHILL RD"
+            ]
+          },
+          "affected_customers": 265,
+          "suburb": "ARATULA, FRAZERVIEW, MOORANG, MORWINCHA, TAROME",
+          "street_name": "ADAM DR, CARTER RD, CUNNINGHAM HWY, DUNCAN DR, DWYER RD, EAST STALLMAN RD, FALKENHAGEN RD, FAULKENHAGEN RD, FRAZERVIEW RD, HINRICHSEN RD, LUCA CT, MCGUIRES RD, NIEBLING RD, RYAN RD, SIMMONDS RD, TAROME RD, TOOHILL RD, WEST STALLMAN RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T08:01:44Z",
+      "fetched_utc": "2026-11-13T08:16:05Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T08:00:01Z",
-        "published_customers": 1219,
-        "event_count": 13
+        "source_updated_utc": "2026-11-13T08:05:13Z",
+        "published_customers": 1211,
+        "event_count": 12
       },
       "events": [
         {
@@ -872,30 +909,6 @@
           },
           "affected_customers": 14,
           "suburb": "CUNNAMULLA, EULO, WYANDRA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14885",
-          "allocations": [
-            {
-              "lga_name": "Southern Downs Regional",
-              "lga_code": null,
-              "affected_customers": 8
-            }
-          ],
-          "details": {
-            "event": "26SW14885",
-            "council": "Southern Downs Regional Council",
-            "suburb": "EMU VALE",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 16:26",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "8",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 8,
-          "suburb": "EMU VALE",
           "street_name": ""
         },
         {
