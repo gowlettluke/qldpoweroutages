@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-13T08:46:15Z",
-  "generated_aest": "2026-11-13T18:46:15+10:00",
+  "generated_utc": "2026-11-13T09:01:31Z",
+  "generated_aest": "2026-11-13T19:01:31+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 39,
+  "current_outage_records": 40,
   "outage_type_filter": "unplanned_only",
   "current_records_before_outage_type_filter": 390,
-  "current_records_after_outage_type_filter": 47,
-  "current_records_dropped_planned_or_unknown": 343,
+  "current_records_after_outage_type_filter": 45,
+  "current_records_dropped_planned_or_unknown": 345,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
@@ -15,33 +15,33 @@
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "13 November 2026 6:45 PM",
-      "source_updated_utc": "2026-11-13T08:45:02Z",
-      "published_customers": 1729,
+      "source_updated": "13 November 2026 7:00 PM",
+      "source_updated_utc": "2026-11-13T09:00:04Z",
+      "published_customers": 1708,
       "event_count": 24,
-      "fetched_utc": "2026-11-13T08:46:22Z"
+      "fetched_utc": "2026-11-13T09:01:38Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T08:45:01Z",
-      "published_customers": 2433,
-      "event_count": 12,
-      "fetched_utc": "2026-11-13T08:46:24Z"
+      "source_updated_utc": "2026-11-13T09:00:01Z",
+      "published_customers": 2605,
+      "event_count": 13,
+      "fetched_utc": "2026-11-13T09:01:42Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-13T08:46:15Z",
+    "snapshot_utc": "2026-11-13T09:01:31Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T08:46:22Z",
+      "fetched_utc": "2026-11-13T09:01:38Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-13T08:45:02Z",
+      "source_updated_utc": "2026-11-13T09:00:04Z",
       "retained": false,
-      "total_customers": 1729,
+      "total_customers": 1708,
       "rows": [
         {
           "lga_name": "Brisbane City",
@@ -57,19 +57,19 @@
         },
         {
           "lga_name": "Sunshine Coast Regional",
-          "affected_customers": 168
+          "affected_customers": 147
         }
       ]
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T08:46:24Z",
+      "fetched_utc": "2026-11-13T09:01:42Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T08:45:01Z",
+      "source_updated_utc": "2026-11-13T09:00:01Z",
       "retained": false,
-      "total_customers": 2433,
+      "total_customers": 2605,
       "rows": [
         {
           "lga_name": "Cairns Regional",
@@ -105,7 +105,7 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 54
+          "affected_customers": 226
         },
         {
           "lga_name": "Western Downs Regional",
@@ -116,16 +116,16 @@
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 24,
-  "current_ergon_records": 12,
-  "current_essential_records_fetched": 12,
-  "current_energex_records_fetched": 140,
-  "current_ergon_records_fetched": 234,
+  "current_ergon_records": 13,
+  "current_essential_records_fetched": 9,
+  "current_energex_records_fetched": 142,
+  "current_ergon_records_fetched": 235,
   "current_essential_records_after_qld_polygon_prefilter": 3,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 8,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 5,
   "current_essential_records_included_qld": 3,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 12094,
-  "lga_totals_rows_48h": 8471,
+  "snapshot_rows_48h": 12048,
+  "lga_totals_rows_48h": 8444,
   "lga_totals_latest_rows": 30,
   "lga_cumulative_rows": 104,
   "outputs": {

@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T08:46:22Z",
+      "fetched_utc": "2026-11-13T09:01:38Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 6:45 PM",
-        "source_updated_utc": "2026-11-13T08:45:02Z",
-        "published_customers": 1729,
+        "source_updated": "13 November 2026 7:00 PM",
+        "source_updated_utc": "2026-11-13T09:00:04Z",
+        "published_customers": 1708,
         "event_count": 24
       },
       "events": [
@@ -619,39 +619,6 @@
           "street_name": "PARK RIDGE RD"
         },
         {
-          "event_id": "INCD-997690-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 76
-            }
-          ],
-          "details": {
-            "event": "INCD-997690-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Sunshine Coast",
-            "postcode": "4556",
-            "suburb": "BUDERIM",
-            "customersAffected": "76",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BRONZEWING AVE",
-              "ILIAD AVE",
-              "LYREBIRD ST",
-              "MOOLOOLABA RD",
-              "WAGTAIL CL",
-              "WREN CRES"
-            ]
-          },
-          "affected_customers": 76,
-          "suburb": "BUDERIM",
-          "street_name": "BRONZEWING AVE, ILIAD AVE, LYREBIRD ST, MOOLOOLABA RD, WAGTAIL CL, WREN CRES"
-        },
-        {
           "event_id": "INCD-997709-g",
           "allocations": [
             {
@@ -746,17 +713,48 @@
           "affected_customers": 15,
           "suburb": "PARK RIDGE",
           "street_name": "BIRCHWOOD ST, EAST BEAUMONT RD, GARRICK ST"
+        },
+        {
+          "event_id": "INCD-997788-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 55
+            }
+          ],
+          "details": {
+            "event": "INCD-997788-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Sunshine Coast",
+            "postcode": "4573",
+            "suburb": "COOLUM BEACH",
+            "customersAffected": "55",
+            "restoreTime": "2026-11-13T21:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "GREENOAKS DR",
+              "SCHOOL RD",
+              "SOUTH COOLUM RD",
+              "YANDINA-COOLUM RD"
+            ]
+          },
+          "affected_customers": 55,
+          "suburb": "COOLUM BEACH",
+          "street_name": "GREENOAKS DR, SCHOOL RD, SOUTH COOLUM RD, YANDINA-COOLUM RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T08:46:24Z",
+      "fetched_utc": "2026-11-13T09:01:42Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T08:45:01Z",
-        "published_customers": 2433,
-        "event_count": 12
+        "source_updated_utc": "2026-11-13T09:00:01Z",
+        "published_customers": 2605,
+        "event_count": 13
       },
       "events": [
         {
@@ -897,7 +895,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "42",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 42,
           "suburb": "DRILLHAM, DRILLHAM SOUTH, MILES",
@@ -978,6 +976,30 @@
           },
           "affected_customers": 2177,
           "suburb": "ALLORA, BERAT, BONY MOUNTAIN, CLIFTON, CLINTONVALE, DEUCHAR, ELLANGOWAN, ELLINTHORP, ELPHINSTONE, FOREST PLAIN, FOREST SPRINGS, FREESTONE, GLADFIELD, GLENGALLAN, GOOMBURRA, HENDON, LEYBURN, MARYVALE, MASSIE, MOUNT MARSHALL, OLD TALGAI, PRATTEN, SANDY CAMP, SOUTH ALLORA, SPRING CREEK, TABLETOP, TALGAI, TALGAI WEST, TREGONY, UPPER SPRING CREEK, VICTORIA HILL, WILLOWVALE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14933",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 172
+            }
+          ],
+          "details": {
+            "event": "26SW14933",
+            "council": "Toowoomba Regional Council",
+            "suburb": "BACK PLAINS, CLIFTON, ELLANGOWAN, ELPHINSTONE, FELTON SOUTH, LEYBURN, MOUNT MOLAR, NORTH BRANCH, RYEFORD, SANDY CAMP",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 18:44",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "172",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 172,
+          "suburb": "BACK PLAINS, CLIFTON, ELLANGOWAN, ELPHINSTONE, FELTON SOUTH, LEYBURN, MOUNT MOLAR, NORTH BRANCH, RYEFORD, SANDY CAMP",
           "street_name": ""
         },
         {
