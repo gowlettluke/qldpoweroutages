@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T10:31:29Z",
+      "fetched_utc": "2026-11-13T11:01:37Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 8:30 PM",
-        "source_updated_utc": "2026-11-13T10:30:02Z",
-        "published_customers": 2356,
-        "event_count": 16
+        "source_updated": "13 November 2026 9:00 PM",
+        "source_updated_utc": "2026-11-13T11:00:02Z",
+        "published_customers": 902,
+        "event_count": 14
       },
       "events": [
         {
@@ -156,7 +156,7 @@
             "postcode": "4127",
             "suburb": "DAISY HILL",
             "customersAffected": "1",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -173,7 +173,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 215
+              "affected_customers": 90
             }
           ],
           "details": {
@@ -183,31 +183,23 @@
             "council": "Logan City",
             "postcode": "4133",
             "suburb": "CHAMBERS FLAT",
-            "customersAffected": "187",
+            "customersAffected": "75",
             "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "ARCHER CT",
-              "BELVEDERE CT",
               "CARNARVON CT",
-              "CHAMBERS FLAT RD",
-              "COOLAROO CT",
               "DANDARAGA CT",
               "FLESSER RD",
-              "HIGHGROVE CL",
-              "HOLLOWAY RD",
-              "KOPLICK RD",
-              "LAKEFIELD CT",
               "ROSSMORE RD",
               "RUNDALUA RD",
-              "SHEILS RD",
-              "SPRINGFIELDS RD"
+              "SHEILS RD"
             ]
           },
-          "affected_customers": 215,
-          "suburb": "CHAMBERS FLAT, LOGAN RESERVE, PARK RIDGE, PARK RIDGE SOUTH",
-          "street_name": "ARCHER CT, BEAUMONT RD, BELVEDERE CT, CARNARVON CT, CHAMBERS FLAT RD, COOLAROO CT, DANDARAGA CT, FLESSER RD, HIGHGROVE CL, HOLLOWAY RD, KOPLICK RD, LAKEFIELD CT, ROSSMORE RD, RUNDALUA RD, SHEILS RD, SPRINGFIELDS RD, VIRGIL RD"
+          "affected_customers": 90,
+          "suburb": "CHAMBERS FLAT, LOGAN RESERVE",
+          "street_name": "ARCHER CT, CARNARVON CT, DANDARAGA CT, FLESSER RD, ROSSMORE RD, RUNDALUA RD, SHEILS RD"
         },
         {
           "event_id": "INCD-995999-g",
@@ -226,7 +218,7 @@
             "postcode": "4132",
             "suburb": "CRESTMEAD",
             "customersAffected": "7",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -254,7 +246,7 @@
             "postcode": "4114",
             "suburb": "KINGSTON",
             "customersAffected": "1",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -282,7 +274,7 @@
             "postcode": "4280",
             "suburb": "JIMBOOMBA",
             "customersAffected": "21",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -311,7 +303,7 @@
             "postcode": "4125",
             "suburb": "PARK RIDGE",
             "customersAffected": "11",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -339,7 +331,7 @@
             "postcode": "4125",
             "suburb": "PARK RIDGE",
             "customersAffected": "7",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -367,7 +359,7 @@
             "postcode": "4132",
             "suburb": "MARSDEN",
             "customersAffected": "2",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -376,34 +368,6 @@
           },
           "affected_customers": 2,
           "suburb": "MARSDEN",
-          "street_name": "BROWNS PLAINS RD"
-        },
-        {
-          "event_id": "INCD-997560-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-997560-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4118",
-            "suburb": "HERITAGE PARK",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BROWNS PLAINS RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "HERITAGE PARK",
           "street_name": "BROWNS PLAINS RD"
         },
         {
@@ -423,7 +387,7 @@
             "postcode": "4125",
             "suburb": "PARK RIDGE",
             "customersAffected": "1",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -451,7 +415,7 @@
             "postcode": "4309",
             "suburb": "KALBAR",
             "customersAffected": "18",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -465,51 +429,15 @@
           "affected_customers": 32,
           "suburb": "KALBAR, ROSEVALE, SILVERDALE",
           "street_name": "BROWN RD, CUNNINGHAM HWY, HAYES RD, HORAN RD, I ZAHNOWS RD, KALBAR CONNECTION RD, LEITCH RD, S BROWNS RD"
-        },
-        {
-          "event_id": "INCD-997791-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 1328
-            }
-          ],
-          "details": {
-            "event": "INCD-997791-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4170",
-            "suburb": "CANNON HILL",
-            "customersAffected": "309",
-            "restoreTime": "2026-11-13T21:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ARMSTRONG RD",
-              "BENT ST",
-              "GATLING RD",
-              "JUNCTION RD",
-              "KRUPP RD",
-              "MONCRIEF RD",
-              "NORDENFELDT RD",
-              "SHRAPNEL RD",
-              "WHITWORTH RD"
-            ]
-          },
-          "affected_customers": 1328,
-          "suburb": "CANNON HILL, MORNINGSIDE",
-          "street_name": "ALGOORI ST, ARMSTRONG RD, BARINGA ST, BARWON ST, BEELARONG ST, BENT ST, BEVERLEY ST, BREENE PL, BRENDA ST, DAVID ST, DEVINEY ST, ELAROO ST, GATLING RD, JUNCTION RD, KATES ST, KRUPP RD, LYTTON RD, MONCRIEF RD, NORDENFELDT RD, OLIVE ST, SHRAPNEL RD, SKIRVING ST, WHITWORTH RD, WORDEN ST, WYNNUM RD, YORK ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T10:31:33Z",
+      "fetched_utc": "2026-11-13T11:01:40Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T10:30:32Z",
+        "source_updated_utc": "2026-11-13T10:55:00Z",
         "published_customers": 3247,
         "event_count": 18
       },
@@ -577,7 +505,7 @@
             "suburb": "DAANDINE, MACALISTER",
             "type": "UNPLANNED",
             "startTime": "13/11/2026 05:49",
-            "restoreTime": "13/11/2026 21:00",
+            "restoreTime": "13/11/2026 22:00",
             "customersAffected": "13",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
@@ -782,7 +710,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "16",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 241,
           "suburb": "CLIFTON, HEADINGTON HILL, NEVILTON, PILTON, SPRING CREEK, UPPER PILTON, UPPER SPRING CREEK",
@@ -878,7 +806,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "23",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 23,
           "suburb": "JANDOWAE, JIMBOUR",
