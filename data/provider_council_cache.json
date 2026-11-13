@@ -2,12 +2,12 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T20:31:20Z",
+      "fetched_utc": "2026-11-13T20:46:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 6:30 AM",
-        "source_updated_utc": "2026-11-13T20:30:02Z",
+        "source_updated": "14 November 2026 6:45 AM",
+        "source_updated_utc": "2026-11-13T20:45:02Z",
         "published_customers": 983,
         "event_count": 12
       },
@@ -202,7 +202,7 @@
             "postcode": "4133",
             "suburb": "CHAMBERS FLAT",
             "customersAffected": "12",
-            "restoreTime": "2026-11-14T07:00:00+10:00",
+            "restoreTime": "2026-11-14T07:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -370,13 +370,13 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T20:31:23Z",
+      "fetched_utc": "2026-11-13T20:46:28Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T20:30:27Z",
-        "published_customers": 3029,
-        "event_count": 33
+        "source_updated_utc": "2026-11-13T20:45:01Z",
+        "published_customers": 3037,
+        "event_count": 34
       },
       "events": [
         {
@@ -452,6 +452,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13685",
+          "allocations": [
+            {
+              "lga_name": "Blackall Tambo Regional",
+              "lga_code": null,
+              "affected_customers": 8
+            }
+          ],
+          "details": {
+            "event": "26CA13685",
+            "council": "Blackall Tambo Regional Council",
+            "suburb": "BLACKALL",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 00:02",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "8",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 8,
+          "suburb": "BLACKALL",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11079",
           "allocations": [
             {
@@ -493,7 +517,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "32",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 32,
           "suburb": "TULLY",
