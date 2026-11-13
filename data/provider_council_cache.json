@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T11:01:37Z",
+      "fetched_utc": "2026-11-13T11:31:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 9:00 PM",
-        "source_updated_utc": "2026-11-13T11:00:02Z",
-        "published_customers": 902,
-        "event_count": 14
+        "source_updated": "13 November 2026 9:30 PM",
+        "source_updated_utc": "2026-11-13T11:30:02Z",
+        "published_customers": 981,
+        "event_count": 16
       },
       "events": [
         {
@@ -140,40 +140,12 @@
           "street_name": "BOBERMIEN RD, CHAMBERS FLAT RD, FAHIM PL, FEATHERSTONE RD, FLORENCE CT, FROG HOLLOW CT, HOTZ RD, ROSE FARM LANE, WARNER RD, WENDT RD"
         },
         {
-          "event_id": "INCD-995615-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-995615-g",
-            "cause": "Powerlines down",
-            "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4127",
-            "suburb": "DAISY HILL",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-14T09:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "OLD CHATSWOOD RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "DAISY HILL",
-          "street_name": "OLD CHATSWOOD RD"
-        },
-        {
           "event_id": "INCD-995913-g",
           "allocations": [
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 90
+              "affected_customers": 61
             }
           ],
           "details": {
@@ -183,23 +155,20 @@
             "council": "Logan City",
             "postcode": "4133",
             "suburb": "CHAMBERS FLAT",
-            "customersAffected": "75",
+            "customersAffected": "46",
             "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "ARCHER CT",
               "CARNARVON CT",
-              "DANDARAGA CT",
-              "FLESSER RD",
               "ROSSMORE RD",
-              "RUNDALUA RD",
               "SHEILS RD"
             ]
           },
-          "affected_customers": 90,
+          "affected_customers": 61,
           "suburb": "CHAMBERS FLAT, LOGAN RESERVE",
-          "street_name": "ARCHER CT, CARNARVON CT, DANDARAGA CT, FLESSER RD, ROSSMORE RD, RUNDALUA RD, SHEILS RD"
+          "street_name": "ARCHER CT, CARNARVON CT, ROSSMORE RD, SHEILS RD"
         },
         {
           "event_id": "INCD-995999-g",
@@ -371,34 +340,6 @@
           "street_name": "BROWNS PLAINS RD"
         },
         {
-          "event_id": "INCD-997675-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-997675-g",
-            "cause": "Damage due to severe weather",
-            "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4125",
-            "suburb": "PARK RIDGE",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-14T09:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "PARK RIDGE RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "PARK RIDGE",
-          "street_name": "PARK RIDGE RD"
-        },
-        {
           "event_id": "INCD-997780-g",
           "allocations": [
             {
@@ -429,17 +370,137 @@
           "affected_customers": 32,
           "suburb": "KALBAR, ROSEVALE, SILVERDALE",
           "street_name": "BROWN RD, CUNNINGHAM HWY, HAYES RD, HORAN RD, I ZAHNOWS RD, KALBAR CONNECTION RD, LEITCH RD, S BROWNS RD"
+        },
+        {
+          "event_id": "INCD-997859-g",
+          "allocations": [
+            {
+              "lga_name": "Lockyer Valley Regional",
+              "lga_code": null,
+              "affected_customers": 64
+            }
+          ],
+          "details": {
+            "event": "INCD-997859-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Lockyer Valley Regional",
+            "postcode": "4341",
+            "suburb": "LAIDLEY SOUTH",
+            "customersAffected": "64",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BEAMES DR",
+              "CRAMER AVE",
+              "KITCHENER RD",
+              "MILNE ST",
+              "MOONLIGHT PDE",
+              "O&apos;DWYER RD",
+              "ROSEWOOD LAIDLEY RD"
+            ]
+          },
+          "affected_customers": 64,
+          "suburb": "LAIDLEY SOUTH",
+          "street_name": "BEAMES DR, CRAMER AVE, KITCHENER RD, MILNE ST, MOONLIGHT PDE, O&apos;DWYER RD, ROSEWOOD LAIDLEY RD"
+        },
+        {
+          "event_id": "INCD-997861-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 12
+            }
+          ],
+          "details": {
+            "event": "INCD-997861-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4133",
+            "suburb": "LOGAN RESERVE",
+            "customersAffected": "12",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "DERBY RD",
+              "LOGAN RESERVE RD"
+            ]
+          },
+          "affected_customers": 12,
+          "suburb": "LOGAN RESERVE",
+          "street_name": "DERBY RD, LOGAN RESERVE RD"
+        },
+        {
+          "event_id": "INCD-997862-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 14
+            }
+          ],
+          "details": {
+            "event": "INCD-997862-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4102",
+            "suburb": "WOOLLOONGABBA",
+            "customersAffected": "14",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "CHURCHILL ST",
+              "SALISBURY ST"
+            ]
+          },
+          "affected_customers": 14,
+          "suburb": "WOOLLOONGABBA",
+          "street_name": "CHURCHILL ST, SALISBURY ST"
+        },
+        {
+          "event_id": "INCD-997872-g",
+          "allocations": [
+            {
+              "lga_name": "Lockyer Valley Regional",
+              "lga_code": null,
+              "affected_customers": 20
+            }
+          ],
+          "details": {
+            "event": "INCD-997872-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Lockyer Valley Regional",
+            "postcode": "4341",
+            "suburb": "HATTON VALE",
+            "customersAffected": "14",
+            "restoreTime": "2026-11-13T23:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "THALLON RD"
+            ]
+          },
+          "affected_customers": 20,
+          "suburb": "HATTON VALE, KENSINGTON GROVE, REGENCY DOWNS",
+          "street_name": "THALLON RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T11:16:18Z",
+      "fetched_utc": "2026-11-13T11:31:27Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T11:15:00Z",
-        "published_customers": 3455,
-        "event_count": 19
+        "source_updated_utc": "2026-11-13T11:25:00Z",
+        "published_customers": 3468,
+        "event_count": 20
       },
       "events": [
         {
@@ -505,7 +566,7 @@
             "suburb": "BOWEN",
             "type": "UNPLANNED",
             "startTime": "13/11/2026 21:02",
-            "restoreTime": "Under Investigation",
+            "restoreTime": "13/11/2026 23:00",
             "customersAffected": "8",
             "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
             "status": "Crews working on-site"
@@ -829,6 +890,30 @@
           },
           "affected_customers": 85,
           "suburb": "ALLORA, FOREST SPRINGS, SPRING CREEK, TABLETOP",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14981",
+          "allocations": [
+            {
+              "lga_name": "Toowoomba Regional",
+              "lga_code": null,
+              "affected_customers": 13
+            }
+          ],
+          "details": {
+            "event": "26SW14981",
+            "council": "Toowoomba Regional Council",
+            "suburb": "HEADINGTON HILL",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 21:09",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "13",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 13,
+          "suburb": "HEADINGTON HILL",
           "street_name": ""
         },
         {
