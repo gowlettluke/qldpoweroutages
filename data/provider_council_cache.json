@@ -2,45 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T03:16:32Z",
+      "fetched_utc": "2026-11-13T03:31:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 1:15 PM",
-        "source_updated_utc": "2026-11-13T03:15:02Z",
-        "published_customers": 5209,
-        "event_count": 30
+        "source_updated": "13 November 2026 1:30 PM",
+        "source_updated_utc": "2026-11-13T03:30:02Z",
+        "published_customers": 5161,
+        "event_count": 28
       },
       "events": [
-        {
-          "event_id": "INCD-10093-h",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 32
-            }
-          ],
-          "details": {
-            "event": "INCD-10093-h",
-            "cause": "Damage due to severe weather",
-            "status": "Emergency Repairs",
-            "council": "Scenic Rim Regional",
-            "postcode": "4272",
-            "suburb": "TAMBORINE MOUNTAIN",
-            "customersAffected": "32",
-            "restoreTime": "2026-11-13T15:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BATEKE RD",
-              "PROSPECT ST"
-            ]
-          },
-          "affected_customers": 32,
-          "suburb": "TAMBORINE MOUNTAIN",
-          "street_name": "BATEKE RD, PROSPECT ST"
-        },
         {
           "event_id": "INCD-995008-g",
           "allocations": [
@@ -114,7 +85,7 @@
             "postcode": "4207",
             "suburb": "BUCCAN",
             "customersAffected": "14",
-            "restoreTime": "2026-11-13T20:00:00+10:00",
+            "restoreTime": "2026-11-14T16:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -641,34 +612,6 @@
           "street_name": "RIVER RD"
         },
         {
-          "event_id": "INCD-997073-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 16
-            }
-          ],
-          "details": {
-            "event": "INCD-997073-g",
-            "cause": "Damage due to severe weather",
-            "status": "Emergency Repairs",
-            "council": "Scenic Rim Regional",
-            "postcode": "4285",
-            "suburb": "BIRNAM",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-13T15:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BEAUDESERT-BEENLEIGH RD"
-            ]
-          },
-          "affected_customers": 16,
-          "suburb": "BIRNAM, TABRAGALBA",
-          "street_name": "BEAUDESERT-BEENLEIGH RD, BEAUDESERT-NERANG RD, SPENGLER RD, TABRAGALBA HOUSE RD"
-        },
-        {
           "event_id": "INCD-997244-g",
           "allocations": [
             {
@@ -931,11 +874,11 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T03:16:35Z",
+      "fetched_utc": "2026-11-13T03:31:25Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T03:15:00Z",
+        "source_updated_utc": "2026-11-13T03:30:01Z",
         "published_customers": 537,
         "event_count": 19
       },
@@ -1155,7 +1098,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "55",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 55,
           "suburb": "MYSTERTON, PIMLICO",
@@ -1285,7 +1228,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "14",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 14,
           "suburb": "GOOMERI",
@@ -1333,7 +1276,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "4",
             "cause": "The loss of supply is due to the operating of protective equipment.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 4,
           "suburb": "EIDSVOLD, MONTO",
