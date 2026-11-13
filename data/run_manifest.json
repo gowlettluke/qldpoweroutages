@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-13T23:01:31Z",
-  "generated_aest": "2026-11-14T09:01:31+10:00",
+  "generated_utc": "2026-11-13T23:16:15Z",
+  "generated_aest": "2026-11-14T09:16:15+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 46,
@@ -15,33 +15,33 @@
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "14 November 2026 9:00 AM",
-      "source_updated_utc": "2026-11-13T23:00:02Z",
-      "published_customers": 1329,
-      "event_count": 13,
-      "fetched_utc": "2026-11-13T23:01:38Z"
+      "source_updated": "14 November 2026 9:15 AM",
+      "source_updated_utc": "2026-11-13T23:15:02Z",
+      "published_customers": 1341,
+      "event_count": 15,
+      "fetched_utc": "2026-11-13T23:16:22Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T23:00:01Z",
-      "published_customers": 3115,
-      "event_count": 30,
-      "fetched_utc": "2026-11-13T23:01:42Z"
+      "source_updated_utc": "2026-11-13T23:15:16Z",
+      "published_customers": 1728,
+      "event_count": 28,
+      "fetched_utc": "2026-11-13T23:16:24Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-13T23:01:31Z",
+    "snapshot_utc": "2026-11-13T23:16:15Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T23:01:38Z",
+      "fetched_utc": "2026-11-13T23:16:22Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-13T23:00:02Z",
+      "source_updated_utc": "2026-11-13T23:15:02Z",
       "retained": false,
-      "total_customers": 1329,
+      "total_customers": 1341,
       "rows": [
         {
           "lga_name": "Brisbane City",
@@ -49,7 +49,7 @@
         },
         {
           "lga_name": "Logan City",
-          "affected_customers": 1222
+          "affected_customers": 1234
         },
         {
           "lga_name": "Sunshine Coast Regional",
@@ -59,13 +59,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T23:01:42Z",
+      "fetched_utc": "2026-11-13T23:16:24Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T23:00:01Z",
+      "source_updated_utc": "2026-11-13T23:15:16Z",
       "retained": false,
-      "total_customers": 3115,
+      "total_customers": 1728,
       "rows": [
         {
           "lga_name": "Barcaldine Regional",
@@ -85,7 +85,7 @@
         },
         {
           "lga_name": "Central Highlands Regional",
-          "affected_customers": 2003
+          "affected_customers": 623
         },
         {
           "lga_name": "Charters Towers Regional",
@@ -129,23 +129,23 @@
         },
         {
           "lga_name": "Western Downs Regional",
-          "affected_customers": 49
+          "affected_customers": 42
         }
       ]
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 13,
-  "current_ergon_records": 30,
+  "current_energex_records": 15,
+  "current_ergon_records": 28,
   "current_essential_records_fetched": 14,
-  "current_energex_records_fetched": 152,
-  "current_ergon_records_fetched": 327,
+  "current_energex_records_fetched": 154,
+  "current_ergon_records_fetched": 325,
   "current_essential_records_after_qld_polygon_prefilter": 3,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 8,
   "current_essential_records_included_qld": 3,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 9791,
-  "lga_totals_rows_48h": 7734,
+  "snapshot_rows_48h": 9754,
+  "lga_totals_rows_48h": 7727,
   "lga_totals_latest_rows": 40,
   "lga_cumulative_rows": 98,
   "outputs": {

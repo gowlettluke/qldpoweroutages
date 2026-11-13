@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T23:01:38Z",
+      "fetched_utc": "2026-11-13T23:16:22Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 9:00 AM",
-        "source_updated_utc": "2026-11-13T23:00:02Z",
-        "published_customers": 1329,
-        "event_count": 13
+        "source_updated": "14 November 2026 9:15 AM",
+        "source_updated_utc": "2026-11-13T23:15:02Z",
+        "published_customers": 1341,
+        "event_count": 15
       },
       "events": [
         {
@@ -18,7 +18,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 399
+              "affected_customers": 385
             }
           ],
           "details": {
@@ -28,18 +28,17 @@
             "council": "Logan City",
             "postcode": "4207",
             "suburb": "BUCCAN",
-            "customersAffected": "15",
+            "customersAffected": "1",
             "restoreTime": "2026-11-14T16:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "COPLICK CRES",
               "LATIMER RD"
             ]
           },
-          "affected_customers": 399,
+          "affected_customers": 385,
           "suburb": "BUCCAN, LOGAN VILLAGE",
-          "street_name": "BOOLONG CT, BUENA VISTA DR, BURDEKIN CT, CAMEL CT, CANAIPA CT, CHALLEN RD, CONDAMINE DR, COPLICK CRES, DAINTREE DR, DIAMENTINA DR, ELLEN CT, FRYAR RD, HAMILTON RD, HINCHCLIFFE RD, KENNEDY CT, LATIMER RD, LAVELLE DR, MILLER RD, MINEHAN RD, QUINZEH CREEK RD, SWANBOROUGH RD, TOMOHON HEIGHTS CL, TYSON CT"
+          "street_name": "BOOLONG CT, BUENA VISTA DR, BURDEKIN CT, CAMEL CT, CANAIPA CT, CHALLEN RD, CONDAMINE DR, DAINTREE DR, DIAMENTINA DR, ELLEN CT, FRYAR RD, HAMILTON RD, HINCHCLIFFE RD, KENNEDY CT, LATIMER RD, LAVELLE DR, MILLER RD, MINEHAN RD, QUINZEH CREEK RD, SWANBOROUGH RD, TOMOHON HEIGHTS CL, TYSON CT"
         },
         {
           "event_id": "INCD-995022-g",
@@ -327,7 +326,7 @@
             "postcode": "4124",
             "suburb": "NEW BEITH",
             "customersAffected": "1",
-            "restoreTime": "2026-11-14T09:30:00+10:00",
+            "restoreTime": "2026-11-14T10:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -403,17 +402,74 @@
           "affected_customers": 35,
           "suburb": "CHAMBERS FLAT",
           "street_name": "ARCHER CT, CARNARVON CT"
+        },
+        {
+          "event_id": "INCD-998086-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 13
+            }
+          ],
+          "details": {
+            "event": "INCD-998086-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4280",
+            "suburb": "JIMBOOMBA",
+            "customersAffected": "13",
+            "restoreTime": "2026-11-14T11:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "MONA DR"
+            ]
+          },
+          "affected_customers": 13,
+          "suburb": "JIMBOOMBA",
+          "street_name": "MONA DR"
+        },
+        {
+          "event_id": "INCD-998098-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 13
+            }
+          ],
+          "details": {
+            "event": "INCD-998098-g",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
+            "council": "Logan City",
+            "postcode": "4133",
+            "suburb": "WATERFORD WEST",
+            "customersAffected": "13",
+            "restoreTime": "2026-11-14T16:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "JAMIESON CT",
+              "WUNBURRA ST"
+            ]
+          },
+          "affected_customers": 13,
+          "suburb": "WATERFORD WEST",
+          "street_name": "JAMIESON CT, WUNBURRA ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T23:01:42Z",
+      "fetched_utc": "2026-11-13T23:16:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T23:00:01Z",
-        "published_customers": 3115,
-        "event_count": 30
+        "source_updated_utc": "2026-11-13T23:15:16Z",
+        "published_customers": 1728,
+        "event_count": 28
       },
       "events": [
         {
@@ -441,36 +497,12 @@
           "street_name": ""
         },
         {
-          "event_id": "26CA13682",
-          "allocations": [
-            {
-              "lga_name": "Central Highlands Regional",
-              "lga_code": null,
-              "affected_customers": 1047
-            }
-          ],
-          "details": {
-            "event": "26CA13682",
-            "council": "Central Highlands Regional Council",
-            "suburb": "EMERALD",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 06:20",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "1047",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 1047,
-          "suburb": "EMERALD",
-          "street_name": ""
-        },
-        {
           "event_id": "26CA13690",
           "allocations": [
             {
               "lga_name": "Central Highlands Regional",
               "lga_code": null,
-              "affected_customers": 386
+              "affected_customers": 53
             }
           ],
           "details": {
@@ -480,11 +512,11 @@
             "type": "UNPLANNED",
             "startTime": "14/11/2026 06:20",
             "restoreTime": "Under Investigation",
-            "customersAffected": "386",
+            "customersAffected": "53",
             "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Crews on route"
           },
-          "affected_customers": 386,
+          "affected_customers": 53,
           "suburb": "EMERALD",
           "street_name": ""
         },
@@ -710,7 +742,7 @@
             "suburb": "BALFES CREEK, BASALT",
             "type": "UNPLANNED",
             "startTime": "14/11/2026 02:33",
-            "restoreTime": "14/11/2026 09:00",
+            "restoreTime": "14/11/2026 09:20",
             "customersAffected": "13",
             "cause": "The loss of supply is due to the operating of protective equipment.",
             "status": "Crews working on-site"
@@ -857,7 +889,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "83",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 83,
           "suburb": "BACK PLAINS, CLIFTON, FELTON, KINGS CREEK, MOUNT MOLAR, NOBBY",
@@ -1018,30 +1050,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW15025",
-          "allocations": [
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 7
-            }
-          ],
-          "details": {
-            "event": "26SW15025",
-            "council": "Western Downs Regional Council",
-            "suburb": "DUCKLO",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 05:44",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "7",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 7,
-          "suburb": "DUCKLO",
-          "street_name": ""
-        },
-        {
           "event_id": "26SW15027",
           "allocations": [
             {
@@ -1059,7 +1067,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "29",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 29,
           "suburb": "AUBURN, CHINCHILLA",
