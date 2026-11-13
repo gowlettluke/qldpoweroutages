@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T09:01:38Z",
+      "fetched_utc": "2026-11-13T10:31:29Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 7:00 PM",
-        "source_updated_utc": "2026-11-13T09:00:04Z",
-        "published_customers": 1708,
-        "event_count": 24
+        "source_updated": "13 November 2026 8:30 PM",
+        "source_updated_utc": "2026-11-13T10:30:02Z",
+        "published_customers": 2356,
+        "event_count": 16
       },
       "events": [
         {
@@ -114,7 +114,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 229
+              "affected_customers": 149
             }
           ],
           "details": {
@@ -124,24 +124,20 @@
             "council": "Logan City",
             "postcode": "4133",
             "suburb": "CHAMBERS FLAT",
-            "customersAffected": "176",
+            "customersAffected": "101",
             "restoreTime": "2026-11-14T16:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "CHAMBERS FLAT RD",
               "FEATHERSTONE RD",
-              "GRASSWAY CT",
-              "KINGS WAY",
-              "MYALL TCE",
-              "RIVERINA CT",
               "WARNER RD",
               "WENDT RD"
             ]
           },
-          "affected_customers": 229,
-          "suburb": "CHAMBERS FLAT, LOGAN VILLAGE, MUNRUBEN",
-          "street_name": "BOBERMIEN RD, CARTER RD, CHAMBERS FLAT RD, FAHIM PL, FEATHERSTONE RD, FLORENCE CT, FROG HOLLOW CT, GRASSWAY CT, GREVILLEA RD, HOTZ RD, KINGS WAY, MYALL TCE, RIVERINA CT, ROSE FARM LANE, WARNER RD, WENDT RD"
+          "affected_customers": 149,
+          "suburb": "CHAMBERS FLAT, LOGAN VILLAGE",
+          "street_name": "BOBERMIEN RD, CHAMBERS FLAT RD, FAHIM PL, FEATHERSTONE RD, FLORENCE CT, FROG HOLLOW CT, HOTZ RD, ROSE FARM LANE, WARNER RD, WENDT RD"
         },
         {
           "event_id": "INCD-995615-g",
@@ -160,7 +156,7 @@
             "postcode": "4127",
             "suburb": "DAISY HILL",
             "customersAffected": "1",
-            "restoreTime": "2026-11-13T20:00:00+10:00",
+            "restoreTime": "2026-11-13T22:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -177,7 +173,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 262
+              "affected_customers": 215
             }
           ],
           "details": {
@@ -187,12 +183,11 @@
             "council": "Logan City",
             "postcode": "4133",
             "suburb": "CHAMBERS FLAT",
-            "customersAffected": "234",
+            "customersAffected": "187",
             "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "ALEXANDER CT",
               "ARCHER CT",
               "BELVEDERE CT",
               "CARNARVON CT",
@@ -204,16 +199,15 @@
               "HOLLOWAY RD",
               "KOPLICK RD",
               "LAKEFIELD CT",
-              "MCPHERSON RD",
               "ROSSMORE RD",
               "RUNDALUA RD",
               "SHEILS RD",
               "SPRINGFIELDS RD"
             ]
           },
-          "affected_customers": 262,
+          "affected_customers": 215,
           "suburb": "CHAMBERS FLAT, LOGAN RESERVE, PARK RIDGE, PARK RIDGE SOUTH",
-          "street_name": "ALEXANDER CT, ARCHER CT, BEAUMONT RD, BELVEDERE CT, CARNARVON CT, CHAMBERS FLAT RD, COOLAROO CT, DANDARAGA CT, FLESSER RD, HIGHGROVE CL, HOLLOWAY RD, KOPLICK RD, LAKEFIELD CT, MCPHERSON RD, ROSSMORE RD, RUNDALUA RD, SHEILS RD, SPRINGFIELDS RD, VIRGIL RD"
+          "street_name": "ARCHER CT, BEAUMONT RD, BELVEDERE CT, CARNARVON CT, CHAMBERS FLAT RD, COOLAROO CT, DANDARAGA CT, FLESSER RD, HIGHGROVE CL, HOLLOWAY RD, KOPLICK RD, LAKEFIELD CT, ROSSMORE RD, RUNDALUA RD, SHEILS RD, SPRINGFIELDS RD, VIRGIL RD"
         },
         {
           "event_id": "INCD-995999-g",
@@ -270,63 +264,6 @@
           "affected_customers": 1,
           "suburb": "KINGSTON",
           "street_name": "VELORUM DR"
-        },
-        {
-          "event_id": "INCD-996274-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 30
-            }
-          ],
-          "details": {
-            "event": "INCD-996274-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4127",
-            "suburb": "SLACKS CREEK",
-            "customersAffected": "30",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ALLGAS ST",
-              "MOSS ST"
-            ]
-          },
-          "affected_customers": 30,
-          "suburb": "SLACKS CREEK",
-          "street_name": "ALLGAS ST, MOSS ST"
-        },
-        {
-          "event_id": "INCD-996344-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 33
-            }
-          ],
-          "details": {
-            "event": "INCD-996344-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4110",
-            "suburb": "ACACIA RIDGE",
-            "customersAffected": "10",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BRADMAN ST"
-            ]
-          },
-          "affected_customers": 33,
-          "suburb": "ACACIA RIDGE, SUNNYBANK HILLS",
-          "street_name": "BRADMAN ST"
         },
         {
           "event_id": "INCD-996738-g",
@@ -386,67 +323,6 @@
           "street_name": "PARK RIDGE RD"
         },
         {
-          "event_id": "INCD-997286-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 33
-            }
-          ],
-          "details": {
-            "event": "INCD-997286-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4125",
-            "suburb": "PARK RIDGE",
-            "customersAffected": "33",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "EAST BEAUMONT RD",
-              "MOUNT HUNTLEY ST",
-              "MOUNT ROBERTS ST"
-            ]
-          },
-          "affected_customers": 33,
-          "suburb": "PARK RIDGE",
-          "street_name": "EAST BEAUMONT RD, MOUNT HUNTLEY ST, MOUNT ROBERTS ST"
-        },
-        {
-          "event_id": "INCD-997304-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 55
-            }
-          ],
-          "details": {
-            "event": "INCD-997304-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Sunshine Coast",
-            "postcode": "4573",
-            "suburb": "COOLUM BEACH",
-            "customersAffected": "55",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "GREENOAKS DR",
-              "SCHOOL RD",
-              "SOUTH COOLUM RD",
-              "YANDINA-COOLUM RD"
-            ]
-          },
-          "affected_customers": 55,
-          "suburb": "COOLUM BEACH",
-          "street_name": "GREENOAKS DR, SCHOOL RD, SOUTH COOLUM RD, YANDINA-COOLUM RD"
-        },
-        {
           "event_id": "INCD-997378-g",
           "allocations": [
             {
@@ -503,66 +379,6 @@
           "street_name": "BROWNS PLAINS RD"
         },
         {
-          "event_id": "INCD-997524-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 15
-            }
-          ],
-          "details": {
-            "event": "INCD-997524-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4560",
-            "suburb": "ROSEMOUNT",
-            "customersAffected": "15",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "UPPER ROSEMOUNT RD"
-            ]
-          },
-          "affected_customers": 15,
-          "suburb": "ROSEMOUNT",
-          "street_name": "UPPER ROSEMOUNT RD"
-        },
-        {
-          "event_id": "INCD-997542-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 62
-            }
-          ],
-          "details": {
-            "event": "INCD-997542-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4118",
-            "suburb": "BROWNS PLAINS",
-            "customersAffected": "62",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "FORESTGLEN CRES",
-              "HARMONY CT",
-              "PINE CRES",
-              "STRAIGHT DR",
-              "TIMBERTOP AVE"
-            ]
-          },
-          "affected_customers": 62,
-          "suburb": "BROWNS PLAINS",
-          "street_name": "FORESTGLEN CRES, HARMONY CT, PINE CRES, STRAIGHT DR, TIMBERTOP AVE"
-        },
-        {
           "event_id": "INCD-997560-g",
           "allocations": [
             {
@@ -607,7 +423,7 @@
             "postcode": "4125",
             "suburb": "PARK RIDGE",
             "customersAffected": "1",
-            "restoreTime": "2026-11-13T20:30:00+10:00",
+            "restoreTime": "2026-11-13T22:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -619,141 +435,82 @@
           "street_name": "PARK RIDGE RD"
         },
         {
-          "event_id": "INCD-997709-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 22
-            }
-          ],
-          "details": {
-            "event": "INCD-997709-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4556",
-            "suburb": "FOREST GLEN",
-            "customersAffected": "22",
-            "restoreTime": "2026-11-13T22:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "GARDENIA PL",
-              "NUNKERI CT",
-              "PARSONS RD"
-            ]
-          },
-          "affected_customers": 22,
-          "suburb": "FOREST GLEN",
-          "street_name": "GARDENIA PL, NUNKERI CT, PARSONS RD"
-        },
-        {
-          "event_id": "INCD-997760-g",
+          "event_id": "INCD-997780-g",
           "allocations": [
             {
               "lga_name": "Scenic Rim Regional",
               "lga_code": null,
-              "affected_customers": 265
+              "affected_customers": 32
             }
           ],
           "details": {
-            "event": "INCD-997760-g",
+            "event": "INCD-997780-g",
             "cause": "Under Investigation",
             "status": "Under Investigation",
             "council": "Scenic Rim Regional",
             "postcode": "4309",
-            "suburb": "ARATULA",
-            "customersAffected": "158",
-            "restoreTime": "2026-11-13T20:30:00+10:00",
+            "suburb": "KALBAR",
+            "customersAffected": "18",
+            "restoreTime": "2026-11-13T22:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "ADAM DR",
-              "CARTER RD",
+              "BROWN RD",
               "CUNNINGHAM HWY",
-              "DUNCAN DR",
-              "EAST STALLMAN RD",
-              "FRAZERVIEW RD",
-              "LUCA CT",
-              "TAROME RD",
-              "TOOHILL RD"
+              "HORAN RD",
+              "KALBAR CONNECTION RD",
+              "S BROWNS RD"
             ]
           },
-          "affected_customers": 265,
-          "suburb": "ARATULA, FRAZERVIEW, MOORANG, MORWINCHA, TAROME",
-          "street_name": "ADAM DR, CARTER RD, CUNNINGHAM HWY, DUNCAN DR, DWYER RD, EAST STALLMAN RD, FALKENHAGEN RD, FAULKENHAGEN RD, FRAZERVIEW RD, HINRICHSEN RD, LUCA CT, MCGUIRES RD, NIEBLING RD, RYAN RD, SIMMONDS RD, TAROME RD, TOOHILL RD, WEST STALLMAN RD"
+          "affected_customers": 32,
+          "suburb": "KALBAR, ROSEVALE, SILVERDALE",
+          "street_name": "BROWN RD, CUNNINGHAM HWY, HAYES RD, HORAN RD, I ZAHNOWS RD, KALBAR CONNECTION RD, LEITCH RD, S BROWNS RD"
         },
         {
-          "event_id": "INCD-997774-g",
+          "event_id": "INCD-997791-g",
           "allocations": [
             {
-              "lga_name": "Logan City",
+              "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 15
+              "affected_customers": 1328
             }
           ],
           "details": {
-            "event": "INCD-997774-g",
+            "event": "INCD-997791-g",
             "cause": "Damage due to severe weather",
-            "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4125",
-            "suburb": "PARK RIDGE",
-            "customersAffected": "15",
-            "restoreTime": "2026-11-13T22:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BIRCHWOOD ST",
-              "EAST BEAUMONT RD",
-              "GARRICK ST"
-            ]
-          },
-          "affected_customers": 15,
-          "suburb": "PARK RIDGE",
-          "street_name": "BIRCHWOOD ST, EAST BEAUMONT RD, GARRICK ST"
-        },
-        {
-          "event_id": "INCD-997788-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 55
-            }
-          ],
-          "details": {
-            "event": "INCD-997788-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Sunshine Coast",
-            "postcode": "4573",
-            "suburb": "COOLUM BEACH",
-            "customersAffected": "55",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4170",
+            "suburb": "CANNON HILL",
+            "customersAffected": "309",
             "restoreTime": "2026-11-13T21:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "GREENOAKS DR",
-              "SCHOOL RD",
-              "SOUTH COOLUM RD",
-              "YANDINA-COOLUM RD"
+              "ARMSTRONG RD",
+              "BENT ST",
+              "GATLING RD",
+              "JUNCTION RD",
+              "KRUPP RD",
+              "MONCRIEF RD",
+              "NORDENFELDT RD",
+              "SHRAPNEL RD",
+              "WHITWORTH RD"
             ]
           },
-          "affected_customers": 55,
-          "suburb": "COOLUM BEACH",
-          "street_name": "GREENOAKS DR, SCHOOL RD, SOUTH COOLUM RD, YANDINA-COOLUM RD"
+          "affected_customers": 1328,
+          "suburb": "CANNON HILL, MORNINGSIDE",
+          "street_name": "ALGOORI ST, ARMSTRONG RD, BARINGA ST, BARWON ST, BEELARONG ST, BENT ST, BEVERLEY ST, BREENE PL, BRENDA ST, DAVID ST, DEVINEY ST, ELAROO ST, GATLING RD, JUNCTION RD, KATES ST, KRUPP RD, LYTTON RD, MONCRIEF RD, NORDENFELDT RD, OLIVE ST, SHRAPNEL RD, SKIRVING ST, WHITWORTH RD, WORDEN ST, WYNNUM RD, YORK ST"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T10:01:36Z",
+      "fetched_utc": "2026-11-13T10:31:33Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T10:00:00Z",
-        "published_customers": 3258,
+        "source_updated_utc": "2026-11-13T10:30:32Z",
+        "published_customers": 3247,
         "event_count": 18
       },
       "events": [
@@ -779,30 +536,6 @@
           },
           "affected_customers": 151,
           "suburb": "CAIRNS, CAIRNS CITY",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN11287",
-          "allocations": [
-            {
-              "lga_name": "Tablelands Regional",
-              "lga_code": null,
-              "affected_customers": 11
-            }
-          ],
-          "details": {
-            "event": "26FN11287",
-            "council": "Tablelands Regional Council",
-            "suburb": "LAKE EACHAM",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 18:50",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "11",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 11,
-          "suburb": "LAKE EACHAM",
           "street_name": ""
         },
         {
@@ -955,7 +688,7 @@
             {
               "lga_name": "Southern Downs Regional",
               "lga_code": null,
-              "affected_customers": 2131
+              "affected_customers": 2046
             },
             {
               "lga_name": "Toowoomba Regional",
@@ -966,16 +699,16 @@
           "details": {
             "event": "26SW14921",
             "council": "Southern Downs Regional Council",
-            "suburb": "ALLORA, BERAT, BONY MOUNTAIN, CLINTONVALE, DEUCHAR, ELLINTHORP, FOREST PLAIN, FOREST SPRINGS, FREESTONE, GLADFIELD, GLENGALLAN, GOOMBURRA, HENDON, LEYBURN, MARYVALE, MASSIE, MOUNT MARSHALL, OLD TALGAI, PRATTEN, SOUTH ALLORA, SPRING CREEK, TABLETOP, TALGAI, TALGAI WEST, TREGONY, VICTORIA HILL, WILLOWVALE",
+            "suburb": "ALLORA, BERAT, BONY MOUNTAIN, CLINTONVALE, DEUCHAR, ELLINTHORP, FOREST PLAIN, FOREST SPRINGS, FREESTONE, GLADFIELD, GLENGALLAN, GOOMBURRA, HENDON, LEYBURN, MARYVALE, MASSIE, MOUNT MARSHALL, OLD TALGAI, PRATTEN, SOUTH ALLORA, SPRING CREEK, TALGAI, TALGAI WEST, TREGONY, VICTORIA HILL, WILLOWVALE",
             "type": "UNPLANNED",
             "startTime": "13/11/2026 18:24",
             "restoreTime": "Under Investigation",
-            "customersAffected": "2131",
+            "customersAffected": "2046",
             "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 2177,
-          "suburb": "ALLORA, BERAT, BONY MOUNTAIN, CLIFTON, CLINTONVALE, DEUCHAR, ELLANGOWAN, ELLINTHORP, ELPHINSTONE, FOREST PLAIN, FOREST SPRINGS, FREESTONE, GLADFIELD, GLENGALLAN, GOOMBURRA, HENDON, LEYBURN, MARYVALE, MASSIE, MOUNT MARSHALL, OLD TALGAI, PRATTEN, SANDY CAMP, SOUTH ALLORA, SPRING CREEK, TABLETOP, TALGAI, TALGAI WEST, TREGONY, UPPER SPRING CREEK, VICTORIA HILL, WILLOWVALE",
+          "affected_customers": 2092,
+          "suburb": "ALLORA, BERAT, BONY MOUNTAIN, CLIFTON, CLINTONVALE, DEUCHAR, ELLANGOWAN, ELLINTHORP, ELPHINSTONE, FOREST PLAIN, FOREST SPRINGS, FREESTONE, GLADFIELD, GLENGALLAN, GOOMBURRA, HENDON, LEYBURN, MARYVALE, MASSIE, MOUNT MARSHALL, OLD TALGAI, PRATTEN, SANDY CAMP, SOUTH ALLORA, SPRING CREEK, TALGAI, TALGAI WEST, TREGONY, UPPER SPRING CREEK, VICTORIA HILL, WILLOWVALE",
           "street_name": ""
         },
         {
@@ -1121,7 +854,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "141",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 141,
           "suburb": "CAMBOOYA, EAST GREENMOUNT, GREENMOUNT, PRESTON, RAMSAY",
@@ -1149,6 +882,30 @@
           },
           "affected_customers": 23,
           "suburb": "JANDOWAE, JIMBOUR",
+          "street_name": ""
+        },
+        {
+          "event_id": "26SW14967",
+          "allocations": [
+            {
+              "lga_name": "Southern Downs Regional",
+              "lga_code": null,
+              "affected_customers": 85
+            }
+          ],
+          "details": {
+            "event": "26SW14967",
+            "council": "Southern Downs Regional Council",
+            "suburb": "ALLORA, FOREST SPRINGS, SPRING CREEK, TABLETOP",
+            "type": "UNPLANNED",
+            "startTime": "13/11/2026 18:24",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "85",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 85,
+          "suburb": "ALLORA, FOREST SPRINGS, SPRING CREEK, TABLETOP",
           "street_name": ""
         },
         {
