@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-13T22:46:12Z",
-  "generated_aest": "2026-11-14T08:46:12+10:00",
+  "generated_utc": "2026-11-13T23:01:31Z",
+  "generated_aest": "2026-11-14T09:01:31+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 46,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 477,
-  "current_records_after_outage_type_filter": 53,
-  "current_records_dropped_planned_or_unknown": 424,
+  "current_records_before_outage_type_filter": 494,
+  "current_records_after_outage_type_filter": 54,
+  "current_records_dropped_planned_or_unknown": 440,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {},
@@ -15,31 +15,31 @@
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "14 November 2026 8:45 AM",
-      "source_updated_utc": "2026-11-13T22:45:02Z",
+      "source_updated": "14 November 2026 9:00 AM",
+      "source_updated_utc": "2026-11-13T23:00:02Z",
       "published_customers": 1329,
       "event_count": 13,
-      "fetched_utc": "2026-11-13T22:46:19Z"
+      "fetched_utc": "2026-11-13T23:01:38Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T22:45:01Z",
-      "published_customers": 3344,
+      "source_updated_utc": "2026-11-13T23:00:01Z",
+      "published_customers": 3115,
       "event_count": 30,
-      "fetched_utc": "2026-11-13T22:46:22Z"
+      "fetched_utc": "2026-11-13T23:01:42Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-13T22:46:12Z",
+    "snapshot_utc": "2026-11-13T23:01:31Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T22:46:19Z",
+      "fetched_utc": "2026-11-13T23:01:38Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-13T22:45:02Z",
+      "source_updated_utc": "2026-11-13T23:00:02Z",
       "retained": false,
       "total_customers": 1329,
       "rows": [
@@ -59,13 +59,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T22:46:22Z",
+      "fetched_utc": "2026-11-13T23:01:42Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T22:45:01Z",
+      "source_updated_utc": "2026-11-13T23:00:01Z",
       "retained": false,
-      "total_customers": 3344,
+      "total_customers": 3115,
       "rows": [
         {
           "lga_name": "Barcaldine Regional",
@@ -85,7 +85,7 @@
         },
         {
           "lga_name": "Central Highlands Regional",
-          "affected_customers": 2232
+          "affected_customers": 2003
         },
         {
           "lga_name": "Charters Towers Regional",
@@ -137,15 +137,15 @@
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 13,
   "current_ergon_records": 30,
-  "current_essential_records_fetched": 13,
-  "current_energex_records_fetched": 148,
-  "current_ergon_records_fetched": 315,
+  "current_essential_records_fetched": 14,
+  "current_energex_records_fetched": 152,
+  "current_ergon_records_fetched": 327,
   "current_essential_records_after_qld_polygon_prefilter": 3,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 7,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 8,
   "current_essential_records_included_qld": 3,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 9830,
-  "lga_totals_rows_48h": 7741,
+  "snapshot_rows_48h": 9791,
+  "lga_totals_rows_48h": 7734,
   "lga_totals_latest_rows": 40,
   "lga_cumulative_rows": 98,
   "outputs": {
