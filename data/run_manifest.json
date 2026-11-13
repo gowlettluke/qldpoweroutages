@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-13T19:31:14Z",
-  "generated_aest": "2026-11-14T05:31:14+10:00",
+  "generated_utc": "2026-11-13T19:46:06Z",
+  "generated_aest": "2026-11-14T05:46:06+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 42,
@@ -27,15 +27,15 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T19:30:00Z",
-      "published_customers": 1919,
+      "source_updated_utc": "2026-11-13T19:45:00Z",
+      "published_customers": 1405,
       "event_count": 25,
-      "fetched_utc": "2026-11-13T19:31:31Z"
+      "fetched_utc": "2026-11-13T19:46:20Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-13T19:31:14Z",
+    "snapshot_utc": "2026-11-13T19:46:06Z",
     "energex": {
       "status": "ok",
       "fetched_utc": "2026-11-13T19:17:29Z",
@@ -70,18 +70,14 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T19:31:31Z",
+      "fetched_utc": "2026-11-13T19:46:20Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T19:30:00Z",
+      "source_updated_utc": "2026-11-13T19:45:00Z",
       "retained": false,
-      "total_customers": 1919,
+      "total_customers": 1405,
       "rows": [
-        {
-          "lga_name": "Banana Shire",
-          "affected_customers": 3
-        },
         {
           "lga_name": "Bulloo Shire",
           "affected_customers": 36
@@ -104,15 +100,11 @@
         },
         {
           "lga_name": "Maranoa Regional",
-          "affected_customers": 619
+          "affected_customers": 112
         },
         {
           "lga_name": "McKinlay Shire",
           "affected_customers": 37
-        },
-        {
-          "lga_name": "Murweh Shire",
-          "affected_customers": 4
         },
         {
           "lga_name": "Paroo Shire",
@@ -145,15 +137,15 @@
   "current_energex_records": 14,
   "current_ergon_records": 25,
   "current_essential_records_fetched": 11,
-  "current_energex_records_fetched": 118,
+  "current_energex_records_fetched": 117,
   "current_ergon_records_fetched": 247,
   "current_essential_records_after_qld_polygon_prefilter": 3,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 7,
   "current_essential_records_included_qld": 3,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 10183,
-  "lga_totals_rows_48h": 7767,
-  "lga_totals_latest_rows": 42,
+  "snapshot_rows_48h": 10148,
+  "lga_totals_rows_48h": 7758,
+  "lga_totals_latest_rows": 38,
   "lga_cumulative_rows": 100,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
