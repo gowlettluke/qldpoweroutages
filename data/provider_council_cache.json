@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T21:01:37Z",
+      "fetched_utc": "2026-11-13T21:16:20Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 7:00 AM",
-        "source_updated_utc": "2026-11-13T21:00:02Z",
-        "published_customers": 979,
-        "event_count": 11
+        "source_updated": "14 November 2026 7:15 AM",
+        "source_updated_utc": "2026-11-13T21:15:02Z",
+        "published_customers": 980,
+        "event_count": 12
       },
       "events": [
         {
@@ -202,7 +202,7 @@
             "postcode": "4133",
             "suburb": "CHAMBERS FLAT",
             "customersAffected": "12",
-            "restoreTime": "2026-11-14T07:30:00+10:00",
+            "restoreTime": "2026-11-14T08:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -338,17 +338,45 @@
           "affected_customers": 60,
           "suburb": "MAROOCHYDORE",
           "street_name": "MAROUBRA ST, WIRRAWAY ST"
+        },
+        {
+          "event_id": "INCD-998032-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-998032-g",
+            "cause": "Damage due to severe weather",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4124",
+            "suburb": "NEW BEITH",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "NEW BEITH RD"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "NEW BEITH",
+          "street_name": "NEW BEITH RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T21:01:39Z",
+      "fetched_utc": "2026-11-13T21:16:24Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T21:00:00Z",
-        "published_customers": 3029,
-        "event_count": 33
+        "source_updated_utc": "2026-11-13T21:15:01Z",
+        "published_customers": 3686,
+        "event_count": 35
       },
       "events": [
         {
@@ -421,6 +449,59 @@
           },
           "affected_customers": 484,
           "suburb": "CAPELLA, EMERALD, GORDONSTONE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13690",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 615
+            }
+          ],
+          "details": {
+            "event": "26CA13690",
+            "council": "Central Highlands Regional Council",
+            "suburb": "EMERALD",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 06:20",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "615",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 615,
+          "suburb": "EMERALD",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13691",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 32
+            },
+            {
+              "lga_name": "Isaac Regional",
+              "lga_code": null,
+              "affected_customers": 9
+            }
+          ],
+          "details": {
+            "event": "26CA13691",
+            "council": "Central Highlands Regional Council",
+            "suburb": "BLACKWATER, CAPELLA, COMET, LILYVALE",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 06:59",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "32",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 41,
+          "suburb": "BLACKWATER, CAPELLA, COMET, LILYVALE, MACKENZIE RIVER",
           "street_name": ""
         },
         {
@@ -753,7 +834,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "48",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 48,
           "suburb": "EAST GREENMOUNT, PRESTON, RAMSAY",
@@ -1032,7 +1113,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "7",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 7,
           "suburb": "DUCKLO",
@@ -1073,7 +1154,7 @@
             {
               "lga_name": "South Burnett Regional",
               "lga_code": null,
-              "affected_customers": 428
+              "affected_customers": 429
             },
             {
               "lga_name": "Western Downs Regional",
@@ -1088,11 +1169,11 @@
             "type": "UNPLANNED",
             "startTime": "13/11/2026 21:08",
             "restoreTime": "Under Investigation",
-            "customersAffected": "428",
+            "customersAffected": "429",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews working on-site"
           },
-          "affected_customers": 441,
+          "affected_customers": 442,
           "suburb": "ALICE CREEK, BILBOA, BOYNESIDE, BROOKLANDS, ELLESMERE, HALY CREEK, IRONPOT, JARAIL CREEK, KINGAROY, KUMBIA, MANNUEM",
           "street_name": ""
         },
@@ -1114,7 +1195,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "70",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Work delayed - crews unable to continue"
+            "status": "Crews on route"
           },
           "affected_customers": 70,
           "suburb": "BALLOGIE, CHAHPINGAH, DURONG, DURONG SOUTH, KINGAROY",
