@@ -2,44 +2,16 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T06:16:17Z",
+      "fetched_utc": "2026-11-13T06:31:29Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 4:15 PM",
-        "source_updated_utc": "2026-11-13T06:15:02Z",
-        "published_customers": 5521,
-        "event_count": 27
+        "source_updated": "13 November 2026 4:30 PM",
+        "source_updated_utc": "2026-11-13T06:30:02Z",
+        "published_customers": 5505,
+        "event_count": 25
       },
       "events": [
-        {
-          "event_id": "INCD-995013-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 22
-            }
-          ],
-          "details": {
-            "event": "INCD-995013-g",
-            "cause": "Powerlines down",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4207",
-            "suburb": "LOGAN VILLAGE",
-            "customersAffected": "22",
-            "restoreTime": "2026-11-13T18:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "CAMP CABLE RD"
-            ]
-          },
-          "affected_customers": 22,
-          "suburb": "LOGAN VILLAGE",
-          "street_name": "CAMP CABLE RD"
-        },
         {
           "event_id": "INCD-995019-g",
           "allocations": [
@@ -572,34 +544,6 @@
           "street_name": "BROWNS PLAINS RD"
         },
         {
-          "event_id": "INCD-997518-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 15
-            }
-          ],
-          "details": {
-            "event": "INCD-997518-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Scenic Rim Regional",
-            "postcode": "4306",
-            "suburb": "PEAK CROSSING",
-            "customersAffected": "13",
-            "restoreTime": "2026-11-13T18:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "WASHPOOL RD"
-            ]
-          },
-          "affected_customers": 15,
-          "suburb": "PEAK CROSSING, UNDULLAH, WASHPOOL",
-          "street_name": "WASHPOOL RD"
-        },
-        {
           "event_id": "INCD-997524-g",
           "allocations": [
             {
@@ -753,34 +697,6 @@
           "street_name": "ARIF PL, BAYLISS RD, BROWNS PLAINS RD, CALFORD CT, CARDINAL ST, CHELSEA CT, CHEROKEE PL, CLANDON ST, COCKATOO CT, COLOMBARD PL, COURTNEY CL, CRENTON CT, CUMBERLAND CRES, DROSERA CL, DURHAM CT, EARLS CT, EUCALYPT PL, EXCELSA PL, FANTAIL CT, FERNGROVE CT, FLORDABELLE PL, FLORDAGOLD PL, GREEN RD, GRIER DR, HAMPSHIRE CL, HASS PL, HAWTHORN ST, HENNA PL, HERITAGE BVD, ISABELLA CT, JESSICA CT, JUNEE CT, KENTISH CT, KEW PL, KIMRIDGE DR, LAMBERTH RD E, LEICESTERSHIRE CL, LLOYD CT, LOCKHART CT, LOMANDRA CT, MELASTOMA PL, MILLWOOD ST, MONTGOMERY CT, MUSCAT CT, NIGHTINGALE PL, PAIJE PL, POWELL ST, REMICK CT, RINCON ST, RUTLAND ST, RYEDALE ST, SEEANA CT, SHARNI CT, ST JAMES CCT, TARRANGO PL, TAWNY ST, TAYLOR ST, TERETI ST, TOKAY CL, TORRESIAN PL, VEDDERS DR, VOLSTEAD RD, WALTHAM ST, WHISTLER CL, WILTSHIRE ST, ZAIN ST, ZARA WAY"
         },
         {
-          "event_id": "INCD-997572-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-997572-g",
-            "cause": "Damage due to severe weather",
-            "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4125",
-            "suburb": "PARK RIDGE",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-13T18:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "CHAMBERS FLAT RD"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "PARK RIDGE",
-          "street_name": "CHAMBERS FLAT RD"
-        },
-        {
           "event_id": "INCD-997600-g",
           "allocations": [
             {
@@ -791,7 +707,7 @@
           ],
           "details": {
             "event": "INCD-997600-g",
-            "cause": "Damage due to severe weather",
+            "cause": "Damage to our equipment",
             "status": "Emergency Repairs",
             "council": "Logan City",
             "postcode": "4285",
@@ -819,7 +735,7 @@
           ],
           "details": {
             "event": "INCD-997621-g",
-            "cause": "Emergency Repairs",
+            "cause": "Damage to our equipment",
             "status": "Emergency Repairs",
             "council": "Somerset Regional",
             "postcode": "4312",
@@ -891,17 +807,45 @@
           "affected_customers": 1,
           "suburb": "PARK RIDGE",
           "street_name": "PARK RIDGE RD"
+        },
+        {
+          "event_id": "INCD-997684-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 22
+            }
+          ],
+          "details": {
+            "event": "INCD-997684-g",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
+            "council": "Logan City",
+            "postcode": "4207",
+            "suburb": "LOGAN VILLAGE",
+            "customersAffected": "22",
+            "restoreTime": "2026-11-13T21:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "CAMP CABLE RD"
+            ]
+          },
+          "affected_customers": 22,
+          "suburb": "LOGAN VILLAGE",
+          "street_name": "CAMP CABLE RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T06:16:21Z",
+      "fetched_utc": "2026-11-13T06:31:33Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T06:15:00Z",
-        "published_customers": 450,
-        "event_count": 13
+        "source_updated_utc": "2026-11-13T06:30:00Z",
+        "published_customers": 443,
+        "event_count": 12
       },
       "events": [
         {
@@ -998,35 +942,6 @@
           },
           "affected_customers": 5,
           "suburb": "COOKTOWN, HOPE VALE, LAURA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26FN11270",
-          "allocations": [
-            {
-              "lga_name": "Carpentaria Shire",
-              "lga_code": null,
-              "affected_customers": 5
-            },
-            {
-              "lga_name": "Burke Shire",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26FN11270",
-            "council": "Burke Shire Council",
-            "suburb": "NORMANTON",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 11:22",
-            "restoreTime": "13/11/2026 16:30",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 7,
-          "suburb": "NORMANTON",
           "street_name": ""
         },
         {
