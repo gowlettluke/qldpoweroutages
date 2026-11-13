@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T19:01:17Z",
+      "fetched_utc": "2026-11-13T19:17:29Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 5:00 AM",
-        "source_updated_utc": "2026-11-13T19:00:02Z",
-        "published_customers": 3269,
-        "event_count": 11
+        "source_updated": "14 November 2026 5:15 AM",
+        "source_updated_utc": "2026-11-13T19:15:02Z",
+        "published_customers": 2888,
+        "event_count": 14
       },
       "events": [
         {
@@ -243,6 +243,63 @@
           "street_name": "DERBY RD, LOGAN RESERVE RD"
         },
         {
+          "event_id": "INCD-997979-g",
+          "allocations": [
+            {
+              "lga_name": "Ipswich City",
+              "lga_code": null,
+              "affected_customers": 7
+            }
+          ],
+          "details": {
+            "event": "INCD-997979-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Ipswich City",
+            "postcode": "4305",
+            "suburb": "IPSWICH",
+            "customersAffected": "3",
+            "restoreTime": "2026-11-14T05:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ELLENBOROUGH ST",
+              "IPSWICH CITY MALL"
+            ]
+          },
+          "affected_customers": 7,
+          "suburb": "IPSWICH, WOODEND",
+          "street_name": "ELIZABETH ST, ELLENBOROUGH ST, IPSWICH CITY MALL, ROSEBERRY PDE"
+        },
+        {
+          "event_id": "INCD-997982-g",
+          "allocations": [
+            {
+              "lga_name": "Noosa Shire",
+              "lga_code": null,
+              "affected_customers": 4
+            }
+          ],
+          "details": {
+            "event": "INCD-997982-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Noosa",
+            "postcode": "4565",
+            "suburb": "RINGTAIL CREEK",
+            "customersAffected": "4",
+            "restoreTime": "2026-11-14T06:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BUNDOORA ST"
+            ]
+          },
+          "affected_customers": 4,
+          "suburb": "RINGTAIL CREEK",
+          "street_name": "BUNDOORA ST"
+        },
+        {
           "event_id": "INCD-997983-g",
           "allocations": [
             {
@@ -285,7 +342,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 2195
+              "affected_customers": 1960
             }
           ],
           "details": {
@@ -296,7 +353,7 @@
             "postcode": "4132",
             "suburb": "CRESTMEAD",
             "customersAffected": "1591",
-            "restoreTime": "2026-11-14T08:00:00+10:00",
+            "restoreTime": "2026-11-14T09:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -364,9 +421,9 @@
               "WILGA ST"
             ]
           },
-          "affected_customers": 2195,
-          "suburb": "CRESTMEAD, LOGANLEA, MARSDEN, WATERFORD WEST",
-          "street_name": "ABBEYFEALE ST, ASH ST, AUGUSTA ST, BALSA ST, BAMBIL ST, BARCREST CT, BELAH ST, BILK ST, BIRCH ST, BIX CT, BLACKBUTT ST, BLOODWOOD ST, BROWNS PLAINS RD, BRUSHBOX ST, BURSARIA ST, CARINYA ST, CARROSA ST, CHAMBERS FLAT RD, COACHWOOD ST, COFFEY ST, CRINUM ST, DEAN ST, DODDS CT, DORSEY ST, DRIFTWOOD ST, EDEN LANE, ELAROO ST, FIR PL, FORESTWOOD ST, GIMLET ST, GRIX CT, HAKARI ST, HAKEA ST, HAYES CT, HEIDI ST, HICKORY ST, HUON ST, IRONWOOD ST, KERRIA ST, KIM ST, LACEBARK ST, LAROCHE ST, LEAZA ST, LILLY PILLY ST, LIMERICK DR, LOCHORE CT, LOVE ST, MALLEE ST, MARISA ST, MARK LANE, MERANTI ST, MILEHAM CT, MOONAH CT, MORROW ST, MYALL ST, NOLINA CT, NORAH ST, OCHNA ST, OREGON ST, OVERTON CT, PAPERBARK ST, PEPPERMINT ST, PINEWOOD ST, PINNINGTON ST, POPLAR ST, QUANDONG ST, RAMIN ST, RATHKEALE ST, ROYENA CT, SANDALWOOD ST, SATINWOOD ST, SHANNON ST, STACEY CT, THERESE ST, THIRD AVE, TIMPERLEY CT, TREMAIN ST, TRULSON DR, WARATAH DR, WHITEMAN ST, WILGA ST"
+          "affected_customers": 1960,
+          "suburb": "CRESTMEAD, MARSDEN",
+          "street_name": "ABBEYFEALE ST, ASH ST, AUGUSTA ST, BALSA ST, BAMBIL ST, BARCREST CT, BELAH ST, BILK ST, BIRCH ST, BIX CT, BLACKBUTT ST, BLOODWOOD ST, BROWNS PLAINS RD, BRUSHBOX ST, BURSARIA ST, CARINYA ST, CARROSA ST, CHAMBERS FLAT RD, COACHWOOD ST, COFFEY ST, CRINUM ST, DEAN ST, DODDS CT, DORSEY ST, DRIFTWOOD ST, EDEN LANE, ELAROO ST, FIR PL, FORESTWOOD ST, GIMLET ST, GRIX CT, HAKARI ST, HAKEA ST, HAYES CT, HEIDI ST, HICKORY ST, HUON ST, IRONWOOD ST, KERRIA ST, KIM ST, LACEBARK ST, LAROCHE ST, LEAZA ST, LILLY PILLY ST, LIMERICK DR, LOCHORE CT, LOVE ST, MALLEE ST, MARISA ST, MERANTI ST, MILEHAM CT, MOONAH CT, MORROW ST, MYALL ST, NOLINA CT, NORAH ST, OCHNA ST, OREGON ST, OVERTON CT, PAPERBARK ST, PEPPERMINT ST, PINEWOOD ST, PINNINGTON ST, POPLAR ST, QUANDONG ST, RAMIN ST, RATHKEALE ST, ROYENA CT, SANDALWOOD ST, SATINWOOD ST, SHANNON ST, STACEY CT, THERESE ST, THIRD AVE, TIMPERLEY CT, TREMAIN ST, TRULSON DR, WARATAH DR, WHITEMAN ST, WILGA ST"
         },
         {
           "event_id": "INCD-997990-g",
@@ -374,12 +431,7 @@
             {
               "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 169
-            },
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 46
+              "affected_customers": 57
             }
           ],
           "details": {
@@ -389,34 +441,56 @@
             "council": "Brisbane City",
             "postcode": "4156",
             "suburb": "BURBANK",
-            "customersAffected": "157",
+            "customersAffected": "44",
             "restoreTime": "2026-11-14T07:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "ALPERTON RD",
               "FORD RD",
-              "JENYNS CT",
-              "KELLY ST",
               "KLOSKE RD",
-              "LEACROFT RD",
-              "LONGTON CT",
-              "PRIESTDALE RD",
               "SIMMINS PL"
             ]
           },
-          "affected_customers": 215,
-          "suburb": "BURBANK, PRIESTDALE, ROCHEDALE",
-          "street_name": "ALPERTON RD, FORD RD, GRIEVE RD, JENYNS CT, KELLY ST, KLOSKE RD, LEACROFT RD, LONGTON CT, PRIESTDALE RD, ROCHEDALE RD, SIMMINS PL"
+          "affected_customers": 57,
+          "suburb": "BURBANK, ROCHEDALE",
+          "street_name": "FORD RD, GRIEVE RD, KLOSKE RD, ROCHEDALE RD, SIMMINS PL"
+        },
+        {
+          "event_id": "INCD-998005-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-998005-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4572",
+            "suburb": "ALEXANDRA HEADLAND",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-14T08:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALEXANDRA PDE"
+            ]
+          },
+          "affected_customers": 1,
+          "suburb": "ALEXANDRA HEADLAND",
+          "street_name": "ALEXANDRA PDE"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T19:01:20Z",
+      "fetched_utc": "2026-11-13T19:17:32Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T19:00:01Z",
+        "source_updated_utc": "2026-11-13T19:15:23Z",
         "published_customers": 1919,
         "event_count": 25
       },
