@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-13T11:46:28Z",
+      "fetched_utc": "2026-11-13T12:01:37Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "13 November 2026 9:45 PM",
-        "source_updated_utc": "2026-11-13T11:45:02Z",
-        "published_customers": 981,
-        "event_count": 16
+        "source_updated": "13 November 2026 10:00 PM",
+        "source_updated_utc": "2026-11-13T12:00:02Z",
+        "published_customers": 1010,
+        "event_count": 17
       },
       "events": [
         {
@@ -18,7 +18,7 @@
             {
               "lga_name": "Logan City",
               "lga_code": null,
-              "affected_customers": 403
+              "affected_customers": 399
             }
           ],
           "details": {
@@ -37,7 +37,7 @@
               "LATIMER RD"
             ]
           },
-          "affected_customers": 403,
+          "affected_customers": 399,
           "suburb": "BUCCAN, LOGAN VILLAGE",
           "street_name": "BOOLONG CT, BUENA VISTA DR, BURDEKIN CT, CAMEL CT, CANAIPA CT, CHALLEN RD, CONDAMINE DR, COPLICK CRES, DAINTREE DR, DIAMENTINA DR, ELLEN CT, FRYAR RD, HAMILTON RD, HINCHCLIFFE RD, KENNEDY CT, LATIMER RD, LAVELLE DR, MILLER RD, MINEHAN RD, QUINZEH CREEK RD, SWANBOROUGH RD, TOMOHON HEIGHTS CL, TYSON CT"
         },
@@ -372,6 +372,36 @@
           "street_name": "BROWN RD, CUNNINGHAM HWY, HAYES RD, HORAN RD, I ZAHNOWS RD, KALBAR CONNECTION RD, LEITCH RD, S BROWNS RD"
         },
         {
+          "event_id": "INCD-997838-g",
+          "allocations": [
+            {
+              "lga_name": "Lockyer Valley Regional",
+              "lga_code": null,
+              "affected_customers": 33
+            }
+          ],
+          "details": {
+            "event": "INCD-997838-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Lockyer Valley Regional",
+            "postcode": "4341",
+            "suburb": "LAIDLEY HEIGHTS",
+            "customersAffected": "33",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "HERON ST",
+              "LAKES DR",
+              "PLOVER CT"
+            ]
+          },
+          "affected_customers": 33,
+          "suburb": "LAIDLEY HEIGHTS",
+          "street_name": "HERON ST, LAKES DR, PLOVER CT"
+        },
+        {
           "event_id": "INCD-997859-g",
           "allocations": [
             {
@@ -480,7 +510,7 @@
             "postcode": "4341",
             "suburb": "HATTON VALE",
             "customersAffected": "14",
-            "restoreTime": "2026-11-13T23:00:00+10:00",
+            "restoreTime": "2026-11-14T09:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -494,12 +524,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-13T11:46:32Z",
+      "fetched_utc": "2026-11-13T12:01:40Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-13T11:45:00Z",
-        "published_customers": 1449,
+        "source_updated_utc": "2026-11-13T12:00:17Z",
+        "published_customers": 1419,
         "event_count": 21
       },
       "events": [
@@ -629,22 +659,22 @@
             {
               "lga_name": "Western Downs Regional",
               "lga_code": null,
-              "affected_customers": 42
+              "affected_customers": 12
             }
           ],
           "details": {
             "event": "26SW14888",
             "council": "Western Downs Regional Council",
-            "suburb": "DRILLHAM, DRILLHAM SOUTH, MILES",
+            "suburb": "DRILLHAM, DRILLHAM SOUTH",
             "type": "UNPLANNED",
             "startTime": "13/11/2026 16:51",
             "restoreTime": "Under Investigation",
-            "customersAffected": "42",
+            "customersAffected": "12",
             "cause": "The loss of supply is due to damage caused by storm activity.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 42,
-          "suburb": "DRILLHAM, DRILLHAM SOUTH, MILES",
+          "affected_customers": 12,
+          "suburb": "DRILLHAM, DRILLHAM SOUTH",
           "street_name": ""
         },
         {
@@ -737,7 +767,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "105",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 105,
           "suburb": "BACK PLAINS, CLIFTON, FELTON, KINGS CREEK, MOUNT MOLAR, NEVILTON, NOBBY, WILLOW SPRINGS",
