@@ -1,38 +1,41 @@
 {
-  "generated_utc": "2026-11-13T02:46:02Z",
-  "generated_aest": "2026-11-13T12:46:02+10:00",
+  "generated_utc": "2026-11-13T03:01:24Z",
+  "generated_aest": "2026-11-13T13:01:24+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 51,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 450,
+  "current_records_before_outage_type_filter": 441,
   "current_records_after_outage_type_filter": 54,
-  "current_records_dropped_planned_or_unknown": 396,
+  "current_records_dropped_planned_or_unknown": 387,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {},
+  "provider_fetch_warnings": {
+    "Energex": "Update delayed; using verified provider data from 2026-11-13T02:30:02Z. Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+  },
   "council_allocation_status": {
     "Energex": {
-      "status": "provider",
+      "status": "provider_cache",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
       "source_updated": "13 November 2026 12:30 PM",
       "source_updated_utc": "2026-11-13T02:30:02Z",
       "published_customers": 5100,
       "event_count": 32,
-      "fetched_utc": "2026-11-13T02:46:11Z"
+      "fetched_utc": "2026-11-13T02:46:11Z",
+      "collection_error": "Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T02:45:01Z",
+      "source_updated_utc": "2026-11-13T03:00:18Z",
       "published_customers": 330,
       "event_count": 19,
-      "fetched_utc": "2026-11-13T02:46:14Z"
+      "fetched_utc": "2026-11-13T03:01:43Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-13T02:46:02Z",
+    "snapshot_utc": "2026-11-13T03:01:24Z",
     "energex": {
       "status": "ok",
       "fetched_utc": "2026-11-13T02:46:11Z",
@@ -40,7 +43,7 @@
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
       "source_updated_utc": "2026-11-13T02:30:02Z",
-      "retained": false,
+      "retained": true,
       "total_customers": 5100,
       "rows": [
         {
@@ -75,11 +78,11 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T02:46:14Z",
+      "fetched_utc": "2026-11-13T03:01:43Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T02:45:01Z",
+      "source_updated_utc": "2026-11-13T03:00:18Z",
       "retained": false,
       "total_customers": 330,
       "rows": [
@@ -149,15 +152,15 @@
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 32,
   "current_ergon_records": 19,
-  "current_essential_records_fetched": 27,
+  "current_essential_records_fetched": 23,
   "current_energex_records_fetched": 150,
-  "current_ergon_records_fetched": 265,
+  "current_ergon_records_fetched": 261,
   "current_essential_records_after_qld_polygon_prefilter": 0,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 3,
   "current_essential_records_included_qld": 0,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 12136,
-  "lga_totals_rows_48h": 8517,
+  "snapshot_rows_48h": 12144,
+  "lga_totals_rows_48h": 8491,
   "lga_totals_latest_rows": 44,
   "lga_cumulative_rows": 110,
   "outputs": {
