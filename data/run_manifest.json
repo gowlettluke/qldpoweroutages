@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-13T18:46:12Z",
-  "generated_aest": "2026-11-14T04:46:12+10:00",
+  "generated_utc": "2026-11-13T19:01:11Z",
+  "generated_aest": "2026-11-14T05:01:11+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 39,
@@ -15,49 +15,53 @@
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "14 November 2026 4:45 AM",
-      "source_updated_utc": "2026-11-13T18:45:03Z",
-      "published_customers": 2970,
+      "source_updated": "14 November 2026 5:00 AM",
+      "source_updated_utc": "2026-11-13T19:00:02Z",
+      "published_customers": 3269,
       "event_count": 11,
-      "fetched_utc": "2026-11-13T18:46:19Z"
+      "fetched_utc": "2026-11-13T19:01:17Z"
     },
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T18:45:24Z",
-      "published_customers": 2006,
+      "source_updated_utc": "2026-11-13T19:00:01Z",
+      "published_customers": 1919,
       "event_count": 25,
-      "fetched_utc": "2026-11-13T18:46:23Z"
+      "fetched_utc": "2026-11-13T19:01:20Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-13T18:46:12Z",
+    "snapshot_utc": "2026-11-13T19:01:11Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T18:46:19Z",
+      "fetched_utc": "2026-11-13T19:01:17Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-13T18:45:03Z",
+      "source_updated_utc": "2026-11-13T19:00:02Z",
       "retained": false,
-      "total_customers": 2970,
+      "total_customers": 3269,
       "rows": [
         {
+          "lga_name": "Brisbane City",
+          "affected_customers": 169
+        },
+        {
           "lga_name": "Logan City",
-          "affected_customers": 2970
+          "affected_customers": 3100
         }
       ]
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-13T18:46:23Z",
+      "fetched_utc": "2026-11-13T19:01:20Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-13T18:45:24Z",
+      "source_updated_utc": "2026-11-13T19:00:01Z",
       "retained": false,
-      "total_customers": 2006,
+      "total_customers": 1919,
       "rows": [
         {
           "lga_name": "Banana Shire",
@@ -73,7 +77,7 @@
         },
         {
           "lga_name": "Charters Towers Regional",
-          "affected_customers": 140
+          "affected_customers": 53
         },
         {
           "lga_name": "Fraser Coast Regional",
@@ -126,15 +130,15 @@
   "current_energex_records": 11,
   "current_ergon_records": 25,
   "current_essential_records_fetched": 11,
-  "current_energex_records_fetched": 115,
+  "current_energex_records_fetched": 116,
   "current_ergon_records_fetched": 247,
   "current_essential_records_after_qld_polygon_prefilter": 3,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 7,
   "current_essential_records_included_qld": 3,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 10214,
-  "lga_totals_rows_48h": 7741,
-  "lga_totals_latest_rows": 34,
+  "snapshot_rows_48h": 10253,
+  "lga_totals_rows_48h": 7777,
+  "lga_totals_latest_rows": 36,
   "lga_cumulative_rows": 98,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
