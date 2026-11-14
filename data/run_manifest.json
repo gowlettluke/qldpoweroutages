@@ -1,12 +1,12 @@
 {
-  "generated_utc": "2026-11-14T00:16:04Z",
-  "generated_aest": "2026-11-14T10:16:04+10:00",
+  "generated_utc": "2026-11-14T00:31:12Z",
+  "generated_aest": "2026-11-14T10:31:12+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 46,
+  "current_outage_records": 47,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 495,
-  "current_records_after_outage_type_filter": 51,
+  "current_records_before_outage_type_filter": 498,
+  "current_records_after_outage_type_filter": 54,
   "current_records_dropped_planned_or_unknown": 444,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
@@ -27,15 +27,15 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T00:15:00Z",
-      "published_customers": 3642,
-      "event_count": 27,
-      "fetched_utc": "2026-11-14T00:16:22Z"
+      "source_updated_utc": "2026-11-14T00:30:01Z",
+      "published_customers": 3646,
+      "event_count": 28,
+      "fetched_utc": "2026-11-14T00:31:30Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-14T00:16:04Z",
+    "snapshot_utc": "2026-11-14T00:31:12Z",
     "energex": {
       "status": "ok",
       "fetched_utc": "2026-11-14T00:01:46Z",
@@ -62,17 +62,17 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-14T00:16:22Z",
+      "fetched_utc": "2026-11-14T00:31:30Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T00:15:00Z",
+      "source_updated_utc": "2026-11-14T00:30:01Z",
       "retained": false,
-      "total_customers": 3642,
+      "total_customers": 3646,
       "rows": [
         {
           "lga_name": "Barcaldine Regional",
-          "affected_customers": 49
+          "affected_customers": 40
         },
         {
           "lga_name": "Blackall Tambo Regional",
@@ -132,7 +132,7 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 366
+          "affected_customers": 379
         },
         {
           "lga_name": "Western Downs Regional",
@@ -143,16 +143,16 @@
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 16,
-  "current_ergon_records": 27,
-  "current_essential_records_fetched": 10,
-  "current_energex_records_fetched": 155,
-  "current_ergon_records_fetched": 329,
+  "current_ergon_records": 28,
+  "current_essential_records_fetched": 12,
+  "current_energex_records_fetched": 154,
+  "current_ergon_records_fetched": 330,
   "current_essential_records_after_qld_polygon_prefilter": 3,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 5,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 7,
   "current_essential_records_included_qld": 3,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 9599,
-  "lga_totals_rows_48h": 7713,
+  "snapshot_rows_48h": 9646,
+  "lga_totals_rows_48h": 7755,
   "lga_totals_latest_rows": 42,
   "lga_cumulative_rows": 98,
   "outputs": {
