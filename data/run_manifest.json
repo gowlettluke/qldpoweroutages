@@ -1,12 +1,12 @@
 {
-  "generated_utc": "2026-11-14T04:45:55Z",
-  "generated_aest": "2026-11-14T14:45:55+10:00",
+  "generated_utc": "2026-11-14T05:01:32Z",
+  "generated_aest": "2026-11-14T15:01:32+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 30,
+  "current_outage_records": 28,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 484,
-  "current_records_after_outage_type_filter": 41,
+  "current_records_before_outage_type_filter": 482,
+  "current_records_after_outage_type_filter": 39,
   "current_records_dropped_planned_or_unknown": 443,
   "provider_fetch_errors": {
     "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
@@ -21,29 +21,29 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T04:45:00Z",
-      "published_customers": 794,
-      "event_count": 19,
-      "fetched_utc": "2026-11-14T04:46:09Z"
+      "source_updated_utc": "2026-11-14T05:00:00Z",
+      "published_customers": 773,
+      "event_count": 17,
+      "fetched_utc": "2026-11-14T05:01:47Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-14T04:45:55Z",
+    "snapshot_utc": "2026-11-14T05:01:32Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-14T04:46:10Z",
+      "fetched_utc": "2026-11-14T05:01:49Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-14T04:46:09Z",
+      "fetched_utc": "2026-11-14T05:01:47Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T04:45:00Z",
+      "source_updated_utc": "2026-11-14T05:00:00Z",
       "retained": false,
-      "total_customers": 794,
+      "total_customers": 773,
       "rows": [
         {
           "lga_name": "Barcaldine Regional",
@@ -87,27 +87,27 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 167
+          "affected_customers": 158
         },
         {
           "lga_name": "Western Downs Regional",
-          "affected_customers": 42
+          "affected_customers": 30
         }
       ]
     }
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 8,
-  "current_ergon_records": 19,
+  "current_ergon_records": 17,
   "current_essential_records_fetched": 15,
   "current_energex_records_fetched": 148,
-  "current_ergon_records_fetched": 321,
+  "current_ergon_records_fetched": 319,
   "current_essential_records_after_qld_polygon_prefilter": 3,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 11,
   "current_essential_records_included_qld": 3,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 8997,
-  "lga_totals_rows_48h": 7566,
+  "snapshot_rows_48h": 8886,
+  "lga_totals_rows_48h": 7497,
   "lga_totals_latest_rows": 31,
   "lga_cumulative_rows": 96,
   "outputs": {
