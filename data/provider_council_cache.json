@@ -395,39 +395,15 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-14T12:16:20Z",
+      "fetched_utc": "2026-11-14T16:16:30Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-14T12:15:01Z",
-        "published_customers": 812,
-        "event_count": 19
+        "source_updated_utc": "2026-11-14T16:15:00Z",
+        "published_customers": 2152,
+        "event_count": 20
       },
       "events": [
-        {
-          "event_id": "26CA13716",
-          "allocations": [
-            {
-              "lga_name": "Livingstone Shire",
-              "lga_code": null,
-              "affected_customers": 9
-            }
-          ],
-          "details": {
-            "event": "26CA13716",
-            "council": "Livingstone Shire Council",
-            "suburb": "IRONPOT, NORTH ROCKHAMPTON",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 16:04",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "9",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 9,
-          "suburb": "IRONPOT, NORTH ROCKHAMPTON",
-          "street_name": ""
-        },
         {
           "event_id": "26CA13717",
           "allocations": [
@@ -446,7 +422,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "10",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews on route"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 10,
           "suburb": "ISISFORD, LONGREACH",
@@ -506,6 +482,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13737",
+          "allocations": [
+            {
+              "lga_name": "Longreach Regional",
+              "lga_code": null,
+              "affected_customers": 24
+            }
+          ],
+          "details": {
+            "event": "26CA13737",
+            "council": "Longreach Regional Council",
+            "suburb": "LONGREACH, VERGEMONT",
+            "type": "UNPLANNED",
+            "startTime": "15/11/2026 01:06",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "24",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 24,
+          "suburb": "LONGREACH, VERGEMONT",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11079",
           "allocations": [
             {
@@ -530,75 +530,181 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ14144",
+          "event_id": "26NQ14156",
+          "allocations": [
+            {
+              "lga_name": "Cloncurry Shire",
+              "lga_code": null,
+              "affected_customers": 36
+            }
+          ],
+          "details": {
+            "event": "26NQ14156",
+            "council": "Cloncurry Shire Council",
+            "suburb": "CLONCURRY",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 23:06",
+            "restoreTime": "15/11/2026 18:00",
+            "customersAffected": "36",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Work delayed - crews unable to continue"
+          },
+          "affected_customers": 36,
+          "suburb": "CLONCURRY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ14161",
+          "allocations": [
+            {
+              "lga_name": "Mount Isa City",
+              "lga_code": null,
+              "affected_customers": 896
+            },
+            {
+              "lga_name": "Cloncurry Shire",
+              "lga_code": null,
+              "affected_customers": 18
+            },
+            {
+              "lga_name": "Boulia Shire",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "26NQ14161",
+            "council": "Boulia Shire Council",
+            "suburb": "MORNINGTON",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 23:58",
+            "restoreTime": "15/11/2026 12:00",
+            "customersAffected": "1",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 915,
+          "suburb": "DUCHESS, HAPPY VALLEY, HEALY, MICA CREEK, MORNINGTON, MOUNT ISA, PARKSIDE, SPREADBOROUGH",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ14164",
+          "allocations": [
+            {
+              "lga_name": "Mount Isa City",
+              "lga_code": null,
+              "affected_customers": 74
+            }
+          ],
+          "details": {
+            "event": "26NQ14164",
+            "council": "Mount Isa City Council",
+            "suburb": "BREAKAWAY, FISHER, MOUNT ISA",
+            "type": "UNPLANNED",
+            "startTime": "15/11/2026 00:05",
+            "restoreTime": "15/11/2026 12:00",
+            "customersAffected": "74",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 74,
+          "suburb": "BREAKAWAY, FISHER, MOUNT ISA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ14165",
+          "allocations": [
+            {
+              "lga_name": "Mount Isa City",
+              "lga_code": null,
+              "affected_customers": 150
+            }
+          ],
+          "details": {
+            "event": "26NQ14165",
+            "council": "Mount Isa City Council",
+            "suburb": "MENZIES, MORNINGTON, MOUNT ISA CITY",
+            "type": "UNPLANNED",
+            "startTime": "15/11/2026 00:05",
+            "restoreTime": "15/11/2026 12:00",
+            "customersAffected": "150",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 150,
+          "suburb": "MENZIES, MORNINGTON, MOUNT ISA CITY",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ14166",
+          "allocations": [
+            {
+              "lga_name": "Mount Isa City",
+              "lga_code": null,
+              "affected_customers": 228
+            }
+          ],
+          "details": {
+            "event": "26NQ14166",
+            "council": "Mount Isa City Council",
+            "suburb": "HEALY, MENZIES, MILES END, MORNINGTON, MOUNT ISA, MOUNT ISA CITY, PARKSIDE, PIONEER, RYAN, SOLDIERS HILL, SUNSET",
+            "type": "UNPLANNED",
+            "startTime": "15/11/2026 00:05",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "228",
+            "cause": "The loss of supply is due to the operating of protective equipment.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 228,
+          "suburb": "HEALY, MENZIES, MILES END, MORNINGTON, MOUNT ISA, MOUNT ISA CITY, PARKSIDE, PIONEER, RYAN, SOLDIERS HILL, SUNSET",
+          "street_name": ""
+        },
+        {
+          "event_id": "26NQ14168",
           "allocations": [
             {
               "lga_name": "Burdekin Shire",
               "lga_code": null,
-              "affected_customers": 34
+              "affected_customers": 63
             }
           ],
           "details": {
-            "event": "26NQ14144",
+            "event": "26NQ14168",
             "council": "Burdekin Shire Council",
-            "suburb": "AIRDMILLAN, AYR",
+            "suburb": "AYR, GIRU, HORSESHOE LAGOON",
             "type": "UNPLANNED",
-            "startTime": "14/11/2026 19:05",
-            "restoreTime": "14/11/2026 23:00",
-            "customersAffected": "34",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
+            "startTime": "15/11/2026 00:50",
+            "restoreTime": "15/11/2026 12:00",
+            "customersAffected": "63",
+            "cause": "The loss of supply is due to the operating of protective equipment.",
+            "status": "Crews on route"
           },
-          "affected_customers": 34,
-          "suburb": "AIRDMILLAN, AYR",
+          "affected_customers": 63,
+          "suburb": "AYR, GIRU, HORSESHOE LAGOON",
           "street_name": ""
         },
         {
-          "event_id": "26NQ14145",
+          "event_id": "26NQ14170",
           "allocations": [
             {
-              "lga_name": "Townsville City",
+              "lga_name": "Mount Isa City",
               "lga_code": null,
-              "affected_customers": 112
+              "affected_customers": 52
             }
           ],
           "details": {
-            "event": "26NQ14145",
-            "council": "Townsville City Council",
-            "suburb": "CRANBROOK",
+            "event": "26NQ14170",
+            "council": "Mount Isa City Council",
+            "suburb": "PIONEER",
             "type": "UNPLANNED",
-            "startTime": "14/11/2026 19:43",
-            "restoreTime": "14/11/2026 23:00",
-            "customersAffected": "112",
-            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 112,
-          "suburb": "CRANBROOK",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW14941",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26SW14941",
-            "council": "Toowoomba Regional Council",
-            "suburb": "BACK PLAINS",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 19:03",
+            "startTime": "15/11/2026 00:44",
             "restoreTime": "Under Investigation",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Crews working on-site"
+            "customersAffected": "52",
+            "cause": "The loss of supply is due to damage caused by external influences, such as birds or animals.",
+            "status": "Outage reported"
           },
-          "affected_customers": 2,
-          "suburb": "BACK PLAINS",
+          "affected_customers": 52,
+          "suburb": "PIONEER",
           "street_name": ""
         },
         {
@@ -623,30 +729,6 @@
           },
           "affected_customers": 29,
           "suburb": "AUBURN, CHINCHILLA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW15092",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26SW15092",
-            "council": "Toowoomba Regional Council",
-            "suburb": "HEADINGTON HILL",
-            "type": "UNPLANNED",
-            "startTime": "13/11/2026 21:09",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 2,
-          "suburb": "HEADINGTON HILL",
           "street_name": ""
         },
         {
@@ -700,30 +782,6 @@
           },
           "affected_customers": 13,
           "suburb": "BINDEBANGO, MITCHELL, MORVEN",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW15136",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 35
-            }
-          ],
-          "details": {
-            "event": "26SW15136",
-            "council": "Toowoomba Regional Council",
-            "suburb": "HIGHFIELDS",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 12:43",
-            "restoreTime": "14/11/2026 23:00",
-            "customersAffected": "35",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 35,
-          "suburb": "HIGHFIELDS",
           "street_name": ""
         },
         {
@@ -783,7 +841,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "172",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Work delayed - crews unable to continue"
           },
           "affected_customers": 249,
           "suburb": "AUBURN, CHINCHILLA, EUROMBAH, GLEBE, INJUNE, KANGAROO CREEK, PEEK-A-DOO, SPRING CREEK, SUJEEWONG, TAROOM, WALLUMBILLA NORTH, WANDOAN, YULEBA",
@@ -811,30 +869,6 @@
           },
           "affected_customers": 2,
           "suburb": "MILLMERRAN DOWNS",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW15170",
-          "allocations": [
-            {
-              "lga_name": "Western Downs Regional",
-              "lga_code": null,
-              "affected_customers": 8
-            }
-          ],
-          "details": {
-            "event": "26SW15170",
-            "council": "Western Downs Regional Council",
-            "suburb": "KOGAN",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 20:18",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "8",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 8,
-          "suburb": "KOGAN",
           "street_name": ""
         },
         {
