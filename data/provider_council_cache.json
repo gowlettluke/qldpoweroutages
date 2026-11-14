@@ -2,406 +2,129 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-14T01:01:52Z",
+      "fetched_utc": "2026-11-14T18:01:43Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "14 November 2026 11:00 AM",
-        "source_updated_utc": "2026-11-14T01:00:02Z",
-        "published_customers": 708,
-        "event_count": 13
+        "source_updated": "15 November 2026 4:00 AM",
+        "source_updated_utc": "2026-11-14T18:00:02Z",
+        "published_customers": 427,
+        "event_count": 3
       },
       "events": [
         {
-          "event_id": "INCD-995019-g",
+          "event_id": "INCD-998325-g",
           "allocations": [
             {
-              "lga_name": "Logan City",
+              "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 385
+              "affected_customers": 79
             }
           ],
           "details": {
-            "event": "INCD-995019-g",
-            "cause": "Powerlines down",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4207",
-            "suburb": "BUCCAN",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-14T16:00:00+10:00",
+            "event": "INCD-998325-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Brisbane City",
+            "postcode": "4109",
+            "suburb": "SUNNYBANK HILLS",
+            "customersAffected": "79",
+            "restoreTime": "2026-11-15T04:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "LATIMER RD"
+              "ALUMUNA ST",
+              "ARATULA ST",
+              "CAMBOOYA ST",
+              "COOLGARDIE ST",
+              "EMERY ST",
+              "JACKSON RD",
+              "LANDSEER ST",
+              "WERANGA ST"
             ]
           },
-          "affected_customers": 385,
-          "suburb": "BUCCAN, LOGAN VILLAGE",
-          "street_name": "BOOLONG CT, BUENA VISTA DR, BURDEKIN CT, CAMEL CT, CANAIPA CT, CHALLEN RD, CONDAMINE DR, DAINTREE DR, DIAMENTINA DR, ELLEN CT, FRYAR RD, HAMILTON RD, HINCHCLIFFE RD, KENNEDY CT, LATIMER RD, LAVELLE DR, MILLER RD, MINEHAN RD, QUINZEH CREEK RD, SWANBOROUGH RD, TOMOHON HEIGHTS CL, TYSON CT"
+          "affected_customers": 79,
+          "suburb": "SUNNYBANK HILLS",
+          "street_name": "ALUMUNA ST, ARATULA ST, CAMBOOYA ST, COOLGARDIE ST, EMERY ST, JACKSON RD, LANDSEER ST, WERANGA ST"
         },
         {
-          "event_id": "INCD-995022-g",
+          "event_id": "INCD-998382-g",
           "allocations": [
             {
-              "lga_name": "Logan City",
+              "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
-              "affected_customers": 9
+              "affected_customers": 346
             }
           ],
           "details": {
-            "event": "INCD-995022-g",
-            "cause": "Powerlines down",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4207",
-            "suburb": "LOGAN VILLAGE",
-            "customersAffected": "9",
-            "restoreTime": "2026-11-14T16:00:00+10:00",
+            "event": "INCD-998382-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Sunshine Coast",
+            "postcode": "4557",
+            "suburb": "MOOLOOLABA",
+            "customersAffected": "346",
+            "restoreTime": "2026-11-15T05:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "MILLER RD",
-              "QUINZEH CREEK RD"
+              "ARUMA CT",
+              "BRENTWOOD AVE",
+              "CAREELA ST",
+              "KALINDA AVE",
+              "LAWRENCE ST",
+              "LENTARA CRES",
+              "OCEAN VIEW AVE",
+              "PALM DR",
+              "PETTIGREW ST",
+              "TOMBARRA ST",
+              "TOORUMBEE DR",
+              "ULAKA CT",
+              "WARRINA CT"
             ]
           },
-          "affected_customers": 9,
-          "suburb": "LOGAN VILLAGE",
-          "street_name": "MILLER RD, QUINZEH CREEK RD"
+          "affected_customers": 346,
+          "suburb": "MOOLOOLABA",
+          "street_name": "ARUMA CT, BRENTWOOD AVE, CAREELA ST, KALINDA AVE, LAWRENCE ST, LENTARA CRES, OCEAN VIEW AVE, PALM DR, PETTIGREW ST, TOMBARRA ST, TOORUMBEE DR, ULAKA CT, WARRINA CT"
         },
         {
-          "event_id": "INCD-995026-g",
+          "event_id": "INCD-998392-g",
           "allocations": [
             {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 6
-            }
-          ],
-          "details": {
-            "event": "INCD-995026-g",
-            "cause": "Powerlines down",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4207",
-            "suburb": "LOGAN VILLAGE",
-            "customersAffected": "6",
-            "restoreTime": "2026-11-14T16:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BOBERMIEN RD",
-              "HOTZ RD"
-            ]
-          },
-          "affected_customers": 6,
-          "suburb": "LOGAN VILLAGE",
-          "street_name": "BOBERMIEN RD, HOTZ RD"
-        },
-        {
-          "event_id": "INCD-996738-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 21
-            }
-          ],
-          "details": {
-            "event": "INCD-996738-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4280",
-            "suburb": "JIMBOOMBA",
-            "customersAffected": "21",
-            "restoreTime": "2026-11-14T12:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "AMBER CRES",
-              "EDELSTEN RD"
-            ]
-          },
-          "affected_customers": 21,
-          "suburb": "JIMBOOMBA",
-          "street_name": "AMBER CRES, EDELSTEN RD"
-        },
-        {
-          "event_id": "INCD-997457-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
+              "lga_name": "Brisbane City",
               "lga_code": null,
               "affected_customers": 2
             }
           ],
           "details": {
-            "event": "INCD-997457-g",
-            "cause": "Damage due to severe weather",
+            "event": "INCD-998392-g",
+            "cause": "Emergency Repairs",
             "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4132",
-            "suburb": "MARSDEN",
+            "council": "Brisbane City",
+            "postcode": "4012",
+            "suburb": "NUNDAH",
             "customersAffected": "2",
-            "restoreTime": "2026-11-14T12:00:00+10:00",
+            "restoreTime": "2026-11-15T06:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "BROWNS PLAINS RD"
+              "RYANS RD"
             ]
           },
           "affected_customers": 2,
-          "suburb": "MARSDEN",
-          "street_name": "BROWNS PLAINS RD"
-        },
-        {
-          "event_id": "INCD-997861-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 12
-            }
-          ],
-          "details": {
-            "event": "INCD-997861-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4133",
-            "suburb": "LOGAN RESERVE",
-            "customersAffected": "12",
-            "restoreTime": "2026-11-14T11:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "DERBY RD",
-              "LOGAN RESERVE RD"
-            ]
-          },
-          "affected_customers": 12,
-          "suburb": "LOGAN RESERVE",
-          "street_name": "DERBY RD, LOGAN RESERVE RD"
-        },
-        {
-          "event_id": "INCD-997918-g",
-          "allocations": [
-            {
-              "lga_name": "Brisbane City",
-              "lga_code": null,
-              "affected_customers": 46
-            }
-          ],
-          "details": {
-            "event": "INCD-997918-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Brisbane City",
-            "postcode": "4116",
-            "suburb": "CALAMVALE",
-            "customersAffected": "46",
-            "restoreTime": "2026-11-14T11:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "AZALEA CRES",
-              "CARNATION CRES",
-              "DAFFODIL CRES",
-              "ORCHID PL"
-            ]
-          },
-          "affected_customers": 46,
-          "suburb": "CALAMVALE",
-          "street_name": "AZALEA CRES, CARNATION CRES, DAFFODIL CRES, ORCHID PL"
-        },
-        {
-          "event_id": "INCD-997974-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 22
-            }
-          ],
-          "details": {
-            "event": "INCD-997974-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4133",
-            "suburb": "CHAMBERS FLAT",
-            "customersAffected": "22",
-            "restoreTime": "2026-11-14T13:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ALEXANDER CT",
-              "SHEILS RD"
-            ]
-          },
-          "affected_customers": 22,
-          "suburb": "CHAMBERS FLAT",
-          "street_name": "ALEXANDER CT, SHEILS RD"
-        },
-        {
-          "event_id": "INCD-998071-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 35
-            }
-          ],
-          "details": {
-            "event": "INCD-998071-g",
-            "cause": "Damage due to severe weather",
-            "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4133",
-            "suburb": "CHAMBERS FLAT",
-            "customersAffected": "35",
-            "restoreTime": "2026-11-14T12:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ARCHER CT",
-              "CARNARVON CT"
-            ]
-          },
-          "affected_customers": 35,
-          "suburb": "CHAMBERS FLAT",
-          "street_name": "ARCHER CT, CARNARVON CT"
-        },
-        {
-          "event_id": "INCD-998098-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 13
-            }
-          ],
-          "details": {
-            "event": "INCD-998098-g",
-            "cause": "Damage due to severe weather",
-            "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4133",
-            "suburb": "WATERFORD WEST",
-            "customersAffected": "13",
-            "restoreTime": "2026-11-14T16:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "JAMIESON CT",
-              "WUNBURRA ST"
-            ]
-          },
-          "affected_customers": 13,
-          "suburb": "WATERFORD WEST",
-          "street_name": "JAMIESON CT, WUNBURRA ST"
-        },
-        {
-          "event_id": "INCD-998101-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 18
-            }
-          ],
-          "details": {
-            "event": "INCD-998101-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4207",
-            "suburb": "LOGAN VILLAGE",
-            "customersAffected": "18",
-            "restoreTime": "2026-11-14T12:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "STEELE RD"
-            ]
-          },
-          "affected_customers": 18,
-          "suburb": "LOGAN VILLAGE",
-          "street_name": "STEELE RD"
-        },
-        {
-          "event_id": "INCD-998114-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 33
-            }
-          ],
-          "details": {
-            "event": "INCD-998114-g",
-            "cause": "Damage due to severe weather",
-            "status": "Emergency Repairs",
-            "council": "Logan City",
-            "postcode": "4207",
-            "suburb": "LOGAN VILLAGE",
-            "customersAffected": "33",
-            "restoreTime": "2026-11-14T13:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "CULGOA CRES",
-              "GEORGINA DR"
-            ]
-          },
-          "affected_customers": 33,
-          "suburb": "LOGAN VILLAGE",
-          "street_name": "CULGOA CRES, GEORGINA DR"
-        },
-        {
-          "event_id": "INCD-998151-g",
-          "allocations": [
-            {
-              "lga_name": "Gympie Regional",
-              "lga_code": null,
-              "affected_customers": 106
-            }
-          ],
-          "details": {
-            "event": "INCD-998151-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Gympie Regional",
-            "postcode": "4570",
-            "suburb": "ANDERLEIGH",
-            "customersAffected": "44",
-            "restoreTime": "2026-11-14T13:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ANDERLEIGH RD",
-              "BALOGHS RD",
-              "BUTLERS KNOB RD",
-              "FOSTERS LANE",
-              "ROBERTS RD",
-              "TOTIVAN LANE"
-            ]
-          },
-          "affected_customers": 106,
-          "suburb": "ANDERLEIGH, DOWNSFIELD, KIA ORA, NEERDIE",
-          "street_name": "ANDERLEIGH RD, ANTIMONY RD, BALOGHS RD, BUTLERS KNOB RD, DAMM RD, FOSTERS LANE, HOGAN RD, KENINS RD, O&apos;MEARA RD, ROBERTS RD, SANDY CREEK RD, TOTIVAN LANE"
+          "suburb": "NUNDAH",
+          "street_name": "RYANS RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-14T17:01:37Z",
+      "fetched_utc": "2026-11-14T18:01:46Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-14T17:00:01Z",
-        "published_customers": 1237,
-        "event_count": 19
+        "source_updated_utc": "2026-11-14T18:00:01Z",
+        "published_customers": 1733,
+        "event_count": 21
       },
       "events": [
         {
@@ -506,6 +229,54 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13742",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 484
+            }
+          ],
+          "details": {
+            "event": "26CA13742",
+            "council": "Central Highlands Regional Council",
+            "suburb": "CAPELLA, EMERALD, GORDONSTONE",
+            "type": "UNPLANNED",
+            "startTime": "15/11/2026 03:21",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "484",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 484,
+          "suburb": "CAPELLA, EMERALD, GORDONSTONE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13746",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 12
+            }
+          ],
+          "details": {
+            "event": "26CA13746",
+            "council": "Livingstone Shire Council",
+            "suburb": "MARLBOROUGH, OGMORE",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 23:58",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "12",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 12,
+          "suburb": "MARLBOROUGH, OGMORE",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11079",
           "allocations": [
             {
@@ -571,7 +342,7 @@
             "restoreTime": "15/11/2026 12:00",
             "customersAffected": "74",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 74,
           "suburb": "BREAKAWAY, FISHER, MOUNT ISA",
