@@ -1,18 +1,17 @@
 {
-  "generated_utc": "2026-11-14T20:16:16Z",
-  "generated_aest": "2026-11-15T06:16:16+10:00",
+  "generated_utc": "2026-11-14T20:31:25Z",
+  "generated_aest": "2026-11-15T06:31:25+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 26,
+  "current_outage_records": 27,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 494,
-  "current_records_after_outage_type_filter": 47,
-  "current_records_dropped_planned_or_unknown": 447,
+  "current_records_before_outage_type_filter": 496,
+  "current_records_after_outage_type_filter": 48,
+  "current_records_dropped_planned_or_unknown": 448,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {
-    "Energex": "Update delayed; using verified provider data from 2026-11-14T20:00:02Z. Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m",
-    "Ergon": "Update delayed; using verified provider data from 2026-11-14T19:45:00Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+    "Energex": "Update delayed; using verified provider data from 2026-11-14T20:00:02Z. Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
   },
   "council_allocation_status": {
     "Energex": {
@@ -26,18 +25,17 @@
       "collection_error": "Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T19:45:00Z",
-      "published_customers": 1204,
-      "event_count": 22,
-      "fetched_utc": "2026-11-14T19:46:32Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "source_updated_utc": "2026-11-14T20:30:01Z",
+      "published_customers": 1206,
+      "event_count": 23,
+      "fetched_utc": "2026-11-14T20:31:37Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-14T20:16:16Z",
+    "snapshot_utc": "2026-11-14T20:31:25Z",
     "energex": {
       "status": "ok",
       "fetched_utc": "2026-11-14T20:01:37Z",
@@ -60,13 +58,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-14T19:46:32Z",
+      "fetched_utc": "2026-11-14T20:31:37Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T19:45:00Z",
-      "retained": true,
-      "total_customers": 1204,
+      "source_updated_utc": "2026-11-14T20:30:01Z",
+      "retained": false,
+      "total_customers": 1206,
       "rows": [
         {
           "lga_name": "Balonne Shire",
@@ -138,7 +136,7 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 2
+          "affected_customers": 4
         },
         {
           "lga_name": "Western Downs Regional",
@@ -149,16 +147,16 @@
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 3,
-  "current_ergon_records": 22,
+  "current_ergon_records": 23,
   "current_essential_records_fetched": 24,
-  "current_energex_records_fetched": 144,
-  "current_ergon_records_fetched": 325,
+  "current_energex_records_fetched": 147,
+  "current_ergon_records_fetched": 326,
   "current_essential_records_after_qld_polygon_prefilter": 1,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 21,
   "current_essential_records_included_qld": 1,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 7003,
-  "lga_totals_rows_48h": 6918,
+  "snapshot_rows_48h": 6978,
+  "lga_totals_rows_48h": 6920,
   "lga_totals_latest_rows": 44,
   "lga_cumulative_rows": 103,
   "outputs": {
