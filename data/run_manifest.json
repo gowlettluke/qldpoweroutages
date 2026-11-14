@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-14T03:15:56Z",
-  "generated_aest": "2026-11-14T13:15:56+10:00",
+  "generated_utc": "2026-11-14T03:31:26Z",
+  "generated_aest": "2026-11-14T13:31:26+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 36,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 488,
-  "current_records_after_outage_type_filter": 42,
-  "current_records_dropped_planned_or_unknown": 446,
+  "current_records_before_outage_type_filter": 491,
+  "current_records_after_outage_type_filter": 44,
+  "current_records_dropped_planned_or_unknown": 447,
   "provider_fetch_errors": {
     "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes",
     "Ergon": "Council allocation fallback to map estimates: RuntimeError: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
@@ -26,31 +26,31 @@
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-14T03:15:56Z",
+    "snapshot_utc": "2026-11-14T03:31:26Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-14T03:16:10Z",
+      "fetched_utc": "2026-11-14T03:31:39Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "error",
-      "fetched_utc": "2026-11-14T03:16:10Z",
+      "fetched_utc": "2026-11-14T03:31:39Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: RuntimeError: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     }
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 10,
   "current_ergon_records": 23,
-  "current_essential_records_fetched": 11,
+  "current_essential_records_fetched": 13,
   "current_energex_records_fetched": 150,
-  "current_ergon_records_fetched": 327,
+  "current_ergon_records_fetched": 328,
   "current_essential_records_after_qld_polygon_prefilter": 3,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 8,
   "current_essential_records_included_qld": 3,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 9245,
-  "lga_totals_rows_48h": 7696,
-  "lga_totals_latest_rows": 28,
+  "snapshot_rows_48h": 9130,
+  "lga_totals_rows_48h": 7622,
+  "lga_totals_latest_rows": 30,
   "lga_cumulative_rows": 98,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
