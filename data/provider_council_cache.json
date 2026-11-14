@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-14T20:01:37Z",
+      "fetched_utc": "2026-11-14T23:16:30Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "15 November 2026 6:00 AM",
-        "source_updated_utc": "2026-11-14T20:00:02Z",
-        "published_customers": 82,
-        "event_count": 3
+        "source_updated": "15 November 2026 9:15 AM",
+        "source_updated_utc": "2026-11-14T23:15:02Z",
+        "published_customers": 187,
+        "event_count": 5
       },
       "events": [
         {
@@ -61,7 +61,7 @@
             "postcode": "4557",
             "suburb": "MOOLOOLABA",
             "customersAffected": "39",
-            "restoreTime": "2026-11-15T07:00:00+10:00",
+            "restoreTime": "2026-11-15T10:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -78,41 +78,102 @@
           "street_name": "ARUMA CT, CAREELA ST, OCEAN VIEW AVE, PETTIGREW ST, TOORUMBEE DR, WARRINA CT"
         },
         {
-          "event_id": "INCD-998392-g",
+          "event_id": "INCD-998403-g",
           "allocations": [
             {
-              "lga_name": "Brisbane City",
+              "lga_name": "Gold Coast City",
               "lga_code": null,
-              "affected_customers": 2
+              "affected_customers": 30
             }
           ],
           "details": {
-            "event": "INCD-998392-g",
+            "event": "INCD-998403-g",
             "cause": "Emergency Repairs",
             "status": "Emergency Repairs",
-            "council": "Brisbane City",
-            "postcode": "4012",
-            "suburb": "NUNDAH",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-15T08:00:00+10:00",
+            "council": "Gold Coast City",
+            "postcode": "4217",
+            "suburb": "SURFERS PARADISE",
+            "customersAffected": "30",
+            "restoreTime": "2026-11-15T10:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "RYANS RD"
+              "GOLD COAST HWY",
+              "SURFERS PARADISE BVD"
             ]
           },
-          "affected_customers": 2,
-          "suburb": "NUNDAH",
-          "street_name": "RYANS RD"
+          "affected_customers": 30,
+          "suburb": "SURFERS PARADISE",
+          "street_name": "GOLD COAST HWY, SURFERS PARADISE BVD"
+        },
+        {
+          "event_id": "INCD-998410-g",
+          "allocations": [
+            {
+              "lga_name": "Logan City",
+              "lga_code": null,
+              "affected_customers": 25
+            }
+          ],
+          "details": {
+            "event": "INCD-998410-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Logan City",
+            "postcode": "4133",
+            "suburb": "CHAMBERS FLAT",
+            "customersAffected": "25",
+            "restoreTime": "2026-11-15T09:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ARCHER CT",
+              "CARNARVON CT"
+            ]
+          },
+          "affected_customers": 25,
+          "suburb": "CHAMBERS FLAT",
+          "street_name": "ARCHER CT, CARNARVON CT"
+        },
+        {
+          "event_id": "INCD-998414-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 52
+            }
+          ],
+          "details": {
+            "event": "INCD-998414-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4552",
+            "suburb": "CURRAMORE",
+            "customersAffected": "51",
+            "restoreTime": "2026-11-15T10:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "CURRAMORE RD",
+              "EKERT RD",
+              "GRANITE LANE",
+              "THORNE RD"
+            ]
+          },
+          "affected_customers": 52,
+          "suburb": "CURRAMORE, KIDAMAN CREEK",
+          "street_name": "CURRAMORE RD, EKERT RD, GRANITE LANE, THOMPSON RD, THORNE RD"
         }
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-14T23:01:49Z",
+      "fetched_utc": "2026-11-14T23:16:34Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-14T23:00:01Z",
+        "source_updated_utc": "2026-11-14T23:15:22Z",
         "published_customers": 1176,
         "event_count": 24
       },
