@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-14T19:31:16Z",
-  "generated_aest": "2026-11-15T05:31:16+10:00",
+  "generated_utc": "2026-11-14T19:46:15Z",
+  "generated_aest": "2026-11-15T05:46:15+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 26,
@@ -21,29 +21,29 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T19:30:00Z",
-      "published_customers": 1331,
+      "source_updated_utc": "2026-11-14T19:45:00Z",
+      "published_customers": 1204,
       "event_count": 22,
-      "fetched_utc": "2026-11-14T19:31:34Z"
+      "fetched_utc": "2026-11-14T19:46:32Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-14T19:31:16Z",
+    "snapshot_utc": "2026-11-14T19:46:15Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-14T19:31:35Z",
+      "fetched_utc": "2026-11-14T19:46:33Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-14T19:31:34Z",
+      "fetched_utc": "2026-11-14T19:46:32Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T19:30:00Z",
+      "source_updated_utc": "2026-11-14T19:45:00Z",
       "retained": false,
-      "total_customers": 1331,
+      "total_customers": 1204,
       "rows": [
         {
           "lga_name": "Balonne Shire",
@@ -56,6 +56,10 @@
         {
           "lga_name": "Barcaldine Regional",
           "affected_customers": 4
+        },
+        {
+          "lga_name": "Blackall Tambo Regional",
+          "affected_customers": 6
         },
         {
           "lga_name": "Burdekin Shire",
@@ -103,7 +107,7 @@
         },
         {
           "lga_name": "Mount Isa City",
-          "affected_customers": 185
+          "affected_customers": 52
         },
         {
           "lga_name": "Murweh Shire",
@@ -130,9 +134,9 @@
   "current_essential_records_dropped_by_qld_polygon_prefilter": 19,
   "current_essential_records_included_qld": 1,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 7131,
-  "lga_totals_rows_48h": 6950,
-  "lga_totals_latest_rows": 42,
+  "snapshot_rows_48h": 7055,
+  "lga_totals_rows_48h": 6914,
+  "lga_totals_latest_rows": 44,
   "lga_cumulative_rows": 103,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",

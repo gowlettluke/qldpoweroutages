@@ -118,12 +118,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-14T19:31:34Z",
+      "fetched_utc": "2026-11-14T19:46:32Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-14T19:30:00Z",
-        "published_customers": 1331,
+        "source_updated_utc": "2026-11-14T19:45:00Z",
+        "published_customers": 1204,
         "event_count": 22
       },
       "events": [
@@ -301,6 +301,30 @@
           "street_name": ""
         },
         {
+          "event_id": "26CA13749",
+          "allocations": [
+            {
+              "lga_name": "Blackall Tambo Regional",
+              "lga_code": null,
+              "affected_customers": 6
+            }
+          ],
+          "details": {
+            "event": "26CA13749",
+            "council": "Blackall Tambo Regional Council",
+            "suburb": "BLACKALL",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 19:32",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "6",
+            "cause": "The loss of supply is due to the operating of protective equipment.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 6,
+          "suburb": "BLACKALL",
+          "street_name": ""
+        },
+        {
           "event_id": "26FN11079",
           "allocations": [
             {
@@ -346,30 +370,6 @@
           },
           "affected_customers": 36,
           "suburb": "CLONCURRY",
-          "street_name": ""
-        },
-        {
-          "event_id": "26NQ14166",
-          "allocations": [
-            {
-              "lga_name": "Mount Isa City",
-              "lga_code": null,
-              "affected_customers": 133
-            }
-          ],
-          "details": {
-            "event": "26NQ14166",
-            "council": "Mount Isa City Council",
-            "suburb": "HEALY, MENZIES, MILES END, MORNINGTON, MOUNT ISA, MOUNT ISA CITY, PARKSIDE, PIONEER, RYAN, SOLDIERS HILL, SUNSET",
-            "type": "UNPLANNED",
-            "startTime": "15/11/2026 00:05",
-            "restoreTime": "15/11/2026 12:00",
-            "customersAffected": "133",
-            "cause": "The loss of supply is due to the operating of protective equipment.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 133,
-          "suburb": "HEALY, MENZIES, MILES END, MORNINGTON, MOUNT ISA, MOUNT ISA CITY, PARKSIDE, PIONEER, RYAN, SOLDIERS HILL, SUNSET",
           "street_name": ""
         },
         {
@@ -462,7 +462,7 @@
             "restoreTime": "15/11/2026 12:00",
             "customersAffected": "8",
             "cause": "The loss of supply is there are supply problems resulting in low voltage conditions. It is advisable to disconnect sensitive electrical appliances.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 8,
           "suburb": "CLONCURRY",
