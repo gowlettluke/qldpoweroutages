@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-14T16:31:14Z",
-  "generated_aest": "2026-11-15T02:31:14+10:00",
+  "generated_utc": "2026-11-14T16:46:05Z",
+  "generated_aest": "2026-11-15T02:46:05+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 23,
@@ -12,41 +12,38 @@
     "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
   },
   "provider_fetch_error_count": 1,
-  "provider_fetch_warnings": {
-    "Ergon": "Update delayed; using verified provider data from 2026-11-14T16:15:00Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "geometry_fallback",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T16:15:00Z",
-      "published_customers": 2152,
+      "source_updated_utc": "2026-11-14T16:45:00Z",
+      "published_customers": 1511,
       "event_count": 20,
-      "fetched_utc": "2026-11-14T16:16:30Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "fetched_utc": "2026-11-14T16:46:20Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-14T16:31:14Z",
+    "snapshot_utc": "2026-11-14T16:46:05Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-14T16:31:27Z",
+      "fetched_utc": "2026-11-14T16:46:22Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-14T16:16:30Z",
+      "fetched_utc": "2026-11-14T16:46:20Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T16:15:00Z",
-      "retained": true,
-      "total_customers": 2152,
+      "source_updated_utc": "2026-11-14T16:45:00Z",
+      "retained": false,
+      "total_customers": 1511,
       "rows": [
         {
           "lga_name": "Balonne Shire",
@@ -98,7 +95,7 @@
         },
         {
           "lga_name": "Mount Isa City",
-          "affected_customers": 1400
+          "affected_customers": 759
         },
         {
           "lga_name": "Murweh Shire",
@@ -125,8 +122,8 @@
   "current_essential_records_dropped_by_qld_polygon_prefilter": 19,
   "current_essential_records_included_qld": 1,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 7437,
-  "lga_totals_rows_48h": 6990,
+  "snapshot_rows_48h": 7370,
+  "lga_totals_rows_48h": 6950,
   "lga_totals_latest_rows": 38,
   "lga_cumulative_rows": 102,
   "outputs": {
