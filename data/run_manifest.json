@@ -1,18 +1,17 @@
 {
-  "generated_utc": "2026-11-14T23:31:26Z",
-  "generated_aest": "2026-11-15T09:31:26+10:00",
+  "generated_utc": "2026-11-14T23:46:15Z",
+  "generated_aest": "2026-11-15T09:46:15+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 30,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 587,
-  "current_records_after_outage_type_filter": 55,
-  "current_records_dropped_planned_or_unknown": 532,
+  "current_records_before_outage_type_filter": 588,
+  "current_records_after_outage_type_filter": 57,
+  "current_records_dropped_planned_or_unknown": 531,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
   "provider_fetch_warnings": {
-    "Energex": "Update delayed; using verified provider data from 2026-11-14T23:15:02Z. Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m",
-    "Ergon": "Update delayed; using verified provider data from 2026-11-14T23:15:22Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+    "Energex": "Update delayed; using verified provider data from 2026-11-14T23:15:02Z. Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
   },
   "council_allocation_status": {
     "Energex": {
@@ -26,18 +25,17 @@
       "collection_error": "Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T23:15:22Z",
-      "published_customers": 1176,
+      "source_updated_utc": "2026-11-14T23:45:01Z",
+      "published_customers": 1508,
       "event_count": 24,
-      "fetched_utc": "2026-11-14T23:16:34Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "fetched_utc": "2026-11-14T23:46:30Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-14T23:31:26Z",
+    "snapshot_utc": "2026-11-14T23:46:15Z",
     "energex": {
       "status": "ok",
       "fetched_utc": "2026-11-14T23:16:30Z",
@@ -68,13 +66,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-14T23:16:34Z",
+      "fetched_utc": "2026-11-14T23:46:30Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T23:15:22Z",
-      "retained": true,
-      "total_customers": 1176,
+      "source_updated_utc": "2026-11-14T23:45:01Z",
+      "retained": false,
+      "total_customers": 1508,
       "rows": [
         {
           "lga_name": "Balonne Shire",
@@ -98,7 +96,7 @@
         },
         {
           "lga_name": "Central Highlands Regional",
-          "affected_customers": 53
+          "affected_customers": 385
         },
         {
           "lga_name": "Charters Towers Regional",
@@ -166,15 +164,15 @@
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 5,
   "current_ergon_records": 24,
-  "current_essential_records_fetched": 36,
+  "current_essential_records_fetched": 37,
   "current_energex_records_fetched": 165,
   "current_ergon_records_fetched": 386,
   "current_essential_records_after_qld_polygon_prefilter": 1,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 25,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 27,
   "current_essential_records_included_qld": 1,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 6749,
-  "lga_totals_rows_48h": 7000,
+  "snapshot_rows_48h": 6724,
+  "lga_totals_rows_48h": 7004,
   "lga_totals_latest_rows": 52,
   "lga_cumulative_rows": 109,
   "outputs": {
