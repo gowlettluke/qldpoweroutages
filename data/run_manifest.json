@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-14T01:46:13Z",
-  "generated_aest": "2026-11-14T11:46:13+10:00",
+  "generated_utc": "2026-11-14T02:01:09Z",
+  "generated_aest": "2026-11-14T12:01:09+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 40,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 492,
-  "current_records_after_outage_type_filter": 47,
-  "current_records_dropped_planned_or_unknown": 445,
+  "current_records_before_outage_type_filter": 490,
+  "current_records_after_outage_type_filter": 46,
+  "current_records_dropped_planned_or_unknown": 444,
   "provider_fetch_errors": {
     "Energex": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
   },
@@ -21,29 +21,29 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T01:40:00Z",
-      "published_customers": 2462,
+      "source_updated_utc": "2026-11-14T01:55:00Z",
+      "published_customers": 1248,
       "event_count": 26,
-      "fetched_utc": "2026-11-14T01:46:26Z"
+      "fetched_utc": "2026-11-14T02:01:21Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-14T01:46:13Z",
+    "snapshot_utc": "2026-11-14T02:01:09Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-14T01:46:27Z",
+      "fetched_utc": "2026-11-14T02:01:22Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-14T01:46:26Z",
+      "fetched_utc": "2026-11-14T02:01:21Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-14T01:40:00Z",
+      "source_updated_utc": "2026-11-14T01:55:00Z",
       "retained": false,
-      "total_customers": 2462,
+      "total_customers": 1248,
       "rows": [
         {
           "lga_name": "Barcaldine Regional",
@@ -103,7 +103,7 @@
         },
         {
           "lga_name": "Tablelands Regional",
-          "affected_customers": 1272
+          "affected_customers": 58
         },
         {
           "lga_name": "Toowoomba Regional",
@@ -119,16 +119,16 @@
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 11,
   "current_ergon_records": 26,
-  "current_essential_records_fetched": 12,
+  "current_essential_records_fetched": 11,
   "current_energex_records_fetched": 151,
-  "current_ergon_records_fetched": 329,
+  "current_ergon_records_fetched": 328,
   "current_essential_records_after_qld_polygon_prefilter": 3,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 7,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 6,
   "current_essential_records_included_qld": 3,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 9394,
-  "lga_totals_rows_48h": 7725,
-  "lga_totals_latest_rows": 41,
+  "snapshot_rows_48h": 9434,
+  "lga_totals_rows_48h": 7764,
+  "lga_totals_latest_rows": 39,
   "lga_cumulative_rows": 98,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
