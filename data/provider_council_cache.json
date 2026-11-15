@@ -2,14 +2,14 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-14T23:16:30Z",
+      "fetched_utc": "2026-11-15T01:16:10Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "15 November 2026 9:15 AM",
-        "source_updated_utc": "2026-11-14T23:15:02Z",
-        "published_customers": 187,
-        "event_count": 5
+        "source_updated": "15 November 2026 11:00 AM",
+        "source_updated_utc": "2026-11-15T01:00:02Z",
+        "published_customers": 157,
+        "event_count": 4
       },
       "events": [
         {
@@ -23,13 +23,13 @@
           ],
           "details": {
             "event": "INCD-998325-g",
-            "cause": "Emergency Repairs",
+            "cause": "Damage to our equipment",
             "status": "Emergency Repairs",
             "council": "Brisbane City",
             "postcode": "4109",
             "suburb": "SUNNYBANK HILLS",
             "customersAffected": "41",
-            "restoreTime": "2026-11-15T04:00:00+10:00",
+            "restoreTime": "2026-11-15T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -61,7 +61,7 @@
             "postcode": "4557",
             "suburb": "MOOLOOLABA",
             "customersAffected": "39",
-            "restoreTime": "2026-11-15T10:30:00+10:00",
+            "restoreTime": "2026-11-15T12:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -78,35 +78,6 @@
           "street_name": "ARUMA CT, CAREELA ST, OCEAN VIEW AVE, PETTIGREW ST, TOORUMBEE DR, WARRINA CT"
         },
         {
-          "event_id": "INCD-998403-g",
-          "allocations": [
-            {
-              "lga_name": "Gold Coast City",
-              "lga_code": null,
-              "affected_customers": 30
-            }
-          ],
-          "details": {
-            "event": "INCD-998403-g",
-            "cause": "Emergency Repairs",
-            "status": "Emergency Repairs",
-            "council": "Gold Coast City",
-            "postcode": "4217",
-            "suburb": "SURFERS PARADISE",
-            "customersAffected": "30",
-            "restoreTime": "2026-11-15T10:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "GOLD COAST HWY",
-              "SURFERS PARADISE BVD"
-            ]
-          },
-          "affected_customers": 30,
-          "suburb": "SURFERS PARADISE",
-          "street_name": "GOLD COAST HWY, SURFERS PARADISE BVD"
-        },
-        {
           "event_id": "INCD-998410-g",
           "allocations": [
             {
@@ -117,13 +88,13 @@
           ],
           "details": {
             "event": "INCD-998410-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
             "council": "Logan City",
             "postcode": "4133",
             "suburb": "CHAMBERS FLAT",
             "customersAffected": "25",
-            "restoreTime": "2026-11-15T09:30:00+10:00",
+            "restoreTime": "2026-11-15T13:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -152,7 +123,7 @@
             "postcode": "4552",
             "suburb": "CURRAMORE",
             "customersAffected": "51",
-            "restoreTime": "2026-11-15T10:30:00+10:00",
+            "restoreTime": "2026-11-15T13:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -169,12 +140,12 @@
       ]
     },
     "Ergon": {
-      "fetched_utc": "2026-11-15T00:46:29Z",
+      "fetched_utc": "2026-11-15T01:16:13Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-15T00:45:01Z",
-        "published_customers": 884,
+        "source_updated_utc": "2026-11-15T01:15:01Z",
+        "published_customers": 866,
         "event_count": 24
       },
       "events": [
@@ -427,7 +398,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "17",
             "cause": "The loss of supply is there are supply problems resulting in low voltage conditions. It is advisable to disconnect sensitive electrical appliances.",
-            "status": "Outage reported"
+            "status": "Crews working on-site"
           },
           "affected_customers": 17,
           "suburb": "BAMAGA",
@@ -451,10 +422,34 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "21",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 21,
           "suburb": "NORMANTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26FN11314",
+          "allocations": [
+            {
+              "lga_name": "Douglas Shire",
+              "lga_code": null,
+              "affected_customers": 5
+            }
+          ],
+          "details": {
+            "event": "26FN11314",
+            "council": "Douglas Shire Council",
+            "suburb": "BLOOMFIELD, DEGARRA",
+            "type": "UNPLANNED",
+            "startTime": "14/11/2026 17:31",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "5",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 5,
+          "suburb": "BLOOMFIELD, DEGARRA",
           "street_name": ""
         },
         {
@@ -695,8 +690,8 @@
             "startTime": "15/11/2026 08:30",
             "restoreTime": "Under Investigation",
             "customersAffected": "195",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
           },
           "affected_customers": 195,
           "suburb": "BROOKSTEAD, KINCORA, NORTH BRANCH, PAMPAS, PITTSWORTH, SCRUBBY MOUNTAIN, YARRANLEA",
@@ -719,40 +714,11 @@
             "startTime": "15/11/2026 08:30",
             "restoreTime": "Under Investigation",
             "customersAffected": "107",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
+            "status": "Crews working on-site"
           },
           "affected_customers": 107,
           "suburb": "BROOKSTEAD, KINCORA, PAMPAS, YARRANLEA",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB11072",
-          "allocations": [
-            {
-              "lga_name": "Fraser Coast Regional",
-              "lga_code": null,
-              "affected_customers": 15
-            },
-            {
-              "lga_name": "Gympie Regional",
-              "lga_code": null,
-              "affected_customers": 8
-            }
-          ],
-          "details": {
-            "event": "26WB11072",
-            "council": "Fraser Coast Regional Council",
-            "suburb": "CALGOA, WOOLOOGA",
-            "type": "UNPLANNED",
-            "startTime": "11/11/2026 18:59",
-            "restoreTime": "15/11/2026 17:00",
-            "customersAffected": "15",
-            "cause": "The loss of supply is due to fallen power lines.",
-            "status": "Work delayed - crews unable to continue"
-          },
-          "affected_customers": 23,
-          "suburb": "CALGOA, GLEN ECHO, MIVA, WOOLOOGA",
           "street_name": ""
         },
         {
