@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-15T13:31:36Z",
-  "generated_aest": "2026-11-15T23:31:36+10:00",
+  "generated_utc": "2026-11-15T13:46:15Z",
+  "generated_aest": "2026-11-15T23:46:15+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
   "current_outage_records": 35,
@@ -32,10 +32,10 @@
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-15T13:31:36Z",
+    "snapshot_utc": "2026-11-15T13:46:15Z",
     "energex": {
       "status": "error",
-      "fetched_utc": "2026-11-15T13:31:49Z",
+      "fetched_utc": "2026-11-15T13:46:28Z",
       "error": "Council allocation fallback to map estimates: RuntimeError: ValueError: Energex council allocations unavailable: Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m. Verified provider backup is older than 30 minutes"
     },
     "ergon": {
@@ -96,18 +96,18 @@
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 19,
+  "current_energex_records": 18,
   "current_ergon_records": 15,
-  "current_essential_records_fetched": 21,
-  "current_energex_records_fetched": 175,
+  "current_essential_records_fetched": 22,
+  "current_energex_records_fetched": 174,
   "current_ergon_records_fetched": 369,
-  "current_essential_records_after_qld_polygon_prefilter": 1,
+  "current_essential_records_after_qld_polygon_prefilter": 2,
   "current_essential_records_dropped_by_qld_polygon_prefilter": 17,
-  "current_essential_records_included_qld": 1,
+  "current_essential_records_included_qld": 2,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5608,
-  "lga_totals_rows_48h": 6719,
-  "lga_totals_latest_rows": 35,
+  "snapshot_rows_48h": 5643,
+  "lga_totals_rows_48h": 6753,
+  "lga_totals_latest_rows": 34,
   "lga_cumulative_rows": 104,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
