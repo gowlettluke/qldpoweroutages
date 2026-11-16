@@ -1,12 +1,12 @@
 {
-  "generated_utc": "2026-11-16T09:16:18Z",
-  "generated_aest": "2026-11-16T19:16:18+10:00",
+  "generated_utc": "2026-11-16T09:31:18Z",
+  "generated_aest": "2026-11-16T19:31:18+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 48,
+  "current_outage_records": 50,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 553,
-  "current_records_after_outage_type_filter": 59,
+  "current_records_before_outage_type_filter": 554,
+  "current_records_after_outage_type_filter": 60,
   "current_records_dropped_planned_or_unknown": 494,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
@@ -27,15 +27,15 @@
     "Ergon": {
       "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-16T09:15:00Z",
-      "published_customers": 1150,
-      "event_count": 17,
-      "fetched_utc": "2026-11-16T09:16:35Z"
+      "source_updated_utc": "2026-11-16T09:30:01Z",
+      "published_customers": 1186,
+      "event_count": 19,
+      "fetched_utc": "2026-11-16T09:31:39Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-16T09:16:18Z",
+    "snapshot_utc": "2026-11-16T09:31:18Z",
     "energex": {
       "status": "ok",
       "fetched_utc": "2026-11-16T09:01:49Z",
@@ -82,13 +82,13 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-16T09:16:35Z",
+      "fetched_utc": "2026-11-16T09:31:39Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-16T09:15:00Z",
+      "source_updated_utc": "2026-11-16T09:30:01Z",
       "retained": false,
-      "total_customers": 1150,
+      "total_customers": 1186,
       "rows": [
         {
           "lga_name": "Cairns Regional",
@@ -96,7 +96,7 @@
         },
         {
           "lga_name": "Central Highlands Regional",
-          "affected_customers": 45
+          "affected_customers": 79
         },
         {
           "lga_name": "Charters Towers Regional",
@@ -136,7 +136,7 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 316
+          "affected_customers": 318
         },
         {
           "lga_name": "Western Downs Regional",
@@ -147,15 +147,15 @@
   },
   "legacy_council_snapshot_rows": 0,
   "current_energex_records": 29,
-  "current_ergon_records": 17,
-  "current_essential_records_fetched": 14,
+  "current_ergon_records": 19,
+  "current_essential_records_fetched": 13,
   "current_energex_records_fetched": 180,
-  "current_ergon_records_fetched": 361,
+  "current_ergon_records_fetched": 363,
   "current_essential_records_after_qld_polygon_prefilter": 2,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 11,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 10,
   "current_essential_records_included_qld": 2,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5652,
+  "snapshot_rows_48h": 5678,
   "lga_totals_rows_48h": 6932,
   "lga_totals_latest_rows": 43,
   "lga_cumulative_rows": 111,
