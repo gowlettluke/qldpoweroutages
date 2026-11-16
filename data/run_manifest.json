@@ -1,54 +1,51 @@
 {
-  "generated_utc": "2026-11-16T08:46:10Z",
-  "generated_aest": "2026-11-16T18:46:10+10:00",
+  "generated_utc": "2026-11-16T09:01:28Z",
+  "generated_aest": "2026-11-16T19:01:28+10:00",
   "window_hours": 48,
   "poll_interval_minutes": 15,
-  "current_outage_records": 50,
+  "current_outage_records": 47,
   "outage_type_filter": "unplanned_only",
-  "current_records_before_outage_type_filter": 557,
-  "current_records_after_outage_type_filter": 63,
+  "current_records_before_outage_type_filter": 552,
+  "current_records_after_outage_type_filter": 58,
   "current_records_dropped_planned_or_unknown": 494,
   "provider_fetch_errors": {},
   "provider_fetch_error_count": 0,
-  "provider_fetch_warnings": {
-    "Ergon": "Update delayed; using verified provider data from 2026-11-16T08:30:01Z. Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
-  },
+  "provider_fetch_warnings": {},
   "council_allocation_status": {
     "Energex": {
       "status": "provider",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated": "16 November 2026 6:45 PM",
-      "source_updated_utc": "2026-11-16T08:45:02Z",
-      "published_customers": 2652,
-      "event_count": 30,
-      "fetched_utc": "2026-11-16T08:46:18Z"
+      "source_updated": "16 November 2026 7:00 PM",
+      "source_updated_utc": "2026-11-16T09:00:04Z",
+      "published_customers": 2453,
+      "event_count": 29,
+      "fetched_utc": "2026-11-16T09:01:49Z"
     },
     "Ergon": {
-      "status": "provider_cache",
+      "status": "provider",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-16T08:30:01Z",
-      "published_customers": 1218,
-      "event_count": 18,
-      "fetched_utc": "2026-11-16T08:31:51Z",
-      "collection_error": "Provider returned HTTP 403: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><m"
+      "source_updated_utc": "2026-11-16T09:00:03Z",
+      "published_customers": 1089,
+      "event_count": 16,
+      "fetched_utc": "2026-11-16T09:01:52Z"
     }
   },
   "provider_council_counts": {
     "schema_version": 1,
-    "snapshot_utc": "2026-11-16T08:46:10Z",
+    "snapshot_utc": "2026-11-16T09:01:28Z",
     "energex": {
       "status": "ok",
-      "fetched_utc": "2026-11-16T08:46:18Z",
+      "fetched_utc": "2026-11-16T09:01:49Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-      "source_updated_utc": "2026-11-16T08:45:02Z",
+      "source_updated_utc": "2026-11-16T09:00:04Z",
       "retained": false,
-      "total_customers": 2652,
+      "total_customers": 2453,
       "rows": [
         {
           "lga_name": "Brisbane City",
-          "affected_customers": 856
+          "affected_customers": 665
         },
         {
           "lga_name": "Gold Coast City",
@@ -56,7 +53,7 @@
         },
         {
           "lga_name": "Lockyer Valley Regional",
-          "affected_customers": 15
+          "affected_customers": 7
         },
         {
           "lga_name": "Moreton Bay City",
@@ -82,18 +79,14 @@
     },
     "ergon": {
       "status": "ok",
-      "fetched_utc": "2026-11-16T08:31:51Z",
+      "fetched_utc": "2026-11-16T09:01:52Z",
       "scope": "all_councils",
       "outage_type": "unplanned",
       "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-      "source_updated_utc": "2026-11-16T08:30:01Z",
-      "retained": true,
-      "total_customers": 1218,
+      "source_updated_utc": "2026-11-16T09:00:03Z",
+      "retained": false,
+      "total_customers": 1089,
       "rows": [
-        {
-          "lga_name": "Barcaldine Regional",
-          "affected_customers": 12
-        },
         {
           "lga_name": "Cairns Regional",
           "affected_customers": 150
@@ -124,11 +117,7 @@
         },
         {
           "lga_name": "South Burnett Regional",
-          "affected_customers": 4
-        },
-        {
-          "lga_name": "Southern Downs Regional",
-          "affected_customers": 46
+          "affected_customers": 9
         },
         {
           "lga_name": "Tenterfield",
@@ -136,7 +125,7 @@
         },
         {
           "lga_name": "Toowoomba Regional",
-          "affected_customers": 395
+          "affected_customers": 319
         },
         {
           "lga_name": "Western Downs Regional",
@@ -146,18 +135,18 @@
     }
   },
   "legacy_council_snapshot_rows": 0,
-  "current_energex_records": 30,
-  "current_ergon_records": 18,
-  "current_essential_records_fetched": 16,
-  "current_energex_records_fetched": 179,
+  "current_energex_records": 29,
+  "current_ergon_records": 16,
+  "current_essential_records_fetched": 14,
+  "current_energex_records_fetched": 178,
   "current_ergon_records_fetched": 360,
   "current_essential_records_after_qld_polygon_prefilter": 2,
-  "current_essential_records_dropped_by_qld_polygon_prefilter": 13,
+  "current_essential_records_dropped_by_qld_polygon_prefilter": 11,
   "current_essential_records_included_qld": 2,
   "current_essential_records_dropped_non_qld_or_unmatched": 0,
-  "snapshot_rows_48h": 5606,
-  "lga_totals_rows_48h": 6928,
-  "lga_totals_latest_rows": 43,
+  "snapshot_rows_48h": 5653,
+  "lga_totals_rows_48h": 6967,
+  "lga_totals_latest_rows": 39,
   "lga_cumulative_rows": 111,
   "outputs": {
     "current_outages_geojson": "data/current_outages.geojson",
