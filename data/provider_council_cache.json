@@ -2,13 +2,13 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-16T08:01:40Z",
+      "fetched_utc": "2026-11-16T08:46:18Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "16 November 2026 6:00 PM",
-        "source_updated_utc": "2026-11-16T08:00:03Z",
-        "published_customers": 3133,
+        "source_updated": "16 November 2026 6:45 PM",
+        "source_updated_utc": "2026-11-16T08:45:02Z",
+        "published_customers": 2652,
         "event_count": 30
       },
       "events": [
@@ -57,7 +57,7 @@
             "postcode": "4521",
             "suburb": "MOUNT MEE",
             "customersAffected": "23",
-            "restoreTime": "2026-11-16T19:00:00+10:00",
+            "restoreTime": "2026-11-16T20:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -143,7 +143,7 @@
           ],
           "details": {
             "event": "INCD-999200-g",
-            "cause": "Under Investigation",
+            "cause": "Powerlines down",
             "status": "Under Investigation",
             "council": "Sunshine Coast",
             "postcode": "4561",
@@ -177,7 +177,7 @@
             "postcode": "4560",
             "suburb": "DULONG",
             "customersAffected": "4",
-            "restoreTime": "2026-11-16T18:30:00+10:00",
+            "restoreTime": "2026-11-17T18:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -199,15 +199,15 @@
           ],
           "details": {
             "event": "INCD-999251-g",
-            "cause": "Under Investigation",
+            "cause": "Emergency repairs in-progress",
             "status": "Under Investigation",
             "council": "Gold Coast City",
             "postcode": "4211",
             "suburb": "MOUNT NATHAN",
             "customersAffected": "2",
             "restoreTime": "2026-11-16T19:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
+            "etrFlag": "RB",
+            "etrFlagBool": "Y",
             "streets": [
               "MT NATHAN RD",
               "NATHAN HOMESTEAD RD"
@@ -228,15 +228,15 @@
           ],
           "details": {
             "event": "INCD-999257-g",
-            "cause": "Emergency Repairs",
+            "cause": "Emergency repairs in-progress",
             "status": "Emergency Repairs",
             "council": "Scenic Rim Regional",
             "postcode": "4285",
             "suburb": "NINDOOINBAH",
             "customersAffected": "2",
             "restoreTime": "2026-11-16T20:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
+            "etrFlag": "RB",
+            "etrFlagBool": "Y",
             "streets": [
               "NINDOOINBAH ESTATE RD"
             ]
@@ -262,7 +262,7 @@
             "postcode": "4514",
             "suburb": "DELANEYS CREEK",
             "customersAffected": "35",
-            "restoreTime": "2026-11-16T19:00:00+10:00",
+            "restoreTime": "2026-11-16T23:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -281,7 +281,7 @@
             {
               "lga_name": "Lockyer Valley Regional",
               "lga_code": null,
-              "affected_customers": 147
+              "affected_customers": 3
             }
           ],
           "details": {
@@ -291,18 +291,17 @@
             "council": "Lockyer Valley Regional",
             "postcode": "4342",
             "suburb": "GLENORE GROVE",
-            "customersAffected": "52",
-            "restoreTime": "2026-11-16T19:00:00+10:00",
+            "customersAffected": "2",
+            "restoreTime": "2026-11-16T23:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "FOREST AVE",
               "OTTO RD"
             ]
           },
-          "affected_customers": 147,
-          "suburb": "GLENORE GROVE, HATTON VALE, PLAINLAND, REGENCY DOWNS",
-          "street_name": "EDGERTON DR, FOREST AVE, MITCHELL CT, MOUNTAIN VIEW DR, NATHAN CT, OTTO RD, ZISCHKE RD"
+          "affected_customers": 3,
+          "suburb": "GLENORE GROVE, PLAINLAND",
+          "street_name": "OTTO RD"
         },
         {
           "event_id": "INCD-999296-g",
@@ -331,35 +330,6 @@
           "affected_customers": 220,
           "suburb": "COOCHIN CREEK, GLASSHOUSE MOUNTAINS",
           "street_name": "AMY DR, BELL RD, BRUCE HWY, BRUCE PDE, COOK RD, COULON RD, CRITTENDEN RD, GARRADS RD, HARLEY ST, HEMPSTOCK ST, JEFFREYS RD, KINGS RD, LINK RD, LITTLES RD, PECAN RD, PLANTATION RD, RAILWAY PDE, REED ST, RIVERS RD, RYAN ST, SCOTTS RD, SPANNER RD, STEVE IRWIN WAY, YOUNGS RD"
-        },
-        {
-          "event_id": "INCD-999304-g",
-          "allocations": [
-            {
-              "lga_name": "Lockyer Valley Regional",
-              "lga_code": null,
-              "affected_customers": 9
-            }
-          ],
-          "details": {
-            "event": "INCD-999304-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Lockyer Valley Regional",
-            "postcode": "4347",
-            "suburb": "GRANTHAM",
-            "customersAffected": "9",
-            "restoreTime": "2026-11-16T20:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "CITRUS ST",
-              "GATTON-HELIDON RD"
-            ]
-          },
-          "affected_customers": 9,
-          "suburb": "GRANTHAM",
-          "street_name": "CITRUS ST, GATTON-HELIDON RD"
         },
         {
           "event_id": "INCD-999313-g",
@@ -411,7 +381,7 @@
             "postcode": "4562",
             "suburb": "DOONAN",
             "customersAffected": "3",
-            "restoreTime": "2026-11-16T18:30:00+10:00",
+            "restoreTime": "2026-11-17T06:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -428,27 +398,28 @@
             {
               "lga_name": "Moreton Bay City",
               "lga_code": null,
-              "affected_customers": 212
+              "affected_customers": 9
             }
           ],
           "details": {
             "event": "INCD-999322-g",
-            "cause": "Under Investigation",
+            "cause": "Powerlines down",
             "status": "Under Investigation",
             "council": "Moreton Bay Regional",
-            "postcode": "4505",
-            "suburb": "BURPENGARY",
-            "customersAffected": "1",
+            "postcode": "4508",
+            "suburb": "DECEPTION BAY",
+            "customersAffected": "9",
             "restoreTime": "2026-11-16T20:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "BLUE PACIFIC RD"
+              "DECEPTION BAY RD",
+              "TALLOW WOOD DR"
             ]
           },
-          "affected_customers": 212,
-          "suburb": "BURPENGARY, BURPENGARY EAST, DECEPTION BAY",
-          "street_name": "AUSTEN ST, BLUE PACIFIC RD, BRISTON AVE, BURRALONG CT, CAMPHOR CT, DECEPTION BAY RD, LAKEWOOD DR, LOUISA ST, MARGARET ST, MATTAND CT, MOORE RD, O&apos;LEARY AVE, OLD BAY RD, PETER CT, TALLOW WOOD DR"
+          "affected_customers": 9,
+          "suburb": "DECEPTION BAY",
+          "street_name": "DECEPTION BAY RD, TALLOW WOOD DR"
         },
         {
           "event_id": "INCD-999338-g",
@@ -456,12 +427,7 @@
             {
               "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 1410
-            },
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 2
+              "affected_customers": 598
             }
           ],
           "details": {
@@ -471,56 +437,29 @@
             "council": "Brisbane City",
             "postcode": "4053",
             "suburb": "EVERTON PARK",
-            "customersAffected": "1002",
+            "customersAffected": "190",
             "restoreTime": "2026-11-16T19:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "BARTON ST",
-              "BUNNY ST",
               "COLBERT ST",
-              "CUTBUSH RD",
-              "DARGIE ST",
-              "DEAKIN ST",
-              "DRAKE ST",
               "EGAN ST",
-              "ELDERSHAW ST",
-              "FALLON ST",
-              "FEHLBERG ST",
               "FELSTEAD ST",
               "FONDA ST",
               "GARLAND ST",
               "GARNER ST",
-              "GEARSIDE ST",
-              "GREENHILL ST",
-              "GRUNER ST",
               "GUINNESS ST",
               "HEFLIN ST",
-              "HEYSEN ST",
-              "JADMAR ST",
-              "LYNE ST",
               "MCADAM ST",
-              "MCCUBBINS ST",
-              "MINNS PL",
-              "MURCH ST",
-              "NAMATJIRA ST",
               "NOVAK ST",
-              "OLD NORTHERN RD",
-              "PROCTOR PL",
-              "RAGLASS ST",
               "ROONEY ST",
-              "ROURKE ST",
-              "SIZER ST",
-              "SOUTH PINE RD",
-              "STELLMACH ST",
-              "STOCKWELL ST",
               "STREETON PDE",
               "TROUTS RD"
             ]
           },
-          "affected_customers": 1412,
-          "suburb": "EVERTON HILLS, EVERTON PARK, STAFFORD, STAFFORD HEIGHTS",
-          "street_name": "ADRIA ST, APPLEBY RD, ARMFIELD ST, BARTON ST, BERTRAM ST, BUNNY ST, CHAPLIN ST, COLBERT ST, CUTBUSH RD, DARGIE ST, DEAKIN ST, DORKAY ST, DRAKE ST, EGAN ST, ELDERSHAW ST, FALKIRK ST, FALLON ST, FARRANT ST, FEHLBERG ST, FELSTEAD ST, FINCH ST, FONDA ST, FONTAINE ST, GABLE ST, GARLAND ST, GARNER ST, GEARSIDE ST, GERRY ST, GREENHILL ST, GRUNER ST, GUINNESS ST, HEFLIN ST, HEPBURN ST, HESTON ST, HEYSEN ST, JADMAR ST, JARVIS ST, KINGAROY ST, LYNE ST, MCADAM ST, MCCUBBINS ST, MCQUEEN ST, MINNS PL, MURCH ST, NAMATJIRA ST, NIVEN ST, NOVAK ST, OLD NORTHERN RD, PROCTOR PL, RAGLASS ST, REDGRAVE ST, REDWOOD ST, ROONEY ST, ROURKE ST, SEDGEMOOR ST, SIZER ST, SLOANE ST, SOUTH PINE RD, SPINOS LANE, STELLMACH ST, STOCKWELL ST, STREETON PDE, TROUTS RD, WIDMARK ST, WILGARNING ST"
+          "affected_customers": 598,
+          "suburb": "EVERTON PARK, STAFFORD, STAFFORD HEIGHTS",
+          "street_name": "ADRIA ST, APPLEBY RD, ARMFIELD ST, BERTRAM ST, CHAPLIN ST, COLBERT ST, DORKAY ST, EGAN ST, FALKIRK ST, FARRANT ST, FELSTEAD ST, FINCH ST, FONDA ST, FONTAINE ST, GABLE ST, GARLAND ST, GARNER ST, GERRY ST, GUINNESS ST, HEFLIN ST, HEPBURN ST, HESTON ST, JARVIS ST, KINGAROY ST, MCADAM ST, MCQUEEN ST, NIVEN ST, NOVAK ST, REDGRAVE ST, REDWOOD ST, ROONEY ST, SEDGEMOOR ST, SLOANE ST, SPINOS LANE, STREETON PDE, TROUTS RD, WIDMARK ST, WILGARNING ST"
         },
         {
           "event_id": "INCD-999346-g",
@@ -556,35 +495,39 @@
             {
               "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
-              "affected_customers": 139
+              "affected_customers": 234
             }
           ],
           "details": {
             "event": "INCD-999349-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
+            "cause": "Damage due to severe weather",
+            "status": "Emergency Repairs",
             "council": "Sunshine Coast",
             "postcode": "4551",
             "suburb": "GOLDEN BEACH",
-            "customersAffected": "139",
-            "restoreTime": "2026-11-16T19:30:00+10:00",
+            "customersAffected": "234",
+            "restoreTime": "2026-11-17T06:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
+              "BLAXLAND ST",
               "BURKE ST",
               "COOK ST",
+              "CORONATION AVE",
+              "EARNSHAW ST",
               "ESPLANADE",
               "GREGORY ST",
               "HUME ST",
               "PALMER AVE",
               "TAYLOR AVE",
               "WENTWORTH PDE",
+              "WESTMINSTER AVE",
               "WILLS AVE"
             ]
           },
-          "affected_customers": 139,
+          "affected_customers": 234,
           "suburb": "GOLDEN BEACH",
-          "street_name": "BURKE ST, COOK ST, ESPLANADE, GREGORY ST, HUME ST, PALMER AVE, TAYLOR AVE, WENTWORTH PDE, WILLS AVE"
+          "street_name": "BLAXLAND ST, BURKE ST, COOK ST, CORONATION AVE, EARNSHAW ST, ESPLANADE, GREGORY ST, HUME ST, PALMER AVE, TAYLOR AVE, WENTWORTH PDE, WESTMINSTER AVE, WILLS AVE"
         },
         {
           "event_id": "INCD-999351-g",
@@ -603,7 +546,7 @@
             "postcode": "4069",
             "suburb": "KENMORE",
             "customersAffected": "57",
-            "restoreTime": "2026-11-16T18:30:00+10:00",
+            "restoreTime": "2026-11-17T06:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -671,7 +614,7 @@
             "postcode": "4562",
             "suburb": "DOONAN",
             "customersAffected": "24",
-            "restoreTime": "2026-11-16T19:00:00+10:00",
+            "restoreTime": "2026-11-17T06:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -694,7 +637,7 @@
           ],
           "details": {
             "event": "INCD-999361-g",
-            "cause": "Emergency Repairs",
+            "cause": "Damage due to severe weather",
             "status": "Emergency Repairs",
             "council": "Noosa",
             "postcode": "4567",
@@ -714,39 +657,6 @@
           "street_name": "CORSAIR CRES, NEWFIELD ST, ORIENT DR"
         },
         {
-          "event_id": "INCD-999364-g",
-          "allocations": [
-            {
-              "lga_name": "Sunshine Coast Regional",
-              "lga_code": null,
-              "affected_customers": 58
-            }
-          ],
-          "details": {
-            "event": "INCD-999364-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4551",
-            "suburb": "GOLDEN BEACH",
-            "customersAffected": "58",
-            "restoreTime": "2026-11-16T19:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "BLAXLAND ST",
-              "CORONATION AVE",
-              "EARNSHAW ST",
-              "GREGORY ST",
-              "WENTWORTH PDE",
-              "WESTMINSTER AVE"
-            ]
-          },
-          "affected_customers": 58,
-          "suburb": "GOLDEN BEACH",
-          "street_name": "BLAXLAND ST, CORONATION AVE, EARNSHAW ST, GREGORY ST, WENTWORTH PDE, WESTMINSTER AVE"
-        },
-        {
           "event_id": "INCD-999373-g",
           "allocations": [
             {
@@ -763,7 +673,7 @@
             "postcode": "4310",
             "suburb": "ALLANDALE",
             "customersAffected": "30",
-            "restoreTime": "2026-11-16T19:30:00+10:00",
+            "restoreTime": "2026-11-16T20:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -799,7 +709,7 @@
             "postcode": "4342",
             "suburb": "CROWLEY VALE",
             "customersAffected": "4",
-            "restoreTime": "2026-11-16T19:30:00+10:00",
+            "restoreTime": "2026-11-16T20:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -902,7 +812,7 @@
             {
               "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
-              "affected_customers": 1
+              "affected_customers": 2
             }
           ],
           "details": {
@@ -912,45 +822,104 @@
             "council": "Sunshine Coast",
             "postcode": "4564",
             "suburb": "MARCOOLA",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-16T21:00:00+10:00",
+            "customersAffected": "2",
+            "restoreTime": "2026-11-16T19:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "FINLAND RD"
             ]
           },
-          "affected_customers": 1,
+          "affected_customers": 2,
           "suburb": "MARCOOLA",
           "street_name": "FINLAND RD"
         },
         {
-          "event_id": "INCD-999429-g",
+          "event_id": "INCD-999439-g",
           "allocations": [
             {
-              "lga_name": "Sunshine Coast Regional",
+              "lga_name": "Gold Coast City",
               "lga_code": null,
-              "affected_customers": 1
+              "affected_customers": 470
             }
           ],
           "details": {
-            "event": "INCD-999429-g",
+            "event": "INCD-999439-g",
             "cause": "Under Investigation",
             "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4564",
-            "suburb": "MARCOOLA",
-            "customersAffected": "1",
+            "council": "Gold Coast City",
+            "postcode": "4208",
+            "suburb": "GILBERTON",
+            "customersAffected": "3",
             "restoreTime": "2026-11-16T21:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "FINLAND RD"
+              "NORWELL RD"
             ]
           },
-          "affected_customers": 1,
-          "suburb": "MARCOOLA",
-          "street_name": "FINLAND RD"
+          "affected_customers": 470,
+          "suburb": "GILBERTON, JACOBS WELL, NORWELL, ORMEAU, PIMPAMA, WOONGOOLBA",
+          "street_name": "ANEMBO AVE, BANKS DR, BINNOWEE WAY, COWLEY RD, CREEK ST, CRISP ST, CUSTODIAN CRES, DANDALOO CT, FINGLAS RD, FISCHERS RD, GAWAIN DR, GUARA GR, GUARA GR E, KAVANAGH CT, KERKIN RD N, KOOLKUNA CT, LUMEAH AVE, MARY PL, MILLY CCT, MIRAMBEENA DR, NEW NORWELL RD, NORWELL LAKES RD, NORWELL RD, OLD WHARF RD, PADDY CCT, PALOMAR PL, PIMPAMA JACOBS WELL RD, PIMPAMA RIVERS DR, PIMPAMA-JACOBS WELL RD, REEDMANS RD, SKOPPS RD, STAPYLTON JACOBS WELL RD, UMBANGO DR, WHARF RD, WHARF ST"
+        },
+        {
+          "event_id": "INCD-999460-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 174
+            }
+          ],
+          "details": {
+            "event": "INCD-999460-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4512",
+            "suburb": "BRACALBA",
+            "customersAffected": "5",
+            "restoreTime": "2026-11-16T21:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "MCCONNELL RD",
+              "RAAEN RD"
+            ]
+          },
+          "affected_customers": 174,
+          "suburb": "BRACALBA, D'AGUILAR, ELIMBAH, WAMURAN",
+          "street_name": "ATKINSON RD, BLOODWOOD CT, DAVIES RD, DERRICK RD, HOFFMAN RD, MCCLINTOCK RD, MCCONNELL RD, NEWLANDS RD, PATANE RD, PATES RD, POWELL RD, PROSSER RD, RAAEN RD, SCURR RD, SHARROCK RD, TWIN VIEW RD, WIERSMA RD, WOODLANDS DR"
+        },
+        {
+          "event_id": "INCD-999462-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 8
+            }
+          ],
+          "details": {
+            "event": "INCD-999462-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4512",
+            "suburb": "WAMURAN",
+            "customersAffected": "8",
+            "restoreTime": "2026-11-16T21:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "NEWLANDS RD",
+              "TAYLOR RD",
+              "ZIVIANI RD"
+            ]
+          },
+          "affected_customers": 8,
+          "suburb": "WAMURAN",
+          "street_name": "NEWLANDS RD, TAYLOR RD, ZIVIANI RD"
         }
       ]
     },
