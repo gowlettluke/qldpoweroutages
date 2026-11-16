@@ -2,72 +2,18 @@
   "schema_version": 1,
   "providers": {
     "Energex": {
-      "fetched_utc": "2026-11-15T22:46:03Z",
+      "fetched_utc": "2026-11-16T07:31:21Z",
       "metadata": {
         "status": "provider",
         "source_url": "https://www.energex.com.au/api/outages-text/v1.0.ex/",
-        "source_updated": "16 November 2026 8:30 AM",
-        "source_updated_utc": "2026-11-15T22:30:03Z",
-        "published_customers": 889,
-        "event_count": 13
+        "source_updated": "16 November 2026 5:30 PM",
+        "source_updated_utc": "2026-11-16T07:30:03Z",
+        "published_customers": 4924,
+        "event_count": 22
       },
       "events": [
         {
-          "event_id": "INCD-998578-g",
-          "allocations": [
-            {
-              "lga_name": "Logan City",
-              "lga_code": null,
-              "affected_customers": 605
-            }
-          ],
-          "details": {
-            "event": "INCD-998578-g",
-            "cause": "Damage due to severe weather",
-            "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4207",
-            "suburb": "BUCCAN",
-            "customersAffected": "402",
-            "restoreTime": "2026-11-16T11:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "ALISON CT",
-              "ASHCROFT CT",
-              "BONANZA PL",
-              "BROOKONG CT",
-              "BUCCAN RD",
-              "CARTWRIGHT RD",
-              "ENID CT",
-              "GRASSDALE ST",
-              "HAYVIEW CT",
-              "HEIN RD",
-              "HELEN LOUISE CT",
-              "HIDEAWAY LANE",
-              "JACQUELINE RD",
-              "KAY CT",
-              "LATIMER RD",
-              "LYNETTE CT",
-              "MOMALONG CT",
-              "NEWSHAM CT",
-              "OOAH CCT",
-              "PONDEROSA AVE",
-              "RANDLE RD",
-              "SHEREE CT",
-              "STEGEMANN RD",
-              "THE ASPECT",
-              "VERONICA CT",
-              "WARDLAND CT",
-              "WILSON RD"
-            ]
-          },
-          "affected_customers": 605,
-          "suburb": "BUCCAN, LOGAN VILLAGE, WOLFFDENE",
-          "street_name": "ALISON CT, ASHCROFT CT, BONANZA PL, BROOKONG CT, BUCCAN RD, CAMEL CT, CARTWRIGHT RD, COOINGIE VIEW RD, DUKES CT, DUNNS RD, ENID CT, FORBES CT, GRASSDALE ST, HAMILTON RD, HAYVIEW CT, HEIN RD, HELEN LOUISE CT, HIDEAWAY LANE, INSPIRATION DR, JACQUELINE RD, KAY CT, LATIMER RD, LAVELLE DR, LYNETTE CT, MILLER RD, MINEHAN RD, MOMALONG CT, MURRAY RD, NEWSHAM CT, OOAH CCT, PONDEROSA AVE, RANDLE RD, SHEREE CT, STANFORD CT, STEGEMANN RD, THE ASPECT, VERONICA CT, WARDLAND CT, WILSON RD"
-        },
-        {
-          "event_id": "INCD-998675-g",
+          "event_id": "INCD-998835-g",
           "allocations": [
             {
               "lga_name": "Scenic Rim Regional",
@@ -76,164 +22,23 @@
             }
           ],
           "details": {
-            "event": "INCD-998675-g",
-            "cause": "Emergency repairs in-progress",
-            "status": "Emergency Repairs",
-            "council": "Scenic Rim Regional",
-            "postcode": "4211",
-            "suburb": "BEECHMONT",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-16T11:00:00+10:00",
-            "etrFlag": "RB",
-            "etrFlagBool": "Y",
-            "streets": [
-              "BINNA BURRA RD"
-            ]
-          },
-          "affected_customers": 2,
-          "suburb": "BEECHMONT",
-          "street_name": "BINNA BURRA RD"
-        },
-        {
-          "event_id": "INCD-998677-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 1
-            }
-          ],
-          "details": {
-            "event": "INCD-998677-g",
-            "cause": "Damage to our equipment",
-            "status": "Under Investigation",
-            "council": "Scenic Rim Regional",
-            "postcode": "4307",
-            "suburb": "MUTDAPILLY",
-            "customersAffected": "1",
-            "restoreTime": "2026-11-16T14:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "CUNNINGHAM HWY"
-            ]
-          },
-          "affected_customers": 1,
-          "suburb": "MUTDAPILLY",
-          "street_name": "CUNNINGHAM HWY"
-        },
-        {
-          "event_id": "INCD-998802-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 3
-            }
-          ],
-          "details": {
-            "event": "INCD-998802-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Scenic Rim Regional",
-            "postcode": "4285",
-            "suburb": "NINDOOINBAH",
-            "customersAffected": "3",
-            "restoreTime": "2026-11-16T11:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "NINDOOINBAH ESTATE RD"
-            ]
-          },
-          "affected_customers": 3,
-          "suburb": "NINDOOINBAH",
-          "street_name": "NINDOOINBAH ESTATE RD"
-        },
-        {
-          "event_id": "INCD-998824-g",
-          "allocations": [
-            {
-              "lga_name": "Moreton Bay City",
-              "lga_code": null,
-              "affected_customers": 28
-            }
-          ],
-          "details": {
-            "event": "INCD-998824-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Moreton Bay Regional",
-            "postcode": "4500",
-            "suburb": "CASHMERE",
-            "customersAffected": "28",
-            "restoreTime": "2026-11-16T11:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "CASHMERE LANE",
-              "TALLOWOOD LANE"
-            ]
-          },
-          "affected_customers": 28,
-          "suburb": "CASHMERE",
-          "street_name": "CASHMERE LANE, TALLOWOOD LANE"
-        },
-        {
-          "event_id": "INCD-998835-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 73
-            }
-          ],
-          "details": {
             "event": "INCD-998835-g",
-            "cause": "Under Investigation",
+            "cause": "Trees on powerlines",
             "status": "Under Investigation",
             "council": "Scenic Rim Regional",
             "postcode": "4309",
             "suburb": "KALBAR",
-            "customersAffected": "21",
-            "restoreTime": "2026-11-16T11:00:00+10:00",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-16T20:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
               "KENTS LAGOON RD"
             ]
           },
-          "affected_customers": 73,
-          "suburb": "KALBAR, KENTS LAGOON, MUNBILLA, SILVERDALE",
-          "street_name": "CUNNINGHAM HWY, KELLY RD, KENGOON RD, KENTS LAGOON RD, LILY WATERHOLE RD, MACFARLANE RD, MUNBILLA RD, PRENZLER RD"
-        },
-        {
-          "event_id": "INCD-998836-g",
-          "allocations": [
-            {
-              "lga_name": "Scenic Rim Regional",
-              "lga_code": null,
-              "affected_customers": 15
-            }
-          ],
-          "details": {
-            "event": "INCD-998836-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Scenic Rim Regional",
-            "postcode": "4306",
-            "suburb": "PEAK CROSSING",
-            "customersAffected": "13",
-            "restoreTime": "2026-11-16T12:00:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "WASHPOOL RD"
-            ]
-          },
-          "affected_customers": 15,
-          "suburb": "PEAK CROSSING, UNDULLAH, WASHPOOL",
-          "street_name": "WASHPOOL RD"
+          "affected_customers": 2,
+          "suburb": "KALBAR, SILVERDALE",
+          "street_name": "KELLY RD, KENTS LAGOON RD"
         },
         {
           "event_id": "INCD-998861-g",
@@ -252,7 +57,7 @@
             "postcode": "4521",
             "suburb": "MOUNT MEE",
             "customersAffected": "23",
-            "restoreTime": "2026-11-16T10:00:00+10:00",
+            "restoreTime": "2026-11-16T19:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
@@ -266,189 +71,773 @@
           "street_name": "FLORENCE LANE, ROBINSON RD, THOMAS RD"
         },
         {
-          "event_id": "INCD-998872-g",
+          "event_id": "INCD-999068-g",
           "allocations": [
             {
-              "lga_name": "Sunshine Coast Regional",
+              "lga_name": "Brisbane City",
               "lga_code": null,
-              "affected_customers": 52
+              "affected_customers": 105
             }
           ],
           "details": {
-            "event": "INCD-998872-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Sunshine Coast",
-            "postcode": "4552",
-            "suburb": "CURRAMORE",
-            "customersAffected": "51",
-            "restoreTime": "2026-11-16T09:00:00+10:00",
+            "event": "INCD-999068-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Brisbane City",
+            "postcode": "4170",
+            "suburb": "NORMAN PARK",
+            "customersAffected": "102",
+            "restoreTime": "2026-11-16T20:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "CURRAMORE RD",
-              "EKERT RD",
-              "GRANITE LANE",
-              "THORNE RD"
+              "BEAK ST",
+              "BENNETTS RD",
+              "HALL AVE",
+              "MOREHEAD LANE",
+              "MORGAN ST",
+              "PATTISON AVE",
+              "THYNNE AVE"
             ]
           },
-          "affected_customers": 52,
-          "suburb": "CURRAMORE, KIDAMAN CREEK",
-          "street_name": "CURRAMORE RD, EKERT RD, GRANITE LANE, THOMPSON RD, THORNE RD"
+          "affected_customers": 105,
+          "suburb": "NORMAN PARK, SEVEN HILLS",
+          "street_name": "BEAK ST, BENNETTS RD, FERGUSON RD, HALL AVE, MOREHEAD LANE, MORGAN ST, PATTISON AVE, THYNNE AVE"
         },
         {
-          "event_id": "INCD-998878-g",
-          "allocations": [
-            {
-              "lga_name": "Lockyer Valley Regional",
-              "lga_code": null,
-              "affected_customers": 8
-            }
-          ],
-          "details": {
-            "event": "INCD-998878-g",
-            "cause": "Under Investigation",
-            "status": "Under Investigation",
-            "council": "Lockyer Valley Regional",
-            "postcode": "4343",
-            "suburb": "MORTON VALE",
-            "customersAffected": "8",
-            "restoreTime": "2026-11-16T09:30:00+10:00",
-            "etrFlag": "UP",
-            "etrFlagBool": "N",
-            "streets": [
-              "GREEN SWAMP EAST RD",
-              "MAIN GREEN SWAMP RD"
-            ]
-          },
-          "affected_customers": 8,
-          "suburb": "MORTON VALE",
-          "street_name": "GREEN SWAMP EAST RD, MAIN GREEN SWAMP RD"
-        },
-        {
-          "event_id": "INCD-998885-g",
+          "event_id": "INCD-999193-g",
           "allocations": [
             {
               "lga_name": "Moreton Bay City",
               "lga_code": null,
-              "affected_customers": 24
+              "affected_customers": 11
             }
           ],
           "details": {
-            "event": "INCD-998885-g",
+            "event": "INCD-999193-g",
             "cause": "Under Investigation",
             "status": "Under Investigation",
             "council": "Moreton Bay Regional",
             "postcode": "4512",
-            "suburb": "WAMURAN",
-            "customersAffected": "2",
-            "restoreTime": "2026-11-16T09:00:00+10:00",
+            "suburb": "WAMURAN BASIN",
+            "customersAffected": "11",
+            "restoreTime": "2026-11-16T18:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "R WILLIAMS RD",
-              "WILLIAMS RD"
+              "BASIN RD"
             ]
           },
-          "affected_customers": 24,
-          "suburb": "WAMURAN, WAMURAN BASIN",
-          "street_name": "BASIN RD, MCCLURE RD, PEDWELL RD, R SAMPSON RD, R WILLIAMS RD, TOP YARD RD, WILLIAMS RD"
+          "affected_customers": 11,
+          "suburb": "WAMURAN BASIN",
+          "street_name": "BASIN RD"
         },
         {
-          "event_id": "INCD-998907-g",
+          "event_id": "INCD-999200-g",
           "allocations": [
             {
-              "lga_name": "Somerset Regional",
+              "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
-              "affected_customers": 3
+              "affected_customers": 158
             }
           ],
           "details": {
-            "event": "INCD-998907-g",
+            "event": "INCD-999200-g",
             "cause": "Under Investigation",
             "status": "Under Investigation",
-            "council": "Somerset Regional",
-            "postcode": "4312",
-            "suburb": "COAL CREEK",
-            "customersAffected": "3",
-            "restoreTime": "2026-11-16T10:30:00+10:00",
+            "council": "Sunshine Coast",
+            "postcode": "4561",
+            "suburb": "MAROOCHY RIVER",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-16T23:00:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "BOWDENS LANE"
+              "VALDORA RD"
             ]
           },
-          "affected_customers": 3,
-          "suburb": "COAL CREEK",
-          "street_name": "BOWDENS LANE"
+          "affected_customers": 158,
+          "suburb": "MAROOCHY RIVER, VALDORA",
+          "street_name": "AKANIA PL, ATMOSPHERE PL, AURORA PL, BOTANICA PL, CRUMPS RD, DYNES RD, GOLDEN VALLEY PL, HUGHES PL, THOMSON VALLEY RD, VALDORA RD"
         },
         {
-          "event_id": "INCD-998912-g",
+          "event_id": "INCD-999244-g",
           "allocations": [
             {
-              "lga_name": "Logan City",
+              "lga_name": "Sunshine Coast Regional",
               "lga_code": null,
-              "affected_customers": 52
+              "affected_customers": 7
             }
           ],
           "details": {
-            "event": "INCD-998912-g",
-            "cause": "Trees on powerlines",
+            "event": "INCD-999244-g",
+            "cause": "Under Investigation",
             "status": "Under Investigation",
-            "council": "Logan City",
-            "postcode": "4130",
-            "suburb": "CARBROOK",
-            "customersAffected": "41",
-            "restoreTime": "2026-11-16T10:00:00+10:00",
+            "council": "Sunshine Coast",
+            "postcode": "4560",
+            "suburb": "DULONG",
+            "customersAffected": "4",
+            "restoreTime": "2026-11-16T18:30:00+10:00",
             "etrFlag": "UP",
             "etrFlagBool": "N",
             "streets": [
-              "BRITT CT",
-              "COORANG RD",
-              "ERWIN RD",
-              "GERMAN CHURCH RD",
-              "MOUNT COTTON RD",
-              "SHEARS RD"
+              "DULONG RD"
             ]
           },
-          "affected_customers": 52,
-          "suburb": "CARBROOK, CORNUBIA",
-          "street_name": "BRITT CT, COORANG RD, ERWIN RD, GERMAN CHURCH RD, MOUNT COTTON RD, SHEARS RD, WUDURU RD"
-        }
-      ]
-    },
-    "Ergon": {
-      "fetched_utc": "2026-11-16T06:16:52Z",
-      "metadata": {
-        "status": "provider",
-        "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
-        "source_updated_utc": "2026-11-16T06:15:00Z",
-        "published_customers": 2953,
-        "event_count": 26
-      },
-      "events": [
+          "affected_customers": 7,
+          "suburb": "DULONG, PERWILLOWEN",
+          "street_name": "DULONG RD"
+        },
         {
-          "event_id": "26CA13749",
+          "event_id": "INCD-999251-g",
           "allocations": [
             {
-              "lga_name": "Blackall Tambo Regional",
+              "lga_name": "Gold Coast City",
+              "lga_code": null,
+              "affected_customers": 127
+            }
+          ],
+          "details": {
+            "event": "INCD-999251-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Gold Coast City",
+            "postcode": "4211",
+            "suburb": "MOUNT NATHAN",
+            "customersAffected": "28",
+            "restoreTime": "2026-11-16T19:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "MT NATHAN RD",
+              "NATHAN HOMESTEAD RD",
+              "PARMA CT",
+              "POTOROO DR"
+            ]
+          },
+          "affected_customers": 127,
+          "suburb": "MOUNT NATHAN, NERANG",
+          "street_name": "BETTONG PL, BILBY CL, BIRDLIFE CT, MT NATHAN RD, NATHAN HOMESTEAD RD, PADEMELON PASS, PARMA CT, POTOROO DR"
+        },
+        {
+          "event_id": "INCD-999257-g",
+          "allocations": [
+            {
+              "lga_name": "Scenic Rim Regional",
               "lga_code": null,
               "affected_customers": 2
             }
           ],
           "details": {
-            "event": "26CA13749",
-            "council": "Blackall Tambo Regional Council",
-            "suburb": "BLACKALL",
-            "type": "UNPLANNED",
-            "startTime": "14/11/2026 19:32",
-            "restoreTime": "Under Investigation",
+            "event": "INCD-999257-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Scenic Rim Regional",
+            "postcode": "4285",
+            "suburb": "NINDOOINBAH",
             "customersAffected": "2",
-            "cause": "The loss of supply is due to the operating of protective equipment.",
-            "status": "Work delayed - crews unable to continue"
+            "restoreTime": "2026-11-16T20:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "NINDOOINBAH ESTATE RD"
+            ]
           },
           "affected_customers": 2,
-          "suburb": "BLACKALL",
+          "suburb": "NINDOOINBAH",
+          "street_name": "NINDOOINBAH ESTATE RD"
+        },
+        {
+          "event_id": "INCD-999264-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 56
+            }
+          ],
+          "details": {
+            "event": "INCD-999264-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4514",
+            "suburb": "DELANEYS CREEK",
+            "customersAffected": "35",
+            "restoreTime": "2026-11-16T19:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "DELANEY CREEK RD",
+              "MERVYN CAVANAGH CT",
+              "TRAVES CT"
+            ]
+          },
+          "affected_customers": 56,
+          "suburb": "DELANEYS CREEK, MOUNT DELANEY, NEURUM",
+          "street_name": "DELANEY CREEK RD, DEWHURTS RD, MERVYN CAVANAGH CT, TALGI RD, TRAVES CT, VIDONI RD, WISEMAN RD"
+        },
+        {
+          "event_id": "INCD-999288-g",
+          "allocations": [
+            {
+              "lga_name": "Lockyer Valley Regional",
+              "lga_code": null,
+              "affected_customers": 147
+            }
+          ],
+          "details": {
+            "event": "INCD-999288-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Lockyer Valley Regional",
+            "postcode": "4342",
+            "suburb": "GLENORE GROVE",
+            "customersAffected": "52",
+            "restoreTime": "2026-11-16T19:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "FOREST AVE",
+              "OTTO RD"
+            ]
+          },
+          "affected_customers": 147,
+          "suburb": "GLENORE GROVE, HATTON VALE, PLAINLAND, REGENCY DOWNS",
+          "street_name": "EDGERTON DR, FOREST AVE, MITCHELL CT, MOUNTAIN VIEW DR, NATHAN CT, OTTO RD, ZISCHKE RD"
+        },
+        {
+          "event_id": "INCD-999296-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 220
+            }
+          ],
+          "details": {
+            "event": "INCD-999296-g",
+            "cause": "Powerlines down",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4519",
+            "suburb": "COOCHIN CREEK",
+            "customersAffected": "2",
+            "restoreTime": "2026-11-16T20:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BRUCE HWY"
+            ]
+          },
+          "affected_customers": 220,
+          "suburb": "COOCHIN CREEK, GLASSHOUSE MOUNTAINS",
+          "street_name": "AMY DR, BELL RD, BRUCE HWY, BRUCE PDE, COOK RD, COULON RD, CRITTENDEN RD, GARRADS RD, HARLEY ST, HEMPSTOCK ST, JEFFREYS RD, KINGS RD, LINK RD, LITTLES RD, PECAN RD, PLANTATION RD, RAILWAY PDE, REED ST, RIVERS RD, RYAN ST, SCOTTS RD, SPANNER RD, STEVE IRWIN WAY, YOUNGS RD"
+        },
+        {
+          "event_id": "INCD-999313-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 207
+            }
+          ],
+          "details": {
+            "event": "INCD-999313-g",
+            "cause": "Trees on powerlines",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4551",
+            "suburb": "BELLS CREEK",
+            "customersAffected": "29",
+            "restoreTime": "2026-11-16T19:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BELLS CREEK RD"
+            ]
+          },
+          "affected_customers": 207,
+          "suburb": "BELLS CREEK, COOCHIN CREEK, PELICAN WATERS",
+          "street_name": "BELLS CREEK RD, BELLS ESP, BLACKWING ST, CONDAMINE CT, GREENSHANK ST, ROYS RD, SPITFIRE BANKS DR, THE ESPLANADE, TWEEDALE RD, WADERBIRD CRES, WARREGO DR, WHIMBREL CT"
+        },
+        {
+          "event_id": "INCD-999314-g",
+          "allocations": [
+            {
+              "lga_name": "Noosa Shire",
+              "lga_code": null,
+              "affected_customers": 3
+            },
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 1
+            }
+          ],
+          "details": {
+            "event": "INCD-999314-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Noosa",
+            "postcode": "4562",
+            "suburb": "DOONAN",
+            "customersAffected": "3",
+            "restoreTime": "2026-11-16T18:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "SUNRISE RD"
+            ]
+          },
+          "affected_customers": 4,
+          "suburb": "DOONAN, EUMUNDI",
+          "street_name": "SUNRISE RD"
+        },
+        {
+          "event_id": "INCD-999322-g",
+          "allocations": [
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 1932
+            }
+          ],
+          "details": {
+            "event": "INCD-999322-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Moreton Bay Regional",
+            "postcode": "4505",
+            "suburb": "BURPENGARY",
+            "customersAffected": "1",
+            "restoreTime": "2026-11-16T20:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BLUE PACIFIC RD"
+            ]
+          },
+          "affected_customers": 1932,
+          "suburb": "BURPENGARY, BURPENGARY EAST, DECEPTION BAY",
+          "street_name": "ALLARON CT, ASCOT WAY, AUSTEN ST, AVALINE BVD, BANKSIA ST, BIRD ST, BLUE PACIFIC RD, BORONIA CT, BRADY CT, BRISTON AVE, BRONZEWING CRES, BRUCE HWY EASTERN SERVICE RD, BURRALONG CT, CAMPHOR CT, CAULFIELD DR, CHESTERLEAF DR, COCKATIEL CT, CREEK RD, DAISY ST, DECEPTION BAY RD, DESTAL ST, EMBERSIDE CT, EMERALD ST, ETHEL ST, FELTHAM CCT, FINCH CT, FLEMINGTON CT, FLORENCE ST, FODORA PL, FOSTER RD, GREENSHANK CRES, HEADING ST, HERMANS CT, JACARANDA ST, JASON ST, KEMBLA RD, KODA ST, KOOYALEE ST, KRAUSE ST, LAKEWOOD DR, LIPPIATT CT, LISA ST, LOUISA ST, MAITLAND RD, MARGARET ST, MATTAND CT, MONARCH DR, MOORAK ST, MOORE RD, MURIEL CT, NEWMAN ST, O&apos;LEARY AVE, OAKBANK CCT, OLD BAY RD, PACKENHAM ST, PETER CT, PIDGEON DR, PRIESTS RD, PRION CT, RANDWICK DR, ROSEBERRY PL, RYLOCH CT, SANDOWN CT, SEAGULL CT, SHADFORTH ST, SHAYNE AVE, SHEARWATER CT, SHELLEY CT, SILVERDALE CT, SMITH ST, STINT CT, TALLOW WOOD DR, TAYLOR RD, TWISTS RD, WAGTAIL DR, WARREN CRES, ZAMMIT ST"
+        },
+        {
+          "event_id": "INCD-999338-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 1410
+            },
+            {
+              "lga_name": "Moreton Bay City",
+              "lga_code": null,
+              "affected_customers": 2
+            }
+          ],
+          "details": {
+            "event": "INCD-999338-g",
+            "cause": "Powerlines down",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4053",
+            "suburb": "EVERTON PARK",
+            "customersAffected": "1002",
+            "restoreTime": "2026-11-16T19:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BARTON ST",
+              "BUNNY ST",
+              "COLBERT ST",
+              "CUTBUSH RD",
+              "DARGIE ST",
+              "DEAKIN ST",
+              "DRAKE ST",
+              "EGAN ST",
+              "ELDERSHAW ST",
+              "FALLON ST",
+              "FEHLBERG ST",
+              "FELSTEAD ST",
+              "FONDA ST",
+              "GARLAND ST",
+              "GARNER ST",
+              "GEARSIDE ST",
+              "GREENHILL ST",
+              "GRUNER ST",
+              "GUINNESS ST",
+              "HEFLIN ST",
+              "HEYSEN ST",
+              "JADMAR ST",
+              "LYNE ST",
+              "MCADAM ST",
+              "MCCUBBINS ST",
+              "MINNS PL",
+              "MURCH ST",
+              "NAMATJIRA ST",
+              "NOVAK ST",
+              "OLD NORTHERN RD",
+              "PROCTOR PL",
+              "RAGLASS ST",
+              "ROONEY ST",
+              "ROURKE ST",
+              "SIZER ST",
+              "SOUTH PINE RD",
+              "STELLMACH ST",
+              "STOCKWELL ST",
+              "STREETON PDE",
+              "TROUTS RD"
+            ]
+          },
+          "affected_customers": 1412,
+          "suburb": "EVERTON HILLS, EVERTON PARK, STAFFORD, STAFFORD HEIGHTS",
+          "street_name": "ADRIA ST, APPLEBY RD, ARMFIELD ST, BARTON ST, BERTRAM ST, BUNNY ST, CHAPLIN ST, COLBERT ST, CUTBUSH RD, DARGIE ST, DEAKIN ST, DORKAY ST, DRAKE ST, EGAN ST, ELDERSHAW ST, FALKIRK ST, FALLON ST, FARRANT ST, FEHLBERG ST, FELSTEAD ST, FINCH ST, FONDA ST, FONTAINE ST, GABLE ST, GARLAND ST, GARNER ST, GEARSIDE ST, GERRY ST, GREENHILL ST, GRUNER ST, GUINNESS ST, HEFLIN ST, HEPBURN ST, HESTON ST, HEYSEN ST, JADMAR ST, JARVIS ST, KINGAROY ST, LYNE ST, MCADAM ST, MCCUBBINS ST, MCQUEEN ST, MINNS PL, MURCH ST, NAMATJIRA ST, NIVEN ST, NOVAK ST, OLD NORTHERN RD, PROCTOR PL, RAGLASS ST, REDGRAVE ST, REDWOOD ST, ROONEY ST, ROURKE ST, SEDGEMOOR ST, SIZER ST, SLOANE ST, SOUTH PINE RD, SPINOS LANE, STELLMACH ST, STOCKWELL ST, STREETON PDE, TROUTS RD, WIDMARK ST, WILGARNING ST"
+        },
+        {
+          "event_id": "INCD-999349-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 139
+            }
+          ],
+          "details": {
+            "event": "INCD-999349-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4551",
+            "suburb": "GOLDEN BEACH",
+            "customersAffected": "139",
+            "restoreTime": "2026-11-16T18:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BURKE ST",
+              "COOK ST",
+              "ESPLANADE",
+              "GREGORY ST",
+              "HUME ST",
+              "PALMER AVE",
+              "TAYLOR AVE",
+              "WENTWORTH PDE",
+              "WILLS AVE"
+            ]
+          },
+          "affected_customers": 139,
+          "suburb": "GOLDEN BEACH",
+          "street_name": "BURKE ST, COOK ST, ESPLANADE, GREGORY ST, HUME ST, PALMER AVE, TAYLOR AVE, WENTWORTH PDE, WILLS AVE"
+        },
+        {
+          "event_id": "INCD-999351-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 57
+            }
+          ],
+          "details": {
+            "event": "INCD-999351-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4069",
+            "suburb": "KENMORE",
+            "customersAffected": "57",
+            "restoreTime": "2026-11-16T18:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "GEM RD",
+              "KINGFISHER PL",
+              "RIDGECREST ST",
+              "SCENIC RD",
+              "TOURMALINE ST"
+            ]
+          },
+          "affected_customers": 57,
+          "suburb": "KENMORE",
+          "street_name": "GEM RD, KINGFISHER PL, RIDGECREST ST, SCENIC RD, TOURMALINE ST"
+        },
+        {
+          "event_id": "INCD-999356-g",
+          "allocations": [
+            {
+              "lga_name": "Brisbane City",
+              "lga_code": null,
+              "affected_customers": 96
+            }
+          ],
+          "details": {
+            "event": "INCD-999356-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Brisbane City",
+            "postcode": "4060",
+            "suburb": "ASHGROVE",
+            "customersAffected": "96",
+            "restoreTime": "2026-11-16T18:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ASHBOURNE ST",
+              "BUXTON ST",
+              "CANBERRA DR",
+              "DOVEDALE CRES",
+              "FRASERS RD",
+              "MATLOCK ST",
+              "MIRRABOOKA RD",
+              "TAY ST",
+              "VENUS ST"
+            ]
+          },
+          "affected_customers": 96,
+          "suburb": "ASHGROVE",
+          "street_name": "ASHBOURNE ST, BUXTON ST, CANBERRA DR, DOVEDALE CRES, FRASERS RD, MATLOCK ST, MIRRABOOKA RD, TAY ST, VENUS ST"
+        },
+        {
+          "event_id": "INCD-999358-g",
+          "allocations": [
+            {
+              "lga_name": "Noosa Shire",
+              "lga_code": null,
+              "affected_customers": 24
+            }
+          ],
+          "details": {
+            "event": "INCD-999358-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Noosa",
+            "postcode": "4562",
+            "suburb": "DOONAN",
+            "customersAffected": "24",
+            "restoreTime": "2026-11-16T19:00:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "TEMPLETON WAY",
+              "WHYANDRA CL"
+            ]
+          },
+          "affected_customers": 24,
+          "suburb": "DOONAN",
+          "street_name": "TEMPLETON WAY, WHYANDRA CL"
+        },
+        {
+          "event_id": "INCD-999361-g",
+          "allocations": [
+            {
+              "lga_name": "Noosa Shire",
+              "lga_code": null,
+              "affected_customers": 95
+            }
+          ],
+          "details": {
+            "event": "INCD-999361-g",
+            "cause": "Emergency Repairs",
+            "status": "Emergency Repairs",
+            "council": "Noosa",
+            "postcode": "4567",
+            "suburb": "SUNRISE BEACH",
+            "customersAffected": "95",
+            "restoreTime": "2026-11-16T19:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "CORSAIR CRES",
+              "NEWFIELD ST",
+              "ORIENT DR"
+            ]
+          },
+          "affected_customers": 95,
+          "suburb": "SUNRISE BEACH",
+          "street_name": "CORSAIR CRES, NEWFIELD ST, ORIENT DR"
+        },
+        {
+          "event_id": "INCD-999364-g",
+          "allocations": [
+            {
+              "lga_name": "Sunshine Coast Regional",
+              "lga_code": null,
+              "affected_customers": 58
+            }
+          ],
+          "details": {
+            "event": "INCD-999364-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Sunshine Coast",
+            "postcode": "4551",
+            "suburb": "GOLDEN BEACH",
+            "customersAffected": "58",
+            "restoreTime": "2026-11-16T18:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "BLAXLAND ST",
+              "CORONATION AVE",
+              "EARNSHAW ST",
+              "GREGORY ST",
+              "WENTWORTH PDE",
+              "WESTMINSTER AVE"
+            ]
+          },
+          "affected_customers": 58,
+          "suburb": "GOLDEN BEACH",
+          "street_name": "BLAXLAND ST, CORONATION AVE, EARNSHAW ST, GREGORY ST, WENTWORTH PDE, WESTMINSTER AVE"
+        },
+        {
+          "event_id": "INCD-999373-g",
+          "allocations": [
+            {
+              "lga_name": "Scenic Rim Regional",
+              "lga_code": null,
+              "affected_customers": 42
+            }
+          ],
+          "details": {
+            "event": "INCD-999373-g",
+            "cause": "Under Investigation",
+            "status": "Under Investigation",
+            "council": "Scenic Rim Regional",
+            "postcode": "4310",
+            "suburb": "ALLANDALE",
+            "customersAffected": "30",
+            "restoreTime": "2026-11-16T19:30:00+10:00",
+            "etrFlag": "UP",
+            "etrFlagBool": "N",
+            "streets": [
+              "ALLANDALE RD",
+              "DUNN RD",
+              "GEIGER RD",
+              "HUTCHINSON RD",
+              "MCCONNEL RD",
+              "OLD RIFLE RANGE RD",
+              "RADCLIFFE RD",
+              "SCHLIEFF RD",
+              "SCHNEIDER RD"
+            ]
+          },
+          "affected_customers": 42,
+          "suburb": "ALLANDALE, BOONAH, COULSON",
+          "street_name": "ALLANDALE RD, DUNN RD, GEIGER RD, HUTCHINSON RD, IPSWICH BOONAH RD, MCCONNEL RD, OLD RIFLE RANGE RD, RADCLIFFE RD, SCHLIEFF RD, SCHNEIDER RD"
+        }
+      ]
+    },
+    "Ergon": {
+      "fetched_utc": "2026-11-16T07:31:24Z",
+      "metadata": {
+        "status": "provider",
+        "source_url": "https://www.ergon.com.au/network/outages/outage-finder/outage-finder-text-view",
+        "source_updated_utc": "2026-11-16T07:30:30Z",
+        "published_customers": 2570,
+        "event_count": 21
+      },
+      "events": [
+        {
+          "event_id": "26CA13833",
+          "allocations": [
+            {
+              "lga_name": "Barcaldine Regional",
+              "lga_code": null,
+              "affected_customers": 12
+            }
+          ],
+          "details": {
+            "event": "26CA13833",
+            "council": "Barcaldine Regional Council",
+            "suburb": "BARCALDINE",
+            "type": "UNPLANNED",
+            "startTime": "16/11/2026 16:30",
+            "restoreTime": "17/11/2026 21:30",
+            "customersAffected": "12",
+            "cause": "The loss of supply is to allow emergency maintenance of the electricity network.",
+            "status": "Crews working on-site"
+          },
+          "affected_customers": 12,
+          "suburb": "BARCALDINE",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13836",
+          "allocations": [
+            {
+              "lga_name": "Livingstone Shire",
+              "lga_code": null,
+              "affected_customers": 439
+            },
+            {
+              "lga_name": "Isaac Regional",
+              "lga_code": null,
+              "affected_customers": 320
+            }
+          ],
+          "details": {
+            "event": "26CA13836",
+            "council": "Isaac Regional Council",
+            "suburb": "CLAIRVIEW, KALARKA, ST LAWRENCE, WUMALGI",
+            "type": "UNPLANNED",
+            "startTime": "16/11/2026 16:45",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "320",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 759,
+          "suburb": "CANOONA, CLAIRVIEW, GLEN GEDDES, KALARKA, KUNWARARA, MARLBOROUGH, MILMAN, OGMORE, PRINCHESTER, ST LAWRENCE, STANAGE, WUMALGI, YAAMBA",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13842",
+          "allocations": [
+            {
+              "lga_name": "Central Highlands Regional",
+              "lga_code": null,
+              "affected_customers": 26
+            }
+          ],
+          "details": {
+            "event": "26CA13842",
+            "council": "Central Highlands Regional Council",
+            "suburb": "INJUNE, ROLLESTON",
+            "type": "UNPLANNED",
+            "startTime": "16/11/2026 14:51",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "26",
+            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "status": "Crews on route"
+          },
+          "affected_customers": 26,
+          "suburb": "INJUNE, ROLLESTON",
+          "street_name": ""
+        },
+        {
+          "event_id": "26CA13844",
+          "allocations": [
+            {
+              "lga_name": "Rockhampton Regional",
+              "lga_code": null,
+              "affected_customers": 3
+            }
+          ],
+          "details": {
+            "event": "26CA13844",
+            "council": "Rockhampton Regional Council",
+            "suburb": "BAJOOL",
+            "type": "UNPLANNED",
+            "startTime": "16/11/2026 15:28",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage caused by storm activity.",
+            "status": "Outage reported"
+          },
+          "affected_customers": 3,
+          "suburb": "BAJOOL",
           "street_name": ""
         },
         {
@@ -476,51 +865,51 @@
           "street_name": ""
         },
         {
-          "event_id": "26NQ14207",
+          "event_id": "26FN11353",
           "allocations": [
             {
-              "lga_name": "Cloncurry Shire",
+              "lga_name": "Mornington Shire",
               "lga_code": null,
-              "affected_customers": 35
+              "affected_customers": 170
             }
           ],
           "details": {
-            "event": "26NQ14207",
-            "council": "Cloncurry Shire Council",
-            "suburb": "CLONCURRY",
+            "event": "26FN11353",
+            "council": "Mornington Shire Council",
+            "suburb": "GUNUNA, WELLESLEY ISLAND",
             "type": "UNPLANNED",
-            "startTime": "15/11/2026 17:41",
-            "restoreTime": "16/11/2026 18:00",
-            "customersAffected": "35",
-            "cause": "The loss of supply is due to the operating of protective equipment.",
+            "startTime": "16/11/2026 15:55",
+            "restoreTime": "Under Investigation",
+            "customersAffected": "170",
+            "cause": "The loss of supply is due to fallen power lines.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 35,
-          "suburb": "CLONCURRY",
+          "affected_customers": 170,
+          "suburb": "GUNUNA, WELLESLEY ISLAND",
           "street_name": ""
         },
         {
-          "event_id": "26NQ14245",
+          "event_id": "26FN11354",
           "allocations": [
             {
-              "lga_name": "Cloncurry Shire",
+              "lga_name": "Mareeba Shire",
               "lga_code": null,
-              "affected_customers": 15
+              "affected_customers": 2
             }
           ],
           "details": {
-            "event": "26NQ14245",
-            "council": "Cloncurry Shire Council",
-            "suburb": "CLONCURRY",
+            "event": "26FN11354",
+            "council": "Mareeba Shire Council",
+            "suburb": "MAREEBA",
             "type": "UNPLANNED",
-            "startTime": "16/11/2026 11:31",
+            "startTime": "16/11/2026 16:08",
             "restoreTime": "Under Investigation",
-            "customersAffected": "15",
-            "cause": "The loss of supply is our repair crews are attending. Fault finding is in progress.",
+            "customersAffected": "2",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 15,
-          "suburb": "CLONCURRY",
+          "affected_customers": 2,
+          "suburb": "MAREEBA",
           "street_name": ""
         },
         {
@@ -565,7 +954,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 3,
           "suburb": "BULLI CREEK",
@@ -577,22 +966,22 @@
             {
               "lga_name": "Toowoomba Regional",
               "lga_code": null,
-              "affected_customers": 10
+              "affected_customers": 3
             }
           ],
           "details": {
             "event": "26SW15324",
             "council": "Toowoomba Regional Council",
-            "suburb": "PAMPAS, YANDILLA",
+            "suburb": "YANDILLA",
             "type": "UNPLANNED",
             "startTime": "15/11/2026 21:48",
             "restoreTime": "Under Investigation",
-            "customersAffected": "10",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
+            "customersAffected": "3",
+            "cause": "The loss of supply is due to damage requiring emergency repairs.",
             "status": "Crews on route"
           },
-          "affected_customers": 10,
-          "suburb": "PAMPAS, YANDILLA",
+          "affected_customers": 3,
+          "suburb": "YANDILLA",
           "street_name": ""
         },
         {
@@ -630,27 +1019,22 @@
             {
               "lga_name": "Toowoomba Regional",
               "lga_code": null,
-              "affected_customers": 37
-            },
-            {
-              "lga_name": "Somerset Regional",
-              "lga_code": null,
-              "affected_customers": 2
+              "affected_customers": 3
             }
           ],
           "details": {
             "event": "26SW15353",
-            "council": "Somerset Regional Council",
+            "council": "Toowoomba Regional Council",
             "suburb": "ANDURAMBA",
             "type": "UNPLANNED",
             "startTime": "15/11/2026 23:06",
             "restoreTime": "Under Investigation",
-            "customersAffected": "2",
+            "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
             "status": "Crews working on-site"
           },
-          "affected_customers": 39,
-          "suburb": "ANDURAMBA, CROWS NEST, NUKINENDA, PIERCES CREEK",
+          "affected_customers": 3,
+          "suburb": "ANDURAMBA",
           "street_name": ""
         },
         {
@@ -675,30 +1059,6 @@
           },
           "affected_customers": 14,
           "suburb": "IRONGATE, PITTSWORTH, ST HELENS",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW15424",
-          "allocations": [
-            {
-              "lga_name": "Murweh Shire",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26SW15424",
-            "council": "Murweh Shire Council",
-            "suburb": "CHARLEVILLE",
-            "type": "UNPLANNED",
-            "startTime": "15/11/2026 17:32",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 2,
-          "suburb": "CHARLEVILLE",
           "street_name": ""
         },
         {
@@ -750,30 +1110,6 @@
           "street_name": ""
         },
         {
-          "event_id": "26SW15477",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 74
-            }
-          ],
-          "details": {
-            "event": "26SW15477",
-            "council": "Toowoomba Regional Council",
-            "suburb": "COALBANK, CROWS NEST, EMU CREEK, EVERGREEN, HIGHGROVE, NUTGROVE, THORNVILLE",
-            "type": "UNPLANNED",
-            "startTime": "16/11/2026 12:40",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "74",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 74,
-          "suburb": "COALBANK, CROWS NEST, EMU CREEK, EVERGREEN, HIGHGROVE, NUTGROVE, THORNVILLE",
-          "street_name": ""
-        },
-        {
           "event_id": "26SW15478",
           "allocations": [
             {
@@ -791,39 +1127,10 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "59",
             "cause": "The loss of supply is due to damage caused by storm activity.",
-            "status": "Crews on route"
+            "status": "Crews working on-site"
           },
           "affected_customers": 59,
           "suburb": "FLINTON, INGLESTONE, KINKABILLA, MEANDARRA, SOUTH FLINTON, WESTMAR",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW15507",
-          "allocations": [
-            {
-              "lga_name": "Southern Downs Regional",
-              "lga_code": null,
-              "affected_customers": 306
-            },
-            {
-              "lga_name": "Tenterfield",
-              "lga_code": null,
-              "affected_customers": 19
-            }
-          ],
-          "details": {
-            "event": "26SW15507",
-            "council": "Southern Downs Regional Council",
-            "suburb": "BRAESIDE, CHERRY GULLY, COTTONVALE, DALVEEN, PITTSWORTH, TURNERS CREEK, WARWICK",
-            "type": "UNPLANNED",
-            "startTime": "16/11/2026 14:48",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "306",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 325,
-          "suburb": "BRAESIDE, CHERRY GULLY, COTTONVALE, DALVEEN, PITTSWORTH, TURNERS CREEK, WARWICK",
           "street_name": ""
         },
         {
@@ -853,64 +1160,11 @@
             "startTime": "16/11/2026 14:52",
             "restoreTime": "Under Investigation",
             "customersAffected": "630",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "cause": "The loss of supply is due to fallen power lines.",
+            "status": "Crews working on-site"
           },
           "affected_customers": 722,
           "suburb": "APPLETHORPE, DALVEEN, GLEN NIVEN, LISTON, MARYLAND, POZIERES, RUBY CREEK, STANTHORPE, THE SUMMIT, THULIMBAH, WYLIE CREEK",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW15511",
-          "allocations": [
-            {
-              "lga_name": "Southern Downs Regional",
-              "lga_code": null,
-              "affected_customers": 81
-            }
-          ],
-          "details": {
-            "event": "26SW15511",
-            "council": "Southern Downs Regional Council",
-            "suburb": "AMIENS, DALVEEN, GOLDFIELDS",
-            "type": "UNPLANNED",
-            "startTime": "16/11/2026 14:55",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "81",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 81,
-          "suburb": "AMIENS, DALVEEN, GOLDFIELDS",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW15518",
-          "allocations": [
-            {
-              "lga_name": "Southern Downs Regional",
-              "lga_code": null,
-              "affected_customers": 245
-            },
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 84
-            }
-          ],
-          "details": {
-            "event": "26SW15518",
-            "council": "Southern Downs Regional Council",
-            "suburb": "KARARA, LEYBURN",
-            "type": "UNPLANNED",
-            "startTime": "16/11/2026 15:22",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "245",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 329,
-          "suburb": "KARARA, LEYBURN, MILLMERRAN, NORTH BRANCH, TUMMAVILLE, YANDILLA",
           "street_name": ""
         },
         {
@@ -931,58 +1185,10 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "279",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 279,
           "suburb": "ATHOL, AUBIGNY, BIDDESTON, LINTHORPE, PURRAWUNDA, YARGULLEN",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW15534",
-          "allocations": [
-            {
-              "lga_name": "Maranoa Regional",
-              "lga_code": null,
-              "affected_customers": 11
-            }
-          ],
-          "details": {
-            "event": "26SW15534",
-            "council": "Maranoa Regional Council",
-            "suburb": "MITCHELL, ST GEORGE",
-            "type": "UNPLANNED",
-            "startTime": "16/11/2026 16:01",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "11",
-            "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
-          },
-          "affected_customers": 11,
-          "suburb": "MITCHELL, ST GEORGE",
-          "street_name": ""
-        },
-        {
-          "event_id": "26SW15535",
-          "allocations": [
-            {
-              "lga_name": "Toowoomba Regional",
-              "lga_code": null,
-              "affected_customers": 2
-            }
-          ],
-          "details": {
-            "event": "26SW15535",
-            "council": "Toowoomba Regional Council",
-            "suburb": "BRYMAROO",
-            "type": "UNPLANNED",
-            "startTime": "16/11/2026 06:06",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "2",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews on route"
-          },
-          "affected_customers": 2,
-          "suburb": "BRYMAROO",
           "street_name": ""
         },
         {
@@ -1013,7 +1219,7 @@
             "restoreTime": "Under Investigation",
             "customersAffected": "3",
             "cause": "The loss of supply is due to damage requiring emergency repairs. Fault finding is in progress.",
-            "status": "Outage reported"
+            "status": "Crews on route"
           },
           "affected_customers": 55,
           "suburb": "BOONAH, CROFTBY, KILLARNEY, OLD KOREELAH, THE FALLS, THE HEAD, WHITE SWAMP",
@@ -1041,30 +1247,6 @@
           },
           "affected_customers": 4,
           "suburb": "NANANGO",
-          "street_name": ""
-        },
-        {
-          "event_id": "26WB11519",
-          "allocations": [
-            {
-              "lga_name": "Bundaberg Regional",
-              "lga_code": null,
-              "affected_customers": 436
-            }
-          ],
-          "details": {
-            "event": "26WB11519",
-            "council": "Bundaberg Regional Council",
-            "suburb": "BARGARA",
-            "type": "UNPLANNED",
-            "startTime": "16/11/2026 13:42",
-            "restoreTime": "Under Investigation",
-            "customersAffected": "436",
-            "cause": "The loss of supply is due to damage requiring emergency repairs.",
-            "status": "Crews working on-site"
-          },
-          "affected_customers": 436,
-          "suburb": "BARGARA",
           "street_name": ""
         },
         {
